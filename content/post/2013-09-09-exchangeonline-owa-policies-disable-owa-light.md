@@ -38,10 +38,10 @@ In case you would like f.e. disable the outlook wep app light (which is not avai
     <li>Execute this snippet:</li>
 </ol>
 
-[code lang="ps"]
+```ps
 
 Get-OwaMailboxPolicy -Identity "OwaMailboxPolicy-Default" | Set-OwaMailboxPolicy -OWALightEnabled $false
 
-[/code]
+```
 
 &nbsp;

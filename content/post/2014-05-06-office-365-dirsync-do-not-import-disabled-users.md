@@ -43,9 +43,9 @@ Now we are going to add a new attribute filter for the account control attribute
 
 Finally run a full sync with PowerShell.
 
-[code lang="ps"]
+```ps
 Add-PSSnapin Coexistence-Configuration
 Start-OnlineCoexistenceSync -FullSync
-[/code]
+```
 
 There shouldn't be any disabled users in your azure directory any more.

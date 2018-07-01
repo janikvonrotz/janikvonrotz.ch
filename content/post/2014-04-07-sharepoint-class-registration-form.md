@@ -202,7 +202,7 @@ The javascript creates the dialog box javascript to open our new form. The call 
 2. Edit the page and select Embed Code on the Insert tab
 3. Paste the following javascript and save the page
 
-[code lang="js"]
+```js
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.0/jquery.min.js">
 // visit http://www.jsdelivr.com/#!jquery to update the cdn url
 </script>
@@ -221,7 +221,7 @@ function OpenRegistrationForm(meeting_id){
 }
 function DialogCallback(dialogResult, returnValue){}
 </script>
-[/code]
+```
 
 # Finally
 

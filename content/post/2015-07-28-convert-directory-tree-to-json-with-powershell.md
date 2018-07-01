@@ -24,7 +24,7 @@ tags:
 Today I wrote a simple script that converts a directory tree query with `get-childitem` into a json formatted data tree.
 <!--more-->
  
-[code lang="powershell"]
+```ps
 function Add-Tabstops{
     param($Count)
     $tabs = ""
@@ -54,13 +54,13 @@ $JSON = Output-JsonChildren -Path "C:\Documents"
 "["
 $JSON
 "]"
-[/code]
+```
 
 Find the latest version of this script here: [https://gist.github.com/7c9e9ea0acd77c965b79](https://gist.github.com/7c9e9ea0acd77c965b79)
 
 The output looks something like this:
 
-[code]
+```
 [
   {
     "name": "Administration",
@@ -78,4 +78,4 @@ The output looks something like this:
           }
         ]
       },
-[/code]
+```

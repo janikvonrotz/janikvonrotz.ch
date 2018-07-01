@@ -42,7 +42,7 @@ To create this kind of password we need a word list with common nouns. I've crea
 
 And here is the PowerShell function:
 
-[code lang="ps"]
+```ps
 function Get-XKCDPassword {
 
     Param(
@@ -96,7 +96,7 @@ function Get-XKCDPassword {
 }
 
 Get-XKCDPassword -words 4 -delimiter "-" -lang "de" -FirstLetterUpperCase 
-[/code]
+```
 
 Here are some results:
 ```

@@ -27,7 +27,7 @@ Let's have a look:
 
 **Remove-SelectedAppxPackagesFromWIM.ps1**
 
-[code lang="powershell"]
+```ps
 $pathToWIM = "D:\SCCM\OSD\OSImages\Windows 10 Enterprise (x64).wim"
 $index = "1"
 $appList = @(
@@ -86,6 +86,6 @@ Write-Host "Remove temporary directory..."
 Remove-Item $pathMountFolder -Force
 
 Write-Host "Complete:" (Get-Date).ToString()
-[/code]
+```
 
 First, the script creates a temporary folder and mounts the windows image. Next, app packages from a predefined list are removed. Finally, the image is dismounted and the temporary folder deleted.

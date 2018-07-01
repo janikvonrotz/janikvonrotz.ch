@@ -52,26 +52,26 @@ These standards are not supported by default. We will use babel and its presets 
 
 Next we tell babel how to convert the code. For this create a `.babelrc` file in the root with this content:
 
-[code]
+```
 {
   "presets": ["es2015", "react"]
 }
-[/code]
+```
 
 To publish and transpile our react component code add two scripts to the `package.json` file.
 
-[code]
+```
 "scripts": {
   "prepublish": "npm run build",
   "build": "babel ./src --out-dir ./dist"
 },
-[/code]
+```
 
 If you run `npm build` babel will compile everything from `/src` to `/dist`.
 
 Create the `/src` folder and add a react component like `HelloWorld.jsx`:
 
-[code]
+```
 import React from 'react';
 
 export default class JelloWorld extends React.Component {
@@ -81,23 +81,23 @@ export default class JelloWorld extends React.Component {
     )
   }
 }
-[/code]
+```
 
 Before publishing this hello world component run `npm run build` just to see how babel transpiles the scripts.
 
 To let npm know which files are part of the npm package create a index file `/src/index.jsx`.
 
-[code]
+```
 import HelloWorld from './HelloWorld';
 
 export { HelloWorld };
-[/code]
+```
 
 Make sure to update the main attribute in the `package.json` file.
 
-[code]
+```
 "main": "./dist/index.js",
-[/code]
+```
 
 When running `npm publish` it will automatically transpile the scripts and publish it to the npm repository.
 
@@ -122,16 +122,16 @@ This will increment the version from `1.0.0` to `1.0.1`.
 
 In case you do not want to publish the JSX source add and `.npmignore` file.
 
-[code]
+```
 /src
 .babelrc
-[/code]
+```
 
 In case you are using git to host your project add a `.gitignore` file.
 
-[code]
+```
 /node_modules
-[/code]
+```
 
 # Source
 

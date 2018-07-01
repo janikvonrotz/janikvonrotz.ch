@@ -101,7 +101,7 @@ As always you can manage special settings with Exclude-Filters and simple Tasks.
 
 And here's the script:
 
-[code lang="ps"]
+```ps
 <#
 $Metadata = @{
     Title = "Update ActiveDirectory Security Groups"
@@ -259,7 +259,7 @@ $Tasks | %{
 Write-PPEventLog $($MyInvocation.InvocationName + "`n`n" + $Message )
 Send-PPErrorReport -FileName "activedirectory.mail.config.xml" -ScriptName $MyInvocation.InvocationName
 Write-PPErrorEventLog -ScriptPath $MyInvocation.InvocationName -ClearErrorVariable
-[/code]
+```
 
 <ul>
     <li>Many functions are part of my project: <a href="https://github.com/janikvonrotz/Powershell-Profile">https://github.com/janikvonrotz/Powershell-Profile</a></li>

@@ -22,8 +22,8 @@ tags:
 ---
 To install the .Net Framework 3.5 on Windows Server 2012 and Windows Server 2012 R2 you have to enable the install feature from the online source.
 
-<pre><code>dism /online /enable-feature /featurename:NetFX3 /all /Source:d:\sources\sxs /LimitAccess
-</code></pre>
+```psdism /online /enable-feature /featurename:NetFX3 /all /Source:d:\sources\sxs /LimitAccess
+```ps
 
 Now you should be able to install the feature with server management console.
 

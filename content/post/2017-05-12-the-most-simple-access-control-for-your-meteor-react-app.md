@@ -45,7 +45,7 @@ Now you might miss the url access control as a scenario, why did I ignore it? We
 
 The config file merges the access control list (acl) and Meteor settings. For every possible action a set of roles is defined.
 
-[code]
+```
 import { Meteor } from 'meteor/meteor'
 import { objectAssign } from './index'
 
@@ -67,7 +67,7 @@ let acl = {
 }
 
 export default objectAssign(Meteor.settings.private, Meteor.settings.public, { acl: acl })
-[/code]
+```
 
 Of course you could create a collection to store the acl and make the permission model dynamic.
 
@@ -75,7 +75,7 @@ Of course you could create a collection to store the acl and make the permission
 
 This is the only function required to check the users permission.
 
-[code]
+```
 import { config } from './index'
 
 export default (action, roles) => {
@@ -87,7 +87,7 @@ export default (action, roles) => {
   })
   return allowed
 }
-[/code]
+```
 
 Simple isn't it?
 
@@ -95,7 +95,7 @@ Simple isn't it?
 
 This example shows how the permission is checked in a Meteor method.
 
-[code]
+```
 ...
 import { isAllowed } from '/imports/helpers'
 
@@ -112,7 +112,7 @@ export default () => {
 
       // insert object
       ...
-[/code]
+```
 
 Make sure the permission check is the first thing done when the method is executed.
 
@@ -120,7 +120,7 @@ Make sure the permission check is the first thing done when the method is execut
 
 Now we restrict access on the data access layer.
 
-[code]
+```
 ...
 import { isAllowed } from '/imports/helpers'
 
@@ -139,7 +139,7 @@ export default () => {
     }
   })
   ...
-[/code]
+```
 
 The user roles are accessible using `this.user` in a publication.
 
@@ -147,7 +147,7 @@ The user roles are accessible using `this.user` in a publication.
 
 Finally you can restrict the visibility of React components quite easily.
 
-[code]
+```
 ...
 import { isAllowed } from '/imports/helpers'
 
@@ -178,7 +178,7 @@ class Router extends React.Component {
 }
 
 export default Router
-[/code]
+```
 
 As you can see the `isAllowed` function is used for all scenarios.
 

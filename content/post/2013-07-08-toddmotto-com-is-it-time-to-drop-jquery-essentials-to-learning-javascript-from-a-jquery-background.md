@@ -41,7 +41,7 @@ Let's look at the options:
 
 <span class="c1">// JavaScript</span>
 <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s1">'myClass'</span><span class="p">);</span>
-</code></pre>
+```ps
 </div>
 
 This returns a NodeList. A Node is a JavaScript term for element Object, and a NodeList is an ordered list of Nodes.
@@ -58,7 +58,7 @@ The easiest of the pack:
 
 <span class="c1">// JavaScript</span>
 <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'myID'</span><span class="p">);</span>
-</code></pre>
+```ps
 </div>
 
 Returns a single Node.
@@ -73,7 +73,7 @@ As easy as the ID selector, the tag name selector returns a NodeList too:
 
 <span class="c1">// JavaScript</span>
 <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">'div'</span><span class="p">);</span>
-</code></pre>
+```ps
 </div>
 
 <h4>querySelector/querySelectorAll</h4>
@@ -105,7 +105,7 @@ Let's look at some examples, read the comments for better clarification:
 <span class="cm"> */</span>
 <span class="c1">// Return a NodeList of all 'div' instances</span>
 <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">'div'</span><span class="p">);</span>
-</code></pre>
+```ps
 </div>
 
 querySelectorAll is powerful, and definitely the future. It also supports more complicated selectors like so:
@@ -116,7 +116,7 @@ querySelectorAll is powerful, and definitely the future. It also supports more c
 
 <span class="c1">// Grab some data-* attribute</span>
 <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">'[data-toggle]'</span><span class="p">);</span>
-</code></pre>
+```ps
 </div>
 
 You can also create a smart wrapper function for this, to save typing out <em>document.querySelectorAll('')</em> each time:
@@ -127,7 +127,7 @@ You can also create a smart wrapper function for this, to save typing out <em>do
 <span class="p">}</span>
 <span class="c1">// Usage</span>
 <span class="kd">var</span> <span class="nx">myClass</span> <span class="o">=</span> <span class="nx">_</span><span class="p">(</span><span class="s1">'.myClass'</span><span class="p">);</span>
-</code></pre>
+```ps
 </div>
 
 You could use a <em>$</em> symbol instead of an underscore, totes up to you. It's not ideal to begin a function expression with an underscore, but for demonstration purposes I have.
@@ -149,7 +149,7 @@ Adding a class is easy in jQuery, it does it all for you, taking care of the Nod
 <span class="c1">// JavaScript</span>
 <span class="kd">var</span> <span class="nx">div</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'div'</span><span class="p">);</span>
 <span class="nx">div</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">'myClass'</span><span class="p">);</span>
-</code></pre>
+```ps
 </div>
 
 <h4>Remove class</h4>
@@ -163,7 +163,7 @@ Same as the above, super simple:
 <span class="c1">// JavaScript</span>
 <span class="kd">var</span> <span class="nx">div</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'div'</span><span class="p">);</span>
 <span class="nx">div</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s1">'myClass'</span><span class="p">);</span>
-</code></pre>
+```ps
 </div>
 
 <h4>Toggle class</h4>
@@ -177,7 +177,7 @@ Toggle was a really important to the language, often tricky to replicate via <em
 <span class="c1">// JavaScript</span>
 <span class="kd">var</span> <span class="nx">div</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'div'</span><span class="p">);</span>
 <span class="nx">div</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">toggle</span><span class="p">(</span><span class="s1">'myClass'</span><span class="p">);</span>
-</code></pre>
+```ps
 </div>
 
 <h3>Arrays</h3>
@@ -186,7 +186,7 @@ Now we'll push into the more advanced aspects of the JavaScript language, <em>Ar
 
 <div class="highlight">
 <pre><code class="javascript"><span class="kd">var</span> <span class="nx">myArray</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'one'</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">,</span> <span class="s1">'three'</span><span class="p">,</span> <span class="s1">'four'</span><span class="p">]</span>
-</code></pre>
+```ps
 </div>
 
 jQuery makes this super easy with the <em>$.each();</em> method, which again hides some of the dirty work and makes things easy. JavaScript began with no 'built-in' functionality for iterating over arrays, so we are used to manually working out the items in the array using the <em>length</em> property and iterating over each item incrementally inside a <em>for</em> loop:
@@ -196,7 +196,7 @@ jQuery makes this super easy with the <em>$.each();</em> method, which again hid
 <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o"><</span> <span class="nx">myArray</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
     <span class="c1">// ...</span>
 <span class="p">}</span>
-</code></pre>
+```ps
 </div>
 
 Recently, we received an upgrade from this rather manual method to the dedicated <em>forEach</em> method, which is however slower than the above, but does provide callback functionality similar to jQuery's <em>$.each();</em>:
@@ -212,7 +212,7 @@ Recently, we received an upgrade from this rather manual method to the dedicated
 <span class="nx">myArray</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
     <span class="c1">// ...</span>
 <span class="p">});</span>
-</code></pre>
+```ps
 </div>
 
 Looking at the jQuery side of things, here's a quick comparison of the two:
@@ -230,7 +230,7 @@ Looking at the jQuery side of things, here's a quick comparison of the two:
     <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">myArray</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">value</span> <span class="p">);</span>
 <span class="p">}</span>
-</code></pre>
+```ps
 </div>
 
 <h3>NodeList looping</h3>
@@ -251,7 +251,7 @@ A large difference between jQuery is the fact we need to generate a loop using <
 <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o"><</span> <span class="nx">someElem</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">someElem</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">'myClass'</span><span class="p">);</span>
 <span class="p">}</span>
-</code></pre>
+```ps
 </div>
 
 So what's the difference here? We get a NodeList returned and therefore need to iterate over the NodeList and apply a new class to each. Pretty simple and makes sense. This is the kind of advanced things jQuery takes care of for us. The thing with JavaScript is that it is pretty scary to get started on, but once you're started it's addictive and it's imperative to know what's going on under the hood, as the saying goes.
@@ -270,7 +270,7 @@ In jQuery, the naming convention isn't as good as native, as the <em>attr();</em
 
 <span class="c1">// JavaScript</span>
 <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'.myClass'</span><span class="p">).</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">'disabled'</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
-</code></pre>
+```ps
 </div>
 
 <h4>Remove attributes</h4>
@@ -283,7 +283,7 @@ Removing attributes is just as easy:
 
 <span class="c1">// JavaScript</span>
 <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'.myClass'</span><span class="p">).</span><span class="nx">removeAttribute</span><span class="p">(</span><span class="s1">'disabled'</span><span class="p">);</span>
-</code></pre>
+```ps
 </div>
 
 <h4>Get attributes</h4>
@@ -296,7 +296,7 @@ This is how we would log the attribute's vale in the Console:
 
 <span class="c1">// JavaScript</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'.myClass'</span><span class="p">).</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s1">'title'</span><span class="p">));</span>
-</code></pre>
+```ps
 </div>
 
 <h4>Data-* attributes</h4>
@@ -313,7 +313,7 @@ HTML5 data-* attributes are probably one of the best additions to the HTML speci
 <span class="c1">// JavaScript - use the getAttribute method, fairly static</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'.myElem'</span><span class="p">).</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s1">'data-username'</span><span class="p">));</span>
 <span class="nt"></script></span>
-</code></pre>
+```ps
 </div>
 
 HTML5 introduces the <em>dataset</em> API, which browser support isn't bad, I don't think IE9/10 even support it. For heavy <em>.data();</em> usage, I recommend jQuery as it works in all browsers - even legacy.
@@ -338,7 +338,7 @@ There are neat tricks we can do to parse JSON and create objects too even in pla
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myJSON</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span> <span class="c1">// JSON Object, logs 'Todd'</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myJSON</span><span class="p">.</span><span class="nx">id</span><span class="p">);</span> <span class="c1">// JSON Object, logs '01282183'</span>
 <span class="nt"></script></span>
-</code></pre>
+```ps
 </div>
 
 <h3>Events</h3>
@@ -349,7 +349,7 @@ Events play a massive part in JavaScript, and has had a bad reputation in the pa
 <pre><code class="javascript"><span class="nx">$</span><span class="p">(</span><span class="nx">elem</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
     <span class="c1">// ...</span>
 <span class="p">});</span>
-</code></pre>
+```ps
 </div>
 
 I actually recommend going with jQuery's <em>.on();</em> method should you want to use the click handler:
@@ -358,7 +358,7 @@ I actually recommend going with jQuery's <em>.on();</em> method should you want 
 <pre><code class="javascript"><span class="nx">$</span><span class="p">(</span><span class="nx">elem</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
     <span class="c1">// ...</span>
 <span class="p">});</span>
-</code></pre>
+```ps
 </div>
 
 Two reasons, you can chain the 'on' part like so:
@@ -367,7 +367,7 @@ Two reasons, you can chain the 'on' part like so:
 <pre><code class="javascript"><span class="nx">$</span><span class="p">(</span><span class="nx">elem</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click focus keyup'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
     <span class="c1">// ...</span>
 <span class="p">});</span>
-</code></pre>
+```ps
 </div>
 
 This chains (well, binds) a couple of event handlers to register your function with. Any of them will run it. Not to mention you can easily swap them in and out.
@@ -378,7 +378,7 @@ Secondly, event delegation with dynamically created JavaScript elements:
 <pre><code class="javascript"><span class="nx">$</span><span class="p">(</span><span class="nx">parent</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="nx">elem</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
     <span class="c1">// ...</span>
 <span class="p">});</span>
-</code></pre>
+```ps
 </div>
 
 This <em>captures</em> the DOM event via a parent event listener. Look up event <em>bubbling</em> and <em>capturing</em> for homework if you're unsure of the difference.
@@ -412,7 +412,7 @@ Back to jQuery versus JavaScript now anyway, here's some event handlers:
 
 <span class="c1">// JavaScript</span>
 <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="nx">elem</span><span class="p">).</span><span class="nx">onchange</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{...}</span>
-</code></pre>
+```ps
 </div>
 
 You see my point...
@@ -423,7 +423,7 @@ There is one issue with JavaScript event handlers however, and you can blame Mic
 <pre><code class="javascript"><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     <span class="c1">// ...</span>
 <span class="p">},</span> <span class="kc">false</span><span class="p">);</span>
-</code></pre>
+```ps
 </div>
 
 <h3>CSS manipulation</h3>
@@ -441,7 +441,7 @@ CSS is admittedly nicer in the jQuery object methods, but check out native JavaS
 <span class="kd">var</span> <span class="nx">elem</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="nx">elem</span><span class="p">);</span>
 <span class="nx">elem</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">background</span> <span class="o">=</span> <span class="s1">'#F60'</span><span class="p">;</span>
 <span class="nx">elem</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">color</span> <span class="o">=</span> <span class="s1">'#FFF'</span><span class="p">;</span>
-</code></pre>
+```ps
 </div>
 
 The above hooks into JavaScript's <em>style</em> object and allows you to set lots of styles with ease.
@@ -456,7 +456,7 @@ As we progress towards a future of amazing technology, browsers now fire their o
 <pre><code class="javascript"><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">'DOMContentLoaded'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     <span class="c1">// DOM ready, run it!</span>
 <span class="p">},</span> <span class="kc">false</span><span class="p">);</span>
-</code></pre>
+```ps
 </div>
 
 jQuery has had a tendancy to be called <em>the</em> solution and there's no other alternative ever, ever ever. It's bad for upcoming developers to rely on it and it's imperative to learn, or at least have some understanding of, native JavaScript. The more powerful HTML5 becomes, the more we can utilise these rapid HTML5 native capabilities. And the more powerful the features become, the less we need jQuery, the more useless it becomes!

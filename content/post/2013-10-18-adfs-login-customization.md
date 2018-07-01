@@ -40,13 +40,13 @@ To add a logo you simply edit the <strong>web.config</strong> file.
     <li>Comment out the section:</li>
 </ul>
 
-[code]
+```
 
 <!--
 <add key=”logo” value=”logo.png” />
 -->
 
-[/code]
+```
 
 <ul>
     <li>And add the path to your logo file.</li>
@@ -64,7 +64,7 @@ Edit the file of your language an replace the "hint" with you definition.
 
 In the root folder of the login page in the folder  <strong>MasterPages</strong> is a file named <strong>MasterPage.master</strong>. This file defines the look of the login page. To hide the title just comment this part out.
 
-[code]
+```
 <!--
 <div class="GroupLargeMargin">
 <div class="TextSizeXLarge">
@@ -72,7 +72,7 @@ In the root folder of the login page in the folder  <strong>MasterPages</strong
 </div>
 </div>
 -->
-[/code]
+```
 
 <h1>Auto-Populate the Username Field of the Forms Sign-in Page When Signing in to Office 365</h1>
 
@@ -89,18 +89,18 @@ Process username from the url parameter.
     <li>Find the following and set your cursor to the next line down:</li>
 </ul>
 
-[code]
+```
 
 public void Application_BeginRequest()
 {
 
-[/code]
+```
 
 <ul>
     <li>Paste the following code:</li>
 </ul>
 
-[code]
+```
 
 HttpRequest request = HttpContext.Current.Request;
 HttpResponse response = HttpContext.Current.Response;
@@ -112,7 +112,7 @@ if ( !String.IsNullOrEmpty( request.Params["username"] ) )
      Response.Cookies.Add( cookie );
 }
 
-[/code]
+```
 
 <ul>
     <li>Save and Close global.asax.cs</li>
@@ -127,32 +127,32 @@ Add the username parameter to the username box.
     <li>Find the following and set your cursor to the next line down:</li>
 </ul>
 
-[code]
+```
 
 using System;
 
-[/code]
+```
 
 Paste the following code:
 
-[code]
+```
 
 using System.Web;
 
-[/code]
+```
 
 Find the following and set your cursor to the next line down:
 
-[code]
+```
 
 protected void Page_Load( object sender, EventArgs e )
 {
 
-[/code]
+```
 
 Paste the following code:
 
-[code]
+```
 
 HttpCookie cookie = Context.Request.Cookies.Get( "Office365Username" );
 
@@ -164,6 +164,6 @@ if ( null != cookie &amp;&amp; !String.IsNullOrEmpty( cookie.Value ) )
      Context.Response.Cookies.Add( cookie );
 }
 
-[/code]
+```
 
 Save and Close FormsSignIn.aspx.cs

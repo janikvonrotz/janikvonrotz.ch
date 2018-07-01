@@ -30,7 +30,7 @@ This maintenance mode will lock even the administration access to the site colle
 
 So how can I unlock or remove the maintenance mode? It's easy just run this PowerShell script from your SharePoint/PowerShell CLI to remove the maintenance mode:
 
-[code lang="ps"]
+```ps
 $SPSiteAdministration =  new-object Microsoft.SharePoint.Administration.SPSiteAdministration('https://sharepoint.url.local')
 $SPSiteAdministration.ClearMaintenanceMode()
-[/code]
+```

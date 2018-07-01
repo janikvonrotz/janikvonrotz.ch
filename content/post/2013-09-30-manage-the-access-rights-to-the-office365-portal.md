@@ -27,7 +27,7 @@ The script has the same structure as the license management script, feel free as
 
 <!--more-->
 
-[code lang="ps"]
+```ps
 <#
 $Metadata = @{
     Title = "Set Office365 User Rights"
@@ -131,7 +131,7 @@ try{
 
     Send-PPErrorReport -FileName "DirSync.mail.config.xml" -ScriptName $MyInvocation.InvocationName
 
-}[/code]
+}```
 
 <a href="https://gist.github.com/janikvonrotz/6763616">https://gist.github.com/janikvonrotz/6763616</a>
 

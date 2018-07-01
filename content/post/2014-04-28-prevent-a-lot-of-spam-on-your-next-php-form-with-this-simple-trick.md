@@ -29,7 +29,7 @@ This behaviour is a good way to tell a human from a spambot apart.
 
 Here is a simple example of how to make use of this behaviour to prevent a lot of spam.
 <!--more-->
-[code lang="php"]
+```php
 <?php //post the form fields from below
     $name = $_POST['name'];
     $machine = $_POST['machine'];
@@ -64,7 +64,7 @@ Here is a simple example of how to make use of this behaviour to prevent a lot o
         </form>
     </body>
 </html>
-[/code]
+```
 
 The idea here is that spambots will fill out all fields in the form. So we hide one of the fields with CSS (so users don't see it) and if it's filled out, we don't allow the submission to complete.
 

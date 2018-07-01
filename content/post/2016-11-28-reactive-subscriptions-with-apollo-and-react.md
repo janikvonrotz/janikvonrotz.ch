@@ -45,7 +45,7 @@ I assume you already have an Apollo (server) and React (client) application up a
 
 [code language="shell"]
 npm install --save graphql-subscriptions
-[/code]
+```
 
 This packages extends the GraphQL schema for subscriptions.
 
@@ -53,7 +53,7 @@ As client server implementation for the subscription communications we use the s
 
 [code language="shell"]
 npm install --save subscriptions-transport-ws
-[/code]
+```
 
 This package will be used to set up the web socket client and server.
 
@@ -63,7 +63,7 @@ Subscriptions are similar to queries and have their own type definition. For our
 
 **server/schema.js**
 
-[code]
+```
 ...
 const rootSchema = [`
 
@@ -102,7 +102,7 @@ schema {
 }
 `]
 ...
-[/code]
+```
 
 Whenever the post type is modified we will submit the mutation in real-time to the clients.
 
@@ -120,7 +120,7 @@ const subscriptionManager = new SubscriptionManager({
   pubsub,
 });
 export { subscriptionManager, pubsub };
-[/code]
+```
 
 It is a middle ware between the web socket server and the GraphQL schemas.
 
@@ -148,7 +148,7 @@ httpServer.listen(WS_PORT, () => console.log(
   `Websocket Server is now running on http://localhost:${WS_PORT}`
 ));
 const server = new SubscriptionServer({ subscriptionManager }, httpServer);
-[/code]
+```
 
 ## Add server resolvers
 
@@ -174,7 +174,7 @@ const resolvers = {
   },
 }
 ...
-[/code]
+```
 
 Then tell the other mutation resolvers to dispatch mutation data. I'm using Meteor and MongoDB to store the post data. It is not required that you have the same setup. Just make sure that a mutation event triggers a publication on the `pubsub` manager.
 
@@ -210,7 +210,7 @@ Mutation: {
         }) }
     },
 ...
-[/code]
+```
 
 Our server is now ready to send subscriptions data in real-time.
 
@@ -234,7 +234,7 @@ const addGraphQLSubscriptions = (networkInterface, wsClient) => Object.assign(ne
 });
 
 export default addGraphQLSubscriptions;
-[/code]
+```
 
 And connect it to our Apollo client.
 
@@ -259,7 +259,7 @@ const client = new ApolloClient({
 })
 
 export default client
-[/code]
+```
 
 There is nothing more to do. We can now subscribe to a publication and receive data from the server.
 
@@ -500,7 +500,7 @@ PostList = graphql(updatePost, {
 })(graphql(query)(PostList))))
 
 export default PostList
-[/code]
+```
 
 Hope you liked this tutorial.
 

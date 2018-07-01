@@ -141,13 +141,13 @@ try{
 
 	Write-PPErrorEventLog -Source "Send Password Expiration Reminder" -ClearErrorVariable
 }
-[/code]
+```
 
 <a href="https://gist.github.com/6184059">https://gist.github.com/6184059</a>
 
 For the memberof Group I recommend to use the SID instead of the DN. I'll show you how the get the SID:
 
-[code lang="ps"]
+```ps
 
 PS C:Userssa-spadmin> (Get-QADGroup "SPO_PasswordNotification").Sid
 
@@ -157,7 +157,7 @@ PS C:Userssa-spadmin> (Get-QADGroup "SPO_PasswordNotification").Sid
 
 PS C:Userssa-spadmin> Get-QADUser -MemberOf "S-1-5-21-1744926098-708661255-2033415169-36648"
 
-[/code]
+```
 
 <h1>Update</h1>
 

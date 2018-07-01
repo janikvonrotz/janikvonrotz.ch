@@ -25,7 +25,7 @@ Take this function for example:
 
 **Get-UnlinkedGPOs.ps1**
 
-[code lang="powershell"]
+```ps
 function Get-UnlinkedGPOs {
 
     Import-Module GroupPolicy
@@ -51,7 +51,7 @@ function Get-UnlinkedGPOs {
         return $Report
     }
 }
-[/code]
+```
 
 Make sure the group policy PowerShell module is installed.
 

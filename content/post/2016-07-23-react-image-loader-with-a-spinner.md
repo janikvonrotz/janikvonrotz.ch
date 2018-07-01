@@ -37,7 +37,7 @@ The code should be straight forward.
 
 **image_loader.jsx**
 
-[code]
+```
 import React from 'react'
 import Spinner from './spinner.jsx'
 
@@ -101,7 +101,7 @@ class ImageLoader extends React.Component {
 }
 
 export default ImageLoader
-[/code]
+```
 
 The syntax, which is used to wrap the file status render, might be new to you. Nevertheless it's a common patter I've copied from the facebook react blog.
 
@@ -109,7 +109,7 @@ Next is the spinner, which is inclued in the ImageLoader and which is basically 
 
 **spinner.jsx**
 
-[code]
+```
 import React, { PropTypes } from 'react'
 import {grey400} from 'material-ui/styles/colors'
 
@@ -149,13 +149,13 @@ Spinner.defaultProps = {
 }
 
 export default Spinner
-[/code]
+```
 
 I'm not an expert in css animations, however, without the css code below the component is totally useless.
 
 **spinner.css**
 
-[code]
+```
 .react-spinner {
   width: 15px;
   height: 15px;
@@ -227,6 +227,6 @@ I'm not an expert in css animations, however, without the css code below the com
     transform: rotate(360deg);
   }
 }
-[/code]
+```
 
 I hope you liked my approach, let me know what you think in the comment section.

@@ -45,7 +45,7 @@ To launch the client application java requires a main method.
 
 **App.java**
 
-[code lang="java"]
+```java
 package ch.issueman.client;
 
 import javafx.application.Application;
@@ -70,7 +70,7 @@ public class App extends Application {
 		launch(args);
 	}
 }
-[/code]
+```
 
 We will define the view in the next chapter.
 Same as the webservice our client application load configurations from one json file.
@@ -79,13 +79,13 @@ Same as the webservice our client application load configurations from one json 
 
 **application.json**
 
-[code]
+```
 {
 	"webservice": {
 		"url": "http://localhost:8080/webservice"
 	}
 }
-[/code]
+```
 
 The only property as you can see is the webservice endpoint url. This is the jetty default address, do not change it unless you know whats going on.
 
@@ -95,7 +95,7 @@ The only property as you can see is the webservice endpoint url. This is the jet
 
 The client controller has the same functionality as the server controller. With the help of the RESTeasy client and the Jackson JSON mapper the controller communicates with the webservice and converts the JSON data to POJOs.
 
-[code lang="java"]
+```java
 package ch.issueman.client;
 
 import java.io.IOException;
@@ -213,7 +213,7 @@ public class Controller<T, Id extends Serializable> implements DAO<T, Id> {
 	public void deleteAll() {
 	}
 }
-[/code]
+```
 
 In addition this controller has a `login` method. You can pass a user object and run this method to authenticate the controller against the webservice. Pretty easy, isn't it?
 

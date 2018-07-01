@@ -29,7 +29,7 @@ Here's mine:
 
 **ecosystem.config.js**
 
-[code]
+```
 module.exports = {
   /**
    * Application configuration section
@@ -70,7 +70,7 @@ module.exports = {
     }
   }
 }
-[/code]
+```
 
 **Hint**: If your git repo is private, make sure your store a ssh key with access rights to the repo on your server.
 

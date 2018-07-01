@@ -55,7 +55,7 @@ Rename the project directory to get a shorter url.
 Add the config to one of your Nginx sites.
 
 
-[code]
+```
 server{
     
     ...
@@ -78,7 +78,7 @@ server{
         ...
     }
 }
-[/code]
+```
 
 Test config and reload Nginx service.
 

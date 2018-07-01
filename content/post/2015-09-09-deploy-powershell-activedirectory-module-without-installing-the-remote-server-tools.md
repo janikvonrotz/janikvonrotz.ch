@@ -41,7 +41,7 @@ Now create folder structure as below and place the files inside:
 
 Then update the **Install-ActiveDirectoryModule.ps1** file with the content below:
 
-[code lang="ps"]
+```ps
 function Add-AssemblyToGlobalAssemblyCache{
 
     <#
@@ -122,6 +122,6 @@ if(-not (Test-Path -Path $moduledirectory)){
 Copy-Item -Path (Join-Path $basepath "\ActiveDirectory\*") -Destination $moduledirectory -Recurse -Force
 
 Add-AssemblyToGlobalAssemblyCache -Name (Join-Path $basepath "Microsoft.ActiveDirectory.Management.dll")
-[/code]
+```
 
 Got it! When executing the **Install-ActiveDirectoryModule.ps1** on another computer it should install the PowerShell ActiveDirectory module.

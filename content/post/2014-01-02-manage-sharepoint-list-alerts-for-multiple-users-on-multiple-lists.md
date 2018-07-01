@@ -38,7 +38,7 @@ To manager alerts for a couple of users on specific lists I've written a script 
 
 <!--more-->
 
-[code lang="powershell"]
+```ps
 <#
 $Metadata = @{
 	Title = "Update SharePoint User Alerts"
@@ -247,7 +247,7 @@ try{
 
     Write-PPErrorEventLog -Source "Update SharePoint User Alerts" -ClearErrorVariable    
 }
-[/code]
+```
 
 The configuration attribute ListViewName and FilterIndex allows me to change to create an alert for an specific view.
 

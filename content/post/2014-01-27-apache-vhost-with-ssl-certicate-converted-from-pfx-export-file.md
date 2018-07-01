@@ -30,14 +30,14 @@ tags:
 ---
 This is an simple example for an Apache vHost SSL vHost configuration:
 
-[code]
+```
 <VirtualHost 192.168.0.1:443>
 DocumentRoot /var/www/
 SSLEngine on
 SSLCertificateFile /path/to/certificate.crt
 SSLCertificateKeyFile /path/to/keyfile.key
 </VirtualHost>
-[/code]
+```
 
 <!--more-->
 
@@ -47,20 +47,20 @@ To convert these files use <a href="https://www.openssl.org/" target="_blank">Op
 
 First file you'll need is the public certificate.
 
-[code]
+```
 openssl pkcs12 -in [yourfile.pfx] -clcerts -nokeys -out [certificate.crt]
-[/code]
+```
 
 Now you can chose between the encrypted and decrypted key file.
 
 If chosing the encrypted key file, Apache will prompt every time starting or starting the web service for the certificate pass-phrase.
 
-[code]
+```
 openssl pkcs12 -in [yourfile.pfx] -nocerts -out [keyfile-encrypted.key]
-[/code]
+```
 
 Otherwise Apache won't prompt for an pass-pharase, but be aware, if you're losing this decrypted key file you certificate will be worthless.
 
-[code]
+```
 openssl rsa -in [keyfile-encrypted.key] -out [keyfile-decrypted.key]
-[/code]
+```

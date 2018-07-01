@@ -86,7 +86,7 @@ Refresh MySQL and exit.
     exit
 
 Add the Nginx configuration to the WordPress website.
-[code]
+```
 server{    
   ...
 
@@ -96,7 +96,7 @@ server{
  
   ...
 }
-[/code]
+```
 Update permissions for the `www-data` group.
 
     sudo chown www-data:www-data /var/www/[wordpress] -R 

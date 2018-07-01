@@ -122,7 +122,7 @@ $SPWebs | %{
         }
     }
 } | Export-Csv &amp;quot;Report SharePoint Files.csv&amp;quot; -Delimiter &amp;quot;;&amp;quot; -Encoding &amp;quot;UTF8&amp;quot; -NoTypeInformation
-[/code]
+```
 
 Most recent version of this snippet is avialable here: <a href="https://gist.github.com/janikvonrotz/6885934" target="_blank">https://gist.github.com/janikvonrotz/6885934</a>
 

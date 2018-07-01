@@ -92,7 +92,7 @@ Refresh MySQL and exit.
 
 Add the Nginx configuration to the Koken website configuration file.
 
-[code]
+```
 server{    
  
   ...
@@ -161,7 +161,7 @@ server{
  
   ...
  
-[/code]
+```
 
 Grant permissions for the `www-data` group and user.
 

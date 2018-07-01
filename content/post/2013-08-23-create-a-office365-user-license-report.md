@@ -28,7 +28,7 @@ To help my out I've made an ActiveDirectory group which holds the allowed Office
 
 <!--more-->
 
-[code lang="ps"]
+```ps
 #--------------------------------------------------#
 # modules
 #--------------------------------------------------#
@@ -111,7 +111,7 @@ if($error){
     Send-PPErrorReport -FileName "DirSync.mail.config.xml" -ScriptName $MyInvocation.InvocationName
 
 }
-[/code]
+```
 
 Latest version of this snippet: <a href="https://gist.github.com/6317367" target="_blank">https://gist.github.com/6317367</a>
 

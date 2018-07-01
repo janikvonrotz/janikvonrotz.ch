@@ -44,7 +44,7 @@ Due to the immense file size of a bit under 70GB I've improved the script so tha
 
 Copy this script to <code>C:\spc14</code> and execute it.
 
-[code lang="ps"]
+```ps
 # settings 
 $DownloadVideos = $false
 $DownloadSlides = $true
@@ -155,7 +155,7 @@ if($DownloadVideos){$a.rss.channel.item | foreach{
 		mv $file $folder
 	}
 }}
-[/code]
+```
 
 The spc14 folder should look like this after downloading all the slides and videos.
 

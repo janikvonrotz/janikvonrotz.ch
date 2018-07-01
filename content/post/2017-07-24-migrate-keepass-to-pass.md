@@ -39,7 +39,7 @@ So I've found [Pass](https://www.passwordstore.org/). The standard Unix password
 
 **keepass2pass.ps1**
 
-[code lang="powershell"]
+```ps
 [xml]$Content = Get-Content -Path "KeepassData.xml"
 
 function Traverse-Tree ($Node, $ParentPath) {
@@ -82,7 +82,7 @@ $PasswordEntries = $Content.KeePassFile.Root.Group.Group | ForEach-Object {
     Write-Host "Creating pass entry: $($_.Path)"
     $_.Content | &amp; pass insert -m $_.Path
 }
-[/code]
+```
 
 You can get the latest version of this file here: [https://gist.github.com/898be0891058ee091dae8c68a8e2b91e](https://gist.github.com/898be0891058ee091dae8c68a8e2b91e)
 

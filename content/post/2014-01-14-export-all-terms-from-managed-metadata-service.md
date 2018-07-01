@@ -33,7 +33,7 @@ Here's a sample export:
 
 And here's the script:
 
-[code lang="ps"]
+```ps
 <#
 $Metadata = @{
 	Title = "Export all Terms from Managed Metadata Service"
@@ -138,6 +138,6 @@ $SPTaxonomies | %{
         $Item |  Select-Object * -exclude Terms
     }
 } | Out-GridView
-[/code]
+```
 
 Latest version of this script: <a href="https://gist.github.com/8419585" target="_blank">https://gist.github.com/8419585</a>

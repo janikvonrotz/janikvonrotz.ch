@@ -28,7 +28,7 @@ First there is the PowerShell object:
 
 <strong>New-ObjectHostFileEntry</strong>
 
-[code lang="ps"]
+```ps
 
 function New-ObjectHostFileEntry{
     param(
@@ -41,13 +41,13 @@ function New-ObjectHostFileEntry{
     }
 }
 
-[/code]
+```
 
 And here are the manipulation functions:
 
 <strong>Get-HostFileEntries</strong>
 
-[code lang="ps"]
+```ps
 
 function Get-HostFileEntries{
 
@@ -92,11 +92,11 @@ function Get-HostFileEntries{
         throw "No entries found in host file"
     }
 }
-[/code]
+```
 
 <strong>Add-HostFileEntry</strong>
 
-[code lang="ps"]
+```ps
 
 function Add-HostFileEntry{
 
@@ -141,11 +141,11 @@ function Add-HostFileEntry{
         Add-Content -Path $HostFile -Value ($IP + "       " + $DNS) -Encoding "Ascii"
     }
 }
-[/code]
+```
 
 <strong>Remove-HostFileEntry</strong>
 
-[code lang="ps"]
+```ps
 
 function Remove-HostFileEntry{
 
@@ -210,6 +210,6 @@ function Remove-HostFileEntry{
     }
 }
 
-[/code]
+```
 
 These functions are part of my project <a href="https://github.com/janikvonrotz/Powershell-Profile">PowerShell Profile</a>.

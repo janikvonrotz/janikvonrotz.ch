@@ -39,15 +39,15 @@ To associate the icon image the file extension we need to add an entry to the DO
 
 Edit the file **C:\Program Files\Common Files\microsoft shared\Web Server Extensions\15\TEMPLATE\XML\DOCICON.XML** and add this line to the `<ByExtension>` node:
 
-[code lang="xml"]
+```xml
 <Mapping Key="kdbx" Value="KeePass_Icon.png" EditText="Keepass Password Manager"/>
-[/code]
+```
 
 # Open file
 
 To enable file opening for the database file with the KeePass program run this PowerShell script on the SharePoint server:
 
-[code lang="ps"]
+```ps
 # get all webapplications
 $SPWebApps = Get-SPWebApplication
 
@@ -69,7 +69,7 @@ $SPWebApps | foreach-object {
         Write-Host Skipped Web Application $_.Name - $mimeType was already allowed 
     } 
 }
-[/code]
+```
 
 This script adds the KeePass mime type on every SharePoint web application.
 
@@ -77,7 +77,7 @@ Make sure that the SharePoint web application containing the KeePass database fi
 
 In case you want to change that with PowerShell run this script on your SharePoint server:
 
-[code lang="ps"]
+```ps
 # get all webapplications
 $SPWebApps = Get-SPWebApplication
 
@@ -88,6 +88,6 @@ $SPWebApps | foreach-object {
       $_.Update()
   }
 }
-[/code]
+```
 
 Last thing we need to do is to restart the IIS webserver, run the command `iisreset`.

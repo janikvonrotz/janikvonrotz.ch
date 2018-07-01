@@ -55,10 +55,10 @@ Unfortunately I couldn’t find a way to do this in bulk, or via the "Quick Edit
 
 Or if you're able to access the MySQL server with phpMyAdmin or a MySQL CLI you can run this SQL statement.
 
-[code lang="sql"]
+```sql
 -- Globally disable pingbacks/trackbacks for all users
 UPDATE wp_posts SET ping_status = 'closed'
-[/code]
+```
 
 Don't be confused by the column name `wp_posts` it also contains pages.
 

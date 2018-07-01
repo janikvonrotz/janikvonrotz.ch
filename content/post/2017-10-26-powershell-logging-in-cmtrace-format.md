@@ -25,7 +25,7 @@ CMTrace is probably the first choice for a log viewer in a Microsoft environment
 
 **Write-Log.ps1**
 
-[code lang="powershell"]
+```ps
 function Write-log {
 
     [CmdletBinding()]
@@ -63,13 +63,13 @@ function Write-log {
     # Write the line to the log file
     Add-Content -Path $Path -Value $Content
 }
-[/code]
+```
 
 No  big matter, isn't it? We want to see it in action. Here is an example script that cycles its log history and writes an error entry whenever the script throws an error.
 
 **Example.ps1**
 
-[code lang="powershell"]
+```ps
 $LogCycle = 30
 $LogFilePath = Join-Path $PSScriptRoot "$(Get-Date -Format yyyy-M-dd) $($MyInvocation.MyCommand.Name).log"
 
@@ -85,7 +85,7 @@ try {
     Write-Error ($_ | Out-String)
     Write-Log -Path $LogFilePath -Message ($_ | Out-String) -Component $MyInvocation.MyCommand.Name -Type Error
 }
-[/code]
+```
 
 And finally the log entry opened in the CMTrace viewer:
 

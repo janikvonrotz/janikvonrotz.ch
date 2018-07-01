@@ -73,7 +73,7 @@ As told Gradle is our servant for the project. Follow these steps to set up our 
 
 **build.gradle** - start
 
-[code]
+```
 buildscript {
     repositories {
         mavenCentral()
@@ -83,45 +83,45 @@ buildscript {
         classpath 'org.flywaydb:flyway-gradle-plugin:3.1'
     }
 }
-[/code]
+```
 
 Adds the Flyway database migration tool to your gradle task library.
 
-[code]
+```
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'flyway'
-[/code]
+```
 
 Gradle plugins to set up the project.
 
-[code]
+```
 repositories {
     mavenCentral()
 }
-[/code]
+```
 
 Gradle gets dependencies from the maven repository.
 
-[code]
+```
 dependencies {
     compile 'org.hibernate:hibernate-core:4.3.8.Final'
     compile 'mysql:mysql-connector-java:5.1.34'
     
     testCompile group: 'junit', name: 'junit', version: '4.+'
 }
-[/code]
+```
 
 These commands compile hibernate, mysql and depending libraries for our Java project.
 
-[code]
+```
 flyway {
     url = 'jdbc:mysql://localhost:3306'
     user = 'issuemanager'
     password = 'issuemanager'
     schemas = ['issuemanager']
 }
-[/code]
+```
 
 Flyway task configuration section. Make sure to update these fields.
 
@@ -139,22 +139,22 @@ Flyway task configuration section. Make sure to update these fields.
 
 **V1__create_person_table.sql**
 
-[code lang="sql"]
+```sql
 create table person(
     id int NOT NULL AUTO_INCREMENT, PRIMARY KEY (id),
     name varchar(100) NOT NULL
 );
-[/code]
+```
 
 This snippets creates the MySQL person table.
 
 **V2__add_people.sql.sql**
 
-[code lang="sql"]
+```sql
 insert into PERSON (NAME) values ('Axel');
 insert into PERSON (NAME) values ('Mr. Foo');
 insert into PERSON (NAME) values ('Ms. Bar');
-[/code]
+```
 
 This snippet adds people to the persons table.
 
@@ -170,7 +170,7 @@ We will start with the DAO interface and the CRUD (create, read, update, delete)
 
 **DAO.java**
 
-[code lang="java"]
+```java
 package ch.hslu.issueman;
 
 import java.io.Serializable;
@@ -185,7 +185,7 @@ public interface DAO<T, Id extends Serializable> {
 	public void delete(T t);
 	public void deleteAll();
 }
-[/code]
+```
 
 This interface defines the functions required to communicate with the database later. As you can see we will use generics as we don't want to create the same interface implementation for every model (despite we only have one model in this example).
 
@@ -195,7 +195,7 @@ I will split the controller in multiple snippets and explain what's going on in 
 
 **Controller.java** - start
 
-[code lang="java"]
+```java
 package ch.hslu.issueman;
 
 import java.io.Serializable;
@@ -216,13 +216,13 @@ public class Controller<T, Id extends Serializable> implements DAO<T, Id> {
 	protected Controller(Class<T> clazz) {
         this.clazz = clazz;
     }
-[/code]
+```
 
 * `clazz` and the extended Controller constructor is a workaround to store the generic class type and retrieved it later.
 * `currentSession` is used to store a MySQL database access session.
 * `currentTransaction` is helper to manage database commits.
 
-[code lang="java"]
+```java
 public Session openCurrentSession() {
 		currentSession = getSessionFactory().openSession();
 		return currentSession;
@@ -259,12 +259,12 @@ public Session openCurrentSession() {
 	public void setCurrentTransaction(Transaction currentTransaction) {
 		this.currentTransaction = currentTransaction;
 	}
-[/code]
+```
 
 These lines provide methods to interact with the hibernate session manager. Not very interesting also quite common.
 Below you'll see that we will use `CurrentSession` to read from the database and `CurrentSessionwithTransaction` for operations such as `delete` in the database.
 
-[code lang="java"]
+```java
 	public void persist(T t) {
 		openCurrentSessionwithTransaction();
 		getCurrentSession().save(t);
@@ -319,7 +319,7 @@ Below you'll see that we will use `CurrentSession` to read from the database and
 		System.out.print("]");			
 	}
 }
-[/code]
+```
 
 This is the implementation of the DAO interface. Checkout the `getAll` method, there you'll see how the class name workaround is used.
 The console output of values is Json styled.
@@ -336,13 +336,13 @@ Now you will see the allmighty power of hibernate. It never was easier to connec
 
 **Model.java**
 
-[code lang="java"]
+```java
 package ch.hslu.issueman;
 
 public interface Model {
 	public String toJson();
 }
-[/code]
+```
 
 Easy but usefull. Every model has to implement the `toJson` method, because why not?
 
@@ -350,7 +350,7 @@ Easy but usefull. Every model has to implement the `toJson` method, because why 
 
 **Person.java**
 
-[code lang="java"]
+```java
 package ch.hslu.issueman;
 
 import javax.persistence.Column;
@@ -395,7 +395,7 @@ public class Person implements Model{
 	}
 
 } 
-[/code]
+```
 
 Those @-Annotation will tell hibbernate which column belongs to which object attribute. Awesome! Isn't it?
 
@@ -403,7 +403,7 @@ Those @-Annotation will tell hibbernate which column belongs to which object att
 
 **hibernate.cfg.xml**
 
-[code lang="xml"]
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE hibernate-configuration SYSTEM 
 "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
@@ -420,7 +420,7 @@ Those @-Annotation will tell hibbernate which column belongs to which object att
    <mapping class="ch.hslu.issueman.Person"/>
 </session-factory>
 </hibernate-configuration>
-[/code]
+```
 
 Add the same values as already used to configure flyway. Very important is the mapping property which finalizes the mapping process of the model with database table.
 
@@ -432,7 +432,7 @@ This is the last coding part of the first tutorial.
 
 **PersonController.java**
 
-[code lang="java"]
+```java
 package ch.hslu.issueman;
 
 import java.util.List;
@@ -479,7 +479,7 @@ public class PersonController implements DAO<Person, Integer>{
 		controller.printToJson(people);	
 	}
 }
-[/code]
+```
 
 As you can see the Person Controller uses the basic Controller to do some CRUD actions. Every model controller must implement the DAO interface and must use the basic Controller.
 This strategy allows us to define model depended actions within the CRUD methods.
@@ -488,7 +488,7 @@ This strategy allows us to define model depended actions within the CRUD methods
 
 **App.java**
 
-[code lang="java"]
+```java
 package ch.hslu.issueman;
 
 public class App {
@@ -517,7 +517,7 @@ public class App {
 	}
 
 }
-[/code]
+```
 
 This example application class shows how the Person Controller is used to retrieve and store Person object. Uncomment or comment sections to test the CRUD methods.
 
@@ -525,14 +525,14 @@ This example application class shows how the Person Controller is used to retrie
 
 You should see a lot of hibernate blabla and of course the Json outpout of the person table.
 
-[code]
+```
 Hibernate: select person0_.id as id1_0_, person0_.name as name2_0_ from person person0_
 [
 {"id": "1", "name":"Axel"}
 ,{"id": "2", "name":"Mr. Foo"}
 ,{"id": "3", "name":"Ms. Bar"}
 ]
-[/code]
+```
 
 That was the first part of this tutorial and of course it was just a peek into these great tools. Hibernate offers much more possibilites to connect different models and do other awesome stuff. So don't miss the documentation on their website or other tutorials.
 I hope to see you soon in the next chapter when we create a rich client application with JavaFX.

@@ -33,7 +33,7 @@ So here's the script:
 
 <!--more-->
 
-[code lang="ps"]
+```ps
 [System.Reflection.Assembly]::LoadWithPartialName("System.Web.Extensions")
 
 function Get-GitHubGists{
@@ -77,6 +77,6 @@ function Get-GitHubGists{
 Get-GitHubGists -UserUrl https://api.github.com/users/janikvonrotz/gists?page=1
 Get-GitHubGists -UserUrl https://api.github.com/users/janikvonrotz/gists?page=2
 Get-GitHubGists -UserUrl https://api.github.com/users/janikvonrotz/gists?page=3
-[/code]
+```
 
 Latest version: <a href="https://gist.github.com/6622205">https://gist.github.com/6622205</a>

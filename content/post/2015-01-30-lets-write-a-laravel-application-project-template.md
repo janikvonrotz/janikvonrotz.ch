@@ -125,7 +125,7 @@ Then install the Grunt packages.
 
 Now add the additional Grunt packages to your npm config file `package.json`.
 
-[code]
+```
 "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-copy": "~0.7.0",
@@ -134,7 +134,7 @@ Now add the additional Grunt packages to your npm config file `package.json`.
     "grunt-contrib-watch": "~0.6.1",
     "grunt-bg-shell": "~2.3.1"
 }
-[/code]
+```
 
 If you did so run the npm installer.
 
@@ -144,7 +144,7 @@ Create a Grunt task file `Gruntfile.js` in the root directory of your project.
 
 And add this content.
 
-[code]
+```
 module.exports = function(grunt){
 
   grunt.initConfig({
@@ -215,7 +215,7 @@ module.exports = function(grunt){
   grunt.registerTask('default', ['cssmin','uglify','bgShell:runLaravel','watch']);
 
 };
-[/code]
+```
 
 This file provides the following features:
 
@@ -239,22 +239,22 @@ Add these files to a new folder called default in the app views folder `<project
 
 Then delete the file `<project name\app\views\home.php` and add a new file `<project name>\app\views\home.blade.php` with the following content.
 
-[code]
+```
 @extends('default.master')
 @section('content')
 Content goes here
 @stop
-[/code]
+```
 
 This template assumes that you distinct between a local and a productive environment. You have to update two configuration files before you'll run your project.
 
 In the file `<project name>\boostrap\start.php` add your hostname to the detect environment array.
 
-[code]
+```
 $env = $app->detectEnvironment(array(
 	'local' => array('<yourhostname>','<anotherhostname>'),
 ));
-[/code]
+```
 
 If you want to connect to a MySQL database you also of to update the local environment database config file `<project name>\app\config\local\database.php`.
 

@@ -39,7 +39,7 @@ This is miss behaviour is simply solved by adding a custom css in the master pag
 ul.dynamic li {
     white-space: nowrap;
 }
-[/code]
+```
 
 In the end it should look somehow like this.
 

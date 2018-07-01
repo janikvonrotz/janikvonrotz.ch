@@ -47,7 +47,7 @@ In the person object we have some attributes that we want to display in the tabl
 However the data access object we receive is the login. This is the challenge of nested objects and how to display these properties.
 
 Now we will write the view class for our table view. The view class is connected with the javafx table view.
-[code lang="java"]
+```java
 public class PersonView{
 
 	private static LoginData<Login, Integer> loginData= new LoginData<Login, Integer>(Login.class);
@@ -67,12 +67,12 @@ public class PersonView{
 
 	@FXML
 	private TableColumn<Login, String> tcEmail;
-[/code]
+```
 The LoginData component of course holds the login objects and communicates with the persistence layer.
 The filtered list will be synced with the table view component.
 As next, we tell what properties should be displayed in the cells. Remember that we want to display nested properties.
 
-[code lang="java"]
+```java
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		
@@ -93,12 +93,12 @@ As next, we tell what properties should be displayed in the cells. Remember that
 			}  
 		});
 
-[/code]
+```
 
 By adding a cell value factory you can overwrite the logic of how values of the list should displayed and access.
 Now it's time for the filter. By adding a listener to the text property we hook in code that will trigger whenever something is entered into the filter text field.
 
-[code lang="java"]
+```java
 
 		txFilter.textProperty().addListener(
 				(observable, oldValue, newValue) -> {
@@ -124,11 +124,11 @@ Now it's time for the filter. By adding a listener to the text property we hook 
 		Refresh();
 	}
 
-[/code]
+```
 
 Finally create a refresh method that loads the data into the table view. Make sure to make this method public.
 
-[code lang="java"]
+```java
 
 	public void Refresh() {
 		try {	
@@ -142,6 +142,6 @@ Finally create a refresh method that loads the data into the table view. Make su
 		}
 	}
 }
-[/code]
+```
 
 Congrats, that's it.

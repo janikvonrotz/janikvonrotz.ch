@@ -61,7 +61,7 @@ Now we need to generate stronger DHE parameter:
 
 Add this Nginx configuration to your website config.
 
-[code]
+```
 server{
 
         # set ssl port
@@ -101,11 +101,11 @@ server{
         
         ...
 }
-[/code]
+```
 
 If you wish to redirect all http traffic to https you can add this additional Nginx server configuration.
 
-[code]
+```
 server{
 
       listen 80;
@@ -114,7 +114,7 @@ server{
 
       return 301 https://[host]$request_uri;
 }
-[/code]
+```
 
 Test config and reload Nginx service.
 

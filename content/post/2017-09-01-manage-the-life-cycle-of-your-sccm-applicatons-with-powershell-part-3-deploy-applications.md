@@ -30,7 +30,7 @@ The script is fairly simple. It cycles through the applications catalog and chec
 
 **Deploy-CMApplications.ps1**
 
-[code lang="powershell"]
+```ps
 Import-Module "C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\bin\ConfigurationManager.psd1"
 cd "$((Get-PSProvider | Where-Object {$_.Name -eq "CMSite"}).Drives.Name):"
 
@@ -73,6 +73,6 @@ Get-CMApplication | Where-Object{ $_.LocalizedDisplayName -like $ApplicationName
         Write-Warning "Application has already been distributed to the device collection."
     }
 }
-[/code]
+```
 
 The next post of this series is already the last post. Stay calm!

@@ -24,9 +24,9 @@ The first command imports the PowerShell Active Directory module, which should b
 
 <img class="size-full wp-image-318 alignnone" alt="Install PowerShell Active Directory Module" src="https://janikvonrotz.ch/wp-content/uploads/2013/07/2013-07-25-11_43_24-Windows-Funktionen.png" width="636" height="359" />
 
-[code lang="ps"]
+```ps
 Import-Module ActiveDirectory
 Get-ADUser -Filter {EmailAddress -like "*"} -Properties * | select DisplayName, GivenName, Name, Surname, mail, SamAccountName, Department, Title, extensionAttribute1, extensionAttribute2 | Out-GridView
-[/code]
+```
 
 And the second command creates a simple report.

@@ -37,19 +37,19 @@ This is another SQL database best practice to enable page locks on the User Prof
 
 First run this SQL statement:
 
-[code lang="sql"]
+```sql
 USE "SP_AS_UPS_Sync"
 GO
 SELECT 'ALTER INDEX ' + I.Name + ' ON ' + T.Name + ' SET (ALLOW_PAGE_LOCKS = ON)' As Command
 FROM sys.indexes I
 LEFT OUTER JOIN sys.tables T ON I.object_id = t.object_id
 WHERE I.allow_page_locks = 0 AND T.name IS NOT NULL
-[/code]
+```
 
 This statement will output the alter statement foreach index. Run this output as well.
 
-[code lang="sql"]
+```sql
 ALTER INDEX IX_RequestOutput_ObjectKey ON RequestOutput SET (ALLOW_PAGE_LOCKS = ON)
 ALTER INDEX IX_RequestOutput_RequestIdentifier_ObjectID_AttributeKey_ValueReference ON RequestOutput SET (ALLOW_PAGE_LOCKS = ON)
 ...
-[/code]
+```

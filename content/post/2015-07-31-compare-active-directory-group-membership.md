@@ -23,7 +23,7 @@ tags:
 ---
 The following scripts allows you to compare the group membership of two users.
 <!--more-->
-[code lang="powershell"]
+```ps
 Import-Module ActiveDirectory
 
 $user1 = "userRef"
@@ -41,6 +41,6 @@ $result | Where-Object{$_.SideIndicator -eq "<="} | ForEach-Object{$_.name}
 Write-Host "`n$user2 is member of these goups in addition:" -ForegroundColor Black -BackgroundColor Yellow
 
 $result | Where-Object{$_.SideIndicator -eq "=>"} | ForEach-Object{$_.name}
-[/code]
+```
 
 Get the latest version of this script here: [https://gist.github.com/051099188f24894502c1](https://gist.github.com/051099188f24894502c1)

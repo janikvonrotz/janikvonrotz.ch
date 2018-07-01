@@ -30,7 +30,7 @@ The `i18n` state reducer contains all translation and puts the default language 
 
 **reducers/i18n.js**
 
-[code]
+```
 let phrases = {
   de: {
     button: {
@@ -60,13 +60,13 @@ export default (state = phrases.de, action) => {
       return state
   }
 }
-[/code]
+```
 
 To get f.g. the translated button labels simply map the `i18n` state as prop on the component.
 
 **components/RouterSearch.js**
 
-[code]
+```
 ...
 import React from 'react'
 import { connect } from 'react-redux'
@@ -97,13 +97,13 @@ const mapStateToProps = (state) => {
   }
 }
 export default connect(mapStateToProps)(RouterSearch)
-[/code]
+```
 
 Switching the language is easily done by setting the `language` state.
 
 **actions.js**
 
-[code]
+```
 ...
 export const switchLanguage = (language) => {
   return {
@@ -112,6 +112,6 @@ export const switchLanguage = (language) => {
   }
 }
 ...
-[/code]
+```
 
 Obviously the are a lot cons to this method. First, there is no fallback for not translated content as you access to `i18n` state directly. Second, putting multilingual content into the store is probably not a good idea in the first place. What do you think? Are there better options?

@@ -27,9 +27,9 @@ With a KeePass I found an easy solution to open a remote connection with credent
 
 This example shows how to configure an entry in order to open a remote connection using the stored credentials:
 
-[code]
+```
 cmd://"C:\Windows\System32\cmd.exe" /c cmdkey.exe /generic:TERMSRV/{S:SERVER} /user:{S:DOMAIN}{USERNAME} /pass:{PASSWORD} &amp; mstsc.exe /v:{S:SERVER} &amp; cmdkey.exe /delete:TERMSRV/{S:SERVER}
-[/code]
+```
 
 Latest version of this code snippet: [https://gist.github.com/7449352](https://gist.github.com/7449352)
 

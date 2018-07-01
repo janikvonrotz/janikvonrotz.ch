@@ -19,7 +19,7 @@ What I didn't was the fact that changes in the global navigation term set won't 
 
 To apply this changes I've written a simple PowerShell function that repins the global navigation terms on the allocated navigation term set.
 <!--more-->
-[code lang="ps"]
+```ps
 <#
 $Metadata = @{
 	Title = "Update SharePoint Web Term Navigation"
@@ -157,7 +157,7 @@ function Update-SPWebTermNavigation{
      $WebNavigationSettings.CreateFriendlyUrlsForNewPages = $false
      $WebNavigationSettings.Update()
 }
-[/code]
+```
 
 This function is part of my [PowerShell PowerUp](http://janikvonrotz.github.io/PowerShell-PowerUp/) framework.
 

@@ -53,7 +53,7 @@ Create the following file:
 
 **MarkdownEditor.jsx**
 
-[code lang="js"]
+```js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Editor, EditorState, ContentState, Modifier} from 'draft-js';
@@ -75,7 +75,7 @@ export default class MarkdownEditor extends React.Component {
 
   render() {}
 }
-[/code]
+```
 
 The only important thing to mention here is the bootstrap import. I have my own bootstrap component in another directory. Feel free to use pre-built bootstrap components or replace `GridRow` and `GridColumn` later on. What I basically do with them is building the separated markdown input and preview panels. There are many other ways to achieve a similar result as you will see.
 
@@ -83,7 +83,7 @@ Next configure marked.js. For this create new file and store it where you would 
 
 **marked.js**
 
-[code lang="js"]
+```js
 import marked from 'marked';
 
 marked.setOptions({
@@ -92,7 +92,7 @@ marked.setOptions({
 });
 
 export default marked;
-[/code]
+```
 
 Very simple. Import the marked function and configure it with options. The gfm option stand for GitHub flavoured markdown.
 
@@ -100,7 +100,7 @@ If you did so, complete the constructor with the following piece of code.
 
 **MarkdownEditor.jsx**
 
-[code lang="js"]
+```js
 ...
 
   constructor(props) {
@@ -113,7 +113,7 @@ If you did so, complete the constructor with the following piece of code.
   }
 
 ...
-[/code]
+```
 
 The first state contains the rendered html code. The second state is the editor itself. Draft.js editor can be manipulated with this state.
 
@@ -121,7 +121,7 @@ Next complete the update function.
 
 **MarkdownEditor.jsx**
 
-[code lang="js"]
+```js
 ...
 
   update(editorState) {
@@ -139,7 +139,7 @@ Next complete the update function.
   }
 
 ...
-[/code]
+```
 
 Whenever the editor input is change we will call the update function. Within this function you'll define what actions to call. What I do is updating both states and calling the `onChange` function, which is defined by the parent component.
 
@@ -149,7 +149,7 @@ Before completing the render function and the upload function, define file paste
 
 **MarkdownEditor.jsx**
 
-[code lang="js"]
+```js
 ...
 
   handlePastedFiles(files){
@@ -165,13 +165,13 @@ Before completing the render function and the upload function, define file paste
   }
 
 ...
-[/code]
+```
 
 Now the render function. Important here, ignore the `GridRow` and `GridColumn`. They both are bootstrap components, which I use to build the layout. Use whatever pleases you.
 
 **MarkdownEditor.jsx**
 
-[code lang="js"]
+```js
 ...
 
 render() {
@@ -198,7 +198,7 @@ render() {
   }
 
 ...
-[/code]
+```
 
 Every function is now connected with an element. The `Editor` tag is the draft.js component. No more explanation needed.
 
@@ -206,7 +206,7 @@ Finally the upload function.
 
 **MarkdownEditor.jsx**
 
-[code lang="js"]
+```js
 ...
 
 upload(file, selection){
@@ -225,7 +225,7 @@ upload(file, selection){
   }
 
 ...
-[/code]
+```
 
 For every call the file is uploaded a url is inserted into the editor at the current position. The upload function is just another call, sorry to disappoint you. If you're asking where the upload actually happens, I can't give you the answer.
 This really depends on your application framework. For this application I have used mantra where components, data collection and actions are totally separated.
@@ -233,7 +233,7 @@ However I will show how to upload the file with Meteor and FS Collection. But re
 
 **files.js**
 
-[code lang="js"]
+```js
 ...
 
   upload({Meteor, FlowRouter}, file) {
@@ -264,7 +264,7 @@ However I will show how to upload the file with Meteor and FS Collection. But re
   }
 
 ...
-[/code]
+```
 
 If the file comes from the clipboard it doesn't have a name. Only type and date is set. After inserting the file into the files collection the markdown url is built. The url here points to the FS Collection filesystem API.
 

@@ -41,7 +41,7 @@ To get started with node inspector install these tools:
 
 To install node inspector run these commands in your project folder from the command line:
 
-[code lang="js"]
+```js
 
 // install node inspector globally as developer dependencies
 
@@ -51,7 +51,7 @@ npm install -g node-inspector --save-dev
 
 node-debug app.js
 
-[/code]
+```
 
 Your browser will open the developer console on the debugging page now.
 

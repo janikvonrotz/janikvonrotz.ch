@@ -31,7 +31,7 @@ Let's get startet with the client.
 
 **client/users/actions.js**
 
-[code lang="js"]
+```js
 ...
 let loginUserWithLDAP = (email, password, callback) => {
     var loginRequest = {
@@ -48,7 +48,7 @@ let loginUserWithLDAP = (email, password, callback) => {
   loginUserWithLDAP(email, password, (error, result) => {
     if (!error) {
     ...
-[/code] 
+``` 
 
 Instead of using `Meteor.loginWithPassword()` you have to do a login method call with a different set of parameters. This allows us to recognise from the server if client intends to authenticate with LDAP. Make sure that you don't pass a `password` option as part of the login request, otherwise the `accounts-password` login handler will throw an error.
 
@@ -56,7 +56,7 @@ Next I will tell you how to create and register the LDAP authentication handler 
 
 **server/ldap.js**
 
-[code lang="js"]
+```js
 import ldap from 'ldapjs'
 import assert from 'assert'
 import { Accounts } from 'meteor/accounts-base'
@@ -83,11 +83,11 @@ ldapAuth.checkAccount = (options) => {
   let dn = []
   var future = new Future()
   ...
-[/code]
+```
 
 After the library imports, options for the LDAP authentication are defined. Instead of connecting the LDAP client to a real LDAP directory I've used the public available directory of Forum Systems: [Online LDAP Test Server](http://www.forumsys.com/tutorials/integration-how-to/ldap/online-ldap-test-server/). Following up the function header of the authentication method and a suspicious object is declared. You might haven't seen or read about the Future fiber yet. As you might know Meteor doesn't like async code the same as Node does or you came along a situation where your asynchronous code didn't work as expected. To keep it short, the authentication handler request code must be run synchronous and the Future fiber helps us running asynchronous code.
 
-[code lang="js"]
+```js
   ...
   ldapAuth.client.search(ldapAuth.searchOu, ldapAuth.searchQuery(options.email), (error, result) => {
     assert.ifError(error)
@@ -128,11 +128,11 @@ After the library imports, options for the LDAP authentication are defined. Inst
   return future.wait()
 }
 ...
-[/code]
+```
 
 Now comes probably the most difficult part. The body of our auth method tells if the LDAP credentials are valid by binding and unbinding the LDAP user with the LDAP directory. Any misbehaviour results in the return value `false`. An important line to point out here is the return statement of the `ldapAuth` object which is also assigned with a new `profile` property. In case of successful authentication we will use this property to create a new Meteor user in the users collection in the next step.
 
-[code lang="js"]
+```js
 ...
 Accounts.registerLoginHandler('ldap', (loginRequest) => {
 
@@ -168,7 +168,7 @@ Accounts.registerLoginHandler('ldap', (loginRequest) => {
   }
 })
 ...
-[/code]
+```
 
 Finally, in case of successful LDAP user check, a collection lookup finds out wether the authenticated users is already in the database and if not creates a new entry. As you can see the `profile` property of the `ldapAuth` object is now used as a parameter. To make sure that user is authenticated after a browser refresh you have to create a token and store it. The return object contains the user identity and the login token.
 

@@ -33,7 +33,7 @@ Here's how you can get a neat bootstrap modal for your Meteor React project.
 <!--more-->
 I assume you already have added the `bootstrap`, `classnames` and `react` package to your project.
 
-[code lang="js"]
+```js
 Modal = React.createClass({
   renderFooter(){
     if(!this.props.footer){
@@ -66,22 +66,22 @@ Modal = React.createClass({
     </div>
   }
 });
-[/code]
+```
 
 The Button tag of course is another React component that you have to build yourself.
 
 
 To toggle the visibility of the modal dialog simply add this css class.
 
-[code lang="css"]
+```css
 .show-modal{
     display: block;
 }
-[/code]
+```
 
 Here's and excerpt of the necessary code to run the component:
 
-[code lang="js"]
+```js
 YourComponent = React.createClass({
 
 ...
@@ -107,7 +107,7 @@ render(){
 ...
 
 });
-[/code]
+```
 
 The final result:
 

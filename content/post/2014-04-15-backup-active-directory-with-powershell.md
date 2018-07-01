@@ -33,7 +33,7 @@ What it does:
 * Keep a daily, weekly and monthly snapshot
 * Notify me if something failed (requires [PowerShell PowerUp](http://janikvonrotz.github.io/PowerShell-PowerUp/))
 <!--more-->
-[code lang="ps"]
+```ps
 <#
 $Metadata = @{
 	Title = "Backup ActiveDirecotry"
@@ -106,6 +106,6 @@ try{
 
     Write-PPErrorEventLog -Source "Backup ActiveDirectory" -ClearErrorVariable
 }
-[/code]
+```
 
 Latest version of this script: [https://gist.github.com/10729700](https://gist.github.com/10729700)

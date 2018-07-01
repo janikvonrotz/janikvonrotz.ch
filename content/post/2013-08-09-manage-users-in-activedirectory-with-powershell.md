@@ -31,7 +31,7 @@ As base there's always a CSV file like this one: <a href="https://janikvonrotz.
 
 To a new user I'll use this script:
 
-[code lang="ps" highlight="1,3"]
+```ps
 
 Import-Module Quest.ActiveRoles.ArsPowerShellSnapIn
 
@@ -85,13 +85,13 @@ $ADUsers | foreach{
     }
 }
 
-[/code]
+```
 
 <h1>Update users</h1>
 
 To update the users attributes I made this handy script:
 
-[code lang="ps" highlight="1,3"]
+```ps
 
 Import-Module Quest.ActiveRoles.ArsPowerShellSnapIn
 
@@ -122,7 +122,7 @@ $ADUsers | foreach{
     }
 }
 
-[/code]
+```
 
 <ol>
     <li>Watch out! there are several ways to import the quest modules in PowerShell.</li>

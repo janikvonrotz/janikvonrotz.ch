@@ -28,7 +28,7 @@ Like the last script this one is also fairly simple. Provide the name of the app
 
 **Remove-CMApplications.ps1**
 
-[code lang="powershell"]
+```ps
 Import-Module "C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\bin\ConfigurationManager.psd1"
 Import-Module ActiveDirectory
 cd "$((Get-PSProvider | Where-Object {$_.Name -eq "CMSite"}).Drives.Name):"
@@ -62,7 +62,7 @@ Get-CMApplication | Where-Object{ $_.LocalizedDisplayName -like $ApplicationName
         Remove-CMDeviceCollection -Name $DeviceCollectionName -Force
     }
 }
-[/code]
+```
 
 The only asset which is not removed is the application folder.
 

@@ -69,7 +69,7 @@ If you'll get the following message.
     
 Try my policy.
 
-[code]
+```
 {
   "Statement": [
     {
@@ -93,7 +93,7 @@ Try my policy.
     }
   ]
 }
-[/code]
+```
     
 # Source
 

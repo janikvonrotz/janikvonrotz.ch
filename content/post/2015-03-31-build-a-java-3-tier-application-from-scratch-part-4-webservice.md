@@ -43,7 +43,7 @@ RESTeasy is our JAX-RS provider and client component. In this part we will conig
 
 * Update the webservice configuration file.
 
-[code lang="xml"]
+```xml
 <web-app id="WebApp_ID" version="2.4"
 	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
@@ -73,7 +73,7 @@ RESTeasy is our JAX-RS provider and client component. In this part we will conig
 	</servlet-mapping>
 
 </web-app>
-[/code]
+```
 
 The resources class mapps actions to url paths, a provider hooks up into every request done by a client such as authentication or access filtering.
 
@@ -84,7 +84,7 @@ That means 5 models * 3 CUD-methods + 2 R-methods + 1 login method = 18 path act
 
 **Route.java**
 
-[code lang="java"]
+```java
 package ch.issueman.webservice;
 
 import java.util.HashMap;
@@ -319,7 +319,7 @@ public class Route{
 		return Response.status(Status.OK).entity("Comment added").build();
 	}
 }
-[/code]
+```
 
 Holy guacamoly, that's a brain f**ker. Let's do a deep dive.
 
@@ -346,7 +346,7 @@ ClientResponseFilter - Filter/modify inbound responses
 
 * Update the authentication provier.
 
-[code lang="java"]
+```java
 package ch.issueman.webservice;
 
 import java.io.IOException;
@@ -446,7 +446,7 @@ public class Authenticator implements ContainerRequestFilter {
 		return isAllowed;
 	}
 }
-[/code]
+```
 
 This class is an implementation of the `ContainerRequestFilter` interface. Wasn't sure wether I should explain this in detail. It's actually very simple: the request context contains our header data, from there it extracts, converts and validates the basic authentication data. Next the provider checks for added security annotations and runs related checks. With an additional function it looks up the user credentials and roles in our database via the user model controller.
 
@@ -460,7 +460,7 @@ The `javafaker` library creates random data on every method call. We will use th
 
 **Seed.java**
 
-[code lang="java"]
+```java
 package ch.issueman.webservice;
 
 import java.util.ArrayList;
@@ -527,7 +527,7 @@ public class Seed {
 		System.out.println("Seeded: " + j*(i/4+1) + " comments");
 	}
 }
-[/code]
+```
 
 Do not run this class within eclipse, we will use gradle to execute the main method.
 But before we do that we have to compile the classes and update the eclipse project metadata.
@@ -542,11 +542,11 @@ Now we are ready to seed.
 
 You should something like this:
 
-[code]
+```
 Seeded: 63 people
 Seeded: 6 projects
 Seeded: 66 comments
-[/code]
+```
 
 We got the code we got the data, it's time to run the webservice.
 

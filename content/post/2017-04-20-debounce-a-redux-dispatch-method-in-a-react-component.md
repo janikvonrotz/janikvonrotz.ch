@@ -28,7 +28,7 @@ Tightly connected reactivity in a react application has the side effect that it 
 <!--more-->
 Here's a simple example of a react search component where the redux dispatch method will be debounced.
 
-[code]
+```
 import React from 'react'
 import { Card, CardText, TextField } from 'material-ui'
 import { setUserFilter } from '../actions'
@@ -61,7 +61,7 @@ class UserSearch extends React.Component {
     </Card>
   }
 }
-[/code]
+```
 
 The search is only dispatched if the last call of the update filter method is older than 500ms.
 

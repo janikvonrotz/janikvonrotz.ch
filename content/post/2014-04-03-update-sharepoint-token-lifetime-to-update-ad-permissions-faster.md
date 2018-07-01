@@ -33,7 +33,7 @@ Thanks to [Ryan McIntyre](http://blog.randomdust.com/index.php/2013/06/sharepoin
 
 By adjusting the lifetime of the claims token you can shorten the time it takes to update the Active Directory group changes.
 <!--more-->
-[code lang="ps"]
+```ps
 if(-not (Get-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue)){Add-PSSnapin "Microsoft.SharePoint.PowerShell"}
 
 # update SharePoint cache token lifetime
@@ -51,6 +51,6 @@ $SPSecurityTokenServiceConfig.FormsTokenLifetime = (New-TimeSpan -minutes 5)
 # if you happen to set a lifetime that is shorter than the expiration window user will be blocked from accessing the site.
 $SPSecurityTokenServiceConfig.LogonTokenCacheExpirationWindow = (New-TimeSpan -minutes 4)
 $SPSecurityTokenServiceConfig.Update()
-[/code]
+```
 
 Get the latest version of this code snippet here: [https://gist.github.com/9950021](https://gist.github.com/9950021)

@@ -57,7 +57,7 @@ Initialize a personal pass store.
 
 Passwords are encrypted with a gpg key. In a team environment the gpg key should not impersonate somebody but rather the team itself. That is why a new gpg key is required.
 
-[code lang="bash"]
+```bash
 gpg --gen-key
 # (1) RSA and RSA (default)
 > enter
@@ -74,7 +74,7 @@ gpg --gen-key
 > O
 # Enter the password
 > _PASSWORD_
-[/code]
+```
 
 Create a new pass store in a subfolder.  
 `pass init -p _PROJECT_NAME_ _TEAM_MAIL_`
@@ -84,24 +84,24 @@ Add the gpg test password to the new store.
 
 Setup a git repo for the shared pass store.
 
-[code lang="bash"]
+```bash
 cd ~/.password-store/_PROJECT_NAME_
 git init
 git add .
 git commit -m "Init _PROJECT_NAME_ password store"
 git remote add origin _GIT_REMOTE_URL_
 git push --set-upstream origin master
-[/code]
+```
 
 Add the gpg public key to the store.
 
-[code lang="bash"]
+```bash
 mkdir .gpg-keys
 gpg --output .gpg-keys/_TEAM_MAIL_.gpg --export _TEAM_MAIL_
 git add _TEAM_MAIL_.gpg
 git commit -m "Add _TEAM_MAIL_ public key"
 git push
-[/code]
+```
 
 The remote repo can be cloned as a subfolder into the existing pass store folders. Git will treat the subfolder as a git submodule.
 
@@ -127,12 +127,12 @@ And export the public gpg key.
 
 Then submit a request by committing the gpg id.
 
-[code lang="bash"]
+```bash
 cd ~/.password-store/_PROJECT_NAME_
 git add .gpg-id
 git commit -m "Request access for _PERSONAL_MAIL_"
 git push
-[/code]
+```
 
 The receiver of this request is the owner of the shared pass store signer key `_TEAM_MAIL_`.
 
@@ -142,33 +142,33 @@ The owner of the signer key must sign all keys of new team members.
 
 First import the new keys.
 
-[code lang="bash"]
+```bash
 cd ~/.password-store/_PROJECT_NAME_/.gpg-keys
 gpg --import _PERSONAL_MAIL_.gpg
-[/code]
+```
 
 Then sign the imported key.
 
-[code lang="bash"]
+```bash
 gpg --edit-key _PERSONAL_MAIL_
 # sign it
 > lsign
 > y
 # enter the passphrase for _TEAM_MAIL_
 > save
-[/code]
+```
 
 Reinitialize the password store.  
 `pass init -e -p _PROJECT_NAME_ $(cat ~/.password-store/_PROJECT_NAME_/.gpg-id)`
 
 Commit the changes.
 
-[code lang="bash"]
+```bash
 cd ~/.password-store/_PROJECT_NAME_
 git add .
 git commit -m "Access granted for _PERSONAL_MAIL_"
 git push
-[/code]
+```
 
 The user should now be able the decrypt the password using the `_PERSONAL_MAIL_` key.
 
@@ -178,19 +178,19 @@ New password insertions must be encrypted with the `_TEAM_MAIL_` gpg key.
 
 The gpg key can be imported from the shared pass folder.
 
-[code lang="bash"]
+```bash
 cd ~/.password-store/_PROJECT_NAME_/.gpg-keys
 gpg --import _TEAM_MAIL_.gpg
-[/code]
+```
 
 In order to encrypt new pass entries, you must trust the key.
 
-[code lang="bash"]
+```bash
 gpg --edit-key _TEAM_MAIL_.gpg
 > trust
 > 5
 # exit the cli
-[/code]
+```
 
 Now you can start creating new entries using the [pass cli](https://git.zx2c4.com/password-store/about/).
 

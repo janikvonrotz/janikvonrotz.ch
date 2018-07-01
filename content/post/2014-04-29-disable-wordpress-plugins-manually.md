@@ -32,14 +32,14 @@ The settings for the plugin activation are stored in the `wp_options` table.
 
 To get the data for the activated plugins run this sql statement:
 
-[code lang="sql"]
+```sql
 SELECT * FROM wp_options WHERE option_name = 'active_plugins';
-[/code]
+```
 
 By editing the option_value field you'll get a semicolon separated list of plugins and by simply removing a value you'll deactivate the plugin.
 
 For WP-Piwik it was:
 
-[code lang="sql"]
+```sql
 i:8;s:21:"wp-piwik/wp-piwik.php";
-[/code]
+```

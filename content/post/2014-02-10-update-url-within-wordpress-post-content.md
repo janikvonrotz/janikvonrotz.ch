@@ -40,11 +40,11 @@ As you might know, I've used this url in several posts.
 
 This easy done with the following SQL query:
 
-[code lang="sql"]
+```sql
 
 UPDATE wp_posts SET post_content = REPLACE (post_content, 'https://www.oldsiteurl.com', 'https://www.newsiteurl.com')
 
-[/code]
+```
 
 To run this SQL script you have to able to access the WordPress MySQL database.
 

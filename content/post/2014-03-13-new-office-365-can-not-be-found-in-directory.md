@@ -31,7 +31,7 @@ As part of the user provisioning process in my company every user account gets a
 When I've tried access the SharePoint Online website via ADFS SSO, I received an error message like this:
 <!--more-->
 
-[code lang=text]
+```text
 user@example.com can not be found in directory 
 
 Correlation ID: 812b329c-0ad4-702d-d866-1a5dd6a5d715
@@ -39,7 +39,7 @@ Date and Time: 13/03/2014 08:58:17
 URL: https://example.vbluzern.com/?wa=wsignin1.0 
 User: user@example.com
 Issue Type: Partner User Invalid
-[/code]
+```
 
 I tried everything to get rid of this error. Recreating the user account, disable, enable, assign another license, compare with working accounts, but nothing could solve this issue.
 

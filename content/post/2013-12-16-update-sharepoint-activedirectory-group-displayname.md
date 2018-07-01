@@ -26,7 +26,7 @@ To update the the name for all Active Directory groups you can run this snippet 
 
 <!--more-->
 
-[code lang="ps"]
+```ps
 
 if ((Get-PSSnapin 'Microsoft.SharePoint.PowerShell' -ErrorAction SilentlyContinue) -eq $null){Add-PSSnapin 'Microsoft.SharePoint.PowerShell'}
 
@@ -44,6 +44,6 @@ Get-SPSite | where{$SPSiteFilter -contains $_.Url} | %{
 
     }
 }
-[/code]
+```
 
 This snippet is part of my SharePoint default settings script: <a href="https://gist.github.com/7871902">https://gist.github.com/7871902</a>

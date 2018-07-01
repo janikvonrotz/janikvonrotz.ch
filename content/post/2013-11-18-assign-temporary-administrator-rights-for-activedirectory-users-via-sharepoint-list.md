@@ -49,7 +49,7 @@ The scripts reads from the SharePoint list with predefined credentials and remot
 
 Watch out to store the computer object in a OU instead of an container, it's not possible to assign GPOs to an AD container!
 
-[code lang="ps"]
+```ps
 <#
 $Metadata = @{
 	Title = "Assign Temporary Administrator Rights"
@@ -186,7 +186,7 @@ Get-SPWeb '$SPWebUrl' | %{
 
     Write-PPErrorEventLog -Source "Assign Temporary Administrator Rights"
 }
-[/code]
+```
 
 Run this script as a hourly or daily scheduled task.
 

@@ -47,9 +47,9 @@ We will start with a refresh of the file structure. The picture below shows yell
 
 **hibernate.cfg.xml**
 
-[code lang="xml"]
+```xml
 <mapping class="ch.hslu.issueman.model.Person"/>
-[/code]
+```
 
 * Finally create the JavaFX view file `Home.fxml` in the view directory. We will update this file later.
 
@@ -65,7 +65,7 @@ I assume you've completed the first tutorial and will only show the changes to f
 
 **PersonController.java** - begin
 
-[code lang="java"]
+```java
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -78,13 +78,13 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import ch.hslu.issueman.model.Person;
-[/code]
+```
 
 A lot of new dependencies required by JavaFX.
 
 At the end of the file before the closing `}` inser the following snippets.
 
-[code lang="java"]
+```java
 	@FXML
 	private Button btAdd;
 	
@@ -105,40 +105,40 @@ At the end of the file before the closing `}` inser the following snippets.
 	
 	@FXML
 	private TableColumn<Person, String> tcName;
-[/code]
+```
 
 These objects allows us to set and get values from the application interface.
 
-[code lang="java"]
+```java
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		tcId.setCellValueFactory(new PropertyValueFactory<Person, Integer>("id"));		
 		tcName.setCellValueFactory(new PropertyValueFactory<Person, String>("name"));
 		refreshPersonTable();
 	}
-[/code]
+```
 
 Whenever the application is startet the `initialize` method will be called. In this function we tell the table view column which value of the person it has to display and also call the `refreshPersonTable` method which is added next.
 
-[code lang="java"]
+```java
 	public void refreshPersonTable(){
 		tvPerson.setItems(FXCollections.observableArrayList(getAll()));
 	}
-[/code]
+```
 
 In this method we feed the table view with a person array.
 
-[code lang="java"]	
+```java	
 	@FXML
 	public void clickTableView(){
 		txName.textProperty().set(tvPerson.getSelectionModel().getSelectedItem().getName());
 	}
-[/code]
+```
 
 As you can see there's a FXML-Annotation as well. This tag allows us to connect an event added by the scene build with a function in the controller.
 Whenever a row is clicked in the table view we load the content to the form part (if you have got more than one field its recommanded to store the chosen object in a temporary variable).
 
-[code lang="java"]
+```java
 	@FXML
 	public void clickAdd(){
 		controller.persist(new Person(txName.getText()));
@@ -158,7 +158,7 @@ Whenever a row is clicked in the table view we load the content to the form part
 		controller.delete(tvPerson.getSelectionModel().getSelectedItem());
 		refreshPersonTable();
 	}
-[/code]
+```
 
 Some more event methods for the buttons.
 
@@ -176,7 +176,7 @@ If you don't know how to accomplish that yet you can copy the fxml definitions b
 
 **Home.fxml**
 
-[code lang="xml"]
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.image.*?>
@@ -205,7 +205,7 @@ If you don't know how to accomplish that yet you can copy the fxml definitions b
       <TextField fx:id="txName" layoutX="196.0" layoutY="61.0" />
    </children>
 </AnchorPane>
-[/code]
+```
 
 And we are almost done.
 
@@ -215,7 +215,7 @@ To launch the whole scene we have to update the `App.java` code as showed below.
 
 **App.java**
 
-[code lang="java"]
+```java
 package ch.hslu.issueman;
 	
 import javafx.application.Application;
@@ -241,7 +241,7 @@ public class App extends Application {
 	}
 }
 
-[/code]
+```
 
 Hurray! We are done! You can run the application now and should be able to add, edit and delete people from the list all whilst they are stored in the MySQL database.
 

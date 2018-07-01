@@ -45,7 +45,7 @@ Lets get started. On the server-side I'll give you this simple boilerplate:
 
 **server\configs\account.js**
 
-[code]
+```
 import {Meteor} from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-base';
 
@@ -64,7 +64,7 @@ export default () => {
     return user;
   });
 }
-[/code]
+```
 
 It's basically is a hook for the client create method which make sure the user object properties are at the right place. Make sure to remember what is passed by the options variable and what not, I'll promise it's not what you'll expect from the client side.
 
@@ -72,7 +72,7 @@ For the client side I'll show you a method which is called inside a React compon
 
 **client\modules\user\component\users.jsx**
 
-[code]
+```
 
 ...
 
@@ -91,7 +91,7 @@ For the client side I'll show you a method which is called inside a React compon
 
 ...
 
-[/code]
+```
 
 The object created in this method I pass to the `Accounts.createUser(user, [err, res])` method. As you can see there aren't any options on the client side method, so how does Meteor distinct the properties into user and option variables for the server? Well everything that is passed with the user object and is not called **email**, **username** and **password** is put into the options variable. 
 

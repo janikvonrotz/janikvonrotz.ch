@@ -66,7 +66,7 @@ In case you are going the change to url of the WordPress website f.g. `http://` 
 
 Here is an example for url update using SSL only.
 
-[code lang="sql"]
+```sql
 UPDATE wp_posts SET post_content = REPLACE (post_content, 'http://', 'https://');
 UPDATE wp_posts SET post_content_filtered = REPLACE (post_content_filtered, 'http://', 'https://');
 UPDATE wp_posts SET guid = REPLACE (guid, 'http://', 'https://');
@@ -79,4 +79,4 @@ UPDATE wp_options SET option_value = REPLACE (option_value, 'http://', 'https://
 UPDATE wp_comments SET comment_author_url = REPLACE (comment_author_url, 'http://', 'https://');
 
 UPDATE wp_commentmeta SET meta_value = REPLACE (meta_value, 'http://', 'https://');
-[/code]
+```

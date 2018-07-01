@@ -15,15 +15,15 @@ Recently I was looking a way to have auto completion with git when checking out 
 
 If you also want to make use of this feature, you can download the script with the command below:
 
-[code]
+```
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
-[/code]
+```
 
 Scripts for other shells are available.
 
 If you are bash user like I am, you can enable the completion script in your bash profile with the following command:
 
-[code]
+```
 test -f ~/.git-completion.bash &amp;&amp; . $_
-[/code]
+```
 

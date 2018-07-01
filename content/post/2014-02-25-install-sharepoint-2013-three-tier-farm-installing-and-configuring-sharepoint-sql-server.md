@@ -60,9 +60,9 @@ And now it's time to install the SQL server.
 
 The SQL Server 2008 R2 as in my case requires the .Net Framework 3.5. To install it on Windows server 2012 run this command:
 
-[code lang="text"]
+```text
 dism /online /enable-feature /featurename:NetFX3 /all /Source:d:sourcessxs /LimitAccess
-[/code]
+```
 
 Only after executing this command you're able to install the .Net framework as usual with the wizard.
 
@@ -72,7 +72,7 @@ At this point where the SQL server installation I don't want to provide you a st
 
 I think the sql server configuration file is much more informative.
 
-[code lang="text"]
+```text
 ;SQLSERVER2008 Configuration File
 [SQLSERVER2008]
 
@@ -256,7 +256,7 @@ RSINSTALLMODE="FilesOnlyMode"
 
 FTSVCACCOUNT="NT AUTHORITYLOCAL SERVICE"
 
-[/code]
+```
 
 The most important configurations are the data directories and the user service accounts. In the last post we created several service accounts, you can use them now as showed here:
 
@@ -266,7 +266,7 @@ You might have seen, the temdb is stored on the C drive and I know as s a best p
 
 Now you should have installed the SQL server successfully. Open the management studio, log in and execute these statements:
 
-[code lang="sql"]
+```sql
 -- Set Memory
 
 EXEC sys.sp_configure N'show advanced options', N'1'  RECONFIGURE WITH OVERRIDE
@@ -306,7 +306,7 @@ sp_configure 'max degree of parallelism', 1;
 GO
 RECONFIGURE WITH OVERRIDE;
 GO
-[/code]
+```
 
 Last but not least update the SQL server installation.
 
@@ -316,6 +316,6 @@ On the site <a href="https://sqlserverbuilds.blogspot.ch/">https://sqlserverbui
 
 In case you don't know you SQL server version run this command:
 
-[code lang="sql"]
+```sql
 SELECT SERVERPROPERTY('productversion'), SERVERPROPERTY ('productlevel'), SERVERPROPERTY ('edition')
-[/code]
+```

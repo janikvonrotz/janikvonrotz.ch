@@ -65,8 +65,8 @@ Migrate content databases in their specific dependency order. For example if you
 14. Run `Get-SPsite` and look after the CompatibilityLevel attribute. Everything less than 15 needs an visual upgrade
 15. Update the visual design for all SharePoint site `Get-SPSite http://example.sharepoint.com | Upgrade-SPSite -VersionUpgrade`
 16. Update to username to claims by entering these commands in PowerShell:
-[code lang="ps"]
+```ps
 $SPWebApplication = Get-SPWebApplication http://sharepoint.vbl.ch
 $SPWebApplication.MigrateUsers($true)
 $SPWebApplication.ProvisionGlobally()
-[/code]
+```

@@ -205,11 +205,11 @@ Add a PHP info file
     
 Set content
 
-[code]
+```
 <?php
 phpinfo();
 ?>
-[/code]
+```
 
 Open your browser on http://example.com/info.php
 
@@ -323,13 +323,13 @@ Edit the config file
 
 Set database, database user and his password
 
-[code]
+```
 define('DB_NAME', 'wordpress');
 
 define('DB_USER', 'wordpress');
 
 define('DB_PASSWORD', '[password]');
-[/code]
+```
 
 Update permissions for Nginx user
 

@@ -38,7 +38,7 @@ The following script can handle this issue by:
 
 <a href="https://janikvonrotz.ch/wp-content/uploads/2014/01/Synchronize-Service-Mailbox-Access-Groups.jpg"><img class="aligncenter size-large wp-image-1020" alt="Synchronize Service Mailbox Access Groups" src="https://janikvonrotz.ch/wp-content/uploads/2014/01/Synchronize-Service-Mailbox-Access-Groups-1024x413.jpg" width="474" height="191" /></a>
 
-[code lang="ps"]
+```ps
 <#
 $Metadata = @{
 	Title = "Synchronize Service Mailbox Access Groups"
@@ -198,7 +198,7 @@ $ADGroups | where{$RequiredADGroups -notcontains $_} | %{
 
 Remove-PSSession $PSSession
 Write-PPErrorEventLog -Source "Synchronize Service Mailbox Access Groups" -ClearErrorVariable
-[/code]
+```
 
 Latest version of this script: <a href="https://gist.github.com/8653473" target="_blank">https://gist.github.com/8653473</a>
 

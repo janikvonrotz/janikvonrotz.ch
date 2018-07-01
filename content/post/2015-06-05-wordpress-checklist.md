@@ -81,7 +81,7 @@ You're welcome to contribute: [https://github.com/janikvonrotz/wordpress-checkli
 
 ## Example content
 
-[code]
+```
 # This is sample content 
  
 Lorem ipsum dolor sit amet, mel no prima tation adolescens, at has numquam elaboraret, duo ex detraxit sensibus. Audire albucius corrumpit et per, ea mel nonumy audiam verterem. Nam ad illud movet causae, mel an nostrud efficiantur. No vis tota adolescens adipiscing. Sint eloquentiam reprehendunt quo ut, cu quo feugiat fierent gloriatur. 
@@ -112,4 +112,4 @@ if (navigator.userAgent.match(/IEMobile/10.0/)) {
         appendChild(msViewportStyle); 
 } 
 ```
-[/code]
+```

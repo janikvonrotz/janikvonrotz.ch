@@ -29,7 +29,7 @@ What it does:
 * Keep a daily, weekly and monthly snapshot
 * Notify me if something failed (requires PowerShell PowerUp)
 <!--more-->
-[code lang="ps"]
+```ps
 <#
 $Metadata = @{
     Title = "Backup Active Directory Group Policies"
@@ -105,6 +105,6 @@ try{
 
     Write-PPErrorEventLog -Source "Backup ActiveDirectory Group Policies" -ClearErrorVariable
 }
-[/code]
+```
 
 Latest version of this script: [https://gist.github.com/11167763](https://gist.github.com/11167763)

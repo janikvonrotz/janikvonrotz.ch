@@ -35,41 +35,41 @@ Install the Laravel extension with composer.
 
 **composer.json**
 
-[code]
+```
 "require": {
 	"bllim/laravel-to-jquery-validation": "*"
 }
-[/code]
+```
 
 Register the new service provider.
 
 **app/config/app.php**
 
-[code]
+```
 'providers' => array(
 	 'Bllim\LaravelToJqueryValidation\LaravelToJqueryValidationServiceProvider',
 )
-[/code]
+```
 
 The extension comes with a configuration file and two assets. You have to publish them first.
 
-[code]
+```
 php artisan config:publish bllim/laravel-to-jquery-validation
 php artisan asset:publish bllim/laravel-to-jquery-validation
-[/code]
+```
 
 In the folder **public/packages/bllim/laravel-to-jquery-validation/** you'll find now two JavaScript files. Include them in your form view. You can also use bower to maintain the jquery validation plugin.
 In addition you have to add this piece of JavaScript to enable the frontend validation for your form.
 
-[code lang="js"]
+```js
 $('form').validate();
-[/code]
+```
 
 Now that we are ready let's add the validation rules to our model.
 
 **app/model/Member.php**
 
-[code lang="php"]
+```php
 class Member extends Eloquent{
 
   public static $rules = [
@@ -78,13 +78,13 @@ class Member extends Eloquent{
       'email' => 'required|email'
   ];
 }
-[/code]
+```
 
 As I've said we have to validate the input data in backend anyway, so here's an example of the store function.
 
 **app/controllers/MemberController.php**
 
-[code lang="php"]
+```php
 class MemberController extends \BaseController {
 	public function store()
 	{
@@ -100,17 +100,17 @@ class MemberController extends \BaseController {
 		return Redirect::to('members');
 	}
 ]
-[/code]
+```
 
 In your form view you can now set the validation rules from your model.
 
-[code]
+```
 {{Form::setValidation(Member::$rules);}}
-[/code]
+```
 
 Here's an example of an compatible form definition for this kind of validation.
 
-[code]
+```
 {{ Form::open(array('url' => 'members')) }}
   <div class="form-group">
   {{ Form::label('firstname', 'Firstname') }}
@@ -126,7 +126,7 @@ Here's an example of an compatible form definition for this kind of validation.
   </div>
   {{ Form::submit('Save', array('class' => 'btn btn-primary')) }}
 {{ Form::close() }}
-[/code]
+```
 
 
 From now on the input of your form will be validated in the front- and backend with the same rules.

@@ -47,7 +47,7 @@ Today I want to show you my SharePoint default settings script. It does a lot of
 
 There are some functions in the script which you can't know f.g. `Write-PPEventLog`, these are custom functions and are part of my [PowerShell PowerUp](https://github.com/janikvonrotz/PowerShell-PowerUp) project.
 
-[code lang="ps"]
+```ps
 <#
 $Metadata = @{
 	Title = "SharePoint Default Settings"
@@ -224,6 +224,6 @@ try{
 
     Write-PPErrorEventLog -Source "SharePoint Default Settings" -ClearErrorVariable
 }
-[/code]
+```
 
 Latest version of this script: [https://gist.github.com/7871902](https://gist.github.com/7871902)

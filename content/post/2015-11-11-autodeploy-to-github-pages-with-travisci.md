@@ -32,7 +32,7 @@ Now I will show you how you can setup this kind of autodeploy. This guide assume
 
 This script will be executed by Travis CI later. The idea of the script is to create an `out` folder which holds the website that is deployed to the Github page repository.
 
-[code lang="bash"]
+```bash
 #!/bin/bash
 set -e # exit with nonzero exit code if anything fails
 
@@ -63,7 +63,7 @@ git commit -m "Deploy to GitHub Pages"
 # will be lost, since we are overwriting it.) We redirect any output to
 # /dev/null to hide any sensitive credential data that might otherwise be exposed.
 git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&amp;1
-[/code]
+```
 
 As already mention this script uses npm to installs gulp and dependencies and also runs the gulp tasks that will in result create the website.
 
@@ -81,13 +81,13 @@ Either way the Travis cli can encrypt strings by using the Travis ssl certificat
 * Run `travis encrypt GH_TOKEN=<your_github_username>:<your_token>` and copy the encrypted string.
 * Create a `.travis.yml` in your repository and paste the code below with your encrypted string.
 
-[code]
+```
 script: bash ./deploy.sh
 env:
   global:
   - GH_REF: github.com/<username>/<repository>.git
   - secure: "<encrypted_token>"
-[/code]
+```
 
 This configuration file will tell Travis what to do and set environment variables which will passed to our `deploy.sh` script file.
 

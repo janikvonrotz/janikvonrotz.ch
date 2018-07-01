@@ -25,7 +25,7 @@ The book list is a simple markdown file. Here's an excerpt of my bookshelf file:
 
 **bookshelf.md**
 
-[code]
+```
 ...
 
 ![](https://images.gr-assets.com/books/1433930311l/20873740.jpg)  
@@ -37,7 +37,7 @@ Rating: 10/10
 Finished: 11.04.2018  
 
 ...
-[/code]
+```
 
 To create a poster from the list I've created **tudluk**. 
 

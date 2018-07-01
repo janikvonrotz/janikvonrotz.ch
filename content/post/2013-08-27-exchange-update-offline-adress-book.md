@@ -27,11 +27,11 @@ For example: I had to update the offline address book, I've deleted some distrib
 
 So I did the same thing with PowerShell:
 
-[code lang="ps"]
+```ps
 
 Get-OfflineAddressbook | Update-OfflineAddressbook
 Get-ClientAccessServer | Update-FileDistributionService
 
-[/code]
+```
 
 And hurray everything worked.

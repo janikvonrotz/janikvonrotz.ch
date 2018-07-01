@@ -36,11 +36,11 @@ First add a new route to handle our search requests.
 
 **app/routes.php**
 
-[code lang="php"]
+```php
 Route::get('search', [
     'as' => 'search', 'uses' => 'MemberController@search'
 ]);
-[/code]
+```
 
 **app/models/*.php**
 
@@ -50,7 +50,7 @@ You can use any controller of your app to handle the search requests as long you
 
 **app/controllers/MemberController.php**
 
-[code lang="php"]
+```php
 	public function search()
 	{
 		$query = Input::get('q');
@@ -82,7 +82,7 @@ You can use any controller of your app to handle the search requests as long you
 		$results = $model::search($query)->get();
 		return View::make('search.index', compact('results', 'model', 'route'));
 	}
-[/code]
+```
 
 For every route you want to provide the search functionality you have to add a case and define the model and redirect route.
 
@@ -90,7 +90,7 @@ Now add a new view to display our search results and customize the look of the s
 
 **app/views/search/index.blade.php**
 
-[code lang="php"]
+```php
 @extends('default.master')
 
 @section('content')
@@ -114,13 +114,13 @@ Now add a new view to display our search results and customize the look of the s
     </a>
   @endforeach
 @stop
-[/code]
+```
 
 Finally we add the search bar to a default blade template.
 
 **app/views/default/navigation.blade.php**
 
-[code lang="php"]
+```php
   {{Form::open(['url' => 'search', 'method' => 'GET','class' => 'navbar-form navbar-right', 'role' => 'search'])}}
       <div class="form-group">
         {{ Form::hidden('route', isset($route) ? $route : Route::getCurrentRoute()->getPath())}}
@@ -128,6 +128,6 @@ Finally we add the search bar to a default blade template.
       </div>
       {{ Form::button('', ['type' => 'submit', 'class' => 'btn btn-default glyphicon glyphicon-search']) }}
     {{Form::close()}}
-[/code]
+```
 
 If done you're are ready to run.

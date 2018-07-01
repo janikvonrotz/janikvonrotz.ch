@@ -22,7 +22,7 @@ As we don't want to write any function or definition twice or more, let's extend
 <!--more-->
 **app/controllers/BaseController.php**
 
-[code lang="php"]
+```php
 class BaseController extends Controller {
 
   protected  $sortby;
@@ -39,13 +39,13 @@ class BaseController extends Controller {
     }
   }
 }
-[/code]
+```
 
 You can now call this function in every controller. Here's an example with a Member controller.
 
 **app/controllers/MemberController.php**
 
-[code lang="php"]
+```php
 class MemberController extends \BaseController {
 
   public function index()
@@ -60,7 +60,7 @@ class MemberController extends \BaseController {
     return View::make('members.index', compact('items', 'sortby', 'order', 'columns', 'action'));
   }
 }
-[/code]
+```
 
 The default.index view is supposed to be used by multiple controllers with different models to display.
 This requirement leads to variable header definitions for our sortable table.
@@ -68,7 +68,7 @@ This requirement leads to variable header definitions for our sortable table.
 
 **app/models/Member.php**
 
-[code lang="php"]
+```php
 class Member extends Eloquent{
 
   public static $columns = [
@@ -78,13 +78,13 @@ class Member extends Eloquent{
     "E-Mail"=>"email"
   ];
 }
-[/code]
+```
 
 From now on you can use the next piece of code to create a sortable table in your views.
 
 **views/members/index.blade.php**
 
-[code lang="html"]
+```html
 <table class="table">
 <tr>
   @foreach(array_keys($columns) as $column)
@@ -112,4 +112,4 @@ From now on you can use the next piece of code to create a sortable table in you
     </tr>
 @endforeach
 </table>
-[/code]
+```

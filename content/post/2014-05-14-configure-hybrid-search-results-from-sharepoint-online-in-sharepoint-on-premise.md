@@ -78,7 +78,7 @@ Password: `[password]`
 
 Let's update the certificate on the STS. Configure and run the PowerShell script below on your SharePoint server.
 
-[code lang="ps"]
+```ps
 if(-not (Get-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue)){Add-PSSnapin "Microsoft.SharePoint.PowerShell"}
 
 # set the cerficates paths and password
@@ -91,7 +91,7 @@ $PfxCert = New-Object System.Security.Cryptography.X509Certificates.X509Certific
 
 # import it
 Set-SPSecurityTokenServiceConfig -ImportSigningCertificate $PfxCert
-[/code]
+```
 
 Type **Yes** when prompted with the following message.
 
@@ -99,15 +99,15 @@ Type **Yes** when prompted with the following message.
 
 Restart IIS so STS picks up the new certificate.
 
-[code lang="ps"]
+```ps
 &amp; iisreset
 &amp; net stop SPTimerV4
 &amp; net start SPTimerV4
-[/code]
+```
 
 Now validate the certificate replacement by running several PowerShell commands and compare their outputs.
 
-[code lang="ps"]
+```ps
 # set the cerficates paths and password
 $PfxCertPath = "c:\[certificate name].pfx"
 $PfxCertPassword = "[password]"
@@ -117,11 +117,11 @@ New-Object System.Security.Cryptography.X509Certificates.X509Certificate2 $PfxCe
 
 # compare the output above with this output
 (Get-SPSecurityTokenServiceConfig).LocalLoginProvider.SigningCertificate
-[/code]
+```
 
 ## Establish the server to server trust
 
-[code lang="ps"]
+```ps
 if(-not (Get-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue)){Add-PSSnapin "Microsoft.SharePoint.PowerShell"}
 Import-Module MSOnline 
 Import-Module MSOnlineExtended
@@ -185,14 +185,14 @@ Set-SPAuthenticationRealm -realm $MsolServicePrincipalID
 # register the ACS application proxy and token issuer
 New-SPAzureAccessControlServiceApplicationProxy -Name "ACS" -MetadataServiceEndpointUri "https://accounts.accesscontrol.windows.net/metadata/json/1/" -DefaultProxyGroup
 New-SPTrustedSecurityTokenIssuer -MetadataEndpoint "https://accounts.accesscontrol.windows.net/metadata/json/1/" -IsTrustBroker -Name "ACS"
-[/code]
+```
 
 # Add a new result source
 
 To get search results from SharePoint Online we have to add a new result source. Run the following script in a PowerShell ISE session on your SharePoint 2013 on-premise server.
 Don't forget to update the settings region
 
-[code lang="ps"]
+```ps
 if(-not (Get-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue)){Add-PSSnapin "Microsoft.SharePoint.PowerShell"}
 
 # region settings 
@@ -217,7 +217,7 @@ $ResultSource.ProviderId = $FederationManager.ListProviders()[$Provier].Id
 $ResultSource.ConnectionUrlTemplate = $RemoteSharePointUrl
 $ResultSource.CreateQueryTransform($QueryTransform)
 $ResultSource.Commit()
-[/code]
+```
 
 ## Add a new query rule
 

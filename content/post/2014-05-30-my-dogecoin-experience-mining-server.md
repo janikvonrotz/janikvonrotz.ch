@@ -66,7 +66,7 @@ After unziping the cgminer add a configuration file named `cgminer.conf` to the 
 
 Add the following json configuration to config file, of course you have to replace the pool credentials.
 
-[code]
+```
 {
 	"pools" : [
 		{
@@ -77,15 +77,15 @@ Add the following json configuration to config file, of course you have to repla
 	],
 	"scrypt" : true
 }
-[/code]
+```
 
 Next add a batch `cgminer.bat` to the same folder and add this commands:
 
-[code]
+```
 setx GPU_MAX_ALLOC_PERCENT 100
 setx GPU_USE_SYNC_OBJECTS 1
 cgminer.exe
-[/code]
+```
 
 Finally double click the batch file. Cgminer should start to mine some coins.
 

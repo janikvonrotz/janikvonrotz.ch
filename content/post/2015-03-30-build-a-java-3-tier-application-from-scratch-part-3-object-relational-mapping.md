@@ -64,7 +64,7 @@ Instead of the common property file our application stores settings in a json fi
 
 **application.json**
 
-[code]
+```
 {
   "javax": {
     "persistence": {
@@ -86,7 +86,7 @@ Instead of the common property file our application stores settings in a json fi
 	}
   }
 }
-[/code]
+```
 
 * Make sure the update the jdbc url, user and password property.
 
@@ -94,7 +94,7 @@ Instead of the common property file our application stores settings in a json fi
 
 **EclipseLink.java**
 
-[code lang="java"]
+```java
 package ch.issueman.webservice;
 
 import java.util.HashMap;
@@ -136,7 +136,7 @@ public class EclipseLink {
 		return emf.createEntityManager();
 	}
 }
-[/code]
+```
 
 Based on our `persistence.xml` file and configure with the `application.json` file this class stores a static instance of the EclipseLink entity factory. 
 
@@ -144,7 +144,7 @@ Based on our `persistence.xml` file and configure with the `application.json` fi
 
 **persistence.xml**
 
-[code lang="xml"]
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 	<persistence-unit name="issue-manager" transaction-type="RESOURCE_LOCAL">
@@ -162,7 +162,7 @@ Based on our `persistence.xml` file and configure with the `application.json` fi
 	</persistence-unit>
 	
 </persistence>
-[/code]
+```
 
 You might come along other persistence files with far more properties, but that's actually all we need as we use a different (better) approach to configure EclipseLink.
 
@@ -172,7 +172,7 @@ When working with the MVC model you have to implement a controller to communicat
 
 **Controller.java**
 
-[code lang="java"]
+```java
 package ch.issueman.webservice;
 
 import java.io.Serializable;
@@ -235,7 +235,7 @@ public class Controller<T, Id extends Serializable> implements DAO<T, Id> {
 		em.close();
 	}
 }
-[/code]
+```
 
 Wow, that was a lot of code, confused yet? I will explain the most important code lines.
 

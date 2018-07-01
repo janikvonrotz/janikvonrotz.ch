@@ -57,7 +57,7 @@ By default the script will only add enabled users with an email address.
 
 This script makes use of the <a href="https://github.com/janikvonrotz/Powershell-Profile">PowerShell Profile</a> environment, f.e. the function <code>Send-PPErrorReport</code> sends an error report per email when the script fails or produces problems.
 
-[code lang="ps"]
+```ps
 <#
 $Metadata = @{
     Title = "New ActiveDirectory Distribution Groups"
@@ -246,6 +246,6 @@ $Configs | %{
 if($error){
     Send-PPErrorReport -FileName "activedirectory.mail.config.xml" -ScriptName $MyInvocation.InvocationName
 }
-[/code]
+```
 
 Latest version of this script: <a href="https://gist.github.com/6352037">https://gist.github.com/6352037</a>

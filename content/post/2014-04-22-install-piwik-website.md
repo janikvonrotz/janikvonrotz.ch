@@ -87,7 +87,7 @@ Refresh MySQL and exit.
     
 Add the Nginx configuration to an existing website.
 
-[code]
+```
 server{
     
     ...
@@ -109,7 +109,7 @@ server{
         ...
     }
 }
-[/code]
+```
 
 Provide access to the piwik folder.
 

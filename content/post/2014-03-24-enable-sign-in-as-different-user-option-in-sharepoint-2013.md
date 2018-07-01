@@ -26,7 +26,7 @@ To enable this option you have the update the SharePoint welcome template.<!--mo
 
 Add the following code after the `<SharePoint:MenuItemTemplate runat="server" id="ID_RequestAccess"` finisher tag `/>`.
 
-[code]
+```
 <SharePoint:MenuItemTemplate runat="server" ID="ID_LoginAsDifferentUser"
   Text="<%$Resources:wss,personalactions_loginasdifferentuser%>"
   Description="<%$Resources:wss,personalactions_loginasdifferentuserdescription%>"
@@ -34,7 +34,7 @@ Add the following code after the `<SharePoint:MenuItemTemplate runat="server" id
   Sequence="100"
   UseShortId="true"
 />
-[/code]
+```
 
 # Source
 

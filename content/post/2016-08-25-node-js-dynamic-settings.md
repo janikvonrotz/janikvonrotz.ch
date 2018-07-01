@@ -35,17 +35,17 @@ By scrapping together the best of different approaches I've found the perfect so
 
 **app.js**
 
-[code]
+```
 ...
 var config = require('./config');
 ...
-[/code]
+```
 
 The file where your app lives. Simply call the config.js file which gets the configs for your app.
 
 **config.js**
 
-[code]
+```
 var fs = require('fs');
 var config = {}
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
@@ -54,31 +54,31 @@ if (fs.existsSync(path)) {
   config = require(path);
 }
 module.exports = config;
-[/code]
+```
 
 Based on the NODE_ENV variable this code loads json data and exports them. If the settings file doesn't exist, simply return an empty object.
 
 **config-development.json**
 
-[code]
+```
 {
   "LUIS_APP_URL": "https://api.projectoxford.ai/luis/v1/application?id=324234234233424242342",
   "PORT": 443,
   "MICROSOFT_APP_ID": "xxxxx",
   "MICROSOFT_APP_PASSWORD": "xxxxx"
 }
-[/code]
+```
 
 An example for config file. Make a copy with different settings for each environment.
 
 **main.js**
 
-[code]
+```
 ...
 server.listen(process.env.PORT || config.PORT || 3978, function () {
    console.log('%s listening to %s', server.name, server.url);
 })
 ...
-[/code]
+```
 
 A final example of how a configuration variable might be accessed within your app.

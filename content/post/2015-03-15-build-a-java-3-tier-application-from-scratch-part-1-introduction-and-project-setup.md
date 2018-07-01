@@ -83,15 +83,15 @@ Now we are going to set up these 3 projects with gradle.
 
 **settings.gradle**
 
-[code]
+```
 include ":common", ":webservice", ":client"
-[/code]
+```
 
 This file will tell gradle that we work with a multiproject setup.
 
 **build.gradle**
 
-[code]
+```
 subprojects {
 
   apply plugin: "java"
@@ -171,7 +171,7 @@ subprojects {
       source = sourceSets.main.ext.delombok
   }
 }
-[/code]
+```
 
 This is the master gradle build file and contains definition for each subproject.
 The java and eclipse plugin allows us to import the 3 projects into Eclipse as a Java project.
@@ -180,7 +180,7 @@ Within this project we will make use of [project lombok](http://projectlombok.or
 
 **common/build.gradle**
 
-[code]
+```
 dependencies {
   compile 'org.eclipse.persistence:javax.persistence:2.+'
   compile 'org.eclipse.persistence:eclipselink:2.+'
@@ -197,7 +197,7 @@ dependencies {
   compile 'org.slf4j:slf4j-simple:1.+'
   compile 'com.github.javafaker:javafaker:0.+'
 }
-[/code]
+```
 
 Both application components going to use these libraries:
 [EclipseLink](http://www.eclipse.org/eclipselink/): ORM for Java.
@@ -211,7 +211,7 @@ Both application components going to use these libraries:
 
 **webservice/build.gradle**
 
-[code]
+```
 apply plugin: 'jetty'
 
 dependencies {
@@ -227,7 +227,7 @@ task seed(type:JavaExec) {
    main = 'ch.issueman.webservice.Seed'
    classpath = sourceSets.main.runtimeClasspath
 }
-[/code]
+```
 
 Jetty is our application server, instead of the default webapp folder we will use the resources folder to configure the application.
 The [MySQL connector](http://dev.mysql.com/downloads/connector/j/) is the database driver for EclipseLink.
@@ -235,11 +235,11 @@ The custom seed task allows us to execute the main method of our Seed class.
 
 **client/build.gradle**
 
-[code]
+```
 dependencies {
   compile project(':common')
 }
-[/code]
+```
 
 The client uses common dependencies only.
 

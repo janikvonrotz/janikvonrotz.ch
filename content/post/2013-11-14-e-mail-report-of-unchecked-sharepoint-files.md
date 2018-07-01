@@ -39,7 +39,7 @@ Here's a report example:
 
 and here's the script:
 
-[code lang="ps"]
+```ps
 
 <#
 $Metadata = @{
@@ -125,7 +125,7 @@ Get-SPWebApplication | Get-SPSite | Get-SPWeb -Limit All | %{
     Send-MailMessage -To $_.Name -From $Mail.FromAddress -Subject $Subject -Body ([System.Web.HttpUtility]::HtmlDecode($Body)) -SmtpServer $Mail.OutSmtpServer -BodyAsHtml -Priority High -Encoding ([System.Text.Encoding]::UTF8)
     Write-PPErrorEventLog -ScriptPath $MyInvocation.InvocationName -ClearErrorVariable
 }
-[/code]
+```
 
 Latest version of this script: <a href="https://gist.github.com/7467398" target="_blank">https://gist.github.com/7467398</a>
 

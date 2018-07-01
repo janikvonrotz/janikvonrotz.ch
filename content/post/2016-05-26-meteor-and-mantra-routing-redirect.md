@@ -31,11 +31,11 @@ Recently I started using [Mantra]() to develop my Meteor apps. As with any other
 <!--more-->
 First I want to tell you about a little drawback, which is essential to understand the whole issue with routing in Mantra. The Flowrouter redirect statement can only work in the `componentDidMount` directive of an React component. 
 
-[code lang="js"]
+```js
 componentDidMount(){
   FlowRouter.go('/login');
 }
-[/code]
+```
 
 As I don't want load a component and then doing a redirect I had to make the redirect on a higher level of the Mantra architecture.
 
@@ -44,7 +44,7 @@ To give you a better understanding I'll use the post module which is part of a b
 
 **client/modules/post/routes.jsx**
 
-[code lang="js"]
+```js
 ...
 
   FlowRouter.route('/posts', {
@@ -60,7 +60,7 @@ To give you a better understanding I'll use the post module which is part of a b
   });
 
 ...
-[/code]
+```
 
 As you can see I'll use a trigger action, despite the Mantra specs tell me not do so. For now it's the only practical approach.
 
@@ -68,7 +68,7 @@ Import the action in the route and call the `access_route` function.
 
 **client/modules/post/actions/posts.js**
 
-[code lang="js"]
+```js
 import {cannot_access, redirect_login, redirect_verify} from '/lib/access_control';
 
 ...
@@ -84,13 +84,13 @@ access_route(routename, redirect) {
   }
 
 ...
-[/code]
+```
 
 This is done for every module. Then you get a custom routing logic for every module while still using the same function to verify f.g. a user can access a specific route.
 
 **/lib/access_control.js**
 
-[code lang="js"]
+```js
 // client side
 export function redirect_login(routename){
   var roles = _.findWhere(Meteor.settings.public.routes, {name: routename}).roles;
@@ -120,7 +120,7 @@ export function cannot_access(routename){
   console.log("deny route " + routename);
   return true;
 };
-[/code]
+```
 
 Here I'll bundle everything that is related in someway with permissions and access rights. The functions in this library are either used by the client or the server.  I will use alanning roles to check role membership later on.
 
@@ -134,7 +134,7 @@ Finally update the settings.json with access rules. Make sure to add it to the p
 
 **settings.json**
 
-[code]
+```
 ...
 
 {
@@ -148,6 +148,6 @@ Finally update the settings.json with access rules. Make sure to add it to the p
 
 ...
 
-[/code]
+```
 
 Yay! you did it. So do you like my idea? Would like to hear from you in the comment section.

@@ -33,7 +33,7 @@ I assume you've added the `bootstrap` and `react` package to your project.
 
 The fullscreen viewer component is very simple. It wraps the children in a div tag and adds an Icon to the upper right of this container.
 
-[code lang="js"]
+```js
 FullscreenContainer = React.createClass({
   getInitialState(){
     return{
@@ -61,11 +61,11 @@ FullscreenContainer = React.createClass({
     </div>
   }
 });
-[/code]
+```
 
 Next add this css code. The fullscreen display is works with css only!
 
-[code lang="css"]
+```css
 .display-fullscreen {
   position:fixed;
   top:0;
@@ -84,13 +84,13 @@ Next add this css code. The fullscreen display is works with css only!
   font-size: 20px;
   z-index:1001;
 }
-[/code]
+```
 
 This css classes will be applied to the fullscreen container and make it overlay the window.
 
 Here's and example how you can use this component in another view:
 
-[code lang="js"]
+```js
 
 ...
 
@@ -105,7 +105,7 @@ render() {
 ...
 
 });
-[/code]
+```
 
 In my case the final result for a markdown editor looked like this:
 

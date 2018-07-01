@@ -45,7 +45,7 @@ So let's see what this script does:
     <li>Do the same for the mail addresses</li>
 </ol>
 
-[code lang="ps"]
+```ps
 #--------------------------------------------------#
 # settings
 #--------------------------------------------------#
@@ -158,7 +158,7 @@ if($error){
     Send-PPErrorReport -FileName "activedirectory.mail.config.xml" -ScriptName $MyInvocation.InvocationName
 }
 
-[/code]
+```
 
 Latest version of this script: <a href="https://gist.github.com/6780143" target="_blank">https://gist.github.com/6780143</a>
 

@@ -37,7 +37,7 @@ If you're too lazy simply copy the fxml definitions.
 
 **Home.fxml**
 
-[code lang="xml"]
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.image.*?>
@@ -79,7 +79,7 @@ If you're too lazy simply copy the fxml definitions.
       </Pane>
    </children>
 </AnchorPane>
-[/code]
+```
 
 Every view requires a controller, see there `fx:controller="ch.issueman.client.HomeView"`. I've called this controller `<view name>View.java` in order to avoid using the word controller too much.
 
@@ -87,7 +87,7 @@ Every view requires a controller, see there `fx:controller="ch.issueman.client.H
 
 **HomeView.java**
 
-[code lang="java"]
+```java
 package ch.issueman.client;
 
 import java.net.URL;
@@ -205,7 +205,7 @@ public class HomeView implements Initializable {
 		}
 	}
 }
-[/code]
+```
 
 Make sure that you understand this class, it's not that difficult. Every GUI components is connected to variables and every action (click, focus, etc.) requires a method in the view handler.
 

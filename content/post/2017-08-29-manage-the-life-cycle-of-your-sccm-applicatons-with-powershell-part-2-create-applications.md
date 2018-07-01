@@ -39,7 +39,7 @@ The script uses a config file. In there all information are stored required to c
 
 **AppConfigs.ps1**
 
-[code lang="powershell"]
+```ps
 $AppConfigs = @{
     Name = "7-Zip"
     Description = "7-Zip ist ein freies Datenkompressionsprogramm mit einer hohen Kompressionsrate."
@@ -162,7 +162,7 @@ if (Test-Path "C:\Program Files\Greenshot\Greenshot.exe") {
 '@
     }
 }
-[/code]
+```
 
 As you cans see the config supports different kind of deployment types (script, msi, powershell) and supersedence. When it comes to deployment types, the script can be extended easily.
 
@@ -170,7 +170,7 @@ The config file is used by the script to create and configure the applications.
 
 **Add-SCCMApplications.ps1**
 
-[code lang="powershell"]
+```ps
 Import-Module "C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\bin\ConfigurationManager.psd1"
 Import-Module ActiveDirectory
 cd "$((Get-PSProvider | Where-Object {$_.Name -eq "CMSite"}).Drives.Name):"
@@ -395,7 +395,7 @@ if($Uninstall) {
         }
     }
 }
-[/code]
+```
 
 The script creates all assets required to deploy an application and reduces the probability of misconfiguration drastically. Here's a screenshot of the assets for the VLC player package:
 

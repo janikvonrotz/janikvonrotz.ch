@@ -61,7 +61,7 @@ Create a secure password for phpMyAdmin. Don't use the MySQL root password!
 
 Add the phpMyAdmin Nginx configuration to one of your websites.
 
-[code]
+```
 server{
     ...
     
@@ -80,7 +80,7 @@ server{
         ...
     }
 }
-[/code]
+```
 
 Test config and reload Nginx service.
 

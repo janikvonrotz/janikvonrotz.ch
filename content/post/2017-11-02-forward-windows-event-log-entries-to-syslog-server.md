@@ -32,7 +32,7 @@ Third and last the script that is forwarding the windows log messages to our sys
 
 **Send-SecurityEventsToPRTG.ps1**
 
-[code lang="ps"]
+```ps
 param(
     [String]$ServerName = "SYSLOG_HOSTNAME"
 )
@@ -72,7 +72,7 @@ try {
     Write-Error ($_ | Out-String)
     Write-Log -Path $LogFilePath -Message ($_ | Out-String) -Component $MyInvocation.MyCommand.Name -Type Error
 }
-[/code]
+```
 
 This examples crawls the security log messages from the last hour and forwards each to the server. Yet only one severity type is supported, the switch statement can be extended easily with additional types. Success and failure of this script are logged locally. Below is screenshot of the log file using CMTrace.
 

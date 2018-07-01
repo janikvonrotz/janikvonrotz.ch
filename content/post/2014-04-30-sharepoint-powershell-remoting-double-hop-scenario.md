@@ -33,39 +33,39 @@ For example my latest issue with a three tier SharePoint environment. I thought 
 
 However I still received an error when I've executed a SharePoint cmdlet via remoting session.
 
-[code lang="powershell"]
+```ps
 $Session = New-PSSession -ComputerName <ComputerName> -Credential (Get-Credential)
 Invoke-Command -Session $Session -ScriptBlock {param ($Name) Add-PSSnapin -Name $Name} -ArgumentList "Microsoft.SharePoint.PowerShell"
 Invoke-Command -Session $Session -ScriptBlock {Get-SPSite}
-[/code]
+```
 
-[code lang="powershell"]
+```ps
 Cannot access the local farm. Verify that the local farm is properly configured, currently available, and that you
 have the appropriate permissions to access the database before trying again.
     + CategoryInfo          : InvalidData: (Microsoft.Share...SPCmdletGetSite:SPCmdletGetSite) [Get-SPSite], SPCmdletE
    xception
     + FullyQualifiedErrorId : Microsoft.SharePoint.PowerShell.SPCmdletGetSite
 
-[/code]
+```
 
 I've figuered that's about the PowerShell remoting double hop issue. The remote SharePoint server can't authenticate against the SQL server with the credentials I'm providing from the remoting shell.
 
 This is only possible with the CredSSP authentication type. Here are the steps to configure CredSSP for a remote session.
 
 On the server run:
-[code lang="powershell"]
+```ps
 Enable-WSManCredSSP -Role Server
-[/code]
+```
 
 On the client run:
-[code lang="powershell"]
+```ps
 Enable-WSManCredSSP -Role Client -DelegateComputer <server FQDN>
-[/code]
+```
 
 Now you should be able to run the SharePoint cmdlets on the client. Don't forget to provide the new authentication type for the `New-PSSession` command.
 
-[code lang="powershell"]
+```ps
 $Session = New-PSSession -ComputerName <ComputerName> -Credential (Get-Credential) -Authentication Credssp
 Invoke-Command -Session $Session -ScriptBlock {param ($Name) Add-PSSnapin -Name $Name} -ArgumentList "Microsoft.SharePoint.PowerShell"
 Invoke-Command -Session $Session -ScriptBlock {Get-SPSite}
-[/code]
+```

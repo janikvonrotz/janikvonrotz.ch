@@ -22,7 +22,7 @@ This is my custom PowerShell function template, whenever I'm writing a new scrip
 <!--more-->
 You can use this template for whatever like and do you can do everything you'll like (except selling) with it.
 
-[code lang="ps"]
+```ps
 <#
 $Metadata = @{
 	Title = ""
@@ -148,7 +148,7 @@ function Test-AdvancedFunction{
     }# end end
 }# function end
 
-[/code]
+```
 
 Hope I'm going save you time in programming great things.
 

@@ -42,7 +42,7 @@ In all of my models I'm using the default Date data type. As Apollo basically on
 
 **schema.js**
 
-[code]
+```
 scalar Date
 ...
 type Category {
@@ -51,13 +51,13 @@ type Category {
   createdAt: Date
 }
 ...
-[/code]
+```
 
 Define a new scalar, which is basically another type.
 
 **resolvers.js**
 
-[code]
+```
   Date: {
     __parseValue(value) {
       return new Date(value); // value from the client
@@ -69,7 +69,7 @@ Define a new scalar, which is basically another type.
       return ast.value;
     },
   },
-[/code]
+```
 
 And tell Apollo how to parse it when receiving queries or dispatch data.
 
@@ -81,7 +81,7 @@ All the examples as part of the source code of projects or the documentation did
 
 **CategoryEdit.js**
 
-[code]
+```
 ...
 const updateMutation = gql`
 mutation updateCategory($id: String, $label: String) {
@@ -125,7 +125,7 @@ const CategoryEditWithData = graphql(query, {
 
 export default CategoryEditWithData;
 ...
-[/code]
+```
 
 Multiple queries can be lined up in one Graphql tag whereas mutators have to be divided (as long you don't wish to run multiple mutators in one call).
 
@@ -135,7 +135,7 @@ Node.js runs asynchronously and so does Apollo. Instead of retrieving data from 
 
 **resolvers.js**   
 
-[code]
+```
 ...
 categories(root, args){
   return Categories.find({}).then((items) => {
@@ -146,13 +146,13 @@ categories(root, args){
   });
 },
 ...
-[/code]
+```
 
 Define with `then` and `catch` the returned promise.
 
 **mongoose.js**
 
-[code]
+```
 ...
 Mongoose.Promise = global.Promise;
 ...
@@ -162,7 +162,7 @@ var CategoriesSchema = new Schema({
 });
 var Categories = mongo.model('Categories', CategoriesSchema);
 ...
-[/code]
+```
 
 Set the ES6 default Promise object for Mongoose.
 
@@ -174,7 +174,7 @@ First an example of how I load configurations in Node.js.
 
 **node-config.js**
 
-[code]
+```
 import fs from 'fs';
 
 var config = {}
@@ -191,19 +191,19 @@ try {
 config = Object.assign(config, process.env);
 
 export default config;
-[/code]
+```
 
 Based on the environment variable a json file will be chosen and loaded. All the configurations then will be overwritten by the available environment variables (necessary when deploying to most app host services like Heroku or Modulus).
 
 **meteor-config.js**
 
-[code]
+```
 import { Meteor } from 'meteor/meteor';
 
 var config = Object.assign(Meteor.settings.private, Meteor.settings.public);
 
 export default config
-[/code]
+```
 
 The meteor app can be started with this npm command: `"start": "meteor --production --settings ./production.json",`
 

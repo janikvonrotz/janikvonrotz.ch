@@ -27,17 +27,17 @@ This post is another contribution to "I hope that I never have to use jQuery aga
 
 If you're not using any js library (other than jQuery of course) add this `forEach` function declaration to your js file.
 
-[code lang="js"]
+```js
 var forEach = function (array, callback, scope) {
   for (var i = 0; i < array.length; i++) {
     callback.call(scope, i, array[i]); 
   }
 }
-[/code]
+```
 
 Now the snippet below solves our problem. It looks for the tallest divs and set its height to its siblings.
 
-[code lang="js"]
+```js
 var collection = document.getElementsByClassName('collection')[0]
 if(collection) {
     var boxes = collection.getElementsByClassName('box')
@@ -55,7 +55,7 @@ if(collection) {
         box.style.height = `${maxHeight}px`
     })
 }
-[/code]
+```
 
 Simply set the class name of the parent element holding the divs and the class name of the divs.
 

@@ -24,7 +24,7 @@ Configuration Manager applications can be equipped with powerful requirement rul
 Once the template requirement rules are created, they can be copied using the script below.
 
 **Copy-CMDeploymentTypeRule**
-[code lang="powershell"]
+```ps
 $SiteCode = "SITECODE"
 $ProviderMachineName = "FQDN" 
 if((Get-Module ConfigurationManager) -eq $null) {
@@ -70,7 +70,7 @@ $Requirements | ForEach-Object {
 # push changes
 $CMApplication = ConvertFrom-CMApplication -Application $DestApplication
 $CMApplication.Put()
-[/code]
+```
 
 The `ConvertTo-CMApplication` cmdlet converts CM application objects to SDK objects. Using SDK objects offers more options to configure a CM application.
 

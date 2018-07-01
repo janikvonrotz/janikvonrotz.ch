@@ -373,7 +373,7 @@ Create a new user in the [IAM service console](https://console.aws.amazon.com/ia
 
 Allow new user to send mail via SES with this policy configuration
 
-[code]
+```
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -384,7 +384,7 @@ Allow new user to send mail via SES with this policy configuration
     }
   ]
 }
-[/code]
+```
 
 Edit the Ghost config
 
@@ -392,7 +392,7 @@ Edit the Ghost config
     
 Add this mail configuration
 
-[code]
+```
 mail: {
     transport: "SES",
     options: {
@@ -400,7 +400,7 @@ mail: {
         AWSSecretKey: "[secret key]"
     }
 },
-[/code]
+```
 Update mail settings
 
 	http://[example.com]/ghost/settings/general/
@@ -425,7 +425,7 @@ In case you"ll get this error when trying to reset your password
 	Email Error: Email failed: 400 Sender MessageRejected Email address is not verified. 5a07d838-8381-11e3-ad96-5f67c4a04b97
 
 Replace the the Ghost mail configuration with
-[code]
+```
 mail: {
     transport: "SMTP",
     fromaddress: "[verified SES mail address]",
@@ -439,7 +439,7 @@ mail: {
         }
     }
 },
-[/code]
+```
 
 You can get your smtp settings [here](https://console.aws.amazon.com/ses/home?#smtp-settings:)
 

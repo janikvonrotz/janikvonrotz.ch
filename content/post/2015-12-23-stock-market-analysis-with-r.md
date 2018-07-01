@@ -25,7 +25,7 @@ R is a programming language designed for statistical computing. I recently bough
 <!--more-->
 An R analysis is composed of a bunch commands which can be drawn together to a script. The example belowsuses the quantmod libaray to download stock market data. Further I'v load the data into a chart and add indicators such as the Bollinger Band to it.
 
-[code]
+```
 # load library
 require("quantmod")
 require(TTR)
@@ -42,7 +42,7 @@ chartSeries(VW, subset="last 3 months")
 # add indicators
 addMACD()
 addBBands()
-[/code]
+```
 
 And here is the output built by R:
 

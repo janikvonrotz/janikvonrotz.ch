@@ -37,7 +37,7 @@ Separation of concerns is an important key principal of Microsoft products. That
 
 **Create-CMServiceAccounts.ps1**
 
-[code lang="powershell"]
+```ps
 Import-Module ActiveDirectory
 Import-Module PowerUp
 
@@ -158,7 +158,7 @@ $Users | ForEach-Object {
     Write-Host "Create AD Service Account: $($_.Name) with Password: $($_.Password)"
     New-ADUser -Name $_.DisplayName -DisplayName $_.DisplayName -AccountPassword (ConvertTo-SecureString -AsPlainText $_.Password -Force) -Enabled $true -Path $OU -CannotChangePassword $_.CannotChangePassword -ChangePasswordAtLogon $_.ChangePasswordAtLogon -PasswordNeverExpires $_.PasswordNeverExpires -SamAccountName $_.Name -UserPrincipalName "$($_.Name)@$Domain" -Description $_.Description
 }
-[/code]
+```
 
 As you can see the script requires two PowerShell modules. One ist the default Active Directory module and the other is the `PowerUp` module, which has been published by me. The PowerUp module is only required for the `Get-RandomPassword` function and can easily be ditched for something else, such as a static password list.
 
@@ -166,7 +166,7 @@ These service accounts must be configured in the SCCM console and will be grante
 
 **Create-CMPackageSourceShare.ps1**
 
-[code lang="powershell"]
+```ps
 # set the parameters
 $Source = "D:\SCCM"
 $ShareName = "PackageSource"
@@ -263,7 +263,7 @@ $Acl = Get-Acl "$Source\StateCapture"
 $Ar = New-Object System.Security.AccessControl.FileSystemAccessRule($LocalServiceAccount,"FullControl", "ContainerInherit, ObjectInherit", "None", "Allow")
 $Acl.SetAccessRule($Ar)
 Set-Acl "$Source\StateCapture" $Acl
-[/code]
+```
 
 Of course you do not need all of these folders. Adjust the script according to your requirements and preferences.
 

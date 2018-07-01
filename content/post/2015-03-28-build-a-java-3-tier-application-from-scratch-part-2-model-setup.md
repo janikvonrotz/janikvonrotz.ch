@@ -47,7 +47,7 @@ Open the common project in eclipse and update it according to the instructions.
 
 **DAO.java**
 
-[code lang="java"]
+```java
 package ch.issueman.common;
 
 import java.io.Serializable;
@@ -62,27 +62,27 @@ public interface DAO<T, Id extends Serializable> {
 	public void delete(T t);
 	public void deleteAll();
 }
-[/code]
+```
 
 We will use this interface later on for our controllers.
 It simply defines the allowed methods to communicate between the layers.
 
 **Model**
 
-[code lang="java"]
+```java
 package ch.issueman.common;
 
 public interface Model {
 
 	public int getId();
 }
-[/code]
+```
 
 No models without the models interface. For a DRY(don't repeat yourself) code approach we will use polymorphism and a generic controller.
 
 **Person.java**
 
-[code lang="java"]
+```java
 package ch.issueman.common;
 
 import javax.persistence.Entity;
@@ -113,7 +113,7 @@ public class Person implements Model{
 		this.name = name;
 	}
 }
-[/code]
+```
 
 This is the parent class for person related objects.
 
@@ -126,7 +126,7 @@ This is the parent class for person related objects.
 
 **User.java**
 
-[code lang="java"]
+```java
 package ch.issueman.common;
 
 import javax.persistence.Entity;
@@ -151,7 +151,7 @@ public class User extends Person {
 		this.role = role;
 	}
 }
-[/code]
+```
 
 This is a child class of the Person class. We will use this class to authenticate the client against the webservice later.
 
@@ -159,7 +159,7 @@ This is a child class of the Person class. We will use this class to authenticat
 
 **Employer.java**
 
-[code lang="java"]
+```java
 package ch.issueman.common;
 
 import javax.persistence.Entity;
@@ -180,13 +180,13 @@ public class Employer extends Person {
 		this.company = company;
 	}
 }
-[/code]
+```
 
 Another child class of the Person class. Every project is owned by an employer.
 
 **Comment.java**
 
-[code lang="java"]
+```java
 package ch.issueman.common;
 
 import javax.persistence.Entity;
@@ -217,7 +217,7 @@ public class Comment implements Model{
 		this.user = user;
 	}
 }
-[/code]
+```
 
 A project can have multiple commands written by a user.
 
@@ -226,7 +226,7 @@ A project can have multiple commands written by a user.
 
 **Project.java**
 
-[code lang="java"]
+```java
 package ch.issueman.common;
 
 import java.util.List;
@@ -262,7 +262,7 @@ public class Project implements Model {
 		this.employer = employer;
 	}
 }
-[/code]
+```
 
 A project contains multiple comments and is owned by an employer.
 

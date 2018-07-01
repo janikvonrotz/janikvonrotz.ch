@@ -53,13 +53,13 @@ Run the letsencrypt wrapper script.
     sudo -h ./letsencrypt-auto
 
 If you experience an error like this:
-[code]
+```
 /usr/local/lib/python2.7/dist-packages/requests/packages/urllib3/util/ssl_.py:79: 
           InsecurePlatformWarning: A true SSLContext object is not available. 
           This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. 
           For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
   InsecurePlatformWarning
-[/code]
+```
 
 You have to update some pyhton libraries by running this command.
 

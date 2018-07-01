@@ -28,7 +28,7 @@ First we need to inject a SMSTS configuration file into the boot image to set th
 
 **Copy-SMSTSConfigToBootImage.ps1**
 
-[code lang="powershell"]
+```ps
 $BootImageFile = "C:\Program Files\Microsoft Configuration Manager\OSD\boot\x64\boot.wim"
 $Index = "1"
 $SMSIniFile = "D:\SCCM\Scripts\SMSTS.ini"
@@ -53,20 +53,20 @@ Write-Host "Remove temporary directory..."
 Remove-Item $MountFolder -Force
 
 Write-Host "Complete upating boot image:" (Get-Date).ToString()
-[/code]
+```
 
 The script mounts a specified boot image and copies the `SMSTS.init` configuration file.
 
 **SMSTS.ini**
 
-[code]
+```
 [Logging]
 LOGLEVEL=0
 LOGMAXSIZE=5242880
 LOGMAXHISTORY=3
 DEBUGLOGGING=1
 ENABLELOGGING=True
-[/code]
+```
 
 Once WinPE is unloaded and the selected windows image is being installed, we need set those parameters again. Only this time it is a bit easier.
 

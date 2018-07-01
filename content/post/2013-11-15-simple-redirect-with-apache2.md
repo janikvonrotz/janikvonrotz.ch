@@ -32,7 +32,7 @@ Maybe you've already updated to Ngnix or IIS want to redirect from the old websi
 
 The most simple solution to redirect a website domain or url to a new website is this apache virtual host configuration:
 
-[code]
+```
 
 <VirtualHost *:80>
   ServerName domain.ch
@@ -43,6 +43,6 @@ The most simple solution to redirect a website domain or url to a new website is
   Redirect permanent / https://www.somewhere.ch/aktuell/whatever/
 </VirtualHost>
 
-[/code]
+```
 
 Latest version of this snippet: <a href="https://gist.github.com/7481550" target="_blank">https://gist.github.com/7481550</a>
