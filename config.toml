@@ -2,4 +2,26 @@ baseURL = "https://janikvonrotz.ch"
 languageCode = "en-us"
 title = "Janik von Rotz"
 description = "Curious, Dedicated, Humble" 
-theme = "minimo"
+theme = "lithium"
+
+[permalinks]
+    post = "/:year/:month/:title/"
+    page = "/:title/"
+
+[menu]
+
+    [[menu.main]]
+        name = "Projects"
+        url = "/projects/"
+
+    [[menu.main]]
+        name = "Downloads"
+        url = "/downloads/"
+
+    [[menu.main]]
+        name = "Curriculum Vitae"
+        url = "/cv/"
+
+    [[menu.main]]
+        name = "Contact"
+        url = "/contact/"
