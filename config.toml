@@ -11,17 +11,26 @@ theme = "lithium"
 [menu]
 
     [[menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 1
+
+    [[menu.main]]
         name = "Projects"
         url = "/projects/"
+        weight = 2
 
     [[menu.main]]
         name = "Downloads"
         url = "/downloads/"
+        weight = 3
 
     [[menu.main]]
         name = "Curriculum Vitae"
         url = "/cv/"
+        weight = 4
 
     [[menu.main]]
         name = "Contact"
         url = "/contact/"
+        weight = 5
