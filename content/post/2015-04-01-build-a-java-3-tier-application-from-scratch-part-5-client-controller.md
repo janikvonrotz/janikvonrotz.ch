@@ -1,0 +1,229 @@
+---
+id: 3172
+title: 'Build a Java 3-tier application from scratch – Part 5: Client controller'
+date: 2015-04-01T09:27:32+00:00
+author: Janik von Rotz
+layout: post
+guid: https://janikvonrotz.ch/?p=3172
+permalink: /2015/04/01/build-a-java-3-tier-application-from-scratch-part-5-client-controller/
+dsq_thread_id:
+  - "3645281582"
+image: /wp-content/uploads/2014/10/Java-logo.jpg
+categories:
+  - Java
+tags:
+  - authentication
+  - client
+  - consume
+  - control
+  - controller
+  - data
+  - gui
+  - interface
+  - java
+  - javafx
+  - json
+  - login
+  - panes
+  - request
+  - resteasy
+  - scene
+  - switch
+  - webservice
+---
+As you've seen there are 5 models in our application. This is not that much but requires a lot of effort to display them in the client application. As this tutorial doesn't cover every aspect of a rich 3-tier applicatoin I will show only how you can authenticate the client application and edit the Employer entities.
+<!--more-->
+As always we create our filestructure first. Make sure the client eclipse project looks like:
+
+<img src="https://janikvonrotz.ch/wp-content/uploads/2015/03/Client-Eclipse-Filestructure.png" alt="Client Eclipse Filestructure" width="268" height="254" class="aligncenter size-full wp-image-3188" />
+
+# App
+
+To launch the client application java requires a main method.
+
+* Update the application launcher class.
+
+**App.java**
+
+[code lang="java"]
+package ch.issueman.client;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class App extends Application {
+	@Override
+	public void start(Stage primaryStage) {
+		try {
+			primaryStage.setResizable(false);
+			primaryStage.setTitle(&quot;Issue Manager&quot;);
+			primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource(&quot;Home.fxml&quot;))));
+			primaryStage.show();			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
+}
+[/code]
+
+We will define the view in the next chapter.
+Same as the webservice our client application load configurations from one json file.
+
+* Update the configuration file.
+
+**application.json**
+
+[code]
+{
+	&quot;webservice&quot;: {
+		&quot;url&quot;: &quot;http://localhost:8080/webservice&quot;
+	}
+}
+[/code]
+
+The only property as you can see is the webservice endpoint url. This is the jetty default address, do not change it unless you know whats going on.
+
+# Controller
+
+**controller.java**
+
+The client controller has the same functionality as the server controller. With the help of the RESTeasy client and the Jackson JSON mapper the controller communicates with the webservice and converts the JSON data to POJOs.
+
+[code lang="java"]
+package ch.issueman.client;
+
+import java.io.IOException;
+import java.io.Serializable;
+import java.util.List;
+
+import javax.ws.rs.client.Entity;
+import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.Response.Status;
+
+import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.map.type.TypeFactory;
+import org.jboss.resteasy.client.jaxrs.BasicAuthentication;
+import org.jboss.resteasy.client.jaxrs.ResteasyClient;
+import org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder;
+
+import com.typesafe.config.ConfigFactory;
+
+import ch.issueman.common.DAO;
+import ch.issueman.common.Model;
+import ch.issueman.common.User;
+
+public class Controller&lt;T, Id extends Serializable&gt; implements DAO&lt;T, Id&gt; {
+
+	private static ResteasyClient client = new ResteasyClientBuilder().build();
+	private String url;
+	private ObjectMapper mapper = new ObjectMapper();
+	private final Class&lt;T&gt; clazz;
+	private User user;
+	
+	public Controller(Class&lt;T&gt; clazz, User user) {
+		this.clazz = clazz;
+		url = ConfigFactory.load().getString(&quot;webservice.url&quot;) + &quot;/&quot; + clazz.getSimpleName().toLowerCase();
+		this.user = user;
+	}
+	
+	public boolean login(){
+		Boolean status = false;
+		try {
+			WebTarget target = client.target(ConfigFactory.load().getString(&quot;webservice.url&quot;) + &quot;/login&quot;);
+			Response response = target.request(MediaType.APPLICATION_JSON).post(Entity.json(mapper.writeValueAsString(user)));
+			if(response.getStatus() == Status.OK.getStatusCode()){
+				user = mapper.readValue(response.readEntity(String.class), User.class);
+				client = new ResteasyClientBuilder().register(new BasicAuthentication(user.getEmail(), user.getPassword())).build();
+				status = true;
+			}			
+			response.close();			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return status;
+	}
+	
+	public T getById(Id id) {
+		WebTarget target = client.target(url + &quot;/&quot; + id);
+		try {			
+			Response response = target.request(MediaType.APPLICATION_JSON).get();
+			T t = mapper.readValue(response.readEntity(String.class), clazz);
+			response.close();
+			return t;
+		} catch (IOException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	public List&lt;T&gt; getAll() {
+		
+		WebTarget target = client.target(url);
+		TypeFactory t = TypeFactory.defaultInstance();
+		
+		try {
+			Response response = target.request(MediaType.APPLICATION_JSON).get();
+			List&lt;T&gt; l = mapper.readValue(response.readEntity(String.class), t.constructCollectionType(List.class,clazz));
+			response.close();
+			return l;
+		} catch (IOException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	@Override
+	public void persist(T t) {
+		WebTarget target = client.target(url);
+		try {			
+			Response response =	target.request(MediaType.APPLICATION_JSON).post(Entity.json(mapper.writeValueAsString(t)));
+			response.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}		
+	}
+
+	@Override
+	public void update(T t) {
+		try {
+			WebTarget target = client.target(url);
+			Response response = target.request(MediaType.APPLICATION_JSON).put(Entity.json(mapper.writeValueAsString(t)));
+			response.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}	
+	}
+
+	@Override
+	public void delete(T t) {
+		WebTarget target = client.target(url + &quot;/&quot; + ((Model)t).getId());
+		Response response = target.request(MediaType.APPLICATION_JSON).delete();
+		response.close();
+	}
+
+	@Override
+	public void deleteAll() {
+	}
+}
+[/code]
+
+In addition this controller has a `login` method. You can pass a user object and run this method to authenticate the controller against the webservice. Pretty easy, isn't it?
+
+See you in the next and last part when write the client view.
+
+# Links
+
+* [Part 1: Introduction and project setup](https://janikvonrotz.ch/2015/03/15/build-a-java-3-tier-application-from-scratch-part-1-introduction-and-project-setup/)
+* [Part 2: Model setup](https://janikvonrotz.ch/2015/03/28/build-a-java-3-tier-application-from-scratch-part-2-model-setup/)
+* [Part 3: Object-relational mapping](https://janikvonrotz.ch/2015/03/30/build-a-java-3-tier-application-from-scratch-part-3-object-relational-mapping/)
+* [Part 4: Webservice](https://janikvonrotz.ch/2015/03/31/build-a-java-3-tier-application-from-scratch-part-4-webservice/)
+* [Part 5: Client controller](https://janikvonrotz.ch/2015/04/01/build-a-java-3-tier-application-from-scratch-part-5-client-controller/)
+* [Part 6: Client view](https://janikvonrotz.ch/2015/04/02/build-a-java-3-tier-application-from-scratch-part-6-client-view/)
