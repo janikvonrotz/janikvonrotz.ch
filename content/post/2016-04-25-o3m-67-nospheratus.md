@@ -1,6 +1,6 @@
 ---
 id: 3916
-title: 'O3M 67 &#8211; Nospheratus'
+title: 'O3M 67 - Nospheratus'
 date: 2016-04-25T20:33:14+00:00
 author: Janik von Rotz
 layout: post

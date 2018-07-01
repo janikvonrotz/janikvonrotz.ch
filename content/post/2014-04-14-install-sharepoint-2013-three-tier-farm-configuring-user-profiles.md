@@ -1,6 +1,6 @@
 ---
 id: 1894
-title: 'Install SharePoint 2013 Three-tier Farm &#8211; Configuring User Profiles'
+title: 'Install SharePoint 2013 Three-tier Farm - Configuring User Profiles'
 date: 2014-04-14T09:24:12+00:00
 author: Janik von Rotz
 layout: post
@@ -38,7 +38,7 @@ This is another SQL database best practice to enable page locks on the User Prof
 First run this SQL statement:
 
 [code lang="sql"]
-USE &quot;SP_AS_UPS_Sync&quot;
+USE "SP_AS_UPS_Sync"
 GO
 SELECT 'ALTER INDEX ' + I.Name + ' ON ' + T.Name + ' SET (ALLOW_PAGE_LOCKS = ON)' As Command
 FROM sys.indexes I

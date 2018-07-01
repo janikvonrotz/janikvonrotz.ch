@@ -1,6 +1,6 @@
 ---
 id: 2886
-title: 'Let&#8217;s write a Laravel application &#8211; Introduction'
+title: 'Let’s write a Laravel application - Introduction'
 date: 2015-01-28T18:36:10+00:00
 author: Janik von Rotz
 layout: post

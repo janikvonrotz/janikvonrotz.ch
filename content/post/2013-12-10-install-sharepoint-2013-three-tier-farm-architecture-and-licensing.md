@@ -1,6 +1,6 @@
 ---
 id: 794
-title: 'Install SharePoint 2013 Three-tier Farm &#8211; Architecture and Licensing'
+title: 'Install SharePoint 2013 Three-tier Farm - Architecture and Licensing'
 date: 2013-12-10T12:35:07+00:00
 author: Janik von Rotz
 layout: post

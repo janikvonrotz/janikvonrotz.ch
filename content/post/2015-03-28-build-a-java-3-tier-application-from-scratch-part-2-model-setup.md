@@ -1,6 +1,6 @@
 ---
 id: 3120
-title: 'Build a Java 3-tier application from scratch &#8211; Part 2: Model setup'
+title: 'Build a Java 3-tier application from scratch - Part 2: Model setup'
 date: 2015-03-28T18:01:51+00:00
 author: Janik von Rotz
 layout: post
@@ -53,11 +53,11 @@ package ch.issueman.common;
 import java.io.Serializable;
 import java.util.List;
 
-public interface DAO&lt;T, Id extends Serializable&gt; {
+public interface DAO<T, Id extends Serializable> {
 	
 	public void persist(T t);
 	public T getById(Id id);
-	public List&lt;T&gt; getAll();
+	public List<T> getAll();
 	public void update(T t);
 	public void delete(T t);
 	public void deleteAll();
@@ -251,7 +251,7 @@ public class Project implements Model {
 	@ManyToOne
 	private Employer employer;
 	@ManyToMany(cascade = CascadeType.ALL)
-	private List&lt;Comment&gt; comments;
+	private List<Comment> comments;
 
 	public Project() {
 	}

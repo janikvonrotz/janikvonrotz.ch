@@ -88,7 +88,7 @@ Setup a git repo for the shared pass store.
 cd ~/.password-store/_PROJECT_NAME_
 git init
 git add .
-git commit -m &quot;Init _PROJECT_NAME_ password store&quot;
+git commit -m "Init _PROJECT_NAME_ password store"
 git remote add origin _GIT_REMOTE_URL_
 git push --set-upstream origin master
 [/code]
@@ -99,7 +99,7 @@ Add the gpg public key to the store.
 mkdir .gpg-keys
 gpg --output .gpg-keys/_TEAM_MAIL_.gpg --export _TEAM_MAIL_
 git add _TEAM_MAIL_.gpg
-git commit -m &quot;Add _TEAM_MAIL_ public key&quot;
+git commit -m "Add _TEAM_MAIL_ public key"
 git push
 [/code]
 
@@ -130,7 +130,7 @@ Then submit a request by committing the gpg id.
 [code lang="bash"]
 cd ~/.password-store/_PROJECT_NAME_
 git add .gpg-id
-git commit -m &quot;Request access for _PERSONAL_MAIL_&quot;
+git commit -m "Request access for _PERSONAL_MAIL_"
 git push
 [/code]
 
@@ -166,7 +166,7 @@ Commit the changes.
 [code lang="bash"]
 cd ~/.password-store/_PROJECT_NAME_
 git add .
-git commit -m &quot;Access granted for _PERSONAL_MAIL_&quot;
+git commit -m "Access granted for _PERSONAL_MAIL_"
 git push
 [/code]
 

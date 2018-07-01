@@ -78,11 +78,11 @@ This is the only function required to check the users permission.
 [code]
 import { config } from './index'
 
-export default (action, roles) =&gt; {
+export default (action, roles) => {
   let allowed = false
   let allowedRoles = config.acl[action]
   roles = roles != null ? roles : []
-  roles.map((role) =&gt; {
+  roles.map((role) => {
      allowed = allowedRoles.indexOf(role) != -1
   })
   return allowed
@@ -99,7 +99,7 @@ This example shows how the permission is checked in a Meteor method.
 ...
 import { isAllowed } from '/imports/helpers'
 
-export default () =&gt; {
+export default () => {
   Meteor.methods({
     'routers.insert'(object) {
       check(object, Object)
@@ -124,7 +124,7 @@ Now we restrict access on the data access layer.
 ...
 import { isAllowed } from '/imports/helpers'
 
-export default () =&gt; {
+export default () => {
 
   Meteor.publish('routers.list', function(selector = {}) {
 
@@ -155,25 +155,25 @@ class Router extends React.Component {
   ...
   render() {
     let { loading, user, i18n } = this.props
-    return loading ? &lt;CircularProgress /&gt; : &lt;Card&gt;
+    return loading ? <CircularProgress /> : <Card>
           ...
 
           { isAllowed('routers.update', user ? user.roles : null) ?
-          &lt;RaisedButton
-          type=&quot;submit&quot;
+          <RaisedButton
+          type="submit"
           label={ i18n.button.update }
-          primary={ true } /&gt;
+          primary={ true } />
           : null }
 
           { isAllowed('routers.remove', user ? user.roles : null) ?
-          &lt;RaisedButton
+          <RaisedButton
           onTouchTap={ this.toggleDialog.bind(this, 'openRemoveDialog') }
           label={ i18n.button.remove }
-          secondary={ true } /&gt;
+          secondary={ true } />
           : null }
 
           ...
-    &lt;/Card&gt;
+    </Card>
   }
 }
 

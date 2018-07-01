@@ -48,7 +48,7 @@ We will start with a refresh of the file structure. The picture below shows yell
 **hibernate.cfg.xml**
 
 [code lang="xml"]
-&lt;mapping class=&quot;ch.hslu.issueman.model.Person&quot;/&gt;
+<mapping class="ch.hslu.issueman.model.Person"/>
 [/code]
 
 * Finally create the JavaFX view file `Home.fxml` in the view directory. We will update this file later.
@@ -98,13 +98,13 @@ At the end of the file before the closing `}` inser the following snippets.
 	private TextField txName;
 	
 	@FXML
-	private TableView&lt;Person&gt; tvPerson;
+	private TableView<Person> tvPerson;
 	
 	@FXML
-	private TableColumn&lt;Person, Integer&gt; tcId;
+	private TableColumn<Person, Integer> tcId;
 	
 	@FXML
-	private TableColumn&lt;Person, String&gt; tcName;
+	private TableColumn<Person, String> tcName;
 [/code]
 
 These objects allows us to set and get values from the application interface.
@@ -112,8 +112,8 @@ These objects allows us to set and get values from the application interface.
 [code lang="java"]
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		tcId.setCellValueFactory(new PropertyValueFactory&lt;Person, Integer&gt;(&quot;id&quot;));		
-		tcName.setCellValueFactory(new PropertyValueFactory&lt;Person, String&gt;(&quot;name&quot;));
+		tcId.setCellValueFactory(new PropertyValueFactory<Person, Integer>("id"));		
+		tcName.setCellValueFactory(new PropertyValueFactory<Person, String>("name"));
 		refreshPersonTable();
 	}
 [/code]
@@ -177,34 +177,34 @@ If you don't know how to accomplish that yet you can copy the fxml definitions b
 **Home.fxml**
 
 [code lang="xml"]
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+<?xml version="1.0" encoding="UTF-8"?>
 
-&lt;?import javafx.scene.image.*?&gt;
-&lt;?import javafx.scene.effect.*?&gt;
-&lt;?import javafx.scene.paint.*?&gt;
-&lt;?import javafx.scene.control.*?&gt;
-&lt;?import javafx.scene.text.*?&gt;
-&lt;?import java.lang.*?&gt;
-&lt;?import javafx.scene.layout.*?&gt;
-&lt;?import javafx.scene.layout.AnchorPane?&gt;
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
 
-&lt;AnchorPane maxHeight=&quot;-Infinity&quot; maxWidth=&quot;-Infinity&quot; minHeight=&quot;-Infinity&quot; minWidth=&quot;-Infinity&quot; prefHeight=&quot;300.0&quot; prefWidth=&quot;400.0&quot; xmlns=&quot;http://javafx.com/javafx/8&quot; xmlns:fx=&quot;http://javafx.com/fxml/1&quot; fx:controller=&quot;ch.hslu.issueman.controller.PersonController&quot;&gt;
-   &lt;effect&gt;
-      &lt;Glow /&gt;
-   &lt;/effect&gt;
-   &lt;children&gt;
-      &lt;TableView fx:id=&quot;tvPerson&quot; onMouseClicked=&quot;#clickTableView&quot; prefHeight=&quot;307.0&quot; prefWidth=&quot;187.0&quot;&gt;
-         &lt;columns&gt;
-            &lt;TableColumn fx:id=&quot;tcId&quot; prefWidth=&quot;50.0&quot; text=&quot;ID&quot; /&gt;
-            &lt;TableColumn fx:id=&quot;tcName&quot; prefWidth=&quot;135.0&quot; text=&quot;Name&quot; /&gt;
-         &lt;/columns&gt;
-      &lt;/TableView&gt;
-      &lt;Button fx:id=&quot;btAdd&quot; layoutX=&quot;200.0&quot; layoutY=&quot;99.0&quot; mnemonicParsing=&quot;false&quot; onMouseClicked=&quot;#clickAdd&quot; text=&quot;Add&quot; /&gt;
-      &lt;Button fx:id=&quot;btUpdate&quot; layoutX=&quot;248.0&quot; layoutY=&quot;99.0&quot; mnemonicParsing=&quot;false&quot; onMouseClicked=&quot;#clickUpdate&quot; text=&quot;Update&quot; /&gt;
-      &lt;Button fx:id=&quot;btDelete&quot; layoutX=&quot;317.0&quot; layoutY=&quot;99.0&quot; mnemonicParsing=&quot;false&quot; onMouseClicked=&quot;#clickDelete&quot; text=&quot;Delete&quot; /&gt;
-      &lt;TextField fx:id=&quot;txName&quot; layoutX=&quot;196.0&quot; layoutY=&quot;61.0&quot; /&gt;
-   &lt;/children&gt;
-&lt;/AnchorPane&gt;
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.hslu.issueman.controller.PersonController">
+   <effect>
+      <Glow />
+   </effect>
+   <children>
+      <TableView fx:id="tvPerson" onMouseClicked="#clickTableView" prefHeight="307.0" prefWidth="187.0">
+         <columns>
+            <TableColumn fx:id="tcId" prefWidth="50.0" text="ID" />
+            <TableColumn fx:id="tcName" prefWidth="135.0" text="Name" />
+         </columns>
+      </TableView>
+      <Button fx:id="btAdd" layoutX="200.0" layoutY="99.0" mnemonicParsing="false" onMouseClicked="#clickAdd" text="Add" />
+      <Button fx:id="btUpdate" layoutX="248.0" layoutY="99.0" mnemonicParsing="false" onMouseClicked="#clickUpdate" text="Update" />
+      <Button fx:id="btDelete" layoutX="317.0" layoutY="99.0" mnemonicParsing="false" onMouseClicked="#clickDelete" text="Delete" />
+      <TextField fx:id="txName" layoutX="196.0" layoutY="61.0" />
+   </children>
+</AnchorPane>
 [/code]
 
 And we are almost done.
@@ -228,8 +228,8 @@ public class App extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			primaryStage.setResizable(false);
-			primaryStage.setTitle(&quot;Issue Manager&quot;);
-			primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource(&quot;view/Home.fxml&quot;))));
+			primaryStage.setTitle("Issue Manager");
+			primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("view/Home.fxml"))));
 			primaryStage.show();			
 		} catch(Exception e) {
 			e.printStackTrace();

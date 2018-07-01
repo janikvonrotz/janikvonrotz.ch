@@ -1,6 +1,6 @@
 ---
 id: 837
-title: 'O3M 26 &#8211; Rucksack (Alternative, Indie Rock)'
+title: 'O3M 26 - Rucksack (Alternative, Indie Rock)'
 date: 2013-12-16T18:31:13+00:00
 author: Janik von Rotz
 layout: post

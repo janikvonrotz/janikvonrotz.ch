@@ -1,6 +1,6 @@
 ---
 id: 2281
-title: 'O3M 42 &#8211; DickButt (electro)'
+title: 'O3M 42 - DickButt (electro)'
 date: 2014-05-16T15:13:35+00:00
 author: Janik von Rotz
 layout: post

@@ -1,6 +1,6 @@
 ---
 id: 4518
-title: 'O3M 75 &#8211; Locco Ticos'
+title: 'O3M 75 - Locco Ticos'
 date: 2017-08-31T09:00:58+00:00
 author: Janik von Rotz
 layout: post

@@ -1,6 +1,6 @@
 ---
 id: 2547
-title: 'USA &#8211; New York'
+title: 'USA - New York'
 date: 2014-08-29T14:38:49+00:00
 author: Janik von Rotz
 layout: post
@@ -31,7 +31,7 @@ Here's a quote and some pictures to say Goodbye New York.
 
 -- Albert Einstein
 
-[caption id="attachment_2554" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/08/New-York-20140828-1024x575.jpg" alt="Take the free Staten Island ferry and you&#039;ll get this beautiful view of New York." width="720" height="404" class="size-large wp-image-2554" /> Take the free Staten Island ferry and you'll get this beautiful view of New York.[/caption]
+[caption id="attachment_2554" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/08/New-York-20140828-1024x575.jpg" alt="Take the free Staten Island ferry and you’ll get this beautiful view of New York." width="720" height="404" class="size-large wp-image-2554" /> Take the free Staten Island ferry and you'll get this beautiful view of New York.[/caption]
 
 [caption id="attachment_2552" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/08/Brooklyn-bridge-by-night-20140828-1024x575.jpg" alt="A nice district to go out is right next to the Brooklyn bridge." width="720" height="404" class="size-large wp-image-2552" /> A nice district to go out is right next to the Brooklyn bridge.[/caption]
 

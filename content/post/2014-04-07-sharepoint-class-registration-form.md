@@ -203,16 +203,16 @@ The javascript creates the dialog box javascript to open our new form. The call 
 3. Paste the following javascript and save the page
 
 [code lang="js"]
-&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.jsdelivr.net/jquery/2.1.0/jquery.min.js&quot;&gt;
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.0/jquery.min.js">
 // visit http://www.jsdelivr.com/#!jquery to update the cdn url
-&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
+</script>
+<script type="text/javascript">
 function OpenRegistrationForm(meeting_id){
     var options = {
     // to geht following make a right click on the new item link in the Class Attendees list and select open in new tab.
     // Now copy the url in the browser from the beginning to the of the &amp;RootFolder= part
     // Inser the link below and replace [RootFolder] with meeting_id
-    url:&quot;http://sharepoint.vbl.ch/Personal/Lists/Class%20Attendees/Item/newifs.aspx?List=21803ee2-66ab-4df2-9116-b02853ca7e1a&amp;meeting_id=&quot;  + meeting_id,
+    url:"http://sharepoint.vbl.ch/Personal/Lists/Class%20Attendees/Item/newifs.aspx?List=21803ee2-66ab-4df2-9116-b02853ca7e1a&amp;meeting_id="  + meeting_id,
     width: 750,
     height: 600,
     dialogReturnValueCallback: DialogCallback
@@ -220,7 +220,7 @@ function OpenRegistrationForm(meeting_id){
   SP.UI.ModalDialog.showModalDialog(options);
 }
 function DialogCallback(dialogResult, returnValue){}
-&lt;/script&gt;
+</script>
 [/code]
 
 # Finally

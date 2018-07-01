@@ -27,17 +27,17 @@ An R analysis is composed of a bunch commands which can be drawn together to a s
 
 [code]
 # load library
-require(&quot;quantmod&quot;)
+require("quantmod")
 require(TTR)
 
 # setup stock
-setSymbolLookup(VW=list(name=&quot;VOW.DE&quot;, src=&quot;yahoo&quot;))
+setSymbolLookup(VW=list(name="VOW.DE", src="yahoo"))
 
 # download stock data
-getSymbols(c(&quot;VW&quot;))
+getSymbols(c("VW"))
 
 # create chart
-chartSeries(VW, subset=&quot;last 3 months&quot;)
+chartSeries(VW, subset="last 3 months")
 
 # add indicators
 addMACD()

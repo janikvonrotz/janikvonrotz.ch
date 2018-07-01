@@ -1,6 +1,6 @@
 ---
 id: 4041
-title: 'O3M 70 &#8211; Tamagotchi'
+title: 'O3M 70 - Tamagotchi'
 date: 2016-08-27T09:43:23+00:00
 author: Janik von Rotz
 layout: post

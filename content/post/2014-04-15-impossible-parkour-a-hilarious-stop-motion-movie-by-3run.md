@@ -1,6 +1,6 @@
 ---
 id: 1968
-title: 'Impossible Parkour &#8211; A hilarious stop motion movie by 3Run'
+title: 'Impossible Parkour - A hilarious stop motion movie by 3Run'
 date: 2014-04-15T06:32:08+00:00
 author: Janik von Rotz
 layout: post

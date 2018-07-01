@@ -1,6 +1,6 @@
 ---
 id: 1421
-title: 'Let&#8217;s get weird: Website of the day'
+title: 'Let’s get weird: Website of the day'
 date: 2014-03-06T11:19:08+00:00
 author: Janik von Rotz
 layout: post

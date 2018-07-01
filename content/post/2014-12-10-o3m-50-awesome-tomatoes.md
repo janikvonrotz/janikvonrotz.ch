@@ -1,6 +1,6 @@
 ---
 id: 2781
-title: 'O3M 50 &#8211; Awesome Tomatoes'
+title: 'O3M 50 - Awesome Tomatoes'
 date: 2014-12-10T09:12:31+00:00
 author: Janik von Rotz
 layout: post

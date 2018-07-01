@@ -1,6 +1,6 @@
 ---
 id: 2310
-title: 'O3M 43 &#8211; And Again (trap, dubstep)'
+title: 'O3M 43 - And Again (trap, dubstep)'
 date: 2014-05-20T15:20:17+00:00
 author: Janik von Rotz
 layout: post

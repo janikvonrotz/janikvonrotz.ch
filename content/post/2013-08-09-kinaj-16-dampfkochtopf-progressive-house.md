@@ -1,6 +1,6 @@
 ---
 id: 405
-title: 'Kinaj 16 &#8211; Dampfkochtopf (progressive house)'
+title: 'Kinaj 16 - Dampfkochtopf (progressive house)'
 date: 2013-08-09T14:27:55+00:00
 author: Janik von Rotz
 layout: post

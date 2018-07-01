@@ -51,7 +51,7 @@ And here are the manipulation functions:
 
 function Get-HostFileEntries{
 
-&lt;#
+<#
 .SYNOPSIS
     Get every entry from the hosts file.
 
@@ -59,28 +59,28 @@ function Get-HostFileEntries{
 	Extracts host entrys fromt the hosts file and shows them as a PowerShell object array.
 
 .EXAMPLE
-	PS C:&gt; Get-HostFileEntries
-#&gt;
+	PS C:> Get-HostFileEntries
+#>
 
-&lt;#
+<#
     [CmdletBinding()]
 	param(
 		[Parameter(Mandatory=$true)]
 		[String]
 		$Name
 	)
-#&gt;
+#>
 
     #--------------------------------------------------#
     # main
     #--------------------------------------------------#
-    $HostFileContent = get-content &quot;$env:windirSystem32driversetchosts&quot;
+    $HostFileContent = get-content "$env:windirSystem32driversetchosts"
     $Entries = @()
     foreach($Line in $HostFilecontent){
-        if(!$Line.StartsWith(&quot;#&quot;) -and $Line -ne &quot;&quot;){
+        if(!$Line.StartsWith("#") -and $Line -ne ""){
 
-            $IP = ([regex]&quot;(([2]([0-4][0-9]|[5][0-5])|[0-1]?[0-9]?[0-9])[.]){3}(([2]([0-4][0-9]|[5][0-5])|[0-1]?[0-9]?[0-9]))&quot;).match($Line).value
-            $DNS = ($Line -replace $IP, &quot;&quot;) -replace  's+',&quot;&quot;
+            $IP = ([regex]"(([2]([0-4][0-9]|[5][0-5])|[0-1]?[0-9]?[0-9])[.]){3}(([2]([0-4][0-9]|[5][0-5])|[0-1]?[0-9]?[0-9]))").match($Line).value
+            $DNS = ($Line -replace $IP, "") -replace  's+',""
 
             $Entry = New-ObjectHostFileEntry -IP $IP -DNS $DNS
             $Entries += $Entry
@@ -89,7 +89,7 @@ function Get-HostFileEntries{
     if($Entries -ne $Null){
         $Entries
     }else{
-        throw &quot;No entries found in host file&quot;
+        throw "No entries found in host file"
     }
 }
 [/code]
@@ -100,7 +100,7 @@ function Get-HostFileEntries{
 
 function Add-HostFileEntry{
 
-&lt;#
+<#
 .SYNOPSIS
     Add an new entry to the hosts file
 
@@ -114,8 +114,8 @@ function Add-HostFileEntry{
 	DNS address
 
 .EXAMPLE
-	PS C:&gt; Get-HostFileEntry -IP &quot;192.168.50.4&quot; -DNS &quot;local.wordpress.dev&quot;
-#&gt;
+	PS C:> Get-HostFileEntry -IP "192.168.50.4" -DNS "local.wordpress.dev"
+#>
 
     [CmdletBinding()]
 	param(
@@ -131,14 +131,14 @@ function Add-HostFileEntry{
     #--------------------------------------------------#
     # main
     #--------------------------------------------------#
-    $HostFile = &quot;$env:windirSystem32driversetchosts&quot;
+    $HostFile = "$env:windirSystem32driversetchosts"
     $LastLine = ($ContentFile | select -Last 1)
 
-    if($IP -match [regex]&quot;(([2]([0-4][0-9]|[5][0-5])|[0-1]?[0-9]?[0-9])[.]){3}(([2]([0-4][0-9]|[5][0-5])|[0-1]?[0-9]?[0-9]))&quot;){
+    if($IP -match [regex]"(([2]([0-4][0-9]|[5][0-5])|[0-1]?[0-9]?[0-9])[.]){3}(([2]([0-4][0-9]|[5][0-5])|[0-1]?[0-9]?[0-9]))"){
 
-        Write-Host &quot;Add entry to hosts file: &quot;$(if($IP){$IP + &quot; &quot;}else{})$(if($DNS){$DNS})
-        if($LastLine -ne &quot;&quot; -and  $LastLine -ne 's+' -and $LastLine -ne $Null){Add-Content -Path $HostFile -Value &quot;&quot; -Encoding &quot;Ascii&quot;}
-        Add-Content -Path $HostFile -Value ($IP + &quot;       &quot; + $DNS) -Encoding &quot;Ascii&quot;
+        Write-Host "Add entry to hosts file: "$(if($IP){$IP + " "}else{})$(if($DNS){$DNS})
+        if($LastLine -ne "" -and  $LastLine -ne 's+' -and $LastLine -ne $Null){Add-Content -Path $HostFile -Value "" -Encoding "Ascii"}
+        Add-Content -Path $HostFile -Value ($IP + "       " + $DNS) -Encoding "Ascii"
     }
 }
 [/code]
@@ -149,7 +149,7 @@ function Add-HostFileEntry{
 
 function Remove-HostFileEntry{
 
-&lt;#
+<#
 .SYNOPSIS
     Add an new entry to the hosts file
 
@@ -163,8 +163,8 @@ function Remove-HostFileEntry{
 	DNS address
 
 .EXAMPLE
-	PS C:&gt; Get-HostFileEntry -IP &quot;192.168.50.4&quot; -DNS &quot;local.wordpress.dev&quot;
-#&gt;
+	PS C:> Get-HostFileEntry -IP "192.168.50.4" -DNS "local.wordpress.dev"
+#>
 
     [CmdletBinding()]
 	param(
@@ -178,23 +178,23 @@ function Remove-HostFileEntry{
     #--------------------------------------------------#
     # main
     #--------------------------------------------------#
-    $HostFile = &quot;$env:windirSystem32driversetchosts&quot;
+    $HostFile = "$env:windirSystem32driversetchosts"
     $HostFileContent = get-content $HostFile
     $HostFileContentNew = @()
     $Modification = $false
 
     foreach($Line in $HostFilecontent){
-        if($Line.StartsWith(&quot;#&quot;) -or $Line -eq &quot;&quot;){
+        if($Line.StartsWith("#") -or $Line -eq ""){
 
             $HostFileContentNew += $Line
         }else{
 
-            $HostIP = ([regex]&quot;(([2]([0-4][0-9]|[5][0-5])|[0-1]?[0-9]?[0-9])[.]){3}(([2]([0-4][0-9]|[5][0-5])|[0-1]?[0-9]?[0-9]))&quot;).match($Line).value
-            $HostDNS = ($Line -replace $HostIP, &quot;&quot;) -replace 's+',&quot;&quot;
+            $HostIP = ([regex]"(([2]([0-4][0-9]|[5][0-5])|[0-1]?[0-9]?[0-9])[.]){3}(([2]([0-4][0-9]|[5][0-5])|[0-1]?[0-9]?[0-9]))").match($Line).value
+            $HostDNS = ($Line -replace $HostIP, "") -replace 's+',""
 
             if($HostIP -eq $IP -or $HostDNS -eq $DNS){
 
-                Write-Host &quot;Remove host file entry: &quot;$(if($IP){$IP + &quot; &quot;}else{})$(if($DNS){$DNS})
+                Write-Host "Remove host file entry: "$(if($IP){$IP + " "}else{})$(if($DNS){$DNS})
                 $Modification = $true
             }else{
                 $HostFileContentNew += $Line
@@ -206,7 +206,7 @@ function Remove-HostFileEntry{
 
         Set-Content -Path $HostFile -Value $HostFileContentNew
     }else{
-        throw &quot;Couldn't find entry to remove in hosts file.&quot;
+        throw "Couldn't find entry to remove in hosts file."
     }
 }
 

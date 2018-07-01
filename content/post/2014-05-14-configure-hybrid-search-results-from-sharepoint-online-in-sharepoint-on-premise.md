@@ -79,12 +79,12 @@ Password: `[password]`
 Let's update the certificate on the STS. Configure and run the PowerShell script below on your SharePoint server.
 
 [code lang="ps"]
-if(-not (Get-PSSnapin &quot;Microsoft.SharePoint.PowerShell&quot; -ErrorAction SilentlyContinue)){Add-PSSnapin &quot;Microsoft.SharePoint.PowerShell&quot;}
+if(-not (Get-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue)){Add-PSSnapin "Microsoft.SharePoint.PowerShell"}
 
 # set the cerficates paths and password
-$PfxCertPath = &quot;c:\[certificate name].pfx&quot;
-$PfxCertPassword = &quot;[password]&quot;
-$X64CertPath = &quot;c:\[certificate name].cer&quot;
+$PfxCertPath = "c:\[certificate name].pfx"
+$PfxCertPassword = "[password]"
+$X64CertPath = "c:\[certificate name].cer"
 
 # get the encrypted pfx certificate object
 $PfxCert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2 $PfxCertPath, $PfxCertPassword, 20
@@ -109,8 +109,8 @@ Now validate the certificate replacement by running several PowerShell commands 
 
 [code lang="ps"]
 # set the cerficates paths and password
-$PfxCertPath = &quot;c:\[certificate name].pfx&quot;
-$PfxCertPassword = &quot;[password]&quot;
+$PfxCertPath = "c:\[certificate name].pfx"
+$PfxCertPassword = "[password]"
 
 # get the encrypted pfx certificate object
 New-Object System.Security.Cryptography.X509Certificates.X509Certificate2 $PfxCertPath, $PfxCertPassword, 20
@@ -122,23 +122,23 @@ New-Object System.Security.Cryptography.X509Certificates.X509Certificate2 $PfxCe
 ## Establish the server to server trust
 
 [code lang="ps"]
-if(-not (Get-PSSnapin &quot;Microsoft.SharePoint.PowerShell&quot; -ErrorAction SilentlyContinue)){Add-PSSnapin &quot;Microsoft.SharePoint.PowerShell&quot;}
+if(-not (Get-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue)){Add-PSSnapin "Microsoft.SharePoint.PowerShell"}
 Import-Module MSOnline 
 Import-Module MSOnlineExtended
 
 # set the cerficates paths and password
-$PfxCertPath = &quot;c:\[certificate name].pfx&quot;
-$PfxCertPassword = &quot;[password]&quot;
-$X64CertPath = &quot;c:\[certificate name].cer&quot;
+$PfxCertPath = "c:\[certificate name].pfx"
+$PfxCertPassword = "[password]"
+$X64CertPath = "c:\[certificate name].cer"
 
 # set the onpremise domain that you added to Office 365
-$SPCN = &quot;sharepoint.domain.com&quot; 
+$SPCN = "sharepoint.domain.com" 
 
 # your onpremise SharePoint site url
-$SPSite=&quot;http://sharepoint&quot;
+$SPSite="http://sharepoint"
 
 # don't change this value
-$SPOAppID=&quot;00000003-0000-0ff1-ce00-000000000000&quot;
+$SPOAppID="00000003-0000-0ff1-ce00-000000000000"
 
 # get the encrypted pfx certificate object
 $PfxCert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2 $PfxCertPath, $PfxCertPassword, 20
@@ -167,24 +167,24 @@ Connect-MsolService
 New-MsolServicePrincipalCredential -AppPrincipalId $SPOAppID -Type asymmetric -Usage Verify -Value $CredValue
 $MsolServicePrincipal = Get-MsolServicePrincipal -AppPrincipalId $SPOAppID
 $SPServicePrincipalNames = $MsolServicePrincipal.ServicePrincipalNames
-$SPServicePrincipalNames.Add(&quot;$SPOAppID/$SPCN&quot;)
+$SPServicePrincipalNames.Add("$SPOAppID/$SPCN")
 Set-MsolServicePrincipal -AppPrincipalId $SPOAppID -ServicePrincipalNames $SPServicePrincipalNames
 
 # get the online name identifier
 $MsolCompanyInformationID = (Get-MsolCompanyInformation).ObjectID
 $MsolServicePrincipalID = (Get-MsolServicePrincipal -ServicePrincipalName $SPOAppID).ObjectID
-$MsolNameIdentifier = &quot;$MsolServicePrincipalID@$MsolCompanyInformationID&quot;
+$MsolNameIdentifier = "$MsolServicePrincipalID@$MsolCompanyInformationID"
 
 # establish the trust from on-premise with ACS (Azure Control Service)
 
 # add a new authenticatio realm
 $SPSite = Get-SPSite $SPSite
-$SPAppPrincipal = Register-SPAppPrincipal -site $SPSite.rootweb -nameIdentifier $MsolNameIdentifier -displayName &quot;SharePoint Online&quot;
+$SPAppPrincipal = Register-SPAppPrincipal -site $SPSite.rootweb -nameIdentifier $MsolNameIdentifier -displayName "SharePoint Online"
 Set-SPAuthenticationRealm -realm $MsolServicePrincipalID
 
 # register the ACS application proxy and token issuer
-New-SPAzureAccessControlServiceApplicationProxy -Name &quot;ACS&quot; -MetadataServiceEndpointUri &quot;https://accounts.accesscontrol.windows.net/metadata/json/1/&quot; -DefaultProxyGroup
-New-SPTrustedSecurityTokenIssuer -MetadataEndpoint &quot;https://accounts.accesscontrol.windows.net/metadata/json/1/&quot; -IsTrustBroker -Name &quot;ACS&quot;
+New-SPAzureAccessControlServiceApplicationProxy -Name "ACS" -MetadataServiceEndpointUri "https://accounts.accesscontrol.windows.net/metadata/json/1/" -DefaultProxyGroup
+New-SPTrustedSecurityTokenIssuer -MetadataEndpoint "https://accounts.accesscontrol.windows.net/metadata/json/1/" -IsTrustBroker -Name "ACS"
 [/code]
 
 # Add a new result source
@@ -193,13 +193,13 @@ To get search results from SharePoint Online we have to add a new result source.
 Don't forget to update the settings region
 
 [code lang="ps"]
-if(-not (Get-PSSnapin &quot;Microsoft.SharePoint.PowerShell&quot; -ErrorAction SilentlyContinue)){Add-PSSnapin &quot;Microsoft.SharePoint.PowerShell&quot;}
+if(-not (Get-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue)){Add-PSSnapin "Microsoft.SharePoint.PowerShell"}
 
 # region settings 
-$RemoteSharePointUrl = &quot;http://[example].sharepoint.com&quot;
-$ResultSourceName = &quot;SharePoint Online&quot;
-$QueryTransform = &quot;{searchTerms}&quot;
-$Provier = &quot;SharePoint-Remoteanbieter&quot;
+$RemoteSharePointUrl = "http://[example].sharepoint.com"
+$ResultSourceName = "SharePoint Online"
+$QueryTransform = "{searchTerms}"
+$Provier = "SharePoint-Remoteanbieter"
 # region settings end
 
 $SPEnterpriseSearchServiceApplication = Get-SPEnterpriseSearchServiceApplication
@@ -208,7 +208,7 @@ $SPEnterpriseSearchOwner = Get-SPEnterpriseSearchOwner -Level Ssa
 
 $ResultSource = $FederationManager.GetSourceByName($ResultSourceName, $SPEnterpriseSearchOwner)
 if(!$ResultSource){
-    Write-Host &quot;Result source does not exist. Creating...&quot;
+    Write-Host "Result source does not exist. Creating..."
     $ResultSource = $FederationManager.CreateSource($SPEnterpriseSearchOwner)
 }
 

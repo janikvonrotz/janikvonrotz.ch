@@ -39,74 +39,74 @@ The following script can handle this issue by:
 <a href="https://janikvonrotz.ch/wp-content/uploads/2014/01/Synchronize-Service-Mailbox-Access-Groups.jpg"><img class="aligncenter size-large wp-image-1020" alt="Synchronize Service Mailbox Access Groups" src="https://janikvonrotz.ch/wp-content/uploads/2014/01/Synchronize-Service-Mailbox-Access-Groups-1024x413.jpg" width="474" height="191" /></a>
 
 [code lang="ps"]
-&lt;#
+<#
 $Metadata = @{
-	Title = &quot;Synchronize Service Mailbox Access Groups&quot;
-	Filename = &quot;Sync-ServiceMailboxAccessGroups.ps1&quot;
-	Description = &quot;&quot;
-	Tags = &quot;powershell, activedirectory, exchange, synchronization, access, mailbox, groups, permissions&quot;
-	Project = &quot;&quot;
-	Author = &quot;Janik von Rotz&quot;
-	AuthorContact = &quot;https://janikvonrotz.ch&quot;
-	CreateDate = &quot;2014-01-27&quot;
-	LastEditDate = &quot;2014-01-27&quot;
-	Url = &quot;&quot;
-	Version = &quot;0.0.0&quot;
+	Title = "Synchronize Service Mailbox Access Groups"
+	Filename = "Sync-ServiceMailboxAccessGroups.ps1"
+	Description = ""
+	Tags = "powershell, activedirectory, exchange, synchronization, access, mailbox, groups, permissions"
+	Project = ""
+	Author = "Janik von Rotz"
+	AuthorContact = "https://janikvonrotz.ch"
+	CreateDate = "2014-01-27"
+	LastEditDate = "2014-01-27"
+	Url = ""
+	Version = "0.0.0"
 	License = @'
 This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Switzerland License.
 To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/3.0/ch/ or
 send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 '@
 }
-#&gt;
+#>
 
 Import-Module ActiveDirectory
 
 # Connect Exchange Server
 $ExchangeServer = (Get-RemoteConnection ex1).Name
-$PSSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri &quot;https://$ExchangeServer/PowerShell/&quot; -Authentication Kerberos
+$PSSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://$ExchangeServer/PowerShell/" -Authentication Kerberos
 Import-PSSession $PSSession
 
 $Config = @{
-    OU = &quot;OU=Mailbox,OU=Exchange,OU=Services,OU=vblusers2,DC=vbl,DC=ch&quot;
+    OU = "OU=Mailbox,OU=Exchange,OU=Services,OU=vblusers2,DC=vbl,DC=ch"
 
     ADGroupFilter = @{
-        NamePrefix = &quot;EX_&quot;
-        NameInfix = &quot;&quot;
-        NameSuffix = &quot;&quot;
+        NamePrefix = "EX_"
+        NameInfix = ""
+        NameSuffix = ""
     }
 
     ADGroup = @{
-        NamePrefix = &quot;EX_&quot;
-        PermissionSeperator = &quot;#&quot;
+        NamePrefix = "EX_"
+        PermissionSeperator = "#"
     }
 
-    ADGroupMailboxReferenceAttribute = &quot;extensionAttribute1&quot;
+    ADGroupMailboxReferenceAttribute = "extensionAttribute1"
 
     MailBoxFilter = @{
-        RecipientTypeDetails = &quot;UserMailbox&quot;
-        ADGroupsAndUsers = &quot;F_Mitarbeiter&quot;,&quot;F_Archivierte Benutzer&quot;
-        ExcludeDisplayName = &quot;FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042&quot;
+        RecipientTypeDetails = "UserMailbox"
+        ADGroupsAndUsers = "F_Mitarbeiter","F_Archivierte Benutzer"
+        ExcludeDisplayName = "FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042"
     }
 
 } | %{New-Object PSObject -Property $_}
 
 # get domain name
-$Domain = &quot;$(((Get-ADDomain).Name).toupper())&quot;
+$Domain = "$(((Get-ADDomain).Name).toupper())"
 
 # get ad user objects
 $Config.MailBoxFilter.ADGroupsAndUsers = $Config.MailBoxFilter.ADGroupsAndUsers | %{
     Get-ADObject -Filter {(Name -eq $_) -or (ObjectGUID -eq $_)} | %{
-        if($_.ObjectClass -eq &quot;user&quot;){$_.DistinguishedName
-        }elseif($_.ObjectClass -eq &quot;group&quot;){ Get-ADGroupMember $_.DistinguishedName -Recursive}
+        if($_.ObjectClass -eq "user"){$_.DistinguishedName
+        }elseif($_.ObjectClass -eq "group"){ Get-ADGroupMember $_.DistinguishedName -Recursive}
     } | Get-ADUser -Properties Mail
 }
 
 # create mail list to filter mailboxes
-$Config.MailboxFilter.AllowedMails = $Config.MailBoxFilter.ADGroupsAndUsers | %{&quot;$($_.Mail)&quot;}
+$Config.MailboxFilter.AllowedMails = $Config.MailBoxFilter.ADGroupsAndUsers | %{"$($_.Mail)"}
 
 # create SamAccountName list to filter mailbox permissions
-$Config.ADGroupFilter.AllowedUsers = $Config.MailboxFilter.ADGroupsAndUsers | %{&quot;$($Domain + $_.SamAccountName)&quot;}
+$Config.ADGroupFilter.AllowedUsers = $Config.MailboxFilter.ADGroupsAndUsers | %{"$($Domain + $_.SamAccountName)"}
 
 # get exisiting mailbox permission ad groups
 $ADGroups = Get-ADGroup -Filter * -SearchBase $Config.OU -Properties $Config.ADGroupMailboxReferenceAttribute | where{$_.Name.StartsWith($Config.ADGroupFilter.NamePrefix) -and $_.Name.Contains($Config.ADGroupFilter.NameInfix) -and $_.Name.EndsWith($Config.ADGroupFilter.NameSuffix)}
@@ -120,36 +120,36 @@ $RequiredADGroups = $Mailboxes | %{
     $ADPermissionGroups = @()
     $Mailbox = $_
 
-    Write-Host &quot;Parsing permissions on mailbox: $($_.Alias)&quot;
+    Write-Host "Parsing permissions on mailbox: $($_.Alias)"
 
     # get existing permission groups
-    $ADPermissionGroups = $ADGroups | where{(iex &quot;`$_.$($Config.ADGroupMailboxReferenceAttribute)&quot;) -eq $Mailbox.Guid}
-    $ADExistingPermissionGroupTypes = $ADPermissionGroups| where{$_} | %{$_.Name.split(&quot;#&quot;)[1]}
+    $ADPermissionGroups = $ADGroups | where{(iex "`$_.$($Config.ADGroupMailboxReferenceAttribute)") -eq $Mailbox.Guid}
+    $ADExistingPermissionGroupTypes = $ADPermissionGroups| where{$_} | %{$_.Name.split("#")[1]}
 
     # get existing and allowed mailbox permissions
     $MailboxPermissions = $Mailbox | Get-MailboxPermission | where{$Config.ADGroupFilter.AllowedUsers -contains $_.User}
 
     # create an ad group foreach permissiontype that is required
-    $NewADPermissionGroupTypes = $MailboxPermissions | %{&quot;$($_.AccessRights)&quot;.split(&quot;, &quot;) | where{$_} | %{$_} | %{$_ | where{$ADExistingPermissionGroupTypes -notcontains $_}}}
+    $NewADPermissionGroupTypes = $MailboxPermissions | %{"$($_.AccessRights)".split(", ") | where{$_} | %{$_} | %{$_ | where{$ADExistingPermissionGroupTypes -notcontains $_}}}
     $NewADPermissionGroupTypes | Group | %{
 
         # create ad group name foreach permission type
         $Name = $config.ADGroup.NamePrefix + $Mailbox.Displayname + $Config.ADGroup.PermissionSeperator + $_.Name
 
-        Write-PPEventLog -Message &quot;Add service mailbox access group: $Name&quot; -Source &quot;Synchronize Service Mailbox Access Groups&quot; -WriteMessage
-        New-ADGroup -Name $Name -SamAccountName $Name -GroupCategory Security -GroupScope Global -DisplayName $Name  -Path $Config.OU -Description &quot;Exchange Access Group for: $($Mailbox.Displayname)&quot;
+        Write-PPEventLog -Message "Add service mailbox access group: $Name" -Source "Synchronize Service Mailbox Access Groups" -WriteMessage
+        New-ADGroup -Name $Name -SamAccountName $Name -GroupCategory Security -GroupScope Global -DisplayName $Name  -Path $Config.OU -Description "Exchange Access Group for: $($Mailbox.Displayname)"
         Get-ADGroup $Name
 
     } | %{
 
         # set the reference from the adgroup to the mailbox
-        iex &quot;`$_.$($Config.ADGroupMailboxReferenceAttribute) = `&quot;$($Mailbox.Guid)`&quot;&quot;
+        iex "`$_.$($Config.ADGroupMailboxReferenceAttribute) = `"$($Mailbox.Guid)`""
         Set-ADGroup -Instance $_
         $ADGroup = $_
 
         # add existing members to the permission group
-        $MailboxPermissions | where{$_.AccessRights -match $ADGroup.Name.split(&quot;#&quot;)[1]} | %{
-            Add-ADGroupMember -Identity $ADGroup -Members ($_.User -replace &quot;$Domain&quot;,&quot;&quot;)
+        $MailboxPermissions | where{$_.AccessRights -match $ADGroup.Name.split("#")[1]} | %{
+            Add-ADGroupMember -Identity $ADGroup -Members ($_.User -replace "$Domain","")
         }
 
         # output ad permission groups
@@ -160,10 +160,10 @@ $RequiredADGroups = $Mailboxes | %{
     $ADPermissionGroups | where{$_} | %{
 
         # get permission type
-        $Permission = $_.Name.split(&quot;#&quot;)[1]
+        $Permission = $_.Name.split("#")[1]
 
         # get existin ad user groups
-        $ADPermissionGroupUsers = $_ | Get-ADGroupMember -Recursive | select @{L=&quot;User&quot;;E={$($Domain + $_.SamAccountName)}}
+        $ADPermissionGroupUsers = $_ | Get-ADGroupMember -Recursive | select @{L="User";E={$($Domain + $_.SamAccountName)}}
         $MailboxUsers =  $MailboxPermissions | where{$_.AccessRights -match $Permission} | select user
 
         # compare these groups and update members
@@ -171,16 +171,16 @@ $RequiredADGroups = $Mailboxes | %{
             $PermissionDiff = Compare-Object -ReferenceObject $ADPermissionGroupUsers -DifferenceObject $MailboxUsers -Property User
 
             # add member
-            $PermissionDiff | where{$_.SideIndicator -eq &quot;&lt;=&quot;} | %{
+            $PermissionDiff | where{$_.SideIndicator -eq "<="} | %{
 
-                Write-PPEventLog -Message &quot;Add mailbox permission: $Permission for user: $($_.User) on mailbox: $($Mailbox.Alias)&quot; -Source &quot;Synchronize Service Mailbox Access Groups&quot; -WriteMessage
+                Write-PPEventLog -Message "Add mailbox permission: $Permission for user: $($_.User) on mailbox: $($Mailbox.Alias)" -Source "Synchronize Service Mailbox Access Groups" -WriteMessage
                 Add-MailboxPermission -Identity $Mailbox.Alias -User $_.User -AccessRights $Permission
             }
 
             # remove member
-            $PermissionDiff | where{$_.SideIndicator -eq &quot;=&gt;&quot;} | %{
+            $PermissionDiff | where{$_.SideIndicator -eq "=>"} | %{
 
-                Write-PPEventLog -Message &quot;Remove mailbox permission: $Permission for user: $($_.User) on mailbox: $($Mailbox.Alias)&quot; -Source &quot;Synchronize Service Mailbox Access Groups&quot; -WriteMessage
+                Write-PPEventLog -Message "Remove mailbox permission: $Permission for user: $($_.User) on mailbox: $($Mailbox.Alias)" -Source "Synchronize Service Mailbox Access Groups" -WriteMessage
                 Remove-MailboxPermission -Identity $Mailbox.Alias -User $_.User -AccessRights $Permission -Confirm:$false
             }
         }
@@ -192,12 +192,12 @@ $RequiredADGroups = $Mailboxes | %{
 
 $ADGroups | where{$RequiredADGroups -notcontains $_} | %{
 
-    Write-PPEventLog -Message &quot;Remove service mailbox access group: $Name&quot; -Source &quot;Synchronize Service Mailbox Access Groups&quot; -WriteMessage
+    Write-PPEventLog -Message "Remove service mailbox access group: $Name" -Source "Synchronize Service Mailbox Access Groups" -WriteMessage
     Remove-ADGroup -Identity $_ -Confirm:$false
 }
 
 Remove-PSSession $PSSession
-Write-PPErrorEventLog -Source &quot;Synchronize Service Mailbox Access Groups&quot; -ClearErrorVariable
+Write-PPErrorEventLog -Source "Synchronize Service Mailbox Access Groups" -ClearErrorVariable
 [/code]
 
 Latest version of this script: <a href="https://gist.github.com/8653473" target="_blank">https://gist.github.com/8653473</a>

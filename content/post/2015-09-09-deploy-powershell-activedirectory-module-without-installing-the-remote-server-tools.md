@@ -44,7 +44,7 @@ Then update the **Install-ActiveDirectoryModule.ps1** file with the content belo
 [code lang="ps"]
 function Add-AssemblyToGlobalAssemblyCache{
 
-    &lt;#
+    <#
     .SYNOPSIS 
 	    Installing Assemblies to Global Assembly Cache (GAC)
 
@@ -77,51 +77,51 @@ function Add-AssemblyToGlobalAssemblyCache{
 
     .LINK 
         http://blog.goverco.com
-    #&gt;
+    #>
 
     PARAM
     (
 	    [Parameter(Mandatory=$true, ValueFromPipeline=$True,ValueFromPipelineByPropertyName=$True)]
 	    [ValidateNotNullOrEmpty()]
-	    [string] $Name = &quot;&quot;,
+	    [string] $Name = "",
 
 	    [switch]$PassThru
     )
  
-	if ($null -eq ([AppDomain]::CurrentDomain.GetAssemblies() |? { $_.FullName -eq &quot;System.EnterpriseServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&quot; })){
-		[System.Reflection.Assembly]::Load(&quot;System.EnterpriseServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&quot;) | Out-Null
+	if ($null -eq ([AppDomain]::CurrentDomain.GetAssemblies() |? { $_.FullName -eq "System.EnterpriseServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" })){
+		[System.Reflection.Assembly]::Load("System.EnterpriseServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a") | Out-Null
 	}
 	$PublishObject = New-Object System.EnterpriseServices.Internal.Publish
            
 	foreach($Assembly in $Name){
 
         if ( -not (Test-Path $Assembly -type Leaf)){
-            throw &quot;The assembly '$Assembly' does not exist.&quot;
+            throw "The assembly '$Assembly' does not exist."
         }
 
         $LoadedAssembly = [System.Reflection.Assembly]::LoadFile($Assembly)
 
         if ($LoadedAssembly.GetName().GetPublicKey().Length -eq 0){
-            throw &quot;The assembly '$Assembly' must be strongly signed.&quot;
+            throw "The assembly '$Assembly' must be strongly signed."
         }
           
-        Write-Host &quot;Installing: $Assembly&quot;
+        Write-Host "Installing: $Assembly"
         $PublishObject.GacInstall($Assembly)
 
         if($PassThru){$_}
     }
 }
 
-$moduledirectory = &quot;C:\Windows\System32\WindowsPowerShell\v1.0\Modules\ActiveDirectory&quot;
+$moduledirectory = "C:\Windows\System32\WindowsPowerShell\v1.0\Modules\ActiveDirectory"
 $basepath = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 if(-not (Test-Path -Path $moduledirectory)){
     New-Item -Path $moduledirectory -ItemType directory | Out-Null
 }
 
-Copy-Item -Path (Join-Path $basepath &quot;\ActiveDirectory\*&quot;) -Destination $moduledirectory -Recurse -Force
+Copy-Item -Path (Join-Path $basepath "\ActiveDirectory\*") -Destination $moduledirectory -Recurse -Force
 
-Add-AssemblyToGlobalAssemblyCache -Name (Join-Path $basepath &quot;Microsoft.ActiveDirectory.Management.dll&quot;)
+Add-AssemblyToGlobalAssemblyCache -Name (Join-Path $basepath "Microsoft.ActiveDirectory.Management.dll")
 [/code]
 
 Got it! When executing the **Install-ActiveDirectoryModule.ps1** on another computer it should install the PowerShell ActiveDirectory module.

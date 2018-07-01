@@ -27,30 +27,30 @@ To get a users member shipments recursively I've written an extended function ba
 Install this framework to get the latest version of this function.
 
 [code lang="ps"]
-&lt;#
+<#
 $Metadata = @{
-	Title = &quot;Get Active Directory Principal Group Membership Recurse&quot;
-	Filename = &quot;Get-ADPrincipalGroupMembershipRecurse.ps1&quot;
-	Description = &quot;&quot;
-	Tags = &quot;powershell, activedirectory, get, prinicipal, group, membership, recurse&quot;
-	Project = &quot;&quot;
-	Author = &quot;Janik von Rotz&quot;
-	AuthorContact = &quot;https://janikvonrotz.ch&quot;
-	CreateDate = &quot;2013-12-11&quot;
-	LastEditDate = &quot;2013-12-11&quot;
-	Url = &quot;&quot;
-	Version = &quot;1.0.0&quot;
+	Title = "Get Active Directory Principal Group Membership Recurse"
+	Filename = "Get-ADPrincipalGroupMembershipRecurse.ps1"
+	Description = ""
+	Tags = "powershell, activedirectory, get, prinicipal, group, membership, recurse"
+	Project = ""
+	Author = "Janik von Rotz"
+	AuthorContact = "https://janikvonrotz.ch"
+	CreateDate = "2013-12-11"
+	LastEditDate = "2013-12-11"
+	Url = ""
+	Version = "1.0.0"
 	License = @'
 This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Switzerland License.
 To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/3.0/ch/ or
 send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 '@
 }
-#&gt;
+#>
 
 function Get-ADPrincipalGroupMembershipRecurse{
 
-&lt;#
+<#
 .SYNOPSIS
     Get Active Directory principal group membership recursively.
 
@@ -67,8 +67,8 @@ function Get-ADPrincipalGroupMembershipRecurse{
     Looping parameter not required!
 
 .EXAMPLE
-	PS C:&gt; Get-ADPrincipalGroupMembershipRecurse -ADUser (Get-ADUser user1) | Out-GridView
-#&gt;
+	PS C:> Get-ADPrincipalGroupMembershipRecurse -ADUser (Get-ADUser user1) | Out-GridView
+#>
 
 	[CmdletBinding()]
 	param(
@@ -116,9 +116,9 @@ function Get-ADPrincipalGroupMembershipRecurse{
 
                 # place the value in the right level
                 if($_.Level -eq $Index){
-                    $Item | Add-Member –MemberType NoteProperty –Name &quot;Level $Index&quot; –Value $_.Name
+                    $Item | Add-Member –MemberType NoteProperty –Name "Level $Index" –Value $_.Name
                 }else{
-                    $Item | Add-Member –MemberType NoteProperty –Name &quot;Level $Index&quot; –Value &quot;&quot;
+                    $Item | Add-Member –MemberType NoteProperty –Name "Level $Index" –Value ""
                 }
 
                 $Index += 1
@@ -132,10 +132,10 @@ function Get-ADPrincipalGroupMembershipRecurse{
     }elseif($ADGroup){
 
         # show a progress
-        Write-Progress -Activity &quot;Collecting Data&quot; -Status &quot;$($_.Name)&quot; -PercentComplete (Get-Random -Minimum 1 -Maximum 100)
+        Write-Progress -Activity "Collecting Data" -Status "$($_.Name)" -PercentComplete (Get-Random -Minimum 1 -Maximum 100)
 
         # return the item and its level
-        $_ | select Name,@{L=&quot;Level&quot;;E={$Level}}
+        $_ | select Name,@{L="Level";E={$Level}}
 
         # check for further membershipments of this group and loop this function
         Get-ADPrincipalGroupMembership $_ | %{

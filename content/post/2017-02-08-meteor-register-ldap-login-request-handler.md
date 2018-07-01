@@ -33,7 +33,7 @@ Let's get startet with the client.
 
 [code lang="js"]
 ...
-let loginUserWithLDAP = (email, password, callback) =&gt; {
+let loginUserWithLDAP = (email, password, callback) => {
     var loginRequest = {
       ldap: true,
       email: email,
@@ -45,7 +45,7 @@ let loginUserWithLDAP = (email, password, callback) =&gt; {
     })
   }
 
-  loginUserWithLDAP(email, password, (error, result) =&gt; {
+  loginUserWithLDAP(email, password, (error, result) => {
     if (!error) {
     ...
 [/code] 
@@ -65,7 +65,7 @@ import Future from 'fibers/future'
 var ldapAuth = {
   url: 'ldap://ldap.forumsys.com',
   searchOu: 'dc=example,dc=com',
-  searchQuery: (email) =&gt; {
+  searchQuery: (email) => {
     return {
       filter: `(mail=${email})`,
       scope: 'sub'
@@ -73,7 +73,7 @@ var ldapAuth = {
   }
 }
 
-ldapAuth.checkAccount = (options) =&gt; {
+ldapAuth.checkAccount = (options) => {
   options = options || {}
 
   ldapAuth.client = ldap.createClient({
@@ -89,10 +89,10 @@ After the library imports, options for the LDAP authentication are defined. Inst
 
 [code lang="js"]
   ...
-  ldapAuth.client.search(ldapAuth.searchOu, ldapAuth.searchQuery(options.email), (error, result) =&gt; {
+  ldapAuth.client.search(ldapAuth.searchOu, ldapAuth.searchQuery(options.email), (error, result) => {
     assert.ifError(error)
 
-    result.on('searchEntry', (entry) =&gt; {
+    result.on('searchEntry', (entry) => {
       dn.push(entry.objectName)
       return ldapAuth.profile = {
         firstname: entry.object.cn,
@@ -101,7 +101,7 @@ After the library imports, options for the LDAP authentication are defined. Inst
     })
 
     result.on('error', function(error){
-      throw new Meteor.Error(500, &quot;LDAP server error&quot;)
+      throw new Meteor.Error(500, "LDAP server error")
     })
 
     return result.on('end', function(){
@@ -111,14 +111,14 @@ After the library imports, options for the LDAP authentication are defined. Inst
         return false
       }
 
-      return ldapAuth.client.bind(dn[0], options.pass, (error) =&gt; {
+      return ldapAuth.client.bind(dn[0], options.pass, (error) => {
 
         if (error) {
           future['return'](false)
           return false
         }
 
-        return ldapAuth.client.unbind((error) =&gt; {
+        return ldapAuth.client.unbind((error) => {
           assert.ifError(error)
           return future['return'](!error)
         })
@@ -134,7 +134,7 @@ Now comes probably the most difficult part. The body of our auth method tells if
 
 [code lang="js"]
 ...
-Accounts.registerLoginHandler('ldap', (loginRequest) =&gt; {
+Accounts.registerLoginHandler('ldap', (loginRequest) => {
 
   if (!loginRequest.ldap) {
     return undefined
@@ -142,7 +142,7 @@ Accounts.registerLoginHandler('ldap', (loginRequest) =&gt; {
 
   if (ldapAuth.checkAccount(loginRequest)) {
     var userId = null
-    var user = Meteor.users.findOne({ &quot;emails.address&quot; : loginRequest.email })
+    var user = Meteor.users.findOne({ "emails.address" : loginRequest.email })
     if (!user) {
       userId = Accounts.createUser({
         email: loginRequest.email,

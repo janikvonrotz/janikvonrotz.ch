@@ -1,6 +1,6 @@
 ---
 id: 2196
-title: 'O3M 39 &#8211; Whatever you like (Electro, House)'
+title: 'O3M 39 - Whatever you like (Electro, House)'
 date: 2014-05-02T09:17:01+00:00
 author: Janik von Rotz
 layout: post

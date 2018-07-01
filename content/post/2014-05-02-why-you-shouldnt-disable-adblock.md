@@ -1,6 +1,6 @@
 ---
 id: 2092
-title: 'Why you shouldn&#8217;t disable Adblock'
+title: 'Why you shouldn’t disable Adblock'
 date: 2014-05-02T07:16:14+00:00
 author: Janik von Rotz
 layout: post

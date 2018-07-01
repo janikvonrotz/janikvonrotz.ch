@@ -1,6 +1,6 @@
 ---
 id: 3921
-title: 'Meteor and Mantra &#8211; Routing redirect'
+title: 'Meteor and Mantra - Routing redirect'
 date: 2016-05-26T10:03:22+00:00
 author: Janik von Rotz
 layout: post
@@ -54,7 +54,7 @@ To give you a better understanding I'll use the post module which is part of a b
     }],
     action() {
       mount(AppLayout, {
-        content: () =&gt; (&lt;MainPage /&gt;)
+        content: () => (<MainPage />)
       });
     }
   });
@@ -94,8 +94,8 @@ This is done for every module. Then you get a custom routing logic for every mod
 // client side
 export function redirect_login(routename){
   var roles = _.findWhere(Meteor.settings.public.routes, {name: routename}).roles;
-  if(!_.contains(roles, &quot;Public&quot;) &amp;&amp; !Meteor.userId()){
-    console.log(&quot;redirect login&quot;);
+  if(!_.contains(roles, "Public") &amp;&amp; !Meteor.userId()){
+    console.log("redirect login");
     return true;
   }
   return false;
@@ -104,7 +104,7 @@ export function redirect_login(routename){
 // client side
 export function redirect_verify(){
   if(Meteor.userId() &amp;&amp; !Meteor.user().emails[0].verified){
-    console.log(&quot;redirect verify&quot;);
+    console.log("redirect verify");
     return true;
   }
   return false;
@@ -113,11 +113,11 @@ export function redirect_verify(){
 // client side
 export function cannot_access(routename){
   var roles = _.findWhere(Meteor.settings.public.routes, {name: routename}).roles;
-  if(_.contains(roles, &quot;Public&quot;) || Roles.userIsInRole(Meteor.user(), roles)){
-    console.log(&quot;allow route &quot; + routename);
+  if(_.contains(roles, "Public") || Roles.userIsInRole(Meteor.user(), roles)){
+    console.log("allow route " + routename);
     return false;
   }
-  console.log(&quot;deny route &quot; + routename);
+  console.log("deny route " + routename);
   return true;
 };
 [/code]
@@ -138,11 +138,11 @@ Finally update the settings.json with access rules. Make sure to add it to the p
 ...
 
 {
-  &quot;name&quot;: &quot;post.list&quot;,
-  &quot;roles&quot;: [
-     &quot;Admin&quot;,
-     &quot;Author&quot;,
-     &quot;Manager&quot;
+  "name": "post.list",
+  "roles": [
+     "Admin",
+     "Author",
+     "Manager"
   ]
 },
 

@@ -41,26 +41,26 @@ and here's the script:
 
 [code lang="ps"]
 
-&lt;#
+<#
 $Metadata = @{
-	Title = &quot;Send Mail Report Of Unchecked SharePoint Files&quot;
-	Filename = &quot;Send-MailReportOfUncheckedSharePointFiles.ps1&quot;
-	Description = &quot;&quot;
-	Tags = &quot;&quot;
-	Project = &quot;powershell, script, sharepoint, report, unchecked, file&quot;
-	Author = &quot;Janik von Rotz&quot;
-	AuthorContact = &quot;https://janikvonrotz.ch&quot;
-	CreateDate = &quot;2013-11-14&quot;
-	LastEditDate = &quot;2013-11-14&quot;
-	Url = &quot;&quot;
-	Version = &quot;1.0.0&quot;
+	Title = "Send Mail Report Of Unchecked SharePoint Files"
+	Filename = "Send-MailReportOfUncheckedSharePointFiles.ps1"
+	Description = ""
+	Tags = ""
+	Project = "powershell, script, sharepoint, report, unchecked, file"
+	Author = "Janik von Rotz"
+	AuthorContact = "https://janikvonrotz.ch"
+	CreateDate = "2013-11-14"
+	LastEditDate = "2013-11-14"
+	Url = ""
+	Version = "1.0.0"
 	License = @'
 This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Switzerland License.
 To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/3.0/ch/ or
 send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 '@
 }
-#&gt;
+#>
 
 #--------------------------------------------------#
 # modules
@@ -71,7 +71,7 @@ if ((Get-PSSnapin 'Microsoft.SharePoint.PowerShell' -ErrorAction SilentlyContinu
 #--------------------------------------------------#
 # load config
 #--------------------------------------------------#
-$Mail = Get-PPConfiguration $PSconfigs.Mail.Filter | %{$_.Content.Mail | where{$_.Name -eq &quot;Report Checked Out SharePoint Files&quot;}} | select -first 1
+$Mail = Get-PPConfiguration $PSconfigs.Mail.Filter | %{$_.Content.Mail | where{$_.Name -eq "Report Checked Out SharePoint Files"}} | select -first 1
 
 #--------------------------------------------------#
 # main
@@ -80,15 +80,15 @@ Get-SPWebApplication | Get-SPSite | Get-SPWeb -Limit All | %{
     $SPWeb = $_
     $_.lists | %{
         $_.CheckedOutFiles | %{
-            $_ | select *, @{L=&quot;FileUrl&quot;;E={$SPWeb.Site.Url + &quot;/&quot; + $_.Url}}, @{L=&quot;SiteUrl&quot;;E={($SPWeb.Site.Url + &quot;/&quot; + $_.Url) -replace &quot;[^/]+$&quot;,&quot;&quot;}}
+            $_ | select *, @{L="FileUrl";E={$SPWeb.Site.Url + "/" + $_.Url}}, @{L="SiteUrl";E={($SPWeb.Site.Url + "/" + $_.Url) -replace "[^/]+$",""}}
         }
     }
 } | Group-Object CheckedOutByEmail | %{
 
-    $Subject = &quot;$($_.Count) nicht eingecheckte Dateien auf dem SharePoint&quot;
+    $Subject = "$($_.Count) nicht eingecheckte Dateien auf dem SharePoint"
 
-    $Body = @&quot;
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;  &quot;https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt; &lt;html xmlns=&quot;https://www.w3.org/1999/xhtml&quot;&gt; &lt;head&gt; &lt;style&gt;
+    $Body = @"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> <html xmlns="https://www.w3.org/1999/xhtml"> <head> <style>
     body{
         font-size: 11pt;
         font-family: Calibri
@@ -101,27 +101,27 @@ Get-SPWebApplication | Get-SPSite | Get-SPWeb -Limit All | %{
         margin: 0.3em;
         border: 1px #ccc solid;
     }
-&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
+</style></head><body>
 
-    &lt;p&gt;Guten Tag $($_.Group[0].CheckedOutByName)&lt;/p&gt;
+    <p>Guten Tag $($_.Group[0].CheckedOutByName)</p>
 
-    &lt;p&gt;Sie erhalten diese E-Mail, weil Sie im Besitz von nicht eingecheckten Dateien sind,&lt;/br&gt;
-    welche als letztes vor einer Woche oder fürher bearbeitet worden sind.&lt;/p&gt;
+    <p>Sie erhalten diese E-Mail, weil Sie im Besitz von nicht eingecheckten Dateien sind,</br>
+    welche als letztes vor einer Woche oder fürher bearbeitet worden sind.</p>
 
-    &lt;p&gt;Wir bitten Sie diese Dateien einzuchecken oder zu löschen.&lt;/p&gt;
+    <p>Wir bitten Sie diese Dateien einzuchecken oder zu löschen.</p>
 
-    &lt;p&gt;Untersützung zu diesem Thema erhalten Sie &lt;a href=&quot;https://office.microsoft.com/de-ch/sharepoint-workspace-help/auschecken-und-einchecken-von-dokumenten-in-ein-dateitool-HA010356922.aspx&quot;&gt;hier&lt;/a&gt;.&lt;/p&gt;
+    <p>Untersützung zu diesem Thema erhalten Sie <a href="https://office.microsoft.com/de-ch/sharepoint-workspace-help/auschecken-und-einchecken-von-dokumenten-in-ein-dateitool-HA010356922.aspx">hier</a>.</p>
 
-    &lt;h2&gt;Übersicht ihrer nicht eingecheckten Dateien&lt;/h2&gt;
+    <h2>Übersicht ihrer nicht eingecheckten Dateien</h2>
 
-    $($_.group | select @{L=&quot;Name&quot;;E={$_.LeafName}}, @{L=&quot;FileUrl&quot;;E={&quot;&lt;a href='$($_.FileUrl)'&gt;$($_.FileUrl)&lt;/a&gt;&quot;}}, @{L=&quot;SiteUrl&quot;;E={&quot;&lt;a href='$($_.SiteUrl)'&gt;$($_.SiteUrl)&lt;/a&gt;&quot;}}, TimeLastModified, @{L=&quot;Size&quot;;E={Format-FileSize $_.Length}} | where{$_.TimeLastModified -lt $(Get-Date).AddDays(-7)} | ConvertTo-Html -Fragment)
+    $($_.group | select @{L="Name";E={$_.LeafName}}, @{L="FileUrl";E={"<a href='$($_.FileUrl)'>$($_.FileUrl)</a>"}}, @{L="SiteUrl";E={"<a href='$($_.SiteUrl)'>$($_.SiteUrl)</a>"}}, TimeLastModified, @{L="Size";E={Format-FileSize $_.Length}} | where{$_.TimeLastModified -lt $(Get-Date).AddDays(-7)} | ConvertTo-Html -Fragment)
 
-    &lt;p&gt;ACHTUNG! Dieses E-Mail wurde von einem unbeaufsichtigtem Konto verschickt, Antworten an den Sender dieser E-Mail werden nicht bearbeitet.&lt;/p&gt;
+    <p>ACHTUNG! Dieses E-Mail wurde von einem unbeaufsichtigtem Konto verschickt, Antworten an den Sender dieser E-Mail werden nicht bearbeitet.</p>
 
-&lt;/body&gt;&lt;/html&gt;
-&quot;@
+</body></html>
+"@
 
-    Write-PPEventLog -Message &quot;Send Mail to: $($_.Name) with subject: $Subject&quot; -Source &quot;Send Mail Report Of Unchecked SharePoint Files&quot; -WriteMessage
+    Write-PPEventLog -Message "Send Mail to: $($_.Name) with subject: $Subject" -Source "Send Mail Report Of Unchecked SharePoint Files" -WriteMessage
     Send-MailMessage -To $_.Name -From $Mail.FromAddress -Subject $Subject -Body ([System.Web.HttpUtility]::HtmlDecode($Body)) -SmtpServer $Mail.OutSmtpServer -BodyAsHtml -Priority High -Encoding ([System.Text.Encoding]::UTF8)
     Write-PPErrorEventLog -ScriptPath $MyInvocation.InvocationName -ClearErrorVariable
 }

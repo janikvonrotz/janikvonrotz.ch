@@ -1,6 +1,6 @@
 ---
 id: 1665
-title: 'O3M 33 &#8211; Crystal Miau (Trance)'
+title: 'O3M 33 - Crystal Miau (Trance)'
 date: 2014-03-24T09:32:43+00:00
 author: Janik von Rotz
 layout: post

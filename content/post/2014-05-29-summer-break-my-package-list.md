@@ -1,6 +1,6 @@
 ---
 id: 2354
-title: 'Summer break &#8211; my package list'
+title: 'Summer break - my package list'
 date: 2014-05-29T15:37:08+00:00
 author: Janik von Rotz
 layout: post

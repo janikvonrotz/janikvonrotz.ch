@@ -1,6 +1,6 @@
 ---
 id: 2232
-title: 'O3M 40 &#8211; Go Hard or Go Home (Bass, Electro)'
+title: 'O3M 40 - Go Hard or Go Home (Bass, Electro)'
 date: 2014-05-10T19:16:16+00:00
 author: Janik von Rotz
 layout: post

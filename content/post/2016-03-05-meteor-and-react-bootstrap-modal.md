@@ -37,33 +37,33 @@ I assume you already have added the `bootstrap`, `classnames` and `react` packag
 Modal = React.createClass({
   renderFooter(){
     if(!this.props.footer){
-      return &lt;div className=&quot;modal-footer&quot;&gt;
-      &lt;Button style=&quot;primary&quot; onClick={this.props.onConfirm}&gt;{this.props.confirmLabel}&lt;/Button&gt;
-      &lt;Button style=&quot;default&quot; onClick={this.props.onCancel}&gt;{this.props.cancelLabel}&lt;/Button&gt;
-      &lt;/div&gt;
+      return <div className="modal-footer">
+      <Button style="primary" onClick={this.props.onConfirm}>{this.props.confirmLabel}</Button>
+      <Button style="default" onClick={this.props.onCancel}>{this.props.cancelLabel}</Button>
+      </div>
     }else{
-      return &lt;div className=&quot;modal-footer&quot;&gt;{this.props.footer}&lt;/div&gt;
+      return <div className="modal-footer">{this.props.footer}</div>
     }
   },
   render() {
     var modalClassName = classNames({
-      &quot;modal&quot;: true,
-      &quot;show-modal&quot;: this.props.showModal
+      "modal": true,
+      "show-modal": this.props.showModal
     });
-    return &lt;div className={modalClassName}&gt;
-      &lt;div className=&quot;modal-dialog&quot;&gt;
-        &lt;div className=&quot;modal-content&quot;&gt;
-          &lt;div className=&quot;modal-header&quot;&gt;
-            &lt;Button className=&quot;close&quot; onClick={this.props.onCancel} ariaLabel=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/Button&gt;
-            &lt;h4 className=&quot;modal-title&quot;&gt;{this.props.title}&lt;/h4&gt;
-          &lt;/div&gt;
-          &lt;div className=&quot;modal-body&quot;&gt;
+    return <div className={modalClassName}>
+      <div className="modal-dialog">
+        <div className="modal-content">
+          <div className="modal-header">
+            <Button className="close" onClick={this.props.onCancel} ariaLabel="Close"><span aria-hidden="true">&amp;times;</span></Button>
+            <h4 className="modal-title">{this.props.title}</h4>
+          </div>
+          <div className="modal-body">
             {this.props.children}
-          &lt;/div&gt;
+          </div>
           {this.renderFooter()}
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
+        </div>
+      </div>
+    </div>
   }
 });
 [/code]
@@ -95,14 +95,14 @@ toggleModal(){
   this.setState({showModal: !this.state.showModal});
 },
 render(){
-  &lt;Modal
+  <Modal
     showModal={this.state.showModal}
-    title=&quot;Confirm&quot;
+    title="Confirm"
     onCancel={this.toggleModal}
-    cancelLabel=&quot;Cancel&quot;
+    cancelLabel="Cancel"
     onConfirm={this.deleteItem}
-    confirmLabel=&quot;Delete&quot;
-  &gt;&lt;p&gt;Please confirm the deletion of item: {this.data.item.label}&lt;/p&gt;&lt;/Modal&gt;
+    confirmLabel="Delete"
+  ><p>Please confirm the deletion of item: {this.data.item.label}</p></Modal>
 }
 ...
 

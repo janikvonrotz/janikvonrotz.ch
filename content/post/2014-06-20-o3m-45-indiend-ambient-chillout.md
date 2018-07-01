@@ -1,6 +1,6 @@
 ---
 id: 2337
-title: 'O3M 45 &#8211; InDiEnd (ambient, chillout)'
+title: 'O3M 45 - InDiEnd (ambient, chillout)'
 date: 2014-06-20T07:16:37+00:00
 author: Janik von Rotz
 layout: post

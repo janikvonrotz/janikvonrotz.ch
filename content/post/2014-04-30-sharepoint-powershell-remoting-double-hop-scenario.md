@@ -34,8 +34,8 @@ For example my latest issue with a three tier SharePoint environment. I thought 
 However I still received an error when I've executed a SharePoint cmdlet via remoting session.
 
 [code lang="powershell"]
-$Session = New-PSSession -ComputerName &lt;ComputerName&gt; -Credential (Get-Credential)
-Invoke-Command -Session $Session -ScriptBlock {param ($Name) Add-PSSnapin -Name $Name} -ArgumentList &quot;Microsoft.SharePoint.PowerShell&quot;
+$Session = New-PSSession -ComputerName <ComputerName> -Credential (Get-Credential)
+Invoke-Command -Session $Session -ScriptBlock {param ($Name) Add-PSSnapin -Name $Name} -ArgumentList "Microsoft.SharePoint.PowerShell"
 Invoke-Command -Session $Session -ScriptBlock {Get-SPSite}
 [/code]
 
@@ -59,13 +59,13 @@ Enable-WSManCredSSP -Role Server
 
 On the client run:
 [code lang="powershell"]
-Enable-WSManCredSSP -Role Client -DelegateComputer &lt;server FQDN&gt;
+Enable-WSManCredSSP -Role Client -DelegateComputer <server FQDN>
 [/code]
 
 Now you should be able to run the SharePoint cmdlets on the client. Don't forget to provide the new authentication type for the `New-PSSession` command.
 
 [code lang="powershell"]
-$Session = New-PSSession -ComputerName &lt;ComputerName&gt; -Credential (Get-Credential) -Authentication Credssp
-Invoke-Command -Session $Session -ScriptBlock {param ($Name) Add-PSSnapin -Name $Name} -ArgumentList &quot;Microsoft.SharePoint.PowerShell&quot;
+$Session = New-PSSession -ComputerName <ComputerName> -Credential (Get-Credential) -Authentication Credssp
+Invoke-Command -Session $Session -ScriptBlock {param ($Name) Add-PSSnapin -Name $Name} -ArgumentList "Microsoft.SharePoint.PowerShell"
 Invoke-Command -Session $Session -ScriptBlock {Get-SPSite}
 [/code]

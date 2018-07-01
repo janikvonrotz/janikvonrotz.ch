@@ -1,6 +1,6 @@
 ---
 id: 371
-title: 'Handling user password change and expiration issues with Office365 and ADFS &#8211; Part 1'
+title: 'Handling user password change and expiration issues with Office365 and ADFS - Part 1'
 date: 2013-08-08T14:41:37+00:00
 author: Janik von Rotz
 layout: post
@@ -54,25 +54,25 @@ This part isn't a lot of effort. There are 2 requirements, one is a must and the
 Now the script:
 
 [code language="ps"]
-&lt;#
+<#
 $Metadata = @{
-	Title = &quot;Send Password Expiration Reminder&quot;
-	Filename = &quot;Send-PasswordExpirationReminder.ps1&quot;
-	Description = &quot;&quot;
-	Tags = &quot;powershell, script, jobs&quot;
-	Project = &quot;&quot;
-	Author = &quot;Janik von Rotz&quot;
-	AuthorContact = &quot;http://.janikvonrotz.ch&quot;
-	CreateDate = &quot;2013-08-08&quot;
-	LastEditDate = &quot;2013-11-25&quot;
-	Version = &quot;2.1.0&quot;
+	Title = "Send Password Expiration Reminder"
+	Filename = "Send-PasswordExpirationReminder.ps1"
+	Description = ""
+	Tags = "powershell, script, jobs"
+	Project = ""
+	Author = "Janik von Rotz"
+	AuthorContact = "http://.janikvonrotz.ch"
+	CreateDate = "2013-08-08"
+	LastEditDate = "2013-11-25"
+	Version = "2.1.0"
 	License = @'
 This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/3.0/ or
 send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 '@
 }
-#&gt;
+#>
 
 try{
 
@@ -87,18 +87,18 @@ try{
     $TriggerDays = 25, 10, 5, 1
     $SendLinkOnDays = 25,10, 5, 1
 	$DaysBeforeDisablingUsersWithPasswordNeverExpires = 180
-	$ADGroup = &quot;S-1-5-21-1744926098-708661255-2033415169-36648&quot; # Memberof GroupName should be &quot;SPO_PasswordNotification&quot;   
+	$ADGroup = "S-1-5-21-1744926098-708661255-2033415169-36648" # Memberof GroupName should be "SPO_PasswordNotification"   
     
     #--------------------------------------------------#
     # main
     #--------------------------------------------------#
 
     # get mail config         
-    $Mail = Get-PPConfiguration $PSconfigs.Mail.Filter | %{$_.Content.Mail | where{$_.Name -eq &quot;PasswordReminder&quot;}} | select -first 1
+    $Mail = Get-PPConfiguration $PSconfigs.Mail.Filter | %{$_.Content.Mail | where{$_.Name -eq "PasswordReminder"}} | select -first 1
 
     # get days until password expires
     $MaxDays = (Get-ADDefaultDomainPasswordPolicy).MaxPasswordAge.Days 
-    if($MaxDays -le 0){throw &quot;Domain 'MaximumPasswordAge' password policy is not configured.&quot;}
+    if($MaxDays -le 0){throw "Domain 'MaximumPasswordAge' password policy is not configured."}
 
     # Set days when an email should be sent to inform the users
     $TriggerDays = 25, 10, 5, 1
@@ -106,10 +106,10 @@ try{
 
     foreach($TriggerDay in $TriggerDays){    
     
-        # Memberof GroupName should be &quot;SPO_PasswordNotification&quot;       
+        # Memberof GroupName should be "SPO_PasswordNotification"       
         Get-ADGroupMember $ADGroup -Recursive | 
         Get-ADUser -Properties Enabled, lastLogonTimestamp, PasswordNeverExpires, PasswordLastSet, Mail, DisplayName |
-        Select *, @{L = &quot;PasswordExpires&quot;;E = { 
+        Select *, @{L = "PasswordExpires";E = { 
             if($_.PasswordNeverExpires){
                 $DaysBeforeDisablingUsersWithPasswordNeverExpires - ((Get-Date) - ($_.PasswordLastSet)).Days
             }else{
@@ -119,19 +119,19 @@ try{
         where{($_.Enabled -eq $true) -and ($_.PasswordExpires -eq $TriggerDay)} | %{ 
                               
             # set subject
-            $Subject = &quot;Passwort Erinnerung: $($_.DisplayName) ihr Passwort läuft in $($_.PasswordExpires) Tagen ab&quot;
+            $Subject = "Passwort Erinnerung: $($_.DisplayName) ihr Passwort läuft in $($_.PasswordExpires) Tagen ab"
             
-            $BodyFont = &quot;font-size: 11pt; font-family: Calibri&quot;
+            $BodyFont = "font-size: 11pt; font-family: Calibri"
             
             # create mail message
-            $Body = &quot;&lt;p style = &quot;&quot;$BodyFont&quot;&quot;&gt;Guten Tag $($_.DisplayName) &lt;br/&gt; &lt;br/&gt; Ihr Passwort läuft am $(Get-Date (Get-Date).AddDays($_.PasswordExpires) -Format D) ab.&lt;/b&gt;&lt;/p&gt;&quot;          
+            $Body = "<p style = ""$BodyFont"">Guten Tag $($_.DisplayName) <br/> <br/> Ihr Passwort läuft am $(Get-Date (Get-Date).AddDays($_.PasswordExpires) -Format D) ab.</b></p>"          
             if($SendLinkOnDays -contains $TriggerDay){            
-                $Body += &quot;&lt;p style = &quot;&quot;$BodyFont&quot;&quot;&gt;Bitte ändern Sie das Passwort bevor es abläuft. Rufen Sie dazu die folgende Seite auf: &lt;a href=&quot;&quot;https://vbluzern.sharepoint.com/Support/_layouts/15/start.aspx#/SitePages/Passwortwechsel.aspx&quot;&quot; target=&quot;&quot;_blank&quot;&quot;&gt;Link&lt;/a&gt;&lt;/p&gt;&quot;
+                $Body += "<p style = ""$BodyFont"">Bitte ändern Sie das Passwort bevor es abläuft. Rufen Sie dazu die folgende Seite auf: <a href=""https://vbluzern.sharepoint.com/Support/_layouts/15/start.aspx#/SitePages/Passwortwechsel.aspx"" target=""_blank"">Link</a></p>"
             }
-             $Body += &quot;&lt;p style = &quot;&quot;$BodyFont&quot;&quot;&gt;ACHTUNG! Dieses E-Mail wurde von einem unbeaufsichtigtem Konto verschickt, Antworten an den Sender dieser E-Mail werden nicht bearbeitet.&lt;/p&gt;&quot;
+             $Body += "<p style = ""$BodyFont"">ACHTUNG! Dieses E-Mail wurde von einem unbeaufsichtigtem Konto verschickt, Antworten an den Sender dieser E-Mail werden nicht bearbeitet.</p>"
 
             # send mail
-            Write-PPEventLog &quot;$($MyInvocation.InvocationName)`n`nSend password reminder to $($_.Mail)&quot; -WriteMessage -Source &quot;Send Password Expiration Reminder&quot; 
+            Write-PPEventLog "$($MyInvocation.InvocationName)`n`nSend password reminder to $($_.Mail)" -WriteMessage -Source "Send Password Expiration Reminder" 
             Send-MailMessage -To $_.Mail -From $mail.FromAddress -Subject $Subject -Body $Body -SmtpServer $Mail.OutSmtpServer -BodyAsHtml -Priority High -Encoding ([System.Text.Encoding]::UTF8)
         
         }        
@@ -139,7 +139,7 @@ try{
    
 }catch{
 
-	Write-PPErrorEventLog -Source &quot;Send Password Expiration Reminder&quot; -ClearErrorVariable
+	Write-PPErrorEventLog -Source "Send Password Expiration Reminder" -ClearErrorVariable
 }
 [/code]
 
@@ -149,13 +149,13 @@ For the memberof Group I recommend to use the SID instead of the DN. I'll show y
 
 [code lang="ps"]
 
-PS C:Userssa-spadmin&gt; (Get-QADGroup &quot;SPO_PasswordNotification&quot;).Sid
+PS C:Userssa-spadmin> (Get-QADGroup "SPO_PasswordNotification").Sid
 
   BinaryLength AccountDomainSid                                                               Value
   ------------ ----------------                                                               -----
 			28 S-1-5-21-1744926098-708661255-2033415169                                       S-1-5-21-1744926098-708661255-2033415169-36648
 
-PS C:Userssa-spadmin&gt; Get-QADUser -MemberOf &quot;S-1-5-21-1744926098-708661255-2033415169-36648&quot;
+PS C:Userssa-spadmin> Get-QADUser -MemberOf "S-1-5-21-1744926098-708661255-2033415169-36648"
 
 [/code]
 

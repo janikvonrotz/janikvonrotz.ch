@@ -1,6 +1,6 @@
 ---
 id: 2344
-title: 'O3M 47 &#8211; Flies Away (Electro)'
+title: 'O3M 47 - Flies Away (Electro)'
 date: 2014-08-01T07:23:15+00:00
 author: Janik von Rotz
 layout: post

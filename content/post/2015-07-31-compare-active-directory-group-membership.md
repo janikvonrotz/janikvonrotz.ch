@@ -26,21 +26,21 @@ The following scripts allows you to compare the group membership of two users.
 [code lang="powershell"]
 Import-Module ActiveDirectory
 
-$user1 = &quot;userRef&quot;
-$user2 = &quot;userDif&quot;
+$user1 = "userRef"
+$user2 = "userDif"
 
 $members1 = Get-ADPrincipalGroupMembership -Identity $user1 | Select-Object name
 $members2 = Get-ADPrincipalGroupMembership -Identity $user2 | Select-Object name
 
 $result = Compare-Object -ReferenceObject $members1 -DifferenceObject $members2 -Property name
 
-Write-Host &quot;`n$user1 is member of these groups in addition:&quot; -ForegroundColor Black -BackgroundColor Yellow
+Write-Host "`n$user1 is member of these groups in addition:" -ForegroundColor Black -BackgroundColor Yellow
 
-$result | Where-Object{$_.SideIndicator -eq &quot;&lt;=&quot;} | ForEach-Object{$_.name}
+$result | Where-Object{$_.SideIndicator -eq "<="} | ForEach-Object{$_.name}
 
-Write-Host &quot;`n$user2 is member of these goups in addition:&quot; -ForegroundColor Black -BackgroundColor Yellow
+Write-Host "`n$user2 is member of these goups in addition:" -ForegroundColor Black -BackgroundColor Yellow
 
-$result | Where-Object{$_.SideIndicator -eq &quot;=&gt;&quot;} | ForEach-Object{$_.name}
+$result | Where-Object{$_.SideIndicator -eq "=>"} | ForEach-Object{$_.name}
 [/code]
 
 Get the latest version of this script here: [https://gist.github.com/051099188f24894502c1](https://gist.github.com/051099188f24894502c1)

@@ -1,6 +1,6 @@
 ---
 id: 2966
-title: 'Let&#8217;s write a Laravel application &#8211; Fulltext search'
+title: 'Let’s write a Laravel application - Fulltext search'
 date: 2015-02-13T09:59:27+00:00
 author: Janik von Rotz
 layout: post
@@ -38,7 +38,7 @@ First add a new route to handle our search requests.
 
 [code lang="php"]
 Route::get('search', [
-    'as' =&gt; 'search', 'uses' =&gt; 'MemberController@search'
+    'as' => 'search', 'uses' => 'MemberController@search'
 ]);
 [/code]
 
@@ -79,7 +79,7 @@ You can use any controller of your app to handle the search requests as long you
 			$route = 'members';
 		}
 
-		$results = $model::search($query)-&gt;get();
+		$results = $model::search($query)->get();
 		return View::make('search.index', compact('results', 'model', 'route'));
 	}
 [/code]
@@ -95,23 +95,23 @@ Now add a new view to display our search results and customize the look of the s
 
 @section('content')
   @foreach($results as $result)
-    &lt;a href=&quot;{{ URL::to($route.'/' . $result-&gt;id . '/edit') }}&quot;&gt;
+    <a href="{{ URL::to($route.'/' . $result->id . '/edit') }}">
 
     @if($model=='Member')
-    &lt;article&gt;
-      &lt;h2&gt;{{$result-&gt;firstname.' '.$result-&gt;lastname}}&lt;/h2&gt;
-      &lt;p&gt;{{$result-&gt;id.' '.$result-&gt;email}}&lt;/p&gt;
-    &lt;/article&gt;
+    <article>
+      <h2>{{$result->firstname.' '.$result->lastname}}</h2>
+      <p>{{$result->id.' '.$result->email}}</p>
+    </article>
     @endif
 
     @if($model=='Category')
-    &lt;article&gt;
-      &lt;h2&gt;{{$result-&gt;name}}&lt;/h2&gt;
-      &lt;p&gt;{{$result-&gt;id}}&lt;/p&gt;
-    &lt;/article&gt;
+    <article>
+      <h2>{{$result->name}}</h2>
+      <p>{{$result->id}}</p>
+    </article>
     @endif
 
-    &lt;/a&gt;
+    </a>
   @endforeach
 @stop
 [/code]
@@ -121,12 +121,12 @@ Finally we add the search bar to a default blade template.
 **app/views/default/navigation.blade.php**
 
 [code lang="php"]
-  {{Form::open(['url' =&gt; 'search', 'method' =&gt; 'GET','class' =&gt; 'navbar-form navbar-right', 'role' =&gt; 'search'])}}
-      &lt;div class=&quot;form-group&quot;&gt;
-        {{ Form::hidden('route', isset($route) ? $route : Route::getCurrentRoute()-&gt;getPath())}}
-        {{ Form::text('q', null, ['class' =&gt; 'form-control', 'placeholder' =&gt; 'Search'])}}
-      &lt;/div&gt;
-      {{ Form::button('', ['type' =&gt; 'submit', 'class' =&gt; 'btn btn-default glyphicon glyphicon-search']) }}
+  {{Form::open(['url' => 'search', 'method' => 'GET','class' => 'navbar-form navbar-right', 'role' => 'search'])}}
+      <div class="form-group">
+        {{ Form::hidden('route', isset($route) ? $route : Route::getCurrentRoute()->getPath())}}
+        {{ Form::text('q', null, ['class' => 'form-control', 'placeholder' => 'Search'])}}
+      </div>
+      {{ Form::button('', ['type' => 'submit', 'class' => 'btn btn-default glyphicon glyphicon-search']) }}
     {{Form::close()}}
 [/code]
 

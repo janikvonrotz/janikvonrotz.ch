@@ -1,6 +1,6 @@
 ---
 id: 3764
-title: 'Hiking for Emails &#8211; Internet for the developing world'
+title: 'Hiking for Emails - Internet for the developing world'
 date: 2016-01-30T11:51:34+00:00
 author: Janik von Rotz
 layout: post

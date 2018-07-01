@@ -109,7 +109,7 @@ If you did so, complete the constructor with the following piece of code.
       htmlRendered: marked(this.props.text),
       editorState: EditorState.createWithContent(ContentState.createFromText(this.props.text))
     };
-    this.focus = () =&gt; this.refs.editor.focus();
+    this.focus = () => this.refs.editor.focus();
   }
 
 ...
@@ -153,13 +153,13 @@ Before completing the render function and the upload function, define file paste
 ...
 
   handlePastedFiles(files){
-    _.each(files, (file) =&gt; {
+    _.each(files, (file) => {
       this.upload(file);
     });
   }
 
   handleDroppedFiles(selection, files){
-    _.each(files, (file) =&gt; {
+    _.each(files, (file) => {
       this.upload(file, selection);
     });
   }
@@ -177,23 +177,23 @@ Now the render function. Important here, ignore the `GridRow` and `GridColumn`. 
 render() {
     const {editorState} = this.state;
     return (
-      &lt;GridRow className=&quot;markdown-editor&quot;&gt;
-        &lt;GridColumn className=&quot;col-md-6&quot; onClick={this.focus}&gt;
-          &lt;GridColumn className=&quot;markdown&quot;&gt;
-          &lt;Editor
+      <GridRow className="markdown-editor">
+        <GridColumn className="col-md-6" onClick={this.focus}>
+          <GridColumn className="markdown">
+          <Editor
             editorState={editorState}
             onChange={this.update.bind(this)}
             handlePastedFiles={this.handlePastedFiles.bind(this)}
             handleDroppedFiles={this.handleDroppedFiles.bind(this)}
-            ref=&quot;editor&quot; /&gt;
-          &lt;/GridColumn&gt;
-        &lt;/GridColumn&gt;
-        &lt;GridColumn className=&quot;col-md-6&quot;&gt;
-          &lt;GridColumn className=&quot;preview&quot;&gt;
-          &lt;div dangerouslySetInnerHTML={{__html: this.state.htmlRendered}} /&gt;
-          &lt;/GridColumn&gt;
-        &lt;/GridColumn&gt;
-      &lt;/GridRow&gt;
+            ref="editor" />
+          </GridColumn>
+        </GridColumn>
+        <GridColumn className="col-md-6">
+          <GridColumn className="preview">
+          <div dangerouslySetInnerHTML={{__html: this.state.htmlRendered}} />
+          </GridColumn>
+        </GridColumn>
+      </GridRow>
     );
   }
 
@@ -238,24 +238,24 @@ However I will show how to upload the file with Meteor and FS Collection. But re
 
   upload({Meteor, FlowRouter}, file) {
 
-    if(!(&quot;name&quot; in file)){
-      var extension = file.type.split(&quot;/&quot;)[1];
+    if(!("name" in file)){
+      var extension = file.type.split("/")[1];
       file = new FS.File(file);
       file.extension(extension);
-      file.name(&quot;clipboard.&quot; + extension);
+      file.name("clipboard." + extension);
     }else{
       file = new FS.File(file);
     }
     file.metadata = {name: file.name()};
 
-    var response = &quot;empty&quot;;
-    file = Files.insert(file, (err, res) =&gt; {
+    var response = "empty";
+    file = Files.insert(file, (err, res) => {
         if (err) {
           notify.show(err.message, 'error');
         }
     });
 
-    var response = &quot;![Upload failed.](/UploadFailed.png)&quot;
+    var response = "![Upload failed.](/UploadFailed.png)"
     if(file){
       response = '![' + file._id + '](/cfs/files/files/' + file._id + ')'
     }

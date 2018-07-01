@@ -1,6 +1,6 @@
 ---
 id: 3820
-title: 'Configure Let&#8217;s Encrypt auto renewal for certificates'
+title: 'Configure Let’s Encrypt auto renewal for certificates'
 date: 2016-02-14T22:28:26+00:00
 author: Janik von Rotz
 layout: post

@@ -1,6 +1,6 @@
 ---
 id: 999
-title: 'Install SharePoint 2013 Three-tier Farm &#8211; Run the SharePoint 2013 Service Account Creator'
+title: 'Install SharePoint 2013 Three-tier Farm - Run the SharePoint 2013 Service Account Creator'
 date: 2014-01-27T13:24:53+00:00
 author: Janik von Rotz
 layout: post

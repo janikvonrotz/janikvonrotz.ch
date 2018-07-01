@@ -1,6 +1,6 @@
 ---
 id: 424
-title: 'Kinaj 17 &#8211; Salte Grölle (progressive house)'
+title: 'Kinaj 17 - Salte Grölle (progressive house)'
 date: 2013-08-13T07:51:04+00:00
 author: Janik von Rotz
 layout: post

@@ -62,10 +62,10 @@ Based on the NODE_ENV variable this code loads json data and exports them. If th
 
 [code]
 {
-  &quot;LUIS_APP_URL&quot;: &quot;https://api.projectoxford.ai/luis/v1/application?id=324234234233424242342&quot;,
-  &quot;PORT&quot;: 443,
-  &quot;MICROSOFT_APP_ID&quot;: &quot;xxxxx&quot;,
-  &quot;MICROSOFT_APP_PASSWORD&quot;: &quot;xxxxx&quot;
+  "LUIS_APP_URL": "https://api.projectoxford.ai/luis/v1/application?id=324234234233424242342",
+  "PORT": 443,
+  "MICROSOFT_APP_ID": "xxxxx",
+  "MICROSOFT_APP_PASSWORD": "xxxxx"
 }
 [/code]
 

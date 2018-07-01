@@ -1,6 +1,6 @@
 ---
 id: 223
-title: 'Kinaj 07 &#8211; Tetris (Glitch)'
+title: 'Kinaj 07 - Tetris (Glitch)'
 date: 2013-07-08T16:23:26+00:00
 author: Janik von Rotz
 layout: post

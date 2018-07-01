@@ -28,64 +28,64 @@ Let's have a look:
 **Remove-SelectedAppxPackagesFromWIM.ps1**
 
 [code lang="powershell"]
-$pathToWIM = &quot;D:\SCCM\OSD\OSImages\Windows 10 Enterprise (x64).wim&quot;
-$index = &quot;1&quot;
+$pathToWIM = "D:\SCCM\OSD\OSImages\Windows 10 Enterprise (x64).wim"
+$index = "1"
 $appList = @(
-    &quot;Windows.ContactSupport&quot;,
-    &quot;microsoft.windowscommunicationsapps&quot;,
-    &quot;Microsoft.SkypeApp&quot;,
-    &quot;Microsoft.ZuneVideo&quot;,
-    &quot;Microsoft.ZuneMusic&quot;,
-    &quot;Microsoft.XboxIdentityProvider&quot;,
-    &quot;Microsoft.XboxApp&quot;,
-    &quot;Microsoft.WindowsStore&quot;,
-    &quot;Microsoft.WindowsMaps&quot;,
-    &quot;Microsoft.StorePurchaseApp&quot;,
-    &quot;Microsoft.People&quot;,
-    &quot;Microsoft.OneConnect&quot;,
-    &quot;Microsoft.Office.OneNote&quot;,
-    &quot;Microsoft.MicrosoftSolitaireCollection&quot;,
-    &quot;Microsoft.MicrosoftOfficeHub&quot;,
-    &quot;Microsoft.Messaging&quot;,
-    &quot;Microsoft.Getstarted&quot;,
-    &quot;Microsoft.DesktopAppInstaller&quot;,
-    &quot;Microsoft.BingWeather&quot;,
-    &quot;Microsoft.3DBuilder&quot;
+    "Windows.ContactSupport",
+    "microsoft.windowscommunicationsapps",
+    "Microsoft.SkypeApp",
+    "Microsoft.ZuneVideo",
+    "Microsoft.ZuneMusic",
+    "Microsoft.XboxIdentityProvider",
+    "Microsoft.XboxApp",
+    "Microsoft.WindowsStore",
+    "Microsoft.WindowsMaps",
+    "Microsoft.StorePurchaseApp",
+    "Microsoft.People",
+    "Microsoft.OneConnect",
+    "Microsoft.Office.OneNote",
+    "Microsoft.MicrosoftSolitaireCollection",
+    "Microsoft.MicrosoftOfficeHub",
+    "Microsoft.Messaging",
+    "Microsoft.Getstarted",
+    "Microsoft.DesktopAppInstaller",
+    "Microsoft.BingWeather",
+    "Microsoft.3DBuilder"
 )
-&lt;#
-&quot;Microsoft.MicrosoftEdge&quot;
-#&gt;
+<#
+"Microsoft.MicrosoftEdge"
+#>
 
-Write-Host &quot;Start:&quot; (Get-Date).ToString()
+Write-Host "Start:" (Get-Date).ToString()
 
-Write-Host &quot;Create temporary directory...&quot;
+Write-Host "Create temporary directory..."
 $pathMountFolder = Join-Path $env:TEMP (Get-Random)
 New-Item -ItemType Directory -Path $pathMountFolder
 
-Write-Host &quot;Mounting Windows-Image...&quot; $pathToWIM
+Write-Host "Mounting Windows-Image..." $pathToWIM
 Mount-WindowsImage -Path $pathMountFolder -ImagePath $pathToWIM -Index $index
 
-Write-Host &quot;Remove the built-in apps:&quot;
+Write-Host "Remove the built-in apps:"
 $Apps = Get-AppxProvisionedPackage -Path $pathMountFolder | ForEach-Object {
 
     if($appList -contains $_.displayName) {
 
-        Write-Host &quot;Delete:&quot; $_.DisplayName
+        Write-Host "Delete:" $_.DisplayName
         Remove-AppxProvisionedPackage -Path $pathMountFolder -PackageName $_.PackageName
 
     } else {
 
-        Write-Host $_.DisplayName &quot;is not in app list or already removed&quot;
+        Write-Host $_.DisplayName "is not in app list or already removed"
     }    
 }
 
-Write-Host &quot;Dismount-WindowsImage...&quot;
+Write-Host "Dismount-WindowsImage..."
 Dismount-WindowsImage -Path $pathMountFolder  -Save -CheckIntegrity
 
-Write-Host &quot;Remove temporary directory...&quot;
+Write-Host "Remove temporary directory..."
 Remove-Item $pathMountFolder -Force
 
-Write-Host &quot;Complete:&quot; (Get-Date).ToString()
+Write-Host "Complete:" (Get-Date).ToString()
 [/code]
 
 First, the script creates a temporary folder and mounts the windows image. Next, app packages from a predefined list are removed. Finally, the image is dismounted and the temporary folder deleted.

@@ -1,6 +1,6 @@
 ---
 id: 882
-title: 'O3M 27 &#8211; Totally (electro house, progressive house, electro)'
+title: 'O3M 27 - Totally (electro house, progressive house, electro)'
 date: 2014-01-02T14:41:26+00:00
 author: Janik von Rotz
 layout: post

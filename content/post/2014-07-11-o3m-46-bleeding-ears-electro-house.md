@@ -1,6 +1,6 @@
 ---
 id: 2342
-title: 'O3M 46 &#8211; Bleeding Ears (Electro House)'
+title: 'O3M 46 - Bleeding Ears (Electro House)'
 date: 2014-07-11T07:19:42+00:00
 author: Janik von Rotz
 layout: post

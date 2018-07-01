@@ -1,6 +1,6 @@
 ---
 id: 191
-title: 'Kinaj 06 &#8211; Motion (Mixtape)'
+title: 'Kinaj 06 - Motion (Mixtape)'
 date: 2013-07-06T12:14:42+00:00
 author: Janik von Rotz
 layout: post

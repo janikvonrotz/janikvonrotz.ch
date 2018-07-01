@@ -68,14 +68,14 @@ Add the following json configuration to config file, of course you have to repla
 
 [code]
 {
-	&quot;pools&quot; : [
+	"pools" : [
 		{
-			&quot;url&quot; : &quot;stratum+tcp://www.suchcoins.com:3333&quot;,
-			&quot;user&quot; : &quot;weblogin.WorkerName&quot;,
-			&quot;pass&quot; : &quot;workerPassword&quot;
+			"url" : "stratum+tcp://www.suchcoins.com:3333",
+			"user" : "weblogin.WorkerName",
+			"pass" : "workerPassword"
 		}
 	],
-	&quot;scrypt&quot; : true
+	"scrypt" : true
 }
 [/code]
 

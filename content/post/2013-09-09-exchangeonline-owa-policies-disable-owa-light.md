@@ -1,6 +1,6 @@
 ---
 id: 482
-title: 'ExchangeOnline OWA Policies &#8211; Disable OWA light'
+title: 'ExchangeOnline OWA Policies - Disable OWA light'
 date: 2013-09-09T09:11:32+00:00
 author: Janik von Rotz
 layout: post
@@ -40,7 +40,7 @@ In case you would like f.e. disable the outlook wep app light (which is not avai
 
 [code lang="ps"]
 
-Get-OwaMailboxPolicy -Identity &quot;OwaMailboxPolicy-Default&quot; | Set-OwaMailboxPolicy -OWALightEnabled $false
+Get-OwaMailboxPolicy -Identity "OwaMailboxPolicy-Default" | Set-OwaMailboxPolicy -OWALightEnabled $false
 
 [/code]
 

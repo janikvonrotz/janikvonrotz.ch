@@ -36,7 +36,7 @@ function Get-UnlinkedGPOs {
 
         $GPO = $_
 
-	    Write-Progress -Activity &quot;Get GPO settings&quot; -status &quot;Analyze GPO: $($GPO.DisplayName)&quot; -percentComplete ([int]([array]::IndexOf($GPOs, $GPO)/$GPOs.Count*100))
+	    Write-Progress -Activity "Get GPO settings" -status "Analyze GPO: $($GPO.DisplayName)" -percentComplete ([int]([array]::IndexOf($GPOs, $GPO)/$GPOs.Count*100))
         
         $GPOReport = ([XML]$($GPO | Get-GPOReport -ReportType Xml)).GPO
 
@@ -46,7 +46,7 @@ function Get-UnlinkedGPOs {
     }
      
     If ($Report.Count -eq 0) {
-        Wirte-Warning &quot;No unlinked GPOs found&quot; 
+        Wirte-Warning "No unlinked GPOs found" 
     }else{ 
         return $Report
     }

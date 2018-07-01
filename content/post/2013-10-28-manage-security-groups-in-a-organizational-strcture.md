@@ -34,20 +34,20 @@ Here is an example of the structure:<!--more-->
 
 <ul type="disc">
     <li>OU: Finance</li>
-    <li>Group: F_accountant &gt; Member: Hans Kleister</li>
+    <li>Group: F_accountant > Member: Hans Kleister</li>
 </ul>
 
 <ul type="disc">
 <ul>
     <li>OU: Sale</li>
-    <li>Group: F_Seller &gt; Member: Lisa Meister</li>
+    <li>Group: F_Seller > Member: Lisa Meister</li>
 </ul>
 </ul>
 
 <ul type="disc">
 <ul>
     <li>OU: IT</li>
-    <li>Group: F_System Engineer &gt; Member: Johann Wagner</li>
+    <li>Group: F_System Engineer > Member: Johann Wagner</li>
 </ul>
 </ul>
 
@@ -56,23 +56,23 @@ And here after executing the management script:
 <em>New Security groups :</em>
 
 <ul type="disc">
-    <li>OU: Finanze &gt; Groups:
+    <li>OU: Finanze > Groups:
 <ul type="disc">
-    <li><strong>Finance Department</strong> &gt; Member: F_accountant</li>
+    <li><strong>Finance Department</strong> > Member: F_accountant</li>
 </ul>
 <ul type="disc">
-    <li><strong>Finance Departments</strong> &gt; Member: Sale Department, IT Department
+    <li><strong>Finance Departments</strong> > Member: Sale Department, IT Department
 <ul type="circle">
-    <li>OU: Sale &gt; Groups:
+    <li>OU: Sale > Groups:
 <ul type="disc">
-    <li><strong>Sale Department</strong> &gt; Member: F_Seller</li>
+    <li><strong>Sale Department</strong> > Member: F_Seller</li>
 </ul>
 </li>
 </ul>
 <ul type="circle">
-    <li>OU: IT &gt; Groups:
+    <li>OU: IT > Groups:
 <ul type="disc">
-    <li><strong>IT Department</strong> &gt; Member: F_System Engineer</li>
+    <li><strong>IT Department</strong> > Member: F_System Engineer</li>
 </ul>
 </li>
 </ul>
@@ -102,115 +102,115 @@ As always you can manage special settings with Exclude-Filters and simple Tasks.
 And here's the script:
 
 [code lang="ps"]
-&lt;#
+<#
 $Metadata = @{
-    Title = &quot;Update ActiveDirectory Security Groups&quot;
-    Filename = &quot;Update-ADSecurityGroups.ps1&quot;
-    Description = &quot;&quot;
-    Tags = &quot;powershell, activedirectory, security, groups, update&quot;
-    Project = &quot;&quot;
-    Author = &quot;Janik von Rotz&quot;
-    AuthorContact = &quot;https://janikvonrotz.ch&quot;
-    CreateDate = &quot;2013-10-07&quot;
-    LastEditDate = &quot;2013-10-24&quot;
-    Url = &quot;&quot;
-    Version = &quot;1.1.0&quot;
+    Title = "Update ActiveDirectory Security Groups"
+    Filename = "Update-ADSecurityGroups.ps1"
+    Description = ""
+    Tags = "powershell, activedirectory, security, groups, update"
+    Project = ""
+    Author = "Janik von Rotz"
+    AuthorContact = "https://janikvonrotz.ch"
+    CreateDate = "2013-10-07"
+    LastEditDate = "2013-10-24"
+    Url = ""
+    Version = "1.1.0"
     License = @'
 This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Switzerland License.
 To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/3.0/ch/ or
 send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 '@
 }
-#&gt;
+#>
 
 #--------------------------------------------------#
 # modules
 #--------------------------------------------------#
 Import-Module ActiveDirectory
 
-$ExcludeADUsers = &quot;&quot;
-$ExcludeADGroups = &quot;&quot;
+$ExcludeADUsers = ""
+$ExcludeADGroups = ""
 
 $OUConfigs = @(
     @{
-        OU = &quot;OU=vblusers2,DC=vbl,DC=ch&quot;
+        OU = "OU=vblusers2,DC=vbl,DC=ch"
 
-        GroupSuffix = &quot; Abteilung&quot;
-        GroupMemberPrefix = &quot;F_&quot;
+        GroupSuffix = " Abteilung"
+        GroupMemberPrefix = "F_"
 
-        ParentGroupSuffix = &quot; Abteilungen&quot;
-        ParentGroupMemberSuffix = &quot; Abteilung&quot;
+        ParentGroupSuffix = " Abteilungen"
+        ParentGroupMemberSuffix = " Abteilung"
 
-        ExcludeOUs = &quot;Extern&quot;,&quot;ServiceAccounts&quot;,&quot;Services&quot;
+        ExcludeOUs = "Extern","ServiceAccounts","Services"
 
-        ExcludeADUsers = &quot;&quot; + $ExcludeADUsers
-        ExcludeADGroups = &quot;F_Verwaltungsrat&quot; + $ExcludeADGroups
+        ExcludeADUsers = "" + $ExcludeADUsers
+        ExcludeADGroups = "F_Verwaltungsrat" + $ExcludeADGroups
     }
 )
 
 $Tasks = @(
     @{
-        Name = &quot;SP_Home#Read&quot;;
-        Options = @(&quot;CleanGroup&quot;,&quot;UpdateFromGroups&quot;,&quot;ProcessUsers&quot;);
-        AddGroups = @(&quot;Technik Abteilungen&quot;,&quot;Betrieb Abteilungen&quot;,&quot;Personal Abteilungen&quot;,&quot;Finanzen Abteilungen&quot;,&quot;Direktion Abteilungen&quot;,&quot;F_TermUser&quot;)
+        Name = "SP_Home#Read";
+        Options = @("CleanGroup","UpdateFromGroups","ProcessUsers");
+        AddGroups = @("Technik Abteilungen","Betrieb Abteilungen","Personal Abteilungen","Finanzen Abteilungen","Direktion Abteilungen","F_TermUser")
     },
     @{
-        Name = &quot;SP_Home#Edit&quot;;
-        Options = @(&quot;CleanGroup&quot;,&quot;UpdateFromGroups&quot;,&quot;RemoveGroups&quot;,&quot;ProcessUsers&quot;);
-        AddGroups = @(&quot;SP_Home#Read&quot;);
-        RemoveGroups = @(&quot;SPO_365E1License&quot;,&quot;F_TermUser&quot;,&quot;F_Service Benutzer&quot;)
+        Name = "SP_Home#Edit";
+        Options = @("CleanGroup","UpdateFromGroups","RemoveGroups","ProcessUsers");
+        AddGroups = @("SP_Home#Read");
+        RemoveGroups = @("SPO_365E1License","F_TermUser","F_Service Benutzer")
     }
 
 )
 
 $OUConfigs | %{
     $OUConfig = $_
-    Get-ADOrganizationalUnit -Filter &quot;*&quot; -SearchBase $_.OU |
+    Get-ADOrganizationalUnit -Filter "*" -SearchBase $_.OU |
     where{$ThisOU = $_; -not ($OUConfig.ExcludeOUs | where{$ThisOU.DistinguishedName -match $_})} | %{
 
         $OUconfig.OU = $_
 
         $ParentGroupName = ($_.Name + $OUconfig.ParentGroupSuffix)
         $ParentGroupMembers = Get-ADOrganizationalUnit -Filter * -SearchBase $_.DistinguishedName | %{Get-ADGroup -SearchScope OneLevel -Filter * -SearchBase $_.DistinguishedName | where{$_.Name.EndsWith($OUconfig.ParentGroupMemberSuffix)}} | select -Unique
-        $ParentGroup = Get-ADGroup -SearchScope OneLevel -Filter {SamAccountName -eq $ParentGroupName -and GroupCategory -eq &quot;Security&quot;}  -SearchBase $_.DistinguishedName
+        $ParentGroup = Get-ADGroup -SearchScope OneLevel -Filter {SamAccountName -eq $ParentGroupName -and GroupCategory -eq "Security"}  -SearchBase $_.DistinguishedName
 
         $GroupName = ($_.Name + $OUconfig.GroupSuffix)
         $GroupMembers = Get-ADGroup -SearchScope OneLevel -Filter * -SearchBase $_.DistinguishedName | where{$_.Name.StartsWith($OUconfig.GroupMemberPrefix) -and ($OUconfig.ExcludeADGroups -notcontains $_.Name)}
-        $Group = Get-ADGroup -SearchScope OneLevel -Filter{SamAccountName -eq $GroupName -and GroupCategory -eq &quot;Security&quot;} -SearchBase $_.DistinguishedName
+        $Group = Get-ADGroup -SearchScope OneLevel -Filter{SamAccountName -eq $GroupName -and GroupCategory -eq "Security"} -SearchBase $_.DistinguishedName
 
         if($ParentGroupMembers -and $ParentGroup){
 
-            &quot;Update members in parent group: $($ParentGroup.Name).&quot; | %{$Message += &quot;`n&quot; + $_; Write-Host $_}
+            "Update members in parent group: $($ParentGroup.Name)." | %{$Message += "`n" + $_; Write-Host $_}
             Get-ADGroupMember -Identity $ParentGroup | %{Remove-ADGroupMember -Identity $ParentGroup -Members $_ -Confirm:$false}
             $ParentGroupMembers | %{Add-ADGroupMember -Identity $ParentGroup -Members $_}
 
         }elseif($ParentGroupMembers -and $ParentGroupMembers.count -gt 1){
 
-            &quot;Add parent group: $ParentGroupName.&quot; | %{$Message += &quot;`n&quot; + $_; Write-Host $_}
-            New-ADGroup -Name $ParentGroupName -SamAccountName $ParentGroupName -GroupCategory Security -GroupScope Global -DisplayName $ParentGroupName -Path $($OU.DistinguishedName) -Description &quot;Department group for $($OU.Name)&quot;
+            "Add parent group: $ParentGroupName." | %{$Message += "`n" + $_; Write-Host $_}
+            New-ADGroup -Name $ParentGroupName -SamAccountName $ParentGroupName -GroupCategory Security -GroupScope Global -DisplayName $ParentGroupName -Path $($OU.DistinguishedName) -Description "Department group for $($OU.Name)"
             $ParentGroupMembers | %{Add-ADGroupMember -Identity $ParentGroupName -Members $_}
         }
 
         if($Group -and $GroupMembers){
 
-            #&quot;Update members in group: $($Group.Name).&quot; | %{$Message += &quot;`n&quot; + $_; Write-Host $_}
-            $GroupMembersIS = Get-ADGroupMember -Identity $Group | %{&quot;$($_.DistinguishedName)&quot;}
-            $GroupMemberTO = $GroupMembers | %{&quot;$($_.DistinguishedName)&quot;}
+            #"Update members in group: $($Group.Name)." | %{$Message += "`n" + $_; Write-Host $_}
+            $GroupMembersIS = Get-ADGroupMember -Identity $Group | %{"$($_.DistinguishedName)"}
+            $GroupMemberTO = $GroupMembers | %{"$($_.DistinguishedName)"}
 
             Get-ADGroupMember -Identity $Group | where{(-not $_.Name.StartsWith($OUconfig.GroupMemberPrefix)) -or ($GroupMemberTO -notcontains $_.DistinguishedName)} | %{
-                &quot;Remove member: $($_.Name) from group: $($Group.Name).&quot; | %{$Message += &quot;`n&quot; + $_; Write-Host $_}
+                "Remove member: $($_.Name) from group: $($Group.Name)." | %{$Message += "`n" + $_; Write-Host $_}
                 Remove-ADGroupMember -Identity $Group -Members $_ -Confirm:$false
             }
 
             $GroupMembers | where{($GroupMembersIS -notcontains $_.DistinguishedName)} | %{
-                &quot;Add member: $($_.Name) to group: $($Group.Name).&quot; | %{$Message += &quot;`n&quot; + $_; Write-Host $_}
+                "Add member: $($_.Name) to group: $($Group.Name)." | %{$Message += "`n" + $_; Write-Host $_}
                 Add-ADGroupMember -Identity $Group -Members $_
             }
 
         }elseif($GroupMembers){
 
-            &quot;Add group: $GroupName.&quot; | %{$Message += &quot;`n&quot; + $_; Write-Host $_}
-            New-ADGroup -Name $GroupName -SamAccountName $GroupName -GroupCategory Security -GroupScope Global -DisplayName $GroupName -Path $($OU.DistinguishedName) -Description &quot;Department group for $($OU.Name)&quot;
+            "Add group: $GroupName." | %{$Message += "`n" + $_; Write-Host $_}
+            New-ADGroup -Name $GroupName -SamAccountName $GroupName -GroupCategory Security -GroupScope Global -DisplayName $GroupName -Path $($OU.DistinguishedName) -Description "Department group for $($OU.Name)"
             $GroupMembers | %{Add-ADGroupMember -Identity $GroupName -Members $_}
         }
     }
@@ -220,44 +220,44 @@ $Tasks | %{
 
     $ADGroup = Get-ADGroup -Identity $_.Name
 
-    if($_.Options -match &quot;CleanGroup&quot;){
+    if($_.Options -match "CleanGroup"){
 
-        &quot;Remove members from: $($_.Name).&quot; | %{$Message += &quot;`n&quot; + $_; Write-Host $_}
+        "Remove members from: $($_.Name)." | %{$Message += "`n" + $_; Write-Host $_}
         Get-ADGroupMember -Identity $ADGroup | %{Remove-ADGroupMember -Identity $ADGroup -Members $_ -Confirm:$false}
     }
 
-    if($_.Options -match &quot;UpdateFromGroups&quot;){
+    if($_.Options -match "UpdateFromGroups"){
 
-        if($_.Options -match &quot;ProcessUsers&quot;){
+        if($_.Options -match "ProcessUsers"){
 
-            &quot;Add users from: $($_.AddGroups) to: $($_.Name).&quot; | %{$Message += &quot;`n&quot; + $_; Write-Host $_}
+            "Add users from: $($_.AddGroups) to: $($_.Name)." | %{$Message += "`n" + $_; Write-Host $_}
             $_.AddGroups | %{Get-ADGroupMember $_ -Recursive | Get-ADUser | where {($_.Enabled -eq $true) -and ($ExcludeADUsers -notcontains $_.UserPrincipalName)}} | select -Unique | %{Add-ADGroupMember -Identity $ADGroup -Members $_}
 
         }else{
 
-            &quot;Add groups: $($_.AddGroups) to: $($_.Name).&quot; | %{$Message += &quot;`n&quot; + $_; Write-Host $_}
+            "Add groups: $($_.AddGroups) to: $($_.Name)." | %{$Message += "`n" + $_; Write-Host $_}
             $_.AddGroups | %{Add-ADGroupMember -Identity $ADGroup -Members $_}
         }
     }
 
-    if($_.Options -match &quot;RemoveGroups&quot;){
+    if($_.Options -match "RemoveGroups"){
 
-        if($_.Options -match &quot;ProcessUsers&quot;){
+        if($_.Options -match "ProcessUsers"){
 
-            &quot;Remove users from: $($_.RemoveGroups) to: $($_.Name).&quot; | %{$Message += &quot;`n&quot; + $_; Write-Host $_}
+            "Remove users from: $($_.RemoveGroups) to: $($_.Name)." | %{$Message += "`n" + $_; Write-Host $_}
             $ADGroupMembers = Get-ADGroupMember -Identity $ADGroup
             $_.RemoveGroups | %{Get-ADGroupMember $_ -Recursive | Get-ADUser | where {($ADGroupMembers -match $_) -and ($_.Enabled -eq $true) -and ($ExcludeADUsers -notcontains $_.UserPrincipalName)}} | select -Unique |  %{Remove-ADGroupMember -Identity $ADGroup -Members $_  -Confirm:$false}
 
         }else{
 
-            &quot;Remove groups: $($_.RemoveGroups) to: $($_.Name).&quot; | %{$Message += &quot;`n&quot; + $_; Write-Host $_}
+            "Remove groups: $($_.RemoveGroups) to: $($_.Name)." | %{$Message += "`n" + $_; Write-Host $_}
             $_.RemoveGroups | %{Remove-ADGroupMember -Identity $ADGroup -Members $_ -Confirm:$false}
         }
     }
 }
 
-Write-PPEventLog $($MyInvocation.InvocationName + &quot;`n`n&quot; + $Message )
-Send-PPErrorReport -FileName &quot;activedirectory.mail.config.xml&quot; -ScriptName $MyInvocation.InvocationName
+Write-PPEventLog $($MyInvocation.InvocationName + "`n`n" + $Message )
+Send-PPErrorReport -FileName "activedirectory.mail.config.xml" -ScriptName $MyInvocation.InvocationName
 Write-PPErrorEventLog -ScriptPath $MyInvocation.InvocationName -ClearErrorVariable
 [/code]
 

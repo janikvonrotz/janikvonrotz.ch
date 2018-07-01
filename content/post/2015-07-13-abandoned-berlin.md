@@ -45,7 +45,7 @@ Berlin is very famous for it's deserted and abandoned places. Last week I spent 
 
 [caption id="attachment_3387" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2015/07/DDR-Building-1024x769.jpg" alt="Another old building from the DDR." width="720" height="541" class="size-large wp-image-3387" /> Another old building from the DDR.[/caption]
 
-[caption id="attachment_3398" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2015/07/Somwhere-in-Berlin-1024x769.jpg" alt="Love this picture, don&#039;t know why." width="720" height="541" class="size-large wp-image-3398" /> Love this picture, don't know why.[/caption]
+[caption id="attachment_3398" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2015/07/Somwhere-in-Berlin-1024x769.jpg" alt="Love this picture, don’t know why." width="720" height="541" class="size-large wp-image-3398" /> Love this picture, don't know why.[/caption]
 
 [caption id="attachment_3390" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2015/07/hidden-hospital-1024x769.jpg" alt="Hidden in the forest is this deserted hospital." width="720" height="541" class="size-large wp-image-3390" /> Hidden in the forest is this deserted hospital.[/caption]
 

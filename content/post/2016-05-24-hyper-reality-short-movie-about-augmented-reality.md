@@ -1,6 +1,6 @@
 ---
 id: 3929
-title: 'hyper reality &#8211; short movie about augmented reality'
+title: 'hyper reality - short movie about augmented reality'
 date: 2016-05-24T21:07:54+00:00
 author: Janik von Rotz
 layout: post

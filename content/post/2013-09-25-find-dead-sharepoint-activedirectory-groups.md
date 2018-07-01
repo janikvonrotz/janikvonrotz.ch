@@ -43,30 +43,30 @@ A huge disadvantage of this strategy is that after a period of adding ActiveDire
 I could handle this issue with a simple script which compares all SharePoint ActiveDirectory groups and the All ActiveDirectory groups from a specific OU against.
 
 [code lang="ps"]
-&lt;pre&gt;Import-Module ActiveDirectory
+<pre>Import-Module ActiveDirectory
 
-$Domain = &quot;$((Get-ADDomain).Name)&quot;
+$Domain = "$((Get-ADDomain).Name)"
 
-$ADGroups = Get-ADGroup -Filter &quot;*&quot; -SearchBase &quot;OU=SharePoint,OU=Services,OU=vblusers2,DC=vbl,DC=ch&quot;
+$ADGroups = Get-ADGroup -Filter "*" -SearchBase "OU=SharePoint,OU=Services,OU=vblusers2,DC=vbl,DC=ch"
 
 $SPGroups = (
     Get-SPWebs | %{
         if($_.HasUniqueRoleAssignments){
             $Url = $_.Url
-            $_.RoleAssignments | Where{$_.Member.IsDomainGroup} | %{ $_ | Select-Object @{Name = &quot;Member&quot;; Expression = {$_.member -replace ($Domain + &quot;\&quot;),&quot;&quot;}}, @{Name = &quot;Url&quot;; Expression = {$Url}},@{Name = &quot;Type&quot;; Expression = {&quot;Website&quot;}}}
+            $_.RoleAssignments | Where{$_.Member.IsDomainGroup} | %{ $_ | Select-Object @{Name = "Member"; Expression = {$_.member -replace ($Domain + "\"),""}}, @{Name = "Url"; Expression = {$Url}},@{Name = "Type"; Expression = {"Website"}}}
         }
     }
     )+(
 
     Get-SPLists | %{
         if($_.HasUniqueRoleAssignments){
-            $Url = ([uri]$_.Parentweb.Url).Scheme + &quot;://&quot; + ([uri]$_.Parentweb.Url).host + $_.DefaultViewUrl
-            $_.RoleAssignments | Where{$_.Member.IsDomainGroup} | %{ $_ | Select-Object @{Name = &quot;Member&quot;; Expression = {$_.member -replace ($Domain + &quot;\&quot;),&quot;&quot;}}, @{Name = &quot;Url&quot;; Expression = {$Url}},@{Name = &quot;Type&quot;; Expression = {&quot;List&quot;}}}
+            $Url = ([uri]$_.Parentweb.Url).Scheme + "://" + ([uri]$_.Parentweb.Url).host + $_.DefaultViewUrl
+            $_.RoleAssignments | Where{$_.Member.IsDomainGroup} | %{ $_ | Select-Object @{Name = "Member"; Expression = {$_.member -replace ($Domain + "\"),""}}, @{Name = "Url"; Expression = {$Url}},@{Name = "Type"; Expression = {"List"}}}
         }
     }
 )
 
-$ADGroups | where{ -not (($SPGroups | select Member) -match $_.Name)} | select name&lt;/pre&gt;
+$ADGroups | where{ -not (($SPGroups | select Member) -match $_.Name)} | select name</pre>
 [/code]
 
 <a href="https://gist.github.com/6699783">https://gist.github.com/6699783</a>

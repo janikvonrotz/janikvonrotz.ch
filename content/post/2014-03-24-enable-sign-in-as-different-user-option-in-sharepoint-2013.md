@@ -27,13 +27,13 @@ To enable this option you have the update the SharePoint welcome template.<!--mo
 Add the following code after the `<SharePoint:MenuItemTemplate runat="server" id="ID_RequestAccess"` finisher tag `/>`.
 
 [code]
-&lt;SharePoint:MenuItemTemplate runat=&quot;server&quot; ID=&quot;ID_LoginAsDifferentUser&quot;
-  Text=&quot;&lt;%$Resources:wss,personalactions_loginasdifferentuser%&gt;&quot;
-  Description=&quot;&lt;%$Resources:wss,personalactions_loginasdifferentuserdescription%&gt;&quot;
-  MenuGroupId=&quot;100&quot;
-  Sequence=&quot;100&quot;
-  UseShortId=&quot;true&quot;
-/&gt;
+<SharePoint:MenuItemTemplate runat="server" ID="ID_LoginAsDifferentUser"
+  Text="<%$Resources:wss,personalactions_loginasdifferentuser%>"
+  Description="<%$Resources:wss,personalactions_loginasdifferentuserdescription%>"
+  MenuGroupId="100"
+  Sequence="100"
+  UseShortId="true"
+/>
 [/code]
 
 # Source

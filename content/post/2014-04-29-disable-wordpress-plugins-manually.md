@@ -41,5 +41,5 @@ By editing the option_value field you'll get a semicolon separated list of plugi
 For WP-Piwik it was:
 
 [code lang="sql"]
-i:8;s:21:&quot;wp-piwik/wp-piwik.php&quot;;
+i:8;s:21:"wp-piwik/wp-piwik.php";
 [/code]

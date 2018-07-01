@@ -26,7 +26,7 @@ The first command imports the PowerShell Active Directory module, which should b
 
 [code lang="ps"]
 Import-Module ActiveDirectory
-Get-ADUser -Filter {EmailAddress -like &quot;*&quot;} -Properties * | select DisplayName, GivenName, Name, Surname, mail, SamAccountName, Department, Title, extensionAttribute1, extensionAttribute2 | Out-GridView
+Get-ADUser -Filter {EmailAddress -like "*"} -Properties * | select DisplayName, GivenName, Name, Surname, mail, SamAccountName, Department, Title, extensionAttribute1, extensionAttribute2 | Out-GridView
 [/code]
 
 And the second command creates a simple report.

@@ -1,6 +1,6 @@
 ---
 id: 927
-title: 'O3M 28 &#8211; Holy (Hip-Hop, trap)'
+title: 'O3M 28 - Holy (Hip-Hop, trap)'
 date: 2014-01-10T11:18:33+00:00
 author: Janik von Rotz
 layout: post

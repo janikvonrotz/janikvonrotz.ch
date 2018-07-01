@@ -1,6 +1,6 @@
 ---
 id: 1930
-title: 'Add a new file type in SharePoint &#8211; KeePass example'
+title: 'Add a new file type in SharePoint - KeePass example'
 date: 2014-04-14T08:15:07+00:00
 author: Janik von Rotz
 layout: post
@@ -40,7 +40,7 @@ To associate the icon image the file extension we need to add an entry to the DO
 Edit the file **C:\Program Files\Common Files\microsoft shared\Web Server Extensions\15\TEMPLATE\XML\DOCICON.XML** and add this line to the `<ByExtension>` node:
 
 [code lang="xml"]
-&lt;Mapping Key=&quot;kdbx&quot; Value=&quot;KeePass_Icon.png&quot; EditText=&quot;Keepass Password Manager&quot;/&gt;
+<Mapping Key="kdbx" Value="KeePass_Icon.png" EditText="Keepass Password Manager"/>
 [/code]
 
 # Open file
@@ -52,7 +52,7 @@ To enable file opening for the database file with the KeePass program run this P
 $SPWebApps = Get-SPWebApplication
 
 # set browser mime type
-$mimeType = &quot;application/vnd.keepass&quot;
+$mimeType = "application/vnd.keepass"
 $SPWebApps | foreach-object { 
 
     # If the MIME Type is not already on the allowed list for the Web Application 
@@ -83,8 +83,8 @@ $SPWebApps = Get-SPWebApplication
 
 # set global file handling
 $SPWebApps | foreach-object {
- if($_.BrowserFileHandling -ne &quot;permissive&quot; ){
-      $_.BrowserFileHandling = &quot;permissive&quot; 
+ if($_.BrowserFileHandling -ne "permissive" ){
+      $_.BrowserFileHandling = "permissive" 
       $_.Update()
   }
 }

@@ -1,6 +1,6 @@
 ---
 id: 177
-title: 'Kinaj 05 &#8211; Parkour and Freerunning PlayList (Mashup)'
+title: 'Kinaj 05 - Parkour and Freerunning PlayList (Mashup)'
 date: 2013-07-04T12:55:13+00:00
 author: Janik von Rotz
 layout: post

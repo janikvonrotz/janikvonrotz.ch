@@ -1,6 +1,6 @@
 ---
 id: 394
-title: 'Kinaj 15 &#8211; Nimbus (chill, electro house)'
+title: 'Kinaj 15 - Nimbus (chill, electro house)'
 date: 2013-08-08T17:18:14+00:00
 author: Janik von Rotz
 layout: post

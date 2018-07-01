@@ -1,6 +1,6 @@
 ---
 id: 310
-title: 'Kinaj 13 &#8211; Dynamite'
+title: 'Kinaj 13 - Dynamite'
 date: 2013-07-24T11:55:16+00:00
 author: Janik von Rotz
 layout: post

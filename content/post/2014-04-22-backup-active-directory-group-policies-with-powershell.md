@@ -30,26 +30,26 @@ What it does:
 * Notify me if something failed (requires PowerShell PowerUp)
 <!--more-->
 [code lang="ps"]
-&lt;#
+<#
 $Metadata = @{
-    Title = &quot;Backup Active Directory Group Policies&quot;
-    Filename = &quot;Backup-ADGroupPolicies.ps1&quot;
-    Description = &quot;&quot;
-    Tags = &quot;backup, active, directory, group, object, policy&quot;
-    Project = &quot;&quot;
-    Author = &quot;Janik von Rotz&quot;
-    AuthorContact = &quot;http://janikvonrotz.ch&quot;
-    CreateDate = &quot;2014-04-22&quot;
-    LastEditDate = &quot;2014-04-22
-    Url = &quot;&quot;
-    Version = &quot;0.0.0&quot;
+    Title = "Backup Active Directory Group Policies"
+    Filename = "Backup-ADGroupPolicies.ps1"
+    Description = ""
+    Tags = "backup, active, directory, group, object, policy"
+    Project = ""
+    Author = "Janik von Rotz"
+    AuthorContact = "http://janikvonrotz.ch"
+    CreateDate = "2014-04-22"
+    LastEditDate = "2014-04-22
+    Url = ""
+    Version = "0.0.0"
     License = @'
 This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Switzerland License.
 To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ch/ or 
 send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 '@
 }
-#&gt;
+#>
 
 try{
 
@@ -64,14 +64,14 @@ try{
     # settings
     #--------------------------------------------------#
 
-    $Path = &quot;C:\backup\GroupPolicy&quot;
+    $Path = "C:\backup\GroupPolicy"
 
     #--------------------------------------------------#
     # main
     #--------------------------------------------------#
 
     # create backup file name
-    $Filename = &quot;GroupPolicyFull&quot; + &quot;#&quot; + $((Get-Date -Format s) -replace &quot;:&quot;,&quot;-&quot;) + &quot;.bak&quot;
+    $Filename = "GroupPolicyFull" + "#" + $((Get-Date -Format s) -replace ":","-") + ".bak"
     $Filepath = Join-Path $Path $Filename
 
     # backup active directory
@@ -88,7 +88,7 @@ try{
     $FirstDateOfMonth = Get-Date -Day 1 -Format d
 
     # delete all backups except for today, first day of week and first day of month
-    Get-ChildItem $Path | select *,@{L=&quot;CreationTimeDate&quot;;E={Get-Date $_.CreationTime -Format d}} | Group-Object CreationTimeDate | %{
+    Get-ChildItem $Path | select *,@{L="CreationTimeDate";E={Get-Date $_.CreationTime -Format d}} | Group-Object CreationTimeDate | %{
         
         # only one backup per day
         if($_.Count -gt 1){
@@ -103,7 +103,7 @@ try{
     
 }catch{
 
-    Write-PPErrorEventLog -Source &quot;Backup ActiveDirectory Group Policies&quot; -ClearErrorVariable
+    Write-PPErrorEventLog -Source "Backup ActiveDirectory Group Policies" -ClearErrorVariable
 }
 [/code]
 

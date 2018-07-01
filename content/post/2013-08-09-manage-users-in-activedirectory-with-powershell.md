@@ -35,11 +35,11 @@ To a new user I'll use this script:
 
 Import-Module Quest.ActiveRoles.ArsPowerShellSnapIn
 
-$ADUsers = Import-CSV &quot;ADUsers.csv&quot; -Delimiter &quot;;&quot;
+$ADUsers = Import-CSV "ADUsers.csv" -Delimiter ";"
 $ADUsers | foreach{
     if(!(Get-QADUser $_.Name)){
 
-        Write-Host &quot;Creating User&quot; $_.Name
+        Write-Host "Creating User" $_.Name
 
         # create a new user
         New-QADUser -Name $_.Name `
@@ -72,15 +72,15 @@ $ADUsers | foreach{
         Out-Null
 
         # update group memberships
-        $ADMemberOfs = $_.MemberOf -split &quot;,&quot;
+        $ADMemberOfs = $_.MemberOf -split ","
         foreach( $ADMemberOf in  $ADMemberOfs){
-            Write-Host &quot;Add User $($_.Name) to the group $ADMemberOf&quot;
+            Write-Host "Add User $($_.Name) to the group $ADMemberOf"
             Add-QADMemberOf $_.Name -Group $ADMemberOf | Out-Null
         }
 
     }else{
 
-        Write-Host $_.Name &quot;Already exist&quot;
+        Write-Host $_.Name "Already exist"
 
     }
 }
@@ -95,29 +95,29 @@ To update the users attributes I made this handy script:
 
 Import-Module Quest.ActiveRoles.ArsPowerShellSnapIn
 
-$ADUsers = Import-CSV &quot;ADUsers.csv&quot; -Delimiter &quot;;&quot;
+$ADUsers = Import-CSV "ADUsers.csv" -Delimiter ";"
 $ADUsers | foreach{
     if((Get-QADUser $_.Name)){
 
-        &lt;# change Attributes
+        <# change Attributes
 
-        Write-Host &quot;Updating User&quot; $_.Name
+        Write-Host "Updating User" $_.Name
         Set-QADUser -Identity $_.Name `
             -Company $_.company `
             | Out-Null
 
-        #&gt;
+        #>
 
         # update group memberships
-        $ADMemberOfs = $_.MemberOf -split &quot;,&quot;
+        $ADMemberOfs = $_.MemberOf -split ","
         foreach( $ADMemberOf in  $ADMemberOfs){
-            Write-Host &quot;Add User $($_.Name) to the group $ADMemberOf&quot;
+            Write-Host "Add User $($_.Name) to the group $ADMemberOf"
             Add-QADMemberOf $_.Name -Group $ADMemberOf | Out-Null
         }
 
     }else{
 
-        Write-Host $_.Name &quot;doesnt' exist&quot;
+        Write-Host $_.Name "doesnt' exist"
 
     }
 }

@@ -1,6 +1,6 @@
 ---
 id: 137
-title: 'Kinaj 02 &#8211; Weird (Techno, Minimal, Dub)'
+title: 'Kinaj 02 - Weird (Techno, Minimal, Dub)'
 date: 2013-07-02T19:11:31+00:00
 author: Janik von Rotz
 layout: post

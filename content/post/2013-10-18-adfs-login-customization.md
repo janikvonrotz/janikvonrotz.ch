@@ -42,9 +42,9 @@ To add a logo you simply edit the <strong>web.config</strong> file.
 
 [code]
 
-&lt;!--
-&lt;add key=”logo” value=”logo.png” /&gt;
---&gt;
+<!--
+<add key=”logo” value=”logo.png” />
+-->
 
 [/code]
 
@@ -65,13 +65,13 @@ Edit the file of your language an replace the "hint" with you definition.
 In the root folder of the login page in the folder  <strong>MasterPages</strong> is a file named <strong>MasterPage.master</strong>. This file defines the look of the login page. To hide the title just comment this part out.
 
 [code]
-&lt;!--
-&lt;div class=&quot;GroupLargeMargin&quot;&gt;
-&lt;div class=&quot;TextSizeXLarge&quot;&gt;
-&lt;asp:Label ID=&quot;STSLabel&quot; runat&quot;server&quot;&gt;&lt;/asp:Label&gt;
-&lt;/div&gt;
-&lt;/div&gt;
---&gt;
+<!--
+<div class="GroupLargeMargin">
+<div class="TextSizeXLarge">
+<asp:Label ID="STSLabel" runat"server"></asp:Label>
+</div>
+</div>
+-->
 [/code]
 
 <h1>Auto-Populate the Username Field of the Forms Sign-in Page When Signing in to Office 365</h1>
@@ -105,9 +105,9 @@ public void Application_BeginRequest()
 HttpRequest request = HttpContext.Current.Request;
 HttpResponse response = HttpContext.Current.Response;
 
-if ( !String.IsNullOrEmpty( request.Params[&quot;username&quot;] ) )
+if ( !String.IsNullOrEmpty( request.Params["username"] ) )
 {
-     HttpCookie cookie = new HttpCookie( &quot;Office365Username&quot;, request.Params[&quot;username&quot;] );
+     HttpCookie cookie = new HttpCookie( "Office365Username", request.Params["username"] );
      cookie.Expires = DateTime.UtcNow.AddMinutes( 10 );
      Response.Cookies.Add( cookie );
 }
@@ -154,13 +154,13 @@ Paste the following code:
 
 [code]
 
-HttpCookie cookie = Context.Request.Cookies.Get( &quot;Office365Username&quot; );
+HttpCookie cookie = Context.Request.Cookies.Get( "Office365Username" );
 
 if ( null != cookie &amp;&amp; !String.IsNullOrEmpty( cookie.Value ) )
 {
      UsernameTextBox.Text = cookie.Value;
      cookie.Expires = DateTime.UtcNow.AddDays( -1 );
-     cookie.Value = &quot;&quot;;
+     cookie.Value = "";
      Context.Response.Cookies.Add( cookie );
 }
 

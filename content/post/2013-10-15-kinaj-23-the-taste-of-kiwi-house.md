@@ -1,6 +1,6 @@
 ---
 id: 630
-title: 'Kinaj 23 &#8211; The Taste of Kiwi (House)'
+title: 'Kinaj 23 - The Taste of Kiwi (House)'
 date: 2013-10-15T07:28:47+00:00
 author: Janik von Rotz
 layout: post

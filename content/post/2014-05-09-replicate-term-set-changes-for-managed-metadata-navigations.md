@@ -20,30 +20,30 @@ What I didn't was the fact that changes in the global navigation term set won't 
 To apply this changes I've written a simple PowerShell function that repins the global navigation terms on the allocated navigation term set.
 <!--more-->
 [code lang="ps"]
-&lt;#
+<#
 $Metadata = @{
-	Title = &quot;Update SharePoint Web Term Navigation&quot;
-	Filename = &quot;Update-SPWebTermNavigation.ps1&quot;
-	Description = &quot;&quot;
-	Tags = &quot;sharepoint, managed, metadata, navigation&quot;
-	Project = &quot;&quot;
-	Author = &quot;Janik von Rotz&quot;
-	AuthorContact = &quot;http://janikvonrotz.ch&quot;
-	CreateDate = &quot;2014-05-09&quot;
-	LastEditDate = &quot;2014-05-09&quot;
-	Url = &quot;&quot;
-	Version = &quot;0.0.0&quot;
+	Title = "Update SharePoint Web Term Navigation"
+	Filename = "Update-SPWebTermNavigation.ps1"
+	Description = ""
+	Tags = "sharepoint, managed, metadata, navigation"
+	Project = ""
+	Author = "Janik von Rotz"
+	AuthorContact = "http://janikvonrotz.ch"
+	CreateDate = "2014-05-09"
+	LastEditDate = "2014-05-09"
+	Url = ""
+	Version = "0.0.0"
 	License = @'
 This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Switzerland License.
 To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ch/ or 
 send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 '@
 }
-#&gt;
+#>
 
 function Update-SPWebTermNavigation{
 
-&lt;#
+<#
 .SYNOPSIS
     Update the term based navigation for a speific SharePoint website.
 
@@ -72,12 +72,12 @@ function Update-SPWebTermNavigation{
 	Name of the global term set where the terms should be pinned from.
 
 .EXAMPLE
-	PS C:\&gt; Update-SPWebTermNavigation -Identity &quot;http://SiteXY.example.org&quot; -MMSSite &quot;http://sharepoint.example.org&quot; -TermStoreName &quot;Store1&quot; -TermGroupName &quot;Navigation&quot; -TermSetName &quot;SiteXY&quot; -GlobalNavigationTermSetName &quot;GlobalNavigation&quot;
+	PS C:\> Update-SPWebTermNavigation -Identity "http://SiteXY.example.org" -MMSSite "http://sharepoint.example.org" -TermStoreName "Store1" -TermGroupName "Navigation" -TermSetName "SiteXY" -GlobalNavigationTermSetName "GlobalNavigation"
 
 .EXAMPLE
-	PS C:\&gt; Update-SPWebTermNavigation -Identity &quot;http://SiteXY.example.org&quot; -MMSSite &quot;http://sharepoint.example.org&quot; -TermStoreName &quot;Store1&quot; -TermGroupName &quot;Navigation&quot; -TermSetName &quot;SiteXY&quot; -GlobalNavigationTermGroupName &quot;AnotherNavigation&quot; -GlobalNavigationTermSetName &quot;GlobalNavigation&quot;
+	PS C:\> Update-SPWebTermNavigation -Identity "http://SiteXY.example.org" -MMSSite "http://sharepoint.example.org" -TermStoreName "Store1" -TermGroupName "Navigation" -TermSetName "SiteXY" -GlobalNavigationTermGroupName "AnotherNavigation" -GlobalNavigationTermSetName "GlobalNavigation"
 
-#&gt;
+#>
 
     [CmdletBinding()]
     param(
@@ -108,13 +108,13 @@ function Update-SPWebTermNavigation{
     # modules
     #--------------------------------------------------#
 
-    if(-not (Get-PSSnapin &quot;Microsoft.SharePoint.PowerShell&quot; -ErrorAction SilentlyContinue)){Add-PSSnapin &quot;Microsoft.SharePoint.PowerShell&quot;}
+    if(-not (Get-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue)){Add-PSSnapin "Microsoft.SharePoint.PowerShell"}
       
     #--------------------------------------------------#
     # main
     #--------------------------------------------------#
 
-    Write-Host &quot;Update term navigation settings for: $Identity&quot;
+    Write-Host "Update term navigation settings for: $Identity"
 
     # get website and site collection
     $SPWeb = Get-SPWeb $Identity

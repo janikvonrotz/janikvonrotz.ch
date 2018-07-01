@@ -34,37 +34,37 @@ Third and last the script that is forwarding the windows log messages to our sys
 
 [code lang="ps"]
 param(
-    [String]$ServerName = &quot;SYSLOG_HOSTNAME&quot;
+    [String]$ServerName = "SYSLOG_HOSTNAME"
 )
 
-Import-Module (Join-Path $PSScriptRoot &quot;Send-SyslogMessage.ps1&quot;)
-Import-Module (Join-Path $PSScriptRoot &quot;Write-Log.ps1&quot;)
+Import-Module (Join-Path $PSScriptRoot "Send-SyslogMessage.ps1")
+Import-Module (Join-Path $PSScriptRoot "Write-Log.ps1")
 
-$LogName = &quot;security&quot;
+$LogName = "security"
 $EndTime = Get-Date
 $StartTime = $EndTime.AddHours(-1)
 $LogCycle = 10
-$LogFilePath = Join-Path $PSScriptRoot &quot;$(Get-Date -Format yyyy-M-dd) $($MyInvocation.MyCommand.Name).log&quot;
+$LogFilePath = Join-Path $PSScriptRoot "$(Get-Date -Format yyyy-M-dd) $($MyInvocation.MyCommand.Name).log"
 
 try {
 
-    Write-Warning &quot;Delete log files older than $LogCycle days&quot;
-    Get-ChildItem -Path $PSScriptRoot | Where-Object {($Now - $_.LastWriteTime).Days -gt $LogCycle -and $_.extension -eq &quot;.log&quot;} | Remove-Item
+    Write-Warning "Delete log files older than $LogCycle days"
+    Get-ChildItem -Path $PSScriptRoot | Where-Object {($Now - $_.LastWriteTime).Days -gt $LogCycle -and $_.extension -eq ".log"} | Remove-Item
 
-    Write-Host &quot;Crawl for log entries&quot;
+    Write-Host "Crawl for log entries"
     $Events = Get-EventLog -LogName $LogName -After $StartTime -Before $EndTime
     
-    $Message = &quot;$($Events.length) events have been found in the $LogName log that are forwarded to the server $ServerName&quot;
+    $Message = "$($Events.length) events have been found in the $LogName log that are forwarded to the server $ServerName"
     Write-Host $Message
     Write-Log -Path $LogFilePath -Message $Message -Component $MyInvocation.MyCommand.Name -Type Info
 
     $Events | %{
 
         switch($_.EntryType) {
-            &quot;SuccessAudit&quot; { [Syslog_Severity]$Severity = &quot;Informational&quot; }
+            "SuccessAudit" { [Syslog_Severity]$Severity = "Informational" }
         }
 
-        Send-SyslogMessage -Server $ServerName -Message $_.Message -Severity $Severity -Facility ([Syslog_Facility]::logaudit) -Hostname $env:COMPUTERNAME -ApplicationName &quot;EventLog&quot; -Timestamp $_.TimeGenerated -MessageID $_.EventID
+        Send-SyslogMessage -Server $ServerName -Message $_.Message -Severity $Severity -Facility ([Syslog_Facility]::logaudit) -Hostname $env:COMPUTERNAME -ApplicationName "EventLog" -Timestamp $_.TimeGenerated -MessageID $_.EventID
     }
 
 } catch {

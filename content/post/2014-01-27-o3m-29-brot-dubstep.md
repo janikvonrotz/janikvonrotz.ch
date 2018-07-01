@@ -1,6 +1,6 @@
 ---
 id: 1023
-title: 'O3M 29 &#8211; Brot (Dubstep)'
+title: 'O3M 29 - Brot (Dubstep)'
 date: 2014-01-27T19:17:04+00:00
 author: Janik von Rotz
 layout: post

@@ -1,6 +1,6 @@
 ---
 id: 2961
-title: 'O3M 55 &#8211; Overreaction'
+title: 'O3M 55 - Overreaction'
 date: 2015-02-06T17:06:18+00:00
 author: Janik von Rotz
 layout: post

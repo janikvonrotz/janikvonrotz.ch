@@ -34,7 +34,7 @@ Thanks to [Ryan McIntyre](http://blog.randomdust.com/index.php/2013/06/sharepoin
 By adjusting the lifetime of the claims token you can shorten the time it takes to update the Active Directory group changes.
 <!--more-->
 [code lang="ps"]
-if(-not (Get-PSSnapin &quot;Microsoft.SharePoint.PowerShell&quot; -ErrorAction SilentlyContinue)){Add-PSSnapin &quot;Microsoft.SharePoint.PowerShell&quot;}
+if(-not (Get-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue)){Add-PSSnapin "Microsoft.SharePoint.PowerShell"}
 
 # update SharePoint cache token lifetime
 

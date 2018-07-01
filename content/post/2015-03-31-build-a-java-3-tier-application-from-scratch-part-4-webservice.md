@@ -44,35 +44,35 @@ RESTeasy is our JAX-RS provider and client component. In this part we will conig
 * Update the webservice configuration file.
 
 [code lang="xml"]
-&lt;web-app id=&quot;WebApp_ID&quot; version=&quot;2.4&quot;
-	xmlns=&quot;http://java.sun.com/xml/ns/j2ee&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
-	xsi:schemaLocation=&quot;http://java.sun.com/xml/ns/j2ee 
-	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd&quot;&gt;
-	&lt;display-name&gt;Restful Web Application&lt;/display-name&gt;
+<web-app id="WebApp_ID" version="2.4"
+	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>Restful Web Application</display-name>
 
-	&lt;context-param&gt;
-		&lt;param-name&gt;resteasy.resources&lt;/param-name&gt;
-		&lt;param-value&gt;ch.issueman.webservice.Route&lt;/param-value&gt;
-	&lt;/context-param&gt;
+	<context-param>
+		<param-name>resteasy.resources</param-name>
+		<param-value>ch.issueman.webservice.Route</param-value>
+	</context-param>
 
-	&lt;context-param&gt;
-		&lt;param-name&gt;resteasy.providers&lt;/param-name&gt;
-		&lt;param-value&gt;ch.issueman.webservice.Authenticator&lt;/param-value&gt;
-	&lt;/context-param&gt;
+	<context-param>
+		<param-name>resteasy.providers</param-name>
+		<param-value>ch.issueman.webservice.Authenticator</param-value>
+	</context-param>
 
-	&lt;servlet&gt;
-		&lt;servlet-name&gt;resteasy-servlet&lt;/servlet-name&gt;
-		&lt;servlet-class&gt;
+	<servlet>
+		<servlet-name>resteasy-servlet</servlet-name>
+		<servlet-class>
 			org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher
-		&lt;/servlet-class&gt;
-	&lt;/servlet&gt;
+		</servlet-class>
+	</servlet>
 
-	&lt;servlet-mapping&gt;
-		&lt;servlet-name&gt;resteasy-servlet&lt;/servlet-name&gt;
-		&lt;url-pattern&gt;/*&lt;/url-pattern&gt;
-	&lt;/servlet-mapping&gt;
+	<servlet-mapping>
+		<servlet-name>resteasy-servlet</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>
 
-&lt;/web-app&gt;
+</web-app>
 [/code]
 
 The resources class mapps actions to url paths, a provider hooks up into every request done by a client such as authentication or access filtering.
@@ -114,47 +114,47 @@ import ch.issueman.common.Project;
 import ch.issueman.common.Comment;
 import ch.issueman.common.DAO;
 
-@Path(&quot;/&quot;)
+@Path("/")
 public class Route{
 	
-	private Map &lt;String, DAO&lt;?, Integer&gt;&gt; hm = new HashMap&lt;String, DAO&lt;?, Integer&gt;&gt;();
+	private Map <String, DAO<?, Integer>> hm = new HashMap<String, DAO<?, Integer>>();
 
 	public Route(){
-		hm.put(&quot;person&quot;, new Controller&lt;Person, Integer&gt;(Person.class));
-		hm.put(&quot;user&quot;, new Controller&lt;User, Integer&gt;(User.class));
-		hm.put(&quot;employer&quot;, new Controller&lt;Employer, Integer&gt;(Employer.class));
-		hm.put(&quot;project&quot;, new Controller&lt;Project, Integer&gt;(Project.class));
-		hm.put(&quot;comment&quot;, new Controller&lt;Comment, Integer&gt;(Comment.class));	
+		hm.put("person", new Controller<Person, Integer>(Person.class));
+		hm.put("user", new Controller<User, Integer>(User.class));
+		hm.put("employer", new Controller<Employer, Integer>(Employer.class));
+		hm.put("project", new Controller<Project, Integer>(Project.class));
+		hm.put("comment", new Controller<Comment, Integer>(Comment.class));	
 	}
 	
-	@RolesAllowed(&quot;Administrator&quot;)
+	@RolesAllowed("Administrator")
 	@GET
-	@Path(&quot;{entity}/{id}&quot;)
+	@Path("{entity}/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Model getEntityById(@PathParam(&quot;entity&quot;) String entity, @PathParam(&quot;id&quot;) int id) {
+	public Model getEntityById(@PathParam("entity") String entity, @PathParam("id") int id) {
 		return (Model) hm.get(entity).getById(id);
 	} 	
 	
 	@PermitAll
-	@SuppressWarnings(&quot;unchecked&quot;)
+	@SuppressWarnings("unchecked")
 	@GET
-	@Path(&quot;{entity}&quot;)
+	@Path("{entity}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public List&lt;Model&gt; getAll(@PathParam(&quot;entity&quot;) String entity) {
-		return (List&lt;Model&gt;) hm.get(entity).getAll();
+	public List<Model> getAll(@PathParam("entity") String entity) {
+		return (List<Model>) hm.get(entity).getAll();
 	}	
 	
 	@PermitAll
-	@SuppressWarnings({ &quot;unchecked&quot; })
+	@SuppressWarnings({ "unchecked" })
 	@POST
-	@Path(&quot;login&quot;)
+	@Path("login")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response login(User user) {
 		
-		List&lt;User&gt; users = ((List&lt;User&gt;) hm.get(&quot;user&quot;).getAll()).stream()
-				.filter(p -&gt; p.getEmail().equals(user.getEmail()))
-				.filter(p -&gt; p.getPassword().equals(user.getPassword()))
+		List<User> users = ((List<User>) hm.get("user").getAll()).stream()
+				.filter(p -> p.getEmail().equals(user.getEmail()))
+				.filter(p -> p.getPassword().equals(user.getPassword()))
 				.collect(Collectors.toList());
 		
 		if(users.size() == 1){
@@ -167,156 +167,156 @@ public class Route{
 	/**
 	 * Person
 	 */
-	@RolesAllowed(&quot;Administrator&quot;)
-	@SuppressWarnings({ &quot;unchecked&quot;, &quot;rawtypes&quot; })
+	@RolesAllowed("Administrator")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@DELETE
-	@Path(&quot;person/{id}&quot;)
+	@Path("person/{id}")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response deletePerson(@PathParam(&quot;id&quot;) int id) {
-		((DAO) hm.get(&quot;person&quot;)).delete(((DAO) hm.get(&quot;person&quot;)).getById(id));
-		return Response.status(Status.OK).entity(&quot;Person deleted&quot;).build();
+	public Response deletePerson(@PathParam("id") int id) {
+		((DAO) hm.get("person")).delete(((DAO) hm.get("person")).getById(id));
+		return Response.status(Status.OK).entity("Person deleted").build();
 	}		
-	@RolesAllowed(&quot;Administrator&quot;)
-	@SuppressWarnings({ &quot;unchecked&quot;, &quot;rawtypes&quot; })
+	@RolesAllowed("Administrator")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@PUT
-	@Path(&quot;person&quot;)
+	@Path("person")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response updatePerson(Person t) {
-		((DAO) hm.get(&quot;person&quot;)).update(t);
-		return Response.status(Status.OK).entity(&quot;Person updated&quot;).build();
+		((DAO) hm.get("person")).update(t);
+		return Response.status(Status.OK).entity("Person updated").build();
 	}		
-	@RolesAllowed(&quot;Administrator&quot;)
-	@SuppressWarnings({ &quot;unchecked&quot;, &quot;rawtypes&quot; })
+	@RolesAllowed("Administrator")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@POST
-	@Path(&quot;person&quot;)
+	@Path("person")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response persistPerson(Person t) {
-		((DAO) hm.get(&quot;person&quot;)).persist(t);
-		return Response.status(Status.OK).entity(&quot;Person added&quot;).build();
+		((DAO) hm.get("person")).persist(t);
+		return Response.status(Status.OK).entity("Person added").build();
 	}
 		
 	/**
 	 * Employer
 	 */
-	@RolesAllowed(&quot;Administrator&quot;)
-	@SuppressWarnings({ &quot;unchecked&quot;, &quot;rawtypes&quot; })
+	@RolesAllowed("Administrator")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@DELETE
-	@Path(&quot;employer/{id}&quot;)
+	@Path("employer/{id}")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response deleteEmployer(@PathParam(&quot;id&quot;) int id) {
-		((DAO) hm.get(&quot;employer&quot;)).delete(((DAO) hm.get(&quot;employer&quot;)).getById(id));
-		return Response.status(Status.OK).entity(&quot;Employer deleted&quot;).build();
+	public Response deleteEmployer(@PathParam("id") int id) {
+		((DAO) hm.get("employer")).delete(((DAO) hm.get("employer")).getById(id));
+		return Response.status(Status.OK).entity("Employer deleted").build();
 	}		
-	@RolesAllowed(&quot;Administrator&quot;)
-	@SuppressWarnings({ &quot;unchecked&quot;, &quot;rawtypes&quot; })
+	@RolesAllowed("Administrator")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@PUT
-	@Path(&quot;employer&quot;)
+	@Path("employer")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response updateEmployer(Employer t) {
-		((DAO) hm.get(&quot;employer&quot;)).update(t);
-		return Response.status(Status.OK).entity(&quot;Employer updated&quot;).build();
+		((DAO) hm.get("employer")).update(t);
+		return Response.status(Status.OK).entity("Employer updated").build();
 	}		
-	@RolesAllowed(&quot;Administrator&quot;)
-	@SuppressWarnings({ &quot;unchecked&quot;, &quot;rawtypes&quot; })
+	@RolesAllowed("Administrator")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@POST
-	@Path(&quot;employer&quot;)
+	@Path("employer")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response persistEmployer(Employer t) {
-		((DAO) hm.get(&quot;employer&quot;)).persist(t);
-		return Response.status(Status.OK).entity(&quot;Employer added&quot;).build();
+		((DAO) hm.get("employer")).persist(t);
+		return Response.status(Status.OK).entity("Employer added").build();
 	}
 	
 	/**
 	 * User
 	 */
-	@RolesAllowed(&quot;Administrator&quot;)
-	@SuppressWarnings({ &quot;unchecked&quot;, &quot;rawtypes&quot; })
+	@RolesAllowed("Administrator")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@DELETE
-	@Path(&quot;user/{id}&quot;)
+	@Path("user/{id}")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response deleteUser(@PathParam(&quot;id&quot;) int id) {
-		((DAO) hm.get(&quot;user&quot;)).delete(((DAO) hm.get(&quot;user&quot;)).getById(id));
-		return Response.status(Status.OK).entity(&quot;User deleted&quot;).build();
+	public Response deleteUser(@PathParam("id") int id) {
+		((DAO) hm.get("user")).delete(((DAO) hm.get("user")).getById(id));
+		return Response.status(Status.OK).entity("User deleted").build();
 	}		
-	@RolesAllowed(&quot;Administrator&quot;)
-	@SuppressWarnings({ &quot;unchecked&quot;, &quot;rawtypes&quot; })
+	@RolesAllowed("Administrator")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@PUT
-	@Path(&quot;user&quot;)
+	@Path("user")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response updateUser(User t) {
-		((DAO) hm.get(&quot;user&quot;)).update(t);
-		return Response.status(Status.OK).entity(&quot;User updated&quot;).build();
+		((DAO) hm.get("user")).update(t);
+		return Response.status(Status.OK).entity("User updated").build();
 	}		
-	@RolesAllowed(&quot;Administrator&quot;)
-	@SuppressWarnings({ &quot;unchecked&quot;, &quot;rawtypes&quot; })
+	@RolesAllowed("Administrator")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@POST
-	@Path(&quot;user&quot;)
+	@Path("user")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response persistUser(User t) {
-		((DAO) hm.get(&quot;user&quot;)).persist(t);
-		return Response.status(Status.OK).entity(&quot;User added&quot;).build();
+		((DAO) hm.get("user")).persist(t);
+		return Response.status(Status.OK).entity("User added").build();
 	}
 	
 	/**
 	 * Project
 	 */
-	@RolesAllowed(&quot;Administrator&quot;)
-	@SuppressWarnings({ &quot;unchecked&quot;, &quot;rawtypes&quot; })
+	@RolesAllowed("Administrator")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@DELETE
-	@Path(&quot;project/{id}&quot;)
+	@Path("project/{id}")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response deleteProject(@PathParam(&quot;id&quot;) int id) {
-		((DAO) hm.get(&quot;project&quot;)).delete(((DAO) hm.get(&quot;project&quot;)).getById(id));
-		return Response.status(Status.OK).entity(&quot;Project deleted&quot;).build();
+	public Response deleteProject(@PathParam("id") int id) {
+		((DAO) hm.get("project")).delete(((DAO) hm.get("project")).getById(id));
+		return Response.status(Status.OK).entity("Project deleted").build();
 	}		
-	@RolesAllowed(&quot;Administrator&quot;)
-	@SuppressWarnings({ &quot;unchecked&quot;, &quot;rawtypes&quot; })
+	@RolesAllowed("Administrator")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@PUT
-	@Path(&quot;project&quot;)
+	@Path("project")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response updateProject(Project t) {
-		((DAO) hm.get(&quot;project&quot;)).update(t);
-		return Response.status(Status.OK).entity(&quot;Project updated&quot;).build();
+		((DAO) hm.get("project")).update(t);
+		return Response.status(Status.OK).entity("Project updated").build();
 	}		
-	@RolesAllowed(&quot;Administrator&quot;)
-	@SuppressWarnings({ &quot;unchecked&quot;, &quot;rawtypes&quot; })
+	@RolesAllowed("Administrator")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@POST
-	@Path(&quot;project&quot;)
+	@Path("project")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response persistProject(Project t) {
-		((DAO) hm.get(&quot;project&quot;)).persist(t);
-		return Response.status(Status.OK).entity(&quot;Project added&quot;).build();
+		((DAO) hm.get("project")).persist(t);
+		return Response.status(Status.OK).entity("Project added").build();
 	}
 	
 	/**
 	 * Comment
 	 */
-	@RolesAllowed(&quot;Administrator&quot;)
-	@SuppressWarnings({ &quot;unchecked&quot;, &quot;rawtypes&quot; })
+	@RolesAllowed("Administrator")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@DELETE
-	@Path(&quot;comment/{id}&quot;)
+	@Path("comment/{id}")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response deleteComment(@PathParam(&quot;id&quot;) int id) {
-		((DAO) hm.get(&quot;comment&quot;)).delete(((DAO) hm.get(&quot;comment&quot;)).getById(id));
-		return Response.status(Status.OK).entity(&quot;Comment deleted&quot;).build();
+	public Response deleteComment(@PathParam("id") int id) {
+		((DAO) hm.get("comment")).delete(((DAO) hm.get("comment")).getById(id));
+		return Response.status(Status.OK).entity("Comment deleted").build();
 	}		
-	@RolesAllowed(&quot;Administrator&quot;)
-	@SuppressWarnings({ &quot;unchecked&quot;, &quot;rawtypes&quot; })
+	@RolesAllowed("Administrator")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@PUT
-	@Path(&quot;comment&quot;)
+	@Path("comment")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response updateComment(Comment t) {
-		((DAO) hm.get(&quot;comment&quot;)).update(t);
-		return Response.status(Status.OK).entity(&quot;Comment updated&quot;).build();
+		((DAO) hm.get("comment")).update(t);
+		return Response.status(Status.OK).entity("Comment updated").build();
 	}		
-	@RolesAllowed(&quot;Administrator&quot;)
-	@SuppressWarnings({ &quot;unchecked&quot;, &quot;rawtypes&quot; })
+	@RolesAllowed("Administrator")
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@POST
-	@Path(&quot;comment&quot;)
+	@Path("comment")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response persistComment(Comment t) {
-		((DAO) hm.get(&quot;comment&quot;)).persist(t);
-		return Response.status(Status.OK).entity(&quot;Comment added&quot;).build();
+		((DAO) hm.get("comment")).persist(t);
+		return Response.status(Status.OK).entity("Comment added").build();
 	}
 }
 [/code]
@@ -376,14 +376,14 @@ import ch.issueman.common.User;
 @Provider
 public class Authenticator implements ContainerRequestFilter {
 
-	private static final String AUTHORIZATION_PROPERTY = &quot;Authorization&quot;;
-	private static final String AUTHENTICATION_SCHEME = &quot;Basic&quot;;
-	private static final Response ACCESS_DENIED =  Response.status(Status.UNAUTHORIZED).entity( &quot;Access denied for this resource.&quot; ).build( );
-	private static final Response ACCESS_FORBIDDEN =  Response.status(Status.FORBIDDEN).entity( &quot;Nobody can access this resource.&quot; ).build( );
+	private static final String AUTHORIZATION_PROPERTY = "Authorization";
+	private static final String AUTHENTICATION_SCHEME = "Basic";
+	private static final Response ACCESS_DENIED =  Response.status(Status.UNAUTHORIZED).entity( "Access denied for this resource." ).build( );
+	private static final Response ACCESS_FORBIDDEN =  Response.status(Status.FORBIDDEN).entity( "Nobody can access this resource." ).build( );
 	
 	@Override
 	public void filter(ContainerRequestContext requestContext) {
-		ResourceMethodInvoker methodInvoker = (ResourceMethodInvoker) requestContext.getProperty(&quot;org.jboss.resteasy.core.ResourceMethodInvoker&quot;);
+		ResourceMethodInvoker methodInvoker = (ResourceMethodInvoker) requestContext.getProperty("org.jboss.resteasy.core.ResourceMethodInvoker");
         Method method = methodInvoker.getMethod();
 		
 		if (!method.isAnnotationPresent(PermitAll.class)) {
@@ -393,15 +393,15 @@ public class Authenticator implements ContainerRequestFilter {
 				return;
 			}
 
-			final MultivaluedMap&lt;String, String&gt; headers = requestContext.getHeaders();
-			final List&lt;String&gt; authorization = headers.get(AUTHORIZATION_PROPERTY);
+			final MultivaluedMap<String, String> headers = requestContext.getHeaders();
+			final List<String> authorization = headers.get(AUTHORIZATION_PROPERTY);
 
 			if (authorization == null || authorization.isEmpty()) {
 				requestContext.abortWith(ACCESS_DENIED);
 				return;
 			}
 
-			final String encodedUserPassword = authorization.get(0).replaceFirst(AUTHENTICATION_SCHEME + &quot; &quot;, &quot;&quot;);
+			final String encodedUserPassword = authorization.get(0).replaceFirst(AUTHENTICATION_SCHEME + " ", "");
 
 			String usernameAndPassword = null;
 			try {
@@ -410,13 +410,13 @@ public class Authenticator implements ContainerRequestFilter {
 				e.printStackTrace();
 			}
 
-			final StringTokenizer tokenizer = new StringTokenizer(usernameAndPassword, &quot;:&quot;);
+			final StringTokenizer tokenizer = new StringTokenizer(usernameAndPassword, ":");
 			final String username = tokenizer.nextToken();
 			final String password = tokenizer.nextToken();
 
 			if (method.isAnnotationPresent(RolesAllowed.class)) {
 				RolesAllowed rolesAnnotation = method.getAnnotation(RolesAllowed.class);
-				Set&lt;String&gt; rolesSet = new HashSet&lt;String&gt;(Arrays.asList(rolesAnnotation.value()));
+				Set<String> rolesSet = new HashSet<String>(Arrays.asList(rolesAnnotation.value()));
 
 				if (!isUserAllowed(username, password, rolesSet)) {
 					requestContext.abortWith(ACCESS_DENIED);
@@ -426,14 +426,14 @@ public class Authenticator implements ContainerRequestFilter {
 		}
 	}
 
-	private boolean isUserAllowed(final String username, final String password,	final Set&lt;String&gt; rolesSet) {
+	private boolean isUserAllowed(final String username, final String password,	final Set<String> rolesSet) {
 		boolean isAllowed = false;
 
-		Controller&lt;User, Integer&gt; usercontroller = new Controller&lt;User, Integer&gt;(User.class);
+		Controller<User, Integer> usercontroller = new Controller<User, Integer>(User.class);
 		
-		List&lt;User&gt; users = usercontroller.getAll().stream()
-				.filter(p -&gt; p.getEmail().equals(username))
-				.filter(p -&gt; p.getPassword().equals(password))
+		List<User> users = usercontroller.getAll().stream()
+				.filter(p -> p.getEmail().equals(username))
+				.filter(p -> p.getPassword().equals(password))
 				.collect(Collectors.toList());
 		
 		if(users.get(0) != null){
@@ -480,11 +480,11 @@ public class Seed {
 		
 		Faker faker = new Faker();
 
-		Controller&lt;Person, Integer&gt; personcontroller = new Controller&lt;Person, Integer&gt;(Person.class);
-		Controller&lt;User, Integer&gt; usercontroller = new Controller&lt;User, Integer&gt;(User.class);
-		Controller&lt;Employer, Integer&gt; employercontroller = new Controller&lt;Employer, Integer&gt;(Employer.class);
-		Controller&lt;Project, Integer&gt; projectcontroller = new Controller&lt;Project, Integer&gt;(Project.class);
-		Controller&lt;Comment, Integer&gt; commentcontroller = new Controller&lt;Comment, Integer&gt;(Comment.class);
+		Controller<Person, Integer> personcontroller = new Controller<Person, Integer>(Person.class);
+		Controller<User, Integer> usercontroller = new Controller<User, Integer>(User.class);
+		Controller<Employer, Integer> employercontroller = new Controller<Employer, Integer>(Employer.class);
+		Controller<Project, Integer> projectcontroller = new Controller<Project, Integer>(Project.class);
+		Controller<Comment, Integer> commentcontroller = new Controller<Comment, Integer>(Comment.class);
 
 		usercontroller.deleteAll();
 		employercontroller.deleteAll();
@@ -495,10 +495,10 @@ public class Seed {
 		int i = 0;
 		int j = 0;
 		
-		for (i = 0; i &lt;= 20; i++) {
+		for (i = 0; i <= 20; i++) {
 
 			Person person = new Person(faker.name().firstName());
-			User user = new User(faker.name().firstName(), faker.internet().emailAddress(), faker.letterify(&quot;??????&quot;), &quot;Administrator&quot;);
+			User user = new User(faker.name().firstName(), faker.internet().emailAddress(), faker.letterify("??????"), "Administrator");
 			Employer employer = new Employer(faker.name().firstName(), faker.name().lastName());
 
 			personcontroller.persist(person);
@@ -507,11 +507,11 @@ public class Seed {
 
 			if (i % 4 == 0) {
 				
-				Project project = new Project(&quot;Project: &quot; + faker.name().lastName(), employer);
+				Project project = new Project("Project: " + faker.name().lastName(), employer);
 				
-				List&lt;Comment&gt; comments = new ArrayList&lt;Comment&gt;();
+				List<Comment> comments = new ArrayList<Comment>();
 				
-				for (j = 0; j &lt;= 10; j++) {
+				for (j = 0; j <= 10; j++) {
 					
 					Comment comment = new Comment(faker.lorem().paragraph(),user);
 					comments.add(comment);
@@ -522,9 +522,9 @@ public class Seed {
 			}
 		}
 		
-		System.out.println(&quot;Seeded: &quot; + i*3 + &quot; people&quot;);
-		System.out.println(&quot;Seeded: &quot; + (i/4+1) + &quot; projects&quot;);
-		System.out.println(&quot;Seeded: &quot; + j*(i/4+1) + &quot; comments&quot;);
+		System.out.println("Seeded: " + i*3 + " people");
+		System.out.println("Seeded: " + (i/4+1) + " projects");
+		System.out.println("Seeded: " + j*(i/4+1) + " comments");
 	}
 }
 [/code]

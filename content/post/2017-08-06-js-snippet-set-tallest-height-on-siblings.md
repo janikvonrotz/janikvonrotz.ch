@@ -29,7 +29,7 @@ If you're not using any js library (other than jQuery of course) add this `forEa
 
 [code lang="js"]
 var forEach = function (array, callback, scope) {
-  for (var i = 0; i &lt; array.length; i++) {
+  for (var i = 0; i < array.length; i++) {
     callback.call(scope, i, array[i]); 
   }
 }
@@ -45,7 +45,7 @@ if(collection) {
 
     // get max height
     forEach(boxes, function (index, box) {
-        if (box.offsetHeight &gt;= maxHeight) {
+        if (box.offsetHeight >= maxHeight) {
             maxHeight = box.offsetHeight
         }
     })

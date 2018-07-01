@@ -34,26 +34,26 @@ Here's a sample export:
 And here's the script:
 
 [code lang="ps"]
-&lt;#
+<#
 $Metadata = @{
-	Title = &quot;Export all Terms from Managed Metadata Service&quot;
-	Filename = &quot;Export-ManagedMetadataServiceTerms.ps1&quot;
-	Description = &quot;&quot;
-	Tags = &quot;powershell, script, sharepoint, managed, metadata, terms, export&quot;
-	Project = &quot;&quot;
-	Author = &quot;Janik von Rotz&quot;
-	AuthorContact = &quot;https://janikvonrotz.ch&quot;
-	CreateDate = &quot;2014-01-14&quot;
-	LastEditDate = &quot;2014-01-14&quot;
-	Url = &quot;&quot;
-	Version = &quot;0.0.0&quot;
+	Title = "Export all Terms from Managed Metadata Service"
+	Filename = "Export-ManagedMetadataServiceTerms.ps1"
+	Description = ""
+	Tags = "powershell, script, sharepoint, managed, metadata, terms, export"
+	Project = ""
+	Author = "Janik von Rotz"
+	AuthorContact = "https://janikvonrotz.ch"
+	CreateDate = "2014-01-14"
+	LastEditDate = "2014-01-14"
+	Url = ""
+	Version = "0.0.0"
 	License = @'
 This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Switzerland License.
 To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/3.0/ch/ or
 send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 '@
 }
-#&gt;
+#>
 
 if((Get-PSSnapin 'Microsoft.SharePoint.PowerShell' -ErrorAction SilentlyContinue) -eq $null){Add-PSSnapin 'Microsoft.SharePoint.PowerShell'}
 
@@ -67,10 +67,10 @@ function loop{
     )
 
     # check the child attribute containing the same type of objects
-    $Objects = iex &quot;`$Object.$AttributeName&quot;
+    $Objects = iex "`$Object.$AttributeName"
 
     # output this item
-    $Object | select @{L=&quot;Object&quot;;E={$_}}, @{L=&quot;Level&quot;;E={$Level}}
+    $Object | select @{L="Object";E={$_}}, @{L="Level";E={$Level}}
 
     # output the child items of this object
     if($Objects){
@@ -87,16 +87,16 @@ function loop{
 $SPTaxonomies = @()
 
 # get all taxonomy objects
-$SPTaxonomies = Get-SPTaxonomySession -Site &quot;https://itwiki.vbl.ch&quot; | %{
+$SPTaxonomies = Get-SPTaxonomySession -Site "https://itwiki.vbl.ch" | %{
 
     $_.TermStores | %{
 
         $TermStore = New-Object -TypeName Psobject -Property @{
 
             TermStore = $_.Name
-            Group = &quot;&quot;
-            TermSet = &quot;&quot;
-            Terms = &quot;&quot;
+            Group = ""
+            TermSet = ""
+            Terms = ""
         }
 
         $_.Groups | %{
@@ -108,7 +108,7 @@ $SPTaxonomies = Get-SPTaxonomySession -Site &quot;https://itwiki.vbl.ch&quot; | 
 
                 $TermSet = $Group.PSObject.Copy()
                 $TermSet.TermSet = $_.Name
-                $TermSet.Terms = ($_.Terms | %{loop -Object $_ -AttributeName &quot;Terms&quot; -Level 1})
+                $TermSet.Terms = ($_.Terms | %{loop -Object $_ -AttributeName "Terms" -Level 1})
 
                 $TermSet
             }
@@ -130,7 +130,7 @@ $SPTaxonomies | %{
         # create a term export object
         $Item = $SPTaxonomy.PSObject.Copy()
         $Index = 1;while($Index -ne $Levels){
-            $Item | Add-Member –MemberType NoteProperty –Name &quot;Term Level $Index&quot; –Value $(if($_.Level -eq $Index){$_.Object.Name}else{&quot;&quot;})
+            $Item | Add-Member –MemberType NoteProperty –Name "Term Level $Index" –Value $(if($_.Level -eq $Index){$_.Object.Name}else{""})
             $Index += 1
         }
 

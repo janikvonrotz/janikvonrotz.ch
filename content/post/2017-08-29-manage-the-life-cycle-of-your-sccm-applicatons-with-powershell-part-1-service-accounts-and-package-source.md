@@ -1,6 +1,6 @@
 ---
 id: 4475
-title: 'Manage the life cycle of your SCCM applicatons with PowerShell &#8211; Part 1 Service Accounts and Package Source'
+title: 'Manage the life cycle of your SCCM applicatons with PowerShell - Part 1 Service Accounts and Package Source'
 date: 2017-08-29T12:19:29+00:00
 author: Janik von Rotz
 layout: post
@@ -41,122 +41,122 @@ Separation of concerns is an important key principal of Microsoft products. That
 Import-Module ActiveDirectory
 Import-Module PowerUp
 
-$OU = &quot;OU=ServiceAccounts,OU=Admin,DC=example,DC=net&quot;
-$Domain = &quot;example.net&quot;
+$OU = "OU=ServiceAccounts,OU=Admin,DC=example,DC=net"
+$Domain = "example.net"
 $Users = @(
     @{
-        DisplayName = &quot;SCCM Site&quot;
-        Name = &quot;sccm_site&quot;
+        DisplayName = "SCCM Site"
+        Name = "sccm_site"
         Password = Get-RandomPassword
         CannotChangePassword = $true
         ChangePasswordAtLogon = $false
         PasswordNeverExpires = $true
-        Description = &quot;Runs the sccm primary site and its roles.&quot;
+        Description = "Runs the sccm primary site and its roles."
     }
      @{
-        DisplayName = &quot;SCCM Active Directory Discovery&quot;
-        Name = &quot;sccm_discovery&quot;
+        DisplayName = "SCCM Active Directory Discovery"
+        Name = "sccm_discovery"
         Password = Get-RandomPassword
         CannotChangePassword = $true
         ChangePasswordAtLogon = $false
         PasswordNeverExpires = $true
-        Description = &quot;Discovers users, groups and system in the Active Directory.&quot;
+        Description = "Discovers users, groups and system in the Active Directory."
     }
     @{
-        DisplayName = &quot;SCCM Active Directory Forest&quot;
-        Name = &quot;sccm_forest&quot;
+        DisplayName = "SCCM Active Directory Forest"
+        Name = "sccm_forest"
         Password = Get-RandomPassword
         CannotChangePassword = $true
         ChangePasswordAtLogon = $false
         PasswordNeverExpires = $true
-        Description = &quot;Discovers Active Directory forests and publishes information in the system container.&quot;
+        Description = "Discovers Active Directory forests and publishes information in the system container."
     }
     @{
-        DisplayName = &quot;SCCM Proxy Access&quot;
-        Name = &quot;sccm_proxy&quot;
+        DisplayName = "SCCM Proxy Access"
+        Name = "sccm_proxy"
         Password = Get-RandomPassword
         CannotChangePassword = $true
         ChangePasswordAtLogon = $false
         PasswordNeverExpires = $true
-        Description = &quot;Connects site roles with the proxy server.&quot;
+        Description = "Connects site roles with the proxy server."
     }
     @{
-        DisplayName = &quot;SCCM Capture OSI&quot;
-        Name = &quot;sccm_captureosi&quot;
+        DisplayName = "SCCM Capture OSI"
+        Name = "sccm_captureosi"
         Password = Get-RandomPassword
         CannotChangePassword = $true
         ChangePasswordAtLogon = $false
         PasswordNeverExpires = $true
-        Description = &quot;Stores the captured operating system images.&quot;
+        Description = "Stores the captured operating system images."
     }
     @{
-        DisplayName = &quot;SCCM Client Push&quot;
-        Name = &quot;sccm_clientpush&quot;
+        DisplayName = "SCCM Client Push"
+        Name = "sccm_clientpush"
         Password = Get-RandomPassword
         CannotChangePassword = $true
         ChangePasswordAtLogon = $false
         PasswordNeverExpires = $true
-        Description = &quot;Installs the sccm client on existing windows clients.&quot;
+        Description = "Installs the sccm client on existing windows clients."
     }
     @{
-        DisplayName = &quot;SCCM Exchange Connection&quot;
-        Name = &quot;sccm_exchange&quot;
+        DisplayName = "SCCM Exchange Connection"
+        Name = "sccm_exchange"
         Password = Get-RandomPassword
         CannotChangePassword = $true
         ChangePasswordAtLogon = $false
         PasswordNeverExpires = $true
-        Description = &quot;Conencts the site with the Exchange server.&quot;
+        Description = "Conencts the site with the Exchange server."
     }
     @{
-        DisplayName = &quot;SCCM Reporting Service&quot;
-        Name = &quot;sccm_report&quot;
+        DisplayName = "SCCM Reporting Service"
+        Name = "sccm_report"
         Password = Get-RandomPassword
         CannotChangePassword = $true
         ChangePasswordAtLogon = $false
         PasswordNeverExpires = $true
-        Description = &quot;Runs the SCCM reporting service.&quot;
+        Description = "Runs the SCCM reporting service."
     }
     @{
-        DisplayName = &quot;SCCM Domain Join&quot;
-        Name = &quot;sccm_domainjoin&quot;
+        DisplayName = "SCCM Domain Join"
+        Name = "sccm_domainjoin"
         Password = Get-RandomPassword
         CannotChangePassword = $true
         ChangePasswordAtLogon = $false
         PasswordNeverExpires = $true
-        Description = &quot;Joins systems during the installation to the domain.&quot;
+        Description = "Joins systems during the installation to the domain."
     }
     @{
-        DisplayName = &quot;SCCM SQL Service&quot;
-        Name = &quot;sccm_sql&quot;
+        DisplayName = "SCCM SQL Service"
+        Name = "sccm_sql"
         Password = Get-RandomPassword
         CannotChangePassword = $true
         ChangePasswordAtLogon = $false
         PasswordNeverExpires = $true
-        Description = &quot;Runs the SQL server.&quot;
+        Description = "Runs the SQL server."
     }
     @{
-        DisplayName = &quot;SCCM Network Access&quot;
-        Name = &quot;sccm_network&quot;
+        DisplayName = "SCCM Network Access"
+        Name = "sccm_network"
         Password = Get-RandomPassword
         CannotChangePassword = $true
         ChangePasswordAtLogon = $false
         PasswordNeverExpires = $true
-        Description = &quot;Accesses the packages source and loads files required for installation and deployment.&quot;
+        Description = "Accesses the packages source and loads files required for installation and deployment."
     }
     @{
-        DisplayName = &quot;SCCM WSUS&quot;
-        Name = &quot;sccm_wsus&quot;
+        DisplayName = "SCCM WSUS"
+        Name = "sccm_wsus"
         Password = Get-RandomPassword
         CannotChangePassword = $true
         ChangePasswordAtLogon = $false
         PasswordNeverExpires = $true
-        Description = &quot;Connects the site with the WSUS server.&quot;
+        Description = "Connects the site with the WSUS server."
     }
 )
 
 $Users | ForEach-Object {
-    Write-Host &quot;Create AD Service Account: $($_.Name) with Password: $($_.Password)&quot;
-    New-ADUser -Name $_.DisplayName -DisplayName $_.DisplayName -AccountPassword (ConvertTo-SecureString -AsPlainText $_.Password -Force) -Enabled $true -Path $OU -CannotChangePassword $_.CannotChangePassword -ChangePasswordAtLogon $_.ChangePasswordAtLogon -PasswordNeverExpires $_.PasswordNeverExpires -SamAccountName $_.Name -UserPrincipalName &quot;$($_.Name)@$Domain&quot; -Description $_.Description
+    Write-Host "Create AD Service Account: $($_.Name) with Password: $($_.Password)"
+    New-ADUser -Name $_.DisplayName -DisplayName $_.DisplayName -AccountPassword (ConvertTo-SecureString -AsPlainText $_.Password -Force) -Enabled $true -Path $OU -CannotChangePassword $_.CannotChangePassword -ChangePasswordAtLogon $_.ChangePasswordAtLogon -PasswordNeverExpires $_.PasswordNeverExpires -SamAccountName $_.Name -UserPrincipalName "$($_.Name)@$Domain" -Description $_.Description
 }
 [/code]
 
@@ -168,101 +168,101 @@ These service accounts must be configured in the SCCM console and will be grante
 
 [code lang="powershell"]
 # set the parameters
-$Source = &quot;D:\SCCM&quot;
-$ShareName = &quot;PackageSource&quot;
-$NetworkAccount = &quot;go4ksow.net\sccm_network&quot;
-$SiteAccount = &quot;go4ksow.net\sccm_site&quot;
-$SystemAccount = &quot;NT AUTHORITY\SYSTEM&quot;
-$LocalServiceAccount = &quot;LOCALSERVICE&quot;
-$CaputreOSIAccount = &quot;go4ksow.net\sccm_captureosi&quot;
+$Source = "D:\SCCM"
+$ShareName = "PackageSource"
+$NetworkAccount = "go4ksow.net\sccm_network"
+$SiteAccount = "go4ksow.net\sccm_site"
+$SystemAccount = "NT AUTHORITY\SYSTEM"
+$LocalServiceAccount = "LOCALSERVICE"
+$CaputreOSIAccount = "go4ksow.net\sccm_captureosi"
 
 # create the source directory
-New-Item -ItemType Directory -Path &quot;$Source&quot;
+New-Item -ItemType Directory -Path "$Source"
 
 # Application
-New-Item -ItemType Directory -Path &quot;$Source\Applications&quot;
-New-Item -ItemType Directory -Path &quot;$Source\Applications\Adobe&quot;
-New-Item -ItemType Directory -Path &quot;$Source\Applications\Citrix&quot;
-New-Item -ItemType Directory -Path &quot;$Source\Applications\Microsoft&quot;
-New-Item -ItemType Directory -Path &quot;$Source\Applications\Microsoft\Office 2016&quot;
+New-Item -ItemType Directory -Path "$Source\Applications"
+New-Item -ItemType Directory -Path "$Source\Applications\Adobe"
+New-Item -ItemType Directory -Path "$Source\Applications\Citrix"
+New-Item -ItemType Directory -Path "$Source\Applications\Microsoft"
+New-Item -ItemType Directory -Path "$Source\Applications\Microsoft\Office 2016"
 
 # App-V
-New-Item -ItemType Directory -Path &quot;$Source\App-V&quot;
-New-Item -ItemType Directory -Path &quot;$Source\App-V\Packages&quot;
-New-Item -ItemType Directory -Path &quot;$Source\App-V\Source&quot;
+New-Item -ItemType Directory -Path "$Source\App-V"
+New-Item -ItemType Directory -Path "$Source\App-V\Packages"
+New-Item -ItemType Directory -Path "$Source\App-V\Source"
 
 # Device Applications
-New-Item -ItemType Directory -Path &quot;$Source\DeviceApplications&quot;
-New-Item -ItemType Directory -Path &quot;$Source\DeviceApplications\HP&quot;
-New-Item -ItemType Directory -Path &quot;$Source\DeviceApplications\HP\Probook 450&quot;
-New-Item -ItemType Directory -Path &quot;$Source\DeviceApplications\HP\Probook 450\x86&quot;
-New-Item -ItemType Directory -Path &quot;$Source\DeviceApplications\HP\Probook 450\x64&quot;
+New-Item -ItemType Directory -Path "$Source\DeviceApplications"
+New-Item -ItemType Directory -Path "$Source\DeviceApplications\HP"
+New-Item -ItemType Directory -Path "$Source\DeviceApplications\HP\Probook 450"
+New-Item -ItemType Directory -Path "$Source\DeviceApplications\HP\Probook 450\x86"
+New-Item -ItemType Directory -Path "$Source\DeviceApplications\HP\Probook 450\x64"
 
 # Import
-New-Item -ItemType Directory -Path &quot;$Source\Import&quot;
-New-Item -ItemType Directory -Path &quot;$Source\Import\Baselines&quot;
-New-Item -ItemType Directory -Path &quot;$Source\Import\MOFs&quot;
-New-Item -ItemType Directory -Path &quot;$Source\Import\Task Sequences&quot;
+New-Item -ItemType Directory -Path "$Source\Import"
+New-Item -ItemType Directory -Path "$Source\Import\Baselines"
+New-Item -ItemType Directory -Path "$Source\Import\MOFs"
+New-Item -ItemType Directory -Path "$Source\Import\Task Sequences"
 
 # Logs
-New-Item -ItemType Directory -Path &quot;$Source\Logs&quot;
-New-Item -ItemType Directory -Path &quot;$Source\Logs\MDTLogs&quot;
-New-Item -ItemType Directory -Path &quot;$Source\Logs\MDTLogsDL&quot;
+New-Item -ItemType Directory -Path "$Source\Logs"
+New-Item -ItemType Directory -Path "$Source\Logs\MDTLogs"
+New-Item -ItemType Directory -Path "$Source\Logs\MDTLogsDL"
 
 # Operating System Deployment
-New-Item -ItemType Directory -Path &quot;$Source\OSD&quot;
-New-Item -ItemType Directory -Path &quot;$Source\OSD\BootImages&quot;
-New-Item -ItemType Directory -Path &quot;$Source\OSD\Captures&quot;
-New-Item -ItemType Directory -Path &quot;$Source\OSD\MDTSettings&quot;
-New-Item -ItemType Directory -Path &quot;$Source\OSD\MDTToolkit&quot;
-New-Item -ItemType Directory -Path &quot;$Source\OSD\OSImages&quot;
-New-Item -ItemType Directory -Path &quot;$Source\OSD\OSInstall&quot;
-New-Item -ItemType Directory -Path &quot;$Source\OSD\Prestart&quot;
-New-Item -ItemType Directory -Path &quot;$Source\OSD\USMT&quot;
-New-Item -ItemType Directory -Path &quot;$Source\OSD\DriverPackages&quot;
-New-Item -ItemType Directory -Path &quot;$Source\OSD\DriverPackages&quot;
-New-Item -ItemType Directory -Path &quot;$Source\OSD\DriverPackages\HP&quot;
-New-Item -ItemType Directory -Path &quot;$Source\OSD\DriverPackages\HP\Probook 450&quot;
-New-Item -ItemType Directory -Path &quot;$Source\OSD\DriverSources&quot;
-New-Item -ItemType Directory -Path &quot;$Source\OSD\DriverSources&quot;
-New-Item -ItemType Directory -Path &quot;$Source\OSD\DriverSources\HP&quot;
-New-Item -ItemType Directory -Path &quot;$Source\OSD\DriverSources\HP\Probook 450&quot;
-New-Item -ItemType Directory -Path &quot;$Source\OSD\DriverSources\HP\Probook 450\Realtek Ethernet Controller Drivers&quot;
+New-Item -ItemType Directory -Path "$Source\OSD"
+New-Item -ItemType Directory -Path "$Source\OSD\BootImages"
+New-Item -ItemType Directory -Path "$Source\OSD\Captures"
+New-Item -ItemType Directory -Path "$Source\OSD\MDTSettings"
+New-Item -ItemType Directory -Path "$Source\OSD\MDTToolkit"
+New-Item -ItemType Directory -Path "$Source\OSD\OSImages"
+New-Item -ItemType Directory -Path "$Source\OSD\OSInstall"
+New-Item -ItemType Directory -Path "$Source\OSD\Prestart"
+New-Item -ItemType Directory -Path "$Source\OSD\USMT"
+New-Item -ItemType Directory -Path "$Source\OSD\DriverPackages"
+New-Item -ItemType Directory -Path "$Source\OSD\DriverPackages"
+New-Item -ItemType Directory -Path "$Source\OSD\DriverPackages\HP"
+New-Item -ItemType Directory -Path "$Source\OSD\DriverPackages\HP\Probook 450"
+New-Item -ItemType Directory -Path "$Source\OSD\DriverSources"
+New-Item -ItemType Directory -Path "$Source\OSD\DriverSources"
+New-Item -ItemType Directory -Path "$Source\OSD\DriverSources\HP"
+New-Item -ItemType Directory -Path "$Source\OSD\DriverSources\HP\Probook 450"
+New-Item -ItemType Directory -Path "$Source\OSD\DriverSources\HP\Probook 450\Realtek Ethernet Controller Drivers"
 
 # Script
-New-Item -ItemType Directory -Path &quot;$Source\Scripts&quot;
+New-Item -ItemType Directory -Path "$Source\Scripts"
 
 # Tools
-New-Item -ItemType Directory -Path &quot;$Source\Tools&quot;
-New-Item -ItemType Directory -Path &quot;$Source\Tools\PSTools&quot;
+New-Item -ItemType Directory -Path "$Source\Tools"
+New-Item -ItemType Directory -Path "$Source\Tools\PSTools"
 
 # Windows Updates
-New-Item -ItemType Directory -Path &quot;$Source\WindowsUpdates&quot;
-New-Item -ItemType Directory -Path &quot;$Source\WindowsUpdates\Office 2016&quot;
-New-Item -ItemType Directory -Path &quot;$Source\WindowsUpdates\Windows 10&quot;
+New-Item -ItemType Directory -Path "$Source\WindowsUpdates"
+New-Item -ItemType Directory -Path "$Source\WindowsUpdates\Office 2016"
+New-Item -ItemType Directory -Path "$Source\WindowsUpdates\Windows 10"
 
 # WSUS
-New-Item -ItemType Directory -Path &quot;$Source\WSUS&quot;
+New-Item -ItemType Directory -Path "$Source\WSUS"
 
 # create the share
-New-SmbShare -Name &quot;$ShareName&quot; -Path &quot;$Source&quot; -CachingMode None -ReadAccess Everyone -FullAccess $SiteAccount, $SystemAccount
-# Get-SmbShare | where{$_.Name -eq &quot;PackageSource&quot;} | Remove-SmbShare
+New-SmbShare -Name "$ShareName" -Path "$Source" -CachingMode None -ReadAccess Everyone -FullAccess $SiteAccount, $SystemAccount
+# Get-SmbShare | where{$_.Name -eq "PackageSource"} | Remove-SmbShare
 
 # set security permissions
-$Acl = Get-Acl &quot;$Source\Logs&quot;
-$Ar = New-Object System.Security.AccessControl.FileSystemAccessRule($NetworkAccount,&quot;FullControl&quot;, &quot;ContainerInherit, ObjectInherit&quot;, &quot;None&quot;, &quot;Allow&quot;)
+$Acl = Get-Acl "$Source\Logs"
+$Ar = New-Object System.Security.AccessControl.FileSystemAccessRule($NetworkAccount,"FullControl", "ContainerInherit, ObjectInherit", "None", "Allow")
 $Acl.SetAccessRule($Ar)
-Set-Acl &quot;$Source\Logs&quot; $Acl
+Set-Acl "$Source\Logs" $Acl
 
-$Acl = Get-Acl &quot;$Source\OSD\Captures&quot;
-$Ar = New-Object System.Security.AccessControl.FileSystemAccessRule($CaputreOSIAccount,&quot;FullControl&quot;, &quot;ContainerInherit, ObjectInherit&quot;, &quot;None&quot;, &quot;Allow&quot;)
+$Acl = Get-Acl "$Source\OSD\Captures"
+$Ar = New-Object System.Security.AccessControl.FileSystemAccessRule($CaputreOSIAccount,"FullControl", "ContainerInherit, ObjectInherit", "None", "Allow")
 $Acl.SetAccessRule($Ar)
-Set-Acl &quot;$Source\OSD\Captures&quot; $Acl
+Set-Acl "$Source\OSD\Captures" $Acl
 
-$Acl = Get-Acl &quot;$Source\StateCapture&quot;
-$Ar = New-Object System.Security.AccessControl.FileSystemAccessRule($LocalServiceAccount,&quot;FullControl&quot;, &quot;ContainerInherit, ObjectInherit&quot;, &quot;None&quot;, &quot;Allow&quot;)
+$Acl = Get-Acl "$Source\StateCapture"
+$Ar = New-Object System.Security.AccessControl.FileSystemAccessRule($LocalServiceAccount,"FullControl", "ContainerInherit, ObjectInherit", "None", "Allow")
 $Acl.SetAccessRule($Ar)
-Set-Acl &quot;$Source\StateCapture&quot; $Acl
+Set-Acl "$Source\StateCapture" $Acl
 [/code]
 
 Of course you do not need all of these folders. Adjust the script according to your requirements and preferences.

@@ -120,7 +120,7 @@ query getCategory($id: String) {
 }
 `;
 const CategoryEditWithData = graphql(query, {
-  options: (ownProps) =&gt; ({ variables: { id: ownProps.params.id } }),
+  options: (ownProps) => ({ variables: { id: ownProps.params.id } }),
 })(CategoryEditWithMutation);
 
 export default CategoryEditWithData;
@@ -138,8 +138,8 @@ Node.js runs asynchronously and so does Apollo. Instead of retrieving data from 
 [code]
 ...
 categories(root, args){
-  return Categories.find({}).then((items) =&gt; {
-    return items.map((item) =&gt; {
+  return Categories.find({}).then((items) => {
+    return items.map((item) => {
       item.id = item._id;
       return item;
     });

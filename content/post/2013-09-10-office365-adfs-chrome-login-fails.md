@@ -31,7 +31,7 @@ After googling and binging (just kidding, <em>NERD</em>) I found a simple <a hre
 
 <!--more-->
 
-[caption id="attachment_498" align="aligncenter" width="714"]<a href="https://janikvonrotz.ch/wp-content/uploads/2013/09/2013-09-10-13_24_09-Default-vblw2k12adfs1-Remotedesktopverbindung.png"><img class="size-full wp-image-498" alt="adfs disable extended protection" src="https://janikvonrotz.ch/wp-content/uploads/2013/09/2013-09-10-13_24_09-Default-vblw2k12adfs1-Remotedesktopverbindung.png" width="714" height="615" /></a> To turn Extended Protection off, on the AD FS server, launch IIS Manager, then, on the left side tree view, access Sites -&gt; Default Web Site -&gt; adfs -&gt; ls. Once you’ve selected the "/adfs/ls" folder, double-click the Authentication icon, then right-click Windows Authentication and select Advanced Settings… On the Advanced Settings dialog, choose Off for Extended Protection.[/caption]
+[caption id="attachment_498" align="aligncenter" width="714"]<a href="https://janikvonrotz.ch/wp-content/uploads/2013/09/2013-09-10-13_24_09-Default-vblw2k12adfs1-Remotedesktopverbindung.png"><img class="size-full wp-image-498" alt="adfs disable extended protection" src="https://janikvonrotz.ch/wp-content/uploads/2013/09/2013-09-10-13_24_09-Default-vblw2k12adfs1-Remotedesktopverbindung.png" width="714" height="615" /></a> To turn Extended Protection off, on the AD FS server, launch IIS Manager, then, on the left side tree view, access Sites -> Default Web Site -> adfs -> ls. Once you’ve selected the "/adfs/ls" folder, double-click the Authentication icon, then right-click Windows Authentication and select Advanced Settings… On the Advanced Settings dialog, choose Off for Extended Protection.[/caption]
 
 &nbsp;
 

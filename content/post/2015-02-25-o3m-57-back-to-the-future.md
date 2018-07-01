@@ -1,6 +1,6 @@
 ---
 id: 3020
-title: 'O3M 57 &#8211; Back to the future'
+title: 'O3M 57 - Back to the future'
 date: 2015-02-25T14:17:15+00:00
 author: Janik von Rotz
 layout: post

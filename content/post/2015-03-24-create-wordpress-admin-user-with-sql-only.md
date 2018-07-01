@@ -24,18 +24,18 @@ tags:
 If you don't have access to you WordPress website anymore, but still can update the MySQL database. You can easily add a new admin user with this sql script:
 
 [code lang="sql"]
-USE &lt;database&gt;;
+USE <database>;
  
-SET @username = '&lt;username&gt;';
-SET @password = MD5('&lt;password&gt;');
-SET @fullname = '&lt;Firstname Lastname&gt;';
-SET @email = '&lt;login@example.com&gt;';
-SET @url = '&lt;http://example.com/&gt;';
+SET @username = '<username>';
+SET @password = MD5('<password>');
+SET @fullname = '<Firstname Lastname>';
+SET @email = '<login@example.com>';
+SET @url = '<http://example.com/>';
  
 INSERT INTO `wp_users` (`user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_status`, `display_name`) VALUES (@username, @password, @fullname, @email, @url, NOW(), '0', @fullname);
  
 SET @userid = LAST_INSERT_ID();
-INSERT INTO `wp_usermeta` (`user_id`, `meta_key`, `meta_value`) VALUES (@userid, 'wp_capabilities', 'a:1:{s:13:&quot;administrator&quot;;s:1:&quot;1&quot;;}');
+INSERT INTO `wp_usermeta` (`user_id`, `meta_key`, `meta_value`) VALUES (@userid, 'wp_capabilities', 'a:1:{s:13:"administrator";s:1:"1";}');
 INSERT INTO `wp_usermeta` (`user_id`, `meta_key`, `meta_value`) VALUES (@userid, 'wp_user_level', '10');
 [/code]
 

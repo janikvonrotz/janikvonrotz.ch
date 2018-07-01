@@ -48,17 +48,17 @@ class UserSearch extends React.Component {
   }
 
   render() {
-    return &lt;Card&gt;
-      &lt;CardText&gt;
+    return <Card>
+      <CardText>
 
-        &lt;TextField
-        ref=&quot;filter&quot;
-        onChange={this.updateFilter.bind(this)} /&gt;
+        <TextField
+        ref="filter"
+        onChange={this.updateFilter.bind(this)} />
 
         ...
 
-      &lt;/CardText&gt;
-    &lt;/Card&gt;
+      </CardText>
+    </Card>
   }
 }
 [/code]

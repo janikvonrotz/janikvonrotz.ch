@@ -38,47 +38,47 @@ If you're too lazy simply copy the fxml definitions.
 **Home.fxml**
 
 [code lang="xml"]
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+<?xml version="1.0" encoding="UTF-8"?>
 
-&lt;?import javafx.scene.image.*?&gt;
-&lt;?import javafx.scene.effect.*?&gt;
-&lt;?import javafx.scene.paint.*?&gt;
-&lt;?import javafx.scene.control.*?&gt;
-&lt;?import javafx.scene.text.*?&gt;
-&lt;?import java.lang.*?&gt;
-&lt;?import javafx.scene.layout.*?&gt;
-&lt;?import javafx.scene.layout.AnchorPane?&gt;
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
 
-&lt;AnchorPane maxHeight=&quot;-Infinity&quot; maxWidth=&quot;-Infinity&quot; minHeight=&quot;-Infinity&quot; minWidth=&quot;-Infinity&quot; prefHeight=&quot;342.0&quot; prefWidth=&quot;528.0&quot; xmlns=&quot;http://javafx.com/javafx/8&quot; xmlns:fx=&quot;http://javafx.com/fxml/1&quot; fx:controller=&quot;ch.issueman.client.HomeView&quot;&gt;
-   &lt;effect&gt;
-      &lt;Glow /&gt;
-   &lt;/effect&gt;
-   &lt;children&gt;
-      &lt;Pane fx:id=&quot;pnData&quot; prefHeight=&quot;342.0&quot; prefWidth=&quot;528.0&quot; visible=&quot;false&quot;&gt;
-         &lt;children&gt;
-            &lt;TableView fx:id=&quot;tvEmployer&quot; onMouseClicked=&quot;#clickTableView&quot; prefHeight=&quot;342.0&quot; prefWidth=&quot;317.0&quot;&gt;
-               &lt;columns&gt;
-                  &lt;TableColumn fx:id=&quot;tcId&quot; prefWidth=&quot;50.0&quot; text=&quot;ID&quot; /&gt;
-                  &lt;TableColumn fx:id=&quot;tcName&quot; prefWidth=&quot;135.0&quot; text=&quot;Name&quot; /&gt;
-                  &lt;TableColumn fx:id=&quot;tcCompany&quot; prefWidth=&quot;131.0&quot; text=&quot;Company&quot; /&gt;
-               &lt;/columns&gt;
-            &lt;/TableView&gt;
-            &lt;TextField fx:id=&quot;txName&quot; layoutX=&quot;327.0&quot; layoutY=&quot;83.0&quot; /&gt;
-            &lt;TextField fx:id=&quot;txCompany&quot; layoutX=&quot;327.0&quot; layoutY=&quot;127.0&quot; /&gt;
-            &lt;Button fx:id=&quot;btAdd&quot; layoutX=&quot;327.0&quot; layoutY=&quot;171.0&quot; mnemonicParsing=&quot;false&quot; onAction=&quot;#clickAdd&quot; text=&quot;Add&quot; /&gt;
-            &lt;Button fx:id=&quot;btUpdate&quot; layoutX=&quot;374.0&quot; layoutY=&quot;171.0&quot; mnemonicParsing=&quot;false&quot; onAction=&quot;#clickUpdate&quot; text=&quot;Update&quot; /&gt;
-            &lt;Button fx:id=&quot;btDelete&quot; layoutX=&quot;443.0&quot; layoutY=&quot;171.0&quot; mnemonicParsing=&quot;false&quot; onAction=&quot;#clickDelete&quot; text=&quot;Delete&quot; /&gt;
-         &lt;/children&gt;
-      &lt;/Pane&gt;
-      &lt;Pane fx:id=&quot;pnLogin&quot; prefHeight=&quot;342.0&quot; prefWidth=&quot;528.0&quot;&gt;
-         &lt;children&gt;
-            &lt;TextField fx:id=&quot;txUsername&quot; layoutX=&quot;171.0&quot; layoutY=&quot;104.0&quot; /&gt;
-            &lt;PasswordField fx:id=&quot;pfPassword&quot; layoutX=&quot;171.0&quot; layoutY=&quot;140.0&quot; /&gt;
-            &lt;Button fx:id=&quot;btLogin&quot; layoutX=&quot;236.0&quot; layoutY=&quot;190.0&quot; mnemonicParsing=&quot;false&quot; onAction=&quot;#clickLogin&quot; text=&quot;Login&quot; /&gt;
-         &lt;/children&gt;
-      &lt;/Pane&gt;
-   &lt;/children&gt;
-&lt;/AnchorPane&gt;
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="528.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.issueman.client.HomeView">
+   <effect>
+      <Glow />
+   </effect>
+   <children>
+      <Pane fx:id="pnData" prefHeight="342.0" prefWidth="528.0" visible="false">
+         <children>
+            <TableView fx:id="tvEmployer" onMouseClicked="#clickTableView" prefHeight="342.0" prefWidth="317.0">
+               <columns>
+                  <TableColumn fx:id="tcId" prefWidth="50.0" text="ID" />
+                  <TableColumn fx:id="tcName" prefWidth="135.0" text="Name" />
+                  <TableColumn fx:id="tcCompany" prefWidth="131.0" text="Company" />
+               </columns>
+            </TableView>
+            <TextField fx:id="txName" layoutX="327.0" layoutY="83.0" />
+            <TextField fx:id="txCompany" layoutX="327.0" layoutY="127.0" />
+            <Button fx:id="btAdd" layoutX="327.0" layoutY="171.0" mnemonicParsing="false" onAction="#clickAdd" text="Add" />
+            <Button fx:id="btUpdate" layoutX="374.0" layoutY="171.0" mnemonicParsing="false" onAction="#clickUpdate" text="Update" />
+            <Button fx:id="btDelete" layoutX="443.0" layoutY="171.0" mnemonicParsing="false" onAction="#clickDelete" text="Delete" />
+         </children>
+      </Pane>
+      <Pane fx:id="pnLogin" prefHeight="342.0" prefWidth="528.0">
+         <children>
+            <TextField fx:id="txUsername" layoutX="171.0" layoutY="104.0" />
+            <PasswordField fx:id="pfPassword" layoutX="171.0" layoutY="140.0" />
+            <Button fx:id="btLogin" layoutX="236.0" layoutY="190.0" mnemonicParsing="false" onAction="#clickLogin" text="Login" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
 [/code]
 
 Every view requires a controller, see there `fx:controller="ch.issueman.client.HomeView"`. I've called this controller `<view name>View.java` in order to avoid using the word controller too much.
@@ -108,7 +108,7 @@ import ch.issueman.common.User;
 
 public class HomeView implements Initializable {
 
-	private static Controller&lt;Employer, Integer&gt; controller = new Controller&lt;Employer, Integer&gt;(Employer.class, null);
+	private static Controller<Employer, Integer> controller = new Controller<Employer, Integer>(Employer.class, null);
 
 	@FXML
 	private Button btAdd;
@@ -141,21 +141,21 @@ public class HomeView implements Initializable {
 	private PasswordField pfPassword;
 	
 	@FXML
-	private TableView&lt;Employer&gt; tvEmployer;
+	private TableView<Employer> tvEmployer;
 
 	@FXML
-	private TableColumn&lt;Employer, Integer&gt; tcId;
+	private TableColumn<Employer, Integer> tcId;
 
 	@FXML
-	private TableColumn&lt;Employer, String&gt; tcName;
+	private TableColumn<Employer, String> tcName;
 	
 	@FXML
-	private TableColumn&lt;Employer, String&gt; tcCompany;
+	private TableColumn<Employer, String> tcCompany;
 	
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		tcId.setCellValueFactory(new PropertyValueFactory&lt;Employer, Integer&gt;(&quot;id&quot;));
-		tcName.setCellValueFactory(new PropertyValueFactory&lt;Employer, String&gt;(&quot;name&quot;));
-		tcCompany.setCellValueFactory(new PropertyValueFactory&lt;Employer, String&gt;(&quot;company&quot;));
+		tcId.setCellValueFactory(new PropertyValueFactory<Employer, Integer>("id"));
+		tcName.setCellValueFactory(new PropertyValueFactory<Employer, String>("name"));
+		tcCompany.setCellValueFactory(new PropertyValueFactory<Employer, String>("company"));
 		refreshPersonTable();
 	}
 
@@ -194,14 +194,14 @@ public class HomeView implements Initializable {
 	
 	@FXML
 	public void clickLogin(){
-		User user = new User(&quot;&quot;, txUsername.getText(), pfPassword.getText(), &quot;&quot;);
-		controller = new Controller&lt;Employer, Integer&gt;(Employer.class, user);
+		User user = new User("", txUsername.getText(), pfPassword.getText(), "");
+		controller = new Controller<Employer, Integer>(Employer.class, user);
 		if(controller.login()){
 			pnData.setVisible(true);
 			pnLogin.setVisible(false);
 		}else{
-			txUsername.setText(&quot;&quot;);
-			pfPassword.setText(&quot;&quot;);
+			txUsername.setText("");
+			pfPassword.setText("");
 		}
 	}
 }

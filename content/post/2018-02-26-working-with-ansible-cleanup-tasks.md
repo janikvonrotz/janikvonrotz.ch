@@ -1,6 +1,6 @@
 ---
 id: 4783
-title: 'Working with Ansible &#8211; Cleanup tasks'
+title: 'Working with Ansible - Cleanup tasks'
 date: 2018-02-26T11:30:13+00:00
 author: Janik von Rotz
 layout: post

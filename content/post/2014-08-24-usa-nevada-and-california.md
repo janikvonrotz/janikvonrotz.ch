@@ -1,6 +1,6 @@
 ---
 id: 2529
-title: 'USA &#8211; Nevada and California'
+title: 'USA - Nevada and California'
 date: 2014-08-24T06:17:14+00:00
 author: Janik von Rotz
 layout: post
@@ -36,9 +36,9 @@ My USA trip has almost come to an end. I had a great time here in California and
 
 Not the cities are worth being seen, it are the beautiful national parks, the nature and the landscape of California. If you'll ever go to America don't miss these things.
 <!--more-->
-[caption id="attachment_2541" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/08/Bodie-state-park-20140805-1024x682.jpg" alt="Bodie is a ghost town which gives you a nice insight in the &quot;good ol times&quot;." width="720" height="479" class="size-large wp-image-2541" /> Bodie is a ghost town which gives you a nice insight in the "good ol times".[/caption]
+[caption id="attachment_2541" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/08/Bodie-state-park-20140805-1024x682.jpg" alt="Bodie is a ghost town which gives you a nice insight in the "good ol times"." width="720" height="479" class="size-large wp-image-2541" /> Bodie is a ghost town which gives you a nice insight in the "good ol times".[/caption]
 
-[caption id="attachment_2534" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/08/Lake-Tahoe-20140806-1024x575.jpg" alt="A beach in the mountains? Yes, that&#039;s lake Tahoe." width="720" height="404" class="size-large wp-image-2534" /> A beach in the mountains? Yes, that's lake Tahoe.[/caption]
+[caption id="attachment_2534" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/08/Lake-Tahoe-20140806-1024x575.jpg" alt="A beach in the mountains? Yes, that’s lake Tahoe." width="720" height="404" class="size-large wp-image-2534" /> A beach in the mountains? Yes, that's lake Tahoe.[/caption]
 
 [caption id="attachment_2537" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/08/San-Francisco-20140810-1024x575.jpg" alt="Of all the cities in California San Francisco is by far the nicest." width="720" height="404" class="size-large wp-image-2537" /> Of all the cities in California San Francisco is by far the nicest.[/caption]
 
@@ -54,8 +54,8 @@ Not the cities are worth being seen, it are the beautiful national parks, the na
 
 [caption id="attachment_2542" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/08/Death-Valley-20140819-1024x575.jpg" alt="In terms of landscape Death Valley was my favourite national park. So different and beautiful." width="720" height="404" class="size-large wp-image-2542" /> In terms of landscape Death Valley was my favourite national park. So different and beautiful.[/caption]
 
-[caption id="attachment_2530" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/08/Death-Valley-by-night-20140819-1024x575.jpg" alt="Due to there&#039;s no light pollution in the national parks you can see the stars very clearly." width="720" height="404" class="size-large wp-image-2530" /> Due to there's no light pollution in the national parks you can see the stars very clearly.[/caption]
+[caption id="attachment_2530" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/08/Death-Valley-by-night-20140819-1024x575.jpg" alt="Due to there’s no light pollution in the national parks you can see the stars very clearly." width="720" height="404" class="size-large wp-image-2530" /> Due to there's no light pollution in the national parks you can see the stars very clearly.[/caption]
 
 [caption id="attachment_2535" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/08/last-backflip-20140817-1024x575.jpg" alt="This is the last backflip  of my holiday. Behind is the gorgeous Zion valley." width="720" height="404" class="size-large wp-image-2535" /> This is the last backflip  of my holiday. Behind is the gorgeous Zion valley.[/caption]
 
-[caption id="attachment_2532" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/08/high-up-20140822-1024x575.jpg" alt="This picture was made on my way up to eagls peak in the Yosemite valley. It&#039;s a though hike, but the view to the half dome is definitly worth it." width="720" height="404" class="size-large wp-image-2532" /> This picture was made on my way up to eagls peak in the Yosemite valley. It's a though hike, but the view to the half dome is definitly worth it.[/caption]
+[caption id="attachment_2532" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/08/high-up-20140822-1024x575.jpg" alt="This picture was made on my way up to eagls peak in the Yosemite valley. It’s a though hike, but the view to the half dome is definitly worth it." width="720" height="404" class="size-large wp-image-2532" /> This picture was made on my way up to eagls peak in the Yosemite valley. It's a though hike, but the view to the half dome is definitly worth it.[/caption]

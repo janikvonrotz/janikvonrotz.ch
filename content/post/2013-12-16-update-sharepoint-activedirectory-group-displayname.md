@@ -30,13 +30,13 @@ To update the the name for all Active Directory groups you can run this snippet 
 
 if ((Get-PSSnapin 'Microsoft.SharePoint.PowerShell' -ErrorAction SilentlyContinue) -eq $null){Add-PSSnapin 'Microsoft.SharePoint.PowerShell'}
 
-$SPSiteFilter = &quot;https://sharepoint.domain.ch&quot;
+$SPSiteFilter = "https://sharepoint.domain.ch"
 
 Get-SPSite | where{$SPSiteFilter -contains $_.Url} | %{
 
     $_.rootweb.siteusers | where{($_.DisplayName -ne $_.UserLogin) -and $_.IsDomainGroup} | %{
 
-        Write-Host &quot;Change: $($_.DisplayName) to: $($_.UserLogin)&quot;
+        Write-Host "Change: $($_.DisplayName) to: $($_.UserLogin)"
 
         $_.DisplayName = $_.UserLogin
         $_.Name = $_.UserLogin

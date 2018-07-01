@@ -1,6 +1,6 @@
 ---
 id: 2957
-title: 'Let&#8217;s write a Laravel application &#8211; Form validation for your backend and frontend'
+title: 'Let’s write a Laravel application - Form validation for your backend and frontend'
 date: 2015-02-10T00:18:29+00:00
 author: Janik von Rotz
 layout: post
@@ -36,8 +36,8 @@ Install the Laravel extension with composer.
 **composer.json**
 
 [code]
-&quot;require&quot;: {
-	&quot;bllim/laravel-to-jquery-validation&quot;: &quot;*&quot;
+"require": {
+	"bllim/laravel-to-jquery-validation": "*"
 }
 [/code]
 
@@ -46,7 +46,7 @@ Register the new service provider.
 **app/config/app.php**
 
 [code]
-'providers' =&gt; array(
+'providers' => array(
 	 'Bllim\LaravelToJqueryValidation\LaravelToJqueryValidationServiceProvider',
 )
 [/code]
@@ -73,9 +73,9 @@ Now that we are ready let's add the validation rules to our model.
 class Member extends Eloquent{
 
   public static $rules = [
-      'firstname' =&gt; 'required',
-      'lastname' =&gt; 'required',
-      'email' =&gt; 'required|email'
+      'firstname' => 'required',
+      'lastname' => 'required',
+      'email' => 'required|email'
   ];
 }
 [/code]
@@ -90,11 +90,11 @@ class MemberController extends \BaseController {
 	{
 		$validator = Validator::make($data = Input::all(), Member::$rules);
 	
-		if ($validator-&gt;fails()) {
-			return Redirect::back()-&gt;withErrors($validator)-&gt;withInput(Input::except('password'));
+		if ($validator->fails()) {
+			return Redirect::back()->withErrors($validator)->withInput(Input::except('password'));
 		}
 	
-		$member-&gt;create($data);
+		$member->create($data);
 	
 		Session::flash('message', 'Successfully created Member!');
 		return Redirect::to('members');
@@ -111,20 +111,20 @@ In your form view you can now set the validation rules from your model.
 Here's an example of an compatible form definition for this kind of validation.
 
 [code]
-{{ Form::open(array('url' =&gt; 'members')) }}
-  &lt;div class=&quot;form-group&quot;&gt;
+{{ Form::open(array('url' => 'members')) }}
+  <div class="form-group">
   {{ Form::label('firstname', 'Firstname') }}
-  {{ Form::text('firstname', Input::old('firstname'), array('class' =&gt; 'form-control')) }}
-  &lt;/div&gt;
-  &lt;div class=&quot;form-group&quot;&gt;
+  {{ Form::text('firstname', Input::old('firstname'), array('class' => 'form-control')) }}
+  </div>
+  <div class="form-group">
   {{ Form::label('lastname', 'Lastname') }}
-  {{ Form::text('lastname', Input::old('lastname'), array('class' =&gt; 'form-control')) }}
-  &lt;/div&gt;
-  &lt;div class=&quot;form-group&quot;&gt;
+  {{ Form::text('lastname', Input::old('lastname'), array('class' => 'form-control')) }}
+  </div>
+  <div class="form-group">
   {{ Form::label('email', 'E-Mail') }}
-  {{ Form::text('email', Input::old('email'), array('class' =&gt; 'form-control')) }}
-  &lt;/div&gt;
-  {{ Form::submit('Save', array('class' =&gt; 'btn btn-primary')) }}
+  {{ Form::text('email', Input::old('email'), array('class' => 'form-control')) }}
+  </div>
+  {{ Form::submit('Save', array('class' => 'btn btn-primary')) }}
 {{ Form::close() }}
 [/code]
 

@@ -48,32 +48,32 @@ Today I want to show you my SharePoint default settings script. It does a lot of
 There are some functions in the script which you can't know f.g. `Write-PPEventLog`, these are custom functions and are part of my [PowerShell PowerUp](https://github.com/janikvonrotz/PowerShell-PowerUp) project.
 
 [code lang="ps"]
-&lt;#
+<#
 $Metadata = @{
-	Title = &quot;SharePoint Default Settings&quot;
-	Filename = &quot;Set-SPDefaultSettings.ps1&quot;
-	Description = &quot;&quot;
-	Tags = &quot;powershell, script, sharepoint, default settings&quot;
-	Project = &quot;&quot;
-	Author = &quot;Janik von Rotz&quot;
-	AuthorContact = &quot;http://www.janikvonrotz.ch&quot;
-	CreateDate = &quot;2013-05-07&quot;
-	LastEditDate = &quot;2014-04-04&quot;
-	Version = &quot;3.0.0&quot;
+	Title = "SharePoint Default Settings"
+	Filename = "Set-SPDefaultSettings.ps1"
+	Description = ""
+	Tags = "powershell, script, sharepoint, default settings"
+	Project = ""
+	Author = "Janik von Rotz"
+	AuthorContact = "http://www.janikvonrotz.ch"
+	CreateDate = "2013-05-07"
+	LastEditDate = "2014-04-04"
+	Version = "3.0.0"
 	License = @'
 This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/3.0/ or
 send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 '@
 }
-#&gt;
+#>
 
 try{
 
     #--------------------------------------------------#
     # modules
     #--------------------------------------------------#
-    if((Get-PSSnapin &quot;Microsoft.SharePoint.PowerShell&quot; -ErrorAction SilentlyContinue) -eq $null){Add-PSSnapin &quot;Microsoft.SharePoint.PowerShell&quot;}
+    if((Get-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue) -eq $null){Add-PSSnapin "Microsoft.SharePoint.PowerShell"}
     Import-Module ActiveDirectory
     
     #--------------------------------------------------#
@@ -81,29 +81,29 @@ try{
     #--------------------------------------------------#
     
     $Configuration = @{
-        SPSite = &quot;http://sharepoint.vbl.ch&quot;
-        SPADGroupFilter = &quot;SP_*&quot;
-        SPADGroupContainer = &quot;OU=SharePoint,OU=Services,OU=vblusers2,DC=vbl,DC=ch&quot;
-        SPNavigationWebExclude = &quot;http://sharepoint.vbl.ch/Projekte&quot;
-        AllowedVersioningTypes = &quot;Unternehmenswiki-Seite&quot;,&quot;Dokument&quot;,&quot;Wiki-Seite&quot;
-        DisabledVersioningTypes = &quot;Survey&quot;
-        SupportedLanguages = &quot;Deutsch&quot;, &quot;Englisch&quot;
+        SPSite = "http://sharepoint.vbl.ch"
+        SPADGroupFilter = "SP_*"
+        SPADGroupContainer = "OU=SharePoint,OU=Services,OU=vblusers2,DC=vbl,DC=ch"
+        SPNavigationWebExclude = "http://sharepoint.vbl.ch/Projekte"
+        AllowedVersioningTypes = "Unternehmenswiki-Seite","Dokument","Wiki-Seite"
+        DisabledVersioningTypes = "Survey"
+        SupportedLanguages = "Deutsch", "Englisch"
     },
     @{
-        SPSite = &quot;http://sharepoint.vbl.ch/itwiki&quot;
-        SPADGroupFilter = &quot;SP_*&quot;
-        SPADGroupContainer = &quot;OU=SharePoint,OU=Services,OU=vblusers2,DC=vbl,DC=ch&quot;
-        AllowedVersioningTypes = &quot;Unternehmenswiki-Seite&quot;,&quot;Dokument&quot;,&quot;Wiki-Seite&quot;
-        DisabledVersioningTypes = &quot;Survey&quot;
-        SupportedLanguages = &quot;Deutsch&quot;, &quot;Englisch&quot;
+        SPSite = "http://sharepoint.vbl.ch/itwiki"
+        SPADGroupFilter = "SP_*"
+        SPADGroupContainer = "OU=SharePoint,OU=Services,OU=vblusers2,DC=vbl,DC=ch"
+        AllowedVersioningTypes = "Unternehmenswiki-Seite","Dokument","Wiki-Seite"
+        DisabledVersioningTypes = "Survey"
+        SupportedLanguages = "Deutsch", "Englisch"
     },
     @{
-        SPSite = &quot;http://extranetvr.vbl.ch&quot;
-        SPADGroupFilter = &quot;SP2_*&quot;
-        SPADGroupContainer = &quot;OU=SharePoint,OU=Services,OU=vblusers2,DC=vbl,DC=ch&quot;
-        AllowedVersioningTypes = &quot;Unternehmenswiki-Seite&quot;,&quot;Dokument&quot;,&quot;Wiki-Seite&quot;
-        DisabledVersioningBaseTypes = &quot;Survey&quot;
-        SupportedLanguages = &quot;Deutsch&quot;, &quot;Englisch&quot;
+        SPSite = "http://extranetvr.vbl.ch"
+        SPADGroupFilter = "SP2_*"
+        SPADGroupContainer = "OU=SharePoint,OU=Services,OU=vblusers2,DC=vbl,DC=ch"
+        AllowedVersioningTypes = "Unternehmenswiki-Seite","Dokument","Wiki-Seite"
+        DisabledVersioningBaseTypes = "Survey"
+        SupportedLanguages = "Deutsch", "Englisch"
     }
 
     $Configuration | ForEach-Object{
@@ -120,7 +120,7 @@ try{
         # SharePoint AD Groups 
         $ADGroups = Get-ADGroup -Filter * -SearchBase $_.SPADGroupContainer | Where-Object{$_.Name -like $Config.SPADGroupFilter}
             
-        Get-SPUser -Limit All -Web $_.SPSite | Where-Object{$_.IsDomainGroup -and $_.Name -like &quot;$($ADDomain)\$Config.SPADGroupFilter&quot;} | ForEach-Object{
+        Get-SPUser -Limit All -Web $_.SPSite | Where-Object{$_.IsDomainGroup -and $_.Name -like "$($ADDomain)\$Config.SPADGroupFilter"} | ForEach-Object{
                 
             $SPUser = $_
                     
@@ -130,15 +130,15 @@ try{
                 (($_.SID -eq $SPUser.Sid) -or 
                                 
                 # claims
-                ($SPUser.LoginName -like &quot;*$($_.SID)&quot;)) -and 
+                ($SPUser.LoginName -like "*$($_.SID)")) -and 
 
                 # check name
-                (&quot;$ADDomain\$(($_.Name).ToLower())&quot; -ne $SPUser.Name.ToLower())
+                ("$ADDomain\$(($_.Name).ToLower())" -ne $SPUser.Name.ToLower())
                 
             } | ForEach-Object{
             
-                Write-PPEventLog -Message &quot;Change Displayname for SPGroup: $($SPUser.Name) to: &quot; + &quot;$ADDomain\$(($_.Name).ToLower())&quot; -Source &quot;SharePoint Default Settings&quot; -WriteMessage        
-                Set-SPUser $SPUser -DisplayName &quot;$ADDomain\$(($_.Name).ToLower())&quot;
+                Write-PPEventLog -Message "Change Displayname for SPGroup: $($SPUser.Name) to: " + "$ADDomain\$(($_.Name).ToLower())" -Source "SharePoint Default Settings" -WriteMessage        
+                Set-SPUser $SPUser -DisplayName "$ADDomain\$(($_.Name).ToLower())"
             } 
         }       
          
@@ -181,7 +181,7 @@ try{
                 # enable versionging for document libraries and wiki sites
                 if(($Types | where{$Config.AllowedVersioningTypes -contains $_}) -and ($_.EnableVersioning -eq $false)){
             
-                    Write-PPEventLog -Message &quot;Enable Versioning for: $($_.title) on: $($_.parentweb.title).&quot; -Source &quot;SharePoint Default Settings&quot; -WriteMessage
+                    Write-PPEventLog -Message "Enable Versioning for: $($_.title) on: $($_.parentweb.title)." -Source "SharePoint Default Settings" -WriteMessage
                         
                     $_.EnableVersioning = $true
                     $_.MajorVersionLimit = 10   
@@ -190,7 +190,7 @@ try{
                 # disable versioning fore everything else
                 }elseif(($_.EnableVersioning -eq $true) -and -not ($Types | where{$Config.AllowedVersioningTypes -contains $_})){
             
-                    Write-PPEventLog -Message &quot;Disable Versioning for: $($_.title) on: $($_.parentweb.title).&quot; -Source &quot;SharePoint Default Settings&quot; -WriteMessage
+                    Write-PPEventLog -Message "Disable Versioning for: $($_.title) on: $($_.parentweb.title)." -Source "SharePoint Default Settings" -WriteMessage
             
                     $_.EnableVersioning = $false       
                     $_.Update()
@@ -212,7 +212,7 @@ try{
             # enable every installed and supported language as longs it's not yet enabled
             $SPRegionalSettings.InstalledLanguages | where{$Config.SupportedLanguages -contains $_.DisplayName -and $EnabledLanguageIDs -notcontains $_.LCID} | ForEach-Object{
                 
-                Write-PPEventLog -Message &quot;Enable language: $($_.DisplayName) for SPWeb: $($SPWeb.Url).&quot; -Source &quot;SharePoint Default Settings&quot; -WriteMessage
+                Write-PPEventLog -Message "Enable language: $($_.DisplayName) for SPWeb: $($SPWeb.Url)." -Source "SharePoint Default Settings" -WriteMessage
                 $CultureInfo = New-Object System.Globalization.CultureInfo($_.LCID)
                 $SPWeb.AddSupportedUICulture($CultureInfo)
             }            
@@ -222,7 +222,7 @@ try{
     }
 }catch{
 
-    Write-PPErrorEventLog -Source &quot;SharePoint Default Settings&quot; -ClearErrorVariable
+    Write-PPErrorEventLog -Source "SharePoint Default Settings" -ClearErrorVariable
 }
 [/code]
 

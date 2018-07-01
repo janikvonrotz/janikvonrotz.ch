@@ -126,13 +126,13 @@ Then install the Grunt packages.
 Now add the additional Grunt packages to your npm config file `package.json`.
 
 [code]
-&quot;devDependencies&quot;: {
-    &quot;grunt&quot;: &quot;~0.4.5&quot;,
-    &quot;grunt-contrib-copy&quot;: &quot;~0.7.0&quot;,
-    &quot;grunt-contrib-cssmin&quot;: &quot;~0.11.0&quot;,
-    &quot;grunt-contrib-uglify&quot;: &quot;~0.7.0&quot;,
-    &quot;grunt-contrib-watch&quot;: &quot;~0.6.1&quot;,
-    &quot;grunt-bg-shell&quot;: &quot;~2.3.1&quot;
+"devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-copy": "~0.7.0",
+    "grunt-contrib-cssmin": "~0.11.0",
+    "grunt-contrib-uglify": "~0.7.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-bg-shell": "~2.3.1"
 }
 [/code]
 
@@ -251,8 +251,8 @@ This template assumes that you distinct between a local and a productive environ
 In the file `<project name>\boostrap\start.php` add your hostname to the detect environment array.
 
 [code]
-$env = $app-&gt;detectEnvironment(array(
-	'local' =&gt; array('&lt;yourhostname&gt;','&lt;anotherhostname&gt;'),
+$env = $app->detectEnvironment(array(
+	'local' => array('<yourhostname>','<anotherhostname>'),
 ));
 [/code]
 

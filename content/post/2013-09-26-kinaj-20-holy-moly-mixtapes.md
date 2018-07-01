@@ -1,6 +1,6 @@
 ---
 id: 536
-title: 'Kinaj 20 &#8211; Holy Moly (Mixtapes)'
+title: 'Kinaj 20 - Holy Moly (Mixtapes)'
 date: 2013-09-26T08:03:28+00:00
 author: Janik von Rotz
 layout: post

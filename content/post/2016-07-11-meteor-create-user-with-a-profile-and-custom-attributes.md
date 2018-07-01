@@ -49,9 +49,9 @@ Lets get started. On the server-side I'll give you this simple boilerplate:
 import {Meteor} from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-base';
 
-export default () =&gt; {
+export default () => {
 
-  Accounts.onCreateUser((options, user) =&gt; {
+  Accounts.onCreateUser((options, user) => {
 
     user.profile = options.profile ? options.profile : {};
     user.admin = options.admin;

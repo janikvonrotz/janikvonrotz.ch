@@ -46,7 +46,7 @@ To update the UPN I've written the following script, I'll compare the user attri
 # settings
 #--------------------------------------------------#
 
-$OU = &quot;OU=vblusers2,DC=vbl,DC=ch&quot;
+$OU = "OU=vblusers2,DC=vbl,DC=ch"
 
 #--------------------------------------------------#
 # modules
@@ -62,7 +62,7 @@ Import-Module ActiveDirectory
 
 $ADUsers = Get-ADUser -Filter * -SearchBase $OU -Properties GivenName, Surname, DisplayName
 
-$Credential = Import-PSCredential $(Get-ChildItem -Path $PSconfigs.Path -Filter &quot;Office365.credentials.config.xml&quot; -Recurse).FullName
+$Credential = Import-PSCredential $(Get-ChildItem -Path $PSconfigs.Path -Filter "Office365.credentials.config.xml" -Recurse).FullName
 Connect-MsolService -Credential $Credential
 $MsolUsers = Get-MsolUser -All
 
@@ -75,7 +75,7 @@ $MsolUsers | %{
         ($_.UserPrincipalName -ne $MsolUser.UserPrincipalName)
     } | %{
 
-        Write-Host &quot;Change UserPrincipalName for: $($MsolUser.UserPrincipalName) to: $($_.UserPrincipalName)&quot;
+        Write-Host "Change UserPrincipalName for: $($MsolUser.UserPrincipalName) to: $($_.UserPrincipalName)"
         Set-MsolUserPrincipalName -UserPrincipalName $MsolUser.UserPrincipalName -NewUserPrincipalName $_.UserPrincipalName
 
     }

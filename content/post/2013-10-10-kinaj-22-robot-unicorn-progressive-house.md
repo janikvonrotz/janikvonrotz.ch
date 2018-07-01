@@ -1,6 +1,6 @@
 ---
 id: 575
-title: 'Kinaj 22 &#8211; Robot Unicorn (progressive house)'
+title: 'Kinaj 22 - Robot Unicorn (progressive house)'
 date: 2013-10-10T12:59:00+00:00
 author: Janik von Rotz
 layout: post

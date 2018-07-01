@@ -1,6 +1,6 @@
 ---
 id: 513
-title: 'Kinaj 19 &#8211; I don&#039;t know (Rock, Alternative)'
+title: 'Kinaj 19 - I don’t know (Rock, Alternative)'
 date: 2013-09-20T12:09:38+00:00
 author: Janik von Rotz
 layout: post

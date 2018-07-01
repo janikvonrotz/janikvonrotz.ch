@@ -1,6 +1,6 @@
 ---
 id: 356
-title: 'Aptrix &#8211; Freerunning and Parkour Roadtrip'
+title: 'Aptrix - Freerunning and Parkour Roadtrip'
 date: 2013-08-04T10:33:40+00:00
 author: Janik von Rotz
 layout: post

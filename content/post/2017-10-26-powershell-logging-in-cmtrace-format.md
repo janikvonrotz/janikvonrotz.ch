@@ -1,6 +1,6 @@
 ---
 id: 4627
-title: 'PowerShell &#8211; Logging in CMTrace format'
+title: 'PowerShell - Logging in CMTrace format'
 date: 2017-10-26T07:15:24+00:00
 author: Janik von Rotz
 layout: post
@@ -40,25 +40,25 @@ function Write-log {
           [String]$Component,
 
           [Parameter(Mandatory=$true)]
-          [ValidateSet(&quot;Info&quot;, &quot;Warning&quot;, &quot;Error&quot;)]
+          [ValidateSet("Info", "Warning", "Error")]
           [String]$Type
     )
 
     switch ($Type) {
-        &quot;Info&quot; { [int]$Type = 1 }
-        &quot;Warning&quot; { [int]$Type = 2 }
-        &quot;Error&quot; { [int]$Type = 3 }
+        "Info" { [int]$Type = 1 }
+        "Warning" { [int]$Type = 2 }
+        "Error" { [int]$Type = 3 }
     }
 
     # Create a log entry
-    $Content = &quot;&lt;![LOG[$Message]LOG]!&gt;&quot; +`
-        &quot;&lt;time=`&quot;$(Get-Date -Format &quot;HH:mm:ss.ffffff&quot;)`&quot; &quot; +`
-        &quot;date=`&quot;$(Get-Date -Format &quot;M-d-yyyy&quot;)`&quot; &quot; +`
-        &quot;component=`&quot;$Component`&quot; &quot; +`
-        &quot;context=`&quot;$([System.Security.Principal.WindowsIdentity]::GetCurrent().Name)`&quot; &quot; +`
-        &quot;type=`&quot;$Type`&quot; &quot; +`
-        &quot;thread=`&quot;$([Threading.Thread]::CurrentThread.ManagedThreadId)`&quot; &quot; +`
-        &quot;file=`&quot;`&quot;&gt;&quot;
+    $Content = "<![LOG[$Message]LOG]!>" +`
+        "<time=`"$(Get-Date -Format "HH:mm:ss.ffffff")`" " +`
+        "date=`"$(Get-Date -Format "M-d-yyyy")`" " +`
+        "component=`"$Component`" " +`
+        "context=`"$([System.Security.Principal.WindowsIdentity]::GetCurrent().Name)`" " +`
+        "type=`"$Type`" " +`
+        "thread=`"$([Threading.Thread]::CurrentThread.ManagedThreadId)`" " +`
+        "file=`"`">"
 
     # Write the line to the log file
     Add-Content -Path $Path -Value $Content
@@ -71,14 +71,14 @@ No  big matter, isn't it? We want to see it in action. Here is an example script
 
 [code lang="powershell"]
 $LogCycle = 30
-$LogFilePath = Join-Path $PSScriptRoot &quot;$(Get-Date -Format yyyy-M-dd) $($MyInvocation.MyCommand.Name).log&quot;
+$LogFilePath = Join-Path $PSScriptRoot "$(Get-Date -Format yyyy-M-dd) $($MyInvocation.MyCommand.Name).log"
 
-Write-Warning &quot;Delete log files older than $LogCycle days&quot;
-Get-ChildItem -Path $PSScriptRoot | Where-Object {($Now - $_.LastWriteTime).Days -gt $LogCycle -and $_.extension -eq &quot;.log&quot;} | Remove-Item
+Write-Warning "Delete log files older than $LogCycle days"
+Get-ChildItem -Path $PSScriptRoot | Where-Object {($Now - $_.LastWriteTime).Days -gt $LogCycle -and $_.extension -eq ".log"} | Remove-Item
 
 try {
 
-    throw &quot;Something failed.&quot;
+    throw "Something failed."
 
 } catch {
 

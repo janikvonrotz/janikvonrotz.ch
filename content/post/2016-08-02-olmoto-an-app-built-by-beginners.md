@@ -1,6 +1,6 @@
 ---
 id: 4014
-title: 'OLMOTO &#8211; An app built by beginners'
+title: 'OLMOTO - An app built by beginners'
 date: 2016-08-02T12:30:05+00:00
 author: Janik von Rotz
 layout: post

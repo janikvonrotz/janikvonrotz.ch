@@ -66,23 +66,23 @@ Instead of the common property file our application stores settings in a json fi
 
 [code]
 {
-  &quot;javax&quot;: {
-    &quot;persistence&quot;: {
-      &quot;jdbc&quot;: {
-        &quot;driver&quot;: &quot;com.mysql.jdbc.Driver&quot;,
-        &quot;url&quot;: &quot;jdbc:mysql://localhost/issuemanager&quot;,
-        &quot;user&quot;: &quot;issuemanager&quot;,
-        &quot;password&quot;: &quot;issuemanager&quot;
+  "javax": {
+    "persistence": {
+      "jdbc": {
+        "driver": "com.mysql.jdbc.Driver",
+        "url": "jdbc:mysql://localhost/issuemanager",
+        "user": "issuemanager",
+        "password": "issuemanager"
       }
     }
   },
-  &quot;eclipselink&quot;: {
-    &quot;logging&quot;: {
-      &quot;level&quot;: &quot;off&quot;
+  "eclipselink": {
+    "logging": {
+      "level": "off"
     },
-    &quot;ddl-generation&quot;: {
-    	&quot;value&quot;: &quot;create-tables&quot;,
-    	&quot;output-mode&quot;: &quot;database&quot;
+    "ddl-generation": {
+    	"value": "create-tables",
+    	"output-mode": "database"
 	}
   }
 }
@@ -114,16 +114,16 @@ public class EclipseLink {
 	static {
 		try {
 			Config config = ConfigFactory.load();
-			Map&lt;String, String&gt; properties = new HashMap&lt;String, String&gt;();
-			properties.put(&quot;javax.persistence.jdbc.driver&quot;, config.getString(&quot;javax.persistence.jdbc.driver&quot;));
-			properties.put(&quot;javax.persistence.jdbc.url&quot;, config.getString(&quot;javax.persistence.jdbc.url&quot;));
-			properties.put(&quot;javax.persistence.jdbc.user&quot;, config.getString(&quot;javax.persistence.jdbc.user&quot;));
-			properties.put(&quot;javax.persistence.jdbc.password&quot;, config.getString(&quot;javax.persistence.jdbc.password&quot;));
-			properties.put(&quot;eclipselink.ddl-generation.output-mode&quot;, config.getString(&quot;eclipselink.ddl-generation.output-mode&quot;));
-			properties.put(&quot;eclipselink.logging.level&quot;, config.getString(&quot;eclipselink.logging.level&quot;));
-			properties.put(&quot;eclipselink.ddl-generation&quot;, config.getString(&quot;eclipselink.ddl-generation.value&quot;));
+			Map<String, String> properties = new HashMap<String, String>();
+			properties.put("javax.persistence.jdbc.driver", config.getString("javax.persistence.jdbc.driver"));
+			properties.put("javax.persistence.jdbc.url", config.getString("javax.persistence.jdbc.url"));
+			properties.put("javax.persistence.jdbc.user", config.getString("javax.persistence.jdbc.user"));
+			properties.put("javax.persistence.jdbc.password", config.getString("javax.persistence.jdbc.password"));
+			properties.put("eclipselink.ddl-generation.output-mode", config.getString("eclipselink.ddl-generation.output-mode"));
+			properties.put("eclipselink.logging.level", config.getString("eclipselink.logging.level"));
+			properties.put("eclipselink.ddl-generation", config.getString("eclipselink.ddl-generation.value"));
 						
-			emf = Persistence.createEntityManagerFactory(&quot;issue-manager&quot;, properties);
+			emf = Persistence.createEntityManagerFactory("issue-manager", properties);
 		} catch (Throwable e) {
 		}
 	}
@@ -145,23 +145,23 @@ Based on our `persistence.xml` file and configure with the `application.json` fi
 **persistence.xml**
 
 [code lang="xml"]
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;persistence version=&quot;2.0&quot; xmlns=&quot;http://java.sun.com/xml/ns/persistence&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd&quot;&gt;
-	&lt;persistence-unit name=&quot;issue-manager&quot; transaction-type=&quot;RESOURCE_LOCAL&quot;&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="issue-manager" transaction-type="RESOURCE_LOCAL">
 
-		&lt;provider&gt;org.eclipse.persistence.jpa.PersistenceProvider&lt;/provider&gt;
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 
-        &lt;class&gt;ch.issueman.common.Person&lt;/class&gt;
-        &lt;class&gt;ch.issueman.common.User&lt;/class&gt;
-        &lt;class&gt;ch.issueman.common.Employer&lt;/class&gt;
-        &lt;class&gt;ch.issueman.common.Project&lt;/class&gt;
-        &lt;class&gt;ch.issueman.common.Comment&lt;/class&gt;
+        <class>ch.issueman.common.Person</class>
+        <class>ch.issueman.common.User</class>
+        <class>ch.issueman.common.Employer</class>
+        <class>ch.issueman.common.Project</class>
+        <class>ch.issueman.common.Comment</class>
         
-		&lt;exclude-unlisted-classes&gt;false&lt;/exclude-unlisted-classes&gt;
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 				
-	&lt;/persistence-unit&gt;
+	</persistence-unit>
 	
-&lt;/persistence&gt;
+</persistence>
 [/code]
 
 You might come along other persistence files with far more properties, but that's actually all we need as we use a different (better) approach to configure EclipseLink.
@@ -183,12 +183,12 @@ import javax.persistence.TypedQuery;
 
 import ch.issueman.common.DAO;
 
-public class Controller&lt;T, Id extends Serializable&gt; implements DAO&lt;T, Id&gt; {
+public class Controller<T, Id extends Serializable> implements DAO<T, Id> {
 
 	private EntityManager em = null;
-	private final Class&lt;T&gt; clazz;
+	private final Class<T> clazz;
 
-	public Controller(Class&lt;T&gt; clazz) {
+	public Controller(Class<T> clazz) {
 		this.clazz = clazz;
 		em = EclipseLink.getEntityManager();
 	}
@@ -206,9 +206,9 @@ public class Controller&lt;T, Id extends Serializable&gt; implements DAO&lt;T, I
 		return em.find(clazz, id);
 	}
 
-	public List&lt;T&gt; getAll() {
+	public List<T> getAll() {
 		em = EclipseLink.getEntityManager();
-		return (List&lt;T&gt;) ((TypedQuery&lt;T&gt;) em.createQuery(&quot;SELECT t FROM &quot; + clazz.getSimpleName() + &quot; t&quot;, clazz)).getResultList();
+		return (List<T>) ((TypedQuery<T>) em.createQuery("SELECT t FROM " + clazz.getSimpleName() + " t", clazz)).getResultList();
 	}
 
 	public void update(T t) {
@@ -230,7 +230,7 @@ public class Controller&lt;T, Id extends Serializable&gt; implements DAO&lt;T, I
 	public void deleteAll() {
 		em = EclipseLink.getEntityManager();
 		em.getTransaction().begin();
-		em.createQuery(&quot;DELETE FROM &quot; + clazz.getSimpleName() + &quot; t&quot;).executeUpdate();
+		em.createQuery("DELETE FROM " + clazz.getSimpleName() + " t").executeUpdate();
 		em.getTransaction().commit();
 		em.close();
 	}

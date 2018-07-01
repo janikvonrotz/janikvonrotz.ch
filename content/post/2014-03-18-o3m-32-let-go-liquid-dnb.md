@@ -1,6 +1,6 @@
 ---
 id: 1555
-title: 'O3M 32 &#8211; Let Go (Liquid DnB)'
+title: 'O3M 32 - Let Go (Liquid DnB)'
 date: 2014-03-18T08:48:45+00:00
 author: Janik von Rotz
 layout: post

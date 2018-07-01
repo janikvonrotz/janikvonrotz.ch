@@ -1,6 +1,6 @@
 ---
 id: 1801
-title: 'O3M 35 &#8211; What the Fuuu (Damn Prog House)'
+title: 'O3M 35 - What the Fuuu (Damn Prog House)'
 date: 2014-04-05T22:26:02+00:00
 author: Janik von Rotz
 layout: post

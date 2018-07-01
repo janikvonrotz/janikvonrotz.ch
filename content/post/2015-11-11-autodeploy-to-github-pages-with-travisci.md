@@ -50,19 +50,19 @@ cd out
 git init
 
 # inside this git repo we'll pretend to be a new user
-git config user.name &quot;Travis CI&quot;
-git config user.email &quot;&lt;name&gt;@&lt;domain&gt;.com&quot;
+git config user.name "Travis CI"
+git config user.email "<name>@<domain>.com"
 
 # The first and only commit to this new Git repo contains all the
-# files present with the commit message &quot;Deploy to GitHub Pages&quot;.
+# files present with the commit message "Deploy to GitHub Pages".
 git add .
-git commit -m &quot;Deploy to GitHub Pages&quot;
+git commit -m "Deploy to GitHub Pages"
 
 # Force push from the current repo's master branch to the remote
 # repo's gh-pages branch. (All previous history on the gh-pages branch
 # will be lost, since we are overwriting it.) We redirect any output to
 # /dev/null to hide any sensitive credential data that might otherwise be exposed.
-git push --force --quiet &quot;https://${GH_TOKEN}@${GH_REF}&quot; master:gh-pages &gt; /dev/null 2&gt;&amp;1
+git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&amp;1
 [/code]
 
 As already mention this script uses npm to installs gulp and dependencies and also runs the gulp tasks that will in result create the website.
@@ -85,8 +85,8 @@ Either way the Travis cli can encrypt strings by using the Travis ssl certificat
 script: bash ./deploy.sh
 env:
   global:
-  - GH_REF: github.com/&lt;username&gt;/&lt;repository&gt;.git
-  - secure: &quot;&lt;encrypted_token&gt;&quot;
+  - GH_REF: github.com/<username>/<repository>.git
+  - secure: "<encrypted_token>"
 [/code]
 
 This configuration file will tell Travis what to do and set environment variables which will passed to our `deploy.sh` script file.

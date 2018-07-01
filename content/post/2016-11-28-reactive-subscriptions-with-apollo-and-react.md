@@ -140,11 +140,11 @@ createApolloServer({
   schema: schema,
 });
 
-const httpServer = createServer((request, response) =&gt; {
+const httpServer = createServer((request, response) => {
   response.writeHead(404);
   response.end();
 });
-httpServer.listen(WS_PORT, () =&gt; console.log(
+httpServer.listen(WS_PORT, () => console.log(
   `Websocket Server is now running on http://localhost:${WS_PORT}`
 ));
 const server = new SubscriptionServer({ subscriptionManager }, httpServer);
@@ -185,7 +185,7 @@ import { Posts, pubsub } from './index'
 ...
 Mutation: {
     insertPost(root, args, context){
-        return Posts.insert(args, (error, response) =&gt; {
+        return Posts.insert(args, (error, response) => {
           if(response){
             args._id = response
             pubsub.publish('postInserted', args)
@@ -193,7 +193,7 @@ Mutation: {
         })
     },
     deletePost(root, args, context){
-        return { success: Posts.remove(args, (error, response) =&gt; {
+        return { success: Posts.remove(args, (error, response) => {
           if(response){
             pubsub.publish('postDeleted', args._id)
           }
@@ -202,7 +202,7 @@ Mutation: {
     updatePost(root, args, context){
         let _id = args._id
         delete args._id
-        return { success: Posts.upsert(_id, { $set: args }, (error, response) =&gt; {
+        return { success: Posts.upsert(_id, { $set: args }, (error, response) => {
           if(response){
             args._id = _id
             pubsub.publish('postUpdated', args)
@@ -223,12 +223,12 @@ Now we configure our client to receive data sent by the publication. For this we
 [code language="javascript"]
 import { print } from 'graphql-tag/printer';
 
-const addGraphQLSubscriptions = (networkInterface, wsClient) =&gt; Object.assign(networkInterface, {
-  subscribe: (request, handler) =&gt; wsClient.subscribe({
+const addGraphQLSubscriptions = (networkInterface, wsClient) => Object.assign(networkInterface, {
+  subscribe: (request, handler) => wsClient.subscribe({
     query: print(request.query),
     variables: request.variables,
   }, handler),
-  unsubscribe: (id) =&gt; {
+  unsubscribe: (id) => {
     wsClient.unsubscribe(id);
   },
 });
@@ -316,7 +316,7 @@ class PostList extends React.Component {
       this.subscription = [subscribeToMore(
         {
           document: postInserted,
-          updateQuery: (previousResult, { subscriptionData }) =&gt; {
+          updateQuery: (previousResult, { subscriptionData }) => {
             previousResult.posts.push(subscriptionData.data.postInserted)
             return previousResult
           },
@@ -325,7 +325,7 @@ class PostList extends React.Component {
       subscribeToMore(
         {
           document: postDeleted,
-          updateQuery: (previousResult, { subscriptionData }) =&gt; {
+          updateQuery: (previousResult, { subscriptionData }) => {
             previousResult.posts = _.without(previousResult.posts, _.findWhere(previousResult.posts, {
               _id: subscriptionData.data.postDeleted
             }));
@@ -336,8 +336,8 @@ class PostList extends React.Component {
       subscribeToMore(
         {
           document: postUpdated,
-          updateQuery: (previousResult, { subscriptionData }) =&gt; {
-            previousResult.posts = previousResult.posts.map((post) =&gt; {
+          updateQuery: (previousResult, { subscriptionData }) => {
+            previousResult.posts = previousResult.posts.map((post) => {
               if(post._id === subscriptionData.data.postUpdated._id) {
                 return subscriptionData.data.postUpdated
               } else {
@@ -402,40 +402,40 @@ class PostList extends React.Component {
     let { posts, loading } = this.props.data
     let { edit } = this.state
 
-    return loading ? (&lt;p&gt;Loading...&lt;/p&gt;) : (
-      &lt;div&gt;
-        &lt;h2&gt;Posts&lt;/h2&gt;
-        &lt;form onSubmit={this.insert.bind(this)}&gt;
-          &lt;label&gt;Title: &lt;/label&gt;
-          &lt;input
-          defaultValue=&quot;Untitled&quot;
-          type=&quot;text&quot;
-          required=&quot;true&quot;
-          ref=&quot;insertTitle&quot; /&gt;
-          &lt;br /&gt;
-          &lt;button type=&quot;submit&quot;&gt;Insert Post&lt;/button&gt;
-        &lt;/form&gt;
+    return loading ? (<p>Loading...</p>) : (
+      <div>
+        <h2>Posts</h2>
+        <form onSubmit={this.insert.bind(this)}>
+          <label>Title: </label>
+          <input
+          defaultValue="Untitled"
+          type="text"
+          required="true"
+          ref="insertTitle" />
+          <br />
+          <button type="submit">Insert Post</button>
+        </form>
         { posts ? (
-          &lt;ul&gt;
-            {posts.map((post) =&gt; {
+          <ul>
+            {posts.map((post) => {
               return (
                 edit === post._id ?
-                  &lt;li key={post._id}&gt;
-                    &lt;input
-                    ref=&quot;updateTitle&quot;
+                  <li key={post._id}>
+                    <input
+                    ref="updateTitle"
                     defaultValue={post.title}
-                    size=&quot;50&quot;
-                    type=&quot;text&quot; /&gt;
-                    &lt;button onClick={this.update.bind(this, post._id)}&gt;Update&lt;/button&gt;
-                  &lt;/li&gt; : &lt;li key={post._id}&gt;
-                    &lt;span onClick={this.edit.bind(this, post._id)}&gt;{post.title} &lt;/span&gt;
-                    &lt;button onClick={this.delete.bind(this, post._id)}&gt;Delete&lt;/button&gt;
-                  &lt;/li&gt;
+                    size="50"
+                    type="text" />
+                    <button onClick={this.update.bind(this, post._id)}>Update</button>
+                  </li> : <li key={post._id}>
+                    <span onClick={this.edit.bind(this, post._id)}>{post.title} </span>
+                    <button onClick={this.delete.bind(this, post._id)}>Delete</button>
+                  </li>
               )
             })}
-          &lt;/ul&gt;
-        ) : &lt;p&gt;No posts available.&lt;/p&gt; }
-      &lt;/div&gt;
+          </ul>
+        ) : <p>No posts available.</p> }
+      </div>
     )
   }
 }

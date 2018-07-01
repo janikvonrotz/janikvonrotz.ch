@@ -1,6 +1,6 @@
 ---
 id: 4529
-title: 'Manage the life cycle of your SCCM applicatons with PowerShell &#8211; Part 4 Remove Applications'
+title: 'Manage the life cycle of your SCCM applicatons with PowerShell - Part 4 Remove Applications'
 date: 2017-09-05T08:32:11+00:00
 author: Janik von Rotz
 layout: post
@@ -29,35 +29,35 @@ Like the last script this one is also fairly simple. Provide the name of the app
 **Remove-CMApplications.ps1**
 
 [code lang="powershell"]
-Import-Module &quot;C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\bin\ConfigurationManager.psd1&quot;
+Import-Module "C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\bin\ConfigurationManager.psd1"
 Import-Module ActiveDirectory
-cd &quot;$((Get-PSProvider | Where-Object {$_.Name -eq &quot;CMSite&quot;}).Drives.Name):&quot;
+cd "$((Get-PSProvider | Where-Object {$_.Name -eq "CMSite"}).Drives.Name):"
 
-$ApplicationName = &quot;Visual Studio Code (1.15.1)&quot; 
+$ApplicationName = "Visual Studio Code (1.15.1)" 
 # use * for all applications
 
 Get-CMApplication | Where-Object{ $_.LocalizedDisplayName -like $ApplicationName } | ForEach-Object {
     $Name = $_.LocalizedDisplayName
-    $DeviceCollectionName = $Name + &quot; Devices&quot;
-    $UserCollectionName = $Name + &quot; Users&quot;
-    $ADGroupName = &quot;DL_CM_$Name&quot;
+    $DeviceCollectionName = $Name + " Devices"
+    $UserCollectionName = $Name + " Users"
+    $ADGroupName = "DL_CM_$Name"
     
-    Write-Host &quot;`nStart removal of application $Name`n&quot;
+    Write-Host "`nStart removal of application $Name`n"
 
-    $answer = Read-Host &quot;Do you really want to remove the application $($Name)? (y/n)&quot;
+    $answer = Read-Host "Do you really want to remove the application $($Name)? (y/n)"
 
-    if($answer -eq &quot;y&quot;) {
+    if($answer -eq "y") {
 
-        Write-Host &quot;Remove application deployments.&quot;
+        Write-Host "Remove application deployments."
         Get-CMApplicationDeployment | Where-Object{ ($_.ApplicationName -eq $Name) } | Remove-CMApplicationDeployment -Force
 
-        Write-Host &quot;Remove application package.&quot;
+        Write-Host "Remove application package."
         Get-CMApplication -Name $Name | Remove-CMApplication -Force
 
-        Write-Host &quot;Remove AD group.&quot;
+        Write-Host "Remove AD group."
         Remove-ADGroup $ADGroupName -Confirm:$false
 
-        Write-Host &quot;Remove device and user collections&quot;
+        Write-Host "Remove device and user collections"
         Remove-CMUserCollection -Name $UserCollectionName -Force
         Remove-CMDeviceCollection -Name $DeviceCollectionName -Force
     }

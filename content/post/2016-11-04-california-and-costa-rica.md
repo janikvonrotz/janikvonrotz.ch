@@ -44,9 +44,9 @@ During the last seven weeks I've spent a lot of time in California. With my stud
 
 [caption id="attachment_4111" align="aligncenter" width="840"]<img src="https://janikvonrotz.ch/wp-content/uploads/2016/11/drink-a-lot-1024x683.jpg" alt="Do not forget to drink enough while hiking." width="840" height="560" class="size-large wp-image-4111" /> Do not forget to drink enough while hiking.[/caption]
 
-[caption id="attachment_4110" align="aligncenter" width="840"]<img src="https://janikvonrotz.ch/wp-content/uploads/2016/11/half-dome-1024x683.jpg" alt="It was the second time in Yosemite and I still coudn&#039;t hike up the half dome. However, El Capitan also was beautiful." width="840" height="560" class="size-large wp-image-4110" /> It was the second time in Yosemite and I still coudn't hike up the half dome. However, El Capitan also was beautiful.[/caption]
+[caption id="attachment_4110" align="aligncenter" width="840"]<img src="https://janikvonrotz.ch/wp-content/uploads/2016/11/half-dome-1024x683.jpg" alt="It was the second time in Yosemite and I still coudn’t hike up the half dome. However, El Capitan also was beautiful." width="840" height="560" class="size-large wp-image-4110" /> It was the second time in Yosemite and I still coudn't hike up the half dome. However, El Capitan also was beautiful.[/caption]
 
-[caption id="attachment_4109" align="aligncenter" width="840"]<img src="https://janikvonrotz.ch/wp-content/uploads/2016/11/lost-in-the-jungle-1024x683.jpg" alt="Wouldn&#039;t want to get lost in a jungle in Costa Rica." width="840" height="560" class="size-large wp-image-4109" /> Wouldn't want to get lost in a jungle in Costa Rica.[/caption]
+[caption id="attachment_4109" align="aligncenter" width="840"]<img src="https://janikvonrotz.ch/wp-content/uploads/2016/11/lost-in-the-jungle-1024x683.jpg" alt="Wouldn’t want to get lost in a jungle in Costa Rica." width="840" height="560" class="size-large wp-image-4109" /> Wouldn't want to get lost in a jungle in Costa Rica.[/caption]
 
 [caption id="attachment_4108" align="aligncenter" width="840"]<img src="https://janikvonrotz.ch/wp-content/uploads/2016/11/palms-1024x683.jpg" alt="Mesmerizing colors." width="840" height="560" class="size-large wp-image-4108" /> Mesmerizing colors.[/caption]
 

@@ -1,6 +1,6 @@
 ---
 id: 327
-title: 'Kinaj 14 &#8211; Suit Up'
+title: 'Kinaj 14 - Suit Up'
 date: 2013-07-27T08:30:11+00:00
 author: Janik von Rotz
 layout: post

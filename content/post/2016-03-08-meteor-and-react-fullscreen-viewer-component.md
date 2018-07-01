@@ -49,16 +49,16 @@ FullscreenContainer = React.createClass({
   },
   getIcon(){
     if(this.state.screenClass === 'display-fullscreen'){
-      return &lt;i onClick={this.switchFullscreen} className=&quot;glyphicon screen-icon glyphicon-remove&quot; /&gt;
+      return <i onClick={this.switchFullscreen} className="glyphicon screen-icon glyphicon-remove" />
     }else{
-      return &lt;i onClick={this.switchFullscreen} className=&quot;glyphicon screen-icon glyphicon-fullscreen&quot; /&gt;
+      return <i onClick={this.switchFullscreen} className="glyphicon screen-icon glyphicon-fullscreen" />
     }
   },
   render() {
-    return &lt;div className={this.state.screenClass}&gt;
+    return <div className={this.state.screenClass}>
     {this.getIcon()}
     {this.props.children}
-    &lt;/div&gt;
+    </div>
   }
 });
 [/code]
@@ -95,11 +95,11 @@ Here's and example how you can use this component in another view:
 ...
 
 render() {
-     return &lt;FullscreenContainer&gt;
+     return <FullscreenContainer>
         
         ...
 
-        &lt;/FullscreenContainer&gt;;
+        </FullscreenContainer>;
     }
 
 ...

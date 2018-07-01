@@ -1,6 +1,6 @@
 ---
 id: 568
-title: 'Kinaj 21 &#8211; It&#039;s a Trap (trap)'
+title: 'Kinaj 21 - It’s a Trap (trap)'
 date: 2013-10-04T16:22:27+00:00
 author: Janik von Rotz
 layout: post

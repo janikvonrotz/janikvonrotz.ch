@@ -1,6 +1,6 @@
 ---
 id: 1036
-title: 'Install SharePoint 2013 Three-tier Farm &#8211; Deploy the SQL Server Backup Job'
+title: 'Install SharePoint 2013 Three-tier Farm - Deploy the SQL Server Backup Job'
 date: 2014-02-07T10:24:03+00:00
 author: Janik von Rotz
 layout: post

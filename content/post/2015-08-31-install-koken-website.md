@@ -110,12 +110,12 @@ server{
 
     # Set expires header for console CSS and JS.
     # These files are timestamped with each new release, so it is safe to cache them agressively.
-    location ~ &quot;console_.*\.(js|css)$&quot; {
+    location ~ "console_.*\.(js|css)$" {
         expires max;
     }
     
     # Catch image requests and pass them back to PHP if a cache does not yet exist
-    location ~ &quot;^/storage/cache/images(/(([0-9]{3}/[0-9]{3})|custom)/.*)$&quot; {
+    location ~ "^/storage/cache/images(/(([0-9]{3}/[0-9]{3})|custom)/.*)$" {
         # Cached images have timestamps in the URL, so it is safe to set
         # aggresive cache headers here.
         expires max;
@@ -123,7 +123,7 @@ server{
     }
 
     # Catch .css.lens requests and serve cache when possible
-    location ~ &quot;(lightbox-)?settings.css.lens$&quot; {
+    location ~ "(lightbox-)?settings.css.lens$" {
         default_type text/css;
         try_files /storage/cache/site/${uri} /app/site/site.php?url=/$1settings.css.lens;
     }
@@ -145,7 +145,7 @@ server{
     }
 
     # If share_to_tumblr cookie is preset, disable caching (long story)
-    if ($http_cookie ~* &quot;share_to_tumblr&quot; ) {
+    if ($http_cookie ~* "share_to_tumblr" ) {
         set $cache_ext 'nocache';
     }
 

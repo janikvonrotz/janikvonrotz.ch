@@ -43,7 +43,7 @@ You can download these picture in full resolution from my flick account (checkou
 
 [caption id="attachment_2858" align="aligncenter" width="720"]<a href="https://janikvonrotz.ch/2014/12/31/dust-and-dirt/machines/" rel="attachment wp-att-2858"><img src="https://janikvonrotz.ch/wp-content/uploads/2014/12/machines-1024x682.jpg" alt="Some old machines." width="720" height="480" class="size-large wp-image-2858" /></a> Some old machines.[/caption]
 
-[caption id="attachment_2857" align="aligncenter" width="720"]<a href="https://janikvonrotz.ch/2014/12/31/dust-and-dirt/brick-factory/" rel="attachment wp-att-2857"><img src="https://janikvonrotz.ch/wp-content/uploads/2014/12/brick-factory-1024x682.jpg" alt="This was by far the most awesome place I&#039;ve seen." width="720" height="480" class="size-large wp-image-2857" /></a> This was by far the most awesome place I've seen.[/caption]
+[caption id="attachment_2857" align="aligncenter" width="720"]<a href="https://janikvonrotz.ch/2014/12/31/dust-and-dirt/brick-factory/" rel="attachment wp-att-2857"><img src="https://janikvonrotz.ch/wp-content/uploads/2014/12/brick-factory-1024x682.jpg" alt="This was by far the most awesome place I’ve seen." width="720" height="480" class="size-large wp-image-2857" /></a> This was by far the most awesome place I've seen.[/caption]
 
 [caption id="attachment_2856" align="aligncenter" width="720"]<a href="https://janikvonrotz.ch/2014/12/31/dust-and-dirt/brick-oven/" rel="attachment wp-att-2856"><img src="https://janikvonrotz.ch/wp-content/uploads/2014/12/brick-oven-1024x681.jpg" alt="This is a brick oven and it looks kinda creepy." width="720" height="479" class="size-large wp-image-2856" /></a> This is a brick oven and it looks kinda creepy.[/caption]
 

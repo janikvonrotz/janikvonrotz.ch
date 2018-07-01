@@ -1,6 +1,6 @@
 ---
 id: 1500
-title: 'For those who couldn&#8217;t attend SharePoint Conference 2014'
+title: 'For those who couldn’t attend SharePoint Conference 2014'
 date: 2014-03-13T09:23:00+00:00
 author: Janik von Rotz
 layout: post
@@ -56,18 +56,18 @@ $rss = (new-object net.webclient)
 # Grab the RSS feed for the MP4 downloads
 
 # SharePoint Conference 2014 Videos
-$a = ([[xml]]$rss.downloadstring(&quot;https://channel9.msdn.com/Events/SharePoint-Conference/2014/RSS/mp4high&quot;)) 
-$b = ([[xml]]$rss.downloadstring(&quot;https://channel9.msdn.com/Events/SharePoint-Conference/2014/RSS/slides&quot;)) 
+$a = ([[xml]]$rss.downloadstring("https://channel9.msdn.com/Events/SharePoint-Conference/2014/RSS/mp4high")) 
+$b = ([[xml]]$rss.downloadstring("https://channel9.msdn.com/Events/SharePoint-Conference/2014/RSS/slides")) 
 
 #other qualities for the videos only. Choose the one you want!
-# $a = ([[xml]]$rss.downloadstring(&quot;https://channel9.msdn.com/Events/SharePoint-Conference/2014/RSS/mp4&quot;)) 
-# $a = ([[xml]]$rss.downloadstring(&quot;https://channel9.msdn.com/Events/SharePoint-Conference/2014/RSS/mp3&quot;)) 
+# $a = ([[xml]]$rss.downloadstring("https://channel9.msdn.com/Events/SharePoint-Conference/2014/RSS/mp4")) 
+# $a = ([[xml]]$rss.downloadstring("https://channel9.msdn.com/Events/SharePoint-Conference/2014/RSS/mp3")) 
 
 #Preferably enter something not too long to not have filename problems! cut and paste them afterwards
-$downloadlocation = &quot;C:\spc14&quot;
+$downloadlocation = "C:\spc14"
 
 if (-not (Test-Path $downloadlocation)) { 
-	Write-Host &quot;Folder $fpath dosen't exist. Creating it...&quot;  
+	Write-Host "Folder $fpath dosen't exist. Creating it..."  
 	New-Item $downloadlocation -type directory 
 }
 cd $downloadlocation
@@ -77,26 +77,26 @@ cd $downloadlocation
 #Download all the slides	
 if($DownloadSlides){$b.rss.channel.item | foreach{   
 
-	$code = $_.comments.split(&quot;/&quot;) | select -last 1	   
+	$code = $_.comments.split("/") | select -last 1	   
 	
 	# Grab the URL for the PPTX file
 	$urlpptx = New-Object System.Uri($_.enclosure.url)  
-    $filepptx = $code + &quot;-&quot; + $_.creator + &quot; - &quot; + $_.title.Replace(&quot;:&quot;, &quot;-&quot;).Replace(&quot;?&quot;, &quot;&quot;).Replace(&quot;/&quot;, &quot;-&quot;).Replace(&quot;&lt;&quot;, &quot;&quot;).Replace(&quot;|&quot;, &quot;&quot;).Replace('&quot;',&quot;&quot;).Replace(&quot;*&quot;,&quot;&quot;)
+    $filepptx = $code + "-" + $_.creator + " - " + $_.title.Replace(":", "-").Replace("?", "").Replace("/", "-").Replace("<", "").Replace("|", "").Replace('"',"").Replace("*","")
 	$filepptx = $filepptx.substring(0, [System.Math]::Min(120, $filepptx.Length))
-	$filepptx = $filepptx + &quot;.pptx&quot; 
+	$filepptx = $filepptx + ".pptx" 
 	
-	if ($code -ne &quot;&quot;){
+	if ($code -ne ""){
 	
-		 $folder = $code + &quot; - &quot; + $_.title.Replace(&quot;:&quot;, &quot;-&quot;).Replace(&quot;?&quot;, &quot;&quot;).Replace(&quot;/&quot;, &quot;-&quot;).Replace(&quot;&lt;&quot;, &quot;&quot;).Replace(&quot;|&quot;, &quot;&quot;).Replace('&quot;',&quot;&quot;).Replace(&quot;*&quot;,&quot;&quot;)
+		 $folder = $code + " - " + $_.title.Replace(":", "-").Replace("?", "").Replace("/", "-").Replace("<", "").Replace("|", "").Replace('"',"").Replace("*","")
 		 $folder = $folder.substring(0, [System.Math]::Min(100, $folder.Length))
 	
 	}else{
 	
-		$folder = &quot;NoCodeSessions&quot;
+		$folder = "NoCodeSessions"
 	}
 	
 	if (-not (Test-Path $folder)){ 
-		Write-Host &quot;Folder $folder dosen't exist. Creating it...&quot;  
+		Write-Host "Folder $folder dosen't exist. Creating it..."  
 		New-Item $folder -type directory 
 	}	
 
@@ -119,27 +119,27 @@ if($DownloadSlides){$b.rss.channel.item | foreach{
 # Walk through each item in the feed 
 if($DownloadVideos){$a.rss.channel.item | foreach{   
 	
-	$code = $_.comments.split(&quot;/&quot;) | select -last 1	   
+	$code = $_.comments.split("/") | select -last 1	   
 	
 	# Grab the URL for the MP4 file
 	$url = New-Object System.Uri($_.enclosure.url)  
 	
 	# Create the local file name for the MP4 download
-	$file = $code + &quot;-&quot; + $_.creator + &quot;-&quot; + $_.title.Replace(&quot;:&quot;, &quot;-&quot;).Replace(&quot;?&quot;, &quot;&quot;).Replace(&quot;/&quot;, &quot;-&quot;).Replace(&quot;&lt;&quot;, &quot;&quot;).Replace(&quot;|&quot;, &quot;&quot;).Replace('&quot;',&quot;&quot;).Replace(&quot;*&quot;,&quot;&quot;)
+	$file = $code + "-" + $_.creator + "-" + $_.title.Replace(":", "-").Replace("?", "").Replace("/", "-").Replace("<", "").Replace("|", "").Replace('"',"").Replace("*","")
 	$file = $file.substring(0, [System.Math]::Min(120, $file.Length))
-	$file = $file + &quot;.mp4&quot;  
+	$file = $file + ".mp4"  
 	
-	if ($code -ne &quot;&quot;){
+	if ($code -ne ""){
 	
-		 $folder = $code + &quot; - &quot; + $_.title.Replace(&quot;:&quot;, &quot;-&quot;).Replace(&quot;?&quot;, &quot;&quot;).Replace(&quot;/&quot;, &quot;-&quot;).Replace(&quot;&lt;&quot;, &quot;&quot;).Replace(&quot;|&quot;, &quot;&quot;).Replace('&quot;',&quot;&quot;).Replace(&quot;*&quot;,&quot;&quot;)
+		 $folder = $code + " - " + $_.title.Replace(":", "-").Replace("?", "").Replace("/", "-").Replace("<", "").Replace("|", "").Replace('"',"").Replace("*","")
 		 $folder = $folder.substring(0, [System.Math]::Min(100, $folder.Length))
 	}else{
 	
-		$folder = &quot;NoCodeSessions&quot;
+		$folder = "NoCodeSessions"
 	}
 	
 	if (-not (Test-Path $folder)){ 
-		Write-Host &quot;Folder $folder) dosen't exist. Creating it...&quot;  
+		Write-Host "Folder $folder) dosen't exist. Creating it..."  
 		New-Item $folder -type directory 
 	}
 		

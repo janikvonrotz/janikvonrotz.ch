@@ -34,14 +34,14 @@ The most simple solution to redirect a website domain or url to a new website is
 
 [code]
 
-&lt;VirtualHost *:80&gt;
+<VirtualHost *:80>
   ServerName domain.ch
   ServerAlias www.domain.ch
   ServerAdmin webmaster@domain.ch
   ErrorLog /var/log/apache2/domain.ch-error.log
   CustomLog /var/log/apache2/domain.ch-access.log combined
   Redirect permanent / https://www.somewhere.ch/aktuell/whatever/
-&lt;/VirtualHost&gt;
+</VirtualHost>
 
 [/code]
 

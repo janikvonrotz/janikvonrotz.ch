@@ -1,6 +1,6 @@
 ---
 id: 2078
-title: 'Project Naptha &#8211; OCR well done'
+title: 'Project Naptha - OCR well done'
 date: 2014-04-24T07:59:02+00:00
 author: Janik von Rotz
 layout: post

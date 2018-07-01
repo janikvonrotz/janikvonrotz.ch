@@ -71,24 +71,24 @@ Try my policy.
 
 [code]
 {
-  &quot;Statement&quot;: [
+  "Statement": [
     {
-      &quot;Action&quot;: [
-        &quot;s3:ListAllMyBuckets&quot;
+      "Action": [
+        "s3:ListAllMyBuckets"
       ],
-      &quot;Effect&quot;: &quot;Allow&quot;,
-      &quot;Resource&quot;: &quot;arn:aws:s3:::*&quot;
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::*"
     },
     {
-      &quot;Action&quot;: [ 
-          &quot;s3:ListBucket&quot;, 
-          &quot;s3:PutObject&quot;,
-          &quot;s3:GetObject&quot;
+      "Action": [ 
+          "s3:ListBucket", 
+          "s3:PutObject",
+          "s3:GetObject"
       ],
-      &quot;Effect&quot;: &quot;Allow&quot;,
-      &quot;Resource&quot;: [
-          &quot;arn:aws:s3:::[bucket name]&quot;, 
-          &quot;arn:aws:s3:::[bucket name]/*&quot;
+      "Effect": "Allow",
+      "Resource": [
+          "arn:aws:s3:::[bucket name]", 
+          "arn:aws:s3:::[bucket name]/*"
       ]
     }
   ]

@@ -1,6 +1,6 @@
 ---
 id: 4316
-title: 'O3M 73 &#8211; Viva America'
+title: 'O3M 73 - Viva America'
 date: 2017-05-31T13:28:56+00:00
 author: Janik von Rotz
 layout: post

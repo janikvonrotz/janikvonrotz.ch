@@ -1,6 +1,6 @@
 ---
 id: 139
-title: 'Kinaj 03 &#8211; Space Cat (Electro Pop, Electro House, Dance)'
+title: 'Kinaj 03 - Space Cat (Electro Pop, Electro House, Dance)'
 date: 2013-07-02T19:13:48+00:00
 author: Janik von Rotz
 layout: post

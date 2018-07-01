@@ -1,6 +1,6 @@
 ---
 id: 4618
-title: 'Configuration Manager &#8211; Configure requirement rules for deployment types with PowerShell'
+title: 'Configuration Manager - Configure requirement rules for deployment types with PowerShell'
 date: 2017-10-20T09:49:46+00:00
 author: Janik von Rotz
 layout: post
@@ -25,20 +25,20 @@ Once the template requirement rules are created, they can be copied using the sc
 
 **Copy-CMDeploymentTypeRule**
 [code lang="powershell"]
-$SiteCode = &quot;SITECODE&quot;
-$ProviderMachineName = &quot;FQDN&quot; 
+$SiteCode = "SITECODE"
+$ProviderMachineName = "FQDN" 
 if((Get-Module ConfigurationManager) -eq $null) {
-    Import-Module &quot;$($ENV:SMS_ADMIN_UI_PATH)\..\ConfigurationManager.psd1&quot;
+    Import-Module "$($ENV:SMS_ADMIN_UI_PATH)\..\ConfigurationManager.psd1"
 }
 if((Get-PSDrive -Name $SiteCode -PSProvider CMSite -ErrorAction SilentlyContinue) -eq $null) {
     New-PSDrive -Name $SiteCode -PSProvider CMSite -Root $ProviderMachineName
 }
-Set-Location &quot;$($SiteCode):\&quot;
+Set-Location "$($SiteCode):\"
 
-$RuleName = &quot;Primary device Equals True&quot;
+$RuleName = "Primary device Equals True"
 # use * for all rules
-$SourceApplicationName = &quot;Application Requirement Rules Template&quot;
-$DestApplicationName = &quot;VLC (2.2.6)&quot;
+$SourceApplicationName = "Application Requirement Rules Template"
+$DestApplicationName = "VLC (2.2.6)"
 $DestDeploymentTypeIndex = 0
 
 # get the applications
@@ -54,14 +54,14 @@ $Requirements | ForEach-Object {
     $RuleExists = $DestApplication.DeploymentTypes[$DestDeploymentTypeIndex].Requirements | Where-Object {$_.Name -match $RuleName}
     if($RuleExists) {
 
-        Write-Warning &quot;The rule `&quot;$($_.Name)`&quot; already exists in target application deployment type&quot;
+        Write-Warning "The rule `"$($_.Name)`" already exists in target application deployment type"
 
     } else{
         
-        Write-Host &quot;Apply rule `&quot;$($_.Name)`&quot; on target application deployment type&quot;
+        Write-Host "Apply rule `"$($_.Name)`" on target application deployment type"
 
         # create new rule ID
-        $_.RuleID = &quot;Rule_$( [guid]::NewGuid())&quot;
+        $_.RuleID = "Rule_$( [guid]::NewGuid())"
 
         $DestApplication.DeploymentTypes[$DestDeploymentTypeIndex].Requirements.Add($_)
     }

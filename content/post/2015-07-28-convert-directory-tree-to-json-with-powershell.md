@@ -27,8 +27,8 @@ Today I wrote a simple script that converts a directory tree query with `get-chi
 [code lang="powershell"]
 function Add-Tabstops{
     param($Count)
-    $tabs = &quot;&quot;
-    for($i=0; $i -lt $Count; $i++){$tabs += &quot;  &quot;}
+    $tabs = ""
+    for($i=0; $i -lt $Count; $i++){$tabs += "  "}
     return $tabs
 }
 
@@ -36,24 +36,24 @@ function Output-JsonChildren{
     param($Path, $Level = 1)
     return $(Get-ChildItem -Path $Path | Where-Object{$_} | ForEach-Object{
         (Add-Tabstops $Level) +
-        &quot;{`n&quot; + 
+        "{`n" + 
         (Add-Tabstops ($Level+1)) +
-        &quot;`&quot;name`&quot;`: `&quot;$($_.Name)`&quot;,&quot; + 
-        &quot;`n&quot; +
+        "`"name`"`: `"$($_.Name)`"," + 
+        "`n" +
         (Add-Tabstops ($Level+1)) + 
-        &quot;`&quot;children`&quot;: [&quot;+ 
-        $(if($_.psiscontainer){&quot;`n&quot; + (Output-JsonChildren -Path $_.FullName -Level ($Level+2))+ &quot;`n&quot; + (Add-Tabstops ($Level+1))}) +
-        &quot;]`n&quot; + 
+        "`"children`": ["+ 
+        $(if($_.psiscontainer){"`n" + (Output-JsonChildren -Path $_.FullName -Level ($Level+2))+ "`n" + (Add-Tabstops ($Level+1))}) +
+        "]`n" + 
         (Add-Tabstops ($Level)) +
-        &quot;}&quot;
-    }) -join &quot;,`n&quot;
+        "}"
+    }) -join ",`n"
 }
 
-$JSON = Output-JsonChildren -Path &quot;C:\Documents&quot;
+$JSON = Output-JsonChildren -Path "C:\Documents"
 
-&quot;[&quot;
+"["
 $JSON
-&quot;]&quot;
+"]"
 [/code]
 
 Find the latest version of this script here: [https://gist.github.com/7c9e9ea0acd77c965b79](https://gist.github.com/7c9e9ea0acd77c965b79)
@@ -63,18 +63,18 @@ The output looks something like this:
 [code]
 [
   {
-    &quot;name&quot;: &quot;Administration&quot;,
-    &quot;children&quot;: [
+    "name": "Administration",
+    "children": [
       {
-        &quot;name&quot;: &quot;Organisation&quot;,
-        &quot;children&quot;: [
+        "name": "Organisation",
+        "children": [
           {
-            &quot;name&quot;: &quot;Available Abrevations.md&quot;,
-            &quot;children&quot;: []
+            "name": "Available Abrevations.md",
+            "children": []
           },
           {
-            &quot;name&quot;: &quot;Kürzel Gemeinde und Organisationen.md&quot;,
-            &quot;children&quot;: []
+            "name": "Kürzel Gemeinde und Organisationen.md",
+            "children": []
           }
         ]
       },

@@ -58,26 +58,26 @@ By default the script will only add enabled users with an email address.
 This script makes use of the <a href="https://github.com/janikvonrotz/Powershell-Profile">PowerShell Profile</a> environment, f.e. the function <code>Send-PPErrorReport</code> sends an error report per email when the script fails or produces problems.
 
 [code lang="ps"]
-&lt;#
+<#
 $Metadata = @{
-    Title = &quot;New ActiveDirectory Distribution Groups&quot;
-    Filename = &quot;New-ADDistributionGroups.ps1&quot;
-    Description = &quot;Create or update ActiveDirectory distribution groups&quot;
-    Tags = &quot;powershell, activedirectory, distribution, groups, create, update&quot;
-    Project = &quot;&quot;
-    Author = &quot;Janik von Rotz&quot;
-    AuthorContact = &quot;https://janikvonrotz.ch&quot;
-    CreateDate = &quot;2013-08-27&quot;
-    LastEditDate = &quot;2013-09-30&quot;
-    Url = &quot;https://gist.github.com/6352037&quot;
-    Version = &quot;1.1.0&quot;
+    Title = "New ActiveDirectory Distribution Groups"
+    Filename = "New-ADDistributionGroups.ps1"
+    Description = "Create or update ActiveDirectory distribution groups"
+    Tags = "powershell, activedirectory, distribution, groups, create, update"
+    Project = ""
+    Author = "Janik von Rotz"
+    AuthorContact = "https://janikvonrotz.ch"
+    CreateDate = "2013-08-27"
+    LastEditDate = "2013-09-30"
+    Url = "https://gist.github.com/6352037"
+    Version = "1.1.0"
     License = @'
 This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Switzerland License.
 To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/3.0/ch/ or
 send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 '@
 }
-#&gt;
+#>
 
 #--------------------------------------------------#
 # modules
@@ -86,137 +86,137 @@ Import-Module ActiveDirectory
 
 # set OUs where the distributions groups should be enabled
 $OUs = @(
-    @{Name = &quot;OU=Betrieb,OU=vblusers2,DC=vbl,DC=ch&quot;},
-    @{Name = &quot;OU=Direktion,OU=vblusers2,DC=vbl,DC=ch&quot;},
-    @{Name = &quot;OU=Finanzen,OU=vblusers2,DC=vbl,DC=ch&quot;},
-    @{Name = &quot;OU=Personal,OU=vblusers2,DC=vbl,DC=ch&quot;},
-    @{Name = &quot;OU=Technik,OU=vblusers2,DC=vbl,DC=ch&quot;}
+    @{Name = "OU=Betrieb,OU=vblusers2,DC=vbl,DC=ch"},
+    @{Name = "OU=Direktion,OU=vblusers2,DC=vbl,DC=ch"},
+    @{Name = "OU=Finanzen,OU=vblusers2,DC=vbl,DC=ch"},
+    @{Name = "OU=Personal,OU=vblusers2,DC=vbl,DC=ch"},
+    @{Name = "OU=Technik,OU=vblusers2,DC=vbl,DC=ch"}
 )
 
 # list of users to exclude in distribution groups
-$ExcludeUsers = &quot;abascan&quot;,&quot;ba test&quot;,&quot;ba-service&quot;
+$ExcludeUsers = "abascan","ba test","ba-service"
 
 # list of distribution groups to exclude
-$ExcludeOUs = &quot;Verwaltungsrat&quot;
+$ExcludeOUs = "Verwaltungsrat"
 
 # special configuration to handle special
 $Configs = @(
     @{
-        Name = &quot;GL&quot;;
-        Options = @(&quot;UpdateFromGroups&quot;);
-        AddGroups = @(&quot;Geschäftsleitung Gruppe&quot;)
+        Name = "GL";
+        Options = @("UpdateFromGroups");
+        AddGroups = @("Geschäftsleitung Gruppe")
     },
     @{
-        Name = &quot;GL erw&quot;;
-        Options = @(&quot;UpdateFromGroups&quot;);
-        AddGroups = @(&quot;Erweiterte Geschäftsleitung Gruppe&quot;)
+        Name = "GL erw";
+        Options = @("UpdateFromGroups");
+        AddGroups = @("Erweiterte Geschäftsleitung Gruppe")
     },
     @{
-        Name = &quot;Alle&quot;;
-        Options = @(&quot;UpdateFromGroups&quot;);
-        AddGroups = @(&quot;Technik&quot;,&quot;Betrieb&quot;,&quot;Personal&quot;,&quot;Finanzen&quot;,&quot;GL&quot;,&quot;Kommunikation&quot;,&quot;Sekretariat&quot;)
+        Name = "Alle";
+        Options = @("UpdateFromGroups");
+        AddGroups = @("Technik","Betrieb","Personal","Finanzen","GL","Kommunikation","Sekretariat")
     },
     @{
-        Name = &quot;Alle mit Arbeitsplatz&quot;;
-        Options = @(&quot;UpdateFromGroups&quot;,&quot;RemoveGroups&quot;);
-        AddGroups = @(&quot;Alle&quot;);
-        RemoveGroups = @(&quot;SPO_365E1License&quot;)
+        Name = "Alle mit Arbeitsplatz";
+        Options = @("UpdateFromGroups","RemoveGroups");
+        AddGroups = @("Alle");
+        RemoveGroups = @("SPO_365E1License")
     },
     @{
-        Name = &quot;Alle ohne Arbeitsplatz&quot;;
-        Options = @(&quot;UpdateFromGroups&quot;);
-        AddGroups = @(&quot;SPO_365E1License&quot;);
+        Name = "Alle ohne Arbeitsplatz";
+        Options = @("UpdateFromGroups");
+        AddGroups = @("SPO_365E1License");
     },
     @{
-        Name = &quot;Fahrdienst A - Hermann M&quot;;
-        Options = @(&quot;UpdateFromGroups&quot;);
-        AddGroups = @(&quot;Fahrdienst A - Hermann M Gruppe&quot;);
+        Name = "Fahrdienst A - Hermann M";
+        Options = @("UpdateFromGroups");
+        AddGroups = @("Fahrdienst A - Hermann M Gruppe");
     },
     @{
-        Name = &quot;Fahrdienst A - Segui M&quot;;
-        Options = @(&quot;UpdateFromGroups&quot;);
-        AddGroups = @(&quot;Fahrdienst A - Segui M Gruppe&quot;);
+        Name = "Fahrdienst A - Segui M";
+        Options = @("UpdateFromGroups");
+        AddGroups = @("Fahrdienst A - Segui M Gruppe");
     },
     @{
-        Name = &quot;Fahrdienst B - Nietlispach M&quot;;
-        Options = @(&quot;UpdateFromGroups&quot;);
-        AddGroups = @(&quot;Fahrdienst B - Nietlispach M Gruppe&quot;);
+        Name = "Fahrdienst B - Nietlispach M";
+        Options = @("UpdateFromGroups");
+        AddGroups = @("Fahrdienst B - Nietlispach M Gruppe");
     },
     @{
-        Name = &quot;Fahrdienst B - Zaugg D&quot;;
-        Options = @(&quot;UpdateFromGroups&quot;);
-        AddGroups = @(&quot;Fahrdienst B - Zaugg D Gruppe&quot;);
+        Name = "Fahrdienst B - Zaugg D";
+        Options = @("UpdateFromGroups");
+        AddGroups = @("Fahrdienst B - Zaugg D Gruppe");
     },
     @{
-        Name = &quot;Fahrdienst C - Habegger R&quot;;
-        Options = @(&quot;UpdateFromGroups&quot;);
-        AddGroups = @(&quot;Fahrdienst C - Habegger R Gruppe&quot;);
+        Name = "Fahrdienst C - Habegger R";
+        Options = @("UpdateFromGroups");
+        AddGroups = @("Fahrdienst C - Habegger R Gruppe");
     },
     @{
-        Name = &quot;Fahrdienst C - Malbasic N&quot;;
-        Options = @(&quot;UpdateFromGroups&quot;);
-        AddGroups = @(&quot;Fahrdienst C - Malbasic N Gruppe&quot;);
+        Name = "Fahrdienst C - Malbasic N";
+        Options = @("UpdateFromGroups");
+        AddGroups = @("Fahrdienst C - Malbasic N Gruppe");
     },
     @{
-        Name = &quot;Fahrdienst D - Küchler P&quot;;
-        Options = @(&quot;UpdateFromGroups&quot;);
-        AddGroups = @(&quot;Fahrdienst D - Küchler P Gruppe&quot;);
+        Name = "Fahrdienst D - Küchler P";
+        Options = @("UpdateFromGroups");
+        AddGroups = @("Fahrdienst D - Küchler P Gruppe");
     },
     @{
-        Name = &quot;Fahrdienst D - Zimmermann L&quot;;
-        Options = @(&quot;UpdateFromGroups&quot;);
-        AddGroups = @(&quot;Fahrdienst D - Zimmermann L Gruppe&quot;);
+        Name = "Fahrdienst D - Zimmermann L";
+        Options = @("UpdateFromGroups");
+        AddGroups = @("Fahrdienst D - Zimmermann L Gruppe");
     },
     @{
-        Name = &quot;Fahrdienst E - Bechter K&quot;;
-        Options = @(&quot;UpdateFromGroups&quot;);
-        AddGroups = @(&quot;Fahrdienst E - Bechter K Gruppe&quot;);
+        Name = "Fahrdienst E - Bechter K";
+        Options = @("UpdateFromGroups");
+        AddGroups = @("Fahrdienst E - Bechter K Gruppe");
     },
     @{
-        Name = &quot;Fahrdienst E - Brunner R&quot;;
-        Options = @(&quot;UpdateFromGroups&quot;);
-        AddGroups = @(&quot;Fahrdienst E - Brunner R Gruppe&quot;);
+        Name = "Fahrdienst E - Brunner R";
+        Options = @("UpdateFromGroups");
+        AddGroups = @("Fahrdienst E - Brunner R Gruppe");
     },
     @{
-        Name = &quot;Fahrdienst F - Bieri René&quot;;
-        Options = @(&quot;UpdateFromGroups&quot;);
-        AddGroups = @(&quot;Fahrdienst F - Bieri René Gruppe&quot;);
+        Name = "Fahrdienst F - Bieri René";
+        Options = @("UpdateFromGroups");
+        AddGroups = @("Fahrdienst F - Bieri René Gruppe");
     },
     @{
-        Name = &quot;Fahrdienst F - Bieri Urs&quot;;
-        Options = @(&quot;UpdateFromGroups&quot;);
-        AddGroups = @(&quot;Fahrdienst F - Bieri Urs Gruppe&quot;);
+        Name = "Fahrdienst F - Bieri Urs";
+        Options = @("UpdateFromGroups");
+        AddGroups = @("Fahrdienst F - Bieri Urs Gruppe");
     },
     @{
-        Name = &quot;Verkehrsdisponnenten&quot;;
-        Options = @(&quot;UpdateFromGroups&quot;);
-        AddGroups = @(&quot;F_Verkehrsdisponnenten&quot;);
+        Name = "Verkehrsdisponnenten";
+        Options = @("UpdateFromGroups");
+        AddGroups = @("F_Verkehrsdisponnenten");
     },
     @{
-        Name = &quot;Personalkommission&quot;;
-        Options = @(&quot;UpdateFromGroups&quot;);
-        AddGroups = @(&quot;Personalkommission Abteilung&quot;);
+        Name = "Personalkommission";
+        Options = @("UpdateFromGroups");
+        AddGroups = @("Personalkommission Abteilung");
     }
 )
 
 # get all OUs recursive
-$OUs = $OUs | %{Get-ADOrganizationalUnit -Filter &quot;*&quot; -SearchBase $_.Name} | where {-not ($ExcludeOUs -contains $_.Name)}
+$OUs = $OUs | %{Get-ADOrganizationalUnit -Filter "*" -SearchBase $_.Name} | where {-not ($ExcludeOUs -contains $_.Name)}
 
 # check in every OU if a distribution group with the same name as the OU exist
 $OUs | %{$OU = $_.DistinguishedName;
-    if(Get-ADGroup -Filter {SamAccountName -eq $_.Name -and GroupCategory -eq &quot;Distribution&quot;} | Where-Object{$_.DistinguishedName -like &quot;*$OU&quot;}){
+    if(Get-ADGroup -Filter {SamAccountName -eq $_.Name -and GroupCategory -eq "Distribution"} | Where-Object{$_.DistinguishedName -like "*$OU"}){
 
-        Write-Host &quot;Update users in distribution group $($_.Name).&quot;
-        $ADGroup = Get-ADGroup -Filter {SamAccountName -eq $_.Name -and GroupCategory -eq &quot;Distribution&quot;}
+        Write-Host "Update users in distribution group $($_.Name)."
+        $ADGroup = Get-ADGroup -Filter {SamAccountName -eq $_.Name -and GroupCategory -eq "Distribution"}
         Get-ADGroupMember -Identity $ADGroup | %{Remove-ADGroupMember -Identity $ADGroup -Members $_ -Confirm:$false}
-        Get-ADUser -Filter {EmailAddress -like &quot;*&quot;} -SearchBase $OU | where {$_.enabled -eq $true -and -not ($ExcludeUsers -contains $_.Name)} | where{$_ -ne $null} | %{Add-ADGroupMember -Identity $ADGroup -Members $_}
+        Get-ADUser -Filter {EmailAddress -like "*"} -SearchBase $OU | where {$_.enabled -eq $true -and -not ($ExcludeUsers -contains $_.Name)} | where{$_ -ne $null} | %{Add-ADGroupMember -Identity $ADGroup -Members $_}
 
     }else{
 
-        Write-Host &quot;Create distribution group $($_.Name).&quot;
-        New-ADGroup -Name $_.Name -SamAccountName $_.Name -GroupCategory Distribution -GroupScope Universal -DisplayName $_.Name -Path $($_.DistinguishedName) -Description &quot;Distribution group for $($_.Name).&quot;
+        Write-Host "Create distribution group $($_.Name)."
+        New-ADGroup -Name $_.Name -SamAccountName $_.Name -GroupCategory Distribution -GroupScope Universal -DisplayName $_.Name -Path $($_.DistinguishedName) -Description "Distribution group for $($_.Name)."
         $ADGroup = Get-ADGroup $_.Name
-        Get-ADUser -Filter {EmailAddress -like &quot;*&quot;} -SearchBase $_.DistinguishedName | where {$_.enabled -eq $true -and -not ($ExcludeUsers -contains $_.Name)} | where{$_ -ne $null} | %{Add-ADGroupMember -Identity $ADGroup -Members $_}
+        Get-ADUser -Filter {EmailAddress -like "*"} -SearchBase $_.DistinguishedName | where {$_.enabled -eq $true -and -not ($ExcludeUsers -contains $_.Name)} | where{$_ -ne $null} | %{Add-ADGroupMember -Identity $ADGroup -Members $_}
     }
 }
 
@@ -226,17 +226,17 @@ $Configs | %{
     $ADGroup = Get-ADGroup -Identity $_.Name
     $Config = $_
 
-    if($_.Options -match &quot;UpdateFromGroups&quot;){
+    if($_.Options -match "UpdateFromGroups"){
 
-        Write-Host &quot;Add users from $($Config.AddGroups) to $($ADGroup.Name).&quot;
+        Write-Host "Add users from $($Config.AddGroups) to $($ADGroup.Name)."
         Get-ADGroupMember -Identity $ADGroup | %{Remove-ADGroupMember -Identity $ADGroup -Members $_ -Confirm:$false}
         $Config.AddGroups | %{Get-ADGroupMember -Identity $_ -Recursive | Get-ADUser | where {($_.enabled -eq $true) -and -not ($ExcludeUsers -contains $_.Name)}} | select -Unique | %{Add-ADGroupMember -Identity $ADGroup -Members $_}
 
     }
 
-    if($_.Options -match &quot;RemoveGroups&quot;){
+    if($_.Options -match "RemoveGroups"){
 
-        Write-Host &quot;Remove users from $($Config.RemoveGroups) in $($ADGroup.Name).&quot;
+        Write-Host "Remove users from $($Config.RemoveGroups) in $($ADGroup.Name)."
         $ADGroupMembers = Get-ADGroupMember -Identity $ADGroup
         $Config.RemoveGroups | %{Get-ADGroupMember -Identity $_ -Recursive | Get-ADUser | where {($ADGroupMembers -match $_) -and ($_.enabled -eq $true) -and -not ($ExcludeUsers -contains $_.Name)}} | select -Unique  | %{Remove-ADGroupMember -Identity $ADGroup -Members $_ -Confirm:$false}
 
@@ -244,7 +244,7 @@ $Configs | %{
 }
 
 if($error){
-    Send-PPErrorReport -FileName &quot;activedirectory.mail.config.xml&quot; -ScriptName $MyInvocation.InvocationName
+    Send-PPErrorReport -FileName "activedirectory.mail.config.xml" -ScriptName $MyInvocation.InvocationName
 }
 [/code]
 

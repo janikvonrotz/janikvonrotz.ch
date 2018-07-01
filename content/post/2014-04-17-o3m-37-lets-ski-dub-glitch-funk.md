@@ -1,6 +1,6 @@
 ---
 id: 2009
-title: 'O3M 37 &#8211; Let&#8217;s ski (dub, glitch, funk)'
+title: 'O3M 37 - Let’s ski (dub, glitch, funk)'
 date: 2014-04-17T12:15:12+00:00
 author: Janik von Rotz
 layout: post

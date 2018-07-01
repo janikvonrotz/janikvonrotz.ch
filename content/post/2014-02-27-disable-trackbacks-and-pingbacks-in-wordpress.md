@@ -34,7 +34,7 @@ Trackbacks and Pingbacks can be abused for spam and even <a href="https://krebso
 <h1>Disable for new posts</h1>
 Uncheck the following setting:
 
-Settings&gt;Discussion&gt;Allow link notifications from other blogs (pingbacks and trackbacks)
+Settings>Discussion>Allow link notifications from other blogs (pingbacks and trackbacks)
 
 <!--more-->
 

@@ -48,30 +48,30 @@ function Get-XKCDPassword {
     Param(
         [int]$words = 4,
 
-        [string]$delimiter = &quot;-&quot;,
+        [string]$delimiter = "-",
 
-        [ValidateSet(&quot;en&quot;,&quot;de&quot;)] 
-        [string]$lang = &quot;en&quot;,
+        [ValidateSet("en","de")] 
+        [string]$lang = "en",
 
         [switch]$FirstLetterUpperCase  
     )
     
-    $password = &quot;&quot;
+    $password = ""
     $wordlist = @{
-        de = &quot;https://janikvonrotz.ch/wp-content/uploads/2017/08/wordlist.de_.txt&quot;
-        en = &quot;https://janikvonrotz.ch/wp-content/uploads/2017/08/wordlist.en_.txt&quot;
+        de = "https://janikvonrotz.ch/wp-content/uploads/2017/08/wordlist.de_.txt"
+        en = "https://janikvonrotz.ch/wp-content/uploads/2017/08/wordlist.en_.txt"
     }
     
     switch($words) {
-        {$_ -ge 6 } { throw &quot;Word parameter cannot be greater or equal 6.&quot; }
+        {$_ -ge 6 } { throw "Word parameter cannot be greater or equal 6." }
         5 { $range = (3,4) }
         4 { $range = (4,5) }
         3 { $range = (5,6) }
         2 { $range = (7,8) }
-        {$_ -le 1 } { throw &quot;Word parameter cannot be less or equal 1.&quot; }
+        {$_ -le 1 } { throw "Word parameter cannot be less or equal 1." }
     }
 
-    $list = (((Invoke-WebRequest $wordlist[$lang]).Content -split &quot;`n&quot; | ForEach-Object{ 
+    $list = (((Invoke-WebRequest $wordlist[$lang]).Content -split "`n" | ForEach-Object{ 
         New-Object PSObject -Property @{
             Value = $_.ToLower()
             Length=$_.length
@@ -95,7 +95,7 @@ function Get-XKCDPassword {
     return $password
 }
 
-Get-XKCDPassword -words 4 -delimiter &quot;-&quot; -lang &quot;de&quot; -FirstLetterUpperCase 
+Get-XKCDPassword -words 4 -delimiter "-" -lang "de" -FirstLetterUpperCase 
 [/code]
 
 Here are some results:

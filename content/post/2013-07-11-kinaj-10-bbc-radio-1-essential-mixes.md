@@ -1,6 +1,6 @@
 ---
 id: 300
-title: 'Kinaj 10 &#8211; BBC Radio 1 Essential Mixes'
+title: 'Kinaj 10 - BBC Radio 1 Essential Mixes'
 date: 2013-07-11T08:51:42+00:00
 author: Janik von Rotz
 layout: post

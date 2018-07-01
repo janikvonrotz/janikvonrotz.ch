@@ -1,6 +1,6 @@
 ---
 id: 2100
-title: 'O3M 38 &#8211; Avec Plaisir (Dance, House)'
+title: 'O3M 38 - Avec Plaisir (Dance, House)'
 date: 2014-04-25T07:38:59+00:00
 author: Janik von Rotz
 layout: post

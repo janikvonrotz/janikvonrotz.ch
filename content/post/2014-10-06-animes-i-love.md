@@ -108,9 +108,9 @@ In an underground world where tunnels extend everywhere, even though they live i
 
 # Howl's Moving Castle - Movie
 
-<img src="https://janikvonrotz.ch/wp-content/uploads/2014/10/Howls-Moving-Castle2.gif" alt="Howl&#039;s Moving Castle2" width="500" height="250" class="aligncenter size-full wp-image-2618" />
+<img src="https://janikvonrotz.ch/wp-content/uploads/2014/10/Howls-Moving-Castle2.gif" alt="Howl’s Moving Castle2" width="500" height="250" class="aligncenter size-full wp-image-2618" />
 
-<img src="https://janikvonrotz.ch/wp-content/uploads/2014/10/Howls-Moving-Castle1.gif" alt="Howl&#039;s Moving Castle1" width="500" height="270" class="aligncenter size-full wp-image-2617" />
+<img src="https://janikvonrotz.ch/wp-content/uploads/2014/10/Howls-Moving-Castle1.gif" alt="Howl’s Moving Castle1" width="500" height="270" class="aligncenter size-full wp-image-2617" />
 
 Sophie, a quiet girl working in a hat shop, finds her life thrown into turmoil when she is literally swept off her feet by a handsome but mysterious wizard named Howl. The vain and vengeful Witch of the Waste, jealous of their friendship, puts a spell on Sophie. In a life-changing adventure, Sophie climbs aboard Howl's magnificent flying castle and enters a magical world on a quest to break the spell.
 

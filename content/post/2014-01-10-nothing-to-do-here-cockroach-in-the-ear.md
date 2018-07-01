@@ -1,6 +1,6 @@
 ---
 id: 923
-title: 'Nothing to do here &#8211; Cockroach in the ear'
+title: 'Nothing to do here - Cockroach in the ear'
 date: 2014-01-10T09:02:14+00:00
 author: Janik von Rotz
 layout: post

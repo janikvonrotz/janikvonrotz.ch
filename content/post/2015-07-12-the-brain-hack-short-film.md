@@ -1,6 +1,6 @@
 ---
 id: 3374
-title: 'The Brain Hack &#8211; Short Film'
+title: 'The Brain Hack - Short Film'
 date: 2015-07-12T21:50:04+00:00
 author: Janik von Rotz
 layout: post

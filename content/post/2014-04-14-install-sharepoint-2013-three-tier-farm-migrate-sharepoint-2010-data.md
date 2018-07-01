@@ -1,6 +1,6 @@
 ---
 id: 1898
-title: 'Install SharePoint 2013 Three-tier Farm &#8211; Migrate SharePoint 2010 Data'
+title: 'Install SharePoint 2013 Three-tier Farm - Migrate SharePoint 2010 Data'
 date: 2014-04-14T09:36:40+00:00
 author: Janik von Rotz
 layout: post

@@ -1,6 +1,6 @@
 ---
 id: 2951
-title: 'Let&#8217;s write a Laravel application &#8211; Sortable table'
+title: 'Let’s write a Laravel application - Sortable table'
 date: 2015-02-04T14:33:28+00:00
 author: Janik von Rotz
 layout: post
@@ -30,10 +30,10 @@ class BaseController extends Controller {
 
   protected function getSortedItems($model)
   {
-    $this-&gt;sortby = Input::get('sortby');
-    $this-&gt;order = Input::get('order');
-    if ($this-&gt;sortby &amp;&amp; $this-&gt;order) {
-      return $model::orderBy($this-&gt;sortby, $this-&gt;order)-&gt;get();
+    $this->sortby = Input::get('sortby');
+    $this->order = Input::get('order');
+    if ($this->sortby &amp;&amp; $this->order) {
+      return $model::orderBy($this->sortby, $this->order)->get();
     } else {
        return $model::all();
     }
@@ -50,9 +50,9 @@ class MemberController extends \BaseController {
 
   public function index()
   {
-    $items = $this-&gt;getSortedItems('Member');
-    $sortby = $this-&gt;sortby;
-    $order = $this-&gt;order;
+    $items = $this->getSortedItems('Member');
+    $sortby = $this->sortby;
+    $order = $this->order;
     
     $action = Route::currentRouteAction();
     $columns = Member::$columns;
@@ -72,10 +72,10 @@ This requirement leads to variable header definitions for our sortable table.
 class Member extends Eloquent{
 
   public static $columns = [
-    &quot;ID&quot;=&gt;&quot;id&quot;,
-    &quot;Firstname&quot;=&gt;&quot;firstname&quot;,
-    &quot;Lastname&quot;=&gt;&quot;lastname&quot;,
-    &quot;E-Mail&quot;=&gt;&quot;email&quot;
+    "ID"=>"id",
+    "Firstname"=>"firstname",
+    "Lastname"=>"lastname",
+    "E-Mail"=>"email"
   ];
 }
 [/code]
@@ -85,31 +85,31 @@ From now on you can use the next piece of code to create a sortable table in you
 **views/members/index.blade.php**
 
 [code lang="html"]
-&lt;table class=&quot;table&quot;&gt;
-&lt;tr&gt;
+<table class="table">
+<tr>
   @foreach(array_keys($columns) as $column)
-    &lt;th&gt;
+    <th>
     @if ($sortby == $columns[$column] &amp;&amp; $order == 'asc')
     {{link_to_action(
       $action,
-      $column, ['sortby' =&gt; $columns[$column],'order' =&gt; 'desc']
+      $column, ['sortby' => $columns[$column],'order' => 'desc']
     )}}
     @else
     {{link_to_action(
       $action,
-      $column, ['sortby' =&gt; $columns[$column],'order' =&gt; 'asc']
+      $column, ['sortby' => $columns[$column],'order' => 'asc']
     )}}
     @endif
-    &lt;/td&gt;
+    </td>
   @endforeach
-&lt;/tr&gt;
+</tr>
 @foreach($items as $member)
-    &lt;tr&gt;
-      &lt;td&gt;{{$member-&gt;id}}&lt;/td&gt;
-      &lt;td&gt;{{$member-&gt;firstname}}&lt;/td&gt;
-      &lt;td&gt;{{$member-&gt;lastname}}&lt;/td&gt;
-      &lt;td&gt;{{$member-&gt;email}}&lt;/td&gt;
-    &lt;/tr&gt;
+    <tr>
+      <td>{{$member->id}}</td>
+      <td>{{$member->firstname}}</td>
+      <td>{{$member->lastname}}</td>
+      <td>{{$member->email}}</td>
+    </tr>
 @endforeach
-&lt;/table&gt;
+</table>
 [/code]

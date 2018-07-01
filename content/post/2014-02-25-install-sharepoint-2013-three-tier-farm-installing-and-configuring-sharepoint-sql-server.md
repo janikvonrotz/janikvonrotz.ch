@@ -1,6 +1,6 @@
 ---
 id: 1128
-title: 'Install SharePoint 2013 Three-tier Farm &#8211; Installing and Configuring SharePoint SQL Server'
+title: 'Install SharePoint 2013 Three-tier Farm - Installing and Configuring SharePoint SQL Server'
 date: 2014-02-25T13:52:33+00:00
 author: Janik von Rotz
 layout: post
@@ -78,11 +78,11 @@ I think the sql server configuration file is much more informative.
 
 ; Specify the Instance ID for the SQL Server features you have specified. SQL Server directory structure, registry structure, and service names will reflect the instance ID of the SQL Server instance.
 
-INSTANCEID=&quot;MSSQLSERVER&quot;
+INSTANCEID="MSSQLSERVER"
 
 ; Specifies a Setup work flow, like INSTALL, UNINSTALL, or UPGRADE. This is a required parameter.
 
-ACTION=&quot;Install&quot;
+ACTION="Install"
 
 ; Specifies features to install, uninstall, or upgrade. The list of top-level features include SQL, AS, RS, IS, and Tools. The SQL feature will install the database engine, replication, and full-text. The Tools feature will install Management Tools, Books online, Business Intelligence Development Studio, and other shared components.
 
@@ -90,171 +90,171 @@ FEATURES=SQLENGINE,FULLTEXT,IS,BC,SSMS,ADV_SSMS
 
 ; Displays the command line parameters usage
 
-HELP=&quot;False&quot;
+HELP="False"
 
 ; Specifies that the detailed Setup log should be piped to the console.
 
-INDICATEPROGRESS=&quot;False&quot;
+INDICATEPROGRESS="False"
 
 ; Setup will not display any user interface.
 
-QUIET=&quot;False&quot;
+QUIET="False"
 
 ; Setup will display progress only without any user interaction.
 
-QUIETSIMPLE=&quot;False&quot;
+QUIETSIMPLE="False"
 
 ; Specifies that Setup should install into WOW64. This command line argument is not supported on an IA64 or a 32-bit system.
 
-X86=&quot;False&quot;
+X86="False"
 
 ; Detailed help for command line argument ENU has not been defined yet.
 
-ENU=&quot;True&quot;
+ENU="True"
 
 ; Parameter that controls the user interface behavior. Valid values are Normal for the full UI, and AutoAdvance for a simplied UI.
 
-UIMODE=&quot;Normal&quot;
+UIMODE="Normal"
 
 ; Specify if errors can be reported to Microsoft to improve future SQL Server releases. Specify 1 or True to enable and 0 or False to disable this feature.
 
-ERRORREPORTING=&quot;False&quot;
+ERRORREPORTING="False"
 
 ; Specify the root installation directory for native shared components.
 
-INSTALLSHAREDDIR=&quot;C:Program FilesMicrosoft SQL Server&quot;
+INSTALLSHAREDDIR="C:Program FilesMicrosoft SQL Server"
 
 ; Specify the root installation directory for the WOW64 shared components.
 
-INSTALLSHAREDWOWDIR=&quot;C:Program Files (x86)Microsoft SQL Server&quot;
+INSTALLSHAREDWOWDIR="C:Program Files (x86)Microsoft SQL Server"
 
 ; Specify the installation directory.
 
-INSTANCEDIR=&quot;C:Program FilesMicrosoft SQL Server&quot;
+INSTANCEDIR="C:Program FilesMicrosoft SQL Server"
 
 ; Specify that SQL Server feature usage data can be collected and sent to Microsoft. Specify 1 or True to enable and 0 or False to disable this feature.
 
-SQMREPORTING=&quot;False&quot;
+SQMREPORTING="False"
 
 ; Specify a default or named instance. MSSQLSERVER is the default instance for non-Express editions and SQLExpress for Express editions. This parameter is required when installing the SQL Server Database Engine (SQL), Analysis Services (AS), or Reporting Services (RS).
 
-INSTANCENAME=&quot;MSSQLSERVER&quot;
+INSTANCENAME="MSSQLSERVER"
 
 ; Agent account name
 
-AGTSVCACCOUNT=&quot;VBLSP1SQL_Agent&quot;
+AGTSVCACCOUNT="VBLSP1SQL_Agent"
 
 ; Auto-start service after installation.
 
-AGTSVCSTARTUPTYPE=&quot;Automatic&quot;
+AGTSVCSTARTUPTYPE="Automatic"
 
 ; Startup type for Integration Services.
 
-ISSVCSTARTUPTYPE=&quot;Automatic&quot;
+ISSVCSTARTUPTYPE="Automatic"
 
 ; Account for Integration Services: DomainUser or system account.
 
-ISSVCACCOUNT=&quot;NT AUTHORITYNetworkService&quot;
+ISSVCACCOUNT="NT AUTHORITYNetworkService"
 
 ; Controls the service startup type setting after the service has been created.
 
-ASSVCSTARTUPTYPE=&quot;Automatic&quot;
+ASSVCSTARTUPTYPE="Automatic"
 
 ; The collation to be used by Analysis Services.
 
-ASCOLLATION=&quot;Latin1_General_CI_AS&quot;
+ASCOLLATION="Latin1_General_CI_AS"
 
 ; The location for the Analysis Services data files.
 
-ASDATADIR=&quot;Data&quot;
+ASDATADIR="Data"
 
 ; The location for the Analysis Services log files.
 
-ASLOGDIR=&quot;Log&quot;
+ASLOGDIR="Log"
 
 ; The location for the Analysis Services backup files.
 
-ASBACKUPDIR=&quot;Backup&quot;
+ASBACKUPDIR="Backup"
 
 ; The location for the Analysis Services temporary files.
 
-ASTEMPDIR=&quot;Temp&quot;
+ASTEMPDIR="Temp"
 
 ; The location for the Analysis Services configuration files.
 
-ASCONFIGDIR=&quot;Config&quot;
+ASCONFIGDIR="Config"
 
 ; Specifies whether or not the MSOLAP provider is allowed to run in process.
 
-ASPROVIDERMSOLAP=&quot;1&quot;
+ASPROVIDERMSOLAP="1"
 
 ; A port number used to connect to the SharePoint Central Administration web application.
 
-FARMADMINPORT=&quot;0&quot;
+FARMADMINPORT="0"
 
 ; Startup type for the SQL Server service.
 
-SQLSVCSTARTUPTYPE=&quot;Automatic&quot;
+SQLSVCSTARTUPTYPE="Automatic"
 
 ; Level to enable FILESTREAM feature at (0, 1, 2 or 3).
 
-FILESTREAMLEVEL=&quot;0&quot;
+FILESTREAMLEVEL="0"
 
-; Set to &quot;1&quot; to enable RANU for SQL Server Express.
+; Set to "1" to enable RANU for SQL Server Express.
 
-ENABLERANU=&quot;False&quot;
+ENABLERANU="False"
 
 ; Specifies a Windows collation or an SQL collation to use for the Database Engine.
 
-SQLCOLLATION=&quot;Latin1_General_CI_AS_KS_WS&quot;
+SQLCOLLATION="Latin1_General_CI_AS_KS_WS"
 
 ; Account for SQL Server service: DomainUser or system account.
 
-SQLSVCACCOUNT=&quot;VBLSP1SQL_Engine&quot;
+SQLSVCACCOUNT="VBLSP1SQL_Engine"
 
 ; Windows account(s) to provision as SQL Server system administrators.
 
-SQLSYSADMINACCOUNTS=&quot;VORDEFINIERTAdministratoren&quot; &quot;VBLSP1SQL_Admin&quot;
+SQLSYSADMINACCOUNTS="VORDEFINIERTAdministratoren" "VBLSP1SQL_Admin"
 
 ; Default directory for the Database Engine backup files.
 
-SQLBACKUPDIR=&quot;E:Microsoft SQL ServerBackup&quot;
+SQLBACKUPDIR="E:Microsoft SQL ServerBackup"
 
 ; Default directory for the Database Engine user databases.
 
-SQLUSERDBDIR=&quot;E:Microsoft SQL ServerData&quot;
+SQLUSERDBDIR="E:Microsoft SQL ServerData"
 
 ; Provision current user as a Database Engine system administrator for SQL Server 2008 R2 Express.
 
-ADDCURRENTUSERASSQLADMIN=&quot;False&quot;
+ADDCURRENTUSERASSQLADMIN="False"
 
 ; Specify 0 to disable or 1 to enable the TCP/IP protocol.
 
-TCPENABLED=&quot;1&quot;
+TCPENABLED="1"
 
 ; Specify 0 to disable or 1 to enable the Named Pipes protocol.
 
-NPENABLED=&quot;0&quot;
+NPENABLED="0"
 
 ; Startup type for Browser Service.
 
-BROWSERSVCSTARTUPTYPE=&quot;Disabled&quot;
+BROWSERSVCSTARTUPTYPE="Disabled"
 
 ; Specifies how the startup mode of the report server NT service.  When
 ; Manual - Service startup is manual mode (default).
 ; Automatic - Service startup is automatic mode.
 ; Disabled - Service is disabled
 
-RSSVCSTARTUPTYPE=&quot;Automatic&quot;
+RSSVCSTARTUPTYPE="Automatic"
 
 ; Specifies which mode report server is installed in.
 ; Default value: “FilesOnly”
 
-RSINSTALLMODE=&quot;FilesOnlyMode&quot;
+RSINSTALLMODE="FilesOnlyMode"
 
 ; Add description of input argument FTSVCACCOUNT
 
-FTSVCACCOUNT=&quot;NT AUTHORITYLOCAL SERVICE&quot;
+FTSVCACCOUNT="NT AUTHORITYLOCAL SERVICE"
 
 [/code]
 

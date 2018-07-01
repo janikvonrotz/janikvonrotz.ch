@@ -34,7 +34,7 @@ So here's the script:
 <!--more-->
 
 [code lang="ps"]
-[System.Reflection.Assembly]::LoadWithPartialName(&quot;System.Web.Extensions&quot;)
+[System.Reflection.Assembly]::LoadWithPartialName("System.Web.Extensions")
 
 function Get-GitHubGists{
 
@@ -44,7 +44,7 @@ function Get-GitHubGists{
 
     # set up request
     $WebRequest = [System.Net.WebRequest]::Create($UserUrl)
-    $WebRequest.Method =&quot;GET&quot;
+    $WebRequest.Method ="GET"
     $WebRequest.ContentLength = 0
 
     # get response
@@ -62,13 +62,13 @@ function Get-GitHubGists{
         if(Test-Path $_.id){
 
             cd ($_.id)
-            Write-Host &quot;Update GitHubGist: $($_.description)&quot;
+            Write-Host "Update GitHubGist: $($_.description)"
             git pull
             cd ..
 
         }else{
 
-            Write-Host &quot;Cloning GitHubGist: $($_.description)&quot;
+            Write-Host "Cloning GitHubGist: $($_.description)"
             git clone ($_.git_pull_url)
         }
     }

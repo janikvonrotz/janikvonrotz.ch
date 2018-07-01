@@ -40,31 +40,31 @@ So I've found [Pass](https://www.passwordstore.org/). The standard Unix password
 **keepass2pass.ps1**
 
 [code lang="powershell"]
-[xml]$Content = Get-Content -Path &quot;KeepassData.xml&quot;
+[xml]$Content = Get-Content -Path "KeepassData.xml"
 
 function Traverse-Tree ($Node, $ParentPath) {
 
-    $Path = $ParentPath + &quot;/&quot; + $Node.Name
+    $Path = $ParentPath + "/" + $Node.Name
     $ChildNodes = $Node.Group
     $Entries = $Node.Entry
 
-    if($Entries -and ($Node.Name -notcontains &quot;Recycle Bin&quot;)) {
+    if($Entries -and ($Node.Name -notcontains "Recycle Bin")) {
         foreach ($Entry in $Entries) {
-            $Content = &quot;&quot;
-            $Title = &quot;&quot;
-            $Password = &quot;&quot;
+            $Content = ""
+            $Title = ""
+            $Password = ""
             foreach ($Field in $Entry.String) {
                 switch($Field.Key) {
-                    &quot;Title&quot; { $Title = $Field.Value }
-                    &quot;Password&quot; { $Password = $Field.Value.'#text' }
+                    "Title" { $Title = $Field.Value }
+                    "Password" { $Password = $Field.Value.'#text' }
                     default {
-                        $Content += &quot;$($Field.Key): `&quot;$($Field.Value)`&quot;`n&quot;
+                        $Content += "$($Field.Key): `"$($Field.Value)`"`n"
                     }
                 }
             }
             @{
-                Path = $Path + &quot;/&quot; + $Title
-                Content = $Password + &quot;`n&quot; + $Content
+                Path = $Path + "/" + $Title
+                Content = $Password + "`n" + $Content
             }
         }
     }
@@ -77,9 +77,9 @@ function Traverse-Tree ($Node, $ParentPath) {
 }
 
 $PasswordEntries = $Content.KeePassFile.Root.Group.Group | ForEach-Object {
-    Traverse-Tree -Node $_ -ParentPath &quot;&quot;
+    Traverse-Tree -Node $_ -ParentPath ""
 } | ForEach-Object {
-    Write-Host &quot;Creating pass entry: $($_.Path)&quot;
+    Write-Host "Creating pass entry: $($_.Path)"
     $_.Content | &amp; pass insert -m $_.Path
 }
 [/code]

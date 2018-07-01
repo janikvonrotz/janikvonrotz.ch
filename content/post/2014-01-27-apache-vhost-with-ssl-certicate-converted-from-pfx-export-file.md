@@ -31,12 +31,12 @@ tags:
 This is an simple example for an Apache vHost SSL vHost configuration:
 
 [code]
-&lt;VirtualHost 192.168.0.1:443&gt;
+<VirtualHost 192.168.0.1:443>
 DocumentRoot /var/www/
 SSLEngine on
 SSLCertificateFile /path/to/certificate.crt
 SSLCertificateKeyFile /path/to/keyfile.key
-&lt;/VirtualHost&gt;
+</VirtualHost>
 [/code]
 
 <!--more-->

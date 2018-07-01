@@ -25,7 +25,7 @@ To change an Active Directory users password expiration mode you can use this Po
 [code lang="ps"]
 Import-Module ActiveDirectory
 
-Get-ADGroupMember &quot;Group1&quot; -Recursive |
+Get-ADGroupMember "Group1" -Recursive |
 Get-ADUser -Properties PasswordNeverExpires |
 where {$_.enabled -eq $true -and $_.PasswordNeverExpires -eq $false} |
 select -First 50 | %{

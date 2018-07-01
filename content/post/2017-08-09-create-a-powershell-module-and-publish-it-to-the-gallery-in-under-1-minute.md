@@ -30,12 +30,12 @@ Make sure that you either have PowerShell 5.0 installed or the PowerShellGet mod
 [code lang="powershell"]
 # Go to the modules directory
 
-Set-Location &quot;C:\Windows\system32\WindowsPowerShell\v1.0\Modules\&quot;
+Set-Location "C:\Windows\system32\WindowsPowerShell\v1.0\Modules\"
 
 # Create the module folder
 
-if (!(Test-Path &quot;./PowerUp&quot;)) {
-    New-Item -ItemType Directory -Path &quot;./PowerUp&quot;
+if (!(Test-Path "./PowerUp")) {
+    New-Item -ItemType Directory -Path "./PowerUp"
 }
 
 # Create the module
@@ -44,11 +44,11 @@ if (!(Test-Path &quot;./PowerUp&quot;)) {
 function Get-RandomPassword {
     
     $numbers = 1..9
-    $consonants = &quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;f&quot;,&quot;g&quot;,&quot;h&quot;,&quot;k&quot;,&quot;l&quot;,&quot;m&quot;,&quot;n&quot;,&quot;p&quot;,&quot;r&quot;,&quot;s&quot;,&quot;t&quot;,&quot;v&quot;,&quot;w&quot;,&quot;x&quot;,&quot;z&quot;
-    $nopeletters = &quot;j&quot;,&quot;q&quot;,&quot;y&quot;
-    $vocals = &quot;a&quot;,&quot;e&quot;,&quot;i&quot;,&quot;o&quot;,&quot;u&quot;
-    $dotsandstuff = &quot;,&quot;,&quot;.&quot;,&quot;-&quot;
-    $nopedotsandstuff = &quot;;&quot;,&quot;:&quot;,&quot;_&quot;
+    $consonants = "b","c","d","f","g","h","k","l","m","n","p","r","s","t","v","w","x","z"
+    $nopeletters = "j","q","y"
+    $vocals = "a","e","i","o","u"
+    $dotsandstuff = ",",".","-"
+    $nopedotsandstuff = ";",":","_"
 
     return (Get-Random $consonants).ToString().ToUpper() + 
     (Get-Random $vocals) + 
@@ -61,11 +61,11 @@ function Get-RandomPassword {
     (Get-Random $numbers) + 
     (Get-Random $dotsandstuff)
 }
-'@ | Set-Content -Path &quot;./PowerUp/PowerUp.psm1&quot;
+'@ | Set-Content -Path "./PowerUp/PowerUp.psm1"
 
 # Create the module manifest
 
-New-ModuleManifest &quot;./PowerUp/PowerUp.psd1&quot; -RootModule &quot;PowerUp&quot; -FunctionsToExport Get-RandomPassword -ModuleVersion &quot;1.0.0&quot; -Author &quot;Janik von Rotz&quot; -Description &quot;A collection of useful PowerShell functions.&quot;
+New-ModuleManifest "./PowerUp/PowerUp.psd1" -RootModule "PowerUp" -FunctionsToExport Get-RandomPassword -ModuleVersion "1.0.0" -Author "Janik von Rotz" -Description "A collection of useful PowerShell functions."
 
 # Test the module manifest
 

@@ -1,6 +1,6 @@
 ---
 id: 2086
-title: 'Netwars Project &#8211; Today&#8217;s IT threads well explained'
+title: 'Netwars Project - Today’s IT threads well explained'
 date: 2014-05-01T13:19:00+00:00
 author: Janik von Rotz
 layout: post

@@ -1,6 +1,6 @@
 ---
 id: 2403
-title: 'Thailand &#8211; Chiang Mai and Bangkok'
+title: 'Thailand - Chiang Mai and Bangkok'
 date: 2014-06-13T03:57:41+00:00
 author: Janik von Rotz
 layout: post
@@ -39,7 +39,7 @@ Almost 2 weeks passed since I've left home to go to Thailand. It's unbelievable 
 * Eaten the best meals so far
 * And much more ;)
 
-[caption id="attachment_2405" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/06/Bamboo-rafting-20140606-1024x682.jpg" alt="On this bamboo we&#039;ve spent 4 hours." width="720" height="479" class="size-large wp-image-2405" /> On this bamboo we've spent 4 hours.[/caption]
+[caption id="attachment_2405" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/06/Bamboo-rafting-20140606-1024x682.jpg" alt="On this bamboo we’ve spent 4 hours." width="720" height="479" class="size-large wp-image-2405" /> On this bamboo we've spent 4 hours.[/caption]
 
 [caption id="attachment_2404" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/06/A-happy-elephant-20140605-1024x682.jpg" alt="This elephant lives in the northern jungle." width="720" height="479" class="size-large wp-image-2404" /> This elephant lives in the northern jungle.[/caption]
 
@@ -49,9 +49,9 @@ Almost 2 weeks passed since I've left home to go to Thailand. It's unbelievable 
 
 [caption id="attachment_2408" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/06/Chinatown-in-Bangkok-20140610-1024x682.jpg" alt="Chinatown in Bangkok a very busy place." width="720" height="479" class="size-large wp-image-2408" /> Chinatown in Bangkok a very busy place.[/caption]
 
-[caption id="attachment_2413" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/06/the-tiger-kingdom-20140603-1024x682.jpg" alt="He&#039;s thinking about meat." width="720" height="479" class="size-large wp-image-2413" /> He's thinking about meat.[/caption]
+[caption id="attachment_2413" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/06/the-tiger-kingdom-20140603-1024x682.jpg" alt="He’s thinking about meat." width="720" height="479" class="size-large wp-image-2413" /> He's thinking about meat.[/caption]
 
-[caption id="attachment_2412" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/06/The-doi-suthep-temple-20140608-1024x682.jpg" alt="The doi suthep temple is on top of an hill next to Chiang Mai city. You&#039;ll get the most beautiful view from up there." width="720" height="479" class="size-large wp-image-2412" /> The doi suthep temple is on top of an hill next to Chiang Mai city. You'll get the most beautiful view from up there.[/caption]
+[caption id="attachment_2412" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/06/The-doi-suthep-temple-20140608-1024x682.jpg" alt="The doi suthep temple is on top of an hill next to Chiang Mai city. You’ll get the most beautiful view from up there." width="720" height="479" class="size-large wp-image-2412" /> The doi suthep temple is on top of an hill next to Chiang Mai city. You'll get the most beautiful view from up there.[/caption]
 
 [caption id="attachment_2411" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/06/Northern-hill-tribe-village-20140604-1024x682.jpg" alt="In this village of the northern hill tribes we spent our first night. A beautiful and peaceful place." width="720" height="479" class="size-large wp-image-2411" /> In this village of the northern hill tribes we spent our first night. A beautiful and peaceful place.[/caption]
 

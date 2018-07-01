@@ -28,29 +28,29 @@ The script has the same structure as the license management script, feel free as
 <!--more-->
 
 [code lang="ps"]
-&lt;#
+<#
 $Metadata = @{
-    Title = &quot;Set Office365 User Rights&quot;
-    Filename = &quot;Set-O365UserRights.ps1&quot;
-    Description = @&quot;
+    Title = "Set Office365 User Rights"
+    Filename = "Set-O365UserRights.ps1"
+    Description = @"
 Manage Office365 portal access rights with ActiveDirectory groups.
 Assign Administration roles to the members of specified AD groups or by a users userprincipalname.
-&quot;@
-    Tags = &quot;powershell, activedirectory, office365, user, rights&quot;
-    Project = &quot;&quot;
-    Author = &quot;Janik von Rotz&quot;
-    AuthorContact = &quot;https://janikvonrotz.ch&quot;
-    CreateDate = &quot;2013-08-13&quot;
-    LastEditDate = &quot;2013-09-26&quot;
-    Url = &quot;https://gist.github.com/janikvonrotz/6218401&quot;
-    Version = &quot;3.0.0&quot;
+"@
+    Tags = "powershell, activedirectory, office365, user, rights"
+    Project = ""
+    Author = "Janik von Rotz"
+    AuthorContact = "https://janikvonrotz.ch"
+    CreateDate = "2013-08-13"
+    LastEditDate = "2013-09-26"
+    Url = "https://gist.github.com/janikvonrotz/6218401"
+    Version = "3.0.0"
     License = @'
 This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Switzerland License.
 To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/3.0/ch/ or
 send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 '@
 }
-#&gt;
+#>
 
 try{
 
@@ -59,12 +59,12 @@ try{
     #--------------------------------------------------#
 
     $MsolRoleConfig = @{
-        ADGroup = &quot;S-1-5-21-1744926098-708661255-2033415169-37011&quot; # O365F_Billing Administrator
-        MsolRoleName = &quot;Billing Administrator&quot; # Get-MsolRole
+        ADGroup = "S-1-5-21-1744926098-708661255-2033415169-37011" # O365F_Billing Administrator
+        MsolRoleName = "Billing Administrator" # Get-MsolRole
     },
     @{
-        User = &quot;admin@vbluzern.onmicrosoft.com&quot; # O365F_Billing Administrator
-        MsolRoleName = &quot;Company Administrator&quot; # Get-MsolRole
+        User = "admin@vbluzern.onmicrosoft.com" # O365F_Billing Administrator
+        MsolRoleName = "Company Administrator" # Get-MsolRole
     }
 
     #--------------------------------------------------#
@@ -79,17 +79,17 @@ try{
     #--------------------------------------------------#
 
     # import credentials
-    $Credential = Import-PSCredential $(Get-ChildItem -Path $PSconfigs.Path -Filter &quot;Office365.credentials.config.xml&quot; -Recurse).FullName
+    $Credential = Import-PSCredential $(Get-ChildItem -Path $PSconfigs.Path -Filter "Office365.credentials.config.xml" -Recurse).FullName
 
     # connect to office365
     Connect-MsolService -Credential $Credential
 
     $UserAndMsolRole = @(
-        ($MsolRoleConfig | where{$_.ADGroup -ne $null} | %{$MsolRole = $_.MsolRoleName; $MsolRole = (Get-MsolRole | where{$_.Name -eq $MsolRole}); Get-ADGroupMember $_.ADGroup -Recursive |Get-ADUser | select UserPrincipalName, @{Name = &quot;MsolRole&quot;; Expression={$MsolRole}}}),
-        ($MsolRoleConfig | where{$_.User -ne $null}| %{$MsolRole = $_.MsolRoleName; $_ | select @{L = &quot;UserPrincipalName&quot;; E = {$_.User}},@{L = &quot;MsolRole&quot;; E = {Get-MsolRole | where{$_.Name -eq $MsolRole}}}})
+        ($MsolRoleConfig | where{$_.ADGroup -ne $null} | %{$MsolRole = $_.MsolRoleName; $MsolRole = (Get-MsolRole | where{$_.Name -eq $MsolRole}); Get-ADGroupMember $_.ADGroup -Recursive |Get-ADUser | select UserPrincipalName, @{Name = "MsolRole"; Expression={$MsolRole}}}),
+        ($MsolRoleConfig | where{$_.User -ne $null}| %{$MsolRole = $_.MsolRoleName; $_ | select @{L = "UserPrincipalName"; E = {$_.User}},@{L = "MsolRole"; E = {Get-MsolRole | where{$_.Name -eq $MsolRole}}}})
     )
 
-    $MsolRoleMembers = Get-MsolRole | %{$MsolRole = $_; Get-MsolRoleMember -RoleObjectId $_.ObjectID -MemberObjectTypes User | where{$_.isLicensed} | select @{L = &quot;UserPrincipalName&quot;; E = {$_.EmailAddress}},@{L = &quot;MsolRole&quot;; E = {$MsolRole}}}
+    $MsolRoleMembers = Get-MsolRole | %{$MsolRole = $_; Get-MsolRoleMember -RoleObjectId $_.ObjectID -MemberObjectTypes User | where{$_.isLicensed} | select @{L = "UserPrincipalName"; E = {$_.EmailAddress}},@{L = "MsolRole"; E = {$MsolRole}}}
 
     (Get-MsolUser -All) | %{
 
@@ -101,35 +101,35 @@ try{
 
             if(($ToAssign) -and ($AlreadyAssigned.MsolRole.ObjectId -ne $ToAssign.MsolRole.ObjectId)){
 
-                Write-Host &quot;Replace role: $($AlreadyAssigned.MsolRole.Name) with: $($ToAssign.MsolRole.Name) for: $($MsolUser.UserPrincipalName).&quot;
+                Write-Host "Replace role: $($AlreadyAssigned.MsolRole.Name) with: $($ToAssign.MsolRole.Name) for: $($MsolUser.UserPrincipalName)."
                 Remove-MsolRoleMember -RoleMemberEmailAddress $MsolUser.UserPrincipalName -RoleMemberType User -RoleName $AlreadyAssigned.MsolRole.Name
                 Add-MsolRoleMember -RoleMemberEmailAddress $MsolUser.UserPrincipalName -RoleMemberType User -RoleName $ToAssign.MsolRole.Name
 
             }elseif($ToAssign -eq $null){
 
-                Write-Host &quot;Remove role: $($AlreadyAssigned.MsolRole.Name) for: $($MsolUser.UserPrincipalName).&quot;
+                Write-Host "Remove role: $($AlreadyAssigned.MsolRole.Name) for: $($MsolUser.UserPrincipalName)."
                 Remove-MsolRoleMember -RoleMemberEmailAddress $MsolUser.UserPrincipalName -RoleMemberType User -RoleName $AlreadyAssigned.MsolRole.Name
 
             }else{
 
-                Write-Host &quot;Role: $($AlreadyAssigned.MsolRole.Name) for: $($MsolUser.UserPrincipalName) is already assigned.&quot;
+                Write-Host "Role: $($AlreadyAssigned.MsolRole.Name) for: $($MsolUser.UserPrincipalName) is already assigned."
 
             }
         }elseif($ToAssign -and $MsolUser.IsLicensed){
 
-            Write-Host &quot;Assign role: $($ToAssign.MsolRole.Name) for: $($MsolUser.UserPrincipalName).&quot;
+            Write-Host "Assign role: $($ToAssign.MsolRole.Name) for: $($MsolUser.UserPrincipalName)."
             Add-MsolRoleMember -RoleMemberEmailAddress $MsolUser.UserPrincipalName -RoleMemberType User -RoleName $ToAssign.MsolRole.Name
 
         }elseif($ToAssign){
 
-            throw &quot;Not possible to assign role: $($ToAssign.MsolRole.Name) user: $($MsolUser.UserPrincipalName) has to be licensed.&quot;
+            throw "Not possible to assign role: $($ToAssign.MsolRole.Name) user: $($MsolUser.UserPrincipalName) has to be licensed."
 
         }
     }
 
 }catch{
 
-    Send-PPErrorReport -FileName &quot;DirSync.mail.config.xml&quot; -ScriptName $MyInvocation.InvocationName
+    Send-PPErrorReport -FileName "DirSync.mail.config.xml" -ScriptName $MyInvocation.InvocationName
 
 }[/code]
 

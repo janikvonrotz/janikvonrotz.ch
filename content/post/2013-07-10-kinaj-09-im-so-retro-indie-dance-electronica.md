@@ -1,6 +1,6 @@
 ---
 id: 264
-title: 'Kinaj 09 &#8211; I&#039;m so RETRO (Indie Dance, Electronica)'
+title: 'Kinaj 09 - I’m so RETRO (Indie Dance, Electronica)'
 date: 2013-07-10T06:55:46+00:00
 author: Janik von Rotz
 layout: post

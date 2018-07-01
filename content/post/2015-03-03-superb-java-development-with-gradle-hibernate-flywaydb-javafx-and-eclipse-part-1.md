@@ -1,6 +1,6 @@
 ---
 id: 3038
-title: 'Superb Java development with Gradle, Hibernate, FlywayDB, JavaFX and Eclipse &#8211; Part 1'
+title: 'Superb Java development with Gradle, Hibernate, FlywayDB, JavaFX and Eclipse - Part 1'
 date: 2015-03-03T23:53:04+00:00
 author: Janik von Rotz
 layout: post
@@ -176,11 +176,11 @@ package ch.hslu.issueman;
 import java.io.Serializable;
 import java.util.List;
 
-public interface DAO&lt;T, Id extends Serializable&gt; {
+public interface DAO<T, Id extends Serializable> {
 	
 	public void persist(T t);
 	public T getById(Id id);
-	public List&lt;T&gt; getAll();
+	public List<T> getAll();
 	public void update(T t);
 	public void delete(T t);
 	public void deleteAll();
@@ -207,13 +207,13 @@ import org.hibernate.Transaction;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 
-public class Controller&lt;T, Id extends Serializable&gt; implements DAO&lt;T, Id&gt; {
+public class Controller<T, Id extends Serializable> implements DAO<T, Id> {
 
-	private final Class&lt;T&gt; clazz;
+	private final Class<T> clazz;
 	private Session currentSession;
 	private Transaction currentTransaction;
 	
-	protected Controller(Class&lt;T&gt; clazz) {
+	protected Controller(Class<T> clazz) {
         this.clazz = clazz;
     }
 [/code]
@@ -273,16 +273,16 @@ Below you'll see that we will use `CurrentSession` to read from the database and
 
 	public T getById(Id id) {
 		openCurrentSession();
-		@SuppressWarnings(&quot;unchecked&quot;)
+		@SuppressWarnings("unchecked")
 		T t = (T) getCurrentSession().get(clazz, id);
 		closeCurrentSession();
 		return t;
 	}
 
-	@SuppressWarnings(&quot;unchecked&quot;)
-	public List&lt;T&gt; getAll() {
+	@SuppressWarnings("unchecked")
+	public List<T> getAll() {
 		openCurrentSession();
-		List&lt;T&gt; list = (List&lt;T&gt;) getCurrentSession().createQuery(&quot;from &quot; + clazz.getName()).list();
+		List<T> list = (List<T>) getCurrentSession().createQuery("from " + clazz.getName()).list();
 		closeCurrentSession();
 		return list;
 	}
@@ -301,22 +301,22 @@ Below you'll see that we will use `CurrentSession` to read from the database and
 	
 	public void deleteAll() {
 		openCurrentSessionwithTransaction();
-		List&lt;T&gt; people = getAll();
+		List<T> people = getAll();
 		for (T t : people) {
 			delete(t);
 		}
 		closeCurrentSessionwithTransaction();
 	}
 
-	public void printToJson(List&lt;T&gt; l) {
+	public void printToJson(List<T> l) {
 		
 		int size = l.size();
-		System.out.println(&quot;[&quot;);
+		System.out.println("[");
 		for (T i : l) {
 			System.out.println(((Model) i).toJson());
-			if (--size != 0){System.out.print(&quot;,&quot;);}
+			if (--size != 0){System.out.print(",");}
 		}
-		System.out.print(&quot;]&quot;);			
+		System.out.print("]");			
 	}
 }
 [/code]
@@ -361,15 +361,15 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name=&quot;person&quot;)
+@Table(name="person")
 public class Person implements Model{
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name=&quot;id&quot;)
+	@Column(name="id")
     private int id; 
 	
-	@Column(name=&quot;name&quot;)
+	@Column(name="name")
     private String name;
 	
 	public Person() {}
@@ -391,7 +391,7 @@ public class Person implements Model{
 	}
 	
 	public String toJson() {
-		return &quot;{\&quot;id\&quot;: \&quot;&quot; + getId() + &quot;\&quot;, \&quot;name\&quot;:\&quot;&quot; + getName() + &quot;\&quot;}&quot;;
+		return "{\"id\": \"" + getId() + "\", \"name\":\"" + getName() + "\"}";
 	}
 
 } 
@@ -404,22 +404,22 @@ Those @-Annotation will tell hibbernate which column belongs to which object att
 **hibernate.cfg.xml**
 
 [code lang="xml"]
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-&lt;!DOCTYPE hibernate-configuration SYSTEM 
-&quot;http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 
-&lt;hibernate-configuration&gt;
-   &lt;session-factory&gt;
-   &lt;property name=&quot;hibernate.dialect&quot;&gt;org.hibernate.dialect.MySQLDialect&lt;/property&gt;
-   &lt;property name=&quot;hibernate.connection.driver_class&quot;&gt;com.mysql.jdbc.Driver&lt;/property&gt;
-   &lt;property name=&quot;hibernate.connection.url&quot;&gt;jdbc:mysql://localhost/issuemanager&lt;/property&gt;
-   &lt;property name=&quot;hibernate.connection.username&quot;&gt;issuemanager&lt;/property&gt;
-   &lt;property name=&quot;hibernate.connection.password&quot;&gt;issuemanager&lt;/property&gt;
-   &lt;property name=&quot;show_sql&quot;&gt;true&lt;/property&gt;
-   &lt;property name=&quot;hibernate.current_session_context_class&quot;&gt;thread&lt;/property&gt;
-   &lt;mapping class=&quot;ch.hslu.issueman.Person&quot;/&gt;
-&lt;/session-factory&gt;
-&lt;/hibernate-configuration&gt;
+<hibernate-configuration>
+   <session-factory>
+   <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+   <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+   <property name="hibernate.connection.url">jdbc:mysql://localhost/issuemanager</property>
+   <property name="hibernate.connection.username">issuemanager</property>
+   <property name="hibernate.connection.password">issuemanager</property>
+   <property name="show_sql">true</property>
+   <property name="hibernate.current_session_context_class">thread</property>
+   <mapping class="ch.hslu.issueman.Person"/>
+</session-factory>
+</hibernate-configuration>
 [/code]
 
 Add the same values as already used to configure flyway. Very important is the mapping property which finalizes the mapping process of the model with database table.
@@ -437,12 +437,12 @@ package ch.hslu.issueman;
 
 import java.util.List;
 
-public class PersonController implements DAO&lt;Person, Integer&gt;{
+public class PersonController implements DAO<Person, Integer>{
 	
-	private static Controller&lt;Person, Integer&gt; controller;
+	private static Controller<Person, Integer> controller;
 	
 	public PersonController() {
-		controller = new Controller&lt;Person, Integer&gt;(Person.class);
+		controller = new Controller<Person, Integer>(Person.class);
 	}
 	
 	public void persist(Person person) {
@@ -454,8 +454,8 @@ public class PersonController implements DAO&lt;Person, Integer&gt;{
 		return person;
 	}
 
-	public List&lt;Person&gt; getAll() {
-		List&lt;Person&gt; people = controller.getAll();
+	public List<Person> getAll() {
+		List<Person> people = controller.getAll();
 		return people;
 	}
 
@@ -475,7 +475,7 @@ public class PersonController implements DAO&lt;Person, Integer&gt;{
 		controller.deleteAll();
 	}
 
-	public void printToJson(List&lt;Person&gt; people) {
+	public void printToJson(List<Person> people) {
 		controller.printToJson(people);	
 	}
 }
@@ -498,9 +498,9 @@ public class App {
 		PersonController PersonController = new PersonController();
 //		PersonController.deleteAll();
 		
-//		Person person4 = new Person(&quot;Fyodor Dostoevsky&quot;);
-//		Person person5 = new Person(&quot;Leo Tolstoy&quot;);
-//		Person person6 = new Person(&quot;Jane Austen&quot;);
+//		Person person4 = new Person("Fyodor Dostoevsky");
+//		Person person5 = new Person("Leo Tolstoy");
+//		Person person6 = new Person("Jane Austen");
 //		
 //		PersonController.persist(person4);
 //		PersonController.persist(person5);
@@ -508,7 +508,7 @@ public class App {
 
 //		PersonController.deleteById(6);
 		
-//		person4.setName(&quot;Frodo&quot;);
+//		person4.setName("Frodo");
 //		PersonController.update(person4);
 				
 		PersonController.printToJson(PersonController.getAll());
@@ -528,9 +528,9 @@ You should see a lot of hibernate blabla and of course the Json outpout of the p
 [code]
 Hibernate: select person0_.id as id1_0_, person0_.name as name2_0_ from person person0_
 [
-{&quot;id&quot;: &quot;1&quot;, &quot;name&quot;:&quot;Axel&quot;}
-,{&quot;id&quot;: &quot;2&quot;, &quot;name&quot;:&quot;Mr. Foo&quot;}
-,{&quot;id&quot;: &quot;3&quot;, &quot;name&quot;:&quot;Ms. Bar&quot;}
+{"id": "1", "name":"Axel"}
+,{"id": "2", "name":"Mr. Foo"}
+,{"id": "3", "name":"Ms. Bar"}
 ]
 [/code]
 

@@ -54,16 +54,16 @@ Next we tell babel how to convert the code. For this create a `.babelrc` file in
 
 [code]
 {
-  &quot;presets&quot;: [&quot;es2015&quot;, &quot;react&quot;]
+  "presets": ["es2015", "react"]
 }
 [/code]
 
 To publish and transpile our react component code add two scripts to the `package.json` file.
 
 [code]
-&quot;scripts&quot;: {
-  &quot;prepublish&quot;: &quot;npm run build&quot;,
-  &quot;build&quot;: &quot;babel ./src --out-dir ./dist&quot;
+"scripts": {
+  "prepublish": "npm run build",
+  "build": "babel ./src --out-dir ./dist"
 },
 [/code]
 
@@ -77,7 +77,7 @@ import React from 'react';
 export default class JelloWorld extends React.Component {
   render() {
     return (
-      &lt;div&gt;Hello world!!&lt;/div&gt;
+      <div>Hello world!!</div>
     )
   }
 }
@@ -96,7 +96,7 @@ export { HelloWorld };
 Make sure to update the main attribute in the `package.json` file.
 
 [code]
-&quot;main&quot;: &quot;./dist/index.js&quot;,
+"main": "./dist/index.js",
 [/code]
 
 When running `npm publish` it will automatically transpile the scripts and publish it to the npm repository.

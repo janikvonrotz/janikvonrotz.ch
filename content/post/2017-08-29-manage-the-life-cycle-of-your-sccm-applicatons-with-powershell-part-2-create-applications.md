@@ -1,6 +1,6 @@
 ---
 id: 4496
-title: 'Manage the life cycle of your SCCM applicatons with PowerShell &#8211; Part 2 Create Applications'
+title: 'Manage the life cycle of your SCCM applicatons with PowerShell - Part 2 Create Applications'
 date: 2017-08-29T15:07:47+00:00
 author: Janik von Rotz
 layout: post
@@ -41,122 +41,122 @@ The script uses a config file. In there all information are stored required to c
 
 [code lang="powershell"]
 $AppConfigs = @{
-    Name = &quot;7-Zip&quot;
-    Description = &quot;7-Zip ist ein freies Datenkompressionsprogramm mit einer hohen Kompressionsrate.&quot;
-    Version = &quot;17.00 beta&quot;
-    Category = &quot;File Manager&quot;
-    Company = &quot;7-Zip&quot;
-    Publisher = &quot;Igor Pavlov&quot;
-    Url = &quot;http://www.7-zip.de/&quot;
+    Name = "7-Zip"
+    Description = "7-Zip ist ein freies Datenkompressionsprogramm mit einer hohen Kompressionsrate."
+    Version = "17.00 beta"
+    Category = "File Manager"
+    Company = "7-Zip"
+    Publisher = "Igor Pavlov"
+    Url = "http://www.7-zip.de/"
     Deploy = @{
-        Type = &quot;msi&quot;
-        Install = &quot;7z1700-x64.msi&quot;
-        InstallationBehaviorType = &quot;InstallForSystem&quot;
-        LogonRequirementType = &quot;WhereOrNotUserLoggedOn&quot;
+        Type = "msi"
+        Install = "7z1700-x64.msi"
+        InstallationBehaviorType = "InstallForSystem"
+        LogonRequirementType = "WhereOrNotUserLoggedOn"
     }
     Update = @{
-        Supersedes = &quot;7-Zip (16.04)&quot;
+        Supersedes = "7-Zip (16.04)"
         IsUninstall = $true
     }
 },
 @{
-    Name = &quot;CM Console&quot;
-    Description = &quot;System Center Configuration Manager Console.&quot;
-    Version = &quot;1.0.0&quot;
-    Category = &quot;Configuration Manager&quot;
-    Company = &quot;Microsoft&quot;
-    Publisher = &quot;Microsoft&quot;
-    Url = &quot;https://www.microsoft.com/en-us/cloud-platform/system-center-configuration-manager&quot;
+    Name = "CM Console"
+    Description = "System Center Configuration Manager Console."
+    Version = "1.0.0"
+    Category = "Configuration Manager"
+    Company = "Microsoft"
+    Publisher = "Microsoft"
+    Url = "https://www.microsoft.com/en-us/cloud-platform/system-center-configuration-manager"
     Deploy = @{
-        Type = &quot;script&quot;
-        Install = 'ConsoleSetup.exe /q TargetDir=&quot;C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole&quot; EnableSQM=1 DefaultSiteServerName=owspap08.go4ksow.net'
-        Uninstall = 'ConsoleSetup.exe /q TargetDir=&quot;C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole&quot; /uninstall'
-        InstallationBehaviorType = &quot;InstallForSystem&quot;
-        LogonRequirementType = &quot;WhereOrNotUserLoggedOn&quot;
+        Type = "script"
+        Install = 'ConsoleSetup.exe /q TargetDir="C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole" EnableSQM=1 DefaultSiteServerName=owspap08.go4ksow.net'
+        Uninstall = 'ConsoleSetup.exe /q TargetDir="C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole" /uninstall'
+        InstallationBehaviorType = "InstallForSystem"
+        LogonRequirementType = "WhereOrNotUserLoggedOn"
         DetectionScript =  @'
-if (Test-Path &quot;C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\bin\Microsoft.ConfigurationManagement.exe&quot;) {
-        Write-Host &quot;Installed&quot;
+if (Test-Path "C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\bin\Microsoft.ConfigurationManagement.exe") {
+        Write-Host "Installed"
 } else {
 }
 '@
     }
 },
 @{
-    Name = &quot;7-Zip&quot;
-    Description = &quot;7-Zip ist ein freies Datenkompressionsprogramm mit einer hohen Kompressionsrate.&quot;
-    Version = &quot;16.04&quot;
-    Category = &quot;File Manager&quot;
-    Company = &quot;7-Zip&quot;
-    Publisher = &quot;Igor Pavlov&quot;
-    Url = &quot;http://www.7-zip.de/&quot;
+    Name = "7-Zip"
+    Description = "7-Zip ist ein freies Datenkompressionsprogramm mit einer hohen Kompressionsrate."
+    Version = "16.04"
+    Category = "File Manager"
+    Company = "7-Zip"
+    Publisher = "Igor Pavlov"
+    Url = "http://www.7-zip.de/"
     Deploy = @{
-        Type = &quot;msi&quot;
-        Install = &quot;7z1604-x64.msi&quot;
-        InstallationBehaviorType = &quot;InstallForSystem&quot;
-        LogonRequirementType = &quot;WhereOrNotUserLoggedOn&quot;
+        Type = "msi"
+        Install = "7z1604-x64.msi"
+        InstallationBehaviorType = "InstallForSystem"
+        LogonRequirementType = "WhereOrNotUserLoggedOn"
     }
 },
 @{
-    Name = &quot;VLC Script&quot;
-    Description = &quot;VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.&quot;
-    Version = &quot;2.2.6&quot;
-    Category = &quot;Video Player&quot;
-    Company = &quot;VideoLAN&quot;
-    Publisher = &quot;VideoLAN Organization&quot;
-    Url = &quot;https://www.videolan.org/&quot;
+    Name = "VLC Script"
+    Description = "VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols."
+    Version = "2.2.6"
+    Category = "Video Player"
+    Company = "VideoLAN"
+    Publisher = "VideoLAN Organization"
+    Url = "https://www.videolan.org/"
     Deploy = @{
-        Type = &quot;powershell&quot;
-        Install = &quot;powershell.exe -ExecutionPolicy Bypass -File .\Application.ps1 -Install&quot;
-        Uninstall = &quot;powershell.exe -ExecutionPolicy Bypass -File .\Application.ps1 -Uninstall&quot;
-        InstallationBehaviorType = &quot;InstallForSystem&quot;
-        LogonRequirementType = &quot;WhereOrNotUserLoggedOn&quot;
+        Type = "powershell"
+        Install = "powershell.exe -ExecutionPolicy Bypass -File .\Application.ps1 -Install"
+        Uninstall = "powershell.exe -ExecutionPolicy Bypass -File .\Application.ps1 -Uninstall"
+        InstallationBehaviorType = "InstallForSystem"
+        LogonRequirementType = "WhereOrNotUserLoggedOn"
         DetectionScript =  @'
-if (Test-Path &quot;C:\Program Files (x86)\VideoLAN\VLC\vlc.exe&quot;) {
-        Write-Host &quot;Installed&quot;
+if (Test-Path "C:\Program Files (x86)\VideoLAN\VLC\vlc.exe") {
+        Write-Host "Installed"
 } else {
 }
 '@
     }
 },
 @{
-    Name = &quot;VLC&quot;
-    Description = &quot;VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.&quot;
-    Version = &quot;2.2.6&quot;
-    Category = &quot;Video Player&quot;
-    Company = &quot;VideoLAN&quot;
-    Publisher = &quot;VideoLAN Organization&quot;
-    Url = &quot;https://www.videolan.org/&quot;
+    Name = "VLC"
+    Description = "VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols."
+    Version = "2.2.6"
+    Category = "Video Player"
+    Company = "VideoLAN"
+    Publisher = "VideoLAN Organization"
+    Url = "https://www.videolan.org/"
     Deploy = @{
-        Type = &quot;script&quot;
-        Install = &quot;vlc-2.2.6-win32.exe /S&quot;
-        Uninstall = '&quot;C:\Program Files (x86)\VideoLAN\VLC\uninstall.exe&quot; /S'
-        InstallationBehaviorType = &quot;InstallForSystem&quot;
-        LogonRequirementType = &quot;WhereOrNotUserLoggedOn&quot;
+        Type = "script"
+        Install = "vlc-2.2.6-win32.exe /S"
+        Uninstall = '"C:\Program Files (x86)\VideoLAN\VLC\uninstall.exe" /S'
+        InstallationBehaviorType = "InstallForSystem"
+        LogonRequirementType = "WhereOrNotUserLoggedOn"
         DetectionScript =  @'
-if (Test-Path &quot;C:\Program Files (x86)\VideoLAN\VLC\vlc.exe&quot;) {
-        Write-Host &quot;Installed&quot;
+if (Test-Path "C:\Program Files (x86)\VideoLAN\VLC\vlc.exe") {
+        Write-Host "Installed"
 } else {
 }
 '@
     }
 },
 @{
-    Name = &quot;Greenshot&quot;
-    Description = &quot;Greenshot is the most awesome tool for making screenshots you can get on your Windows PC.&quot;
-    Version = &quot;1.2.9.129&quot;
-    Category = &quot;Utility&quot;
-    Company = &quot;Greenshot&quot;
-    Publisher = &quot;Jens Klingen&quot;
-    Url = &quot;http://getgreenshot.org/&quot;
+    Name = "Greenshot"
+    Description = "Greenshot is the most awesome tool for making screenshots you can get on your Windows PC."
+    Version = "1.2.9.129"
+    Category = "Utility"
+    Company = "Greenshot"
+    Publisher = "Jens Klingen"
+    Url = "http://getgreenshot.org/"
     Deploy = @{
-        Type = &quot;script&quot;
+        Type = "script"
         Install = 'Greenshot-INSTALLER-1.2.9.129-RELEASE.exe /VERYSILENT /NORESTART'
-        Uninstall = '&quot;C:\Program Files\Greenshot\unins000.exe&quot; /VERYSILENT /NORESTART'
-        InstallationBehaviorType = &quot;InstallForSystem&quot;
-        LogonRequirementType = &quot;WhereOrNotUserLoggedOn&quot;
+        Uninstall = '"C:\Program Files\Greenshot\unins000.exe" /VERYSILENT /NORESTART'
+        InstallationBehaviorType = "InstallForSystem"
+        LogonRequirementType = "WhereOrNotUserLoggedOn"
         DetectionScript =  @'
-if (Test-Path &quot;C:\Program Files\Greenshot\Greenshot.exe&quot;) {
-        Write-Host &quot;Installed&quot;
+if (Test-Path "C:\Program Files\Greenshot\Greenshot.exe") {
+        Write-Host "Installed"
 } else {
 }
 '@
@@ -171,14 +171,14 @@ The config file is used by the script to create and configure the applications.
 **Add-SCCMApplications.ps1**
 
 [code lang="powershell"]
-Import-Module &quot;C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\bin\ConfigurationManager.psd1&quot;
+Import-Module "C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\bin\ConfigurationManager.psd1"
 Import-Module ActiveDirectory
-cd &quot;$((Get-PSProvider | Where-Object {$_.Name -eq &quot;CMSite&quot;}).Drives.Name):&quot;
+cd "$((Get-PSProvider | Where-Object {$_.Name -eq "CMSite"}).Drives.Name):"
 
-$CM_OU = &quot;OU=SCCM,OU=AccessGroups,OU=Admin,DC=go4ksow,DC=net&quot;
-$PackageSource = &quot;D:\SCCM\Applications\&quot;
-$HostName = &quot;owspap08&quot;
-. &quot;$PSScriptRoot\AppConfigs.ps1&quot;
+$CM_OU = "OU=SCCM,OU=AccessGroups,OU=Admin,DC=go4ksow,DC=net"
+$PackageSource = "D:\SCCM\Applications\"
+$HostName = "owspap08"
+. "$PSScriptRoot\AppConfigs.ps1"
 
 $Domain = Get-ADDomain
 $CMApplications = Get-CMApplication
@@ -188,18 +188,18 @@ $CMUserCollections = Get-CMUserCollection
 
 $AppConfigs | ForEach-Object {
     $AppConfig = $_
-    $AppConfig.AppName = $AppConfig.Name + &quot; (&quot; + $AppConfig.Version + &quot;)&quot;
-    $ContentLocation = &quot;\\$HostName\PackageSource\Applications\$($AppConfig.Company)\$($AppConfig.Name)\$($AppConfig.Version)&quot;
-    $ADGroupName = &quot;DL_CM_$($AppConfig.AppName)&quot;
-    $DeviceCollectionName =  $AppConfig.AppName + &quot; Devices&quot;
-    $UserCollectionName =  $AppConfig.AppName + &quot; Users&quot;
+    $AppConfig.AppName = $AppConfig.Name + " (" + $AppConfig.Version + ")"
+    $ContentLocation = "\\$HostName\PackageSource\Applications\$($AppConfig.Company)\$($AppConfig.Name)\$($AppConfig.Version)"
+    $ADGroupName = "DL_CM_$($AppConfig.AppName)"
+    $DeviceCollectionName =  $AppConfig.AppName + " Devices"
+    $UserCollectionName =  $AppConfig.AppName + " Users"
 
-    Write-Host &quot;`nAdd CM Application $($AppConfig.AppName)`n&quot;
+    Write-Host "`nAdd CM Application $($AppConfig.AppName)`n"
 
     $App = $CMApplications | Where-Object{ $_.LocalizedDisplayName -eq $AppConfig.AppName}
     if(-not $App) {
-        Write-Host &quot;Create the application: $($AppConfig.AppName).&quot;
-        $IconLocationFile = Join-Path $PackageSource &quot;icon.jpg&quot;
+        Write-Host "Create the application: $($AppConfig.AppName)."
+        $IconLocationFile = Join-Path $PackageSource "icon.jpg"
         $App = New-CMApplication -Name $AppConfig.AppName `
             -LocalizedDescription $AppConfig.Description `
             -SoftwareVersion $AppConfig.Version `
@@ -207,63 +207,63 @@ $AppConfigs | ForEach-Object {
             -LinkText $AppConfig.Url `
             -IconLocationFile $IconLocationFile
     } else {
-        Write-Warning &quot;Application: $($AppConfig.AppName) already exists.&quot;
+        Write-Warning "Application: $($AppConfig.AppName) already exists."
     }
 
     $Category = $CMCategories | Where-Object{ $_.LocalizedCategoryInstanceName -eq $AppConfig.Category }
     if(-not $Category) {
-        Write-Host &quot;Create the application category: $($AppConfig.Category).&quot;
+        Write-Host "Create the application category: $($AppConfig.Category)."
         $Category = New-CMCategory -CategoryType AppCategories -Name $AppConfig.Category
     } else {
-        Write-Warning &quot;Category: $($AppConfig.Category) already exists.&quot;
+        Write-Warning "Category: $($AppConfig.Category) already exists."
     }
 
     $CategoryIsSet = $null
     $CategoryIsSet = $App.LocalizedCategoryInstanceNames[0] -eq $Category.LocalizedCategoryInstanceName
     if(-not $CategoryIsSet) {
-        Write-Host &quot;Set application category.&quot;
+        Write-Host "Set application category."
         $App | Set-CMApplication -AppCategory $Category.LocalizedCategoryInstanceName
     } else {
-        Write-Warning &quot;Application category is already set.&quot;
+        Write-Warning "Application category is already set."
     }
 
     $Path = $null
     $Path = (Join-Path $PackageSource $AppConfig.Company)
     if(-not (Test-Path -Path $Path)) {
-        Write-Host &quot;Create company application folder.&quot;
+        Write-Host "Create company application folder."
         New-Item -Path $Path -ItemType Directory | Out-Null
     }
     $Path = (Join-Path $Path $AppConfig.Name)
     if(-not (Test-Path -Path $Path)) {
-        Write-Host &quot;Create application folder.&quot;
+        Write-Host "Create application folder."
         New-Item -Path $Path  -ItemType Directory | Out-Null
     }
     $Path = (Join-Path $Path $AppConfig.Version)
     if(-not (Test-Path -Path $Path)) {
-        Write-Host &quot;Create application version folder.&quot;
+        Write-Host "Create application version folder."
         New-Item -Path $Path  -ItemType Directory | Out-Null
     }
 
     $ADGroup = $null
     $ADGroup = Get-ADGroup $ADGroupName
     if(-not $ADGroup){
-        Write-Host &quot;Add AD group: $ADGroupName.&quot;
+        Write-Host "Add AD group: $ADGroupName."
         $ADGroup = New-ADGroup -Name $ADGroupName -GroupScope DomainLocal -Path $CM_OU
     } else {
-        Write-Warning &quot;AD group: $ADGroupName already exists.&quot;
+        Write-Warning "AD group: $ADGroupName already exists."
     }
 
-    if($AppConfig.Deploy.type -eq &quot;script&quot;) {
+    if($AppConfig.Deploy.type -eq "script") {
 
         $deployType = Get-CMDeploymentType -ApplicationName $AppConfig.AppName
         if(-not $DeployType){
-            Write-Host &quot;Add script deployment type.&quot;
+            Write-Host "Add script deployment type."
 
             $param = @{
                 ApplicationName = $AppConfig.AppName
                 DeploymentTypeName = $AppConfig.AppName
                 ScriptText = $AppConfig.Deploy.DetectionScript
-                ScriptLanguage = &quot;PowerShell&quot;
+                ScriptLanguage = "PowerShell"
                 ContentLocation = $ContentLocation
                 InstallCommand = $AppConfig.Deploy.Install
                 UninstallCommand = $AppConfig.Deploy.Uninstall
@@ -273,15 +273,15 @@ $AppConfigs | ForEach-Object {
             }
            $DeployType = Add-CMScriptDeploymentType @param
         } else {
-            Write-Warning &quot;Script deployment type already exists.&quot;
+            Write-Warning "Script deployment type already exists."
         }
     }
 
-    if($AppConfig.Deploy.type -eq &quot;msi&quot;) {
+    if($AppConfig.Deploy.type -eq "msi") {
 
         $DeployType = Get-CMDeploymentType -ApplicationName $AppConfig.AppName
         if(-not $DeployType){
-            Write-Host &quot;Add default deployment type.&quot;
+            Write-Host "Add default deployment type."
 
             $param = @{
                 ApplicationName = $AppConfig.AppName
@@ -293,21 +293,21 @@ $AppConfigs | ForEach-Object {
             }
             $DeployType = Add-CMMsiDeploymentType @param
         } else {
-            Write-Warning &quot;Script deployment type already exists.&quot;
+            Write-Warning "Script deployment type already exists."
         }
     }
 
-    if($AppConfig.Deploy.type -eq &quot;powershell&quot;) {
+    if($AppConfig.Deploy.type -eq "powershell") {
 
         $deployType = Get-CMDeploymentType -ApplicationName $AppConfig.AppName
         if(-not $DeployType){
-            Write-Host &quot;Add powershell deployment type.&quot;
+            Write-Host "Add powershell deployment type."
 
             $param = @{
                 ApplicationName = $AppConfig.AppName
                 DeploymentTypeName = $AppConfig.AppName
                 ScriptText = $AppConfig.Deploy.DetectionScript
-                ScriptLanguage = &quot;PowerShell&quot;
+                ScriptLanguage = "PowerShell"
                 ContentLocation = $ContentLocation
                 InstallCommand = $AppConfig.Deploy.Install
                 UninstallCommand = $AppConfig.Deploy.Uninstall
@@ -316,12 +316,12 @@ $AppConfigs | ForEach-Object {
             }
            $DeployType = Add-CMScriptDeploymentType @param
         } else {
-            Write-Warning &quot;Powershell deployment type already exists.&quot;
+            Write-Warning "Powershell deployment type already exists."
         }
 
-        $ScriptPath = Join-Path $Path &quot;Application.ps1&quot;
+        $ScriptPath = Join-Path $Path "Application.ps1"
         if(-not (Test-Path $ScriptPath)) {
-            Write-Host &quot;Add powershell deployment script.&quot;
+            Write-Host "Add powershell deployment script."
             @'
 Param(
   [switch]$Install,
@@ -329,69 +329,69 @@ Param(
 )
 
 if($Install) {
-    Start-Process -FilePath &quot;.\vlc-2.2.6-win32.exe&quot; -ArgumentList &quot;/S&quot; -Wait
+    Start-Process -FilePath ".\vlc-2.2.6-win32.exe" -ArgumentList "/S" -Wait
 }
 
 if($Uninstall) {
-    Start-Process -FilePath &quot;C:\Program Files (x86)\VideoLAN\VLC\uninstall.exe&quot; -ArgumentList &quot;/S&quot; -Wait
+    Start-Process -FilePath "C:\Program Files (x86)\VideoLAN\VLC\uninstall.exe" -ArgumentList "/S" -Wait
 }
 '@ | Set-Content -Path $ScriptPath
         } else {
-            Write-Warning &quot;PowerShell deployment script already exists.&quot;
+            Write-Warning "PowerShell deployment script already exists."
         }
     }
 
-    $LimitingCollection = $CMDeviceCollections | Where-Object{ $_.Name -eq &quot;All Systems&quot; }
+    $LimitingCollection = $CMDeviceCollections | Where-Object{ $_.Name -eq "All Systems" }
     $DeviceCollection = $CMDeviceCollections | Where-Object{ $_.Name -eq $DeviceCollectionName }
     if(-not $DeviceCollection) {
-        Write-Host &quot;Create the device collection.&quot;
-        $DeviceCollection = New-CMDeviceCollection -Name $DeviceCollectionName -LimitingCollectionId $LimitingCollection.CollectionID -RefreshType 4 -Comment &quot;Application Collection&quot;
+        Write-Host "Create the device collection."
+        $DeviceCollection = New-CMDeviceCollection -Name $DeviceCollectionName -LimitingCollectionId $LimitingCollection.CollectionID -RefreshType 4 -Comment "Application Collection"
     } else {
-        Write-Warning &quot;Device collection already exists.&quot;
+        Write-Warning "Device collection already exists."
     }
 
-    $QueryRule = 'select *  from  SMS_R_System where SMS_R_System.SecurityGroupName = &quot;' + $Domain.Name + '\\' + $ADGroup.Name + '&quot;'
+    $QueryRule = 'select *  from  SMS_R_System where SMS_R_System.SecurityGroupName = "' + $Domain.Name + '\\' + $ADGroup.Name + '"'
     $Rule = Get-CMDeviceCollectionQueryMembershipRule -Name $DeviceCollectionName
     if(-not $Rule -and $ADGroup) {
-        Write-Host &quot;Add device collection membership rule.&quot;
-        Add-CMDeviceCollectionQueryMembershipRule -CollectionName $DeviceCollectionName -RuleName &quot;Active Directory Membership&quot; -QueryExpression $QueryRule
+        Write-Host "Add device collection membership rule."
+        Add-CMDeviceCollectionQueryMembershipRule -CollectionName $DeviceCollectionName -RuleName "Active Directory Membership" -QueryExpression $QueryRule
     } elseif(-not $ADGroup) {
-        Write-Warning &quot;Could not create device colleciton membership rule as AD groups does not exist.&quot;
+        Write-Warning "Could not create device colleciton membership rule as AD groups does not exist."
     } else {
-        Write-Warning &quot;Device collection membership rule already exists.&quot;
+        Write-Warning "Device collection membership rule already exists."
     }
 
     $LimitingCollection = $null
-    $LimitingCollection = $CMUserCollections | Where-Object{ $_.Name -eq &quot;All Users&quot; }
+    $LimitingCollection = $CMUserCollections | Where-Object{ $_.Name -eq "All Users" }
     $UserCollection = $CMUserCollections | Where-Object{ $_.Name -eq $UserCollectionName }
     if(-not $UserCollection) {
-        Write-Host &quot;Create the user collection.&quot;
-        $UserCollection = New-CMUserCollection -Name $UserCollectionName -LimitingCollectionId $LimitingCollection.CollectionID -RefreshType 4 -Comment &quot;Application Collection&quot;
+        Write-Host "Create the user collection."
+        $UserCollection = New-CMUserCollection -Name $UserCollectionName -LimitingCollectionId $LimitingCollection.CollectionID -RefreshType 4 -Comment "Application Collection"
     } else {
-        Write-Warning &quot;User collection already exists.&quot;
+        Write-Warning "User collection already exists."
     }
 
     $QueryRule = $null
-    $QueryRule = 'select *  from  SMS_R_User where SMS_R_User.SecurityGroupName = &quot;' + $Domain.Name + '\\' + $ADGroup.Name + '&quot;'
+    $QueryRule = 'select *  from  SMS_R_User where SMS_R_User.SecurityGroupName = "' + $Domain.Name + '\\' + $ADGroup.Name + '"'
     $Rule = $null
     $Rule = Get-CMUserCollectionQueryMembershipRule -Name $UserCollectionName
     if(-not $Rule -and $ADGroup) {
-        Write-Host &quot;Add user collection membership rule.&quot;
-        Add-CMUserCollectionQueryMembershipRule -CollectionName $UserCollectionName -RuleName &quot;Active Directory Membership&quot; -QueryExpression $QueryRule
+        Write-Host "Add user collection membership rule."
+        Add-CMUserCollectionQueryMembershipRule -CollectionName $UserCollectionName -RuleName "Active Directory Membership" -QueryExpression $QueryRule
     } elseif(-not $ADGroup) {
-        Write-Warning &quot;Could not create user colleciton membership rule as AD groups does not exist.&quot;
+        Write-Warning "Could not create user colleciton membership rule as AD groups does not exist."
     } else {
-        Write-Warning &quot;User collection membership rule already exists.&quot;
+        Write-Warning "User collection membership rule already exists."
     }
 
     if($AppConfig.Update) {
         if(-not $App.IsSuperseding) {
-            Write-Host &quot;Add application supersedence for $($AppConfig.Update.Supersedes).&quot;
+            Write-Host "Add application supersedence for $($AppConfig.Update.Supersedes)."
             $SupersedingDeploymentType = Get-CMDeploymentType -DeploymentTypeName $AppConfig.AppName -ApplicationName $AppConfig.AppName
             $SupersededDeploymentType = Get-CMDeploymentType -DeploymentTypeName $AppConfig.Update.Supersedes -ApplicationName $AppConfig.Update.Supersedes
             $DeploymentTypeSupersedence = Add-CMDeploymentTypeSupersedence -SupersedingDeploymentType $SupersedingDeploymentType -SupersededDeploymentType $SupersededDeploymentType -IsUninstall:$AppConfig.Update.IsUninstall
         } else {
-             Write-Warning &quot;This application already supersedes another application.&quot;
+             Write-Warning "This application already supersedes another application."
         }
     }
 }

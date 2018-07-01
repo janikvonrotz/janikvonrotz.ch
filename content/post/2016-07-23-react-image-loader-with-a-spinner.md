@@ -71,31 +71,31 @@ class ImageLoader extends React.Component {
 
   render() {
     return (
-      &lt;div&gt;
-        {(()=&gt;{
+      <div>
+        {(()=>{
           var status = {
-            'loading': () =&gt; {
-              return (&lt;Spinner /&gt;)
+            'loading': () => {
+              return (<Spinner />)
             },
-            'loaded': () =&gt; {
+            'loaded': () => {
               return null
             },
-            'failed to load': () =&gt; {
-              return (&lt;p&gt;{this.state.fileStatus}&lt;/p&gt;)
+            'failed to load': () => {
+              return (<p>{this.state.fileStatus}</p>)
             },
-            'no image to load': () =&gt; {
-              return (&lt;p&gt;{this.state.fileStatus}&lt;/p&gt;)
+            'no image to load': () => {
+              return (<p>{this.state.fileStatus}</p>)
             },
           }
           return status[this.state.fileStatus]()
         })()}
-        &lt;img
+        <img
           style={style}
           src={this.props.src}
           onLoad={this.setFileStatus.bind(this, 'loaded')}
           onError={this.setFileStatus.bind(this, 'failed to load')}
-        /&gt;
-      &lt;/div&gt;
+        />
+      </div>
     )
   }
 }
@@ -128,10 +128,10 @@ class Spinner extends React.Component {
     }
 
     return (
-      &lt;div
+      <div
         className='react-spinner'
         style={style}
-      /&gt;
+      />
     )
   }
 }

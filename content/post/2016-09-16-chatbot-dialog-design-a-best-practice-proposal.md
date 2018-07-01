@@ -1,6 +1,6 @@
 ---
 id: 4044
-title: 'Chatbot dialog design &#8211; a best practice proposal'
+title: 'Chatbot dialog design - a best practice proposal'
 date: 2016-09-16T17:38:22+00:00
 author: Janik von Rotz
 layout: post

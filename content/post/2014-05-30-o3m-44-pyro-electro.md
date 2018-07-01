@@ -1,6 +1,6 @@
 ---
 id: 2335
-title: 'O3M 44 &#8211; Pyro (electro)'
+title: 'O3M 44 - Pyro (electro)'
 date: 2014-05-30T12:00:27+00:00
 author: Janik von Rotz
 layout: post

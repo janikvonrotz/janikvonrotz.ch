@@ -1,6 +1,6 @@
 ---
 id: 3435
-title: 'O3M 65 &#8211; Second Round'
+title: 'O3M 65 - Second Round'
 date: 2015-07-31T16:23:46+00:00
 author: Janik von Rotz
 layout: post

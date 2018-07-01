@@ -1,6 +1,6 @@
 ---
 id: 2424
-title: 'Thailand &#8211; Ko Tao and Ko Phangan'
+title: 'Thailand - Ko Tao and Ko Phangan'
 date: 2014-06-21T09:26:26+00:00
 author: Janik von Rotz
 layout: post
@@ -41,7 +41,7 @@ To round up this story some more pictures:
 
 [caption id="attachment_2426" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/06/boats-in-Ko-Tao-20140617-1024x682.jpg" alt="Ko Tao is the divers place in Thailand. These boats transport the divers to the bigger diving boats out in the deep water." width="720" height="479" class="size-large wp-image-2426" /> Ko Tao is the divers place in Thailand. These boats transport the divers to the bigger diving boats out in the deep water.[/caption]
 
-[caption id="attachment_2427" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/06/into-the-jungle-20140617-1024x682.jpg" alt="You&#039;ll find this jungle entry on top the highest hill in Ko Tao. Very beautiful." width="720" height="479" class="size-large wp-image-2427" /> You'll find this jungle entry on top the highest hill in Ko Tao. Very beautiful.[/caption]
+[caption id="attachment_2427" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/06/into-the-jungle-20140617-1024x682.jpg" alt="You’ll find this jungle entry on top the highest hill in Ko Tao. Very beautiful." width="720" height="479" class="size-large wp-image-2427" /> You'll find this jungle entry on top the highest hill in Ko Tao. Very beautiful.[/caption]
 
 [caption id="attachment_2428" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/06/Ko-Tao-20140617-1024x682.jpg" alt="The town center of Ko Tao. Sombody had a leak in the apartment." width="720" height="479" class="size-large wp-image-2428" /> The town center of Ko Tao. Sombody had a leak in the apartment.[/caption]
 
@@ -49,7 +49,7 @@ To round up this story some more pictures:
 
 [caption id="attachment_2430" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/06/scooter-riding-20140620-1024x682.jpg" alt="scooter riding in Ko Phangan is much more relaxed than in Chiang Mai and Bangkok." width="720" height="479" class="size-large wp-image-2430" /> scooter riding in Ko Phangan is much more relaxed than in Chiang Mai and Bangkok.[/caption]
 
-[caption id="attachment_2431" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/06/sunset-20140618-1024x682.jpg" alt="It&#039;s getting dark in Ko Phangan." width="720" height="479" class="size-large wp-image-2431" /> It's getting dark in Ko Phangan.[/caption]
+[caption id="attachment_2431" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/06/sunset-20140618-1024x682.jpg" alt="It’s getting dark in Ko Phangan." width="720" height="479" class="size-large wp-image-2431" /> It's getting dark in Ko Phangan.[/caption]
 
 [caption id="attachment_2432" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/06/the-flagship-20140620-1024x682.jpg" alt="This flagship is placed in pool next to the harbor in Ko Phangan. It seems that nobody is aware of the purpose of this exhibition." width="720" height="479" class="size-large wp-image-2432" /> This flagship is placed in pool next to the harbor in Ko Phangan. It seems that nobody is aware of the purpose of this exhibition.[/caption]
 

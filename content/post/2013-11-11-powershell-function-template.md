@@ -23,30 +23,30 @@ This is my custom PowerShell function template, whenever I'm writing a new scrip
 You can use this template for whatever like and do you can do everything you'll like (except selling) with it.
 
 [code lang="ps"]
-&lt;#
+<#
 $Metadata = @{
-	Title = &quot;&quot;
-	Filename = &quot;&quot;
-	Description = &quot;&quot;
-	Tags = &quot;&quot;
-	Project = &quot;&quot;
-	Author = &quot;Janik von Rotz&quot;
-	AuthorContact = &quot;https://janikvonrotz.ch&quot;
-	CreateDate = &quot;yyyyy-mm-dd hh:mm&quot;
-	LastEditDate = &quot;yyyyy-mm-dd hh:mm&quot;
-	Url = &quot;&quot;
-	Version = &quot;0.0.0&quot;
+	Title = ""
+	Filename = ""
+	Description = ""
+	Tags = ""
+	Project = ""
+	Author = "Janik von Rotz"
+	AuthorContact = "https://janikvonrotz.ch"
+	CreateDate = "yyyyy-mm-dd hh:mm"
+	LastEditDate = "yyyyy-mm-dd hh:mm"
+	Url = ""
+	Version = "0.0.0"
 	License = @'
 This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Switzerland License.
 To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/3.0/ch/ or
 send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 '@
 }
-#&gt;
+#>
 
 function Test-AdvancedFunction{
 
-&lt;#
+<#
 .SYNOPSIS
     A brief description of the function.
 
@@ -60,10 +60,10 @@ function Test-AdvancedFunction{
 	The description of the ParameterB parameter.
 
 .EXAMPLE
-	PS C:&gt; Get-Something -ParameterA 'One value' -ParameterB 32
+	PS C:> Get-Something -ParameterA 'One value' -ParameterB 32
 
 .EXAMPLE
-	PS C:&gt; Get-Something 'One value' 32
+	PS C:> Get-Something 'One value' 32
 
 .INPUTS
 	System.String,System.Int32
@@ -80,7 +80,7 @@ function Test-AdvancedFunction{
 .LINK
 	about_comment_based_help
 
-#&gt;
+#>
 
 	[CmdletBinding()]
 	param(

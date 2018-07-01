@@ -1,6 +1,6 @@
 ---
 id: 3345
-title: 'Install Let&#8217;s Encrypt and create a free SSL certificate'
+title: 'Install Let’s Encrypt and create a free SSL certificate'
 date: 2015-12-04T11:23:57+00:00
 author: Janik von Rotz
 layout: post

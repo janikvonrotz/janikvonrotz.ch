@@ -58,8 +58,8 @@ public class App extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			primaryStage.setResizable(false);
-			primaryStage.setTitle(&quot;Issue Manager&quot;);
-			primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource(&quot;Home.fxml&quot;))));
+			primaryStage.setTitle("Issue Manager");
+			primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("Home.fxml"))));
 			primaryStage.show();			
 		} catch(Exception e) {
 			e.printStackTrace();
@@ -81,8 +81,8 @@ Same as the webservice our client application load configurations from one json 
 
 [code]
 {
-	&quot;webservice&quot;: {
-		&quot;url&quot;: &quot;http://localhost:8080/webservice&quot;
+	"webservice": {
+		"url": "http://localhost:8080/webservice"
 	}
 }
 [/code]
@@ -120,24 +120,24 @@ import ch.issueman.common.DAO;
 import ch.issueman.common.Model;
 import ch.issueman.common.User;
 
-public class Controller&lt;T, Id extends Serializable&gt; implements DAO&lt;T, Id&gt; {
+public class Controller<T, Id extends Serializable> implements DAO<T, Id> {
 
 	private static ResteasyClient client = new ResteasyClientBuilder().build();
 	private String url;
 	private ObjectMapper mapper = new ObjectMapper();
-	private final Class&lt;T&gt; clazz;
+	private final Class<T> clazz;
 	private User user;
 	
-	public Controller(Class&lt;T&gt; clazz, User user) {
+	public Controller(Class<T> clazz, User user) {
 		this.clazz = clazz;
-		url = ConfigFactory.load().getString(&quot;webservice.url&quot;) + &quot;/&quot; + clazz.getSimpleName().toLowerCase();
+		url = ConfigFactory.load().getString("webservice.url") + "/" + clazz.getSimpleName().toLowerCase();
 		this.user = user;
 	}
 	
 	public boolean login(){
 		Boolean status = false;
 		try {
-			WebTarget target = client.target(ConfigFactory.load().getString(&quot;webservice.url&quot;) + &quot;/login&quot;);
+			WebTarget target = client.target(ConfigFactory.load().getString("webservice.url") + "/login");
 			Response response = target.request(MediaType.APPLICATION_JSON).post(Entity.json(mapper.writeValueAsString(user)));
 			if(response.getStatus() == Status.OK.getStatusCode()){
 				user = mapper.readValue(response.readEntity(String.class), User.class);
@@ -152,7 +152,7 @@ public class Controller&lt;T, Id extends Serializable&gt; implements DAO&lt;T, I
 	}
 	
 	public T getById(Id id) {
-		WebTarget target = client.target(url + &quot;/&quot; + id);
+		WebTarget target = client.target(url + "/" + id);
 		try {			
 			Response response = target.request(MediaType.APPLICATION_JSON).get();
 			T t = mapper.readValue(response.readEntity(String.class), clazz);
@@ -164,14 +164,14 @@ public class Controller&lt;T, Id extends Serializable&gt; implements DAO&lt;T, I
 		}
 	}
 
-	public List&lt;T&gt; getAll() {
+	public List<T> getAll() {
 		
 		WebTarget target = client.target(url);
 		TypeFactory t = TypeFactory.defaultInstance();
 		
 		try {
 			Response response = target.request(MediaType.APPLICATION_JSON).get();
-			List&lt;T&gt; l = mapper.readValue(response.readEntity(String.class), t.constructCollectionType(List.class,clazz));
+			List<T> l = mapper.readValue(response.readEntity(String.class), t.constructCollectionType(List.class,clazz));
 			response.close();
 			return l;
 		} catch (IOException e) {
@@ -204,7 +204,7 @@ public class Controller&lt;T, Id extends Serializable&gt; implements DAO&lt;T, I
 
 	@Override
 	public void delete(T t) {
-		WebTarget target = client.target(url + &quot;/&quot; + ((Model)t).getId());
+		WebTarget target = client.target(url + "/" + ((Model)t).getId());
 		Response response = target.request(MediaType.APPLICATION_JSON).delete();
 		response.close();
 	}

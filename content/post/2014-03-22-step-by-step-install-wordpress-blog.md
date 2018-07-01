@@ -206,9 +206,9 @@ Add a PHP info file
 Set content
 
 [code]
-&lt;?php
+<?php
 phpinfo();
-?&gt;
+?>
 [/code]
 
 Open your browser on http://example.com/info.php

@@ -1,6 +1,6 @@
 ---
 id: 3101
-title: 'Build a Java 3-tier application from scratch &#8211; Part 1: Introduction and project setup'
+title: 'Build a Java 3-tier application from scratch - Part 1: Introduction and project setup'
 date: 2015-03-15T16:57:38+00:00
 author: Janik von Rotz
 layout: post
@@ -84,7 +84,7 @@ Now we are going to set up these 3 projects with gradle.
 **settings.gradle**
 
 [code]
-include &quot;:common&quot;, &quot;:webservice&quot;, &quot;:client&quot;
+include ":common", ":webservice", ":client"
 [/code]
 
 This file will tell gradle that we work with a multiproject setup.
@@ -94,8 +94,8 @@ This file will tell gradle that we work with a multiproject setup.
 [code]
 subprojects {
 
-  apply plugin: &quot;java&quot;
-  apply plugin: &quot;eclipse&quot;
+  apply plugin: "java"
+  apply plugin: "eclipse"
 
   repositories {
     mavenCentral()
@@ -113,26 +113,26 @@ subprojects {
 
   // install lombok for Eclipse
 
-  sourceSets.each{ sourceSet -&gt;
+  sourceSets.each{ sourceSet ->
     sourceSet.compileClasspath += configurations.lombok
-    sourceSet.ext.delombok = new File(buildDir, &quot;generated-src/delombok/&quot; + sourceSet.name);
+    sourceSet.ext.delombok = new File(buildDir, "generated-src/delombok/" + sourceSet.name);
   }
 
   task installLombok() {
     dependsOn configurations.lombok
-  } &lt;&lt; {
+  } << {
       File jarFile = null;
       configurations.lombok.resolvedConfiguration.resolvedArtifacts.find {
-          if (&quot;lombok&quot;.equals(it.name)) {
+          if ("lombok".equals(it.name)) {
               jarFile = it.file;
           }
       }
       javaexec {
-          main=&quot;-jar&quot;
+          main="-jar"
           args = [
               jarFile,
-              &quot;install&quot;,
-              &quot;auto&quot;
+              "install",
+              "auto"
           ]
       }
   }
@@ -143,24 +143,24 @@ subprojects {
   task delombok() {
     dependsOn configurations.compile
     dependsOn configurations.lombok
-  } &lt;&lt; {
+  } << {
       File jarFile = null;
       configurations.lombok.resolvedConfiguration.resolvedArtifacts.find {
-          if (&quot;lombok&quot;.equals(it.name)) {
+          if ("lombok".equals(it.name)) {
               jarFile = it.file;
           }
       }
-      sourceSets.each{ sourceSet -&gt;
-          def classPath = sourceSet.compileClasspath.files.join(&quot;;&quot;)
+      sourceSets.each{ sourceSet ->
+          def classPath = sourceSet.compileClasspath.files.join(";")
           def delombokPath = sourceSet.ext.delombok
           delombokPath.mkdirs();
           javaexec {
-              main = &quot;-jar&quot;
-              args jarFile, &quot;delombok&quot;
+              main = "-jar"
+              args jarFile, "delombok"
               if (!classPath.empty) {
-                  args &quot;-c&quot;, classPath
+                  args "-c", classPath
               }
-              args &quot;-d&quot;, delombokPath
+              args "-d", delombokPath
               args sourceSet.allJava.srcDirs
           }
       }
@@ -221,7 +221,7 @@ dependencies {
   providedCompile 'javax.servlet:javax.servlet-api:3.+'
 }
 
-jettyRun.webAppSourceDirectory = file(&quot;src/main/resources&quot;)
+jettyRun.webAppSourceDirectory = file("src/main/resources")
 
 task seed(type:JavaExec) {
    main = 'ch.issueman.webservice.Seed'

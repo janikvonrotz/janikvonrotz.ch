@@ -39,26 +39,26 @@ To manager alerts for a couple of users on specific lists I've written a script 
 <!--more-->
 
 [code lang="powershell"]
-&lt;#
+<#
 $Metadata = @{
-	Title = &quot;Update SharePoint User Alerts&quot;
-	Filename = &quot;Update-SPUserAlerts.ps1&quot;
-	Description = &quot;&quot;
-	Tags = &quot;powershell, sharepoint, update, user, alerts&quot;
-	Project = &quot;&quot;
-	Author = &quot;Janik von Rotz&quot;
-	AuthorContact = &quot;http://janikvonrotz.ch&quot;
-	CreateDate = &quot;2014-01-02&quot;
-	LastEditDate = &quot;2014-01-02&quot;
-	Url = &quot;&quot;
-	Version = &quot;1.0.0&quot;
+	Title = "Update SharePoint User Alerts"
+	Filename = "Update-SPUserAlerts.ps1"
+	Description = ""
+	Tags = "powershell, sharepoint, update, user, alerts"
+	Project = ""
+	Author = "Janik von Rotz"
+	AuthorContact = "http://janikvonrotz.ch"
+	CreateDate = "2014-01-02"
+	LastEditDate = "2014-01-02"
+	Url = ""
+	Version = "1.0.0"
 	License = @'
 This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Switzerland License.
 To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ch/ or 
 send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 '@
 }
-#&gt;
+#>
 
 try{
 
@@ -74,14 +74,14 @@ try{
     $Alerts = @(    
         @{    
             ID = 1
-            ListUrl = &quot;http://sharepoint.domain.ch/site/subsite/Lists/ListName/view.aspx&quot;    
-            SubscriberADUsersAndGroups = &quot;ADGroup&quot;,&quot;ADUser&quot;          
-            Title = &quot;`&quot;Benachrichtigunggg `$Username`&quot;&quot;
+            ListUrl = "http://sharepoint.domain.ch/site/subsite/Lists/ListName/view.aspx"    
+            SubscriberADUsersAndGroups = "ADGroup","ADUser"          
+            Title = "`"Benachrichtigunggg `$Username`""
             AlertType = [Microsoft.SharePoint.SPAlertType]::List       
             DeliveryChannels = [Microsoft.SharePoint.SPAlertDeliveryChannels]::Email
             EventType = [Microsoft.SharePoint.SPEventType]::Add
             AlertFrequency = [Microsoft.SharePoint.SPAlertFrequency]::Immediate
-            ListViewName = &quot;View 2014&quot;
+            ListViewName = "View 2014"
             FilterIndex = 8
         }
     )
@@ -119,14 +119,14 @@ try{
     $Alerts | %{
     
         # set vars
-        $Message = &quot;Update alerts with ID: $($_.ID)`n&quot;
+        $Message = "Update alerts with ID: $($_.ID)`n"
         $Alert = $_
     
         # get sp site
         $SPWeb = Get-SPWeb (Get-SPUrl $_.ListUrl).WebUrl
 
         # get name of the list
-        $ListName = (Get-SPUrl $_.ListUrl).Url -replace &quot;.*/&quot;,&quot;&quot;
+        $ListName = (Get-SPUrl $_.ListUrl).Url -replace ".*/",""
 
         # get the sp list object
         $SPList = $SPWeb.Lists[$ListName]
@@ -134,21 +134,21 @@ try{
         $SPUsers = Get-SPUser -Web $SPWeb.Site.Url
         
         # get the id of the list view by name
-        $SPListViewID = ($SPList.Views | where{$_.title -eq $SPListViewName -and $_.title -ne &quot;&quot;} | select -First 1).ID
+        $SPListViewID = ($SPList.Views | where{$_.title -eq $SPListViewName -and $_.title -ne ""} | select -First 1).ID
         
         # get existing alerts
-        $ExistingAlerts = $SPWeb.Alerts | where{$_.Properties[&quot;alertid&quot;] -eq $Alert.ID}
+        $ExistingAlerts = $SPWeb.Alerts | where{$_.Properties["alertid"] -eq $Alert.ID}
         
         # cycle throught all users and  update, create or delete their alerts
         $UserWithAlerts = $_.SubscriberADUsersAndGroups | %{
         
             Get-ADObject -Filter {Name -eq $_} | %{
         
-                if($_.ObjectClass -eq &quot;user&quot;){
+                if($_.ObjectClass -eq "user"){
                     
                     Get-ADUser $_.DistinguishedName
                     
-                }elseif($_.ObjectClass -eq &quot;group&quot;){
+                }elseif($_.ObjectClass -eq "group"){
                 
                     Get-ADGroupMember $_.DistinguishedName -Recursive | Get-ADUser 
                 }
@@ -165,7 +165,7 @@ try{
             $AlertTitle = Invoke-Command -ScriptBlock ([ScriptBlock]::Create($Alert.Title))
             
             # check if already alert exists with this id
-            $AlertIS = $_.Alerts | where{$_.Properties[&quot;alertid&quot;] -eq $Alert.ID} | select -First 1           
+            $AlertIS = $_.Alerts | where{$_.Properties["alertid"] -eq $Alert.ID} | select -First 1           
             
             # if exists update this alert
             if($AlertIS){
@@ -176,8 +176,8 @@ try{
                     -DeliveryChannels $AlertIS.DeliveryChannels `
                     -EventType $AlertIS.EventType `
                     -AlertFrequency $AlertIS.AlertFrequency `
-                    -ListViewID $AlertIS.Properties[&quot;filterindex&quot;] `
-                    -FilterIndex $AlertIS.Properties[&quot;filterindex&quot;]
+                    -ListViewID $AlertIS.Properties["filterindex"] `
+                    -FilterIndex $AlertIS.Properties["filterindex"]
                     
                 $AlertObjectTo = New-UnifiedAlertObject -Title $AlertTitle `
                     -AlertType $Alert.AlertType `
@@ -190,15 +190,15 @@ try{
                 # only update changed attributes
                 if(Compare-Object -ReferenceObject $AlertObjectTo -DifferenceObject $AlertObjectIS -Property Title, AlertType, DeliveryChannels, EventType, AlertFrequency, ListViewID, FilterIndex){
                     
-                    $Message += &quot;Update alert with ID: $($Alert.ID) for user: $($_.DisplayName)`n&quot;
+                    $Message += "Update alert with ID: $($Alert.ID) for user: $($_.DisplayName)`n"
                     
                     if(Compare-Object -ReferenceObject $AlertObjectTo -DifferenceObject $AlertObjectIS -Property Title){$AlertIS.Title = $AlertObjectTo.Title}
                     if(Compare-Object -ReferenceObject $AlertObjectTo -DifferenceObject $AlertObjectIS -Property AlertType){$AlertIS.AlertType = $AlertObjectTo.AlertType}
                     if(Compare-Object -ReferenceObject $AlertObjectTo -DifferenceObject $AlertObjectIS -Property DeliveryChannels){$AlertIS.DeliveryChannels = $AlertObjectTo.DeliveryChannels}
                     if(Compare-Object -ReferenceObject $AlertObjectTo -DifferenceObject $AlertObjectIS -Property EventType){$AlertIS.EventType = $AlertObjectTo.EventType}
                     if(Compare-Object -ReferenceObject $AlertObjectTo -DifferenceObject $AlertObjectIS -Property AlertFrequency){$AlertIS.AlertFrequency = $AlertObjectTo.AlertFrequency}
-                    if(Compare-Object -ReferenceObject $AlertObjectTo -DifferenceObject $AlertObjectIS -Property ListViewID){$AlertIS.Properties[&quot;viewid&quot;] = $AlertObjectTo.ListViewID}
-                    if(Compare-Object -ReferenceObject $AlertObjectTo -DifferenceObject $AlertObjectIS -Property FilterIndex){$AlertIS.Properties[&quot;filterindex&quot;] = $AlertObjectTo.FilterIndex}
+                    if(Compare-Object -ReferenceObject $AlertObjectTo -DifferenceObject $AlertObjectIS -Property ListViewID){$AlertIS.Properties["viewid"] = $AlertObjectTo.ListViewID}
+                    if(Compare-Object -ReferenceObject $AlertObjectTo -DifferenceObject $AlertObjectIS -Property FilterIndex){$AlertIS.Properties["filterindex"] = $AlertObjectTo.FilterIndex}
                     
                     # update changes
                     $AlertIS.Update()
@@ -206,15 +206,15 @@ try{
             }else{
             
                 # create a new alert object  
-                $Message += &quot;Create alert with ID: $($Alert.ID) for user: $($_.DisplayName)`n&quot;          
+                $Message += "Create alert with ID: $($Alert.ID) for user: $($_.DisplayName)`n"          
                 $NewAlert = $_.Alerts.Add()
                 
                 # add attributes
-                $NewAlert.Properties.Add(&quot;alertid&quot;,$Alert.ID)
+                $NewAlert.Properties.Add("alertid",$Alert.ID)
                 $NewAlert.Title = $AlertTitle                  
                 if($SPListViewID){                
-                    $NewAlert.Properties.Add(&quot;filterindex&quot;,$Alert.FilterIndex)
-                    $NewAlert.Properties.Add(&quot;viewid&quot;,$SPListViewID)              
+                    $NewAlert.Properties.Add("filterindex",$Alert.FilterIndex)
+                    $NewAlert.Properties.Add("viewid",$SPListViewID)              
                 }
                 $NewAlert.AlertType = $Alert.AlertType
                 $NewAlert.List = $SPList
@@ -232,20 +232,20 @@ try{
         } 
         
         # username array
-        $UserWithAlerts = $UserWithAlerts | %{&quot;$($_.UserLogin)&quot;}
+        $UserWithAlerts = $UserWithAlerts | %{"$($_.UserLogin)"}
         
         # delete alerts
         $ExistingAlerts | where{$UserWithAlerts -notcontains $_.User} | %{
         
-            $Message += &quot;Delete alert with ID: $($Alert.ID) for user: $($_.User)`n&quot;
+            $Message += "Delete alert with ID: $($Alert.ID) for user: $($_.User)`n"
             $SPWeb.Alerts.Delete($_.ID)        
         }
         
-        Write-PPEventLog -Message $Message -Source &quot;Update SharePoint User Alerts&quot; -WriteMessage
+        Write-PPEventLog -Message $Message -Source "Update SharePoint User Alerts" -WriteMessage
     }
 }catch{
 
-    Write-PPErrorEventLog -Source &quot;Update SharePoint User Alerts&quot; -ClearErrorVariable    
+    Write-PPErrorEventLog -Source "Update SharePoint User Alerts" -ClearErrorVariable    
 }
 [/code]
 

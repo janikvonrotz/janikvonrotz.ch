@@ -1,6 +1,6 @@
 ---
 id: 3341
-title: 'O3M 63 &#8211; Beauty of Music'
+title: 'O3M 63 - Beauty of Music'
 date: 2015-06-16T13:37:00+00:00
 author: Janik von Rotz
 layout: post

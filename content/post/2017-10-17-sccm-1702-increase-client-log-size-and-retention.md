@@ -29,30 +29,30 @@ First we need to inject a SMSTS configuration file into the boot image to set th
 **Copy-SMSTSConfigToBootImage.ps1**
 
 [code lang="powershell"]
-$BootImageFile = &quot;C:\Program Files\Microsoft Configuration Manager\OSD\boot\x64\boot.wim&quot;
-$Index = &quot;1&quot;
-$SMSIniFile = &quot;D:\SCCM\Scripts\SMSTS.ini&quot;
+$BootImageFile = "C:\Program Files\Microsoft Configuration Manager\OSD\boot\x64\boot.wim"
+$Index = "1"
+$SMSIniFile = "D:\SCCM\Scripts\SMSTS.ini"
 
-Write-Host &quot;Start updating boot image: &quot; (Get-Date).ToString()
+Write-Host "Start updating boot image: " (Get-Date).ToString()
 
-Write-Host &quot;Create temporary directory...&quot;
+Write-Host "Create temporary directory..."
 $MountFolder = Join-Path $env:TEMP (Get-Random)
 New-Item -ItemType Directory -Path $MountFolder | Out-Null
-Write-Host &quot;Created temporary directory: &quot; $MountFolder
+Write-Host "Created temporary directory: " $MountFolder
 
-Write-Host &quot;Mounting Windows-Image...&quot; $BootImageFile
+Write-Host "Mounting Windows-Image..." $BootImageFile
 Mount-WindowsImage -Path $MountFolder -ImagePath $BootImageFile -Index $Index
 
-Write-Host &quot;Copy SMSTS.ini file...&quot;
-Copy-Item $SMSIniFile (Join-Path $MountFolder &quot;Windows&quot;)
+Write-Host "Copy SMSTS.ini file..."
+Copy-Item $SMSIniFile (Join-Path $MountFolder "Windows")
 
-Write-Host &quot;Dismount-WindowsImage...&quot;
+Write-Host "Dismount-WindowsImage..."
 Dismount-WindowsImage -Path $MountFolder -Save -CheckIntegrity
 
-Write-Host &quot;Remove temporary directory...&quot;
+Write-Host "Remove temporary directory..."
 Remove-Item $MountFolder -Force
 
-Write-Host &quot;Complete upating boot image:&quot; (Get-Date).ToString()
+Write-Host "Complete upating boot image:" (Get-Date).ToString()
 [/code]
 
 The script mounts a specified boot image and copies the `SMSTS.init` configuration file.

@@ -375,12 +375,12 @@ Allow new user to send mail via SES with this policy configuration
 
 [code]
 {
-  &quot;Version&quot;: &quot;2012-10-17&quot;,
-  &quot;Statement&quot;: [
+  "Version": "2012-10-17",
+  "Statement": [
     {
-      &quot;Effect&quot;: &quot;Allow&quot;,
-      &quot;Action&quot;: &quot;ses:SendRawEmail&quot;,
-      &quot;Resource&quot;: &quot;*&quot;
+      "Effect": "Allow",
+      "Action": "ses:SendRawEmail",
+      "Resource": "*"
     }
   ]
 }
@@ -394,10 +394,10 @@ Add this mail configuration
 
 [code]
 mail: {
-    transport: &quot;SES&quot;,
+    transport: "SES",
     options: {
-        AWSAccessKeyID: &quot;[acccess key]&quot;,
-        AWSSecretKey: &quot;[secret key]&quot;
+        AWSAccessKeyID: "[acccess key]",
+        AWSSecretKey: "[secret key]"
     }
 },
 [/code]
@@ -427,15 +427,15 @@ In case you"ll get this error when trying to reset your password
 Replace the the Ghost mail configuration with
 [code]
 mail: {
-    transport: &quot;SMTP&quot;,
-    fromaddress: &quot;[verified SES mail address]&quot;,
-    host: &quot;ssl://[SES smpt server address]&quot;,
+    transport: "SMTP",
+    fromaddress: "[verified SES mail address]",
+    host: "ssl://[SES smpt server address]",
     options: {
         port: 465,
-        service: &quot;SES&quot;,
+        service: "SES",
         auth: {
-            user: &quot;[acccess key]&quot;,
-            pass: &quot;[secret key]&quot;
+            user: "[acccess key]",
+            pass: "[secret key]"
         }
     }
 },

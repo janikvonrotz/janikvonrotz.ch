@@ -49,8 +49,8 @@ So let's see what this script does:
 #--------------------------------------------------#
 # settings
 #--------------------------------------------------#
-$ExchangeServer = &quot;vblw2k8mail05&quot;
-$FilterRecipientTypeDetails = @(&quot;UserMailbox&quot;,&quot;RemoteUserMailbox&quot;)
+$ExchangeServer = "vblw2k8mail05"
+$FilterRecipientTypeDetails = @("UserMailbox","RemoteUserMailbox")
 
 #--------------------------------------------------#
 # functions
@@ -66,51 +66,51 @@ function Rename-ADUserAndMailbox{
         $MailBox
     )
 
-    $ArchivedIdentity = ($($ADUser.SID).tostring() -replace &quot;-&quot;,&quot;&quot;).substring(20)
+    $ArchivedIdentity = ($($ADUser.SID).tostring() -replace "-","").substring(20)
 
     if(-not (Get-ADUser -Filter{SamAccountName -eq $ArchivedIdentity} -ErrorAction SilentlyContinue)){
 
-        $NewName = &quot;$($ADUser.Name) $($ADUser.SID)&quot;
-        $NewUserPrincipalName =  &quot;$($ADUser.UserPrincipalName.split('@')[0]) $($ADUser.SID)@$($ADUser.UserPrincipalName.split('@')[1])&quot;
-        $NewSamAccountName = ($($ADUser.SID).tostring() -replace &quot;-&quot;,&quot;&quot;).substring(20)
+        $NewName = "$($ADUser.Name) $($ADUser.SID)"
+        $NewUserPrincipalName =  "$($ADUser.UserPrincipalName.split('@')[0]) $($ADUser.SID)@$($ADUser.UserPrincipalName.split('@')[1])"
+        $NewSamAccountName = ($($ADUser.SID).tostring() -replace "-","").substring(20)
 
-        Write-Host &quot;Rename Name $($ADUser.Name) to $NewName&quot;
+        Write-Host "Rename Name $($ADUser.Name) to $NewName"
         Rename-ADObject $ADUser -NewName $NewName
 
-        Write-Host &quot;Rename UserPrincipalName $($ADUser.UserPrincipalName) to $NewUserPrincipalName&quot;
-        Get-ADUser $ADUser.SamAccountName | Set-ADUser -UserPrincipalName $NewUserPrincipalName -Description &quot;archived&quot;
+        Write-Host "Rename UserPrincipalName $($ADUser.UserPrincipalName) to $NewUserPrincipalName"
+        Get-ADUser $ADUser.SamAccountName | Set-ADUser -UserPrincipalName $NewUserPrincipalName -Description "archived"
 
-        Write-Host &quot;Rename SamAccountName $($ADUser.SamAccountName) to $NewSamAccountName&quot;
+        Write-Host "Rename SamAccountName $($ADUser.SamAccountName) to $NewSamAccountName"
         Get-ADUser $ADUser.SamAccountName | Set-ADUser -SamAccountName $NewSamAccountName
 
-        $NewPrimarySmtpAddress = &quot;$($ADUser.UserPrincipalName.split('@')[0])$($ADUser.SID)@$($ADUser.UserPrincipalName.split('@')[1])&quot; -replace &quot;-&quot;,&quot;&quot;
+        $NewPrimarySmtpAddress = "$($ADUser.UserPrincipalName.split('@')[0])$($ADUser.SID)@$($ADUser.UserPrincipalName.split('@')[1])" -replace "-",""
         $OldPrimarySmtpAddress = $Mailbox.PrimarySmtpAddress
 
-        if($Mailbox.psObject.TypeNames -contains &quot;Deserialized.Microsoft.Exchange.Data.Directory.Management.RemoteMailbox&quot;){
+        if($Mailbox.psObject.TypeNames -contains "Deserialized.Microsoft.Exchange.Data.Directory.Management.RemoteMailbox"){
 
-            $NewRemoteRoutingAddress = &quot;$($Mailbox.RemoteRoutingAddress.split(&quot;@&quot;)[0])$($ADUser.SID)@$($Mailbox.RemoteRoutingAddress.split(&quot;@&quot;)[1])&quot; -replace &quot;-&quot;,&quot;&quot;
+            $NewRemoteRoutingAddress = "$($Mailbox.RemoteRoutingAddress.split("@")[0])$($ADUser.SID)@$($Mailbox.RemoteRoutingAddress.split("@")[1])" -replace "-",""
             $OldRemoteRoutingAddress = $Mailbox.RemoteRoutingAddress
 
             Get-RemoteMailbox $ADuser.Name | %{
 
-                Write-Host &quot;Rename PrimarySmtpAddress for $($_.PrimarySmtpAddress) to $NewPrimarySmtpAddress&quot;
+                Write-Host "Rename PrimarySmtpAddress for $($_.PrimarySmtpAddress) to $NewPrimarySmtpAddress"
                 Set-RemoteMailbox $_.Alias -PrimarySmtpAddress $NewPrimarySmtpAddress;
 
-                Write-Host &quot;Rename RemoteRoutingAddress for $($_.RemoteRoutingAddress) to $NewRemoteRoutingAddress&quot;
+                Write-Host "Rename RemoteRoutingAddress for $($_.RemoteRoutingAddress) to $NewRemoteRoutingAddress"
                 Set-RemoteMailbox $_.Alias -RemoteRoutingAddress $NewRemoteRoutingAddress
 
-                Write-Host &quot;Remove default mail addresses $OldRemoteRoutingAddress, $PrimarySmtpAddress on $($_.Alias)&quot;
+                Write-Host "Remove default mail addresses $OldRemoteRoutingAddress, $PrimarySmtpAddress on $($_.Alias)"
                 Set-RemoteMailbox $_.Alias -EmailAddresses @{remove = $OldRemoteRoutingAddress, $OldPrimarySmtpAddress}
             }
 
-        }elseif($Mailbox.psObject.TypeNames -contains &quot;Deserialized.Microsoft.Exchange.Data.Directory.Management.Mailbox&quot;){
+        }elseif($Mailbox.psObject.TypeNames -contains "Deserialized.Microsoft.Exchange.Data.Directory.Management.Mailbox"){
 
             Get-Mailbox $ADuser.Name | %{
 
-                Write-Host &quot;Rename PrimarySmtpAddress for $($_.PrimarySmtpAddress) to $NewPrimarySmtpAddress&quot;
+                Write-Host "Rename PrimarySmtpAddress for $($_.PrimarySmtpAddress) to $NewPrimarySmtpAddress"
                 Set-Mailbox $_.Alias -PrimarySmtpAddress $NewPrimarySmtpAddress
 
-                Write-Host &quot;Remove default mail addresses $PrimarySmtpAddress on $($Mailbox.Alias)&quot;
+                Write-Host "Remove default mail addresses $PrimarySmtpAddress on $($Mailbox.Alias)"
                 Set-Mailbox $_.Alias -EmailAddresses @{remove = $OldPrimarySmtpAddress}
             }
         }
@@ -127,7 +127,7 @@ Import-Module ActiveDirectory
 #--------------------------------------------------#
 
 # open remote connection
-$PSSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri &quot;https://$ExchangeServer/PowerShell/&quot; -Authentication Kerberos
+$PSSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://$ExchangeServer/PowerShell/" -Authentication Kerberos
 
 # import
 Import-PSSession $PSSession -AllowClobber
@@ -138,7 +138,7 @@ $RemoteMailboxes = Get-RemoteMailbox
 # disable mailbox and remote mailbox
 Get-ADUser -Filter{Enabled -eq $false} -Properties mail | where{$_.mail -ne $null} |
     %{$ADUser = $_; $Mailboxes | where{$_.Name -eq $ADuser.Name -and $_.HiddenFromAddressListsEnabled -eq $false -and $FilterRecipientTypeDetails -contains $_.RecipientTypeDetails}} |%{
-        Write-host &quot;Hide mailbox $($_.Name) from address lists.&quot;;
+        Write-host "Hide mailbox $($_.Name) from address lists.";
         Set-Mailbox $_.Name -HiddenFromAddressListsEnabled:$true;
         Rename-ADUserAndMailbox -ADUser $ADUser -MailBox $_
     }
@@ -146,7 +146,7 @@ Get-ADUser -Filter{Enabled -eq $false} -Properties mail | where{$_.mail -ne $nul
 # disable remote mailbox
 Get-ADUser -Filter{Enabled -eq $false} -Properties mail | where{$_.mail -ne $null} |
     %{$ADUser = $_; $RemoteMailboxes | where{$_.Name -eq $ADuser.Name -and $_.HiddenFromAddressListsEnabled -eq $false -and $FilterRecipientTypeDetails -contains $_.RecipientTypeDetails}} | %{
-        Write-host &quot;Hide remotemailbox $($_.Name) from address lists.&quot;;
+        Write-host "Hide remotemailbox $($_.Name) from address lists.";
         Set-RemoteMailbox $_.Name -HiddenFromAddressListsEnabled:$true;
         Rename-ADUserAndMailbox -ADUser $ADUser -MailBox $_
 }
@@ -155,7 +155,7 @@ Get-ADUser -Filter{Enabled -eq $false} -Properties mail | where{$_.mail -ne $nul
 Remove-PSSession $PSSession
 
 if($error){
-    Send-PPErrorReport -FileName &quot;activedirectory.mail.config.xml&quot; -ScriptName $MyInvocation.InvocationName
+    Send-PPErrorReport -FileName "activedirectory.mail.config.xml" -ScriptName $MyInvocation.InvocationName
 }
 
 [/code]

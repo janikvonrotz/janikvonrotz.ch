@@ -1,6 +1,6 @@
 ---
 id: 3286
-title: 'JavaFX &#8211; Filterable and Sortable Tableview with nested Objects'
+title: 'JavaFX - Filterable and Sortable Tableview with nested Objects'
 date: 2015-11-30T10:01:22+00:00
 author: Janik von Rotz
 layout: post
@@ -50,23 +50,23 @@ Now we will write the view class for our table view. The view class is connected
 [code lang="java"]
 public class PersonView{
 
-	private static LoginData&lt;Login, Integer&gt; loginData= new LoginData&lt;Login, Integer&gt;(Login.class);
-	private FilteredList&lt;Login&gt; filteredData = new FilteredList&lt;Login&gt;(FXCollections.observableArrayList(),	p -&gt; true);
+	private static LoginData<Login, Integer> loginData= new LoginData<Login, Integer>(Login.class);
+	private FilteredList<Login> filteredData = new FilteredList<Login>(FXCollections.observableArrayList(),	p -> true);
 
 	@FXML
-	private TableView&lt;Login&gt; tvData;
+	private TableView<Login> tvData;
 
 	@FXML
 	private TextField txFilter;
 
 	@FXML
-	private TableColumn&lt;Login, String&gt; tcNachname;
+	private TableColumn<Login, String> tcNachname;
 
 	@FXML
-	private TableColumn&lt;Login, String&gt; tcVorname;
+	private TableColumn<Login, String> tcVorname;
 
 	@FXML
-	private TableColumn&lt;Login, String&gt; tcEmail;
+	private TableColumn<Login, String> tcEmail;
 [/code]
 The LoginData component of course holds the login objects and communicates with the persistence layer.
 The filtered list will be synced with the table view component.
@@ -76,19 +76,19 @@ As next, we tell what properties should be displayed in the cells. Remember that
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		
-		tcNachname.setCellValueFactory(new Callback&lt;TableColumn.CellDataFeatures&lt;Login,String&gt;,ObservableValue&lt;String&gt;&gt;() {  
-			public ObservableValue&lt;String&gt; call(CellDataFeatures&lt;Login, String&gt; param) {
+		tcNachname.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<Login,String>,ObservableValue<String>>() {  
+			public ObservableValue<String> call(CellDataFeatures<Login, String> param) {
 				return new SimpleStringProperty(param.getValue().getPerson().getNachname());
 			}  
 		});
 		
-		tcVorname.setCellValueFactory(new Callback&lt;TableColumn.CellDataFeatures&lt;Login,String&gt;,ObservableValue&lt;String&gt;&gt;() {  
-			public ObservableValue&lt;String&gt; call(CellDataFeatures&lt;Login, String&gt; param) {
+		tcVorname.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<Login,String>,ObservableValue<String>>() {  
+			public ObservableValue<String> call(CellDataFeatures<Login, String> param) {
 				return new SimpleStringProperty(param.getValue().getPerson().getVorname());
 			}  
 		});
-		tcEmail.setCellValueFactory(new Callback&lt;TableColumn.CellDataFeatures&lt;Login,String&gt;,ObservableValue&lt;String&gt;&gt;() {  
-			public ObservableValue&lt;String&gt; call(CellDataFeatures&lt;Login, String&gt; param) {
+		tcEmail.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<Login,String>,ObservableValue<String>>() {  
+			public ObservableValue<String> call(CellDataFeatures<Login, String> param) {
 				return new SimpleStringProperty(param.getValue().getPerson().getEmail());
 			}  
 		});
@@ -101,8 +101,8 @@ Now it's time for the filter. By adding a listener to the text property we hook 
 [code lang="java"]
 
 		txFilter.textProperty().addListener(
-				(observable, oldValue, newValue) -&gt; {
-					filteredData.setPredicate(t -&gt; {
+				(observable, oldValue, newValue) -> {
+					filteredData.setPredicate(t -> {
 						
 							if (newValue == null || newValue.isEmpty()) {
 								return true;
@@ -132,9 +132,9 @@ Finally create a refresh method that loads the data into the table view. Make su
 
 	public void Refresh() {
 		try {	
-			List&lt;Login&gt; list = loginData.getAll();
-			filteredData = new FilteredList&lt;Login&gt;(FXCollections.observableArrayList(list),	p -&gt; true);
-			SortedList&lt;Login&gt; sortedData = new SortedList&lt;Login&gt;(filteredData);
+			List<Login> list = loginData.getAll();
+			filteredData = new FilteredList<Login>(FXCollections.observableArrayList(list),	p -> true);
+			SortedList<Login> sortedData = new SortedList<Login>(filteredData);
 			sortedData.comparatorProperty().bind(tvData.comparatorProperty());
 			tvData.setItems(sortedData);
 		} catch (Exception e) {

@@ -39,30 +39,30 @@ However there's no tool or wizard that allows you to get a term set out of the t
 It's only possible with my PowerShell function (which is as always part of my [PowerShell PowerUp project](http://janikvonrotz.github.io/PowerShell-PowerUp/))
 <!--more-->
 [code lang="ps"]
-&lt;#
+<#
 $Metadata = @{
-	Title = &quot;Get SharePoint Managed Metadata Service Terms&quot;
-	Filename = &quot;Get-SPManagedMetadataServiceTerms.ps1&quot;
-	Description = &quot;&quot;
-	Tags = &quot;powershell, function, sharepoint, managed, metadata, terms, export&quot;
-	Project = &quot;&quot;
-	Author = &quot;Janik von Rotz&quot;
-	AuthorContact = &quot;http://janikvonrotz.ch&quot;
-	CreateDate = &quot;2014-03-31&quot;
-	LastEditDate = &quot;2014-03-31&quot;
-	Url = &quot;&quot;
-	Version = &quot;1.0.0&quot;
+	Title = "Get SharePoint Managed Metadata Service Terms"
+	Filename = "Get-SPManagedMetadataServiceTerms.ps1"
+	Description = ""
+	Tags = "powershell, function, sharepoint, managed, metadata, terms, export"
+	Project = ""
+	Author = "Janik von Rotz"
+	AuthorContact = "http://janikvonrotz.ch"
+	CreateDate = "2014-03-31"
+	LastEditDate = "2014-03-31"
+	Url = ""
+	Version = "1.0.0"
 	License = @'
 This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Switzerland License.
 To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ch/ or 
 send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 '@
 }
-#&gt;
+#>
 
 function Get-SPManagedMetadataServiceTerms{
 
-&lt;#
+<#
 .SYNOPSIS
     List all Terms from Managed Metadata service.
 
@@ -76,15 +76,15 @@ function Get-SPManagedMetadataServiceTerms{
 	Optionally filter the term group.
 
 .EXAMPLE
-	PS C:\&gt; Get-SPManagedMetadataServiceTerms -Site &quot;http://SharePoint.domain.com&quot;
+	PS C:\> Get-SPManagedMetadataServiceTerms -Site "http://SharePoint.domain.com"
 
 .EXAMPLE
-	PS C:\&gt; Get-SPManagedMetadataServiceTerms -Site &quot;http://SharePoint.domain.com&quot; -TermGroup &quot;Wiki&quot;
+	PS C:\> Get-SPManagedMetadataServiceTerms -Site "http://SharePoint.domain.com" -TermGroup "Wiki"
 
 .LINK
     http://technet.microsoft.com/en-us/library/ee424396(v=office.14).aspx
 
-#&gt;
+#>
 
     [CmdletBinding()]
     param(
@@ -112,10 +112,10 @@ function Get-SPManagedMetadataServiceTerms{
         )
     
         # check the child attribute containing the same type of objects
-        $Objects = iex &quot;`$Object.$AttributeName&quot;
+        $Objects = iex "`$Object.$AttributeName"
     
         # output this item
-        $Object | select @{L=&quot;Object&quot;;E={$_}}, @{L=&quot;Level&quot;;E={$Level}}
+        $Object | select @{L="Object";E={$_}}, @{L="Level";E={$Level}}
     
         # output the child items of this object
         if($Objects){
@@ -139,8 +139,8 @@ function Get-SPManagedMetadataServiceTerms{
     #--------------------------------------------------#
     $SPTaxonomies = @()
     $TempTerm = New-Object -TypeName Psobject @{    
-        Index = &quot;&quot;
-        Term = &quot;&quot;
+        Index = ""
+        Term = ""
     }
 
     $i = 0;
@@ -160,12 +160,12 @@ function Get-SPManagedMetadataServiceTerms{
             $TermStore = New-Object -TypeName Psobject -Property @{
         
                 TermStore = $_.Name
-                &quot;Term Group&quot; = &quot;&quot;
-                &quot;Term Set Name&quot; = &quot;&quot;
-                &quot;Term Set Description&quot; = &quot;&quot;   
-                LCID = &quot;&quot;             
-                &quot;Available for Tagging&quot; = &quot;&quot;                
-                Terms = &quot;&quot;      
+                "Term Group" = ""
+                "Term Set Name" = ""
+                "Term Set Description" = ""   
+                LCID = ""             
+                "Available for Tagging" = ""                
+                Terms = ""      
             }        
         
         
@@ -180,7 +180,7 @@ function Get-SPManagedMetadataServiceTerms{
                     $TermSet.'Term Set Name' = $_.Name
                     $TermSet.'Term Set Description' = $_.Description
                                     
-                    $TermSet.Terms = ($_.Terms | %{Add-ArrayLevelIndex -Object $_ -AttributeName &quot;Terms&quot; -Level 1})
+                    $TermSet.Terms = ($_.Terms | %{Add-ArrayLevelIndex -Object $_ -AttributeName "Terms" -Level 1})
             
                     $TermSet                  
                 }        
@@ -199,10 +199,10 @@ function Get-SPManagedMetadataServiceTerms{
 
         # Output Termstore definitions
         $Item = $SPTaxonomy.PSObject.Copy()  
-        $Item.'Available for Tagging' = if($_.IsAvailableForTagging){&quot;TRUE&quot;}else{&quot;FALSE&quot;}        
+        $Item.'Available for Tagging' = if($_.IsAvailableForTagging){"TRUE"}else{"FALSE"}        
         $i = 0;while($i -ne 7){
             $i ++
-            $Item | Add-Member –MemberType NoteProperty –Name &quot;Level $i Term&quot; –Value &quot;&quot;
+            $Item | Add-Member –MemberType NoteProperty –Name "Level $i Term" –Value ""
         }
         $Item |  Select-Object 'Term Set Name','Term Set Description', LCID, 'Available for Tagging', 'Term Description', 'Level*'
 
@@ -215,9 +215,9 @@ function Get-SPManagedMetadataServiceTerms{
             # create a term export object
             $Item = $SPTaxonomy.PSObject.Copy()   
              
-            $Item.'Available for Tagging' = if($_.IsAvailableForTagging){&quot;TRUE&quot;}else{&quot;FALSE&quot;}
-            $Item.'Term Set Name' = &quot;&quot;
-            $Item.'Term Set Description' = &quot;&quot;
+            $Item.'Available for Tagging' = if($_.IsAvailableForTagging){"TRUE"}else{"FALSE"}
+            $Item.'Term Set Name' = ""
+            $Item.'Term Set Description' = ""
             
             $_.Object.Labels | ForEach-Object{
 
@@ -228,17 +228,17 @@ function Get-SPManagedMetadataServiceTerms{
 
                     if($Term.Level -eq $Index){                        
 
-                        $Item | Add-Member –MemberType NoteProperty –Name &quot;Level $Index Term&quot; –Value $Term.Object.Name
+                        $Item | Add-Member –MemberType NoteProperty –Name "Level $Index Term" –Value $Term.Object.Name
 
                         $TempTerms[$Index].Term = $Term.Object.Name
 
                     }elseif($Index -gt $Term.Level){
                             
-                        $Item | Add-Member –MemberType NoteProperty –Name &quot;Level $Index Term&quot; –Value $Value
+                        $Item | Add-Member –MemberType NoteProperty –Name "Level $Index Term" –Value $Value
 
                     }elseif($Term.Level -gt $Index){
 
-                        $Item | Add-Member –MemberType NoteProperty –Name &quot;Level $Index Term&quot; –Value $TempTerms[$Index].Term
+                        $Item | Add-Member –MemberType NoteProperty –Name "Level $Index Term" –Value $TempTerms[$Index].Term
                         
                     }                                   
                 }  

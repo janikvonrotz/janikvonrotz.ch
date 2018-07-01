@@ -52,7 +52,7 @@ let phrases = {
   }
 }
 
-export default (state = phrases.de, action) =&gt; {
+export default (state = phrases.de, action) => {
   switch (action.type) {
     case 'SWITCH_LANGUAGE':
       return phrases[action.language]
@@ -78,20 +78,20 @@ class RouterSearch extends React.Component {
   render() {
     let { i18n } = this.props
 
-    return &lt;Card&gt;
-      &lt;CardText&gt;
+    return <Card>
+      <CardText>
 
-        &lt;TextField
+        <TextField
         floatingLabelText={ i18n.button.search }
 
         ...
 
-      &lt;/CardText&gt;
-    &lt;/Card&gt;
+      </CardText>
+    </Card>
   }
 }
 
-const mapStateToProps = (state) =&gt; {
+const mapStateToProps = (state) => {
   return {
     i18n: state.i18n,
   }
@@ -105,7 +105,7 @@ Switching the language is easily done by setting the `language` state.
 
 [code]
 ...
-export const switchLanguage = (language) =&gt; {
+export const switchLanguage = (language) => {
   return {
     type: 'SWITCH_LANGUAGE',
     language

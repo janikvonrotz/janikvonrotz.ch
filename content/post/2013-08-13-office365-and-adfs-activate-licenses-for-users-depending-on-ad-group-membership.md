@@ -26,70 +26,70 @@ On Office365 the users have to be licensed in order to get access to the Office3
 <!--more-->
 
 [code lang="ps"]
-&lt;#
+<#
 $Metadata = @{
-    Title = &quot;Set Office365 Licenses by ActiveDirectory Group Membership&quot;
-    Filename = &quot;Set-O365UserLicensesByADGroup.ps1&quot;
-    Description = @&quot;
+    Title = "Set Office365 Licenses by ActiveDirectory Group Membership"
+    Filename = "Set-O365UserLicensesByADGroup.ps1"
+    Description = @"
 Adding license to a Office365 user as long the user is in the correct ActiveDirectory group
 or in the white list, the users is active, the user has a mailbox.
 The script will remove inactive licenses or if necessary replace them.
-&quot;@
-    Tags = &quot;powershell, activedirectory, office365, user, license, activation&quot;
-    Project = &quot;&quot;
-    Author = &quot;Janik von Rotz&quot;
-    AuthorContact = &quot;https://janikvonrotz.ch&quot;
-    CreateDate = &quot;2013-08-13&quot;
-    LastEditDate = &quot;2013-09-30&quot;
-    Url = &quot;https://gist.github.com/janikvonrotz/6218401&quot;
-    Version = &quot;3.0.0&quot;
+"@
+    Tags = "powershell, activedirectory, office365, user, license, activation"
+    Project = ""
+    Author = "Janik von Rotz"
+    AuthorContact = "https://janikvonrotz.ch"
+    CreateDate = "2013-08-13"
+    LastEditDate = "2013-09-30"
+    Url = "https://gist.github.com/janikvonrotz/6218401"
+    Version = "3.0.0"
     License = @'
 This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Switzerland License.
 To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/3.0/ch/ or
 send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 '@
 }
-#&gt;
+#>
 
 #--------------------------------------------------#
 # settings
 #--------------------------------------------------#
 
-$UsageLocation = &quot;CH&quot;
+$UsageLocation = "CH"
 
 $WhiteList = @{
-    UserPrincipalName = &quot;admin@vbluzern.onmicrosoft.com&quot;
-    License = &quot;vbluzern:STANDARDPACK&quot;
+    UserPrincipalName = "admin@vbluzern.onmicrosoft.com"
+    License = "vbluzern:STANDARDPACK"
 },
 @{
-    UserPrincipalName = &quot;bison.testoff368@vbl.ch&quot;
-    License = &quot;vbluzern:STANDARDPACK&quot;
+    UserPrincipalName = "bison.testoff368@vbl.ch"
+    License = "vbluzern:STANDARDPACK"
 },
 @{
-    UserPrincipalName = &quot;bison.test07@vbl.ch&quot;
-    License = &quot;vbluzern:STANDARDPACK&quot;
+    UserPrincipalName = "bison.test07@vbl.ch"
+    License = "vbluzern:STANDARDPACK"
 },
 @{
-    UserPrincipalName = &quot;bison.test@vbl.ch&quot;
-    License = &quot;vbluzern:STANDARDPACK&quot;
+    UserPrincipalName = "bison.test@vbl.ch"
+    License = "vbluzern:STANDARDPACK"
 },
 @{
-    UserPrincipalName = &quot;bison.testoff367@vbl.ch&quot;
-    License = &quot;vbluzern:STANDARDPACK&quot;
+    UserPrincipalName = "bison.testoff367@vbl.ch"
+    License = "vbluzern:STANDARDPACK"
 }
 
 
 $LicenseConfig = @{
-    Name = &quot;SharePoint Online Plan 1&quot;
-    License = &quot;vbluzern:SHAREPOINTSTANDARD&quot;
-    ADGroupSID = &quot;S-1-5-21-1744926098-708661255-2033415169-37562&quot; # SPO_SharePointOnlinePlan1License
-    Rule = &quot;&quot;
+    Name = "SharePoint Online Plan 1"
+    License = "vbluzern:SHAREPOINTSTANDARD"
+    ADGroupSID = "S-1-5-21-1744926098-708661255-2033415169-37562" # SPO_SharePointOnlinePlan1License
+    Rule = ""
 },
 @{
-    Name = &quot;Enterprise Plan 1&quot;
-    License = &quot;vbluzern:STANDARDPACK&quot;
-    ADGroupSID = &quot;S-1-5-21-1744926098-708661255-2033415169-36657&quot; # SPO_365E1License
-    Rule = &quot;MailBoxExistOnline&quot;
+    Name = "Enterprise Plan 1"
+    License = "vbluzern:STANDARDPACK"
+    ADGroupSID = "S-1-5-21-1744926098-708661255-2033415169-36657" # SPO_365E1License
+    Rule = "MailBoxExistOnline"
 }
 
 #--------------------------------------------------#
@@ -104,31 +104,31 @@ Import-Module ActiveDirectory
 #--------------------------------------------------#
 
 # import credentials
-$Credential = Import-PSCredential $(Get-ChildItem -Path $PSconfigs.Path -Filter &quot;Office365.credentials.config.xml&quot; -Recurse).FullName
+$Credential = Import-PSCredential $(Get-ChildItem -Path $PSconfigs.Path -Filter "Office365.credentials.config.xml" -Recurse).FullName
 
-Write-Host &quot;Get Office365 users&quot;
+Write-Host "Get Office365 users"
 # connect to office365
 Connect-MsolService -Credential $Credential
 $MsolUsers = Get-MsolUser -All
 
-Write-Host &quot;Get ExchangeOnline mailboxes&quot;
+Write-Host "Get ExchangeOnline mailboxes"
 # import session
 $s = New-PSSession -ConfigurationName Microsoft.Exchange `
     -ConnectionUri https://ps.outlook.com/powershell `
     -Credential $(Get-Credential -Credential $Credential) `
     -Authentication Basic `
     -AllowRedirection
-$EOMailboxes = Invoke-Command -Session $s -ScriptBlock{Get-MailBox} | select UserPrincipalName | %{&quot;$($_.UserPrincipalName)&quot;}
-# remove session&quot;
+$EOMailboxes = Invoke-Command -Session $s -ScriptBlock{Get-MailBox} | select UserPrincipalName | %{"$($_.UserPrincipalName)"}
+# remove session"
 Remove-PSSession $s
 
 # combine users and their license
 $LicenseAndUser = ($LicenseConfig |
     %{$License = $_ ; Get-ADGroupMember $_.ADGroupSID -Recursive | Get-ADUser | where{$_.Enabled -eq $true} |
-    %{$_ | select UserPrincipalName, @{Name = &quot;License&quot;; Expression = {$License.License}}, @{Name = &quot;Rule&quot;; Expression = {$License.Rule}}}
-    }) + ($WhiteList | select  @{Name = &quot;UserPrincipalName&quot;; Expression = {$_.UserPrincipalName}},
-    @{Name = &quot;License&quot;; Expression = {$_.License}},
-    @{Name = &quot;Rule&quot;; Expression = {&quot;&quot;}})
+    %{$_ | select UserPrincipalName, @{Name = "License"; Expression = {$License.License}}, @{Name = "Rule"; Expression = {$License.Rule}}}
+    }) + ($WhiteList | select  @{Name = "UserPrincipalName"; Expression = {$_.UserPrincipalName}},
+    @{Name = "License"; Expression = {$_.License}},
+    @{Name = "Rule"; Expression = {""}})
 
 
 foreach($User in $MsolUsers){
@@ -136,21 +136,21 @@ foreach($User in $MsolUsers){
     # first check whitelist
     $Config = $LicenseAndUser | where{$_.UserPrincipalName -eq $User.UserPrincipalName}
 
-    if(($Config) -and ((($Config.Rule -eq &quot;MailBoxExistOnline&quot;) -and ($EOMailboxes -contains $User.UserPrincipalName)) -or ($Config.Rule -eq &quot;&quot;))){
+    if(($Config) -and ((($Config.Rule -eq "MailBoxExistOnline") -and ($EOMailboxes -contains $User.UserPrincipalName)) -or ($Config.Rule -eq ""))){
 
         if($User.IsLicensed -and ($User.Licenses.AccountSkuId -ne $Config.License)){
 
-            Write-Host &quot;Replace Office365 license: $($User.Licenses.AccountSkuId) with: $($Config.License) for user: $($User.UserPrincipalName)&quot;
+            Write-Host "Replace Office365 license: $($User.Licenses.AccountSkuId) with: $($Config.License) for user: $($User.UserPrincipalName)"
             $User.Licenses | %{Set-MsolUserLicense -UserPrincipalName $User.UserPrincipalName -RemoveLicenses $_.AccountSkuId}
             Set-MsolUserLicense -UserPrincipalName $User.UserPrincipalName -AddLicenses $Config.License
 
         }elseif($User.IsLicensed){
 
-            Write-Host &quot;User: $($User.UserPrincipalName) is already licensed with: $($Config.License)&quot;
+            Write-Host "User: $($User.UserPrincipalName) is already licensed with: $($Config.License)"
 
         }else{
 
-            Write-Host &quot;Set Office365 license: $($Config.License) for user: $($User.UserPrincipalName)&quot;
+            Write-Host "Set Office365 license: $($Config.License) for user: $($User.UserPrincipalName)"
             Set-MsolUser -UserPrincipalName $User.UserPrincipalName -UsageLocation $UsageLocation
             Set-MsolUserLicense -UserPrincipalName $User.UserPrincipalName -AddLicenses $Config.License
 
@@ -160,12 +160,12 @@ foreach($User in $MsolUsers){
 
         if($User.IsLicensed){
 
-            Write-Host &quot;Remove Office365 license: $($User.Licenses.AccountSkuId) from user: $($User.UserPrincipalName)&quot;
+            Write-Host "Remove Office365 license: $($User.Licenses.AccountSkuId) from user: $($User.UserPrincipalName)"
             $User.Licenses | %{Set-MsolUserLicense -UserPrincipalName $User.UserPrincipalName -RemoveLicenses $_.AccountSkuId}
 
         }else{
 
-            Write-Host &quot;User: $($User.UserPrincipalName) is not allowed&quot;
+            Write-Host "User: $($User.UserPrincipalName) is not allowed"
 
         }
     }
@@ -173,7 +173,7 @@ foreach($User in $MsolUsers){
 
 if($error){
 
-    Send-PPErrorReport -FileName &quot;DirSync.mail.config.xml&quot; -ScriptName $MyInvocation.InvocationName
+    Send-PPErrorReport -FileName "DirSync.mail.config.xml" -ScriptName $MyInvocation.InvocationName
 
 }
 [/code]

@@ -45,19 +45,19 @@ Import-Module ActiveDirectory
 $Licenses = @()
 
 # import credentials
-$Credential = Import-PSCredential $(Get-ChildItem -Path $PSconfigs.Path -Filter &quot;Office365.credentials.config.xml&quot; -Recurse).FullName
+$Credential = Import-PSCredential $(Get-ChildItem -Path $PSconfigs.Path -Filter "Office365.credentials.config.xml" -Recurse).FullName
 
 # SID is SPO_365Users
-Write-Host &quot;Get allowed ActiveDirectory users&quot;
-$AllowADUsers = Get-ADGroupMember &quot;S-1-5-21-1744926098-708661255-2033415169-36655&quot; -Recursive | Get-ADUser | where {$_.enabled -eq $true} | select userprincipalname # SPO_365Users
+Write-Host "Get allowed ActiveDirectory users"
+$AllowADUsers = Get-ADGroupMember "S-1-5-21-1744926098-708661255-2033415169-36655" -Recursive | Get-ADUser | where {$_.enabled -eq $true} | select userprincipalname # SPO_365Users
 
 # connect to office365
 Connect-MsolService -Credential $Credential
 
-Write-Host &quot;Get Office365 users&quot;
+Write-Host "Get Office365 users"
 $MSOUsers = Get-MsolUser -All
 
-Write-Host &quot;Get ExchangeOnline mailboxes&quot;
+Write-Host "Get ExchangeOnline mailboxes"
 # import session
 $s = New-PSSession -ConfigurationName Microsoft.Exchange `
     -ConnectionUri https://ps.outlook.com/powershell `
@@ -71,31 +71,31 @@ $MSOMailboxes = Get-Mailbox | select UserPrincipalName
 
 $MSOUsers | foreach{
 
-    Write-Progress -Activity &quot;Report licenses&quot; -status $_.UserPrincipalName -percentComplete ([int]([array]::IndexOf(([array]$MSOUsers), $_)/([array]$MSOUsers).count*100))
+    Write-Progress -Activity "Report licenses" -status $_.UserPrincipalName -percentComplete ([int]([array]::IndexOf(([array]$MSOUsers), $_)/([array]$MSOUsers).count*100))
 
     $UserPrincipleName = $_.UserPrincipalName
 
     $License = $_ | Select-Object -Property UserPrincipalName,
-    @{ Name = &quot;Package&quot;;
+    @{ Name = "Package";
         Expression = {
             $_.Licenses | ForEach-Object{$_.AccountSkuId}
         }
     },
-    @{ Name = &quot;Licenses&quot;;
+    @{ Name = "Licenses";
         Expression = {
             $_.Licenses | ForEach-Object{
-                $_.ServiceStatus | Where-Object{$_.ProvisioningStatus -ne &quot;Disabled&quot;}
+                $_.ServiceStatus | Where-Object{$_.ProvisioningStatus -ne "Disabled"}
             } | ForEach-Object{
                 $_.ServicePlan.ServiceName
             }
         }
     },
-    @{ Name = &quot;IsAllowedOffice365User&quot;;
+    @{ Name = "IsAllowedOffice365User";
         Expression = {
             if($AllowADUsers -match $UserPrincipleName){$true}else{$false}
         }
     },
-    @{ Name = &quot;HasMailboxInCloud&quot;;
+    @{ Name = "HasMailboxInCloud";
         Expression = {
             if($MSOMailboxes -match $UserPrincipleName){$true}else{$false}
         }
@@ -108,7 +108,7 @@ $Licenses | Out-GridView
 
 if($error){
 
-    Send-PPErrorReport -FileName &quot;DirSync.mail.config.xml&quot; -ScriptName $MyInvocation.InvocationName
+    Send-PPErrorReport -FileName "DirSync.mail.config.xml" -ScriptName $MyInvocation.InvocationName
 
 }
 [/code]

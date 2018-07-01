@@ -35,15 +35,15 @@ Running this script on random windows machine will open a ExchangeOnline PowerS
 After the import it's the local session pretends to be live on the ExchangeOnline server, your able to run every PowerShell Exchange CMDlet. Yeapeeee :)
 
 [code lang="ps"]
-&lt;pre&gt;try{
+<pre>try{
 
     #--------------------------------------------------#
     # settings
     #--------------------------------------------------#
 
-    $Language = &quot;de-CH&quot;
-    $TimeZone = &quot;W. Europe Standard Time&quot;
-    $DateFormat = &quot;dd.MM.yyyy&quot;
+    $Language = "de-CH"
+    $TimeZone = "W. Europe Standard Time"
+    $DateFormat = "dd.MM.yyyy"
 
     #--------------------------------------------------#
     # main
@@ -51,7 +51,7 @@ After the import it's the local session pretends to be live on the ExchangeOnlin
 
     Import-Module ActiveDirectory
 
-    $Credential = Import-PSCredential $(Get-ChildItem -Path $PSconfigs.Path -Filter &quot;Office365.credentials.config.xml&quot; -Recurse).FullName
+    $Credential = Import-PSCredential $(Get-ChildItem -Path $PSconfigs.Path -Filter "Office365.credentials.config.xml" -Recurse).FullName
 
     $s = New-PSSession -ConfigurationName Microsoft.Exchange `
     -ConnectionUri https://ps.outlook.com/powershell `
@@ -60,42 +60,42 @@ After the import it's the local session pretends to be live on the ExchangeOnlin
     -AllowRedirection
     Import-PSSession $s
 
-    $ADUsers = Get-ADUser -Filter {Mail -like &quot;*&quot;} -Properties sn, telephoneNumber, title
+    $ADUsers = Get-ADUser -Filter {Mail -like "*"} -Properties sn, telephoneNumber, title
     $Mailboxes = $(Get-Mailbox)
 
     foreach($Mailbox in $Mailboxes){
 
-        Write-Progress -Activity &quot;Update settings&quot; -status $($Mailbox.Name) -percentComplete ([Int32](([Array]::IndexOf($Mailboxes, $Mailbox)/($Mailboxes.count))*100))
+        Write-Progress -Activity "Update settings" -status $($Mailbox.Name) -percentComplete ([Int32](([Array]::IndexOf($Mailboxes, $Mailbox)/($Mailboxes.count))*100))
 
-        Write-Host &quot;Set mailbox language settings for $($Mailbox.Name)&quot;
+        Write-Host "Set mailbox language settings for $($Mailbox.Name)"
 
         Set-MailboxRegionalConfiguration $Mailbox.Alias -Language $Language -TimeZone $TimeZone -LocalizeDefaultFolderName -DateFormat $DateFormat
 
-        Write-Host &quot;Set signature for $($Mailbox.Name)&quot;
+        Write-Host "Set signature for $($Mailbox.Name)"
 
         $ADUser = $ADUsers | where{$_.UserPrincipalName -eq $Mailbox.UserPrincipalName} | select -First 1
 
         # get phone number
         if($ADuser.telephoneNumber -eq $null){
-            $telephoneNumber = &quot;+41 41 369 65 65&quot;
+            $telephoneNumber = "+41 41 369 65 65"
         }else{
             $telephoneNumber = $ADuser.telephoneNumber
         }
 
-        $Html = get-Content -Path $(Get-ChildItem -Path $PStemplates.Path -Filter &quot;vbl signature.html&quot; -Recurse).FullName
-        $Text = get-Content -Path $(Get-ChildItem -Path $PStemplates.Path -Filter &quot;vbl signature.txt&quot; -Recurse).FullName
+        $Html = get-Content -Path $(Get-ChildItem -Path $PStemplates.Path -Filter "vbl signature.html" -Recurse).FullName
+        $Text = get-Content -Path $(Get-ChildItem -Path $PStemplates.Path -Filter "vbl signature.txt" -Recurse).FullName
 
-        $Html = $Html -replace &quot;%%Firstname%%&quot;,$ADUser.givenname `
-            -replace &quot;%%Lastname%%&quot;,$Aduser.sn `
-            -replace &quot;%%Title%%&quot;,$Aduser.title `
-            -replace &quot;%%PhoneNumber%%&quot;,$telephoneNumber `
-            -replace &quot;%%FaxNumber%%&quot;,&quot;041 369 65 00&quot;
+        $Html = $Html -replace "%%Firstname%%",$ADUser.givenname `
+            -replace "%%Lastname%%",$Aduser.sn `
+            -replace "%%Title%%",$Aduser.title `
+            -replace "%%PhoneNumber%%",$telephoneNumber `
+            -replace "%%FaxNumber%%","041 369 65 00"
 
-        $Text = $Text -replace &quot;%%Firstname%%&quot;,$ADUser.givenname `
-            -replace &quot;%%Lastname%%&quot;,$Aduser.sn `
-            -replace &quot;%%Title%%&quot;,$Aduser.title `
-            -replace &quot;%%PhoneNumber%%&quot;,$telephoneNumber `
-            -replace &quot;%%FaxNumber%%&quot;,&quot;041 369 65 00&quot;
+        $Text = $Text -replace "%%Firstname%%",$ADUser.givenname `
+            -replace "%%Lastname%%",$Aduser.sn `
+            -replace "%%Title%%",$Aduser.title `
+            -replace "%%PhoneNumber%%",$telephoneNumber `
+            -replace "%%FaxNumber%%","041 369 65 00"
 
         Set-MailboxMessageConfiguration -Identity $Mailbox.Alias -SignatureHtml $HTML -AutoAddSignature $true -SignatureText $TEXT
 
@@ -106,9 +106,9 @@ After the import it's the local session pretends to be live on the ExchangeOnlin
 
 }catch{
 
-    Send-PPErrorReport -FileName &quot;DirSync.mail.config.xml&quot; -ScriptName $MyInvocation.InvocationName
+    Send-PPErrorReport -FileName "DirSync.mail.config.xml" -ScriptName $MyInvocation.InvocationName
 
-}&lt;/pre&gt;
+}</pre>
 [/code]
 
 <a href="https://gist.github.com/6294947" target="_blank">https://gist.github.com/6294947</a>

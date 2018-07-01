@@ -1,6 +1,6 @@
 ---
 id: 308
-title: 'Kinaj 12 &#8211; Banana Phone'
+title: 'Kinaj 12 - Banana Phone'
 date: 2013-07-24T10:33:56+00:00
 author: Janik von Rotz
 layout: post

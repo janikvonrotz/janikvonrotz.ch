@@ -1,6 +1,6 @@
 ---
 id: 1418
-title: 'O3M 31 &#8211; dogde that shit (Pop)'
+title: 'O3M 31 - dogde that shit (Pop)'
 date: 2014-03-05T16:58:42+00:00
 author: Janik von Rotz
 layout: post

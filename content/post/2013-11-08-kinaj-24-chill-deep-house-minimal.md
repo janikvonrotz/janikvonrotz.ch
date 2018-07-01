@@ -1,6 +1,6 @@
 ---
 id: 681
-title: 'Kinaj 24 &#8211; Insane Butterfly (chill, deep house, minimal)'
+title: 'Kinaj 24 - Insane Butterfly (chill, deep house, minimal)'
 date: 2013-11-08T13:19:16+00:00
 author: Janik von Rotz
 layout: post

@@ -1,6 +1,6 @@
 ---
 id: 2873
-title: 'O3M 52 &#8211; Japan Powder'
+title: 'O3M 52 - Japan Powder'
 date: 2015-01-12T18:59:25+00:00
 author: Janik von Rotz
 layout: post

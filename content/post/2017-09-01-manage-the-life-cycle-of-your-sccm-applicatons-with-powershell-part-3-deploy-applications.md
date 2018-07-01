@@ -1,6 +1,6 @@
 ---
 id: 4513
-title: 'Manage the life cycle of your SCCM applicatons with PowerShell &#8211; Part 3 Deploy Applications'
+title: 'Manage the life cycle of your SCCM applicatons with PowerShell - Part 3 Deploy Applications'
 date: 2017-09-01T09:00:58+00:00
 author: Janik von Rotz
 layout: post
@@ -31,46 +31,46 @@ The script is fairly simple. It cycles through the applications catalog and chec
 **Deploy-CMApplications.ps1**
 
 [code lang="powershell"]
-Import-Module &quot;C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\bin\ConfigurationManager.psd1&quot;
-cd &quot;$((Get-PSProvider | Where-Object {$_.Name -eq &quot;CMSite&quot;}).Drives.Name):&quot;
+Import-Module "C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\bin\ConfigurationManager.psd1"
+cd "$((Get-PSProvider | Where-Object {$_.Name -eq "CMSite"}).Drives.Name):"
 
-$ApplicationName = &quot;CM Console (1.0.0)&quot; 
+$ApplicationName = "CM Console (1.0.0)" 
 # use * for all applications
-$Action = &quot;Install&quot;
+$Action = "Install"
 # use Install or Uninstall
-$Purpose = &quot;Required&quot;
+$Purpose = "Required"
 # use Available or Required
 
-$DistributionPointName = &quot;OWSPAP08.GO4KSOW.NET&quot;
+$DistributionPointName = "OWSPAP08.GO4KSOW.NET"
 $CMApplicationDeployment = Get-CMApplicationDeployment
 Get-CMApplication | Where-Object{ $_.LocalizedDisplayName -like $ApplicationName } | ForEach-Object {
     $Name = $_.LocalizedDisplayName
-    $DeviceCollectionName = &quot;$Name Devices&quot;
-    $UserCollectionName = &quot;$Name Users&quot;
+    $DeviceCollectionName = "$Name Devices"
+    $UserCollectionName = "$Name Users"
 
-    Write-Host &quot;`nDistribute and deploy application $Name`n&quot;
+    Write-Host "`nDistribute and deploy application $Name`n"
 
     try {
         Start-CMContentDistribution -ApplicationName $Name -DistributionPointName $DistributionPointName
-        Write-Host &quot;Content distributed&quot;
+        Write-Host "Content distributed"
     } catch {
-        Write-Warning &quot;Content has already been distributed.&quot;
+        Write-Warning "Content has already been distributed."
     }
 
     $UserCollectionDeployment = $CMApplicationDeployment | Where-Object{ ($_.ApplicationName -eq $Name) -and ($_.CollectionName -eq $UserCollectionName)}
     if(-not $UserCollectionDeployment) {
-        Write-Host &quot;Deploy to user collection.&quot;
+        Write-Host "Deploy to user collection."
         $UserCollectionDeployment = New-CMApplicationDeployment -Name $Name -CollectionName $UserCollectionName -DeployAction $Action -DeployPurpose $Purpose
     } else {
-        Write-Warning &quot;Application has already been distributed to the user collection.&quot;
+        Write-Warning "Application has already been distributed to the user collection."
     }
 
     $DeviceCollectionDeployment = $CMApplicationDeployment | Where-Object{ ($_.ApplicationName -eq $Name) -and ($_.CollectionName -eq $DeviceCollectionName)}
     if(-not $DeviceCollectionDeployment) {
-        Write-Host &quot;Deploy to device collection.&quot;
+        Write-Host "Deploy to device collection."
         $DeviceCollectionDeployment = New-CMApplicationDeployment -Name $Name -CollectionName $DeviceCollectionName -DeployAction $Action -DeployPurpose $Purpose
     } else {
-        Write-Warning &quot;Application has already been distributed to the device collection.&quot;
+        Write-Warning "Application has already been distributed to the device collection."
     }
 }
 [/code]

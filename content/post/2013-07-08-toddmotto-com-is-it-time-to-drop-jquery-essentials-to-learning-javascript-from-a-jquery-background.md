@@ -193,7 +193,7 @@ jQuery makes this super easy with the <em>$.each();</em> method, which again hid
 
 <div class="highlight">
 <pre><code class="javascript"><span class="kd">var</span> <span class="nx">myArray</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'one'</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">,</span> <span class="s1">'three'</span><span class="p">,</span> <span class="s1">'four'</span><span class="p">]</span>
-<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">myArray</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o"><</span> <span class="nx">myArray</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
     <span class="c1">// ...</span>
 <span class="p">}</span>
 </code></pre>
@@ -226,7 +226,7 @@ Looking at the jQuery side of things, here's a quick comparison of the two:
 
 <span class="c1">// JavaScript</span>
 <span class="kd">var</span> <span class="nx">myArray</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'one'</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">,</span> <span class="s1">'three'</span><span class="p">,</span> <span class="s1">'four'</span><span class="p">]</span>
-<span class="k">for</span> <span class="p">(</span> <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">myArray</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+<span class="k">for</span> <span class="p">(</span> <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o"><</span> <span class="nx">myArray</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">myArray</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">value</span> <span class="p">);</span>
 <span class="p">}</span>
@@ -248,7 +248,7 @@ A large difference between jQuery is the fact we need to generate a loop using <
 
 <span class="c1">// JavaScript - this adds the class to every Node in the NodeList</span>
 <span class="kd">var</span> <span class="nx">someElem</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">'.someElem'</span><span class="p">);</span>
-<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">someElem</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o"><</span> <span class="nx">someElem</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">someElem</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">'myClass'</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre>
@@ -304,15 +304,15 @@ This is how we would log the attribute's vale in the Console:
 HTML5 data-* attributes are probably one of the best additions to the HTML specification ever, IMO of course. I use the jQuery <em>.data();</em> API all the time, and also the native JavaScript if it's required:
 
 <div class="highlight">
-<pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"myElem"</span> <span class="na">data-username=</span><span class="s">"Todd"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<pre><code class="html"><span class="nt"><div</span> <span class="na">class=</span><span class="s">"myElem"</span> <span class="na">data-username=</span><span class="s">"Todd"</span><span class="nt">></div></span>
 
-<span class="nt">&lt;script&gt;</span>
+<span class="nt"><script></span>
 <span class="c1">// jQuery</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">'.myElem'</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="s1">'username'</span><span class="p">));</span> <span class="c1">// Logs 'Todd'</span>
 
 <span class="c1">// JavaScript - use the getAttribute method, fairly static</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'.myElem'</span><span class="p">).</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s1">'data-username'</span><span class="p">));</span>
-<span class="nt">&lt;/script&gt;</span>
+<span class="nt"></script></span>
 </code></pre>
 </div>
 
@@ -323,9 +323,9 @@ HTML5 introduces the <em>dataset</em> API, which browser support isn't bad, I do
 There are neat tricks we can do to parse JSON and create objects too even in plain ol' JavaScript. It's pretty much the same! Let's take an HTML5 custom data-* attribute for a JSON example, grab the attribute, parse the JSON into an Object and then hook into that object:
 
 <div class="highlight">
-<pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"myElem"</span> <span class="na">data-user=</span><span class="s">'{ "name" : "Todd", "id" : "01282183" }'</span><span class="nt">&gt;&lt;/div&gt;</span>
+<pre><code class="html"><span class="nt"><div</span> <span class="na">class=</span><span class="s">"myElem"</span> <span class="na">data-user=</span><span class="s">'{ "name" : "Todd", "id" : "01282183" }'</span><span class="nt">></div></span>
 
-<span class="nt">&lt;script&gt;</span>
+<span class="nt"><script></span>
 <span class="c1">// jQuery</span>
 <span class="kd">var</span> <span class="nx">myElem</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'.myElem'</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="s1">'user'</span><span class="p">);</span> <span class="c1">// Gets the JSON</span>
 <span class="kd">var</span> <span class="nx">myJSON</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">parseJSON</span><span class="p">(</span><span class="nx">myElem</span><span class="p">);</span> <span class="c1">// Parses string into JSON Object</span>
@@ -337,7 +337,7 @@ There are neat tricks we can do to parse JSON and create objects too even in pla
 <span class="kd">var</span> <span class="nx">myJSON</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">myElem</span><span class="p">);</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myJSON</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span> <span class="c1">// JSON Object, logs 'Todd'</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myJSON</span><span class="p">.</span><span class="nx">id</span><span class="p">);</span> <span class="c1">// JSON Object, logs '01282183'</span>
-<span class="nt">&lt;/script&gt;</span>
+<span class="nt"></script></span>
 </code></pre>
 </div>
 

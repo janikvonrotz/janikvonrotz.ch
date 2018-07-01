@@ -64,10 +64,10 @@ As mentioned querying the event log is a bit more difficult. The event log viewe
 Here is a simple example:
 
 [code lang="powershell"]
-$LogName = &quot;security&quot;
-$StartTime = Get-Date(&quot;2017-10-12 12:50&quot;)
-$EndTime = Get-Date(&quot;2017-10-12 13:00&quot;)
-$SearchKey = &quot;username&quot;
+$LogName = "security"
+$StartTime = Get-Date("2017-10-12 12:50")
+$EndTime = Get-Date("2017-10-12 13:00")
+$SearchKey = "username"
 
 Get-WinEvent -FilterHashtable @{LogName=$LogName; StartTime=$StartTime;EndTime=$EndTime} | Where-Object {$_.Message -match $SearchKey} | select Id, TimeCreated, Message | Format-List
 [/code]

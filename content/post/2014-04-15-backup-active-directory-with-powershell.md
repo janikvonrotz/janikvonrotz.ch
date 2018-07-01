@@ -34,54 +34,54 @@ What it does:
 * Notify me if something failed (requires [PowerShell PowerUp](http://janikvonrotz.github.io/PowerShell-PowerUp/))
 <!--more-->
 [code lang="ps"]
-&lt;#
+<#
 $Metadata = @{
-	Title = &quot;Backup ActiveDirecotry&quot;
-	Filename = &quot;Backup-ActiveDirectory.ps1&quot;
-	Description = &quot;&quot;
-	Tags = &quot;backup, active, directory, ntsutil&quot;
-	Project = &quot;&quot;
-	Author = &quot;Janik von Rotz&quot;
-	AuthorContact = &quot;http://janikvonrotz.ch&quot;
-	CreateDate = &quot;2014-04-15&quot;
-	LastEditDate = &quot;2014-04-15&quot;
-	Url = &quot;&quot;
-	Version = &quot;0.0.0&quot;
+	Title = "Backup ActiveDirecotry"
+	Filename = "Backup-ActiveDirectory.ps1"
+	Description = ""
+	Tags = "backup, active, directory, ntsutil"
+	Project = ""
+	Author = "Janik von Rotz"
+	AuthorContact = "http://janikvonrotz.ch"
+	CreateDate = "2014-04-15"
+	LastEditDate = "2014-04-15"
+	Url = ""
+	Version = "0.0.0"
 	License = @'
 This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Switzerland License.
 To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ch/ or 
 send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 '@
 }
-#&gt;
+#>
 
 try{
 
-    &lt;#
+    <#
     #--------------------------------------------------#
     # about
     #--------------------------------------------------#
     
     The restore and backup process is described here: http://technet.microsoft.com/en-us/library/dd581644(WS.10).aspx
     
-    #&gt;
+    #>
     
     #--------------------------------------------------#
     # settings
     #--------------------------------------------------#
     
-    $Path = &quot;C:\Powershell-PowerUp\backup\ActiveDirectory&quot;
+    $Path = "C:\Powershell-PowerUp\backup\ActiveDirectory"
     
     #--------------------------------------------------#
     # main
     #--------------------------------------------------#
     
     # create backup file name
-    $Filename = &quot;ADBackupFull&quot; + &quot;#&quot; + $((Get-Date -Format s) -replace &quot;:&quot;,&quot;-&quot;) + &quot;.bak&quot;
+    $Filename = "ADBackupFull" + "#" + $((Get-Date -Format s) -replace ":","-") + ".bak"
     $Filepath = Join-Path $Path $Filename
     
     # backup active directory
-    Invoke-Expression 'ntdsutil &quot;activate instance ntds&quot; ifm &quot;create full $Filepath&quot; quit quit'
+    Invoke-Expression 'ntdsutil "activate instance ntds" ifm "create full $Filepath" quit quit'
     
     # get dates for backup retention exclusion
     $Today = Get-Date -Format d
@@ -89,7 +89,7 @@ try{
     $FirstDateOfMonth = Get-Date -Day 1 -Format d
     
     # delete all backups except for today, first day of week and first day of month
-    Get-ChildItem $Path | select *,@{L=&quot;CreationTimeDate&quot;;E={Get-Date $_.CreationTime -Format d}} | Group-Object CreationTimeDate | %{
+    Get-ChildItem $Path | select *,@{L="CreationTimeDate";E={Get-Date $_.CreationTime -Format d}} | Group-Object CreationTimeDate | %{
         
         # only one backup per day
         if($_.Count -gt 1){
@@ -104,7 +104,7 @@ try{
 
 }catch{
 
-    Write-PPErrorEventLog -Source &quot;Backup ActiveDirectory&quot; -ClearErrorVariable
+    Write-PPErrorEventLog -Source "Backup ActiveDirectory" -ClearErrorVariable
 }
 [/code]
 

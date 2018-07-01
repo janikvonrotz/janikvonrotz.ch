@@ -1,6 +1,6 @@
 ---
 id: 42
-title: 'Vagrant &#8211; portable development environment'
+title: 'Vagrant - portable development environment'
 date: 2013-07-02T11:54:35+00:00
 author: Janik von Rotz
 layout: post
