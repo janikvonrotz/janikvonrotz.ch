@@ -25,6 +25,6 @@ tags:
 ---
 My brother and friends went to Slovenia last summer. With nothing more they could wear on their shoulders they've spent almost two weeks in the wilderness. There my brother did some filming and captured the beautiful landscape in a short movie.
 
-https://vimeo.com/139705654
+{{< vimeo 139705654 >}}
 
 If you want see more footage done by him, checkout his website: [http://sebastianvonrotz.ch/](http://sebastianvonrotz.ch/)

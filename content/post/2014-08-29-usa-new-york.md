@@ -31,14 +31,14 @@ Here's a quote and some pictures to say Goodbye New York.
 
 -- Albert Einstein
 
-[caption id="attachment_2554" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/08/New-York-20140828-1024x575.jpg" alt="Take the free Staten Island ferry and you’ll get this beautiful view of New York." width="720" height="404" class="size-large wp-image-2554" /> Take the free Staten Island ferry and you'll get this beautiful view of New York.[/caption]
+{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/08/New-York-20140828-1024x575.jpg" title="Take the free Staten Island ferry and you'll get this beautiful view of New York." >}}
 
-[caption id="attachment_2552" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/08/Brooklyn-bridge-by-night-20140828-1024x575.jpg" alt="A nice district to go out is right next to the Brooklyn bridge." width="720" height="404" class="size-large wp-image-2552" /> A nice district to go out is right next to the Brooklyn bridge.[/caption]
+{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/08/Brooklyn-bridge-by-night-20140828-1024x575.jpg" title="A nice district to go out is right next to the Brooklyn bridge." >}}
 
-[caption id="attachment_2551" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/08/Brooklyn-bridge-20140828-1024x575.jpg" alt="The Brooklyn bridge from another angle." width="720" height="404" class="size-large wp-image-2551" /> The Brooklyn bridge from another angle.[/caption]
+{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/08/Brooklyn-bridge-20140828-1024x575.jpg" title="The Brooklyn bridge from another angle." >}}
 
-[caption id="attachment_2553" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/08/Madison-square-park-20140828-1024x575.jpg" alt="While waiting for the legendary Shake Shack burger I took this picture in the Madison square park." width="720" height="404" class="size-large wp-image-2553" /> While waiting for the legendary Shake Shack burger I took this picture in the Madison square park.[/caption]
+{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/08/Madison-square-park-20140828-1024x575.jpg" title="While waiting for the legendary Shake Shack burger I took this picture in the Madison square park." >}}
 
-[caption id="attachment_2555" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/08/New-York-by-night-20140826-1024x575.jpg" alt="New York by night seen from the Rockefeller plaza building." width="720" height="404" class="size-large wp-image-2555" /> New York by night seen from the Rockefeller plaza building.[/caption]
+{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/08/New-York-by-night-20140826-1024x575.jpg" title="New York by night seen from the Rockefeller plaza building." >}}
 
-[caption id="attachment_2556" align="aligncenter" width="720"]<img src="https://janikvonrotz.ch/wp-content/uploads/2014/08/New-York-copy-and-paste-20140828-1024x575.jpg" alt="This picture is the best  evidence how picturesque New York city is. Seems like it has been photoshoped." width="720" height="404" class="size-large wp-image-2556" /> This picture is the best  evidence how picturesque New York city is. Seems like it has been photoshoped.[/caption]
+{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/08/New-York-copy-and-paste-20140828-1024x575.jpg" title="This picture is the best  evidence how picturesque New York city is. Seems like it has been photoshoped." >}}

@@ -25,4 +25,4 @@ tags:
 
 Great work! Simply love it.
 
-https://vimeo.com/166807261
+{{< vimeo 166807261 >}}

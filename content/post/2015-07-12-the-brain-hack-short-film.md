@@ -25,4 +25,4 @@ tags:
 ---
 A friend of mine told me to watch The Brain Hack on Vimeo. It's a short film about the perception of god. This movie literally blew me mind. You have to watch it!
 
-https://vimeo.com/118342272
+{{< vimeo 118342272 >}}

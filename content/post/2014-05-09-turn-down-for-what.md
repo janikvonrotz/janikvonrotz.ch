@@ -22,4 +22,4 @@ tags:
 ---
 This is ... weird?!
 
-https://www.youtube.com/watch?v=HMUDVMiITOU
+{{< youtube HMUDVMiITOU >}}

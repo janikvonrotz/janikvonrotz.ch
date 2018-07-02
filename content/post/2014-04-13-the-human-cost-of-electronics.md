@@ -26,7 +26,7 @@ This evening I came along a short documentary that really touched me.
 
 The following video reveals the real cost of our electronic products.
 <!--more-->
-https://www.youtube.com/watch?v=ns-kJ5Podjw
+{{< youtube ns-kJ5Podjw >}}
 
 There are people that work themselves to death just to produce our latest favourite smartphone.
 

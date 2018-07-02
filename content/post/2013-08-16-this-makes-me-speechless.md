@@ -19,4 +19,4 @@ tags:
   - politics
   - shocking
 ---
-https://vimeo.com/61094582
+{{< vimeo 61094582 >}}

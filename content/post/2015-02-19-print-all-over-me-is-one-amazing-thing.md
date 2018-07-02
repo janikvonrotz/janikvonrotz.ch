@@ -21,7 +21,7 @@ tags:
 ---
 For the folks that didn't know about [Print All Over Me](http://printallover.me/) yet, here some blabla:
 
-https://vimeo.com/114155778
+{{< vimeo 114155778 >}}
 
 I've already posted about PAOM a long time, however it progressed well and is still an amazing thing.
 Feeling excited about this? Then check out [my desings](http://printallover.me/collections/janikvonrotz).

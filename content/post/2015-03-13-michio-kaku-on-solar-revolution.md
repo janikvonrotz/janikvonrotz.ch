@@ -25,4 +25,4 @@ tags:
 ---
 For those who don't know him, Michio Kaku is great speaker and scientist. Via [http://bigthink.com/](http://bigthink.com/) he shares his big ideas about how things works and how the future looks like. Recently I really enjoyed his thoughts about the solar power revolution and it's cause. You should definitely check it out!
 
-https://www.youtube.com/watch?v=FvsFWUo2iIw
+{{< youtube FvsFWUo2iIw >}}

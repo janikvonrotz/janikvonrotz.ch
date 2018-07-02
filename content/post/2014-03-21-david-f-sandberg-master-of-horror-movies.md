@@ -25,7 +25,7 @@ tags:
 ---
 David Sandberg recently won several short movie awards for his film Who's There.
 
-https://vimeo.com/82920243
+{{< vimeo 82920243 >}}
 
 I'm not a fan of horror movies, but this is truly amazing.
 <!--more-->
@@ -35,4 +35,4 @@ The Concept is as simple as the [Knock (short story)](http://en.wikipedia.org/wi
 
 In case you've already seen "Who's There" here's another one from David.
 
-https://vimeo.com/64762621
+{{< vimeo 64762621 >}}

@@ -23,4 +23,4 @@ tags:
 ---
 It's nice to see that the [3Run team](http://www.3run.co.uk/) still has time for such cool productions:
 
-https://www.youtube.com/watch?v=VLC-Tl6_IBs
+{{< youtube VLC-Tl6_IBs >}}

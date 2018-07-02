@@ -22,4 +22,4 @@ tags:
 ---
 Finally they're back! Lonely Island are teaching you everything you have to know about modern DJs and the night club culture in their new video.
 
-https://www.youtube.com/watch?v=XCawU6BE8P8
+{{< youtube XCawU6BE8P8 >}}

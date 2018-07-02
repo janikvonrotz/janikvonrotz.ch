@@ -24,6 +24,6 @@ tags:
 For those who haven't seen it yet. This interview with David Belle (legendary founder of Parkour) and team <a href="http://www.stormfreerun.com/">Storm </a>member Tim "Livewire" is  a must see.
 <!--more-->
 
-https://www.youtube.com/watch?v=ZXVvjtG2H8c
+{{< youtube ZXVvjtG2H8c >}}
 
 Don't try to be the best, try to be better!

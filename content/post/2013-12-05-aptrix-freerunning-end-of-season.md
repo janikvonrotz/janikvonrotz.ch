@@ -19,4 +19,4 @@ tags:
   - season
   - team
 ---
-https://www.youtube.com/watch?v=MK865zo2WS0
+{{< youtube MK865zo2WS0 >}}

@@ -20,6 +20,6 @@ tags:
 ---
 Constructed from a combined 150,000 photos, 450 hours of work, and 6 terabytes of data, photographer [Julian Tryba's](http://www.juliantphoto.com/) innovative new short, Boston Layer-Lapse, is new approach to the traditional timelapse photography.
 
-https://vimeo.com/108792063
+{{< vimeo 108792063 >}}
 
 Checkout the exclusive interview with Julian on the [creatorsproject](http://thecreatorsproject.vice.com/en_uk/blog/how-one-filmmaker-engineered-a-new-take-on-the-timelapse).

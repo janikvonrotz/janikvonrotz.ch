@@ -19,4 +19,4 @@ tags:
   - tor
   - vodka
 ---
-https://www.youtube.com/watch?v=7o06sNy45Ns
+{{< youtube 7o06sNy45Ns >}}
