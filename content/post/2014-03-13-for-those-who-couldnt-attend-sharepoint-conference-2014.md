@@ -159,6 +159,6 @@ if($DownloadVideos){$a.rss.channel.item | foreach{
 
 The spc14 folder should look like this after downloading all the slides and videos.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-Conference-2014-Downloads.png"><img src="https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-Conference-2014-Downloads.png" alt="SharePoint Conference 2014 Downloads" width="844" height="863" class="aligncenter size-full wp-image-1501" /></a>
+<a href="https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-Conference-2014-Downloads.png">![SharePoint Conference 2014 Downloads](https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-Conference-2014-Downloads.png)</a>
 
 You'll find the original script on <a href="https://gallery.technet.microsoft.com/PowerShell-Script-to-all-04e92a63">Technet</a>

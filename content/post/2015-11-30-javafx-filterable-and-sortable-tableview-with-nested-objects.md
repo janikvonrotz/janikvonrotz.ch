@@ -30,7 +30,7 @@ tags:
 This is a simple example for a sortable and filterable table view with properties from nested objects.
 <!--more-->
 First step design a simple table view like this one:
-<img src="https://janikvonrotz.ch/wp-content/uploads/2015/10/JavaFx-Filterable-Table-View.png" alt="JavaFx Filterable Table View" width="569" height="537" class="aligncenter size-full wp-image-3581" />
+![JavaFx Filterable Table View](https://janikvonrotz.ch/wp-content/uploads/2015/10/JavaFx-Filterable-Table-View.png)
 
 For this example I use a rather simple approach on the object relationship.
 

@@ -33,7 +33,7 @@ tags:
 ---
 Last time we've set up our basic project structure with gradle. This time we are going to create the models aka our Java classes. Below is uml diagram showing all classes, interfaces and their relationship.
 
-<img src="https://janikvonrotz.ch/wp-content/uploads/2015/03/3-tier-java-application-Classmodel.png" alt="3-tier java application Classmodel" width="812" height="784" class="aligncenter size-full wp-image-3138" />
+![3-tier java application Classmodel](https://janikvonrotz.ch/wp-content/uploads/2015/03/3-tier-java-application-Classmodel.png)
 <!--more-->
 # Common Eclipse
 
@@ -41,7 +41,7 @@ Open the common project in eclipse and update it according to the instructions.
 
 1) Create a project structure like this:
 
-<img src="https://janikvonrotz.ch/wp-content/uploads/2015/03/Common-Eclipse-Filestructure.png" alt="Common Eclipse Filestructure" width="281" height="321" class="aligncenter size-full wp-image-3133" />
+![Common Eclipse Filestructure](https://janikvonrotz.ch/wp-content/uploads/2015/03/Common-Eclipse-Filestructure.png)
 
 2) Update the class and interface files with the content showed below.
 

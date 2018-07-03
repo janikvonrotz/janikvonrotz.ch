@@ -23,7 +23,7 @@ And in another case like mine, it could happen that you're unable to unlock the 
 
 <!--more-->
 
-<p style="text-align: center;"><img class="aligncenter size-full wp-image-233" style="border: 1px solid black;" title="SharePoint Site Allocation Locked" alt="SharePoint Locked" src="https://janikvonrotz.ch/wp-content/uploads/2013/07/SharePoint-Locked.png" width="1004" height="665" /></p>
+<p style="text-align: center;">![SharePoint Locked](https://janikvonrotz.ch/wp-content/uploads/2013/07/SharePoint-Locked.png)</p>
 
 Additional to the lock state in SharePoint 2013 there's a feature to enter the site collection in a "Maintenance Mode".
 This maintenance mode will lock even the administration access to the site collection.

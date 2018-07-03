@@ -28,7 +28,7 @@ The purpose of this article is to show the intention and implemention of the mos
 
 Out of the box the login form should look like this:
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/10/ADFS-Login-page.png"><img class="aligncenter size-full wp-image-639" alt="ADFS Login page" src="https://janikvonrotz.ch/wp-content/uploads/2013/10/ADFS-Login-page.png" width="615" height="216" /></a>The f.e. is by default the page url, this can confuse the user, due they expect something like "your login" or "Office365 Login".
+<a href="https://janikvonrotz.ch/wp-content/uploads/2013/10/ADFS-Login-page.png">![ADFS Login page](https://janikvonrotz.ch/wp-content/uploads/2013/10/ADFS-Login-page.png)</a>The f.e. is by default the page url, this can confuse the user, due they expect something like "your login" or "Office365 Login".
 
 <!--more-->
 

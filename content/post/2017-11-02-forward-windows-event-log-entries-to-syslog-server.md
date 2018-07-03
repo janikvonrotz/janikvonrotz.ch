@@ -76,6 +76,6 @@ try {
 
 This examples crawls the security log messages from the last hour and forwards each to the server. Yet only one severity type is supported, the switch statement can be extended easily with additional types. Success and failure of this script are logged locally. Below is screenshot of the log file using CMTrace.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2017/10/CMTrace-syslog-entry.png"><img src="https://janikvonrotz.ch/wp-content/uploads/2017/10/CMTrace-syslog-entry.png" alt="" width="587" height="307" class="aligncenter size-full wp-image-4639" /></a>
+<a href="https://janikvonrotz.ch/wp-content/uploads/2017/10/CMTrace-syslog-entry.png">![Untitled](https://janikvonrotz.ch/wp-content/uploads/2017/10/CMTrace-syslog-entry.png)</a>
 
 The script is intended to run on an hourly schedule. In case the windows scheduler is used to execute the script make sure that the job runs with the highest privileges available. Otherwise the script won't be able to read the security log.

@@ -251,7 +251,7 @@ try{
 
 The configuration attribute ListViewName and FilterIndex allows me to change to create an alert for an specific view.
 
-<img class="aligncenter size-large wp-image-876" alt="SharePoint Create Alert on List View" src="https://janikvonrotz.ch/wp-content/uploads/2014/01/SharePoint-Create-Alert-on-List-View-746x1024.jpg" width="474" height="650" />
+![SharePoint Create Alert on List View](https://janikvonrotz.ch/wp-content/uploads/2014/01/SharePoint-Create-Alert-on-List-View-746x1024.jpg)
 
 <h1>Requirements</h1>
 

@@ -147,4 +147,4 @@ function Get-ADPrincipalGroupMembershipRecurse{
 
 <h1>Output Example</h1>
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/12/Get-Active-Directory-User-Membership-Groups-Recursively-Output-Example.png"><img class="aligncenter size-full wp-image-822" alt="Get Active Directory User Membership Groups Recursively - Output Example" src="https://janikvonrotz.ch/wp-content/uploads/2013/12/Get-Active-Directory-User-Membership-Groups-Recursively-Output-Example.png" width="853" height="432" /></a>
+<a href="https://janikvonrotz.ch/wp-content/uploads/2013/12/Get-Active-Directory-User-Membership-Groups-Recursively-Output-Example.png">![Get Active Directory User Membership Groups Recursively - Output Example](https://janikvonrotz.ch/wp-content/uploads/2013/12/Get-Active-Directory-User-Membership-Groups-Recursively-Output-Example.png)</a>

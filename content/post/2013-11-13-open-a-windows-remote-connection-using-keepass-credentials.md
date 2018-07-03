@@ -33,8 +33,8 @@ cmd://"C:\Windows\System32\cmd.exe" /c cmdkey.exe /generic:TERMSRV/{S:SERVER} /u
 
 Latest version of this code snippet: [https://gist.github.com/7449352](https://gist.github.com/7449352)
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-1.png"><img class="aligncenter size-full wp-image-722" alt="KeePass Url RDP Connection 1" src="https://janikvonrotz.ch/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-1.png" width="503" height="524" /></a>
+<a href="https://janikvonrotz.ch/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-1.png">![KeePass Url RDP Connection 1](https://janikvonrotz.ch/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-1.png)</a>
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-2.png"><img class="aligncenter size-full wp-image-723" alt="KeePass Url RDP Connection 2" src="https://janikvonrotz.ch/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-2.png" width="503" height="524" /></a>
+<a href="https://janikvonrotz.ch/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-2.png">![KeePass Url RDP Connection 2](https://janikvonrotz.ch/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-2.png)</a>
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-3.png"><img class="aligncenter size-full wp-image-724" alt="KeePass Url RDP Connection 3" src="https://janikvonrotz.ch/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-3.png" width="602" height="151" /></a>
+<a href="https://janikvonrotz.ch/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-3.png">![KeePass Url RDP Connection 3](https://janikvonrotz.ch/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-3.png)</a>

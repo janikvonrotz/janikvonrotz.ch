@@ -40,7 +40,7 @@ In web development there are tons of programs and tools and due to that also com
 Luckily dependency handling got a lot easier. For my Laravel project setup we will use 3 different package managers.
 Every package manager of course manages a different resource, we will use composer for php packages, npm for everything related to Node.js and Bower for web packages.
 <!--more-->
-<img src="https://janikvonrotz.ch/wp-content/uploads/2015/01/Web-Technologies-1024x766.png" alt="Web Technologies" width="720" height="539" class="alignnone size-large wp-image-2903" />
+![Web Technologies](https://janikvonrotz.ch/wp-content/uploads/2015/01/Web-Technologies-1024x766.png)
 
 By following the instructions of this guide you'll get a very advanced Laravel project template with the following features:
 

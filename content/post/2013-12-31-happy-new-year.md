@@ -22,6 +22,6 @@ tags:
 ---
 Wish you all the best, 2014 is going to be great :)
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/12/New-Years-1resized.jpg"><img class="aligncenter size-medium wp-image-870" alt="Grumpy New Year" src="https://janikvonrotz.ch/wp-content/uploads/2013/12/New-Years-1resized-300x199.jpg" width="300" height="199" /></a>
+<a href="https://janikvonrotz.ch/wp-content/uploads/2013/12/New-Years-1resized.jpg">![Grumpy New Year](https://janikvonrotz.ch/wp-content/uploads/2013/12/New-Years-1resized-300x199.jpg)</a>
 
 Hope you've enjoyed my blogging in 2013 ;)

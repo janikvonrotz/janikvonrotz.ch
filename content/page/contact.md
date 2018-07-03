@@ -39,7 +39,3 @@ dsq_thread_id:
 
 [GitHub](https://github.com/janikvonrotz)  
 [GitHub Gist](https://gist.github.com/janikvonrotz)  
-
-# Old School Mail
-
-[contact-form to='contact@janikvonrotz.ch' subject='janikvonrotz.ch - contact form'][contact-field label='Name' type='text' required='1'/][contact-field label='Email Adresse' type='email' required='1'/][contact-field label='Betreff' type='text'/][contact-field label='Nachricht' type='textarea'/][/contact-form]

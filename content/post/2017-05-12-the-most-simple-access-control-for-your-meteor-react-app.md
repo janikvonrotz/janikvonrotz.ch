@@ -182,7 +182,7 @@ export default Router
 
 As you can see the `isAllowed` function is used for all scenarios.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2017/05/Meteor-React-component-access-control.gif"><img src="https://janikvonrotz.ch/wp-content/uploads/2017/05/Meteor-React-component-access-control.gif" alt="" width="640" height="319" class="aligncenter size-full wp-image-4297" /></a>
+<a href="https://janikvonrotz.ch/wp-content/uploads/2017/05/Meteor-React-component-access-control.gif">![Untitled](https://janikvonrotz.ch/wp-content/uploads/2017/05/Meteor-React-component-access-control.gif)</a>
 
 Do you like this solution? Leave a comment and tell my more.
 

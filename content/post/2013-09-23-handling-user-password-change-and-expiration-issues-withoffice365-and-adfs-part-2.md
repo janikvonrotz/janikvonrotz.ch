@@ -39,7 +39,7 @@ Checkout the instructions in the readme fileto set up the password change websit
 
 If you have setup the website already I recommend you to include the site with a sharepoint webpart here's an example:
 
-<img class="aligncenter size-full wp-image-520" alt="Passwortwechsel" src="https://janikvonrotz.ch/wp-content/uploads/2013/09/Passwortwechsel.png" width="1227" height="748" />
+![Passwortwechsel](https://janikvonrotz.ch/wp-content/uploads/2013/09/Passwortwechsel.png)
 
 <h1>Requirements</h1>
 

@@ -81,7 +81,7 @@ Run `pm2 deploy ecosystem.config.js dev setup` to do so. Your repo will be clone
 
 From now on, whenever you've pushed new changes to your repo, you can deploy your app with `pm2 deploy ecosystem.config.js`.
 
-<img src="https://janikvonrotz.ch/wp-content/uploads/2017/03/Screen-Shot-2017-03-14-at-13.44.04.png" alt="" width="640" height="351" class="aligncenter size-full wp-image-4239" />...
+![Untitled](https://janikvonrotz.ch/wp-content/uploads/2017/03/Screen-Shot-2017-03-14-at-13.44.04.png)...
 {{< figure src="https://janikvonrotz.ch/wp-content/uploads/2017/03/Screen-Shot-2017-03-14-at-13.44.30.png" title="Meteor app deployed successfully." >}}
 
 Make sure to have a look on the [PM2 deployment documentation](http://pm2.keymetrics.io/docs/usage/deployment/). 

@@ -27,7 +27,7 @@ tags:
 
 By default SharePoint won't user profiles of disabled accounts. To change that update the connection filter on the User Profile Sync service.
 <!--more-->
-<img src="https://janikvonrotz.ch/wp-content/uploads/2014/04/User-Profile-sync-connection-filter.png" alt="User Profile sync connection filter" width="940" height="209" class="aligncenter size-full wp-image-1895" />
+![User Profile sync connection filter](https://janikvonrotz.ch/wp-content/uploads/2014/04/User-Profile-sync-connection-filter.png)
 
 As you can see I've added a rule for the userAccountControl. Only activated user accounts get a MySite profile.
 

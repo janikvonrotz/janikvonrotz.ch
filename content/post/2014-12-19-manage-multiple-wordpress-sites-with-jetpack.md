@@ -27,6 +27,6 @@ Jetpack is a must have plugin for your WordPress site, it offers tons of new fun
 With the last Update the developer have added a great feature. It's now possible to manage the plugins for multiple Wordpress sites at one location.
 Here's a screenshot, which shows the plugins admin panel of Wordpress.com.
 <!--more-->
-<img src="https://janikvonrotz.ch/wp-content/uploads/2014/12/Automatic-Plugin-Update-for-Multiple-WordPress-sites.png" alt="Automatic Plugin Update for Multiple WordPress sites" width="976" height="809" class="aligncenter size-full wp-image-2830" />
+![Automatic Plugin Update for Multiple WordPress sites](https://janikvonrotz.ch/wp-content/uploads/2014/12/Automatic-Plugin-Update-for-Multiple-WordPress-sites.png)
 
 Change the settings to autoupdate and you never have to bother about it again.

@@ -258,4 +258,4 @@ With this function you can export the a specific term set into a CSV file or sho
 
 Here's an example for an export to gridview.
 
-<a href="https://janikvonrotz.ch/2014/04/01/sharepoint-export-and-import-term-sets-from-term-store/update-wiki-terms-excel-from-termstore/" rel="attachment wp-att-1744"><img src="https://janikvonrotz.ch/wp-content/uploads/2014/04/Update-Wiki-Terms-Excel-from-Termstore.gif" alt="Update Wiki Terms Excel from Termstore" width="1746" height="1105" class="aligncenter size-full wp-image-1744" /></a>
+<a href="https://janikvonrotz.ch/2014/04/01/sharepoint-export-and-import-term-sets-from-term-store/update-wiki-terms-excel-from-termstore/" rel="attachment wp-att-1744">![Update Wiki Terms Excel from Termstore](https://janikvonrotz.ch/wp-content/uploads/2014/04/Update-Wiki-Terms-Excel-from-Termstore.gif)</a>

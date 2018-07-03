@@ -66,7 +66,7 @@ dism /online /enable-feature /featurename:NetFX3 /all /Source:d:sourcessxs /Limi
 
 Only after executing this command you're able to install the .Net framework as usual with the wizard.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2014/02/Net-3.5-Installation-WinSev-2012.jpg"><img class="aligncenter size-full wp-image-1130" alt=".Net 3.5 Installation WinSev 2012" src="https://janikvonrotz.ch/wp-content/uploads/2014/02/Net-3.5-Installation-WinSev-2012.jpg" width="789" height="555" /></a>
+<a href="https://janikvonrotz.ch/wp-content/uploads/2014/02/Net-3.5-Installation-WinSev-2012.jpg">![.Net 3.5 Installation WinSev 2012](https://janikvonrotz.ch/wp-content/uploads/2014/02/Net-3.5-Installation-WinSev-2012.jpg)</a>
 
 At this point where the SQL server installation I don't want to provide you a step by step guide, as you might install another version or this guide gets obsolete.
 
@@ -260,7 +260,7 @@ FTSVCACCOUNT="NT AUTHORITYLOCAL SERVICE"
 
 The most important configurations are the data directories and the user service accounts. In the last post we created several service accounts, you can use them now as showed here:
 
-<a style="font-family: Montserrat, sans-serif; font-size: 16px; font-style: normal; color: #16a085;" href="https://janikvonrotz.ch/wp-content/uploads/2014/02/Installing-and-Configuring-SharePoint-SQL-Server.jpg"><img class="aligncenter size-full wp-image-1129" alt="Installing and Configuring SharePoint SQL Server" src="https://janikvonrotz.ch/wp-content/uploads/2014/02/Installing-and-Configuring-SharePoint-SQL-Server.jpg" width="962" height="270" /></a>
+<a style="font-family: Montserrat, sans-serif; font-size: 16px; font-style: normal; color: #16a085;" href="https://janikvonrotz.ch/wp-content/uploads/2014/02/Installing-and-Configuring-SharePoint-SQL-Server.jpg">![Installing and Configuring SharePoint SQL Server](https://janikvonrotz.ch/wp-content/uploads/2014/02/Installing-and-Configuring-SharePoint-SQL-Server.jpg)</a>
 
 You might have seen, the temdb is stored on the C drive and I know as s a best practice you should not have tempdb on the C drive because the OS has the paging file on C by default and you don't want the mixed I/O affecting tempdb performance. But let's be honest this action won't affect our SharePoint installation in any way.
 

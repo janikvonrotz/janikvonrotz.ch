@@ -60,7 +60,7 @@ For assistance at my daily work, I have developed a distinct workflow and toolbo
 
 Using these tools I try to document as much as possible. Every document version is tracked via git. For every domain of my life (education, private, business) there is a knowledge base. The knowledge bases are stored in a git repository and thus can be made shared with other parties. Here is an example of working with this toolbox:
 
-<img src="https://janikvonrotz.ch/wp-content/uploads/2018/03/Knowledge-Base-Visual-Studio-Code.gif" alt="" width="1127" height="774" class="aligncenter size-full wp-image-4827" />
+![Untitled](https://janikvonrotz.ch/wp-content/uploads/2018/03/Knowledge-Base-Visual-Studio-Code.gif)
 
 To force a taxonomy I have defined a guideline for the folder structure: [https://gist.github.com/janikvonrotz/a9eeb4d5ae551073fda8b5d3743b2cfc](https://gist.github.com/janikvonrotz/a9eeb4d5ae551073fda8b5d3743b2cfc)
 

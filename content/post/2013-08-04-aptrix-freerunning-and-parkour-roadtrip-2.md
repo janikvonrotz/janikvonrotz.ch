@@ -19,4 +19,4 @@ tags:
   - video
 ---
 Here we go!
-[youtube=https://www.youtube.com/watch?v=ac-8ExM52UU]
+{{< youtube ac-8ExM52UU >}}

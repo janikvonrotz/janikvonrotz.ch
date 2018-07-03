@@ -27,4 +27,4 @@ To install the .Net Framework 3.5 on Windows Server 2012 and Windows Server 2012
 
 Now you should be able to install the feature with server management console.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2014/03/install-net-3.5-e1394519502205.jpg"><img src="https://janikvonrotz.ch/wp-content/uploads/2014/03/install-net-3.5-e1394519502205.jpg" alt="install .Net 3.5 on Windows Server 2012 R2" width="783" height="203" class="aligncenter size-full wp-image-1490" /></a>
+<a href="https://janikvonrotz.ch/wp-content/uploads/2014/03/install-net-3.5-e1394519502205.jpg">![install .Net 3.5 on Windows Server 2012 R2](https://janikvonrotz.ch/wp-content/uploads/2014/03/install-net-3.5-e1394519502205.jpg)</a>

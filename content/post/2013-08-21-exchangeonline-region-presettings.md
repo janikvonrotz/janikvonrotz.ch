@@ -26,7 +26,7 @@ Every time a user logged in for the first time into the Office365 Outlook webapp
 
 <!--more-->
 
-<p style="text-align: center;"><img class="size-full wp-image-448 aligncenter" alt="Outlook Regional Settings" src="https://janikvonrotz.ch/wp-content/uploads/2013/08/Outlook-Regional-Settings.png" width="637" height="449" /></p>
+<p style="text-align: center;">![Outlook Regional Settings](https://janikvonrotz.ch/wp-content/uploads/2013/08/Outlook-Regional-Settings.png)</p>
 
 Despite it's not a lot of effort to change that, the timezone settings can be very confusing.
 

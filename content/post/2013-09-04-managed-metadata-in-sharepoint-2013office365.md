@@ -29,4 +29,4 @@ Yet most file systems store their files in an hierarchical structure, with Shar
 
 To get into this Managed Metadata Service thing, I've found a great video.
 
-[youtube https://youtu.be/j4psvjLtlno][/youtube]
+{{< youtube j4psvjLtlno >}}

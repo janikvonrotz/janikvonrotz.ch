@@ -30,7 +30,7 @@ This article reminded my of how stupid current password guidelines are and that 
 <!--more-->
 Inspiration for the new random password was the following XKCD comic:
 
-<img src="https://janikvonrotz.ch/wp-content/uploads/2017/08/password_strength.png" alt="" width="740" height="601" class="aligncenter size-full wp-image-4444" />
+![Untitled](https://janikvonrotz.ch/wp-content/uploads/2017/08/password_strength.png)
 
 So instead of using any kind of character for the password, simply put four random words together.
 To create this kind of password we need a word list with common nouns. I've created a german and english word list for you to download:
