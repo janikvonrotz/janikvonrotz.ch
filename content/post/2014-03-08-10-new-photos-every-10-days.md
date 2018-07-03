@@ -32,4 +32,4 @@ This website offers is a pleasant way to explore nice photographs and learn abou
 
 Here's one of my favourites so far:
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2014/03/tumblr_n10n4rpjvZ1st5lhmo1_1280.jpg">![unsplash favorite](https://janikvonrotz.ch/wp-content/uploads/2014/03/tumblr_n10n4rpjvZ1st5lhmo1_1280.jpg)</a>
+<a href="https://janikvonrotz.ch/wp-content/uploads/2014/03/tumblr_n10n4rpjvZ1st5lhmo1_1280.jpg"><img src="https://janikvonrotz.ch/wp-content/uploads/2014/03/tumblr_n10n4rpjvZ1st5lhmo1_1280.jpg" alt="unsplash favorite" width="1280" height="853" class="aligncenter size-full wp-image-1440" /></a>

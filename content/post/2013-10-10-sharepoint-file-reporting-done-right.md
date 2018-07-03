@@ -36,7 +36,7 @@ To get a nice report of unchecked, versioned and "normal" files I've coded a Pow
 
 Most of the functions are part of my Project: <a title="PowerShell Profile" href="https://github.com/janikvonrotz/Powershell-Profile" target="_blank">PowerShell Profile</a>, so this will be a requirement to run this script.
 
-[code language="powershell"]
+```ps
 $SPWebs = Get-SPWebs
 $SPWebs | %{
 

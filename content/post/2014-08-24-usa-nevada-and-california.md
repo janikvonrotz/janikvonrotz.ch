@@ -36,7 +36,7 @@ My USA trip has almost come to an end. I had a great time here in California and
 
 Not the cities are worth being seen, it are the beautiful national parks, the nature and the landscape of California. If you'll ever go to America don't miss these things.
 <!--more-->
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/08/Bodie-state-park-20140805-1024x682.jpg" title="Bodie is a ghost town which gives you a nice insight in the good ol times." >}}
+{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/08/Bodie-state-park-20140805-1024x682.jpg" title="Bodie is a ghost town which gives you a nice insight in the "good ol times"." >}}
 
 {{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/08/Lake-Tahoe-20140806-1024x575.jpg" title="A beach in the mountains? Yes, that's lake Tahoe." >}}
 

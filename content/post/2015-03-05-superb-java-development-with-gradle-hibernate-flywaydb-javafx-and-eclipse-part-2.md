@@ -39,7 +39,7 @@ This time we create a basic rich application with JavaFX. It will be quite simpl
 
 We will start with a refresh of the file structure. The picture below shows yellow marked the new packages and directories. On the right side is a preview of the application window labeled with the type of each component.
 
-![Updated IssueMan Filestructure](https://janikvonrotz.ch/wp-content/uploads/2015/03/Updated-IssueMan-Filestructure.png)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2015/03/Updated-IssueMan-Filestructure.png" alt="Updated IssueMan Filestructure" width="1000" height="450" class="aligncenter size-full wp-image-3073" />
 
 * Create the new packages.
 * Move the files to their new folders. Eclipse will automatically update the namespace and import commands.
@@ -166,7 +166,7 @@ Some more event methods for the buttons.
 
 Designing the user interface is very easy.
 
-![Scene Builder Issue Manager](https://janikvonrotz.ch/wp-content/uploads/2015/03/Scene-Builder-Issue-Manager.png)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2015/03/Scene-Builder-Issue-Manager.png" alt="Scene Builder Issue Manager" width="1069" height="490" class="aligncenter size-full wp-image-3084" />
 
 * Open the `Home.fxml` file with scene builder.
 * Connect the scene with the PersonController.

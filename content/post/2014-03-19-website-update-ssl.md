@@ -16,7 +16,7 @@ Hi visiter,
 
 As you might have already seen, this websites is now  accessible over https.
 
-![Janik von Rotz loves SSL](https://janikvonrotz.ch/wp-content/uploads/2014/03/Janik-von-Rotz-loves-SSL.jpg)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2014/03/Janik-von-Rotz-loves-SSL.jpg" alt="Janik von Rotz loves SSL" width="322" height="392" class="aligncenter size-full wp-image-1605" />
 
 I've moved this website to a new custom webserver run by [Amazon AWS EC2](https://aws.amazon.com/de/ec2/).
 

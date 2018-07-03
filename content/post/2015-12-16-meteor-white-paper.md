@@ -55,7 +55,7 @@ Meteor uses the Mongo database software to store data persistently. Mongo DB is 
 
 The Architecture is built on the latest advancements in web technologies. Powerful components that communicate with minor overhead and work well together are essential to the Meteor architecture.
 
-![Meteor architecture](https://janikvonrotz.ch/wp-content/uploads/2015/12/Meteor-architecture.png)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2015/12/Meteor-architecture.png" alt="Meteor architecture" width="828" height="495" class="aligncenter size-full wp-image-3713" />
 
 Meteor invented a new, dynamic architecture for building modern web and mobile applications. The framework provides the underpinning for modern programming components, such as a reactive user interface (UI), Web Socket-based Data transport, APIs that work identically on the server client, and a unified build system.
 

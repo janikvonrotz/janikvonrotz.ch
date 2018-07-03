@@ -33,7 +33,7 @@ tags:
 # Introduction
 
 In this post I'll show you how to get search results from your SharePoint Online in your SharePoint 2013 on-premise search center.
-![SharePoint Hybrid Outbound search](https://janikvonrotz.ch/wp-content/uploads/2014/04/SharePoint-Hybrid-Outbound-search.jpg)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2014/04/SharePoint-Hybrid-Outbound-search.jpg" alt="SharePoint Hybrid Outbound search" width="447" height="464" class="aligncenter size-full wp-image-1995" />
 <!--more-->
 # Requirements
 

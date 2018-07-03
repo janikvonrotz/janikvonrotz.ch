@@ -51,12 +51,12 @@ I've used the following Typo3 extension for this project:
 
 [http://www.steuern-nw.ch](http://www.steuern-nw.ch)
 
-![Downloadbereich](https://janikvonrotz.ch/wp-content/uploads/2013/07/Downloadbereich.jpg)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2013/07/Downloadbereich.jpg" alt="Downloadbereich" width="1002" height="791" class="aligncenter size-full wp-image-109" />
 
-![Erweiterter_Inhalt](https://janikvonrotz.ch/wp-content/uploads/2013/07/Erweiterter_Inhalt.jpg)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2013/07/Erweiterter_Inhalt.jpg" alt="Erweiterter_Inhalt" width="903" height="784" class="aligncenter size-full wp-image-110" />
 
-![Kontaktformular](https://janikvonrotz.ch/wp-content/uploads/2013/07/Kontaktformular1.jpg)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2013/07/Kontaktformular1.jpg" alt="Kontaktformular" width="1001" height="754" class="aligncenter size-full wp-image-111" />
 
-![Kontaktliste](https://janikvonrotz.ch/wp-content/uploads/2013/07/Kontaktliste.jpg)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2013/07/Kontaktliste.jpg" alt="Kontaktliste" width="1001" height="821" class="aligncenter size-full wp-image-112" />
 
-![Startseite](https://janikvonrotz.ch/wp-content/uploads/2013/07/Startseite1.jpg)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2013/07/Startseite1.jpg" alt="Startseite" width="1000" height="886" class="aligncenter size-full wp-image-113" />

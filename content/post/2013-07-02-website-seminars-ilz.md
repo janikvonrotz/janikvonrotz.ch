@@ -48,14 +48,14 @@ Overall I've used these Typo3 extensions for this project:
 
 # The Result
 
-![Vielen Dank](https://janikvonrotz.ch/wp-content/uploads/2013/07/Vielen-Dank.jpg)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2013/07/Vielen-Dank.jpg" alt="Vielen Dank" width="609" height="482" class="aligncenter size-full wp-image-120" />
 
-![Startseite](https://janikvonrotz.ch/wp-content/uploads/2013/07/Startseite2.jpg)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2013/07/Startseite2.jpg" alt="Startseite" width="850" height="662" class="aligncenter size-full wp-image-119" />
 
-![Schulungen](https://janikvonrotz.ch/wp-content/uploads/2013/07/Schulungen.jpg)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2013/07/Schulungen.jpg" alt="Schulungen" width="1137" height="766" class="aligncenter size-full wp-image-118" />
 
-![Login](https://janikvonrotz.ch/wp-content/uploads/2013/07/Login.jpg)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2013/07/Login.jpg" alt="Login" width="620" height="529" class="aligncenter size-full wp-image-115" />
 
-![meine_schulungen](https://janikvonrotz.ch/wp-content/uploads/2013/07/meine_schulungen.jpg)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2013/07/meine_schulungen.jpg" alt="meine_schulungen" width="1145" height="373" class="aligncenter size-full wp-image-116" />
 
-![Registration](https://janikvonrotz.ch/wp-content/uploads/2013/07/Registration.jpg)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2013/07/Registration.jpg" alt="Registration" width="694" height="659" class="aligncenter size-full wp-image-117" />

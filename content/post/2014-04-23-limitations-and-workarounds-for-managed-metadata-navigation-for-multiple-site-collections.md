@@ -45,4 +45,4 @@ Within these term sets you'll pin the navigation terms from the global navigatio
 
 In my case I've got two site collections and I'm going to add the project site to the navigation:
 
-![Create a shared managed metadata navigation](https://janikvonrotz.ch/wp-content/uploads/2014/04/Create-a-shared-managed-metadata-navigation.gif)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2014/04/Create-a-shared-managed-metadata-navigation.gif" alt="Create a shared managed metadata navigation" width="571" height="695" class="aligncenter size-full wp-image-2064" />

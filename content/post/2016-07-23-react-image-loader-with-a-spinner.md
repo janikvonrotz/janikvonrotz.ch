@@ -29,7 +29,7 @@ hey there, I've spent as usual a lot of time with React, Mantra and Meteor. Whil
 
 First a preview of what we'll build:
 
-![React Image Loader](https://janikvonrotz.ch/wp-content/uploads/2016/07/React-Image-Loader.png)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2016/07/React-Image-Loader.png" alt="React Image Loader" width="591" height="535" class="aligncenter size-full wp-image-4008" />
 
 The spinner and the image in the screenshot are part of ImageLoader component. This components only purpose is to display either the image, a loading spinner or a error message.
 

@@ -34,7 +34,7 @@ Mount the ILIAS directories of your choice to a local drive letter automatically
 
 **Sync-Drives.ps1**
 Start the synchronisation task.
-![ILIAS Sync](https://janikvonrotz.ch/wp-content/uploads/2014/10/ILIAS-Sync-1024x674.png)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2014/10/ILIAS-Sync-1024x674.png" alt="ILIAS Sync" width="720" height="473" class="aligncenter size-large wp-image-2669" />
 
 **Dismount-Drives.ps1**
 Dismount the local ILIAS drives.

@@ -109,10 +109,10 @@ render() {
 
 In my case the final result for a markdown editor looked like this:
 
-![fullscreen container default](https://janikvonrotz.ch/wp-content/uploads/2016/03/fullscreen-container-default-1024x672.png)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2016/03/fullscreen-container-default-1024x672.png" alt="fullscreen container default" width="840" height="551" class="aligncenter size-large wp-image-3860" />
 
 Before clicking on the fullscreen button.
 
-![fullscreen container display](https://janikvonrotz.ch/wp-content/uploads/2016/03/fullscreen-container-display-1024x426.png)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2016/03/fullscreen-container-display-1024x426.png" alt="fullscreen container display" width="840" height="349" class="aligncenter size-large wp-image-3861" />
 
 After clicking.

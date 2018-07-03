@@ -27,7 +27,7 @@ Welcome to the final part of my tutorial. In this last part we are going to writ
 
 The client application consists of a login and a data pane. When you've successfully logged in, the visibility of these panes will be switched. That's all you have to know. In case you want to use scene builder to create the client GUI here's a picture of what you have to build:
 <!--more-->
-![client Scene Builder](https://janikvonrotz.ch/wp-content/uploads/2015/03/client-Scene-Builder-1024x305.png)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2015/03/client-Scene-Builder-1024x305.png" alt="client Scene Builder" width="720" height="214" class="aligncenter size-large wp-image-3189" />
 
 # View
 

@@ -46,7 +46,7 @@ addBBands()
 
 And here is the output built by R:
 
-![R stock analysis](https://janikvonrotz.ch/wp-content/uploads/2015/12/R-stock-analysis.png)
+<img src="https://janikvonrotz.ch/wp-content/uploads/2015/12/R-stock-analysis.png" alt="R stock analysis" width="798" height="829" class="aligncenter size-full wp-image-3741" />
 
 The BBand shows how volatile the market or the stock is. The wider the band the higher is the volatility. The tightening of the bands is often used by technical traders as an early indication that the volatility is about to increase sharply.
 
