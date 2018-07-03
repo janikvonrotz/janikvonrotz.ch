@@ -333,7 +333,7 @@ order by  dt_stueck_titel
 
 # About Joins
 
-<img src="https://janikvonrotz.ch/wp-content/uploads/2015/07/SQL-Join-925x1024.png" alt="SQL Join" width="720" height="797" class="aligncenter size-large wp-image-3354" />
+![SQL Join](https://janikvonrotz.ch/wp-content/uploads/2015/07/SQL-Join-925x1024.png)
 ![sql 1="summary" language="join"][/sql](http://i.stack.imgur.com/hzl8e.png)
 
 ```sql

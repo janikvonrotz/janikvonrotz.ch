@@ -28,12 +28,12 @@ tags:
 ---
 By default SharePoint 2013 cuts off long sub menu titles in the navigation.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-2013-Menu-without-space.jpg"><img src="https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-2013-Menu-without-space.jpg" alt="SharePoint 2013 Menu without space" width="141" height="237" class="size-full wp-image-1481" /></a>
+<a href="https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-2013-Menu-without-space.jpg">![SharePoint 2013 Menu without space](https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-2013-Menu-without-space.jpg)</a>
 
 SharePoint expects only titles without spaces in between words.
 This is miss behaviour is simply solved by adding a custom css in the master page template.
 <!--more-->
-<a href="https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-2013-Add-CSS-to-Master-Page.jpg"><img src="https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-2013-Add-CSS-to-Master-Page-1024x608.jpg" alt="SharePoint 2013 Add CSS to Master Page" width="620" height="368" class="size-large wp-image-1479" /></a>
+<a href="https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-2013-Add-CSS-to-Master-Page.jpg">![SharePoint 2013 Add CSS to Master Page](https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-2013-Add-CSS-to-Master-Page-1024x608.jpg)</a>
 
 [code lang=css]
 ul.dynamic li {
@@ -43,4 +43,4 @@ ul.dynamic li {
 
 In the end it should look somehow like this.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-2013-Menu-with-space.jpg"><img src="https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-2013-Menu-with-space.jpg" alt="SharePoint 2013 Menu with space" width="251" height="155" class="size-full wp-image-1480" /></a>
+<a href="https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-2013-Menu-with-space.jpg">![SharePoint 2013 Menu with space](https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-2013-Menu-with-space.jpg)</a>

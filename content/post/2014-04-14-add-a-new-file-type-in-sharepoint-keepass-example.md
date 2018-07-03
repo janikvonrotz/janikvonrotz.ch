@@ -25,7 +25,7 @@ In this post I'll show you how to enable a new file type in SharePoint.
 
 The goal is simple, for the KeePass database file it should be possible to open them the same way as it works for office documents in SharePoint.
 
-<img src="https://janikvonrotz.ch/wp-content/uploads/2014/04/KeePass-on-SharePoint.jpg" alt="KeePass on SharePoint" width="755" height="405" class="aligncenter size-full wp-image-1934" />
+![KeePass on SharePoint](https://janikvonrotz.ch/wp-content/uploads/2014/04/KeePass-on-SharePoint.jpg)
 <!--more-->
 # Icon
 
@@ -33,7 +33,7 @@ The KeePass database file has the extension **.kdbx**. For this file type we are
 
 Open the folder **C:\Program Files\Common Files\microsoft shared\Web Server Extensions\15\TEMPLATE\IMAGES** on your SharePoint server.
 
-Now add this KeePass icon image file to the IMAGES folder: <img src="https://janikvonrotz.ch/wp-content/uploads/2014/04/KeePass_Icon.png" alt="KeePass_Icon" width="32" height="32" class="aligncenter size-full wp-image-1931" />
+Now add this KeePass icon image file to the IMAGES folder: ![KeePass_Icon](https://janikvonrotz.ch/wp-content/uploads/2014/04/KeePass_Icon.png)
 
 To associate the icon image the file extension we need to add an entry to the DOCICON file.
 

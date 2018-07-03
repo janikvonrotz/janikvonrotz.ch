@@ -39,7 +39,7 @@ Now we are going to add a new attribute filter for the account control attribute
 5. Set value **0x202**.
 6. Add the new condition and finish with OK.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2014/05/Configure-Connector-Filter-Account-Disabled.png"><img src="https://janikvonrotz.ch/wp-content/uploads/2014/05/Configure-Connector-Filter-Account-Disabled-1024x534.png" alt="Configure Connector Filter - Account Disabled" width="720" height="375" class="aligncenter size-large wp-image-2212" /></a>
+<a href="https://janikvonrotz.ch/wp-content/uploads/2014/05/Configure-Connector-Filter-Account-Disabled.png">![Configure Connector Filter - Account Disabled](https://janikvonrotz.ch/wp-content/uploads/2014/05/Configure-Connector-Filter-Account-Disabled-1024x534.png)</a>
 
 Finally run a full sync with PowerShell.
 

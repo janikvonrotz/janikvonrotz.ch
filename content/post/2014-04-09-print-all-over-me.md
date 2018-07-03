@@ -24,6 +24,6 @@ You can print almost any design on different clothes such as t-shirts, sweat pan
 <!--more-->
 Different artist and designers share their creations, here's an example from [Micheal Burk](http://www.michael-burk.com/):
 
-<a href="http://printallover.me/collections/michael-burk"><img src="https://janikvonrotz.ch/wp-content/uploads/2014/04/Print-All-Over-Me-Micheal-Burk.gif" alt="Print All Over Me Micheal Burk" width="396" height="600" class="aligncenter size-full wp-image-1860" /></a>
+<a href="http://printallover.me/collections/michael-burk">![Print All Over Me Micheal Burk](https://janikvonrotz.ch/wp-content/uploads/2014/04/Print-All-Over-Me-Micheal-Burk.gif)</a>
 
 Click on the image to see his collection.

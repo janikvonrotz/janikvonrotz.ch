@@ -47,12 +47,12 @@ We will create a controller that communicates with our MySQL database using the 
 
 Here's a picture of what we want to achieve. A simple webservice that's serves depending on the url an array of json data.
 
-<img src="https://janikvonrotz.ch/wp-content/uploads/2015/03/Java-3-tier-webservice.png" alt="Java 3-tier webservice" width="717" height="251" class="aligncenter size-full wp-image-3150" />
+![Java 3-tier webservice](https://janikvonrotz.ch/wp-content/uploads/2015/03/Java-3-tier-webservice.png)
 <!--more-->
 
 Let's get started with the file structure. Create all the files, packages and directories as showed below.
 
-<img src="https://janikvonrotz.ch/wp-content/uploads/2015/03/Webservice-Eclipse-Filestructure.png" alt="Webservice Eclipse Filestructure" width="279" height="391" class="aligncenter size-full wp-image-3163" />
+![Webservice Eclipse Filestructure](https://janikvonrotz.ch/wp-content/uploads/2015/03/Webservice-Eclipse-Filestructure.png)
 
 In this tutorial I won't show you how can install and configure a MySQL server. It's expected that you already have a running server and a prepared database.
 

@@ -53,14 +53,14 @@ For this project the following extensions have been used:
 
 ## Screenshots
 
-<img src="https://janikvonrotz.ch/wp-content/uploads/2013/07/Suche-1024x647.jpg" alt="Suche" width="840" height="531" class="aligncenter size-large wp-image-106" />
+![Suche](https://janikvonrotz.ch/wp-content/uploads/2013/07/Suche-1024x647.jpg)
 
-<img src="https://janikvonrotz.ch/wp-content/uploads/2013/07/Sitemap-1024x532.jpg" alt="Sitemap" width="840" height="436" class="aligncenter size-large wp-image-104" />
+![Sitemap](https://janikvonrotz.ch/wp-content/uploads/2013/07/Sitemap-1024x532.jpg)
 
-<img src="https://janikvonrotz.ch/wp-content/uploads/2013/07/Startseite-1024x436.jpg" alt="Startseite" width="840" height="358" class="aligncenter size-large wp-image-105" />
+![Startseite](https://janikvonrotz.ch/wp-content/uploads/2013/07/Startseite-1024x436.jpg)
 
-<img src="https://janikvonrotz.ch/wp-content/uploads/2013/07/Inhalt-1024x535.jpg" alt="Inhalt" width="840" height="439" class="aligncenter size-large wp-image-102" />
+![Inhalt](https://janikvonrotz.ch/wp-content/uploads/2013/07/Inhalt-1024x535.jpg)
 
-<img src="https://janikvonrotz.ch/wp-content/uploads/2013/07/Kontaktformular-1024x780.jpg" alt="Kontaktformular" width="840" height="640" class="aligncenter size-large wp-image-103" />
+![Kontaktformular](https://janikvonrotz.ch/wp-content/uploads/2013/07/Kontaktformular-1024x780.jpg)
 
-<img src="https://janikvonrotz.ch/wp-content/uploads/2013/07/Adressen-1024x462.jpg" alt="Adressen" width="840" height="379" class="aligncenter size-large wp-image-101" />
+![Adressen](https://janikvonrotz.ch/wp-content/uploads/2013/07/Adressen-1024x462.jpg)

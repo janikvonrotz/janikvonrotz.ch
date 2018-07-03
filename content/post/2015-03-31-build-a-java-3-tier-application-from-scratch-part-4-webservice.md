@@ -337,7 +337,7 @@ I hope you get the other lines of code. Lets move on to the authentication provi
 
 Our application uses basic http authentication header. That means we have to add a username and a password into the request header for every client access. With the authentication provider we check every request for a valid user and it's roles. The authentication provider implements the ContainerRequestFilter which allows you to filter specific client-server communication directions.
 
-<img src="https://janikvonrotz.ch/wp-content/uploads/2015/03/Request-and-Response-Filter.png" alt="Request and Response Filter" width="936" height="206" class="aligncenter size-full wp-image-3275" />
+![Request and Response Filter](https://janikvonrotz.ch/wp-content/uploads/2015/03/Request-and-Response-Filter.png)
 
 ContainerRequestFilter - Filter/modify inbound requests
 ContainerResponseFilter - Filter/modify outbound responses

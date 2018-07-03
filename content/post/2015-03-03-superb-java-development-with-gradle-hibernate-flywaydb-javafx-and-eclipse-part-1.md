@@ -38,7 +38,7 @@ In this tutorial we are going to develop a simple MVC (Model, View, Controller) 
 
 The crappy picture below shows what's going on according to my brain.
 
-<img src="https://janikvonrotz.ch/wp-content/uploads/2015/03/Project-Concept.png" alt="Project Concept" width="1271" height="852" class="aligncenter size-full wp-image-3043" />
+![Project Concept](https://janikvonrotz.ch/wp-content/uploads/2015/03/Project-Concept.png)
 <!--more-->
 So what do I excepect from you? Well, make sure you know at least a little bit about the following topics:
 
@@ -133,7 +133,7 @@ Flyway task configuration section. Make sure to update these fields.
 * Start eclipse and import the project. Don't close the command line yet!
 * Update the eclipse project structure according to the yellow marked files and directories showed below. Leave all the files except **build.gradle** empty.
 
-<img src="https://janikvonrotz.ch/wp-content/uploads/2015/03/Eclipse-Project-Structure.png" alt="Eclipse Project Structure" width="451" height="831" class="aligncenter size-full wp-image-3039" />
+![Eclipse Project Structure](https://janikvonrotz.ch/wp-content/uploads/2015/03/Eclipse-Project-Structure.png)
 
 * Update the `*.sql` files with these statements:
 

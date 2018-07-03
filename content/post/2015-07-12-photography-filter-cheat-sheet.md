@@ -23,6 +23,6 @@ tags:
 ---
 Ever wondered what effect photography filters have on the resulting image? Well here's a handy guide:
 <!--more-->
-<img src="https://janikvonrotz.ch/wp-content/uploads/2015/06/Photography-Filter-Cheat-Sheet.jpg" alt="Photography Filter Cheat Sheet" width="720" height="6780" class="aligncenter size-full wp-image-3377" />
+![Photography Filter Cheat Sheet](https://janikvonrotz.ch/wp-content/uploads/2015/06/Photography-Filter-Cheat-Sheet.jpg)
 
 [Source: Zippi.co.uk - The Photography Filters Cheat Sheet](http://www.zippi.co.uk/thestudio/photography-filters-cheat-sheet)
