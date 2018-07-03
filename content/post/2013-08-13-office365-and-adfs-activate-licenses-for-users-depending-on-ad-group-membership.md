@@ -178,6 +178,6 @@ if($error){
 }
 ```
 
-You'll get your <code>Office365AccountName</code> with this Office365 command <code>Get-MsolAccountSku</code>
+You'll get your `Office365AccountName` with this Office365 command `Get-MsolAccountSku`
 
 Link to the newest version of this script: <a href="https://gist.github.com/janikvonrotz/6218401">https://gist.github.com/janikvonrotz/6218401</a>

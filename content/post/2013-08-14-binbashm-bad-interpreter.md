@@ -19,6 +19,6 @@ tags:
   - script
   - unix
 ---
-If you're using windows and linux/unix and your also a system administrator who likes to script. The chances are high that you'll get this error when executing a script on a linux/unix machine that has been made on a windows machine: <code>bin/bash^M: bad interpreter: No such file or directoy</code>
+If you're using windows and linux/unix and your also a system administrator who likes to script. The chances are high that you'll get this error when executing a script on a linux/unix machine that has been made on a windows machine: `bin/bash^M: bad interpreter: No such file or directoy`
 
-The <code>^M</code> character is a windows line break, which linux/unix can't interpret. The solution is easy, use <code>dos2unix [filename]</code> and everything should work fine.
+The `^M` character is a windows line break, which linux/unix can't interpret. The solution is easy, use `dos2unix [filename]` and everything should work fine.

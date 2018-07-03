@@ -42,7 +42,7 @@ By default the script does:
 
 Due to the immense file size of a bit under 70GB I've improved the script so that you can choose whether to include the videos or slides in the download or not.
 
-Copy this script to <code>C:\spc14</code> and execute it.
+Copy this script to `C:\spc14` and execute it.
 
 ```ps
 # settings 

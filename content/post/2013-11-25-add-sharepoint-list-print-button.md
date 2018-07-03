@@ -43,9 +43,9 @@ Now edit the content as html source.
 Add this snippet.
 
 ```js
-<code>
+`
 <input type="button" value=" Print " onclick="window.print();return false;" />
-</code>
+`
 ```
 
 <a href="https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-5.png"><img class="aligncenter size-full wp-image-774" alt="SharePoint List Print Button 5" src="https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-5.png" width="658" height="121" /></a>

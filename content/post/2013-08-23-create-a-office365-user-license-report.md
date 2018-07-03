@@ -118,6 +118,6 @@ Latest version of this snippet: <a href="https://gist.github.com/6317367" target
 <h1>Requirements</h1>
 
 <ul>
-    <li>The function <code>Import-PSCredential</code> is part of my PowerShell Profile project</li>
+    <li>The function `Import-PSCredential` is part of my PowerShell Profile project</li>
     <li>Further you have to install the ActiveDirectory and Office365 PowerShell CMDlets.</li>
 </ul>

@@ -204,4 +204,4 @@ Latest version of this script: <a href="https://gist.github.com/8653473" target
 
 <h1>Requirements</h1>
 
-To run this script properly and use commands as <code>Write-PPEventLog</code> I recommend you to install my project <a href="https://github.com/janikvonrotz/PowerShell-Profile">PowerShell Profile</a>.
+To run this script properly and use commands as `Write-PPEventLog` I recommend you to install my project <a href="https://github.com/janikvonrotz/PowerShell-Profile">PowerShell Profile</a>.

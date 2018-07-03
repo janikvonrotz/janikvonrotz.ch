@@ -34,47 +34,47 @@ I'll introduce you the new:
 <h1><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/wiki/SharePoint-Online-Commands">SharePoint Online Commands</a></h1>
 These functions are part of <a href="https://jeffreypaarhuis.com/">Jeffrey Paarhuis</a> project: <a href="https://sharepointpowershell.codeplex.com/">Client-side SharePoint PowerShell</a>. I've imported the functions of this project and updated the naming concept and metadata.
 
-In order to use these commands you have to install the Managed .NET Client-Side Object Model (CSOM) of SharePoint 2013. Run the command <code>Install-PPApp "SharePoint Server 2013 Client Components SDK"</code> to install this app.
+In order to use these commands you have to install the Managed .NET Client-Side Object Model (CSOM) of SharePoint 2013. Run the command `Install-PPApp "SharePoint Server 2013 Client Components SDK"` to install this app.
 <ul>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOCalculatedFieldtoList.ps1"><code>Add-SPOCalculatedFieldtoList</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOChoiceFieldtoList.ps1"><code>Add-SPOChoiceFieldtoList</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOChoicesToField.ps1"><code>Add-SPOChoicesToField</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOCurrencyFieldtoList.ps1"><code>Add-SPOCurrencyFieldtoList</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPODateTimeFieldtoList.ps1"><code>Add-SPODateTimeFieldtoList</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPODocumentLibrary.ps1"><code>Add-SPODocumentLibrary</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOField.ps1"><code>Add-SPOField</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOFieldsToList.ps1"><code>Add-SPOFieldsToList</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOFolder.ps1"><code>Add-SPOFolder</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOGroup.ps1"><code>Add-SPOGroup</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOList.ps1"><code>Add-SPOList</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOListItems.ps1"><code>Add-SPOListItems</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPONoteFieldtoList.ps1"><code>Add-SPONoteFieldtoList</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPONumberFieldtoList.ps1"><code>Add-SPONumberFieldtoList</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOPrincipalToGroup.ps1"><code>Add-SPOPrincipalToGroup</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOTextFieldtoList.ps1"><code>Add-SPOTextFieldtoList</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOUserFieldtoList.ps1"><code>Add-SPOUserFieldtoList</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOWebpart.ps1"><code>Add-SPOWebpart</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Connect-SPO.ps1"><code>Connect-SPO</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Convert-SPOFileVariablesToValues.ps1"><code>Convert-SPOFileVariablesToValues</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Convert-SPOStringVariablesToValues.ps1"><code>Convert-SPOStringVariablesToValues</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Copy-SPOFile.ps1"><code>Copy-SPOFile</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Copy-SPOFolder.ps1"><code>Copy-SPOFolder</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Enable-SPOFeature.ps1"><code>Enable-SPOFeature</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Find-SPOFieldName.ps1"><code>Find-SPOFieldName</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Get-SPOGroup.ps1"><code>Get-SPOGroup</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Get-SPOPrincipal.ps1"><code>Get-SPOPrincipal</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Get-SPORole.ps1"><code>Get-SPORole</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Join-SPOParts.ps1"><code>Join-SPOParts</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Request-SPOYesOrNo.ps1"><code>Request-SPOYesOrNo</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Save-SPOFile.ps1"><code>Save-SPOFile</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Set-SPOCustomMasterPage.ps1"><code>Set-SPOCustomMasterPage</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Set-SPODocumentPermissions.ps1"><code>Set-SPODocumentPermissions</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Set-SPOListPermissions.ps1"><code>Set-SPOListPermissions</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Set-SPOMasterPage.ps1"><code>Set-SPOMasterPage</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Set-SPOWebPermissions.ps1"><code>Set-SPOWebPermissions</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Submit-SPOCheckIn.ps1"><code>Submit-SPOCheckIn</code></a></li>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Submit-SPOCheckOut.ps1"><code>Submit-SPOCheckOut</code></a></li>
-    <li><code><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Test-SPOField.ps1">Test-SPOField</a></code></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOCalculatedFieldtoList.ps1">`Add-SPOCalculatedFieldtoList`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOChoiceFieldtoList.ps1">`Add-SPOChoiceFieldtoList`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOChoicesToField.ps1">`Add-SPOChoicesToField`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOCurrencyFieldtoList.ps1">`Add-SPOCurrencyFieldtoList`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPODateTimeFieldtoList.ps1">`Add-SPODateTimeFieldtoList`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPODocumentLibrary.ps1">`Add-SPODocumentLibrary`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOField.ps1">`Add-SPOField`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOFieldsToList.ps1">`Add-SPOFieldsToList`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOFolder.ps1">`Add-SPOFolder`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOGroup.ps1">`Add-SPOGroup`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOList.ps1">`Add-SPOList`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOListItems.ps1">`Add-SPOListItems`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPONoteFieldtoList.ps1">`Add-SPONoteFieldtoList`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPONumberFieldtoList.ps1">`Add-SPONumberFieldtoList`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOPrincipalToGroup.ps1">`Add-SPOPrincipalToGroup`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOTextFieldtoList.ps1">`Add-SPOTextFieldtoList`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOUserFieldtoList.ps1">`Add-SPOUserFieldtoList`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Add-SPOWebpart.ps1">`Add-SPOWebpart`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Connect-SPO.ps1">`Connect-SPO`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Convert-SPOFileVariablesToValues.ps1">`Convert-SPOFileVariablesToValues`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Convert-SPOStringVariablesToValues.ps1">`Convert-SPOStringVariablesToValues`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Copy-SPOFile.ps1">`Copy-SPOFile`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Copy-SPOFolder.ps1">`Copy-SPOFolder`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Enable-SPOFeature.ps1">`Enable-SPOFeature`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Find-SPOFieldName.ps1">`Find-SPOFieldName`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Get-SPOGroup.ps1">`Get-SPOGroup`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Get-SPOPrincipal.ps1">`Get-SPOPrincipal`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Get-SPORole.ps1">`Get-SPORole`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Join-SPOParts.ps1">`Join-SPOParts`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Request-SPOYesOrNo.ps1">`Request-SPOYesOrNo`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Save-SPOFile.ps1">`Save-SPOFile`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Set-SPOCustomMasterPage.ps1">`Set-SPOCustomMasterPage`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Set-SPODocumentPermissions.ps1">`Set-SPODocumentPermissions`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Set-SPOListPermissions.ps1">`Set-SPOListPermissions`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Set-SPOMasterPage.ps1">`Set-SPOMasterPage`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Set-SPOWebPermissions.ps1">`Set-SPOWebPermissions`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Submit-SPOCheckIn.ps1">`Submit-SPOCheckIn`</a></li>
+    <li><a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Submit-SPOCheckOut.ps1">`Submit-SPOCheckOut`</a></li>
+    <li>`<a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Test-SPOField.ps1">Test-SPOField</a>`</li>
 </ul>
 <h2>Example</h2>
 <a href="https://janikvonrotz.ch/wp-content/uploads/2014/02/SPO-Example.jpg"><img class="aligncenter size-full wp-image-1123" alt="SPO Example" src="https://janikvonrotz.ch/wp-content/uploads/2014/02/SPO-Example.jpg" width="1186" height="593" /></a>

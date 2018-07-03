@@ -35,4 +35,4 @@ select -First 50 | %{
 }
 ```
 
-Latest version of this snippet: <a href="https://gist.github.com/7913696">https://gist.github.com/7913696</a></pre>
+Latest version of this snippet: <a href="https://gist.github.com/7913696">https://gist.github.com/7913696</a>
