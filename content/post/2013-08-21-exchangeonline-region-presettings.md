@@ -35,7 +35,7 @@ Running this script on random windows machine will open a ExchangeOnline PowerS
 After the import it's the local session pretends to be live on the ExchangeOnline server, your able to run every PowerShell Exchange CMDlet. Yeapeeee :)
 
 ```ps
-<pre>try{
+try{
 
     #--------------------------------------------------#
     # settings
@@ -108,7 +108,7 @@ After the import it's the local session pretends to be live on the ExchangeOnlin
 
     Send-PPErrorReport -FileName "DirSync.mail.config.xml" -ScriptName $MyInvocation.InvocationName
 
-}</pre>
+}
 ```
 
 <a href="https://gist.github.com/6294947" target="_blank">https://gist.github.com/6294947</a>

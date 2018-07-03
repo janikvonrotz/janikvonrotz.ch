@@ -43,7 +43,7 @@ The concept of GraphQL subscriptions in Apollo:
 
 I assume you already have an Apollo (server) and React (client) application up and running. To get started we need to install the GraphQL subscription package for the server.
 
-[code language="shell"]
+```bash
 npm install --save graphql-subscriptions
 ```
 
@@ -51,7 +51,7 @@ This packages extends the GraphQL schema for subscriptions.
 
 As client server implementation for the subscription communications we use the subscriptions transport web socket package.
 
-[code language="shell"]
+```bash
 npm install --save subscriptions-transport-ws
 ```
 
@@ -110,7 +110,7 @@ To dispatch data to the web socket connection we have to set up a subscriptions 
 
 **server/subscriptions.js**
 
-[code language="javascript"]
+```js
 import { PubSub, SubscriptionManager } from 'graphql-subscriptions';
 import { schema } from './index';
 
@@ -128,7 +128,7 @@ Next add a web socket server instance to server application and pass and pass th
 
 **server/main.js**
 
-[code language="javascript"]
+```js
 import { schema, Posts, subscriptionManager } from './index'
 import { createApolloServer } from 'meteor/apollo';
 import { createServer } from 'http';
@@ -156,7 +156,7 @@ First add the resolvers for the subscription queries.
 
 **server/resolvers.js**
 
-[code language="javascript"]
+```js
 ...
 const resolvers = {
   Query: { ... },
@@ -180,7 +180,7 @@ Then tell the other mutation resolvers to dispatch mutation data. I'm using Mete
 
 **sever/resolver.js**
 
-[code language="javascript"]
+```js
 import { Posts, pubsub } from './index'
 ...
 Mutation: {
@@ -220,7 +220,7 @@ Now we configure our client to receive data sent by the publication. For this we
 
 **client/Subscriptions.js**
 
-[code language="javascript"]
+```js
 import { print } from 'graphql-tag/printer';
 
 const addGraphQLSubscriptions = (networkInterface, wsClient) => Object.assign(networkInterface, {
@@ -240,7 +240,7 @@ And connect it to our Apollo client.
 
 **client/ApolloClient.js**
 
-[code language="javascript"]
+```js
 import ApolloClient, { createNetworkInterface } from 'apollo-client'
 import { Client } from 'subscriptions-transport-ws';
 import { addGraphQLSubscriptions } from './index';
@@ -271,7 +271,7 @@ Finally I give an example of a modified React component that is able to mutate a
 
 **client/PostList.js**
 
-[code language="javascript"]
+```js
 import React from 'react'
 import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'

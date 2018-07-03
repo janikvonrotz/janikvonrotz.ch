@@ -53,7 +53,7 @@ This part isn't a lot of effort. There are 2 requirements, one is a must and the
 
 Now the script:
 
-[code language="ps"]
+```ps
 <#
 $Metadata = @{
 	Title = "Send Password Expiration Reminder"

@@ -43,7 +43,7 @@ A huge disadvantage of this strategy is that after a period of adding ActiveDire
 I could handle this issue with a simple script which compares all SharePoint ActiveDirectory groups and the All ActiveDirectory groups from a specific OU against.
 
 ```ps
-<pre>Import-Module ActiveDirectory
+Import-Module ActiveDirectory
 
 $Domain = "$((Get-ADDomain).Name)"
 
@@ -66,7 +66,7 @@ $SPGroups = (
     }
 )
 
-$ADGroups | where{ -not (($SPGroups | select Member) -match $_.Name)} | select name</pre>
+$ADGroups | where{ -not (($SPGroups | select Member) -match $_.Name)} | select name
 ```
 
 <a href="https://gist.github.com/6699783">https://gist.github.com/6699783</a>
