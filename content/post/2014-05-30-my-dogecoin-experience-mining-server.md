@@ -40,7 +40,7 @@ This time I show you the finished mining rig and summarize the most important co
 <!--more-->
 # My mining rig
 
-[video width="1280" height="720" mp4="https://janikvonrotz.ch/wp-content/uploads/2014/05/My-Dogecoin-mining-server.mp4"][/video]
+<video width="1280" height="720" controls><source src="https://janikvonrotz.ch/wp-content/uploads/2014/05/My-Dogecoin-mining-server.mp4" type="video/mp4">Your browser does not support the video tag.</video>
 
 # Basic Setup
 

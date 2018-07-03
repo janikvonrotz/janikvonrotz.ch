@@ -37,6 +37,6 @@ I have to admit, first I didn't really believe that there will be real person vi
 
 Here's the video done by a random guy from the internet: 
 <!--more-->
-[video width="1280" height="716" mp4="https://janikvonrotz.ch/wp-content/uploads/2014/05/UserTesting-Peek-my-website.mp4"][/video]
+<video width="1280" height="716" controls><source src="https://janikvonrotz.ch/wp-content/uploads/2014/05/UserTesting-Peek-my-website.mp4" type="video/mp4">Your browser does not support the video tag.</video>
 
 Thank you UserTesting for this awesome service!

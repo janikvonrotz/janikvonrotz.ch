@@ -28,7 +28,7 @@ tags:
 ---
 A visual manifestation of hopes and expectations for Donald Trumps presidential duties.
 
-[video width="680" height="384" webm="https://janikvonrotz.ch/wp-content/uploads/2016/03/Ronald-Drumpf.webm"][/video]
+<video width="680" height="384" controls><source src="https://janikvonrotz.ch/wp-content/uploads/2016/03/Ronald-Drumpf.webm" type="video/webm">Your browser does not support the video tag.</video>
 
 Made me chuckle, so I had to share it.
 
