@@ -28,7 +28,7 @@ Like the last script this one is also fairly simple. Provide the name of the app
 
 **Remove-CMApplications.ps1**
 
-```ps
+```powershell
 Import-Module "C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\bin\ConfigurationManager.psd1"
 Import-Module ActiveDirectory
 cd "$((Get-PSProvider | Where-Object {$_.Name -eq "CMSite"}).Drives.Name):"

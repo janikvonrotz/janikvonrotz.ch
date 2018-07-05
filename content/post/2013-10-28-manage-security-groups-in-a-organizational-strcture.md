@@ -101,7 +101,7 @@ As always you can manage special settings with Exclude-Filters and simple Tasks.
 
 And here's the script:
 
-```ps
+```powershell
 <#
 $Metadata = @{
     Title = "Update ActiveDirectory Security Groups"

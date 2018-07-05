@@ -25,7 +25,7 @@ tags:
 On Office365 the users have to be licensed in order to get access to the Office365 application. I've developed a PowerShell script which add a license depending on the group membership in the ActiveDirectory.
 <!--more-->
 
-```ps
+```powershell
 <#
 $Metadata = @{
     Title = "Set Office365 Licenses by ActiveDirectory Group Membership"

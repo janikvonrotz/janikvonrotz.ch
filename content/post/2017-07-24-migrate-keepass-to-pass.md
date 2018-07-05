@@ -39,7 +39,7 @@ So I've found [Pass](https://www.passwordstore.org/). The standard Unix password
 
 **keepass2pass.ps1**
 
-```ps
+```powershell
 [xml]$Content = Get-Content -Path "KeepassData.xml"
 
 function Traverse-Tree ($Node, $ParentPath) {

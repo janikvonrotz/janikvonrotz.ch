@@ -63,7 +63,7 @@ As mentioned querying the event log is a bit more difficult. The event log viewe
 
 Here is a simple example:
 
-```ps
+```powershell
 $LogName = "security"
 $StartTime = Get-Date("2017-10-12 12:50")
 $EndTime = Get-Date("2017-10-12 13:00")

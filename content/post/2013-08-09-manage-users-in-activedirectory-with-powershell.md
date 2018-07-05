@@ -31,7 +31,7 @@ As base there's always a CSV file like this one: <a href="https://janikvonrotz.
 
 To a new user I'll use this script:
 
-```ps
+```powershell
 
 Import-Module Quest.ActiveRoles.ArsPowerShellSnapIn
 
@@ -91,7 +91,7 @@ $ADUsers | foreach{
 
 To update the users attributes I made this handy script:
 
-```ps
+```powershell
 
 Import-Module Quest.ActiveRoles.ArsPowerShellSnapIn
 

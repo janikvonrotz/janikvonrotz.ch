@@ -27,7 +27,7 @@ For example: I had to update the offline address book, I've deleted some distrib
 
 So I did the same thing with PowerShell:
 
-```ps
+```powershell
 
 Get-OfflineAddressbook | Update-OfflineAddressbook
 Get-ClientAccessServer | Update-FileDistributionService

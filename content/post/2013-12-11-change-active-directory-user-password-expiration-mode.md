@@ -22,7 +22,7 @@ tags:
 ---
 To change an Active Directory users password expiration mode you can use this PowerShell snippet:
 
-```ps
+```powershell
 Import-Module ActiveDirectory
 
 Get-ADGroupMember "Group1" -Recursive |

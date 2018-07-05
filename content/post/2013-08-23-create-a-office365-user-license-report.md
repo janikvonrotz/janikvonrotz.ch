@@ -28,7 +28,7 @@ To help my out I've made an ActiveDirectory group which holds the allowed Office
 
 <!--more-->
 
-```ps
+```powershell
 #--------------------------------------------------#
 # modules
 #--------------------------------------------------#

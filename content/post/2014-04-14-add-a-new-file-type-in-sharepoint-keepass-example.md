@@ -47,7 +47,7 @@ Edit the file **C:\Program Files\Common Files\microsoft shared\Web Server Extens
 
 To enable file opening for the database file with the KeePass program run this PowerShell script on the SharePoint server:
 
-```ps
+```powershell
 # get all webapplications
 $SPWebApps = Get-SPWebApplication
 
@@ -77,7 +77,7 @@ Make sure that the SharePoint web application containing the KeePass database fi
 
 In case you want to change that with PowerShell run this script on your SharePoint server:
 
-```ps
+```powershell
 # get all webapplications
 $SPWebApps = Get-SPWebApplication
 

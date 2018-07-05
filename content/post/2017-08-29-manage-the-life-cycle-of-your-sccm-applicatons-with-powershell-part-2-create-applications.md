@@ -39,7 +39,7 @@ The script uses a config file. In there all information are stored required to c
 
 **AppConfigs.ps1**
 
-```ps
+```powershell
 $AppConfigs = @{
     Name = "7-Zip"
     Description = "7-Zip ist ein freies Datenkompressionsprogramm mit einer hohen Kompressionsrate."
@@ -170,7 +170,7 @@ The config file is used by the script to create and configure the applications.
 
 **Add-SCCMApplications.ps1**
 
-```ps
+```powershell
 Import-Module "C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\bin\ConfigurationManager.psd1"
 Import-Module ActiveDirectory
 cd "$((Get-PSProvider | Where-Object {$_.Name -eq "CMSite"}).Drives.Name):"

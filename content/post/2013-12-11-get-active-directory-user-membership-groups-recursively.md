@@ -26,7 +26,7 @@ To get a users member shipments recursively I've written an extended function ba
 <!--more-->This function is part of my <a href="https://github.com/janikvonrotz/PowerShell-Profile">PowerShell Profile project</a>.
 Install this framework to get the latest version of this function.
 
-```ps
+```powershell
 <#
 $Metadata = @{
 	Title = "Get Active Directory Principal Group Membership Recurse"

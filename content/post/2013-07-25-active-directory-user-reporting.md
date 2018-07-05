@@ -24,7 +24,7 @@ The first command imports the PowerShell Active Directory module, which should b
 
 ![Install PowerShell Active Directory Module](https://janikvonrotz.ch/wp-content/uploads/2013/07/2013-07-25-11_43_24-Windows-Funktionen.png)
 
-```ps
+```powershell
 Import-Module ActiveDirectory
 Get-ADUser -Filter {EmailAddress -like "*"} -Properties * | select DisplayName, GivenName, Name, Surname, mail, SamAccountName, Department, Title, extensionAttribute1, extensionAttribute2 | Out-GridView
 ```

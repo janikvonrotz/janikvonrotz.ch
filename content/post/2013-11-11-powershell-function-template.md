@@ -22,7 +22,7 @@ This is my custom PowerShell function template, whenever I'm writing a new scrip
 <!--more-->
 You can use this template for whatever like and do you can do everything you'll like (except selling) with it.
 
-```ps
+```powershell
 <#
 $Metadata = @{
 	Title = ""

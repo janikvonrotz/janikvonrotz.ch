@@ -45,7 +45,7 @@ So let's see what this script does:
     <li>Do the same for the mail addresses</li>
 </ol>
 
-```ps
+```powershell
 #--------------------------------------------------#
 # settings
 #--------------------------------------------------#

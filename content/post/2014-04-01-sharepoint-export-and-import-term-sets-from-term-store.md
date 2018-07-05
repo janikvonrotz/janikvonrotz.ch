@@ -38,7 +38,7 @@ However there's no tool or wizard that allows you to get a term set out of the t
 
 It's only possible with my PowerShell function (which is as always part of my [PowerShell PowerUp project](http://janikvonrotz.github.io/PowerShell-PowerUp/))
 <!--more-->
-```ps
+```powershell
 <#
 $Metadata = @{
 	Title = "Get SharePoint Managed Metadata Service Terms"

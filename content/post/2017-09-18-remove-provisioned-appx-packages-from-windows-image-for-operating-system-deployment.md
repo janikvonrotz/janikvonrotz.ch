@@ -27,7 +27,7 @@ Let's have a look:
 
 **Remove-SelectedAppxPackagesFromWIM.ps1**
 
-```ps
+```powershell
 $pathToWIM = "D:\SCCM\OSD\OSImages\Windows 10 Enterprise (x64).wim"
 $index = "1"
 $appList = @(

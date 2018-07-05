@@ -33,13 +33,13 @@ For example my latest issue with a three tier SharePoint environment. I thought 
 
 However I still received an error when I've executed a SharePoint cmdlet via remoting session.
 
-```ps
+```powershell
 $Session = New-PSSession -ComputerName <ComputerName> -Credential (Get-Credential)
 Invoke-Command -Session $Session -ScriptBlock {param ($Name) Add-PSSnapin -Name $Name} -ArgumentList "Microsoft.SharePoint.PowerShell"
 Invoke-Command -Session $Session -ScriptBlock {Get-SPSite}
 ```
 
-```ps
+```powershell
 Cannot access the local farm. Verify that the local farm is properly configured, currently available, and that you
 have the appropriate permissions to access the database before trying again.
     + CategoryInfo          : InvalidData: (Microsoft.Share...SPCmdletGetSite:SPCmdletGetSite) [Get-SPSite], SPCmdletE
@@ -53,18 +53,18 @@ I've figuered that's about the PowerShell remoting double hop issue. The remote 
 This is only possible with the CredSSP authentication type. Here are the steps to configure CredSSP for a remote session.
 
 On the server run:
-```ps
+```powershell
 Enable-WSManCredSSP -Role Server
 ```
 
 On the client run:
-```ps
+```powershell
 Enable-WSManCredSSP -Role Client -DelegateComputer <server FQDN>
 ```
 
 Now you should be able to run the SharePoint cmdlets on the client. Don't forget to provide the new authentication type for the `New-PSSession` command.
 
-```ps
+```powershell
 $Session = New-PSSession -ComputerName <ComputerName> -Credential (Get-Credential) -Authentication Credssp
 Invoke-Command -Session $Session -ScriptBlock {param ($Name) Add-PSSnapin -Name $Name} -ArgumentList "Microsoft.SharePoint.PowerShell"
 Invoke-Command -Session $Session -ScriptBlock {Get-SPSite}

@@ -39,7 +39,7 @@ Here's a report example:
 
 and here's the script:
 
-```ps
+```powershell
 
 <#
 $Metadata = @{

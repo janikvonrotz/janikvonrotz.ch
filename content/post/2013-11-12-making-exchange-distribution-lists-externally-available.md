@@ -29,6 +29,6 @@ Making distribution lists externally available is great for spammers, so if you 
 
 To enable a exchange distribution list for external use I recommand to use this simple PowerShell command:
 
-```ps
+```powershell
 Set-DistributionGroup <groupname> -RequireSenderAuthenticationEnabled $false
 ```

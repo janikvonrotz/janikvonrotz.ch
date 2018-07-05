@@ -41,7 +41,7 @@ Now create folder structure as below and place the files inside:
 
 Then update the **Install-ActiveDirectoryModule.ps1** file with the content below:
 
-```ps
+```powershell
 function Add-AssemblyToGlobalAssemblyCache{
 
     <#

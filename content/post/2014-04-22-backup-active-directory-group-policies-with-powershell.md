@@ -29,7 +29,7 @@ What it does:
 * Keep a daily, weekly and monthly snapshot
 * Notify me if something failed (requires PowerShell PowerUp)
 <!--more-->
-```ps
+```powershell
 <#
 $Metadata = @{
     Title = "Backup Active Directory Group Policies"

@@ -28,7 +28,7 @@ First there is the PowerShell object:
 
 <strong>New-ObjectHostFileEntry</strong>
 
-```ps
+```powershell
 
 function New-ObjectHostFileEntry{
     param(
@@ -47,7 +47,7 @@ And here are the manipulation functions:
 
 <strong>Get-HostFileEntries</strong>
 
-```ps
+```powershell
 
 function Get-HostFileEntries{
 
@@ -96,7 +96,7 @@ function Get-HostFileEntries{
 
 <strong>Add-HostFileEntry</strong>
 
-```ps
+```powershell
 
 function Add-HostFileEntry{
 
@@ -145,7 +145,7 @@ function Add-HostFileEntry{
 
 <strong>Remove-HostFileEntry</strong>
 
-```ps
+```powershell
 
 function Remove-HostFileEntry{
 

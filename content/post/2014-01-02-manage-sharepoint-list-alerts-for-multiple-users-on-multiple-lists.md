@@ -38,7 +38,7 @@ To manager alerts for a couple of users on specific lists I've written a script 
 
 <!--more-->
 
-```ps
+```powershell
 <#
 $Metadata = @{
 	Title = "Update SharePoint User Alerts"

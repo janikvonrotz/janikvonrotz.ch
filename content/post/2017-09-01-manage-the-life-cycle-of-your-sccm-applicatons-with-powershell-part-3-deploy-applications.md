@@ -30,7 +30,7 @@ The script is fairly simple. It cycles through the applications catalog and chec
 
 **Deploy-CMApplications.ps1**
 
-```ps
+```powershell
 Import-Module "C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\bin\ConfigurationManager.psd1"
 cd "$((Get-PSProvider | Where-Object {$_.Name -eq "CMSite"}).Drives.Name):"
 

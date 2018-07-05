@@ -43,7 +43,7 @@ Now we are going to add a new attribute filter for the account control attribute
 
 Finally run a full sync with PowerShell.
 
-```ps
+```powershell
 Add-PSSnapin Coexistence-Configuration
 Start-OnlineCoexistenceSync -FullSync
 ```

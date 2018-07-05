@@ -34,7 +34,7 @@ Running this script on random windows machine will open a ExchangeOnline PowerS
 
 After the import it's the local session pretends to be live on the ExchangeOnline server, your able to run every PowerShell Exchange CMDlet. Yeapeeee :)
 
-```ps
+```powershell
 try{
 
     #--------------------------------------------------#

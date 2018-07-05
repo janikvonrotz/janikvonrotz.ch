@@ -24,7 +24,7 @@ Configuration Manager applications can be equipped with powerful requirement rul
 Once the template requirement rules are created, they can be copied using the script below.
 
 **Copy-CMDeploymentTypeRule**
-```ps
+```powershell
 $SiteCode = "SITECODE"
 $ProviderMachineName = "FQDN" 
 if((Get-Module ConfigurationManager) -eq $null) {

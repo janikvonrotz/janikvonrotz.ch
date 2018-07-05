@@ -33,7 +33,7 @@ What it does:
 * Keep a daily, weekly and monthly snapshot
 * Notify me if something failed (requires [PowerShell PowerUp](http://janikvonrotz.github.io/PowerShell-PowerUp/))
 <!--more-->
-```ps
+```powershell
 <#
 $Metadata = @{
 	Title = "Backup ActiveDirecotry"

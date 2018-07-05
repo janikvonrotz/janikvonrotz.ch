@@ -49,7 +49,7 @@ The scripts reads from the SharePoint list with predefined credentials and remot
 
 Watch out to store the computer object in a OU instead of an container, it's not possible to assign GPOs to an AD container!
 
-```ps
+```powershell
 <#
 $Metadata = @{
 	Title = "Assign Temporary Administrator Rights"

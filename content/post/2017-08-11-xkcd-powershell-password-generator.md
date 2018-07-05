@@ -42,7 +42,7 @@ To create this kind of password we need a word list with common nouns. I've crea
 
 And here is the PowerShell function:
 
-```ps
+```powershell
 function Get-XKCDPassword {
 
     Param(

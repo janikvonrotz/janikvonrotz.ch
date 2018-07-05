@@ -33,7 +33,7 @@ Here's a sample export:
 
 And here's the script:
 
-```ps
+```powershell
 <#
 $Metadata = @{
 	Title = "Export all Terms from Managed Metadata Service"

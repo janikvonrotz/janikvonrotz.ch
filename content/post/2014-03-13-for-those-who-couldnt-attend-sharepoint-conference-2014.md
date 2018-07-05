@@ -44,7 +44,7 @@ Due to the immense file size of a bit under 70GB I've improved the script so tha
 
 Copy this script to `C:\spc14` and execute it.
 
-```ps
+```powershell
 # settings 
 $DownloadVideos = $false
 $DownloadSlides = $true

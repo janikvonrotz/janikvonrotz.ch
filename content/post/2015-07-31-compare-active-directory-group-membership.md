@@ -23,7 +23,7 @@ tags:
 ---
 The following scripts allows you to compare the group membership of two users.
 <!--more-->
-```ps
+```powershell
 Import-Module ActiveDirectory
 
 $user1 = "userRef"

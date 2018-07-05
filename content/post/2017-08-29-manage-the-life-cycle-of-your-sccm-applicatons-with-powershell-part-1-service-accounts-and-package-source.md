@@ -37,7 +37,7 @@ Separation of concerns is an important key principal of Microsoft products. That
 
 **Create-CMServiceAccounts.ps1**
 
-```ps
+```powershell
 Import-Module ActiveDirectory
 Import-Module PowerUp
 
@@ -166,7 +166,7 @@ These service accounts must be configured in the SCCM console and will be grante
 
 **Create-CMPackageSourceShare.ps1**
 
-```ps
+```powershell
 # set the parameters
 $Source = "D:\SCCM"
 $ShareName = "PackageSource"

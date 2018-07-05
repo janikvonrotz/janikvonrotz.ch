@@ -25,7 +25,7 @@ Take this function for example:
 
 **Get-UnlinkedGPOs.ps1**
 
-```ps
+```powershell
 function Get-UnlinkedGPOs {
 
     Import-Module GroupPolicy

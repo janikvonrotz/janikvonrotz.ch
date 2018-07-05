@@ -27,7 +27,7 @@ Make sure that you either have PowerShell 5.0 installed or the PowerShellGet mod
 
 **CreateAndPublish-PowerShellModule.ps1**
 
-```ps
+```powershell
 # Go to the modules directory
 
 Set-Location "C:\Windows\system32\WindowsPowerShell\v1.0\Modules\"
@@ -80,7 +80,7 @@ Publish-Module -Name PowerUp -NuGetApiKey API_KEY
 
 **InstallAndImport-PowerShellModule.ps1**
 
-```ps
+```powershell
 # On another computer install the module from the gallery
 
 Install-Module -Name PowerUp

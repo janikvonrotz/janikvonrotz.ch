@@ -24,7 +24,7 @@ tags:
 Today I wrote a simple script that converts a directory tree query with `get-childitem` into a json formatted data tree.
 <!--more-->
  
-```ps
+```powershell
 function Add-Tabstops{
     param($Count)
     $tabs = ""

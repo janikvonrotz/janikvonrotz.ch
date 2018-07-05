@@ -27,7 +27,7 @@ The script has the same structure as the license management script, feel free as
 
 <!--more-->
 
-```ps
+```powershell
 <#
 $Metadata = @{
     Title = "Set Office365 User Rights"

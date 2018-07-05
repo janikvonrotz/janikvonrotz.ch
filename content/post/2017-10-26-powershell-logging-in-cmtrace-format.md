@@ -25,7 +25,7 @@ CMTrace is probably the first choice for a log viewer in a Microsoft environment
 
 **Write-Log.ps1**
 
-```ps
+```powershell
 function Write-log {
 
     [CmdletBinding()]
@@ -69,7 +69,7 @@ No  big matter, isn't it? We want to see it in action. Here is an example script
 
 **Example.ps1**
 
-```ps
+```powershell
 $LogCycle = 30
 $LogFilePath = Join-Path $PSScriptRoot "$(Get-Date -Format yyyy-M-dd) $($MyInvocation.MyCommand.Name).log"
 

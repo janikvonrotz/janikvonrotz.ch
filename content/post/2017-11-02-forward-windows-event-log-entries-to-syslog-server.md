@@ -32,7 +32,7 @@ Third and last the script that is forwarding the windows log messages to our sys
 
 **Send-SecurityEventsToPRTG.ps1**
 
-```ps
+```powershell
 param(
     [String]$ServerName = "SYSLOG_HOSTNAME"
 )

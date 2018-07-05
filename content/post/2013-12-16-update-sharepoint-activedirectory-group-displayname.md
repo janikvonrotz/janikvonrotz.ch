@@ -26,7 +26,7 @@ To update the the name for all Active Directory groups you can run this snippet 
 
 <!--more-->
 
-```ps
+```powershell
 
 if ((Get-PSSnapin 'Microsoft.SharePoint.PowerShell' -ErrorAction SilentlyContinue) -eq $null){Add-PSSnapin 'Microsoft.SharePoint.PowerShell'}
 

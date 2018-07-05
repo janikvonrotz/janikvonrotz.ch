@@ -28,7 +28,7 @@ First we need to inject a SMSTS configuration file into the boot image to set th
 
 **Copy-SMSTSConfigToBootImage.ps1**
 
-```ps
+```powershell
 $BootImageFile = "C:\Program Files\Microsoft Configuration Manager\OSD\boot\x64\boot.wim"
 $Index = "1"
 $SMSIniFile = "D:\SCCM\Scripts\SMSTS.ini"

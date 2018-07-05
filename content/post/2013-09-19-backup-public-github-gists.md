@@ -33,7 +33,7 @@ So here's the script:
 
 <!--more-->
 
-```ps
+```powershell
 [System.Reflection.Assembly]::LoadWithPartialName("System.Web.Extensions")
 
 function Get-GitHubGists{

@@ -40,7 +40,7 @@ I'm not quite shure wether the sync problem is caused by this configuration or n
 
 To update the UPN I've written the following script, I'll compare the user attributes from the ActiveDirectory and the AzureDirectory. If a UPN doesn't match it'll be overwritten with the ActiveDirectory UPN.
 
-```ps
+```powershell
 
 #--------------------------------------------------#
 # settings

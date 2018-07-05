@@ -42,7 +42,7 @@ A huge disadvantage of this strategy is that after a period of adding ActiveDire
 
 I could handle this issue with a simple script which compares all SharePoint ActiveDirectory groups and the All ActiveDirectory groups from a specific OU against.
 
-```ps
+```powershell
 Import-Module ActiveDirectory
 
 $Domain = "$((Get-ADDomain).Name)"
