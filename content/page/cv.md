@@ -8,7 +8,7 @@ guid: https://janikvonrotz.ch/?page_id=3554
 specific_page_layout:
   - default-sidebar
 ---
-<a href="https://janikvonrotz.ch/wp-content/uploads/2015/09/profile.jpg">![Untitled](https://janikvonrotz.ch/wp-content/uploads/2015/09/profile-300x300.jpg)</a>
+[![Untitled](https://janikvonrotz.ch/wp-content/uploads/2015/09/profile-300x300.jpg)](https://janikvonrotz.ch/wp-content/uploads/2015/09/profile.jpg)
 
 Hi, my name is Janik von Rotz. I’m a system engineer and software developer from Switzerland and have got a BSc in Business and Information Technology.
 
