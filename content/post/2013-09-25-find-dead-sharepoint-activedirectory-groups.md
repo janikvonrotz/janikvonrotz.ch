@@ -69,7 +69,7 @@ $SPGroups = (
 $ADGroups | where{ -not (($SPGroups | select Member) -match $_.Name)} | select name
 ```
 
-<a href="https://gist.github.com/6699783">https://gist.github.com/6699783</a>
+[https://gist.github.com/6699783](https://gist.github.com/6699783)
 
 <h1>Requirements</h1>
 

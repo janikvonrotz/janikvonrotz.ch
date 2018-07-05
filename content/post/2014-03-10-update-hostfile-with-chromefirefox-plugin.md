@@ -39,4 +39,4 @@ This plugins saves a lot of time when switching domain-ip mappings for different
 
 Here's a screenshot of the Chrome extension which shows how easy it is to switch on/off an domain-ip mapping.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2014/03/Update-Hosfile-Plugin.jpg">![Update Hosfile Plugin](https://janikvonrotz.ch/wp-content/uploads/2014/03/Update-Hosfile-Plugin.jpg)</a>
+[![Update Hosfile Plugin](https://janikvonrotz.ch/wp-content/uploads/2014/03/Update-Hosfile-Plugin.jpg)](https://janikvonrotz.ch/wp-content/uploads/2014/03/Update-Hosfile-Plugin.jpg)

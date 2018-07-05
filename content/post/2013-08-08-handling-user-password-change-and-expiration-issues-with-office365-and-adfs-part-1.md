@@ -143,7 +143,7 @@ try{
 }
 ```
 
-<a href="https://gist.github.com/6184059">https://gist.github.com/6184059</a>
+[https://gist.github.com/6184059](https://gist.github.com/6184059)
 
 For the memberof Group I recommend to use the SID instead of the DN. I'll show you how the get the SID:
 

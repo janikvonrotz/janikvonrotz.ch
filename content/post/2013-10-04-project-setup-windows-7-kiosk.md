@@ -60,7 +60,7 @@ The logged in user can...
     <li>and lock the computer, this was not supposed to be enabled, but I couldn't find a way yet to disable this feature.</li>
 </ul>
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-7-Kiosk-Setup.png">![Windows 7 Kiosk - Setup](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-7-Kiosk-Setup.png)</a>
+[![Windows 7 Kiosk - Setup](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-7-Kiosk-Setup.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-7-Kiosk-Setup.png)
 
 <h1>Setup</h1>
 
@@ -83,43 +83,43 @@ The following section shows the policies I've used to restrict the access to the
 
 Add a desktop wallpaper.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Desktopbackground.png">![Windows - Desktopbackground](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Desktopbackground.png)</a>
+[![Windows - Desktopbackground](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Desktopbackground.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Desktopbackground.png)
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Taskbar-Result.png">![Windows - Taskbar Result](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Taskbar-Result.png)</a>
+[![Windows - Taskbar Result](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Taskbar-Result.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Taskbar-Result.png)
 
 <strong>Remove Desktop Icons</strong>
 
 Remove the default desktop icons.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Remove-Desktop-Icons.png">![Windows - Remove Desktop Icons](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Remove-Desktop-Icons.png)</a>
+[![Windows - Remove Desktop Icons](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Remove-Desktop-Icons.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Remove-Desktop-Icons.png)
 
 <strong>Remove System Buttons</strong>
 
 Remove the start system buttons and the options showed after click Ctrl + Alt + Delete.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Remove-System-Buttons.png">![Windows - Remove System Buttons](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Remove-System-Buttons.png)</a>
+[![Windows - Remove System Buttons](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Remove-System-Buttons.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Remove-System-Buttons.png)
 
 <strong>Restricted Start Menu</strong>
 
 Remove  the all items in the windows start menu.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Restricted-Start-Menu.png">![Windows - Restricted Start Menu](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Restricted-Start-Menu.png)</a>
+[![Windows - Restricted Start Menu](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Restricted-Start-Menu.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Restricted-Start-Menu.png)
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Start-Menu-Result.png">![Windows - Start Menu Result](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Start-Menu-Result.png)</a>
+[![Windows - Start Menu Result](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Start-Menu-Result.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Start-Menu-Result.png)
 
 <strong>Restricted Taskbar</strong>
 
 Denie any possiblity to customize the windows taskbar.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Restricted-Taskbar.png">![Windows - Restricted Taskbar](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Restricted-Taskbar.png)</a>
+[![Windows - Restricted Taskbar](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Restricted-Taskbar.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Restricted-Taskbar.png)
 
 <strong>SharePoint Icon</strong>
 
 Adds a simple icon to the desktop.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-SharePoint-Icon.png">![Windows - SharePoint Icon](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-SharePoint-Icon.png)</a>
+[![Windows - SharePoint Icon](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-SharePoint-Icon.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-SharePoint-Icon.png)
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Icon-Result.png">![Windows - Icon Result](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Icon-Result.png)</a>
+[![Windows - Icon Result](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Icon-Result.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Icon-Result.png)
 
 <h2>Internet Explorer</h2>
 
@@ -127,18 +127,18 @@ Adds a simple icon to the desktop.
 
 Delete the browser cache on exit.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Delete-Cache.png">![Internet Explorer - Delete Cache](https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Delete-Cache.png)</a>
+[![Internet Explorer - Delete Cache](https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Delete-Cache.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Delete-Cache.png)
 
 <strong>Disable Save Passwords</strong>
 
 Internet explorer is not allowed to prompt for saving password information.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Disable-Save-Passwords.png">![Internet Explorer - Disable Save Passwords](https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Disable-Save-Passwords.png)</a>
+[![Internet Explorer - Disable Save Passwords](https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Disable-Save-Passwords.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Disable-Save-Passwords.png)
 
 <strong>Hide Menus</strong>
 
 Hide internet explorer menus.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Hide-Menus.png">![Internet Explorer - Hide Menus](https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Hide-Menus.png)</a>
+[![Internet Explorer - Hide Menus](https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Hide-Menus.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Hide-Menus.png)
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Result.png">![Internet Explorer - Result](https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Result.png)</a>
+[![Internet Explorer - Result](https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Result.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Result.png)

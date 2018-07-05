@@ -24,21 +24,21 @@ You can print every SharePoint list item with the keyboard short cut Ctrl+P. But
 
 Choose the form type in you list options under form webparts.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-1.png">![SharePoint List Print Button 1](https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-1.png)</a>
+[![SharePoint List Print Button 1](https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-1.png)](https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-1.png)
 
 <!--more-->
 
 Add a content editor webpart on top of the list view or right under the view.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-2.png">![SharePoint List Print Button 2](https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-2.png)</a>
+[![SharePoint List Print Button 2](https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-2.png)](https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-2.png)
 
 Click to add new content.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-3.png">![SharePoint List Print Button 3](https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-3.png)</a>
+[![SharePoint List Print Button 3](https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-3.png)](https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-3.png)
 
 Now edit the content as html source.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-4.png">![SharePoint List Print Button 4](https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-4.png)</a>
+[![SharePoint List Print Button 4](https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-4.png)](https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-4.png)
 
 Add this snippet.
 
@@ -48,6 +48,6 @@ Add this snippet.
 `
 ```
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-5.png">![SharePoint List Print Button 5](https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-5.png)</a>
+[![SharePoint List Print Button 5](https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-5.png)](https://janikvonrotz.ch/wp-content/uploads/2013/11/SharePoint-List-Print-Button-5.png)
 
 And you get a nice print button.

@@ -71,4 +71,4 @@ Personally I recommand to use the LTS (Long Term Support) version, compared to t
 
 <h1>Source</h1>
 
-<a href="https://www.ubuntu.com/server">Ubuntu server offical Website</a>
+[Ubuntu server offical Website](https://www.ubuntu.com/server)

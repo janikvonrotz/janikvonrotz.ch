@@ -25,7 +25,7 @@ tags:
   - password
   - reset
 ---
-<a href="https://janikvonrotz.ch/2013/08/08/handling-user-password-change-and-expiration-issues-with-office365-and-adfs-part-1/">https://janikvonrotz.ch/2013/08/08/handling-user-password-change-and-expiration-issues-with-office365-and-adfs-part-1/</a>
+[https://janikvonrotz.ch/2013/08/08/handling-user-password-change-and-expiration-issues-with-office365-and-adfs-part-1/](https://janikvonrotz.ch/2013/08/08/handling-user-password-change-and-expiration-issues-with-office365-and-adfs-part-1/)
 
 This is part two of my experience in handling the password change office365 architecture issue.
 

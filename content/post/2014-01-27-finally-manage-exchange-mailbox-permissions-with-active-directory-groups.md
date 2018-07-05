@@ -36,7 +36,7 @@ The following script can handle this issue by:
     <li>Auditing events and error with <a href="https://github.com/janikvonrotz/PowerShell-Profile">PowerShell Profile</a>.</li>
 </ul>
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2014/01/Synchronize-Service-Mailbox-Access-Groups.jpg">![Synchronize Service Mailbox Access Groups](https://janikvonrotz.ch/wp-content/uploads/2014/01/Synchronize-Service-Mailbox-Access-Groups-1024x413.jpg)</a>
+[![Synchronize Service Mailbox Access Groups](https://janikvonrotz.ch/wp-content/uploads/2014/01/Synchronize-Service-Mailbox-Access-Groups-1024x413.jpg)](https://janikvonrotz.ch/wp-content/uploads/2014/01/Synchronize-Service-Mailbox-Access-Groups.jpg)
 
 ```powershell
 <#

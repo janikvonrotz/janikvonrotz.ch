@@ -35,7 +35,7 @@ To handle this issue I've written this simple script that reports all unchecked 
 
 Here's a report example:
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/11/Example-Mail-Report-of-unchecked-SharePoint-files.png">![Example Mail Report of unchecked SharePoint files](https://janikvonrotz.ch/wp-content/uploads/2013/11/Example-Mail-Report-of-unchecked-SharePoint-files.png)</a>
+[![Example Mail Report of unchecked SharePoint files](https://janikvonrotz.ch/wp-content/uploads/2013/11/Example-Mail-Report-of-unchecked-SharePoint-files.png)](https://janikvonrotz.ch/wp-content/uploads/2013/11/Example-Mail-Report-of-unchecked-SharePoint-files.png)
 
 and here's the script:
 

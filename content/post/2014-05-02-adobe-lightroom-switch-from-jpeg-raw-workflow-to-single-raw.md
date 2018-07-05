@@ -33,7 +33,7 @@ So in case you want to do the same and want to start to treat jpegs and raws spe
 
 1. First back up your catalog and photos, just in case you make a mistake.
 2. Go to preferences and switch the "treat them separately" check-box from unchecked to checked.
-<a href="https://janikvonrotz.ch/wp-content/uploads/2014/05/Lighroom-jpeg-raw-workflow.png">![Lighroom jpeg raw workflow](https://janikvonrotz.ch/wp-content/uploads/2014/05/Lighroom-jpeg-raw-workflow.png)</a>
+[![Lighroom jpeg raw workflow](https://janikvonrotz.ch/wp-content/uploads/2014/05/Lighroom-jpeg-raw-workflow.png)](https://janikvonrotz.ch/wp-content/uploads/2014/05/Lighroom-jpeg-raw-workflow.png)
 3. Now for each imported picture folder do:
   1. Run a new import for the folder.
   2. Now open the the "Previous Import" folder.

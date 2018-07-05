@@ -29,7 +29,7 @@ This scripts exports all terms sorted by term group, term set and its level.
 
 Here's a sample export:
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2014/01/Exported-Terms-from-Managed-Metadata-Service.jpg">![Exported Terms from Managed Metadata Service](https://janikvonrotz.ch/wp-content/uploads/2014/01/Exported-Terms-from-Managed-Metadata-Service.jpg)</a>
+[![Exported Terms from Managed Metadata Service](https://janikvonrotz.ch/wp-content/uploads/2014/01/Exported-Terms-from-Managed-Metadata-Service.jpg)](https://janikvonrotz.ch/wp-content/uploads/2014/01/Exported-Terms-from-Managed-Metadata-Service.jpg)
 
 And here's the script:
 

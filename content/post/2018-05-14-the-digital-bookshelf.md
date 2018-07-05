@@ -57,5 +57,5 @@ In result you get a screenshot like this:
 
 I will also add a picture of the final poster once it is pinned to the wall.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2018/05/the-digital-bookshelf-poster.jpg">![Untitled](https://janikvonrotz.ch/wp-content/uploads/2018/05/the-digital-bookshelf-poster-1024x576.jpg)</a>
+[![Untitled](https://janikvonrotz.ch/wp-content/uploads/2018/05/the-digital-bookshelf-poster-1024x576.jpg)](https://janikvonrotz.ch/wp-content/uploads/2018/05/the-digital-bookshelf-poster.jpg)
 

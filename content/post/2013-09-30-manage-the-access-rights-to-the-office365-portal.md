@@ -133,7 +133,7 @@ try{
 
 }```
 
-<a href="https://gist.github.com/janikvonrotz/6763616">https://gist.github.com/janikvonrotz/6763616</a>
+[https://gist.github.com/janikvonrotz/6763616](https://gist.github.com/janikvonrotz/6763616)
 
 <h1>Requirements</h1>
 

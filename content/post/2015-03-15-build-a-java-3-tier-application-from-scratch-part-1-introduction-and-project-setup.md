@@ -62,7 +62,7 @@ I will definitely use these programs:
 
 Our strategy for this project is quite simple. EclipseLink will communicate with the database and acts as our ORM, JAX-RS is used to create our JSON restful webservice and JavaFX is the framework for our client app. Below is a picture that shows our Architecture, the commuication flow and where we use 3rd party libraries.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2015/03/Java-3-tier-Architektur-v2.png">![Untitled](https://janikvonrotz.ch/wp-content/uploads/2015/03/Java-3-tier-Architektur-v2.png)</a>
+[![Untitled](https://janikvonrotz.ch/wp-content/uploads/2015/03/Java-3-tier-Architektur-v2.png)](https://janikvonrotz.ch/wp-content/uploads/2015/03/Java-3-tier-Architektur-v2.png)
 
 Our application architecture consists of 3 eclipse projects:
 

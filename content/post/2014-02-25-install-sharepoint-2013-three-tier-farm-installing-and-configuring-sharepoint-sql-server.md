@@ -66,7 +66,7 @@ dism /online /enable-feature /featurename:NetFX3 /all /Source:d:sourcessxs /Limi
 
 Only after executing this command you're able to install the .Net framework as usual with the wizard.
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2014/02/Net-3.5-Installation-WinSev-2012.jpg">![.Net 3.5 Installation WinSev 2012](https://janikvonrotz.ch/wp-content/uploads/2014/02/Net-3.5-Installation-WinSev-2012.jpg)</a>
+[![.Net 3.5 Installation WinSev 2012](https://janikvonrotz.ch/wp-content/uploads/2014/02/Net-3.5-Installation-WinSev-2012.jpg)](https://janikvonrotz.ch/wp-content/uploads/2014/02/Net-3.5-Installation-WinSev-2012.jpg)
 
 At this point where the SQL server installation I don't want to provide you a step by step guide, as you might install another version or this guide gets obsolete.
 

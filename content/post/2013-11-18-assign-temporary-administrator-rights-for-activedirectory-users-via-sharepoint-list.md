@@ -37,13 +37,13 @@ After the specified time period the scripts deletes the temporary GPO in order t
 
 Here is the template of the predefined GPO:
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/11/Temporäre-Administratorrechte.png">![Temporäre Administratorrechte](https://janikvonrotz.ch/wp-content/uploads/2013/11/Temporäre-Administratorrechte.png)</a>
+[![Temporäre Administratorrechte](https://janikvonrotz.ch/wp-content/uploads/2013/11/Temporäre-Administratorrechte.png)](https://janikvonrotz.ch/wp-content/uploads/2013/11/Temporäre-Administratorrechte.png)
 
 User "test" is placeholder for the real user.
 
 The list containing the users is stored on SharePoint site:
 
-<a href="https://janikvonrotz.ch/wp-content/uploads/2013/11/Temporäre-Administratorrechte-1.png">![Temporäre Administratorrechte 1](https://janikvonrotz.ch/wp-content/uploads/2013/11/Temporäre-Administratorrechte-1.png)</a>
+[![Temporäre Administratorrechte 1](https://janikvonrotz.ch/wp-content/uploads/2013/11/Temporäre-Administratorrechte-1.png)](https://janikvonrotz.ch/wp-content/uploads/2013/11/Temporäre-Administratorrechte-1.png)
 
 The scripts reads from the SharePoint list with predefined credentials and remote configuration file wich is part of my PowerShell Profile project (check out the requirements on the bottom).
 

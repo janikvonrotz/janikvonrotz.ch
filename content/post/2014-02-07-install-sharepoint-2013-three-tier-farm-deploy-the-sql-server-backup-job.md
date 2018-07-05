@@ -43,7 +43,7 @@ Ola Hallengren is a Microsoft <a href="https://mvp.microsoft.com/en-us/MVP/Ola%2
 <blockquote>Ola Hallengren publishes a free set of database maintenance scripts that are like maintenance plans that went to college, married into a nice family, and went to training school afterwards.
 </blockquote>
 
-<a href="https://www.brentozar.com/archive/2012/02/webcast-recording-dba-darwin-awards-index-edition/">Brent Ozar</a>
+[Brent Ozar](https://www.brentozar.com/archive/2012/02/webcast-recording-dba-darwin-awards-index-edition/)
 
 However the installation of the SQL ServerMaintenance Solution is very easy. A little bit more difficult is the scheduling, that's why I create a clone repository for Ola's SQL scripts and added and example of how to schedule these jobs.
 
