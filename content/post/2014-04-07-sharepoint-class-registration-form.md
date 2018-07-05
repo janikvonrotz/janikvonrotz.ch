@@ -31,7 +31,7 @@ This walkthrough shows how to build an automated registration form that closes d
 
 Here's an example of what the result will look like:
 
-<a href="https://janikvonrotz.ch/2014/04/07/sharepoint-class-registration-form/class-registration-form-example/" rel="attachment wp-att-1810">![Class Registration Form Example](https://janikvonrotz.ch/wp-content/uploads/2014/04/Class-Registration-Form-Example.gif)</a>
+[![Class Registration Form Example](https://janikvonrotz.ch/wp-content/uploads/2014/04/Class-Registration-Form-Example.gif)](https://janikvonrotz.ch/2014/04/07/sharepoint-class-registration-form/class-registration-form-example/)
 <!--more-->
 # Create Lists
 

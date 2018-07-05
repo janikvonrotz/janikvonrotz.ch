@@ -27,6 +27,6 @@ I recommend to remove this option unregarded of it's possible to upload via Drag
 
 Here's an example of what we want:
 
-<a href="https://janikvonrotz.ch/2014/04/08/hide-the-open-in-explorer-option-in-the-sharepoint-command-ribbon/hidden-open-in-explorer-option/" rel="attachment wp-att-1821">![Hidden Open in Explorer option](https://janikvonrotz.ch/wp-content/uploads/2014/04/Hidden-Open-in-Explorer-option.jpg)</a>
+[![Hidden Open in Explorer option](https://janikvonrotz.ch/wp-content/uploads/2014/04/Hidden-Open-in-Explorer-option.jpg)](https://janikvonrotz.ch/2014/04/08/hide-the-open-in-explorer-option-in-the-sharepoint-command-ribbon/hidden-open-in-explorer-option/)
 
 And the solution to achieve this, is available on GitHub: <a href="https://github.com/janikvonrotz/SharePoint-Hide-Open-With-Explorer">https://github.com/janikvonrotz/SharePoint-Hide-Open-With-Explorer</a>
