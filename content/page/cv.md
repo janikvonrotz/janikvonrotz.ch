@@ -24,32 +24,32 @@ Currently he is employed by AdNovum as an Associate IAM Engineer. In this positi
 
 ## Work Experience
 
-01/2018 - today
-Associate IAM Engineer (full-time)
-[AdNovum Informatik AG](https://www.adnovum.ch/)
+01/2018 - today  
+Associate IAM Engineer (full-time)  
+[AdNovum Informatik AG](https://www.adnovum.ch/)  
 
 * Design, conception and realisation of identity and access management solutions.
 
-08/2017 – 12/2017
-System Engineer (full-time civil service)
-[Kantonsspital Obwalden](https://ksow.ch)
+08/2017 – 12/2017  
+System Engineer (full-time civil service)  
+[Kantonsspital Obwalden](https://ksow.ch)  
 
 * Conceptualized and configured a Microsoft System Center Configuration Manager solution.
 * Helped migrating data from the obsolete software deployment and client management system.
 * Implemented an internal and external public key infrastructure.
 * Automated business critical tasks with PowerShell.
 
-03/2017 – 07/2017
-Web Developer (part-time)
-[Apoveda GmbH](https://www.apoveda.ch/)
+03/2017 – 07/2017  
+Web Developer (part-time)  
+[Apoveda GmbH](https://www.apoveda.ch/)  
 
 * Developed requested website features.
 * Improved the web development stack and workflow.
 * Implemented websites from Sketch designs.
 
-12/2012 – 06/2014
-Computer Scientist (full-time)
-[Verkehrsbetriebe Luzern AG](http://www.vbl.ch/)
+12/2012 – 06/2014  
+Computer Scientist (full-time)  
+[Verkehrsbetriebe Luzern AG](http://www.vbl.ch/)  
 
 - Worked as a System Administrator with Microsoft SharePoint, Exchange, SQL Server and Active Directory.
 - Developed system automation solutions with PowerShell.
@@ -57,9 +57,9 @@ Computer Scientist (full-time)
 - Built and maintained single sign-on services.
 - Contributed to an Office 365 project: [Informationsdrehscheibe aus der Cloud](/wp-content/uploads/2015/09/Informationsdrehscheibe-aus-der-Cloud.pdf).
 
-08/2008 – 06/2012
-Apprenticeship Computer Specialist [EFZ](https://de.wikipedia.org/wiki/Eidgen%C3%B6ssisches_F%C3%A4higkeitszeugnis) System Engineering (full-time)
-[InformatikLeistungsZentrum Obwalden / Nidwalden](http://www.ilz.info/)
+08/2008 – 06/2012  
+Apprenticeship Computer Specialist [EFZ](https://de.wikipedia.org/wiki/Eidgen%C3%B6ssisches_F%C3%A4higkeitszeugnis) System Engineering (full-time)  
+[InformatikLeistungsZentrum Obwalden / Nidwalden](http://www.ilz.info/)  
 
 - Developed and deployed websites and solutions with the Typo3 CMS.
 - Provided second level support for customers.
@@ -67,23 +67,23 @@ Apprenticeship Computer Specialist [EFZ](https://de.wikipedia.org/wiki/Eidgen%C3
 
 ## Education
 
-09/2014 – 07/2017
-Bachelor of Science in Business and Information Technology
-[Lucerne University of Applied Sciences and Arts](https://www.hslu.ch/)
-03/2016 – 08/2016, Exchange semester in Berlin, [Berlin University of Business Administration and Engineering](http://www.htw-berlin.de/)
-09/2016 – 10/2016, International campus experience, [Santa Clara University](https://www.scu.edu/)
+09/2014 – 07/2017  
+Bachelor of Science in Business and Information Technology  
+[Lucerne University of Applied Sciences and Arts](https://www.hslu.ch/)  
+03/2016 – 08/2016, Exchange semester in Berlin, [Berlin University of Business Administration and Engineering](http://www.htw-berlin.de/)  
+09/2016 – 10/2016, International campus experience, [Santa Clara University](https://www.scu.edu/)  
 
 * Focused on requirements engineering, software development and business process management
 * For my bachelor's project, I have implemented a Meteor app to manage configurations of bus fleet communication systems and enhance user collaboration for a public transport company.
 * Open source projects: [janikvonrotz.ch/projects](https://janikvonrotz.ch/projects)
 
-08/2008 – 06/2012
-Vocational Engineering School Diploma
-[Vocational Training Centre for Business, Information Technology and Engineering in Sursee](https://beruf.lu.ch/berufsbildungszentren/bbzw)
+08/2008 – 06/2012  
+Vocational Engineering School Diploma  
+[Vocational Training Centre for Business, Information Technology and Engineering in Sursee](https://beruf.lu.ch/berufsbildungszentren/bbzw)  
 
-08/2008 – 06/2012
-Computer Specialist EFZ System Engineering
-[Vocational Training Centre for Business, Information Technology and Engineering in Sursee](https://beruf.lu.ch/berufsbildungszentren/bbzw)
+08/2008 – 06/2012  
+Computer Specialist EFZ System Engineering  
+[Vocational Training Centre for Business, Information Technology and Engineering in Sursee](https://beruf.lu.ch/berufsbildungszentren/bbzw)  
 
 ## Information Technology skills
 
