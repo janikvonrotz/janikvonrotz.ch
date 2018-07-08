@@ -1,10 +1,7 @@
 ---
-id: 579
 title: SharePoint File Reporting Done Right
 date: 2013-10-10T16:33:01+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=579
 permalink: /2013/10/10/sharepoint-file-reporting-done-right/
 dsq_thread_id:
   - "1843312893"

@@ -1,10 +1,7 @@
 ---
-id: 620
 title: Archive ActiveDirectory Users and their Mailbox
 date: 2013-10-14T17:04:19+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=620
 permalink: /2013/10/14/archive-activedirectory-users-and-their-mailbox/
 dsq_thread_id:
   - "1856361269"

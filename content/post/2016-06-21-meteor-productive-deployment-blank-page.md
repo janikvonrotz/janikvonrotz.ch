@@ -1,10 +1,7 @@
 ---
-id: 3963
 title: Meteor productive deployment blank page
 date: 2016-06-21T10:16:07+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3963
 permalink: /2016/06/21/meteor-productive-deployment-blank-page/
 dsq_thread_id:
   - "4927016387"

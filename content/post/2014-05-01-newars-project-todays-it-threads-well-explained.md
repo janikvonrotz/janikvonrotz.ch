@@ -1,10 +1,7 @@
 ---
-id: 2086
 title: 'Netwars Project - Today’s IT threads well explained'
 date: 2014-05-01T13:19:00+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2086
 permalink: /2014/05/01/newars-project-todays-it-threads-well-explained/
 dsq_thread_id:
   - "2662117893"

@@ -1,10 +1,7 @@
 ---
-id: 267
 title: Happy Birthday to me
 date: 2013-07-12T07:22:13+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=267
 permalink: /2013/07/12/happy-birthday-to-me/
 dsq_thread_id:
   - "1483448690"

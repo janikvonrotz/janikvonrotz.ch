@@ -1,10 +1,7 @@
 ---
-id: 3830
 title: 'Meteor and React: Bootstrap Modal'
 date: 2016-03-05T12:42:05+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3830
 permalink: /2016/03/05/meteor-and-react-bootstrap-modal/
 dsq_thread_id:
   - "4637306001"

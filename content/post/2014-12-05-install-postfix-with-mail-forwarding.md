@@ -1,10 +1,7 @@
 ---
-id: 2729
 title: Install Postfix with mail forwarding
 date: 2014-12-05T14:03:53+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2729
 permalink: /2014/12/05/install-postfix-with-mail-forwarding/
 dsq_thread_id:
   - "3293332395"

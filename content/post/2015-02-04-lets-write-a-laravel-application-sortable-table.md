@@ -1,10 +1,7 @@
 ---
-id: 2951
 title: 'Let’s write a Laravel application - Sortable table'
 date: 2015-02-04T14:33:28+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2951
 permalink: /2015/02/04/lets-write-a-laravel-application-sortable-table/
 dsq_thread_id:
   - "3484665405"

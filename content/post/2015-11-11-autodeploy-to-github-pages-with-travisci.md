@@ -1,10 +1,7 @@
 ---
-id: 3631
 title: Autodeploy to Github Pages with Travis CI
 date: 2015-11-11T09:37:05+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3631
 permalink: /2015/11/11/autodeploy-to-github-pages-with-travisci/
 dsq_thread_id:
   - "4308594906"

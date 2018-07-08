@@ -1,10 +1,7 @@
 ---
-id: 1753
 title: Nginx minimal website
 date: 2014-04-01T07:57:42+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1753
 permalink: /2014/04/01/nginx-minimal-website/
 dsq_thread_id:
   - "2570589685"

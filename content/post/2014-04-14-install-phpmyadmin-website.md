@@ -1,10 +1,7 @@
 ---
-id: 1947
 title: Install phpMyAdmin website
 date: 2014-04-14T09:49:37+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1947
 permalink: /2014/04/14/install-phpmyadmin-website/
 dsq_thread_id:
   - "2610220050"

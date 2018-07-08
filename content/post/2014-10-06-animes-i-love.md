@@ -1,10 +1,7 @@
 ---
-id: 2597
 title: Animes I love
 date: 2014-10-06T10:55:17+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2597
 permalink: /2014/10/06/animes-i-love/
 dsq_thread_id:
   - "3087917509"

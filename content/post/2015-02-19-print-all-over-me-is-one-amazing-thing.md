@@ -1,10 +1,7 @@
 ---
-id: 3015
 title: Print all over me is one amazing thing
 date: 2015-02-19T22:30:25+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3015
 permalink: /2015/02/19/print-all-over-me-is-one-amazing-thing/
 dsq_thread_id:
   - "3532541604"

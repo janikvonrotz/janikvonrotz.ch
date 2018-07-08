@@ -1,10 +1,7 @@
 ---
-id: 2050
 title: Install piwik website
 date: 2014-04-22T06:43:16+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2050
 permalink: /2014/04/22/install-piwik-website/
 dsq_thread_id:
   - "2629575470"

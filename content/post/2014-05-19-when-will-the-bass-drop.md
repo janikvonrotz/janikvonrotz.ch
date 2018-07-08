@@ -1,10 +1,7 @@
 ---
-id: 2288
 title: WHEN WILL THE BASS DROP?
 date: 2014-05-19T07:40:29+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2288
 permalink: /2014/05/19/when-will-the-bass-drop/
 dsq_thread_id:
   - "2702704998"

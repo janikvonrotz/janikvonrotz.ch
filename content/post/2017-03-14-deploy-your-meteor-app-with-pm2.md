@@ -1,10 +1,7 @@
 ---
-id: 4226
 title: Deploy your Meteor app with PM2
 date: 2017-03-14T14:12:42+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4226
 permalink: /2017/03/14/deploy-your-meteor-app-with-pm2/
 dsq_thread_id:
   - "5631475555"

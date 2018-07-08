@@ -1,10 +1,7 @@
 ---
-id: 1771
 title: Nginx SSL website
 date: 2014-04-03T07:54:04+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1771
 permalink: /2014/04/03/nginx-ssl-website/
 dsq_thread_id:
   - "2582605591"

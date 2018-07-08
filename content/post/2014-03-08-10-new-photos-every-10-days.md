@@ -1,10 +1,7 @@
 ---
-id: 1438
 title: 10 new photos every 10 days
 date: 2014-03-08T17:59:32+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1438
 permalink: /2014/03/08/10-new-photos-every-10-days/
 dsq_thread_id:
   - "2389408521"

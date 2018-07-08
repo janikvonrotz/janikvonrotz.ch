@@ -1,10 +1,7 @@
 ---
-id: 3929
 title: 'hyper reality - short movie about augmented reality'
 date: 2016-05-24T21:07:54+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3929
 permalink: /2016/05/24/hyper-reality-short-movie-about-augmented-reality/
 dsq_thread_id:
   - "4854686217"

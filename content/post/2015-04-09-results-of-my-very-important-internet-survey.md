@@ -1,10 +1,7 @@
 ---
-id: 3260
 title: Results of my very important internet survey
 date: 2015-04-09T12:29:11+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3260
 permalink: /2015/04/09/results-of-my-very-important-internet-survey/
 dsq_thread_id:
   - "3667495750"

@@ -1,10 +1,7 @@
 ---
-id: 4375
 title: 'JS snippet: Set tallest height on siblings'
 date: 2017-08-06T20:40:15+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4375
 permalink: /2017/08/06/js-snippet-set-tallest-height-on-siblings/
 categories:
   - JavaScript

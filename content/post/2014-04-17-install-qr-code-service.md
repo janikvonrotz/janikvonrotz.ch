@@ -1,10 +1,7 @@
 ---
-id: 2004
 title: Install QR code service
 date: 2014-04-17T10:35:03+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2004
 permalink: /2014/04/17/install-qr-code-service/
 dsq_thread_id:
   - "2618446085"

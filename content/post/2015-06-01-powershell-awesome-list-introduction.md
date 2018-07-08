@@ -1,10 +1,7 @@
 ---
-id: 3310
 title: PowerShell awesome list introduction
 date: 2015-06-01T06:47:40+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3310
 permalink: /2015/06/01/powershell-awesome-list-introduction/
 dsq_thread_id:
   - "3811307919"

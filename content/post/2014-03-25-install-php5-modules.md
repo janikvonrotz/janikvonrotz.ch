@@ -1,10 +1,7 @@
 ---
-id: 1699
 title: Install php5 modules
 date: 2014-03-25T11:38:33+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1699
 permalink: /2014/03/25/install-php5-modules/
 dsq_thread_id:
   - "2505352611"

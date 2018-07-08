@@ -1,10 +1,7 @@
 ---
-id: 398
 title: Manage Users in ActiveDirectory with PowerShell
 date: 2013-08-09T10:18:06+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=398
 permalink: /2013/08/09/manage-users-in-activedirectory-with-powershell/
 dsq_thread_id:
   - "1588015157"

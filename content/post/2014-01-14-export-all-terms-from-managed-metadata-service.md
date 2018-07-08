@@ -1,10 +1,7 @@
 ---
-id: 941
 title: Export all Terms from Managed Metadata Service
 date: 2014-01-14T16:18:44+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=941
 permalink: /2014/01/14/export-all-terms-from-managed-metadata-service/
 dsq_thread_id:
   - "2121346675"

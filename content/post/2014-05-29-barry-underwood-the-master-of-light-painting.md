@@ -1,10 +1,7 @@
 ---
-id: 2356
 title: Barry Underwood the master of light painting
 date: 2014-05-29T15:32:16+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2356
 permalink: /2014/05/29/barry-underwood-the-master-of-light-painting/
 dsq_thread_id:
   - "2721925770"

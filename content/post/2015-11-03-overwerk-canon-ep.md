@@ -1,10 +1,7 @@
 ---
-id: 3623
 title: OVERWERK Canon EP
 date: 2015-11-03T11:39:48+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3623
 permalink: /2015/11/03/overwerk-canon-ep/
 dsq_thread_id:
   - "4287027468"

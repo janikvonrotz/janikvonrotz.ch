@@ -1,10 +1,7 @@
 ---
-id: 3987
 title: Meteor create user with a profile and custom attributes
 date: 2016-07-11T20:34:48+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3987
 permalink: /2016/07/11/meteor-create-user-with-a-profile-and-custom-attributes/
 dsq_thread_id:
   - "4977952562"

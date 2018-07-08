@@ -1,10 +1,7 @@
 ---
-id: 3450
 title: Install Koken website
 date: 2015-08-31T06:45:57+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3450
 permalink: /2015/08/31/install-koken-website/
 dsq_thread_id:
   - "4082754740"

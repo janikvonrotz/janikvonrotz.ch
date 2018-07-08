@@ -1,10 +1,7 @@
 ---
-id: 694
 title: PowerShell Function Template
 date: 2013-11-11T16:04:39+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=694
 permalink: /2013/11/11/powershell-function-template/
 dsq_thread_id:
   - "1956333799"

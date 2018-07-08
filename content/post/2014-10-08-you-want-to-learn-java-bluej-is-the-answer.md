@@ -1,10 +1,7 @@
 ---
-id: 2646
 title: You want to learn Java? BlueJ is the answer.
 date: 2014-10-08T16:47:39+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2646
 permalink: /2014/10/08/you-want-to-learn-java-bluej-is-the-answer/
 dsq_thread_id:
   - "3096318887"

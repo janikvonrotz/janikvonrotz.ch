@@ -3,8 +3,6 @@ id: 2254
 title: 'Thank you internet for: Peek by UserTesting'
 date: 2014-05-15T12:44:00+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2254
 permalink: /2014/05/15/thank-your-internet-for-peek-by-usertesting/
 enclosure:
   - |

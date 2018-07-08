@@ -1,10 +1,7 @@
 ---
-id: 315
 title: Active Directory User Reporting
 date: 2013-07-25T10:49:32+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=315
 permalink: /2013/07/25/active-directory-user-reporting/
 dsq_thread_id:
   - "1529885769"

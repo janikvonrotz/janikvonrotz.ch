@@ -1,10 +1,7 @@
 ---
-id: 497
 title: Office365 ADFS Chrome Login fails
 date: 2013-09-10T13:49:40+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=497
 permalink: /2013/09/10/office365-adfs-chrome-login-fails/
 dsq_thread_id:
   - "1745104946"

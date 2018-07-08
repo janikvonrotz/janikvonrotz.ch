@@ -1,10 +1,7 @@
 ---
-id: 1930
 title: 'Add a new file type in SharePoint - KeePass example'
 date: 2014-04-14T08:15:07+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1930
 permalink: /2014/04/14/add-a-new-file-type-in-sharepoint-keepass-example/
 dsq_thread_id:
   - "2610061515"

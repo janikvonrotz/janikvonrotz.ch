@@ -1,10 +1,7 @@
 ---
-id: 4764
 title: Update Windows Subsystem for Linux
 date: 2018-01-30T10:32:51+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4764
 permalink: /2018/01/30/update-windows-subsystem-for-linux/
 specific_page_layout:
   - default-sidebar

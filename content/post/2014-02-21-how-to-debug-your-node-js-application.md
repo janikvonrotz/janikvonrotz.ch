@@ -1,10 +1,7 @@
 ---
-id: 1104
 title: How to debug your Node.js application
 date: 2014-02-21T14:20:13+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1104
 permalink: /2014/02/21/how-to-debug-your-node-js-application/
 dsq_thread_id:
   - "2298328026"

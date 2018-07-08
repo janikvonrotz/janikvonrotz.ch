@@ -1,10 +1,7 @@
 ---
-id: 1676
 title: Update Ubuntu server
 date: 2014-03-24T18:34:00+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1676
 permalink: /2014/03/24/update-ubuntu-server/
 dsq_thread_id:
   - "2500275221"

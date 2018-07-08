@@ -1,10 +1,7 @@
 ---
-id: 548
 title: 'Project: Setup Windows 7 Kiosk'
 date: 2013-10-04T16:01:56+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=548
 permalink: /2013/10/04/project-setup-windows-7-kiosk/
 dsq_thread_id:
   - "1824260455"

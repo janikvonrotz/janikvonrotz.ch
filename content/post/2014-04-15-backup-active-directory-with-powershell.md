@@ -1,10 +1,7 @@
 ---
-id: 1974
 title: Backup Active Directory with PowerShell
 date: 2014-04-15T13:57:06+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1974
 permalink: /2014/04/15/backup-active-directory-with-powershell/
 dsq_thread_id:
   - "2614387113"

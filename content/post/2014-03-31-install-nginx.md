@@ -1,10 +1,7 @@
 ---
-id: 1736
 title: Install Nginx
 date: 2014-03-31T09:43:19+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1736
 permalink: /2014/03/31/install-nginx/
 dsq_thread_id:
   - "2561474269"

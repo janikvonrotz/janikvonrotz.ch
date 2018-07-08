@@ -1,10 +1,7 @@
 ---
-id: 1512
 title: New Office 365 user can not be found in directory
 date: 2014-03-13T11:22:32+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1512
 permalink: /2014/03/13/new-office-365-can-not-be-found-in-directory/
 dsq_thread_id:
   - "2420379308"

@@ -1,10 +1,7 @@
 ---
-id: 464
 title: Manage ActiveDirectory Distribution Groups
 date: 2013-08-27T12:39:11+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=464
 permalink: /2013/08/27/manage-activedirectory-distribution-groups/
 dsq_thread_id:
   - "1654234472"

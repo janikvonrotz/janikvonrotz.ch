@@ -1,10 +1,7 @@
 ---
-id: 1045
 title: Update Url within WordPress Post Content
 date: 2014-02-10T13:06:55+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1045
 permalink: /2014/02/10/update-url-within-wordpress-post-content/
 dsq_thread_id:
   - "2246601355"

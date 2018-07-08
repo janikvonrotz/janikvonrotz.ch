@@ -1,10 +1,7 @@
 ---
-id: 1764
 title: Improve your next presentation with Less is More
 date: 2014-04-03T07:40:16+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1764
 permalink: /2014/04/03/improve-your-next-presentation-with-less-is-more/
 dsq_thread_id:
   - "2582590113"

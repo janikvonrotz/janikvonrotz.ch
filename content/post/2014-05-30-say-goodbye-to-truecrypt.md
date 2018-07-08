@@ -1,10 +1,7 @@
 ---
-id: 2378
 title: Say Goodbye to TrueCrypt
 date: 2014-05-30T07:21:00+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2378
 permalink: /2014/05/30/say-goodbye-to-truecrypt/
 dsq_thread_id:
   - "2723322151"

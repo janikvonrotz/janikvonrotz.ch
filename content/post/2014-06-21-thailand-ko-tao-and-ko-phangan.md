@@ -1,10 +1,7 @@
 ---
-id: 2424
 title: 'Thailand - Ko Tao and Ko Phangan'
 date: 2014-06-21T09:26:26+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2424
 permalink: /2014/06/21/thailand-ko-tao-and-ko-phangan/
 dsq_thread_id:
   - "2783344513"

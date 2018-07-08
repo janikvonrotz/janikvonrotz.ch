@@ -1,10 +1,7 @@
 ---
-id: 3250
 title: Enable Piwik for LimeSurvey
 date: 2015-04-09T10:30:10+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3250
 permalink: /2015/04/09/enable-piwik-for-limesurvey/
 dsq_thread_id:
   - "3667243567"

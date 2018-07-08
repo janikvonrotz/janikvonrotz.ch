@@ -1,10 +1,7 @@
 ---
-id: 131
 title: 'Kinaj 01 - Cyber Corn (Electro House, Progressive House)'
 date: 2013-07-02T18:40:39+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=131
 permalink: /2013/07/02/kinaj-01-cyber-corn-electro-house-progressive-house/
 dsq_thread_id:
   - "1459749734"

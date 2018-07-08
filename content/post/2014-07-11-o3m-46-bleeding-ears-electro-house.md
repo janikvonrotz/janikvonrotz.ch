@@ -1,10 +1,7 @@
 ---
-id: 2342
 title: 'O3M 46 - Bleeding Ears (Electro House)'
 date: 2014-07-11T07:19:42+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2342
 permalink: /2014/07/11/o3m-46-bleeding-ears-electro-house/
 dsq_thread_id:
   - "2858491354"

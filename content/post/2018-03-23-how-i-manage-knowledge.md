@@ -1,10 +1,7 @@
 ---
-id: 4817
 title: How I manage knowledge
 date: 2018-03-23T16:40:48+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4817
 permalink: /2018/03/23/how-i-manage-knowledge/
 specific_page_layout:
   - default-sidebar

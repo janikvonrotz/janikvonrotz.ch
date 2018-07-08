@@ -1,10 +1,7 @@
 ---
-id: 2829
 title: Manage multiple WordPress sites with Jetpack
 date: 2014-12-19T12:05:02+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2829
 permalink: /2014/12/19/manage-multiple-wordpress-sites-with-jetpack/
 dsq_thread_id:
   - "3339638958"

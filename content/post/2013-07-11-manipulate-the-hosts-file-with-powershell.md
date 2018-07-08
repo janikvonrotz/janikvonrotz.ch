@@ -1,10 +1,7 @@
 ---
-id: 288
 title: Manipulate the hosts file with PowerShell
 date: 2013-07-11T08:38:06+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=288
 permalink: /2013/07/11/manipulate-the-hosts-file-with-powershell/
 dsq_thread_id:
   - "1487179908"

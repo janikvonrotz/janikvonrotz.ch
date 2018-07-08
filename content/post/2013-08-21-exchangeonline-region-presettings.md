@@ -1,10 +1,7 @@
 ---
-id: 443
 title: ExchangeOnline Region Presettings
 date: 2013-08-21T15:37:23+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=443
 permalink: /2013/08/21/exchangeonline-region-presettings/
 dsq_thread_id:
   - "1624176205"

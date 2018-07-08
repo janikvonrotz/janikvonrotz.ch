@@ -1,10 +1,7 @@
 ---
-id: 3172
 title: 'Build a Java 3-tier application from scratch – Part 5: Client controller'
 date: 2015-04-01T09:27:32+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3172
 permalink: /2015/04/01/build-a-java-3-tier-application-from-scratch-part-5-client-controller/
 dsq_thread_id:
   - "3645281582"

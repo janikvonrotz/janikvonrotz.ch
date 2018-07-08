@@ -1,10 +1,7 @@
 ---
-id: 1871
 title: Install s3cmd
 date: 2014-04-10T07:48:14+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1871
 permalink: /2014/04/10/install-s3cmd/
 dsq_thread_id:
   - "2600602242"

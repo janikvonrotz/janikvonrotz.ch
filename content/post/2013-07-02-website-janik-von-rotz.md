@@ -1,10 +1,7 @@
 ---
-id: 2915
 title: Website Janik von Rotz
 date: 2013-07-02T09:01:17+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2915
 permalink: /2013/07/02/website-janik-von-rotz/
 dsq_thread_id:
   - "3468868876"

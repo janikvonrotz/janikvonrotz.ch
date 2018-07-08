@@ -1,10 +1,7 @@
 ---
-id: 525
 title: Add View Folder link to search results page in SharePoint
 date: 2013-09-23T11:19:09+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=525
 permalink: /2013/09/23/add-view-folder-link-to-search-results-page-in-sharepoint/
 dsq_thread_id:
   - "1789065243"

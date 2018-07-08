@@ -1,10 +1,7 @@
 ---
-id: 2529
 title: 'USA - Nevada and California'
 date: 2014-08-24T06:17:14+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2529
 permalink: /2014/08/24/usa-nevada-and-california/
 dsq_thread_id:
   - "2953981634"

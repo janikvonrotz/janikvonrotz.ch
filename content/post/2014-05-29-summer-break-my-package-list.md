@@ -1,10 +1,7 @@
 ---
-id: 2354
 title: 'Summer break - my package list'
 date: 2014-05-29T15:37:08+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2354
 permalink: /2014/05/29/summer-break-my-package-list/
 dsq_thread_id:
   - "2721386704"

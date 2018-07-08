@@ -1,10 +1,7 @@
 ---
-id: 1478
 title: SharePoint 2013 navigation sub menu titles cut off
 date: 2014-03-10T14:35:34+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1478
 permalink: /2014/03/10/sharepoint-2013-navigation-sub-menu-titles-cut-off/
 dsq_thread_id:
   - "2400906975"

@@ -1,10 +1,7 @@
 ---
-id: 513
 title: 'Kinaj 19 - I don’t know (Rock, Alternative)'
 date: 2013-09-20T12:09:38+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=513
 permalink: /2013/09/20/kinaj-19-i-dont-know-rock-alternative/
 dsq_thread_id:
   - "1780516410"

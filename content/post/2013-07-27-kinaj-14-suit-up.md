@@ -1,10 +1,7 @@
 ---
-id: 327
 title: 'Kinaj 14 - Suit Up'
 date: 2013-07-27T08:30:11+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=327
 permalink: /2013/07/27/kinaj-14-suit-up/
 dsq_thread_id:
   - "1536983866"

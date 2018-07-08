@@ -1,10 +1,7 @@
 ---
-id: 1809
 title: SharePoint Class Registration Form
 date: 2014-04-07T12:25:53+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1809
 permalink: /2014/04/07/sharepoint-class-registration-form/
 dsq_thread_id:
   - "2593004591"

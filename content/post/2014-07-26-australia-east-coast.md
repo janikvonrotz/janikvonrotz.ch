@@ -1,10 +1,7 @@
 ---
-id: 2476
 title: 'Australia - East coast'
 date: 2014-07-26T00:08:36+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2476
 permalink: /2014/07/26/australia-east-coast/
 dsq_thread_id:
   - "2873691829"

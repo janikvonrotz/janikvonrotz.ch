@@ -1,10 +1,7 @@
 ---
-id: 3023
 title: Finally WhatsApp has grown up
 date: 2015-02-26T17:31:00+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3023
 permalink: /2015/02/26/finally-whatsapp-has-grown-up/
 dsq_thread_id:
   - "3553983835"

@@ -1,10 +1,7 @@
 ---
-id: 2911
 title: Website Familie OW
 date: 2013-07-02T08:57:03+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2911
 permalink: /2013/07/02/website-familie-ow/
 dsq_thread_id:
   - "3468865067"

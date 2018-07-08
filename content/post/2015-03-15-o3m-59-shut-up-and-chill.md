@@ -1,10 +1,7 @@
 ---
-id: 3117
 title: 'O3M 59 - Shut up and Chill'
 date: 2015-03-15T17:27:59+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3117
 permalink: /2015/03/15/o3m-59-shut-up-and-chill/
 dsq_thread_id:
   - "3597431477"

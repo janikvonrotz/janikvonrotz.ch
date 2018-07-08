@@ -1,10 +1,7 @@
 ---
-id: 1743
 title: SharePoint Export and Import Term Sets from Term Store
 date: 2014-04-01T07:34:23+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1743
 permalink: /2014/04/01/sharepoint-export-and-import-term-sets-from-term-store/
 dsq_thread_id:
   - "2570434568"

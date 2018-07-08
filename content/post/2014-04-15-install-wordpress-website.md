@@ -1,10 +1,7 @@
 ---
-id: 1970
 title: Install WordPress website
 date: 2014-04-15T07:00:32+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1970
 permalink: /2014/04/15/install-wordpress-website/
 dsq_thread_id:
   - "2612708517"

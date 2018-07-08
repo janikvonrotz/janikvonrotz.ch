@@ -1,10 +1,7 @@
 ---
-id: 4591
 title: Get unlinked GPOs with PowerShell
 date: 2017-10-06T10:06:49+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4591
 permalink: /2017/10/06/get-unlinked-gpos-with-powershell/
 image: /wp-content/uploads/2017/10/PowerShell-Get-unlinked-GPOs.png
 categories:

@@ -1,10 +1,7 @@
 ---
-id: 4872
 title: SOA and microservices explained well
 date: 2018-05-09T16:11:00+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4872
 permalink: /2018/05/09/soa-and-microservices-explained-well/
 image: /wp-content/uploads/2018/05/architecture.jpg
 categories:

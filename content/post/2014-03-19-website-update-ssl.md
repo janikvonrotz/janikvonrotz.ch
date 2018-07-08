@@ -1,10 +1,7 @@
 ---
-id: 1604
 title: Website Update SSL
 date: 2014-03-19T15:15:21+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1604
 permalink: /2014/03/19/website-update-ssl/
 dsq_thread_id:
   - "2462518912"

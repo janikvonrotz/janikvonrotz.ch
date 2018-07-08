@@ -1,10 +1,7 @@
 ---
-id: 1864
 title: Open SSL Heartbleed Bug
 date: 2014-04-09T15:25:47+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1864
 permalink: /2014/04/09/open-ssl-heartbleed-bug/
 dsq_thread_id:
   - "2598773837"

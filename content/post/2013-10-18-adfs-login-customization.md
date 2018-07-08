@@ -1,10 +1,7 @@
 ---
-id: 638
 title: ADFS Login Customization
 date: 2013-10-18T13:04:41+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=638
 permalink: /2013/10/18/adfs-login-customization/
 dsq_thread_id:
   - "1871576330"

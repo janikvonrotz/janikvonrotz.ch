@@ -1,10 +1,7 @@
 ---
-id: 1851
 title: Create GPG Keys
 date: 2014-04-09T08:30:29+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1851
 permalink: /2014/04/09/create-gpg-keys/
 dsq_thread_id:
   - "2597967325"

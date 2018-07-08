@@ -1,10 +1,7 @@
 ---
-id: 2310
 title: 'O3M 43 - And Again (trap, dubstep)'
 date: 2014-05-20T15:20:17+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2310
 permalink: /2014/05/20/o3m-43-and-again-trap-dubstep/
 dsq_thread_id:
   - "2699706848"

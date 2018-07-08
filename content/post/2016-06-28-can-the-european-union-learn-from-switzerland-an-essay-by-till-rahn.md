@@ -1,10 +1,7 @@
 ---
-id: 3969
 title: 'Can the European Union Learn from Switzerland? - An Essay by Till Rahn'
 date: 2016-06-28T09:47:51+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3969
 permalink: /2016/06/28/can-the-european-union-learn-from-switzerland-an-essay-by-till-rahn/
 dsq_thread_id:
   - "4944542562"

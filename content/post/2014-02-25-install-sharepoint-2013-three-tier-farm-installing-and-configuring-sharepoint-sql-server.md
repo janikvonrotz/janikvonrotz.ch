@@ -1,10 +1,7 @@
 ---
-id: 1128
 title: 'Install SharePoint 2013 Three-tier Farm - Installing and Configuring SharePoint SQL Server'
 date: 2014-02-25T13:52:33+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1128
 permalink: /2014/02/25/install-sharepoint-2013-three-tier-farm-installing-and-configuring-sharepoint-sql-server/
 dsq_thread_id:
   - "2318367140"

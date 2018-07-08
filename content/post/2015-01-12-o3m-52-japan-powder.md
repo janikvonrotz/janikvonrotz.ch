@@ -1,10 +1,7 @@
 ---
-id: 2873
 title: 'O3M 52 - Japan Powder'
 date: 2015-01-12T18:59:25+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2873
 permalink: /2015/01/12/o3m-52-japan-powder/
 dsq_thread_id:
   - "3418819760"

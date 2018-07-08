@@ -1,10 +1,7 @@
 ---
-id: 3444
 title: Add Piwik tracking code to your Koken site
 date: 2015-08-19T08:38:41+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3444
 permalink: /2015/08/19/add-piwik-tracking-code-to-your-koken-site/
 dsq_thread_id:
   - "4046236797"

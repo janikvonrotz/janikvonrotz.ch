@@ -1,10 +1,7 @@
 ---
-id: 2297
 title: Alternative download for SharePoint ULS viewer by Microsoft
 date: 2014-05-19T13:32:37+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2297
 permalink: /2014/05/19/alternative-download-for-sharepoint-uls-viewer-by-microsoft/
 dsq_thread_id:
   - "2696715732"

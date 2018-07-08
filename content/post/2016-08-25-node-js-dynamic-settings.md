@@ -1,10 +1,7 @@
 ---
-id: 4033
 title: Node.js dynamic settings
 date: 2016-08-25T19:43:31+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4033
 permalink: /2016/08/25/node-js-dynamic-settings/
 dsq_thread_id:
   - "5094803262"

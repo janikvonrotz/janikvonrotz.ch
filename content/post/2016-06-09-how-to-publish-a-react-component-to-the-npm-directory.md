@@ -1,10 +1,7 @@
 ---
-id: 3953
 title: How to publish a react component to the npm directory
 date: 2016-06-09T12:33:36+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3953
 permalink: /2016/06/09/how-to-publish-a-react-component-to-the-npm-directory/
 dsq_thread_id:
   - "4896495057"

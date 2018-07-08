@@ -1,10 +1,7 @@
 ---
-id: 1784
 title: Redirected subdomains to domain
 date: 2014-04-04T06:59:12+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1784
 permalink: /2014/04/04/redirected-subdomains-to-domain/
 dsq_thread_id:
   - "2585121297"

@@ -1,10 +1,7 @@
 ---
-id: 2921
 title: Website Steuern NW
 date: 2013-07-02T09:04:53+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2921
 permalink: /2013/07/02/website-steuern-nw/
 dsq_thread_id:
   - "3468876786"

@@ -1,10 +1,7 @@
 ---
-id: 1876
 title: Increase Max Upload for php5-fpm website
 date: 2014-04-11T06:55:10+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1876
 permalink: /2014/04/11/increase-max-upload-for-php5-fpm-website/
 dsq_thread_id:
   - "2603118431"

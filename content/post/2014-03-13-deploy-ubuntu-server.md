@@ -1,10 +1,7 @@
 ---
-id: 1521
 title: Deploy Ubuntu server
 date: 2014-03-13T16:04:21+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1521
 permalink: /2014/03/13/deploy-ubuntu-server/
 dsq_thread_id:
   - "2421625589"

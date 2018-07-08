@@ -1,10 +1,7 @@
 ---
-id: 653
 title: Manage Security Groups in a organizational Strcture
 date: 2013-10-28T16:22:20+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=653
 permalink: /2013/10/28/manage-security-groups-in-a-organizational-strcture/
 dsq_thread_id:
   - "1910803381"

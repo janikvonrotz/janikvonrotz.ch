@@ -1,10 +1,7 @@
 ---
-id: 4609
 title: SCCM 1702 increase client log size and retention
 date: 2017-10-17T13:46:41+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4609
 permalink: /2017/10/17/sccm-1702-increase-client-log-size-and-retention/
 specific_page_layout:
   - default-sidebar

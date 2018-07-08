@@ -1,10 +1,7 @@
 ---
-id: 1825
 title: Install automysqlbackup
 date: 2014-04-08T08:33:11+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1825
 permalink: /2014/04/08/install-automysqlbackup/
 dsq_thread_id:
   - "2595242917"

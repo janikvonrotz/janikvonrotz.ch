@@ -3,7 +3,6 @@ id: 4
 title: Downloads
 date: 2013-07-02T08:20:29+00:00
 author: Janik von Rotz
-layout: page
 guid: https://janikvonrotz.ch/?page_id=4
 dsq_thread_id:
   - "1458070513"

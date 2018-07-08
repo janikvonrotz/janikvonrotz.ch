@@ -1,10 +1,7 @@
 ---
-id: 1728
 title: Install npm package forever
 date: 2014-03-28T12:49:20+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1728
 permalink: /2014/03/28/install-npm-package-forever/
 dsq_thread_id:
   - "2532782991"

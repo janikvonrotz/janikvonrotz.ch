@@ -1,10 +1,7 @@
 ---
-id: 769
 title: Add SharePoint List Print Button
 date: 2013-11-25T09:32:03+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=769
 permalink: /2013/11/25/add-sharepoint-list-print-button/
 dsq_thread_id:
   - "1997246600"

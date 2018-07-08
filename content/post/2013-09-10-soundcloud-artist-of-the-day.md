@@ -1,10 +1,7 @@
 ---
-id: 495
 title: Soundcloud Artist of the Day
 date: 2013-09-10T12:13:53+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=495
 permalink: /2013/09/10/soundcloud-artist-of-the-day/
 dsq_thread_id:
   - "1745088794"

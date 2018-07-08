@@ -1,10 +1,7 @@
 ---
-id: 4083
 title: Graphql with Apollo, Meteor and React
 date: 2016-10-09T19:39:30+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4083
 permalink: /2016/10/09/graphql-with-apollo-meteor-and-react/
 dsq_thread_id:
   - "5209861289"

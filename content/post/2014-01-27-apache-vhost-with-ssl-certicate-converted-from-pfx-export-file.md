@@ -1,10 +1,7 @@
 ---
-id: 790
 title: Apache vHost with SSL Certicate converted from .pfx Export file
 date: 2014-01-27T14:03:40+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=790
 permalink: /2014/01/27/apache-vhost-with-ssl-certicate-converted-from-pfx-export-file/
 dsq_thread_id:
   - "2180845834"

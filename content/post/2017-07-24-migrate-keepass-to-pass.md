@@ -1,10 +1,7 @@
 ---
-id: 4399
 title: Migrate KeePass to Pass
 date: 2017-07-24T10:05:46+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4399
 permalink: /2017/07/24/migrate-keepass-to-pass/
 image: /wp-content/uploads/2017/07/Pass-Unix-password-manager.png
 categories:

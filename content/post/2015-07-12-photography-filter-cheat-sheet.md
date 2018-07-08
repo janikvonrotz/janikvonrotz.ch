@@ -1,10 +1,7 @@
 ---
-id: 3348
 title: Photography Filter Cheat Sheet
 date: 2015-07-12T21:58:09+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3348
 permalink: /2015/07/12/photography-filter-cheat-sheet/
 dsq_thread_id:
   - "3930575649"

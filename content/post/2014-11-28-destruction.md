@@ -1,10 +1,7 @@
 ---
-id: 2713
 title: Destruction
 date: 2014-11-28T12:23:37+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2713
 permalink: /2014/11/28/destruction/
 dsq_thread_id:
   - "3270506990"

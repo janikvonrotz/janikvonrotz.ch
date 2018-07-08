@@ -1,10 +1,7 @@
 ---
-id: 3575
 title: Outdoor life Slovenia
 date: 2015-10-07T16:44:13+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3575
 permalink: /2015/10/07/outdoor-life-slovenia/
 dsq_thread_id:
   - "4203013161"

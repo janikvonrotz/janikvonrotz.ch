@@ -1,10 +1,7 @@
 ---
-id: 2773
 title: Backup server installations
 date: 2014-12-08T10:04:07+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2773
 permalink: /2014/12/08/backup-server-installations/
 dsq_thread_id:
   - "3301838779"

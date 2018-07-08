@@ -1,10 +1,7 @@
 ---
-id: 3381
 title: Abandoned Berlin
 date: 2015-07-13T15:13:13+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3381
 permalink: /2015/07/13/abandoned-berlin/
 dsq_thread_id:
   - "3930288152"

@@ -1,10 +1,7 @@
 ---
-id: 4044
 title: 'Chatbot dialog design - a best practice proposal'
 date: 2016-09-16T17:38:22+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4044
 permalink: /2016/09/16/chatbot-dialog-design-a-best-practice-proposal/
 dsq_thread_id:
   - "5149455320"

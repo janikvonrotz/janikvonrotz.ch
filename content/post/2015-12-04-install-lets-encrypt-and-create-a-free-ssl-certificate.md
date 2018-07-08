@@ -1,10 +1,7 @@
 ---
-id: 3345
 title: 'Install Let’s Encrypt and create a free SSL certificate'
 date: 2015-12-04T11:23:57+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3345
 permalink: /2015/12/04/install-lets-encrypt-and-create-a-free-ssl-certificate/
 dsq_thread_id:
   - "4374741718"

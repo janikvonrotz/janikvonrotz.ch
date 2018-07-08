@@ -1,10 +1,7 @@
 ---
-id: 1404
 title: 'Step by Step: Install Ghost Blog'
 date: 2014-03-03T16:34:55+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1404
 permalink: /2014/03/03/step-by-step-install-ghost-blog/
 dsq_thread_id:
   - "2351610251"

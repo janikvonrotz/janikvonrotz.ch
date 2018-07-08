@@ -1,10 +1,7 @@
 ---
-id: 2902
 title: Let’s write a Laravel application – Project template
 date: 2015-01-30T10:28:03+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2902
 permalink: /2015/01/30/lets-write-a-laravel-application-project-template/
 dsq_thread_id:
   - "3469034417"

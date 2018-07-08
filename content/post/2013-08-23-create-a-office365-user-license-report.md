@@ -1,10 +1,7 @@
 ---
-id: 453
 title: Create a Office365 user license report
 date: 2013-08-23T12:14:46+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=453
 permalink: /2013/08/23/create-a-office365-user-license-report/
 dsq_thread_id:
   - "1633015026"

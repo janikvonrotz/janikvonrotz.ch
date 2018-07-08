@@ -1,10 +1,7 @@
 ---
-id: 3126
 title: Create WordPress admin user with sql only
 date: 2015-03-24T17:54:28+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3126
 permalink: /2015/03/24/create-wordpress-admin-user-with-sql-only/
 dsq_thread_id:
   - "3642482614"

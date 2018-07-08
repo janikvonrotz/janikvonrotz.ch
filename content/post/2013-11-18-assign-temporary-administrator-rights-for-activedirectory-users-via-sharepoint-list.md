@@ -1,10 +1,7 @@
 ---
-id: 744
 title: Assign Temporary Administrator Rights for ActiveDirectory Users via SharePoint list
 date: 2013-11-18T16:55:32+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=744
 permalink: /2013/11/18/assign-temporary-administrator-rights-for-activedirectory-users-via-sharepoint-list/
 dsq_thread_id:
   - "1976601577"

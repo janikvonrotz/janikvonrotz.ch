@@ -1,10 +1,7 @@
 ---
-id: 3605
 title: Install Python
 date: 2015-10-22T07:08:05+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3605
 permalink: /2015/10/22/install-python/
 dsq_thread_id:
   - "4247785113"

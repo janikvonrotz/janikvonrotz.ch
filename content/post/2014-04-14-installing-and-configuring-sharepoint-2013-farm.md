@@ -1,10 +1,7 @@
 ---
-id: 1889
 title: Installing and Configuring SharePoint 2013 Farm
 date: 2014-04-14T09:29:48+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1889
 permalink: /2014/04/14/installing-and-configuring-sharepoint-2013-farm/
 dsq_thread_id:
   - "2610183207"

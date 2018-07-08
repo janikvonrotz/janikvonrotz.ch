@@ -1,10 +1,7 @@
 ---
-id: 476
 title: SharePoint 2010 Manage Content And Structure Is Missing
 date: 2013-09-04T15:31:07+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=476
 permalink: /2013/09/04/sharepoint-2010-manage-content-and-structure-is-missing/
 dsq_thread_id:
   - "1709542508"

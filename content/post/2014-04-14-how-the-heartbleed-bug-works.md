@@ -1,10 +1,7 @@
 ---
-id: 1927
 title: How the Heartbleed bug works
 date: 2014-04-14T06:39:22+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1927
 permalink: /2014/04/14/how-the-heartbleed-bug-works/
 dsq_thread_id:
   - "2609918911"

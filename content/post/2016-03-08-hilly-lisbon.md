@@ -1,10 +1,7 @@
 ---
-id: 3868
 title: Hilly Lisbon
 date: 2016-03-08T15:28:28+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3868
 permalink: /2016/03/08/hilly-lisbon/
 dsq_thread_id:
   - "4644693728"

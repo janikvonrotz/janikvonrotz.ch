@@ -1,10 +1,7 @@
 ---
-id: 3148
 title: 'Build a Java 3-tier application from scratch – Part 3: Object-relational mapping'
 date: 2015-03-30T16:41:24+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3148
 permalink: /2015/03/30/build-a-java-3-tier-application-from-scratch-part-3-object-relational-mapping/
 dsq_thread_id:
   - "3639842548"

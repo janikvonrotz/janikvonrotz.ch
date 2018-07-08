@@ -1,10 +1,7 @@
 ---
-id: 869
 title: Happy new year
 date: 2013-12-31T23:55:18+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=869
 permalink: /2013/12/31/happy-new-year/
 dsq_thread_id:
   - "2085040469"

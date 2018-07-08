@@ -1,10 +1,7 @@
 ---
-id: 3409
 title: ScreenToGif an awesome recorder
 date: 2015-08-04T07:03:41+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3409
 permalink: /2015/08/04/screentogif-an-awesome-recorder/
 dsq_thread_id:
   - "4001325990"

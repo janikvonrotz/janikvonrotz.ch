@@ -1,10 +1,7 @@
 ---
-id: 1488
 title: Install .NET Framework 3.5 on Windows Server 2012 and Windows Server 2012 R2
 date: 2014-03-11T07:30:44+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1488
 permalink: /2014/03/11/install-net-framework-3-5-on-windows-server-2012-and-windows-server-2012-r2/
 dsq_thread_id:
   - "2406018894"

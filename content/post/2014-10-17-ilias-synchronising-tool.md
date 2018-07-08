@@ -1,10 +1,7 @@
 ---
-id: 2668
 title: ILIAS Synchronising Tool
 date: 2014-10-17T18:27:19+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2668
 permalink: /2014/10/17/ilias-synchronising-tool/
 dsq_thread_id:
   - "3127475757"

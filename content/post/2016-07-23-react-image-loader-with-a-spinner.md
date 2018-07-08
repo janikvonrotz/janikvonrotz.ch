@@ -1,10 +1,7 @@
 ---
-id: 3997
 title: React image loader with a spinner
 date: 2016-07-23T04:19:06+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3997
 permalink: /2016/07/23/react-image-loader-with-a-spinner/
 dsq_thread_id:
   - "5007364372"

@@ -1,10 +1,7 @@
 ---
-id: 2665
 title: Backup your OneNote files
 date: 2014-10-17T11:01:23+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2665
 permalink: /2014/10/17/backup-your-onenote-files/
 dsq_thread_id:
   - "3126193518"

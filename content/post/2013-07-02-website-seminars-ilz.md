@@ -1,10 +1,7 @@
 ---
-id: 2918
 title: Website Seminars ILZ
 date: 2013-07-02T09:03:17+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2918
 permalink: /2013/07/02/website-seminars-ilz/
 dsq_thread_id:
   - "3468872490"

@@ -1,10 +1,7 @@
 ---
-id: 3123
 title: free SSL for everybody
 date: 2015-03-23T09:09:11+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3123
 permalink: /2015/03/23/free-ssl-for-everybody/
 dsq_thread_id:
   - "3622670884"

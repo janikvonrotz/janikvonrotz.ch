@@ -1,10 +1,7 @@
 ---
-id: 3798
 title: Beautiful Corsica
 date: 2016-02-01T19:35:55+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3798
 permalink: /2016/02/01/beautiful-corsica/
 dsq_thread_id:
   - "4542597397"

@@ -1,10 +1,7 @@
 ---
-id: 740
 title: Simple Redirect with Apache2
 date: 2013-11-15T10:46:47+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=740
 permalink: /2013/11/15/simple-redirect-with-apache2/
 dsq_thread_id:
   - "1967892452"

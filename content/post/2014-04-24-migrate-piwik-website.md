@@ -1,10 +1,7 @@
 ---
-id: 2074
 title: Migrate Piwik website
 date: 2014-04-24T07:23:42+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2074
 permalink: /2014/04/24/migrate-piwik-website/
 dsq_thread_id:
   - "2634847401"

@@ -1,10 +1,7 @@
 ---
-id: 1920
 title: The Human Cost of Electronics
 date: 2014-04-13T20:52:45+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1920
 permalink: /2014/04/13/the-human-cost-of-electronics/
 dsq_thread_id:
   - "2609033530"

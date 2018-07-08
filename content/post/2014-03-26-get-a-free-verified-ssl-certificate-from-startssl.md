@@ -1,10 +1,7 @@
 ---
-id: 1712
 title: Get a free verified SSL certificate from StartSSL
 date: 2014-03-26T10:29:07+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1712
 permalink: /2014/03/26/get-a-free-verified-ssl-certificate-from-startssl/
 dsq_thread_id:
   - "2513276401"

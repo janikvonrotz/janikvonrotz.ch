@@ -1,10 +1,7 @@
 ---
-id: 3101
 title: 'Build a Java 3-tier application from scratch - Part 1: Introduction and project setup'
 date: 2015-03-15T16:57:38+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3101
 permalink: /2015/03/15/build-a-java-3-tier-application-from-scratch-part-1-introduction-and-project-setup/
 dsq_thread_id:
   - "3597369871"

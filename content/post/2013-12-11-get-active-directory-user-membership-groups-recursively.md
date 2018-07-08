@@ -1,10 +1,7 @@
 ---
-id: 817
 title: Get Active Directory User Membership Groups Recursively
 date: 2013-12-11T11:46:37+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=817
 permalink: /2013/12/11/get-active-directory-user-membership-groups-recursively/
 dsq_thread_id:
   - "2043288310"

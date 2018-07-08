@@ -1,10 +1,7 @@
 ---
-id: 411
 title: Office365 SharePoint Backup und Restore Facts by IOZ AG
 date: 2013-08-12T13:33:30+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=411
 permalink: /2013/08/12/office365-sharepoint-backup-und-restore-facts-by-ioz-ag/
 dsq_thread_id:
   - "1600180115"

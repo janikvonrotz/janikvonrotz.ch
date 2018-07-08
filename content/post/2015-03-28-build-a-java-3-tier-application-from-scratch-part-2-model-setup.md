@@ -1,10 +1,7 @@
 ---
-id: 3120
 title: 'Build a Java 3-tier application from scratch - Part 2: Model setup'
 date: 2015-03-28T18:01:51+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3120
 permalink: /2015/03/28/build-a-java-3-tier-application-from-scratch-part-2-model-setup/
 dsq_thread_id:
   - "3634666145"

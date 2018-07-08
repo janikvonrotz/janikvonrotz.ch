@@ -1,10 +1,7 @@
 ---
-id: 1804
 title: Install MySQL
 date: 2014-04-07T07:14:46+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1804
 permalink: /2014/04/07/install-mysql/
 dsq_thread_id:
   - "2592456287"

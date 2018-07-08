@@ -1,10 +1,7 @@
 ---
-id: 4756
 title: Setup SSH on Windows 10
 date: 2018-01-19T11:55:48+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4756
 permalink: /2018/01/19/setup-ssh-on-windows-10/
 specific_page_layout:
   - default-sidebar

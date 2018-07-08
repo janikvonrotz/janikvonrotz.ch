@@ -1,10 +1,7 @@
 ---
-id: 1617
 title: Install php5-fpm
 date: 2014-03-20T13:41:30+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1617
 permalink: /2014/03/20/install-php5-fpm/
 dsq_thread_id:
   - "2468691830"

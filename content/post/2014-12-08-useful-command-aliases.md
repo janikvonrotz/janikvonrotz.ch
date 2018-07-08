@@ -1,10 +1,7 @@
 ---
-id: 2774
 title: Useful command aliases
 date: 2014-12-08T10:04:00+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2774
 permalink: /2014/12/08/useful-command-aliases/
 dsq_thread_id:
   - "3301837297"

@@ -1,10 +1,7 @@
 ---
-id: 2957
 title: 'Let’s write a Laravel application - Form validation for your backend and frontend'
 date: 2015-02-10T00:18:29+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2957
 permalink: /2015/02/10/lets-write-a-laravel-application-form-validation-for-your-backend-and-frontend/
 dsq_thread_id:
   - "3500959987"

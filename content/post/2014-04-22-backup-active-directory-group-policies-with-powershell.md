@@ -1,10 +1,7 @@
 ---
-id: 2053
 title: Backup Active Directory Group Policies with PowerShell
 date: 2014-04-22T08:02:13+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2053
 permalink: /2014/04/22/backup-active-directory-group-policies-with-powershell/
 dsq_thread_id:
   - "2629693584"

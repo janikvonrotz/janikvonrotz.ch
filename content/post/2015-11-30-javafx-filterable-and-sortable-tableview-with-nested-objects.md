@@ -1,10 +1,7 @@
 ---
-id: 3286
 title: 'JavaFX - Filterable and Sortable Tableview with nested Objects'
 date: 2015-11-30T10:01:22+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3286
 permalink: /2015/11/30/javafx-filterable-and-sortable-tableview-with-nested-objects/
 dsq_thread_id:
   - "4362336468"

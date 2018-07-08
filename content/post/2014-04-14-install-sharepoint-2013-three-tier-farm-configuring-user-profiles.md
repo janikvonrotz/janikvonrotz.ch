@@ -1,10 +1,7 @@
 ---
-id: 1894
 title: 'Install SharePoint 2013 Three-tier Farm - Configuring User Profiles'
 date: 2014-04-14T09:24:12+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1894
 permalink: /2014/04/14/install-sharepoint-2013-three-tier-farm-configuring-user-profiles/
 dsq_thread_id:
   - "2610173991"

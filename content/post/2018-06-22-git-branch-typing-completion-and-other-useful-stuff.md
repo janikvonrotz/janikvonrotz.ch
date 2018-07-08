@@ -1,10 +1,7 @@
 ---
-id: 4942
 title: Git branch typing completion and other useful stuff
 date: 2018-06-22T09:11:28+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4942
 permalink: /2018/06/22/git-branch-typing-completion-and-other-useful-stuff/
 image: /wp-content/uploads/2018/06/git-completion-folder.png
 categories:

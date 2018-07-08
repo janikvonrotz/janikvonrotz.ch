@@ -1,10 +1,7 @@
 ---
-id: 4014
 title: 'OLMOTO - An app built by beginners'
 date: 2016-08-02T12:30:05+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4014
 permalink: /2016/08/02/olmoto-an-app-built-by-beginners/
 dsq_thread_id:
   - "5033674694"

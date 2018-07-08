@@ -1,10 +1,7 @@
 ---
-id: 3351
 title: SQL Cheat Sheet
 date: 2015-07-02T18:16:54+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3351
 permalink: /2015/07/02/sql-cheat-sheet/
 dsq_thread_id:
   - "3898706952"

@@ -1,10 +1,7 @@
 ---
-id: 1854
 title: Print all over me
 date: 2014-04-09T10:39:25+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1854
 permalink: /2014/04/09/print-all-over-me/
 dsq_thread_id:
   - "2598190428"

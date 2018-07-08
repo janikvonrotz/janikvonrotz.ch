@@ -1,10 +1,7 @@
 ---
-id: 1915
 title: Monitoring a SharePoint Environment with Zabbix
 date: 2014-04-14T15:16:08+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1915
 permalink: /2014/04/14/monitoring-a-sharepoint-environment-with-zabbix/
 dsq_thread_id:
   - "2610883638"

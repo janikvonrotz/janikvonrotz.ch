@@ -1,10 +1,7 @@
 ---
-id: 4257
 title: Meteor project structure
 date: 2017-03-28T16:20:06+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4257
 permalink: /2017/03/28/meteor-project-structure/
 dsq_thread_id:
   - "5673985614"

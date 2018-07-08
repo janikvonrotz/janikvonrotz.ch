@@ -1,10 +1,7 @@
 ---
-id: 2439
 title: 'Thailand - Krabi, Ao Nang and Railay beach'
 date: 2014-06-29T07:35:22+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2439
 permalink: /2014/06/29/thailand-krabi-ao-nang-and-railay-beach/
 dsq_thread_id:
   - "2803796916"

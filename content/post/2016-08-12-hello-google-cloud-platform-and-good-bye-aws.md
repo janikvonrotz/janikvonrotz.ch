@@ -1,10 +1,7 @@
 ---
-id: 4024
 title: Hello Google Cloud Platform and good bye AWS
 date: 2016-08-12T14:41:54+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4024
 permalink: /2016/08/12/hello-google-cloud-platform-and-good-bye-aws/
 dsq_thread_id:
   - "5060595111"

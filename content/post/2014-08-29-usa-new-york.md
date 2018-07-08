@@ -1,10 +1,7 @@
 ---
-id: 2547
 title: 'USA - New York'
 date: 2014-08-29T14:38:49+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2547
 permalink: /2014/08/29/usa-new-york/
 dsq_thread_id:
   - "2969775600"

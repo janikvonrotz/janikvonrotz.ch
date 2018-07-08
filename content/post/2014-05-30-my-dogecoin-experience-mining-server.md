@@ -3,8 +3,6 @@ id: 2383
 title: 'My Dogecoin experience: mining server'
 date: 2014-05-30T14:07:11+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2383
 permalink: /2014/05/30/my-dogecoin-experience-mining-server/
 enclosure:
   - |

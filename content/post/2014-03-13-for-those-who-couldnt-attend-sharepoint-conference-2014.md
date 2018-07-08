@@ -1,10 +1,7 @@
 ---
-id: 1500
 title: 'For those who couldn’t attend SharePoint Conference 2014'
 date: 2014-03-13T09:23:00+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1500
 permalink: /2014/03/13/for-those-who-couldnt-attend-sharepoint-conference-2014/
 dsq_thread_id:
   - "2419566303"

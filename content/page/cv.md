@@ -3,7 +3,6 @@ id: 3554
 title: CV
 date: 2015-09-25T07:59:36+00:00
 author: Janik von Rotz
-layout: page
 guid: https://janikvonrotz.ch/?page_id=3554
 specific_page_layout:
   - default-sidebar

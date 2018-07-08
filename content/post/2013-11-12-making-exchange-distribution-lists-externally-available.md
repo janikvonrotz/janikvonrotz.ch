@@ -1,10 +1,7 @@
 ---
-id: 698
 title: Making Exchange Distribution Lists Externally Available
 date: 2013-11-12T08:36:52+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=698
 permalink: /2013/11/12/making-exchange-distribution-lists-externally-available/
 dsq_thread_id:
   - "1958615900"

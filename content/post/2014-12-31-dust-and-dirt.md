@@ -1,10 +1,7 @@
 ---
-id: 2848
 title: Dust and Dirt
 date: 2014-12-31T11:56:09+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2848
 permalink: /2014/12/31/dust-and-dirt/
 dsq_thread_id:
   - "3376588668"

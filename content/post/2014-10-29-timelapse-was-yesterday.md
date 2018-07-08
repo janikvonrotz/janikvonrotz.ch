@@ -1,10 +1,7 @@
 ---
-id: 2679
 title: Timelapse was yesterday
 date: 2014-10-29T12:13:10+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2679
 permalink: /2014/10/29/timelapse-was-yesterday/
 dsq_thread_id:
   - "3169142336"

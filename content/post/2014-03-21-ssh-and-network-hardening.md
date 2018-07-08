@@ -1,10 +1,7 @@
 ---
-id: 1633
 title: SSH and network hardening
 date: 2014-03-21T18:19:12+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1633
 permalink: /2014/03/21/ssh-and-network-hardening/
 dsq_thread_id:
   - "2477781603"

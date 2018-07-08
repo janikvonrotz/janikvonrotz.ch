@@ -1,10 +1,7 @@
 ---
-id: 1624
 title: David F. Sandberg master of horror movies
 date: 2014-03-21T08:31:56+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1624
 permalink: /2014/03/21/david-f-sandberg-master-of-horror-movies/
 dsq_thread_id:
   - "2475064304"

@@ -1,10 +1,7 @@
 ---
-id: 2293
 title: Summary of SharePoint 2013 archiving features
 date: 2014-05-19T09:25:35+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2293
 permalink: /2014/05/19/summary-of-sharepoint-2013-archiving-features/
 dsq_thread_id:
   - "2696211687"

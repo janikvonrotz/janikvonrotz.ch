@@ -1,10 +1,7 @@
 ---
-id: 1775
 title: Update SharePoint Token Lifetime to update AD permissions faster
 date: 2014-04-03T09:01:03+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1775
 permalink: /2014/04/03/update-sharepoint-token-lifetime-to-update-ad-permissions-faster/
 dsq_thread_id:
   - "2582712894"

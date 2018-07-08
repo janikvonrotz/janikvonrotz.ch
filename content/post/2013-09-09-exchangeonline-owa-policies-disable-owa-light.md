@@ -1,10 +1,7 @@
 ---
-id: 482
 title: 'ExchangeOnline OWA Policies - Disable OWA light'
 date: 2013-09-09T09:11:32+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=482
 permalink: /2013/09/09/exchangeonline-owa-policies-disable-owa-light/
 dsq_thread_id:
   - "1738866391"

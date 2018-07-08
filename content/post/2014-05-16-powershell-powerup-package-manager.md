@@ -1,10 +1,7 @@
 ---
-id: 2276
 title: PowerShell PowerUp Package Manager
 date: 2014-05-16T15:04:37+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2276
 permalink: /2014/05/16/powershell-powerup-package-manager/
 dsq_thread_id:
   - "2690051872"

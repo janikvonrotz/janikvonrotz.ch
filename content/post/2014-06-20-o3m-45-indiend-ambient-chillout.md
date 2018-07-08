@@ -1,10 +1,7 @@
 ---
-id: 2337
 title: 'O3M 45 - InDiEnd (ambient, chillout)'
 date: 2014-06-20T07:16:37+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2337
 permalink: /2014/06/20/o3m-45-indiend-ambient-chillout/
 dsq_thread_id:
   - "2780407521"

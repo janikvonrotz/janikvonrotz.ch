@@ -1,10 +1,7 @@
 ---
-id: 2131
 title: Disable WordPress plugins manually
 date: 2014-04-29T08:05:06+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2131
 permalink: /2014/04/29/disable-wordpress-plugins-manually/
 dsq_thread_id:
   - "2648145178"

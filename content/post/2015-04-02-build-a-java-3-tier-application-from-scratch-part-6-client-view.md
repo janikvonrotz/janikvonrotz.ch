@@ -1,10 +1,7 @@
 ---
-id: 3183
 title: 'Build a Java 3-tier application from scratch – Part 6: Client view'
 date: 2015-04-02T07:13:31+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3183
 permalink: /2015/04/02/build-a-java-3-tier-application-from-scratch-part-6-client-view/
 dsq_thread_id:
   - "3648008847"

@@ -1,10 +1,7 @@
 ---
-id: 994
 title: 'Install SharePoint 2013 Three-tier Farm - Designing the Logical Architecture'
 date: 2014-01-27T09:10:29+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=994
 permalink: /2014/01/27/install-sharepoint-2013-three-tier-farm-designing-the-logical-architecture/
 dsq_thread_id:
   - "2180306074"

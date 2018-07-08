@@ -1,10 +1,7 @@
 ---
-id: 1096
 title: Success Factors for a SharePoint Project
 date: 2014-02-19T17:15:04+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1096
 permalink: /2014/02/19/success-factors-for-a-sharepoint-project/
 dsq_thread_id:
   - "2289060840"

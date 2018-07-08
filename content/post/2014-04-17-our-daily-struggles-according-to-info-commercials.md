@@ -1,10 +1,7 @@
 ---
-id: 2012
 title: Our daily struggles according to info commercials
 date: 2014-04-17T14:24:15+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2012
 permalink: /2014/04/17/our-daily-struggles-according-to-info-commercials/
 dsq_thread_id:
   - "2618881458"

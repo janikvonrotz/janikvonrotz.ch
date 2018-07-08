@@ -1,10 +1,7 @@
 ---
-id: 2403
 title: 'Thailand - Chiang Mai and Bangkok'
 date: 2014-06-13T03:57:41+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2403
 permalink: /2014/06/13/thailand-chiang-mai-and-bangkok/
 dsq_thread_id:
   - "2760030424"

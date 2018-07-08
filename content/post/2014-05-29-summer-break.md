@@ -1,10 +1,7 @@
 ---
-id: 2317
 title: Summer break
 date: 2014-05-29T15:36:13+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2317
 permalink: /2014/05/29/summer-break/
 dsq_thread_id:
   - "2721368284"

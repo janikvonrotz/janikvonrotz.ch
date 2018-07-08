@@ -1,10 +1,7 @@
 ---
-id: 2063
 title: Limitations and workarounds for managed metadata navigation for multiple site collections
 date: 2014-04-23T09:53:45+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2063
 permalink: /2014/04/23/limitations-and-workarounds-for-managed-metadata-navigation-for-multiple-site-collections/
 dsq_thread_id:
   - "2632498147"

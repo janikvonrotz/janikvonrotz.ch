@@ -1,10 +1,7 @@
 ---
-id: 4429
 title: XKCD PowerShell password generator
 date: 2017-08-11T13:04:45+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4429
 permalink: /2017/08/11/xkcd-powershell-password-generator/
 image: /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png
 categories:

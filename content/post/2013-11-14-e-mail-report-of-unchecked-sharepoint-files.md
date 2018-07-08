@@ -1,10 +1,7 @@
 ---
-id: 733
 title: E-Mail report of unchecked SharePoint files
 date: 2013-11-14T16:05:42+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=733
 permalink: /2013/11/14/e-mail-report-of-unchecked-sharepoint-files/
 dsq_thread_id:
   - "1965705690"

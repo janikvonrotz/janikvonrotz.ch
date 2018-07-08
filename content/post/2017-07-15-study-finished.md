@@ -1,10 +1,7 @@
 ---
-id: 4372
 title: Study finished!
 date: 2017-07-15T19:23:12+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4372
 permalink: /2017/07/15/study-finished/
 image: /wp-content/uploads/2017/07/Firework.jpg
 categories:

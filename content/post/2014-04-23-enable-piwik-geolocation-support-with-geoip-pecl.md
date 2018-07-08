@@ -1,10 +1,7 @@
 ---
-id: 2060
 title: Enable Piwik geolocation support with GeoIP PECL
 date: 2014-04-23T08:57:31+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2060
 permalink: /2014/04/23/enable-piwik-geolocation-support-with-geoip-pecl/
 dsq_thread_id:
   - "2632437056"

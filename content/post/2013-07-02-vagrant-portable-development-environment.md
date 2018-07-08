@@ -1,10 +1,7 @@
 ---
-id: 42
 title: 'Vagrant - portable development environment'
 date: 2013-07-02T11:54:35+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=42
 permalink: /2013/07/02/vagrant-portable-development-environment/
 dsq_thread_id:
   - "1458874559"

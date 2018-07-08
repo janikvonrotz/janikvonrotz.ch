@@ -1,10 +1,7 @@
 ---
-id: 3177
 title: 'Build a Java 3-tier application from scratch – Part 4: Webservice'
 date: 2015-03-31T08:05:04+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3177
 permalink: /2015/03/31/build-a-java-3-tier-application-from-scratch-part-4-webservice/
 dsq_thread_id:
   - "3641869503"

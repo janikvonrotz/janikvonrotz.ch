@@ -1,10 +1,7 @@
 ---
-id: 4840
 title: Using pass in teams
 date: 2018-04-03T08:29:22+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4840
 permalink: /2018/04/03/using-pass-in-teams/
 specific_page_layout:
   - default-sidebar

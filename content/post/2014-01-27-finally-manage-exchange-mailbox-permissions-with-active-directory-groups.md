@@ -1,10 +1,7 @@
 ---
-id: 1019
 title: Finally! Manage Exchange mailbox permissions with Active Directory groups
 date: 2014-01-27T19:04:37+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1019
 permalink: /2014/01/27/finally-manage-exchange-mailbox-permissions-with-active-directory-groups/
 dsq_thread_id:
   - "2181973874"

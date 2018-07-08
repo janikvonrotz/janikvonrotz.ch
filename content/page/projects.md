@@ -1,9 +1,7 @@
 ---
-id: 8
 title: Projects
 date: 2013-07-02T08:21:46+00:00
 author: Janik von Rotz
-layout: page
 guid: https://janikvonrotz.ch/?page_id=8
 dsq_thread_id:
   - "1459701149"

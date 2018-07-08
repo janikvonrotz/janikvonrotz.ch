@@ -1,10 +1,7 @@
 ---
-id: 1260
 title: Disable Trackbacks and Pingbacks in WordPress
 date: 2014-02-27T08:24:50+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1260
 permalink: /2014/02/27/disable-trackbacks-and-pingbacks-in-wordpress/
 dsq_thread_id:
   - "2328729110"

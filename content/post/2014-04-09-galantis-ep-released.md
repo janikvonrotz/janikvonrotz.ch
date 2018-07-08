@@ -1,10 +1,7 @@
 ---
-id: 1847
 title: Galantis EP released
 date: 2014-04-09T07:31:45+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1847
 permalink: /2014/04/09/galantis-ep-released/
 dsq_thread_id:
   - "2597882361"

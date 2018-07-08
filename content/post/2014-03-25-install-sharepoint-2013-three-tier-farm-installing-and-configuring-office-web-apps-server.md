@@ -1,10 +1,7 @@
 ---
-id: 1679
 title: Install SharePoint 2013 Three-tier Farm – Installing and Configuring Office Web Apps Server
 date: 2014-03-25T09:18:05+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1679
 permalink: /2014/03/25/install-sharepoint-2013-three-tier-farm-installing-and-configuring-office-web-apps-server/
 dsq_thread_id:
   - "2504593554"

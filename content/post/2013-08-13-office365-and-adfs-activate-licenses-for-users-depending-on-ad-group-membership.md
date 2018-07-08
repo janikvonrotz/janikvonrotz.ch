@@ -1,10 +1,7 @@
 ---
-id: 414
 title: 'Office365 and ADFS: Activate licenses for users depending on AD group membership'
 date: 2013-08-13T07:48:44+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=414
 permalink: /2013/08/13/office365-and-adfs-activate-licenses-for-users-depending-on-ad-group-membership/
 dsq_thread_id:
   - "1602703987"

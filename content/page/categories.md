@@ -3,7 +3,6 @@ id: 2158
 title: Categories
 date: 2014-04-30T09:54:55+00:00
 author: Janik von Rotz
-layout: page
 guid: https://janikvonrotz.ch/?page_id=2158
 dsq_thread_id:
   - "2649694247"

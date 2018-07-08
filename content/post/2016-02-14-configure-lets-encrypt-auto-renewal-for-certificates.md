@@ -1,10 +1,7 @@
 ---
-id: 3820
 title: 'Configure Let’s Encrypt auto renewal for certificates'
 date: 2016-02-14T22:28:26+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3820
 permalink: /2016/02/14/configure-lets-encrypt-auto-renewal-for-certificates/
 dsq_thread_id:
   - "4579516678"

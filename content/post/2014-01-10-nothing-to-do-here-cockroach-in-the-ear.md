@@ -1,10 +1,7 @@
 ---
-id: 923
 title: 'Nothing to do here - Cockroach in the ear'
 date: 2014-01-10T09:02:14+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=923
 permalink: /2014/01/10/nothing-to-do-here-cockroach-in-the-ear/
 enclosure:
   - |

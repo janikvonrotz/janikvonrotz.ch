@@ -1,10 +1,7 @@
 ---
-id: 2140
 title: SharePoint PowerShell remoting double hop scenario
 date: 2014-04-30T08:34:14+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2140
 permalink: /2014/04/30/sharepoint-powershell-remoting-double-hop-scenario/
 dsq_thread_id:
   - "2650848952"

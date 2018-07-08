@@ -1,10 +1,7 @@
 ---
-id: 1466
 title: Update Hostfile with Chrome/Firefox Plugin
 date: 2014-03-10T10:56:12+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1466
 permalink: /2014/03/10/update-hostfile-with-chromefirefox-plugin/
 dsq_thread_id:
   - "2400205243"

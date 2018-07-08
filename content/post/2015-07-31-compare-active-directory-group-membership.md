@@ -1,10 +1,7 @@
 ---
-id: 3432
 title: Compare Active Directory group membership
 date: 2015-07-31T07:21:26+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3432
 permalink: /2015/07/31/compare-active-directory-group-membership/
 dsq_thread_id:
   - "3988953744"

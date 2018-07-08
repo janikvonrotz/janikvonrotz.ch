@@ -1,10 +1,7 @@
 ---
-id: 4711
 title: A Glimpse of China
 date: 2018-01-04T15:47:36+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4711
 permalink: /2018/01/04/a-glimpse-of-china/
 specific_page_layout:
   - default-sidebar

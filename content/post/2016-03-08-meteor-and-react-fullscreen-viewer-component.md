@@ -1,10 +1,7 @@
 ---
-id: 3824
 title: 'Meteor and React: Fullscreen Viewer Component'
 date: 2016-03-08T15:51:29+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3824
 permalink: /2016/03/08/meteor-and-react-fullscreen-viewer-component/
 dsq_thread_id:
   - "4644749767"

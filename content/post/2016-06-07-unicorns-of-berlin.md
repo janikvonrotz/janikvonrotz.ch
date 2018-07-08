@@ -1,10 +1,7 @@
 ---
-id: 3937
 title: Unicorns of Berlin
 date: 2016-06-07T07:54:38+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3937
 permalink: /2016/06/07/unicorns-of-berlin/
 dsq_thread_id:
   - "4890124629"

@@ -1,10 +1,7 @@
 ---
-id: 4739
 title: Create a soft wallet and transfer your Ether coins from an exchange
 date: 2018-01-10T14:58:27+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=4739
 permalink: /2018/01/10/create-a-soft-wallet-and-transfer-your-ether-coins-from-an-exchange/
 specific_page_layout:
   - default-sidebar

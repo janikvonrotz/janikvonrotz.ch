@@ -1,10 +1,7 @@
 ---
-id: 1877
 title: Install Nginx php5-fpm website
 date: 2014-04-11T06:52:52+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1877
 permalink: /2014/04/11/install-nginx-php5-fpm-website/
 dsq_thread_id:
   - "2603114610"

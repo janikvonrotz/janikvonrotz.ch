@@ -1,10 +1,7 @@
 ---
-id: 1789
 title: Manage your SharePoint default settings with PowerShell
 date: 2014-04-04T10:16:07+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=1789
 permalink: /2014/04/04/manage-your-sharepoint-default-settings-with-powershell/
 dsq_thread_id:
   - "2585449962"

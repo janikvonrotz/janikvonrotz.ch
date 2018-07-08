@@ -1,10 +1,7 @@
 ---
-id: 2078
 title: 'Project Naptha - OCR well done'
 date: 2014-04-24T07:59:02+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=2078
 permalink: /2014/04/24/project-naptha-ocr-well-done/
 dsq_thread_id:
   - "2637495405"

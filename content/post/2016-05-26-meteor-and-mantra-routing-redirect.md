@@ -1,10 +1,7 @@
 ---
-id: 3921
 title: 'Meteor and Mantra - Routing redirect'
 date: 2016-05-26T10:03:22+00:00
 author: Janik von Rotz
-layout: post
-guid: https://janikvonrotz.ch/?p=3921
 permalink: /2016/05/26/meteor-and-mantra-routing-redirect/
 dsq_thread_id:
   - "4858703770"
