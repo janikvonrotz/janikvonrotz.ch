@@ -2,7 +2,7 @@
 title: Print all over me is one amazing thing
 date: 2015-02-19T22:30:25+00:00
 author: Janik von Rotz
-permalink: /2015/02/19/print-all-over-me-is-one-amazing-thing/
+slug: print-all-over-me-is-one-amazing-thing
 dsq_thread_id:
   - "3532541604"
 image: /wp-content/uploads/2015/02/Print-All-Over-Me-logo.png

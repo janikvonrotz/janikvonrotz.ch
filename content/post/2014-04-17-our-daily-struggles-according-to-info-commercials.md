@@ -2,7 +2,7 @@
 title: Our daily struggles according to info commercials
 date: 2014-04-17T14:24:15+00:00
 author: Janik von Rotz
-permalink: /2014/04/17/our-daily-struggles-according-to-info-commercials/
+slug: our-daily-struggles-according-to-info-commercials
 dsq_thread_id:
   - "2618881458"
 image: /wp-content/uploads/2014/03/letsgetweird.jpg

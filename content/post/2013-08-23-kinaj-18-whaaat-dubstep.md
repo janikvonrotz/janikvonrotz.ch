@@ -2,7 +2,7 @@
 title: 'Kinaj 18 - Whaaat? (dubstep)'
 date: 2013-08-23T12:24:44+00:00
 author: Janik von Rotz
-permalink: /2013/08/23/kinaj-18-whaaat-dubstep/
+slug: kinaj-18-whaaat-dubstep
 dsq_thread_id:
   - "1633289761"
 image: /wp-content/uploads/2013/08/Whaaat.jpg

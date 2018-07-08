@@ -2,7 +2,7 @@
 title: Node.js dynamic settings
 date: 2016-08-25T19:43:31+00:00
 author: Janik von Rotz
-permalink: /2016/08/25/node-js-dynamic-settings/
+slug: node-js-dynamic-settings
 dsq_thread_id:
   - "5094803262"
 image: /wp-content/uploads/2014/03/Node.js-Logo.png

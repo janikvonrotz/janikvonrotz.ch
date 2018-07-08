@@ -2,7 +2,7 @@
 title: 'Install SharePoint 2013 Three-tier Farm - Configuring User Profiles'
 date: 2014-04-14T09:24:12+00:00
 author: Janik von Rotz
-permalink: /2014/04/14/install-sharepoint-2013-three-tier-farm-configuring-user-profiles/
+slug: install-sharepoint-2013-three-tier-farm-configuring-user-profiles
 dsq_thread_id:
   - "2610173991"
 image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png

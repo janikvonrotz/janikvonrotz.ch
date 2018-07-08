@@ -2,7 +2,7 @@
 title: Create a soft wallet and transfer your Ether coins from an exchange
 date: 2018-01-10T14:58:27+00:00
 author: Janik von Rotz
-permalink: /2018/01/10/create-a-soft-wallet-and-transfer-your-ether-coins-from-an-exchange/
+slug: create-a-soft-wallet-and-transfer-your-ether-coins-from-an-exchange
 specific_page_layout:
   - default-sidebar
 image: /wp-content/uploads/2018/01/ethereum-logo.png

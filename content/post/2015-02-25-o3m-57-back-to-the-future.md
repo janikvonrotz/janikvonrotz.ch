@@ -2,7 +2,7 @@
 title: 'O3M 57 - Back to the future'
 date: 2015-02-25T14:17:15+00:00
 author: Janik von Rotz
-permalink: /2015/02/25/o3m-57-back-to-the-future/
+slug: o3m-57-back-to-the-future
 dsq_thread_id:
   - "3547406542"
 image: /wp-content/uploads/2015/02/O3M-57-Back-to-the-future.jpg

@@ -2,7 +2,7 @@
 title: 'Build a Java 3-tier application from scratch - Part 2: Model setup'
 date: 2015-03-28T18:01:51+00:00
 author: Janik von Rotz
-permalink: /2015/03/28/build-a-java-3-tier-application-from-scratch-part-2-model-setup/
+slug: build-a-java-3-tier-application-from-scratch-part-2-model-setup
 dsq_thread_id:
   - "3634666145"
 image: /wp-content/uploads/2014/10/Java-logo.jpg

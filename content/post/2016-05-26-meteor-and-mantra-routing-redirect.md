@@ -2,7 +2,7 @@
 title: 'Meteor and Mantra - Routing redirect'
 date: 2016-05-26T10:03:22+00:00
 author: Janik von Rotz
-permalink: /2016/05/26/meteor-and-mantra-routing-redirect/
+slug: meteor-and-mantra-routing-redirect
 dsq_thread_id:
   - "4858703770"
 image: /wp-content/uploads/2016/05/Mantra-Logo.jpeg

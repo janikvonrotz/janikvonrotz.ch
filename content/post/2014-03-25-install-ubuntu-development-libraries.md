@@ -2,7 +2,7 @@
 title: Install Ubuntu development libraries
 date: 2014-03-25T11:42:14+00:00
 author: Janik von Rotz
-permalink: /2014/03/25/install-ubuntu-development-libraries/
+slug: install-ubuntu-development-libraries
 dsq_thread_id:
   - "2505364282"
 image: /wp-content/uploads/2014/03/Ubuntu-Logo.png

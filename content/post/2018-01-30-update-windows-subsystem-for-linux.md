@@ -2,7 +2,7 @@
 title: Update Windows Subsystem for Linux
 date: 2018-01-30T10:32:51+00:00
 author: Janik von Rotz
-permalink: /2018/01/30/update-windows-subsystem-for-linux/
+slug: update-windows-subsystem-for-linux
 specific_page_layout:
   - default-sidebar
 image: /wp-content/uploads/2018/01/Bash-on-Ubuntu-on-Windows.png

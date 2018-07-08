@@ -2,7 +2,7 @@
 title: Profiling Ansible roles and tasks
 date: 2018-03-07T13:11:25+00:00
 author: Janik von Rotz
-permalink: /2018/03/07/profiling-ansible-roles-and-tasks/
+slug: profiling-ansible-roles-and-tasks
 specific_page_layout:
   - default-sidebar
 image: /wp-content/uploads/2018/02/Ansible-text-only-e1519640301147.png

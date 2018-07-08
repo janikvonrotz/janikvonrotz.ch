@@ -2,7 +2,7 @@
 title: 'O3M 45 - InDiEnd (ambient, chillout)'
 date: 2014-06-20T07:16:37+00:00
 author: Janik von Rotz
-permalink: /2014/06/20/o3m-45-indiend-ambient-chillout/
+slug: o3m-45-indiend-ambient-chillout
 dsq_thread_id:
   - "2780407521"
 image: /wp-content/uploads/2014/05/O3M-45-InDiEnd-ambient-chillout1.png

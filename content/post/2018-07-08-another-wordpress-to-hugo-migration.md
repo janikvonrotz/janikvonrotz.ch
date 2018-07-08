@@ -2,7 +2,7 @@
 title: Another Wordpress to Hugo migration
 date: 2018-07-08T09:11:28+00:00
 author: Janik von Rotz
-permalink: /2018/07/08/another-wordpress-to-hugo-migratio/
+slug: another-wordpress-to-hugo-migratio
 categories:
   - Hugo
   - Wordpress
@@ -348,9 +348,21 @@ selector="*.md"
 
 # Get rid of unnecessary meta fields such as guid, id or layout
 sed -i '/guid: https:\/\/janikvonrotz.ch\/?p=/d' $selector
-sed -i '/id: [0-9]*$/d' $selector
+sed -i '/guid: https:\/\/janikvonrotz.ch\/?page_id=/d' $selector
+sed -i '/id: [0-9]*/d' $selector
 sed -i '/layout: \(post\|page\)/d' $selector
 
+```
+
+**Convert-PermalinkToSlug.sh**
+
+Create Hugo slug from Jekyll permalink.
+
+```bash
+selector="*.md"
+
+# permalink: /2017/08/06/js-snippet-set-tallest-height-on-siblings/ -> slug: js-snippet-set-tallest-height-on-siblings
+sed -i -r 's;permalink: /[0-9]{4}/[0-9]{2}/[0-9]{2}/([^/]+)/;slug: \1;g' $selector
 ```
 
 ## Not Covered

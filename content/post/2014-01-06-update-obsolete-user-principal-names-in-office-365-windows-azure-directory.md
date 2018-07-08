@@ -2,7 +2,7 @@
 title: Update Obsolete User Principal Names in Office 365 Windows Azure Directory
 date: 2014-01-06T13:02:55+00:00
 author: Janik von Rotz
-permalink: /2014/01/06/update-obsolete-user-principal-names-in-office-365-windows-azure-directory/
+slug: update-obsolete-user-principal-names-in-office-365-windows-azure-directory
 dsq_thread_id:
   - "2095263651"
 image: /wp-content/uploads/2014/01/Windows-Azure-Directory-Services-672x200.png

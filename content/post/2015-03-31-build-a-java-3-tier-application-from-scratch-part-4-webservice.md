@@ -2,7 +2,7 @@
 title: 'Build a Java 3-tier application from scratch – Part 4: Webservice'
 date: 2015-03-31T08:05:04+00:00
 author: Janik von Rotz
-permalink: /2015/03/31/build-a-java-3-tier-application-from-scratch-part-4-webservice/
+slug: build-a-java-3-tier-application-from-scratch-part-4-webservice
 dsq_thread_id:
   - "3641869503"
 image: /wp-content/uploads/2014/10/Java-logo.jpg

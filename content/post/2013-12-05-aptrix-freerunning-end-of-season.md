@@ -2,7 +2,7 @@
 title: Aptrix Freerunning // End of Season
 date: 2013-12-05T09:08:51+00:00
 author: Janik von Rotz
-permalink: /2013/12/05/aptrix-freerunning-end-of-season/
+slug: aptrix-freerunning-end-of-season
 dsq_thread_id:
   - "2026379429"
 image: /wp-content/uploads/2013/08/Logo.png

@@ -2,7 +2,7 @@
 title: Do not forget to update to Microsoft Office 2013 when using Office 365 or SharePoint Online
 date: 2013-12-16T18:07:01+00:00
 author: Janik von Rotz
-permalink: /2013/12/16/do-not-forget-to-update-to-microsoft-office-2013-when-using-office-365-or-sharepoint-online/
+slug: do-not-forget-to-update-to-microsoft-office-2013-when-using-office-365-or-sharepoint-online
 dsq_thread_id:
   - "2054392361"
 image: /wp-content/uploads/2013/12/SharePoint-Online-and-ADFS.gif

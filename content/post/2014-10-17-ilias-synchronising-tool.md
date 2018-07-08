@@ -2,7 +2,7 @@
 title: ILIAS Synchronising Tool
 date: 2014-10-17T18:27:19+00:00
 author: Janik von Rotz
-permalink: /2014/10/17/ilias-synchronising-tool/
+slug: ilias-synchronising-tool
 dsq_thread_id:
   - "3127475757"
 categories:

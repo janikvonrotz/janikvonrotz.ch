@@ -2,7 +2,7 @@
 title: 'Nothing to do here - Cockroach in the ear'
 date: 2014-01-10T09:02:14+00:00
 author: Janik von Rotz
-permalink: /2014/01/10/nothing-to-do-here-cockroach-in-the-ear/
+slug: nothing-to-do-here-cockroach-in-the-ear
 enclosure:
   - |
     /wp-content/uploads/2014/01/cockroach-in-the-ear.mp3

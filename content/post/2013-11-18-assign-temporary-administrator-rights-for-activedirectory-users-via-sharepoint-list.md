@@ -2,7 +2,7 @@
 title: Assign Temporary Administrator Rights for ActiveDirectory Users via SharePoint list
 date: 2013-11-18T16:55:32+00:00
 author: Janik von Rotz
-permalink: /2013/11/18/assign-temporary-administrator-rights-for-activedirectory-users-via-sharepoint-list/
+slug: assign-temporary-administrator-rights-for-activedirectory-users-via-sharepoint-list
 dsq_thread_id:
   - "1976601577"
 image: /wp-content/uploads/2013/08/Active-Directory-Logo.png

@@ -1,9 +1,7 @@
 ---
-id: 10
 title: About
 date: 2013-07-02T08:23:30+00:00
 author: Janik von Rotz
-guid: https://janikvonrotz.ch/?page_id=10
 dsq_thread_id:
   - ""
   - ""

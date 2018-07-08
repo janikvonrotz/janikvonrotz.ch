@@ -2,7 +2,7 @@
 title: Manage multiple WordPress sites with Jetpack
 date: 2014-12-19T12:05:02+00:00
 author: Janik von Rotz
-permalink: /2014/12/19/manage-multiple-wordpress-sites-with-jetpack/
+slug: manage-multiple-wordpress-sites-with-jetpack
 dsq_thread_id:
   - "3339638958"
 image: /wp-content/uploads/2014/02/wordpress-logo.jpg

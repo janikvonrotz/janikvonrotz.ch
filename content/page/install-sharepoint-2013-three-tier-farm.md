@@ -2,7 +2,6 @@
 title: Install SharePoint 2013 Three-tier Farm
 date: 2013-12-10T11:20:29+00:00
 author: Janik von Rotz
-guid: https://janikvonrotz.ch/?page_id=797
 dsq_thread_id:
   - "2040595182"
   - "2040595182"

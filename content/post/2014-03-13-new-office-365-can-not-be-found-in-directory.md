@@ -2,7 +2,7 @@
 title: New Office 365 user can not be found in directory
 date: 2014-03-13T11:22:32+00:00
 author: Janik von Rotz
-permalink: /2014/03/13/new-office-365-can-not-be-found-in-directory/
+slug: new-office-365-can-not-be-found-in-directory
 dsq_thread_id:
   - "2420379308"
 image: /wp-content/uploads/2014/03/Office-365-flat-Logo-e1394705523286.jpg

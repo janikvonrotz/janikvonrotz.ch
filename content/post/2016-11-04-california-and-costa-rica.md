@@ -2,7 +2,7 @@
 title: California and Costa Rica
 date: 2016-11-04T18:20:25+00:00
 author: Janik von Rotz
-permalink: /2016/11/04/california-and-costa-rica/
+slug: california-and-costa-rica
 dsq_thread_id:
   - "5278719189"
 image: /wp-content/uploads/2016/11/California-and-Costa-Rica-banner-1200x559.jpg

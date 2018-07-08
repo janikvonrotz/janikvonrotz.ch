@@ -2,7 +2,7 @@
 title: Make your Redux React app multilingual
 date: 2017-03-02T12:51:10+00:00
 author: Janik von Rotz
-permalink: /2017/03/02/make-your-redux-react-app-multilingual/
+slug: make-your-redux-react-app-multilingual
 dsq_thread_id:
   - "5596829010"
 image: /wp-content/uploads/2017/03/Redux-and-React.png

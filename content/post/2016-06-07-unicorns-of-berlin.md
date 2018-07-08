@@ -2,7 +2,7 @@
 title: Unicorns of Berlin
 date: 2016-06-07T07:54:38+00:00
 author: Janik von Rotz
-permalink: /2016/06/07/unicorns-of-berlin/
+slug: unicorns-of-berlin
 dsq_thread_id:
   - "4890124629"
 image: /wp-content/uploads/2016/06/architecture-1200x901.jpg

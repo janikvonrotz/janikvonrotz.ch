@@ -2,7 +2,7 @@
 title: 'O3M 27 - Totally (electro house, progressive house, electro)'
 date: 2014-01-02T14:41:26+00:00
 author: Janik von Rotz
-permalink: /2014/01/02/o3m-27-totally-electro-house-progressive-house-electro/
+slug: o3m-27-totally-electro-house-progressive-house-electro
 dsq_thread_id:
   - "2087326430"
 image: /wp-content/uploads/2014/01/O3M-27-Totally-electro-house-progressive-house-electro-500x372.jpg

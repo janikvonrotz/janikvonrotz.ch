@@ -2,7 +2,7 @@
 title: Debounce a redux dispatch method in a react component
 date: 2017-04-20T12:46:18+00:00
 author: Janik von Rotz
-permalink: /2017/04/20/debounce-a-redux-dispatch-method-in-a-react-component/
+slug: debounce-a-redux-dispatch-method-in-a-react-component
 dsq_thread_id:
   - "5743813164"
 image: /wp-content/uploads/2017/03/Redux-and-React.png

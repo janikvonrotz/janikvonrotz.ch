@@ -2,7 +2,7 @@
 title: 'USA - Nevada and California'
 date: 2014-08-24T06:17:14+00:00
 author: Janik von Rotz
-permalink: /2014/08/24/usa-nevada-and-california/
+slug: usa-nevada-and-california
 dsq_thread_id:
   - "2953981634"
 image: /wp-content/uploads/2014/08/Merica.png

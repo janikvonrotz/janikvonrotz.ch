@@ -2,7 +2,7 @@
 title: Google is watching you
 date: 2014-01-07T13:34:19+00:00
 author: Janik von Rotz
-permalink: /2014/01/07/google-is-watching-you/
+slug: google-is-watching-you
 dsq_thread_id:
   - "2097735212"
 image: /wp-content/uploads/2014/01/dont-track-us.png

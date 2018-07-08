@@ -2,7 +2,7 @@
 title: Install Python
 date: 2015-10-22T07:08:05+00:00
 author: Janik von Rotz
-permalink: /2015/10/22/install-python/
+slug: install-python
 dsq_thread_id:
   - "4247785113"
 image: /wp-content/uploads/2015/10/Python-Logo.png

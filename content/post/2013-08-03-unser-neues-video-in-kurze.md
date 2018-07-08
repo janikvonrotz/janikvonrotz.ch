@@ -2,7 +2,7 @@
 title: Unser neues Video in kürze…
 date: 2013-08-03T19:50:55+00:00
 author: Janik von Rotz
-permalink: /2013/08/03/unser-neues-video-in-kurze/
+slug: unser-neues-video-in-kurze
 dsq_thread_id:
   - "1564882272"
 categories:

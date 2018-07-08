@@ -2,7 +2,7 @@
 title: Say Goodbye to TrueCrypt
 date: 2014-05-30T07:21:00+00:00
 author: Janik von Rotz
-permalink: /2014/05/30/say-goodbye-to-truecrypt/
+slug: say-goodbye-to-truecrypt
 dsq_thread_id:
   - "2723322151"
 image: /wp-content/uploads/2014/04/IT-security-logo.jpg

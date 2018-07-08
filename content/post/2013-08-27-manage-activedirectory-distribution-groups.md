@@ -2,7 +2,7 @@
 title: Manage ActiveDirectory Distribution Groups
 date: 2013-08-27T12:39:11+00:00
 author: Janik von Rotz
-permalink: /2013/08/27/manage-activedirectory-distribution-groups/
+slug: manage-activedirectory-distribution-groups
 dsq_thread_id:
   - "1654234472"
 image: /wp-content/uploads/2013/07/PowerShell.png

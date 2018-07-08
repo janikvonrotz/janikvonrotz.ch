@@ -2,7 +2,7 @@
 title: Compare Active Directory group membership
 date: 2015-07-31T07:21:26+00:00
 author: Janik von Rotz
-permalink: /2015/07/31/compare-active-directory-group-membership/
+slug: compare-active-directory-group-membership
 dsq_thread_id:
   - "3988953744"
 image: /wp-content/uploads/2013/12/PowerShell-and-ActiveDirectory.png

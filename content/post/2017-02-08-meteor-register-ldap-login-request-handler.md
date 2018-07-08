@@ -2,7 +2,7 @@
 title: Meteor register LDAP login request handler
 date: 2017-02-08T20:53:56+00:00
 author: Janik von Rotz
-permalink: /2017/02/08/meteor-register-ldap-login-request-handler/
+slug: meteor-register-ldap-login-request-handler
 dsq_thread_id:
   - "5534292034"
 image: /wp-content/uploads/2017/02/Meteor-Logo-inverted.png

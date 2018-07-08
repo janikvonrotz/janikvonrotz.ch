@@ -2,7 +2,7 @@
 title: Change Active Directory User Password Expiration Mode
 date: 2013-12-11T17:35:45+00:00
 author: Janik von Rotz
-permalink: /2013/12/11/change-active-directory-user-password-expiration-mode/
+slug: change-active-directory-user-password-expiration-mode
 dsq_thread_id:
   - "2043937580"
 image: /wp-content/uploads/2013/12/PowerShell-and-ActiveDirectory.png

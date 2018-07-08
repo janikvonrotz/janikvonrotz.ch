@@ -2,7 +2,7 @@
 title: Using pass in teams
 date: 2018-04-03T08:29:22+00:00
 author: Janik von Rotz
-permalink: /2018/04/03/using-pass-in-teams/
+slug: using-pass-in-teams
 specific_page_layout:
   - default-sidebar
 image: /wp-content/uploads/2018/04/multiple-locks.jpg

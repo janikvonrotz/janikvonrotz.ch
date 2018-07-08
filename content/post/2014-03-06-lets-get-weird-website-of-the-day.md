@@ -2,7 +2,7 @@
 title: 'Let’s get weird: Website of the day'
 date: 2014-03-06T11:19:08+00:00
 author: Janik von Rotz
-permalink: /2014/03/06/lets-get-weird-website-of-the-day/
+slug: lets-get-weird-website-of-the-day
 dsq_thread_id:
   - "2371075411"
 image: /wp-content/uploads/2014/03/letsgetweird.jpg

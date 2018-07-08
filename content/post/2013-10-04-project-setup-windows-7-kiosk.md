@@ -2,7 +2,7 @@
 title: 'Project: Setup Windows 7 Kiosk'
 date: 2013-10-04T16:01:56+00:00
 author: Janik von Rotz
-permalink: /2013/10/04/project-setup-windows-7-kiosk/
+slug: project-setup-windows-7-kiosk
 dsq_thread_id:
   - "1824260455"
 image: /wp-content/uploads/2013/10/Group-Policy.jpg

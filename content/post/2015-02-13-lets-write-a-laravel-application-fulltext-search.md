@@ -2,7 +2,7 @@
 title: 'Let’s write a Laravel application - Fulltext search'
 date: 2015-02-13T09:59:27+00:00
 author: Janik von Rotz
-permalink: /2015/02/13/lets-write-a-laravel-application-fulltext-search/
+slug: lets-write-a-laravel-application-fulltext-search
 dsq_thread_id:
   - "3511905348"
 image: /wp-content/uploads/2015/01/laravel-logo-e1422466263489.png

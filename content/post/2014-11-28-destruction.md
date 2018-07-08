@@ -2,7 +2,7 @@
 title: Destruction
 date: 2014-11-28T12:23:37+00:00
 author: Janik von Rotz
-permalink: /2014/11/28/destruction/
+slug: destruction
 dsq_thread_id:
   - "3270506990"
 image: /wp-content/uploads/2014/11/Destruction-title.jpg

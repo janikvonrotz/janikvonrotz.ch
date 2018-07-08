@@ -2,7 +2,7 @@
 title: Install WordPress website
 date: 2014-04-15T07:00:32+00:00
 author: Janik von Rotz
-permalink: /2014/04/15/install-wordpress-website/
+slug: install-wordpress-website
 dsq_thread_id:
   - "2612708517"
 image: /wp-content/uploads/2014/02/wordpress-logo.jpg

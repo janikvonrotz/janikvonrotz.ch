@@ -2,7 +2,7 @@
 title: This makes me speechless
 date: 2013-08-16T14:31:22+00:00
 author: Janik von Rotz
-permalink: /2013/08/16/this-makes-me-speechless/
+slug: this-makes-me-speechless
 dsq_thread_id:
   - "1610690790"
 image: /wp-content/uploads/2013/08/greed.jpg

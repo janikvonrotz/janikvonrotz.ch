@@ -2,7 +2,7 @@
 title: Beautiful Corsica
 date: 2016-02-01T19:35:55+00:00
 author: Janik von Rotz
-permalink: /2016/02/01/beautiful-corsica/
+slug: beautiful-corsica
 dsq_thread_id:
   - "4542597397"
 image: /wp-content/uploads/2016/01/bicycle-1200x800.jpg

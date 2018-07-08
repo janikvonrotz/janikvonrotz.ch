@@ -2,7 +2,7 @@
 title: 'Install SharePoint 2013 Three-tier Farm - Deploy the SQL Server Backup Job'
 date: 2014-02-07T10:24:03+00:00
 author: Janik von Rotz
-permalink: /2014/02/07/install-sharepoint-2013-three-tier-farm-deploy-the-sql-server-backup-job/
+slug: install-sharepoint-2013-three-tier-farm-deploy-the-sql-server-backup-job
 dsq_thread_id:
   - "2232801594"
 image: /wp-content/uploads/2014/02/SQL-Server-e1393417625647.png

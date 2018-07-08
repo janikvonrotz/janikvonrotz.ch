@@ -2,7 +2,7 @@
 title: Install WPScan
 date: 2014-04-29T07:10:57+00:00
 author: Janik von Rotz
-permalink: /2014/04/29/install-wpscan/
+slug: install-wpscan
 dsq_thread_id:
   - "2646768728"
 image: /wp-content/uploads/2014/04/wpscan_logo_407x80.png

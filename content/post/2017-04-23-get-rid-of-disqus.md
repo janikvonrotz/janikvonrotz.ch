@@ -2,7 +2,7 @@
 title: Get rid of Disqus
 date: 2017-04-23T08:44:28+00:00
 author: Janik von Rotz
-permalink: /2017/04/23/get-rid-of-disqus/
+slug: get-rid-of-disqus
 categories:
   - Blog
   - WordPress

@@ -1,9 +1,7 @@
 ---
-id: 9
 title: Contact
 date: 2013-07-02T08:23:14+00:00
 author: Janik von Rotz
-guid: https://janikvonrotz.ch/?page_id=9
 dsq_thread_id:
   - "1458482894"
   - "1458482894"

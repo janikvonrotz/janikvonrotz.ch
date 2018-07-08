@@ -2,7 +2,7 @@
 title: Export all Terms from Managed Metadata Service
 date: 2014-01-14T16:18:44+00:00
 author: Janik von Rotz
-permalink: /2014/01/14/export-all-terms-from-managed-metadata-service/
+slug: export-all-terms-from-managed-metadata-service
 dsq_thread_id:
   - "2121346675"
 image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png

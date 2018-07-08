@@ -2,7 +2,7 @@
 title: Increase Max Upload for php5-fpm website
 date: 2014-04-11T06:55:10+00:00
 author: Janik von Rotz
-permalink: /2014/04/11/increase-max-upload-for-php5-fpm-website/
+slug: increase-max-upload-for-php5-fpm-website
 dsq_thread_id:
   - "2603118431"
 image: /wp-content/uploads/2014/03/php-logo.jpeg

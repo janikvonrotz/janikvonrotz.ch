@@ -2,7 +2,7 @@
 title: 'For those who couldn’t attend SharePoint Conference 2014'
 date: 2014-03-13T09:23:00+00:00
 author: Janik von Rotz
-permalink: /2014/03/13/for-those-who-couldnt-attend-sharepoint-conference-2014/
+slug: for-those-who-couldnt-attend-sharepoint-conference-2014
 dsq_thread_id:
   - "2419566303"
 image: /wp-content/uploads/2014/03/SharePoint-Conference-2014-e1394698189555.png

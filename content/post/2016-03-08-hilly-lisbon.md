@@ -2,7 +2,7 @@
 title: Hilly Lisbon
 date: 2016-03-08T15:28:28+00:00
 author: Janik von Rotz
-permalink: /2016/03/08/hilly-lisbon/
+slug: hilly-lisbon
 dsq_thread_id:
   - "4644693728"
 image: /wp-content/uploads/2016/03/Lisbon-graffiti-1200x425.jpg

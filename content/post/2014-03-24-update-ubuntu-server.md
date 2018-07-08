@@ -2,7 +2,7 @@
 title: Update Ubuntu server
 date: 2014-03-24T18:34:00+00:00
 author: Janik von Rotz
-permalink: /2014/03/24/update-ubuntu-server/
+slug: update-ubuntu-server
 dsq_thread_id:
   - "2500275221"
 image: /wp-content/uploads/2014/03/Ubuntu-Logo.png

@@ -2,7 +2,7 @@
 title: Deploy your Meteor app with PM2
 date: 2017-03-14T14:12:42+00:00
 author: Janik von Rotz
-permalink: /2017/03/14/deploy-your-meteor-app-with-pm2/
+slug: deploy-your-meteor-app-with-pm2
 dsq_thread_id:
   - "5631475555"
 image: /wp-content/uploads/2017/02/Meteor-Logo-inverted.png

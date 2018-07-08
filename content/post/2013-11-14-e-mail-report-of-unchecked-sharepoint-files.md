@@ -2,7 +2,7 @@
 title: E-Mail report of unchecked SharePoint files
 date: 2013-11-14T16:05:42+00:00
 author: Janik von Rotz
-permalink: /2013/11/14/e-mail-report-of-unchecked-sharepoint-files/
+slug: e-mail-report-of-unchecked-sharepoint-files
 dsq_thread_id:
   - "1965705690"
 image: /wp-content/uploads/2013/07/PowerShell.png

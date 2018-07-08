@@ -2,7 +2,7 @@
 title: 'Summer break - my package list'
 date: 2014-05-29T15:37:08+00:00
 author: Janik von Rotz
-permalink: /2014/05/29/summer-break-my-package-list/
+slug: summer-break-my-package-list
 dsq_thread_id:
   - "2721386704"
 image: /wp-content/uploads/2014/04/Traveling.png

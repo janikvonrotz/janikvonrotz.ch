@@ -2,7 +2,7 @@
 title: Manage Security Groups in a organizational Strcture
 date: 2013-10-28T16:22:20+00:00
 author: Janik von Rotz
-permalink: /2013/10/28/manage-security-groups-in-a-organizational-strcture/
+slug: manage-security-groups-in-a-organizational-strcture
 dsq_thread_id:
   - "1910803381"
 image: /wp-content/uploads/2013/07/PowerShell.png

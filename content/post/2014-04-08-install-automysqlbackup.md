@@ -2,7 +2,7 @@
 title: Install automysqlbackup
 date: 2014-04-08T08:33:11+00:00
 author: Janik von Rotz
-permalink: /2014/04/08/install-automysqlbackup/
+slug: install-automysqlbackup
 dsq_thread_id:
   - "2595242917"
 image: /wp-content/uploads/2014/04/MySQL-Logo.png

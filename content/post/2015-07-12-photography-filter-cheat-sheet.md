@@ -2,7 +2,7 @@
 title: Photography Filter Cheat Sheet
 date: 2015-07-12T21:58:09+00:00
 author: Janik von Rotz
-permalink: /2015/07/12/photography-filter-cheat-sheet/
+slug: photography-filter-cheat-sheet
 dsq_thread_id:
   - "3930575649"
 image: /wp-content/uploads/2014/04/Photography-e1412934063722.jpg

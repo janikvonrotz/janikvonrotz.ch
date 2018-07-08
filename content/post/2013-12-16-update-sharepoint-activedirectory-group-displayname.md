@@ -2,7 +2,7 @@
 title: Update SharePoint ActiveDirectory Group Displayname
 date: 2013-12-16T17:00:39+00:00
 author: Janik von Rotz
-permalink: /2013/12/16/update-sharepoint-activedirectory-group-displayname/
+slug: update-sharepoint-activedirectory-group-displayname
 dsq_thread_id:
   - "2054243559"
 image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png

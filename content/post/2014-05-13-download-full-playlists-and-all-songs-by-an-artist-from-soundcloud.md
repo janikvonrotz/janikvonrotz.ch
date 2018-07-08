@@ -2,7 +2,7 @@
 title: Download full playlists and all songs by an artist from SoundCloud
 date: 2014-05-13T07:53:13+00:00
 author: Janik von Rotz
-permalink: /2014/05/13/download-full-playlists-and-all-songs-by-an-artist-from-soundcloud/
+slug: download-full-playlists-and-all-songs-by-an-artist-from-soundcloud
 dsq_thread_id:
   - "2681691439"
 image: /wp-content/uploads/2013/07/soundcloud.png

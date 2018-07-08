@@ -2,7 +2,7 @@
 title: Authenticate Meteor accounts with the Apollo GraphQL API
 date: 2016-11-12T10:21:20+00:00
 author: Janik von Rotz
-permalink: /2016/11/12/authenticate-meteor-accounts-with-the-apollo-graphql-api/
+slug: authenticate-meteor-accounts-with-the-apollo-graphql-api
 dsq_thread_id:
   - "5298095930"
 image: /wp-content/uploads/2016/11/Apollo-Logo.png

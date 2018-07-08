@@ -3,7 +3,7 @@ id: 2254
 title: 'Thank you internet for: Peek by UserTesting'
 date: 2014-05-15T12:44:00+00:00
 author: Janik von Rotz
-permalink: /2014/05/15/thank-your-internet-for-peek-by-usertesting/
+slug: thank-your-internet-for-peek-by-usertesting
 enclosure:
   - |
     /wp-content/uploads/2014/05/UserTesting-Peek-my-website.mp4

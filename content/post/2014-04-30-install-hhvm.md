@@ -2,7 +2,7 @@
 title: Install HHVM
 date: 2014-04-30T08:27:48+00:00
 author: Janik von Rotz
-permalink: /2014/04/30/install-hhvm/
+slug: install-hhvm
 dsq_thread_id:
   - "2649547796"
 image: /wp-content/uploads/2014/04/HHVM-Logo.png

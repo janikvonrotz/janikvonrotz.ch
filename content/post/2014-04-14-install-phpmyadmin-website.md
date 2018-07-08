@@ -2,7 +2,7 @@
 title: Install phpMyAdmin website
 date: 2014-04-14T09:49:37+00:00
 author: Janik von Rotz
-permalink: /2014/04/14/install-phpmyadmin-website/
+slug: install-phpmyadmin-website
 dsq_thread_id:
   - "2610220050"
 image: /wp-content/uploads/2014/04/phpMyAdmin-Logo.jpg

@@ -2,7 +2,7 @@
 title: Simple Redirect with Apache2
 date: 2013-11-15T10:46:47+00:00
 author: Janik von Rotz
-permalink: /2013/11/15/simple-redirect-with-apache2/
+slug: simple-redirect-with-apache2
 dsq_thread_id:
   - "1967892452"
 image: /wp-content/uploads/2013/11/apache.jpg

@@ -2,7 +2,7 @@
 title: Hello Google Cloud Platform and good bye AWS
 date: 2016-08-12T14:41:54+00:00
 author: Janik von Rotz
-permalink: /2016/08/12/hello-google-cloud-platform-and-good-bye-aws/
+slug: hello-google-cloud-platform-and-good-bye-aws
 dsq_thread_id:
   - "5060595111"
 image: /wp-content/uploads/2016/08/Google-Cloud-Platform-1200x741.png

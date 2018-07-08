@@ -2,7 +2,7 @@
 title: Install Ruby and RubyGems with RVM
 date: 2014-04-28T10:21:50+00:00
 author: Janik von Rotz
-permalink: /2014/04/28/install-ruby-and-rubygems-with-rvm/
+slug: install-ruby-and-rubygems-with-rvm
 dsq_thread_id:
   - "2644399290"
 image: /wp-content/uploads/2014/04/Ruby-Logo.png

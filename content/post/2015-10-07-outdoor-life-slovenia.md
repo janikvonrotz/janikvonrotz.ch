@@ -2,7 +2,7 @@
 title: Outdoor life Slovenia
 date: 2015-10-07T16:44:13+00:00
 author: Janik von Rotz
-permalink: /2015/10/07/outdoor-life-slovenia/
+slug: outdoor-life-slovenia
 dsq_thread_id:
   - "4203013161"
 image: /wp-content/uploads/2014/04/Traveling.png

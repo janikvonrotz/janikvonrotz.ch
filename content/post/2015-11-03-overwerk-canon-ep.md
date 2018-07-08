@@ -2,7 +2,7 @@
 title: OVERWERK Canon EP
 date: 2015-11-03T11:39:48+00:00
 author: Janik von Rotz
-permalink: /2015/11/03/overwerk-canon-ep/
+slug: overwerk-canon-ep
 dsq_thread_id:
   - "4287027468"
 image: /wp-content/uploads/2015/11/OVERTWERK.jpg

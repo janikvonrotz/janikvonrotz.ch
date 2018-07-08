@@ -2,7 +2,7 @@
 title: Nginx minimal website
 date: 2014-04-01T07:57:42+00:00
 author: Janik von Rotz
-permalink: /2014/04/01/nginx-minimal-website/
+slug: nginx-minimal-website
 dsq_thread_id:
   - "2570589685"
 image: /wp-content/uploads/2014/03/Nginx-Logo-e1394033855329.png

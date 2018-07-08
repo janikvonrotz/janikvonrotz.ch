@@ -2,7 +2,7 @@
 title: Migrate Piwik website
 date: 2014-04-24T07:23:42+00:00
 author: Janik von Rotz
-permalink: /2014/04/24/migrate-piwik-website/
+slug: migrate-piwik-website
 dsq_thread_id:
   - "2634847401"
 image: /wp-content/uploads/2014/12/logo-piwik-e1418200408662.png

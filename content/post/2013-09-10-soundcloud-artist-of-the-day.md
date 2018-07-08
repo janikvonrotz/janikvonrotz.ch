@@ -2,7 +2,7 @@
 title: Soundcloud Artist of the Day
 date: 2013-09-10T12:13:53+00:00
 author: Janik von Rotz
-permalink: /2013/09/10/soundcloud-artist-of-the-day/
+slug: soundcloud-artist-of-the-day
 dsq_thread_id:
   - "1745088794"
 image: /wp-content/uploads/2013/07/soundcloud.png

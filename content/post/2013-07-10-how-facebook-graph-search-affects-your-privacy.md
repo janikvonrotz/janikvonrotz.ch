@@ -2,7 +2,7 @@
 title: How Facebook Graph Search Affects Your Privacy
 date: 2013-07-10T14:47:19+00:00
 author: Janik von Rotz
-permalink: /2013/07/10/how-facebook-graph-search-affects-your-privacy/
+slug: how-facebook-graph-search-affects-your-privacy
 dsq_thread_id:
   - "1484480533"
 image: /wp-content/uploads/2014/12/logo-facebook2.png

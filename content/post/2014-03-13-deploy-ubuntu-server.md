@@ -2,7 +2,7 @@
 title: Deploy Ubuntu server
 date: 2014-03-13T16:04:21+00:00
 author: Janik von Rotz
-permalink: /2014/03/13/deploy-ubuntu-server/
+slug: deploy-ubuntu-server
 dsq_thread_id:
   - "2421625589"
 image: /wp-content/uploads/2014/03/Ubuntu-Logo.png

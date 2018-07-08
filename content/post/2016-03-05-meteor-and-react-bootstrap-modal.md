@@ -2,7 +2,7 @@
 title: 'Meteor and React: Bootstrap Modal'
 date: 2016-03-05T12:42:05+00:00
 author: Janik von Rotz
-permalink: /2016/03/05/meteor-and-react-bootstrap-modal/
+slug: meteor-and-react-bootstrap-modal
 dsq_thread_id:
   - "4637306001"
 image: /wp-content/uploads/2016/03/meteor-react-logo-1200x201.png

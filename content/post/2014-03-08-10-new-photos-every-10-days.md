@@ -2,7 +2,7 @@
 title: 10 new photos every 10 days
 date: 2014-03-08T17:59:32+00:00
 author: Janik von Rotz
-permalink: /2014/03/08/10-new-photos-every-10-days/
+slug: 10-new-photos-every-10-days
 dsq_thread_id:
   - "2389408521"
 image: /wp-content/uploads/2014/03/tumblr_logotype_white_blue_512.png

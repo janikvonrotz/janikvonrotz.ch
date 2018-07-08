@@ -2,7 +2,7 @@
 title: 'USA - New York'
 date: 2014-08-29T14:38:49+00:00
 author: Janik von Rotz
-permalink: /2014/08/29/usa-new-york/
+slug: usa-new-york
 dsq_thread_id:
   - "2969775600"
 image: /wp-content/uploads/2014/08/New-York-20140828.jpg

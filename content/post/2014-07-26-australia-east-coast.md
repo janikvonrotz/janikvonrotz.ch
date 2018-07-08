@@ -2,7 +2,7 @@
 title: 'Australia - East coast'
 date: 2014-07-26T00:08:36+00:00
 author: Janik von Rotz
-permalink: /2014/07/26/australia-east-coast/
+slug: australia-east-coast
 dsq_thread_id:
   - "2873691829"
 image: /wp-content/uploads/2014/07/good-morning-20140722.jpg

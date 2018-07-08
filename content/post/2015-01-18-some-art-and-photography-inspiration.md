@@ -2,7 +2,7 @@
 title: some art and photography inspiration
 date: 2015-01-18T12:00:35+00:00
 author: Janik von Rotz
-permalink: /2015/01/18/some-art-and-photography-inspiration/
+slug: some-art-and-photography-inspiration
 dsq_thread_id:
   - "3431569496"
 image: /wp-content/uploads/2015/01/Photography.jpg

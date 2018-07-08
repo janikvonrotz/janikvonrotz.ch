@@ -2,7 +2,7 @@
 title: Summer break
 date: 2014-05-29T15:36:13+00:00
 author: Janik von Rotz
-permalink: /2014/05/29/summer-break/
+slug: summer-break
 dsq_thread_id:
   - "2721368284"
 image: /wp-content/uploads/2014/04/Traveling.png

@@ -2,7 +2,7 @@
 title: Convert SSL certificates
 date: 2014-03-27T14:01:50+00:00
 author: Janik von Rotz
-permalink: /2014/03/27/convert-ssl-certificates/
+slug: convert-ssl-certificates
 dsq_thread_id:
   - "2523881052"
 image: /wp-content/uploads/2014/03/OpenSSL-Logo.png

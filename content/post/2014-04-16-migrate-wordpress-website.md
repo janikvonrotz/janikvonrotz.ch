@@ -2,7 +2,7 @@
 title: Migrate WordPress website
 date: 2014-04-16T07:44:47+00:00
 author: Janik von Rotz
-permalink: /2014/04/16/migrate-wordpress-website/
+slug: migrate-wordpress-website
 dsq_thread_id:
   - "2615551343"
 image: /wp-content/uploads/2014/02/wordpress-logo.jpg

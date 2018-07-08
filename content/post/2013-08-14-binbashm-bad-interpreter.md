@@ -2,7 +2,7 @@
 title: 'bin/bash^M: bad interpreter'
 date: 2013-08-14T08:00:19+00:00
 author: Janik von Rotz
-permalink: /2013/08/14/binbashm-bad-interpreter/
+slug: binbashm-bad-interpreter
 dsq_thread_id:
   - "1605090780"
 image: /wp-content/uploads/2013/08/Linux-Logo.jpg

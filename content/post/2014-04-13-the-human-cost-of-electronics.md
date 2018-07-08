@@ -2,7 +2,7 @@
 title: The Human Cost of Electronics
 date: 2014-04-13T20:52:45+00:00
 author: Janik von Rotz
-permalink: /2014/04/13/the-human-cost-of-electronics/
+slug: the-human-cost-of-electronics
 dsq_thread_id:
   - "2609033530"
 image: /wp-content/uploads/2014/04/The-Human-Cost-of-Electronics.png

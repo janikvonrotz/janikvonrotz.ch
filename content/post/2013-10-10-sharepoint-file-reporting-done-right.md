@@ -2,7 +2,7 @@
 title: SharePoint File Reporting Done Right
 date: 2013-10-10T16:33:01+00:00
 author: Janik von Rotz
-permalink: /2013/10/10/sharepoint-file-reporting-done-right/
+slug: sharepoint-file-reporting-done-right
 dsq_thread_id:
   - "1843312893"
 image: /wp-content/uploads/2013/07/PowerShell.png

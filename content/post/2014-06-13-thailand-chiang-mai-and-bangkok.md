@@ -2,7 +2,7 @@
 title: 'Thailand - Chiang Mai and Bangkok'
 date: 2014-06-13T03:57:41+00:00
 author: Janik von Rotz
-permalink: /2014/06/13/thailand-chiang-mai-and-bangkok/
+slug: thailand-chiang-mai-and-bangkok
 dsq_thread_id:
   - "2760030424"
 image: /wp-content/uploads/2014/06/The-doi-suthep-temple-20140608.jpg

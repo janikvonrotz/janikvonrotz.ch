@@ -2,7 +2,7 @@
 title: 'Malaysia - Penang and Singapore'
 date: 2014-07-03T12:11:40+00:00
 author: Janik von Rotz
-permalink: /2014/07/03/malaysia-penang-and-singapore/
+slug: malaysia-penang-and-singapore
 dsq_thread_id:
   - "2814492981"
 image: /wp-content/uploads/2014/07/one-of-the-living-buildings-20140629.jpg

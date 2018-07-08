@@ -2,7 +2,7 @@
 title: 'Install SharePoint 2013 Three-tier Farm - Installing and Configuring SharePoint SQL Server'
 date: 2014-02-25T13:52:33+00:00
 author: Janik von Rotz
-permalink: /2014/02/25/install-sharepoint-2013-three-tier-farm-installing-and-configuring-sharepoint-sql-server/
+slug: install-sharepoint-2013-three-tier-farm-installing-and-configuring-sharepoint-sql-server
 dsq_thread_id:
   - "2318367140"
 image: /wp-content/uploads/2014/02/SQL-Server-e1393417625647.png

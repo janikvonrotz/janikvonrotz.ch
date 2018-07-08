@@ -2,7 +2,7 @@
 title: Add SharePoint List Print Button
 date: 2013-11-25T09:32:03+00:00
 author: Janik von Rotz
-permalink: /2013/11/25/add-sharepoint-list-print-button/
+slug: add-sharepoint-list-print-button
 dsq_thread_id:
   - "1997246600"
 image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png

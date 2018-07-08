@@ -2,7 +2,7 @@
 title: 'Manage the life cycle of your SCCM applicatons with PowerShell - Part 4 Remove Applications'
 date: 2017-09-05T08:32:11+00:00
 author: Janik von Rotz
-permalink: /2017/09/05/manage-the-life-cycle-of-your-sccm-applicatons-with-powershell-part-4-remove-applications/
+slug: manage-the-life-cycle-of-your-sccm-applicatons-with-powershell-part-4-remove-applications
 image: /wp-content/uploads/2017/08/SCCM-PowerShell-e1503910243136.jpeg
 categories:
   - Configuration Manager

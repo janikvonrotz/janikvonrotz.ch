@@ -2,7 +2,7 @@
 title: Abandoned Berlin
 date: 2015-07-13T15:13:13+00:00
 author: Janik von Rotz
-permalink: /2015/07/13/abandoned-berlin/
+slug: abandoned-berlin
 dsq_thread_id:
   - "3930288152"
 image: /wp-content/uploads/2015/07/Abandoned-Berlin.jpg

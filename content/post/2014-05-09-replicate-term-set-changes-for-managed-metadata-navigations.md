@@ -2,7 +2,7 @@
 title: Replicate term set changes for managed metadata navigations
 date: 2014-05-09T08:24:47+00:00
 author: Janik von Rotz
-permalink: /2014/05/09/replicate-term-set-changes-for-managed-metadata-navigations/
+slug: replicate-term-set-changes-for-managed-metadata-navigations
 dsq_thread_id:
   - "2671794656"
 image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png

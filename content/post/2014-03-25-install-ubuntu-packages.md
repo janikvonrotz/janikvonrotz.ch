@@ -2,7 +2,7 @@
 title: Install Ubuntu packages
 date: 2014-03-25T11:52:54+00:00
 author: Janik von Rotz
-permalink: /2014/03/25/install-ubuntu-packages/
+slug: install-ubuntu-packages
 dsq_thread_id:
   - "2505421441"
 image: /wp-content/uploads/2014/03/Ubuntu-Logo.png

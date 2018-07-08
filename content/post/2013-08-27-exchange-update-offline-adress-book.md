@@ -2,7 +2,7 @@
 title: Exchange Update Offline Address Book
 date: 2013-08-27T10:54:43+00:00
 author: Janik von Rotz
-permalink: /2013/08/27/exchange-update-offline-adress-book/
+slug: exchange-update-offline-adress-book
 dsq_thread_id:
   - "1653822855"
 image: /wp-content/uploads/2013/08/exchange-2013-e1393417827333.jpg

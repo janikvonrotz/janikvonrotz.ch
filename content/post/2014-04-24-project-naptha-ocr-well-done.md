@@ -2,7 +2,7 @@
 title: 'Project Naptha - OCR well done'
 date: 2014-04-24T07:59:02+00:00
 author: Janik von Rotz
-permalink: /2014/04/24/project-naptha-ocr-well-done/
+slug: project-naptha-ocr-well-done
 dsq_thread_id:
   - "2637495405"
 image: /wp-content/uploads/2014/04/Project-Naptha-Logo.png

@@ -2,7 +2,7 @@
 title: Zabbix stack with Vagrant, CoreOS and Docker
 date: 2015-10-08T16:03:44+00:00
 author: Janik von Rotz
-permalink: /2015/10/08/zabbix-stack-with-vagrant-coreos-and-docker/
+slug: zabbix-stack-with-vagrant-coreos-and-docker
 dsq_thread_id:
   - "4206142138"
 image: /wp-content/uploads/2015/10/Docker-logo.png

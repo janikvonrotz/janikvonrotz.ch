@@ -2,7 +2,7 @@
 title: Introducing new SharePoint Online Cmdlets
 date: 2014-02-24T11:19:56+00:00
 author: Janik von Rotz
-permalink: /2014/02/24/introducing-new-sharepoint-online-cmdlets/
+slug: introducing-new-sharepoint-online-cmdlets
 dsq_thread_id:
   - "2312627481"
 image: /wp-content/uploads/2014/02/SharePoint-Online.jpg

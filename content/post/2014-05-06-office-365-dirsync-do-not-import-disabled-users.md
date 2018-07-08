@@ -2,7 +2,7 @@
 title: Office 365 DirSync do not import disabled users
 date: 2014-05-06T09:13:03+00:00
 author: Janik von Rotz
-permalink: /2014/05/06/office-365-dirsync-do-not-import-disabled-users/
+slug: office-365-dirsync-do-not-import-disabled-users
 dsq_thread_id:
   - "2683080766"
 image: /wp-content/uploads/2014/03/Office-365-flat-Logo-e1394705523286.jpg

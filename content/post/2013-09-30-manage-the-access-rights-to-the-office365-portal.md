@@ -2,7 +2,7 @@
 title: Manage access rights to the Office365 portal
 date: 2013-09-30T14:24:08+00:00
 author: Janik von Rotz
-permalink: /2013/09/30/manage-the-access-rights-to-the-office365-portal/
+slug: manage-the-access-rights-to-the-office365-portal
 dsq_thread_id:
   - "1811070729"
 image: /wp-content/uploads/2013/09/office-logo_v3.jpg

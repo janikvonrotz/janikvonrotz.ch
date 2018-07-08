@@ -2,7 +2,7 @@
 title: Meteor project structure
 date: 2017-03-28T16:20:06+00:00
 author: Janik von Rotz
-permalink: /2017/03/28/meteor-project-structure/
+slug: meteor-project-structure
 dsq_thread_id:
   - "5673985614"
 image: /wp-content/uploads/2016/03/meteor-react-logo-1200x201.png

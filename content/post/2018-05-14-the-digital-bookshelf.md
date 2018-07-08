@@ -2,7 +2,7 @@
 title: The digital bookshelf
 date: 2018-05-14T09:45:00+00:00
 author: Janik von Rotz
-permalink: /2018/05/14/the-digital-bookshelf/
+slug: the-digital-bookshelf
 image: /wp-content/uploads/2018/05/screenshot.png
 categories:
   - Blog

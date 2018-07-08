@@ -2,7 +2,7 @@
 title: Backup Active Directory Group Policies with PowerShell
 date: 2014-04-22T08:02:13+00:00
 author: Janik von Rotz
-permalink: /2014/04/22/backup-active-directory-group-policies-with-powershell/
+slug: backup-active-directory-group-policies-with-powershell
 dsq_thread_id:
   - "2629693584"
 image: /wp-content/uploads/2013/10/Group-Policy.jpg

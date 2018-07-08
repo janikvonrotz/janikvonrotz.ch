@@ -2,7 +2,7 @@
 title: Backup your OneNote files
 date: 2014-10-17T11:01:23+00:00
 author: Janik von Rotz
-permalink: /2014/10/17/backup-your-onenote-files/
+slug: backup-your-onenote-files
 dsq_thread_id:
   - "3126193518"
 image: /wp-content/uploads/2014/03/Office-2013-Logo.jpg

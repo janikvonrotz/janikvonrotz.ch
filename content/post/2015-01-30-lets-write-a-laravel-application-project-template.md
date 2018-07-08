@@ -2,7 +2,7 @@
 title: Let’s write a Laravel application – Project template
 date: 2015-01-30T10:28:03+00:00
 author: Janik von Rotz
-permalink: /2015/01/30/lets-write-a-laravel-application-project-template/
+slug: lets-write-a-laravel-application-project-template
 dsq_thread_id:
   - "3469034417"
 image: /wp-content/uploads/2015/01/laravel-logo-e1422466263489.png

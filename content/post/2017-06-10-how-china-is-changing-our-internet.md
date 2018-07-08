@@ -2,7 +2,7 @@
 title: How China is changing our internet
 date: 2017-06-10T14:47:56+00:00
 author: Janik von Rotz
-permalink: /2017/06/10/how-china-is-changing-our-internet/
+slug: how-china-is-changing-our-internet
 image: /wp-content/uploads/2017/06/WeChat-on-the-rise.png
 categories:
   - Business

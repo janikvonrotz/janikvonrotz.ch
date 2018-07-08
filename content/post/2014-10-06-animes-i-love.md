@@ -2,7 +2,7 @@
 title: Animes I love
 date: 2014-10-06T10:55:17+00:00
 author: Janik von Rotz
-permalink: /2014/10/06/animes-i-love/
+slug: animes-i-love
 dsq_thread_id:
   - "3087917509"
 image: /wp-content/uploads/2014/10/Japan-Banner.jpg

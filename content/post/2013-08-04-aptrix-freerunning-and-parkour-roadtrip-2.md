@@ -2,7 +2,7 @@
 title: 'Aptrix - Freerunning and Parkour Roadtrip'
 date: 2013-08-04T10:33:40+00:00
 author: Janik von Rotz
-permalink: /2013/08/04/aptrix-freerunning-and-parkour-roadtrip-2/
+slug: aptrix-freerunning-and-parkour-roadtrip-2
 dsq_thread_id:
   - "1567543064"
 image: /wp-content/uploads/2013/08/Logo.png

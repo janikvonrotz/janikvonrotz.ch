@@ -2,7 +2,7 @@
 title: Install php5 modules
 date: 2014-03-25T11:38:33+00:00
 author: Janik von Rotz
-permalink: /2014/03/25/install-php5-modules/
+slug: install-php5-modules
 dsq_thread_id:
   - "2505352611"
 image: /wp-content/uploads/2014/03/php-logo.jpeg

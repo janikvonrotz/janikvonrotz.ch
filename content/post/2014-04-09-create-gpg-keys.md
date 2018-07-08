@@ -2,7 +2,7 @@
 title: Create GPG Keys
 date: 2014-04-09T08:30:29+00:00
 author: Janik von Rotz
-permalink: /2014/04/09/create-gpg-keys/
+slug: create-gpg-keys
 dsq_thread_id:
   - "2597967325"
 image: /wp-content/uploads/2014/03/GnuPG-Logo.png

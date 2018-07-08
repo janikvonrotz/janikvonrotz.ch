@@ -2,7 +2,7 @@
 title: ADFS Login Customization
 date: 2013-10-18T13:04:41+00:00
 author: Janik von Rotz
-permalink: /2013/10/18/adfs-login-customization/
+slug: adfs-login-customization
 dsq_thread_id:
   - "1871576330"
 image: /wp-content/uploads/2013/09/office-logo_v3.jpg

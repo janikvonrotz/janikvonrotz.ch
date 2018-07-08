@@ -2,7 +2,7 @@
 title: Get Active Directory User Membership Groups Recursively
 date: 2013-12-11T11:46:37+00:00
 author: Janik von Rotz
-permalink: /2013/12/11/get-active-directory-user-membership-groups-recursively/
+slug: get-active-directory-user-membership-groups-recursively
 dsq_thread_id:
   - "2043288310"
 image: /wp-content/uploads/2013/12/PowerShell-and-ActiveDirectory.png

@@ -2,7 +2,7 @@
 title: 'Hiking for Emails - Internet for the developing world'
 date: 2016-01-30T11:51:34+00:00
 author: Janik von Rotz
-permalink: /2016/01/30/hiking-for-emails-internet-for-the-developing-wolrd/
+slug: hiking-for-emails-internet-for-the-developing-wolrd
 dsq_thread_id:
   - "4536176885"
 image: /wp-content/uploads/2016/01/net-neutrality.png

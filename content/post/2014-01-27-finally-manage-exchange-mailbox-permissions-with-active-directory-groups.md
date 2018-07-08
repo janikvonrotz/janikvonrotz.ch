@@ -2,7 +2,7 @@
 title: Finally! Manage Exchange mailbox permissions with Active Directory groups
 date: 2014-01-27T19:04:37+00:00
 author: Janik von Rotz
-permalink: /2014/01/27/finally-manage-exchange-mailbox-permissions-with-active-directory-groups/
+slug: finally-manage-exchange-mailbox-permissions-with-active-directory-groups
 dsq_thread_id:
   - "2181973874"
 image: /wp-content/uploads/2013/08/exchange-2013-e1393417827333.jpg

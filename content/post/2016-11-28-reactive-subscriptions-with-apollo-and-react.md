@@ -2,7 +2,7 @@
 title: Reactive subscriptions with Apollo and React
 date: 2016-11-28T12:27:08+00:00
 author: Janik von Rotz
-permalink: /2016/11/28/reactive-subscriptions-with-apollo-and-react/
+slug: reactive-subscriptions-with-apollo-and-react
 dsq_thread_id:
   - "5337885808"
 dsq_needs_sync:

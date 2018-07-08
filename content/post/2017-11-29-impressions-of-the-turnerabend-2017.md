@@ -2,7 +2,7 @@
 title: Impressions of the Turnerabend 2017
 date: 2017-11-29T19:26:40+00:00
 author: Janik von Rotz
-permalink: /2017/11/29/impressions-of-the-turnerabend-2017/
+slug: impressions-of-the-turnerabend-2017
 specific_page_layout:
   - default-sidebar
 image: /wp-content/uploads/2017/11/1-Sportlight-Banner.jpg

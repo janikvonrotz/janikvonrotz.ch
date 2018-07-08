@@ -3,7 +3,7 @@ id: 2383
 title: 'My Dogecoin experience: mining server'
 date: 2014-05-30T14:07:11+00:00
 author: Janik von Rotz
-permalink: /2014/05/30/my-dogecoin-experience-mining-server/
+slug: my-dogecoin-experience-mining-server
 enclosure:
   - |
     /wp-content/uploads/2014/05/My-Dogecoin-mining-server.mp4

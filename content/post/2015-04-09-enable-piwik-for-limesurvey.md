@@ -2,7 +2,7 @@
 title: Enable Piwik for LimeSurvey
 date: 2015-04-09T10:30:10+00:00
 author: Janik von Rotz
-permalink: /2015/04/09/enable-piwik-for-limesurvey/
+slug: enable-piwik-for-limesurvey
 dsq_thread_id:
   - "3667243567"
 image: /wp-content/uploads/2015/04/LimeSurvey-Logo.png

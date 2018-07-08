@@ -2,7 +2,7 @@
 title: 'Install SharePoint 2013 Three-tier Farm - Migrate SharePoint 2010 Data'
 date: 2014-04-14T09:36:40+00:00
 author: Janik von Rotz
-permalink: /2014/04/14/install-sharepoint-2013-three-tier-farm-migrate-sharepoint-2010-data/
+slug: install-sharepoint-2013-three-tier-farm-migrate-sharepoint-2010-data
 dsq_thread_id:
   - "2610197461"
 image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png

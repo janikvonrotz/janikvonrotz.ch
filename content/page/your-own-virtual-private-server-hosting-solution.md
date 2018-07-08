@@ -2,7 +2,6 @@
 title: Your own Virtual Private Server hosting solution
 date: 2014-03-09T11:16:23+00:00
 author: Janik von Rotz
-guid: https://janikvonrotz.ch/?page_id=1449
 dsq_thread_id:
   - "2394460880"
 image: /wp-content/uploads/2014/03/Ubuntu-Logo.png

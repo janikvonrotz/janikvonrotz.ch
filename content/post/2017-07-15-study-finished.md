@@ -2,7 +2,7 @@
 title: Study finished!
 date: 2017-07-15T19:23:12+00:00
 author: Janik von Rotz
-permalink: /2017/07/15/study-finished/
+slug: study-finished
 image: /wp-content/uploads/2017/07/Firework.jpg
 categories:
   - Blog

@@ -2,7 +2,7 @@
 title: Timelapse was yesterday
 date: 2014-10-29T12:13:10+00:00
 author: Janik von Rotz
-permalink: /2014/10/29/timelapse-was-yesterday/
+slug: timelapse-was-yesterday
 dsq_thread_id:
   - "3169142336"
 image: /wp-content/uploads/2014/10/Layerlapse-e1415086023151.png

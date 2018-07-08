@@ -2,7 +2,7 @@
 title: Install Nginx
 date: 2014-03-31T09:43:19+00:00
 author: Janik von Rotz
-permalink: /2014/03/31/install-nginx/
+slug: install-nginx
 dsq_thread_id:
   - "2561474269"
 image: /wp-content/uploads/2014/03/Nginx-Logo-e1394033855329.png

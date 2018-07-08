@@ -2,7 +2,7 @@
 title: 'Thailand - Krabi, Ao Nang and Railay beach'
 date: 2014-06-29T07:35:22+00:00
 author: Janik von Rotz
-permalink: /2014/06/29/thailand-krabi-ao-nang-and-railay-beach/
+slug: thailand-krabi-ao-nang-and-railay-beach
 dsq_thread_id:
   - "2803796916"
 image: /wp-content/uploads/2014/06/Tiger-Cave-Temple-20140626.jpg

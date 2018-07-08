@@ -2,7 +2,7 @@
 title: Why you should use Piwik instead of Google Analytics
 date: 2014-05-27T14:06:01+00:00
 author: Janik von Rotz
-permalink: /2014/05/27/why-you-should-use-piwik-instead-of-google-analytics/
+slug: why-you-should-use-piwik-instead-of-google-analytics
 dsq_thread_id:
   - "2717745209"
 image: /wp-content/uploads/2014/12/logo-piwik-e1418200408662.png

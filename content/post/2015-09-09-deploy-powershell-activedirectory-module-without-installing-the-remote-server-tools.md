@@ -2,7 +2,7 @@
 title: Deploy PowerShell ActiveDirectory Module without installing the remote server tools
 date: 2015-09-09T16:23:17+00:00
 author: Janik von Rotz
-permalink: /2015/09/09/deploy-powershell-activedirectory-module-without-installing-the-remote-server-tools/
+slug: deploy-powershell-activedirectory-module-without-installing-the-remote-server-tools
 dsq_thread_id:
   - "4113355907"
 image: /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png

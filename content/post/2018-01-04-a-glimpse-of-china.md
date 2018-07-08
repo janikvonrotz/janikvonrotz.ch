@@ -2,7 +2,7 @@
 title: A Glimpse of China
 date: 2018-01-04T15:47:36+00:00
 author: Janik von Rotz
-permalink: /2018/01/04/a-glimpse-of-china/
+slug: a-glimpse-of-china
 specific_page_layout:
   - default-sidebar
 image: /wp-content/uploads/2018/01/1-Pattern-Banner.jpg

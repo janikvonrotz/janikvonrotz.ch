@@ -2,7 +2,7 @@
 title: Meteor White Paper
 date: 2015-12-16T21:05:20+00:00
 author: Janik von Rotz
-permalink: /2015/12/16/meteor-white-paper/
+slug: meteor-white-paper
 dsq_thread_id:
   - "4409826194"
 image: /wp-content/uploads/2015/12/Meteor-Logo.png

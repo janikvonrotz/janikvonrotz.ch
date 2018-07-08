@@ -2,7 +2,7 @@
 title: Password Generator with PowerShell
 date: 2015-09-07T15:03:41+00:00
 author: Janik von Rotz
-permalink: /2015/09/07/password-generator-with-powershell/
+slug: password-generator-with-powershell
 dsq_thread_id:
   - "4106282181"
 image: /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png

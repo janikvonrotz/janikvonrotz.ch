@@ -2,7 +2,7 @@
 title: manage SharePoint list alerts for multiple users on multiple lists
 date: 2014-01-02T14:38:25+00:00
 author: Janik von Rotz
-permalink: /2014/01/02/manage-sharepoint-list-alerts-for-multiple-users-on-multiple-lists/
+slug: manage-sharepoint-list-alerts-for-multiple-users-on-multiple-lists
 dsq_thread_id:
   - "2087265617"
 image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png

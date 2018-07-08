@@ -2,7 +2,7 @@
 title: Create a Office365 user license report
 date: 2013-08-23T12:14:46+00:00
 author: Janik von Rotz
-permalink: /2013/08/23/create-a-office365-user-license-report/
+slug: create-a-office365-user-license-report
 dsq_thread_id:
   - "1633015026"
 image: /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg

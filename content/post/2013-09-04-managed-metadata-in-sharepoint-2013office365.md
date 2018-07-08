@@ -2,7 +2,7 @@
 title: Managed Metadata in SharePoint 2013/Office365
 date: 2013-09-04T09:33:48+00:00
 author: Janik von Rotz
-permalink: /2013/09/04/managed-metadata-in-sharepoint-2013office365/
+slug: managed-metadata-in-sharepoint-2013office365
 dsq_thread_id:
   - "1707453640"
 image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png

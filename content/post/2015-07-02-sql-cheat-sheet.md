@@ -2,7 +2,7 @@
 title: SQL Cheat Sheet
 date: 2015-07-02T18:16:54+00:00
 author: Janik von Rotz
-permalink: /2015/07/02/sql-cheat-sheet/
+slug: sql-cheat-sheet
 dsq_thread_id:
   - "3898706952"
 image: /wp-content/uploads/2014/04/MySQL-Logo.png

@@ -2,7 +2,7 @@
 title: 'Let’s write a Laravel application - Introduction'
 date: 2015-01-28T18:36:10+00:00
 author: Janik von Rotz
-permalink: /2015/01/28/lets-write-a-laravel-application-introduction/
+slug: lets-write-a-laravel-application-introduction
 dsq_thread_id:
   - "3463688035"
 image: /wp-content/uploads/2015/01/laravel-logo-e1422466263489.png

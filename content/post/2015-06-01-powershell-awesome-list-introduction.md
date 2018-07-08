@@ -2,7 +2,7 @@
 title: PowerShell awesome list introduction
 date: 2015-06-01T06:47:40+00:00
 author: Janik von Rotz
-permalink: /2015/06/01/powershell-awesome-list-introduction/
+slug: powershell-awesome-list-introduction
 dsq_thread_id:
   - "3811307919"
 image: /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png

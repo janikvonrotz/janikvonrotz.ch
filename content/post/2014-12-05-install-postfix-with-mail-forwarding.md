@@ -2,7 +2,7 @@
 title: Install Postfix with mail forwarding
 date: 2014-12-05T14:03:53+00:00
 author: Janik von Rotz
-permalink: /2014/12/05/install-postfix-with-mail-forwarding/
+slug: install-postfix-with-mail-forwarding
 dsq_thread_id:
   - "3293332395"
 image: /wp-content/uploads/2014/04/postfix-logo.png

@@ -2,7 +2,7 @@
 title: WordPress checklist
 date: 2015-06-05T06:54:03+00:00
 author: Janik von Rotz
-permalink: /2015/06/05/wordpress-checklist/
+slug: wordpress-checklist
 dsq_thread_id:
   - "3822691219"
 image: /wp-content/uploads/2014/02/wordpress-logo.jpg
