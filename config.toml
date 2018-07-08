@@ -4,6 +4,7 @@ title = "Janik von Rotz"
 description = "Curious, Dedicated, Humble" 
 theme = "lithium"
 pygmentsCodeFences = "true"
+disqusShortname = "janikvonrotz-1"
 
 [permalinks]
     post = "/:year/:month/:title/"
