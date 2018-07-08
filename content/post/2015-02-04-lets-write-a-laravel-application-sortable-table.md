@@ -32,7 +32,7 @@ class BaseController extends Controller {
   {
     $this->sortby = Input::get('sortby');
     $this->order = Input::get('order');
-    if ($this->sortby &amp;&amp; $this->order) {
+    if ($this->sortby && $this->order) {
       return $model::orderBy($this->sortby, $this->order)->get();
     } else {
        return $model::all();
@@ -89,7 +89,7 @@ From now on you can use the next piece of code to create a sortable table in you
 <tr>
   @foreach(array_keys($columns) as $column)
     <th>
-    @if ($sortby == $columns[$column] &amp;&amp; $order == 'asc')
+    @if ($sortby == $columns[$column] && $order == 'asc')
     {{link_to_action(
       $action,
       $column, ['sortby' => $columns[$column],'order' => 'desc']

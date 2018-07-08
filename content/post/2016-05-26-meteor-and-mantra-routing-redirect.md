@@ -94,7 +94,7 @@ This is done for every module. Then you get a custom routing logic for every mod
 // client side
 export function redirect_login(routename){
   var roles = _.findWhere(Meteor.settings.public.routes, {name: routename}).roles;
-  if(!_.contains(roles, "Public") &amp;&amp; !Meteor.userId()){
+  if(!_.contains(roles, "Public") && !Meteor.userId()){
     console.log("redirect login");
     return true;
   }
@@ -103,7 +103,7 @@ export function redirect_login(routename){
 
 // client side
 export function redirect_verify(){
-  if(Meteor.userId() &amp;&amp; !Meteor.user().emails[0].verified){
+  if(Meteor.userId() && !Meteor.user().emails[0].verified){
     console.log("redirect verify");
     return true;
   }

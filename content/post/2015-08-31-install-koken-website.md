@@ -156,7 +156,7 @@ server{
   
     # All other requests get passed back to Koken unless file already exists
     location / {
-        try_files $uri $uri/ /storage/cache/site/${uri} /storage/cache/site/${uri}cache.$cache_ext /app/site/site.php?url=$uri&amp;$args;
+        try_files $uri $uri/ /storage/cache/site/${uri} /storage/cache/site/${uri}cache.$cache_ext /app/site/site.php?url=$uri&$args;
     }
  
   ...

@@ -311,7 +311,7 @@ class PostList extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (!this.subscription &amp;&amp; !nextProps.data.loading) {
+    if (!this.subscription && !nextProps.data.loading) {
       let { subscribeToMore } = this.props.data
       this.subscription = [subscribeToMore(
         {

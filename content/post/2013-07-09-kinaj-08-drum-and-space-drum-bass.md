@@ -1,6 +1,6 @@
 ---
 id: 257
-title: 'Kinaj 08 - Drum and Space (Drum &amp; Bass)'
+title: 'Kinaj 08 - Drum and Space (Drum & Bass)'
 date: 2013-07-09T10:51:50+00:00
 author: Janik von Rotz
 layout: post
@@ -12,7 +12,7 @@ image: /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:
-  - 'drum &amp; bass'
+  - 'drum & bass'
   - playlist
   - soundcloud
 ---

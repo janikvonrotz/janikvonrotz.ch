@@ -50,7 +50,7 @@ $SPWebs | %{
 
         $SPListUrl = (Get-SPUrl $SPList).url
 
-        Write-Progress -Activity &amp;quot;Crawl list on website&amp;quot; -status &amp;quot;$($SPWeb.Title): $($SPList.Title)&amp;quot; -percentComplete ([Int32](([Array]::IndexOf($SPWebs, $SPWeb)/($SPWebs.count))*100))
+        Write-Progress -Activity &quot;Crawl list on website&quot; -status &quot;$($SPWeb.Title): $($SPList.Title)&quot; -percentComplete ([Int32](([Array]::IndexOf($SPWebs, $SPWeb)/($SPWebs.count))*100))
 
         Get-SPListItems $_.ParentWeb.Url -FilterListName $_.title | %{
 
@@ -69,7 +69,7 @@ $SPWebs | %{
                 IsASubversion = $false
                 Item = $_.Name
                 ItemUrl = $ItemUrl
-                Folder = $ItemUrl -replace &amp;quot;[^/]+$&amp;quot;,&amp;quot;&amp;quot;
+                Folder = $ItemUrl -replace &quot;[^/]+$&quot;,&quot;&quot;
                 FileSize = $_.file.Length / 1000000
             }
 
@@ -92,7 +92,7 @@ $SPWebs | %{
                     IsASubversion = $true
                     Item = $SPItem.Name
                     ItemUrl = $ItemUrl
-                    Folder = $ItemUrl -replace &amp;quot;[^/]+$&amp;quot;,&amp;quot;&amp;quot;
+                    Folder = $ItemUrl -replace &quot;[^/]+$&quot;,&quot;&quot;
                     FileSize = $_.Size / 1000000
                 }
             }
@@ -101,7 +101,7 @@ $SPWebs | %{
         # checked out files
         Get-SPListItems $_.ParentWeb.Url -FilterListName $_.title -OnlyCheckedOutFiles | %{
 
-            $ItemUrl = $SPSite + &amp;quot;/&amp;quot; + $_.Url
+            $ItemUrl = $SPSite + &quot;/&quot; + $_.Url
 
             New-Object PSObject -Property @{
                 ParentWebsite = $SPWeb.ParentWeb.title
@@ -115,13 +115,13 @@ $SPWebs | %{
                 IsASubversion = $false
                 Item = $_.LeafName
                 ItemUrl = $ItemUrl
-                Folder = $ItemUrl -replace &amp;quot;[^/]+$&amp;quot;,&amp;quot;&amp;quot;
+                Folder = $ItemUrl -replace &quot;[^/]+$&quot;,&quot;&quot;
                 FileSize = $_.Length / 1000000
             }
 
         }
     }
-} | Export-Csv &amp;quot;Report SharePoint Files.csv&amp;quot; -Delimiter &amp;quot;;&amp;quot; -Encoding &amp;quot;UTF8&amp;quot; -NoTypeInformation
+} | Export-Csv &quot;Report SharePoint Files.csv&quot; -Delimiter &quot;;&quot; -Encoding &quot;UTF8&quot; -NoTypeInformation
 ```
 
 Most recent version of this snippet is avialable here: <a href="https://gist.github.com/janikvonrotz/6885934" target="_blank">https://gist.github.com/janikvonrotz/6885934</a>

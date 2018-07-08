@@ -66,7 +66,7 @@ module.exports = {
       ref: 'origin/develop',
       repo: 'git@gitlab.com:username/repo.git',
       path: '/path/to/your/project/folder',
-      'post-deploy': 'rm -rf ./bundle &amp;&amp; npm install --production &amp;&amp; meteor build . --directory &amp;&amp; cd ./bundle/programs/server &amp;&amp; npm install --production &amp;&amp; cd ../../.. &amp;&amp; pm2 startOrRestart ecosystem.config.js',
+      'post-deploy': 'rm -rf ./bundle && npm install --production && meteor build . --directory && cd ./bundle/programs/server && npm install --production && cd ../../.. && pm2 startOrRestart ecosystem.config.js',
     }
   }
 }

@@ -156,7 +156,7 @@ Paste the following code:
 
 HttpCookie cookie = Context.Request.Cookies.Get( "Office365Username" );
 
-if ( null != cookie &amp;&amp; !String.IsNullOrEmpty( cookie.Value ) )
+if ( null != cookie && !String.IsNullOrEmpty( cookie.Value ) )
 {
      UsernameTextBox.Text = cookie.Value;
      cookie.Expires = DateTime.UtcNow.AddDays( -1 );

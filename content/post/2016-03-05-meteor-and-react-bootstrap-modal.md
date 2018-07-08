@@ -54,7 +54,7 @@ Modal = React.createClass({
       <div className="modal-dialog">
         <div className="modal-content">
           <div className="modal-header">
-            <Button className="close" onClick={this.props.onCancel} ariaLabel="Close"><span aria-hidden="true">&amp;times;</span></Button>
+            <Button className="close" onClick={this.props.onCancel} ariaLabel="Close"><span aria-hidden="true">&times;</span></Button>
             <h4 className="modal-title">{this.props.title}</h4>
           </div>
           <div className="modal-body">

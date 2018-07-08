@@ -80,7 +80,7 @@ $PasswordEntries = $Content.KeePassFile.Root.Group.Group | ForEach-Object {
     Traverse-Tree -Node $_ -ParentPath ""
 } | ForEach-Object {
     Write-Host "Creating pass entry: $($_.Path)"
-    $_.Content | &amp; pass insert -m $_.Path
+    $_.Content | & pass insert -m $_.Path
 }
 ```
 

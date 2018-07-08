@@ -100,9 +100,9 @@ Type **Yes** when prompted with the following message.
 Restart IIS so STS picks up the new certificate.
 
 ```powershell
-&amp; iisreset
-&amp; net stop SPTimerV4
-&amp; net start SPTimerV4
+& iisreset
+& net stop SPTimerV4
+& net start SPTimerV4
 ```
 
 Now validate the certificate replacement by running several PowerShell commands and compare their outputs.

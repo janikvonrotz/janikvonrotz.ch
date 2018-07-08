@@ -24,6 +24,6 @@ Scripts for other shells are available.
 If you are bash user like I am, you can enable the completion script in your bash profile with the following command:
 
 ```
-test -f ~/.git-completion.bash &amp;&amp; . $_
+test -f ~/.git-completion.bash && . $_
 ```
 

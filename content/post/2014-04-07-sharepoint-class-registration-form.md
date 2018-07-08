@@ -210,9 +210,9 @@ The javascript creates the dialog box javascript to open our new form. The call 
 function OpenRegistrationForm(meeting_id){
     var options = {
     // to geht following make a right click on the new item link in the Class Attendees list and select open in new tab.
-    // Now copy the url in the browser from the beginning to the of the &amp;RootFolder= part
+    // Now copy the url in the browser from the beginning to the of the &RootFolder= part
     // Inser the link below and replace [RootFolder] with meeting_id
-    url:"http://sharepoint.vbl.ch/Personal/Lists/Class%20Attendees/Item/newifs.aspx?List=21803ee2-66ab-4df2-9116-b02853ca7e1a&amp;meeting_id="  + meeting_id,
+    url:"http://sharepoint.vbl.ch/Personal/Lists/Class%20Attendees/Item/newifs.aspx?List=21803ee2-66ab-4df2-9116-b02853ca7e1a&meeting_id="  + meeting_id,
     width: 750,
     height: 600,
     dialogReturnValueCallback: DialogCallback
