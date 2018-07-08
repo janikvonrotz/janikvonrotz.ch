@@ -1,0 +1,2 @@
+userPrincipalName;sAMAccountName;Name;DisplayName;givenName;LastName;company;l;postOfficeBox;co;c;postalCode;streetAddress;wWWHomePage;department;manager;extensionAttribute1;title;mail;extensionAttribute2;extensionAttribute3;OU;MemberOf;Password;Comment
+othmar.pilss@domain.com;othmar.pilss;Pilss Othmar;Pilss Othmar;Othmar;Pilss;Working company;Zürich;Postfach;Schweiz;CH;1111;Workerstreet 1;www.domain.com;Working department;Boss;2450;Worker;othmar.pilss@domain.com;2214;1008;OU=Container1,OU=Container2,OU=Users,DC=domain,DC=com;Group1,Group2,Group3;yobuji.1;
