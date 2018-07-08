@@ -26,6 +26,6 @@ In my last tumblr session I came along a post about Barry Underwood's pictures. 
 
 The pictures you're seeing haven't been edited in Photoshop or any other software. Barry Underwood took this photographs with a long exposure camera installation and a bunch of lights.
 <!--more-->
-[![09-Underwood_Bleu](https://janikvonrotz.ch/wp-content/uploads/2014/05/09-Underwood_Bleu.jpg)](http://barryunderwood.com/portfolio.html)
+[![09-Underwood_Bleu](/wp-content/uploads/2014/05/09-Underwood_Bleu.jpg)](http://barryunderwood.com/portfolio.html)
 
 Click on the image to see the full portfolio of Barry Underwood's light painted photographs.

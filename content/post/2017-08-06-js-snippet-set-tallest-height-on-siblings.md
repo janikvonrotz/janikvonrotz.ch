@@ -21,7 +21,7 @@ tags:
 ---
 This post is another contribution to "I hope that I never have to use jQuery again". The problem solved this time is quite simple. We want to set the same height for a group of divs. So not like this:
 
-![Untitled](https://janikvonrotz.ch/wp-content/uploads/2017/07/Not-equal-heights-on-divs.png)
+![Untitled](/wp-content/uploads/2017/07/Not-equal-heights-on-divs.png)
 
 <!--more-->
 

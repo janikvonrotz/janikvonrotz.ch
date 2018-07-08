@@ -28,12 +28,12 @@ tags:
 ---
 By default SharePoint 2013 cuts off long sub menu titles in the navigation.
 
-[![SharePoint 2013 Menu without space](https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-2013-Menu-without-space.jpg)](https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-2013-Menu-without-space.jpg)
+[![SharePoint 2013 Menu without space](/wp-content/uploads/2014/03/SharePoint-2013-Menu-without-space.jpg)](/wp-content/uploads/2014/03/SharePoint-2013-Menu-without-space.jpg)
 
 SharePoint expects only titles without spaces in between words.
 This is miss behaviour is simply solved by adding a custom css in the master page template.
 <!--more-->
-[![SharePoint 2013 Add CSS to Master Page](https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-2013-Add-CSS-to-Master-Page-1024x608.jpg)](https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-2013-Add-CSS-to-Master-Page.jpg)
+[![SharePoint 2013 Add CSS to Master Page](/wp-content/uploads/2014/03/SharePoint-2013-Add-CSS-to-Master-Page-1024x608.jpg)](/wp-content/uploads/2014/03/SharePoint-2013-Add-CSS-to-Master-Page.jpg)
 
 ```css
 ul.dynamic li {
@@ -43,4 +43,4 @@ ul.dynamic li {
 
 In the end it should look somehow like this.
 
-[![SharePoint 2013 Menu with space](https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-2013-Menu-with-space.jpg)](https://janikvonrotz.ch/wp-content/uploads/2014/03/SharePoint-2013-Menu-with-space.jpg)
+[![SharePoint 2013 Menu with space](/wp-content/uploads/2014/03/SharePoint-2013-Menu-with-space.jpg)](/wp-content/uploads/2014/03/SharePoint-2013-Menu-with-space.jpg)

@@ -22,7 +22,7 @@ tags:
 This is a simple example of how to create a report of your Active Directory users.
 The first command imports the PowerShell Active Directory module, which should be installed by default, otherwhise do this:
 
-![Install PowerShell Active Directory Module](https://janikvonrotz.ch/wp-content/uploads/2013/07/2013-07-25-11_43_24-Windows-Funktionen.png)
+![Install PowerShell Active Directory Module](/wp-content/uploads/2013/07/2013-07-25-11_43_24-Windows-Funktionen.png)
 
 ```powershell
 Import-Module ActiveDirectory

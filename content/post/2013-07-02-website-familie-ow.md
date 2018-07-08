@@ -53,14 +53,14 @@ For this project the following extensions have been used:
 
 ## Screenshots
 
-![Suche](https://janikvonrotz.ch/wp-content/uploads/2013/07/Suche-1024x647.jpg)
+![Suche](/wp-content/uploads/2013/07/Suche-1024x647.jpg)
 
-![Sitemap](https://janikvonrotz.ch/wp-content/uploads/2013/07/Sitemap-1024x532.jpg)
+![Sitemap](/wp-content/uploads/2013/07/Sitemap-1024x532.jpg)
 
-![Startseite](https://janikvonrotz.ch/wp-content/uploads/2013/07/Startseite-1024x436.jpg)
+![Startseite](/wp-content/uploads/2013/07/Startseite-1024x436.jpg)
 
-![Inhalt](https://janikvonrotz.ch/wp-content/uploads/2013/07/Inhalt-1024x535.jpg)
+![Inhalt](/wp-content/uploads/2013/07/Inhalt-1024x535.jpg)
 
-![Kontaktformular](https://janikvonrotz.ch/wp-content/uploads/2013/07/Kontaktformular-1024x780.jpg)
+![Kontaktformular](/wp-content/uploads/2013/07/Kontaktformular-1024x780.jpg)
 
-![Adressen](https://janikvonrotz.ch/wp-content/uploads/2013/07/Adressen-1024x462.jpg)
+![Adressen](/wp-content/uploads/2013/07/Adressen-1024x462.jpg)

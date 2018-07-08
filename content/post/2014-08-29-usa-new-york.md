@@ -31,14 +31,14 @@ Here's a quote and some pictures to say Goodbye New York.
 
 -- Albert Einstein
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/08/New-York-20140828-1024x575.jpg" title="Take the free Staten Island ferry and you'll get this beautiful view of New York." >}}
+{{< figure src="/wp-content/uploads/2014/08/New-York-20140828-1024x575.jpg" title="Take the free Staten Island ferry and you'll get this beautiful view of New York." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/08/Brooklyn-bridge-by-night-20140828-1024x575.jpg" title="A nice district to go out is right next to the Brooklyn bridge." >}}
+{{< figure src="/wp-content/uploads/2014/08/Brooklyn-bridge-by-night-20140828-1024x575.jpg" title="A nice district to go out is right next to the Brooklyn bridge." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/08/Brooklyn-bridge-20140828-1024x575.jpg" title="The Brooklyn bridge from another angle." >}}
+{{< figure src="/wp-content/uploads/2014/08/Brooklyn-bridge-20140828-1024x575.jpg" title="The Brooklyn bridge from another angle." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/08/Madison-square-park-20140828-1024x575.jpg" title="While waiting for the legendary Shake Shack burger I took this picture in the Madison square park." >}}
+{{< figure src="/wp-content/uploads/2014/08/Madison-square-park-20140828-1024x575.jpg" title="While waiting for the legendary Shake Shack burger I took this picture in the Madison square park." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/08/New-York-by-night-20140826-1024x575.jpg" title="New York by night seen from the Rockefeller plaza building." >}}
+{{< figure src="/wp-content/uploads/2014/08/New-York-by-night-20140826-1024x575.jpg" title="New York by night seen from the Rockefeller plaza building." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/08/New-York-copy-and-paste-20140828-1024x575.jpg" title="This picture is the best  evidence how picturesque New York city is. Seems like it has been photoshoped." >}}
+{{< figure src="/wp-content/uploads/2014/08/New-York-copy-and-paste-20140828-1024x575.jpg" title="This picture is the best  evidence how picturesque New York city is. Seems like it has been photoshoped." >}}

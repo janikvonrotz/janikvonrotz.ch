@@ -30,13 +30,13 @@ This article reminded my of how stupid current password guidelines are and that 
 <!--more-->
 Inspiration for the new random password was the following XKCD comic:
 
-![Untitled](https://janikvonrotz.ch/wp-content/uploads/2017/08/password_strength.png)
+![Untitled](/wp-content/uploads/2017/08/password_strength.png)
 
 So instead of using any kind of character for the password, simply put four random words together.
 To create this kind of password we need a word list with common nouns. I've created a german and english word list for you to download:
 
-[wordlist.de.txt](https://janikvonrotz.ch/wp-content/uploads/2017/08/wordlist.de_.txt)
-[wordlist.en.txt](https://janikvonrotz.ch/wp-content/uploads/2017/08/wordlist.en_.txt)
+[wordlist.de.txt](/wp-content/uploads/2017/08/wordlist.de_.txt)
+[wordlist.en.txt](/wp-content/uploads/2017/08/wordlist.en_.txt)
 
 **Get-XKCDPassword.ps1**
 
@@ -58,8 +58,8 @@ function Get-XKCDPassword {
     
     $password = ""
     $wordlist = @{
-        de = "https://janikvonrotz.ch/wp-content/uploads/2017/08/wordlist.de_.txt"
-        en = "https://janikvonrotz.ch/wp-content/uploads/2017/08/wordlist.en_.txt"
+        de = "/wp-content/uploads/2017/08/wordlist.de_.txt"
+        en = "/wp-content/uploads/2017/08/wordlist.en_.txt"
     }
     
     switch($words) {

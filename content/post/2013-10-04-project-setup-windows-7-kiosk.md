@@ -60,7 +60,7 @@ The logged in user can...
     <li>and lock the computer, this was not supposed to be enabled, but I couldn't find a way yet to disable this feature.</li>
 </ul>
 
-[![Windows 7 Kiosk - Setup](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-7-Kiosk-Setup.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-7-Kiosk-Setup.png)
+[![Windows 7 Kiosk - Setup](/wp-content/uploads/2013/10/Windows-7-Kiosk-Setup.png)](/wp-content/uploads/2013/10/Windows-7-Kiosk-Setup.png)
 
 <h1>Setup</h1>
 
@@ -83,43 +83,43 @@ The following section shows the policies I've used to restrict the access to the
 
 Add a desktop wallpaper.
 
-[![Windows - Desktopbackground](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Desktopbackground.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Desktopbackground.png)
+[![Windows - Desktopbackground](/wp-content/uploads/2013/10/Windows-Desktopbackground.png)](/wp-content/uploads/2013/10/Windows-Desktopbackground.png)
 
-[![Windows - Taskbar Result](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Taskbar-Result.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Taskbar-Result.png)
+[![Windows - Taskbar Result](/wp-content/uploads/2013/10/Windows-Taskbar-Result.png)](/wp-content/uploads/2013/10/Windows-Taskbar-Result.png)
 
 <strong>Remove Desktop Icons</strong>
 
 Remove the default desktop icons.
 
-[![Windows - Remove Desktop Icons](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Remove-Desktop-Icons.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Remove-Desktop-Icons.png)
+[![Windows - Remove Desktop Icons](/wp-content/uploads/2013/10/Windows-Remove-Desktop-Icons.png)](/wp-content/uploads/2013/10/Windows-Remove-Desktop-Icons.png)
 
 <strong>Remove System Buttons</strong>
 
 Remove the start system buttons and the options showed after click Ctrl + Alt + Delete.
 
-[![Windows - Remove System Buttons](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Remove-System-Buttons.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Remove-System-Buttons.png)
+[![Windows - Remove System Buttons](/wp-content/uploads/2013/10/Windows-Remove-System-Buttons.png)](/wp-content/uploads/2013/10/Windows-Remove-System-Buttons.png)
 
 <strong>Restricted Start Menu</strong>
 
 Remove  the all items in the windows start menu.
 
-[![Windows - Restricted Start Menu](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Restricted-Start-Menu.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Restricted-Start-Menu.png)
+[![Windows - Restricted Start Menu](/wp-content/uploads/2013/10/Windows-Restricted-Start-Menu.png)](/wp-content/uploads/2013/10/Windows-Restricted-Start-Menu.png)
 
-[![Windows - Start Menu Result](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Start-Menu-Result.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Start-Menu-Result.png)
+[![Windows - Start Menu Result](/wp-content/uploads/2013/10/Windows-Start-Menu-Result.png)](/wp-content/uploads/2013/10/Windows-Start-Menu-Result.png)
 
 <strong>Restricted Taskbar</strong>
 
 Denie any possiblity to customize the windows taskbar.
 
-[![Windows - Restricted Taskbar](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Restricted-Taskbar.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Restricted-Taskbar.png)
+[![Windows - Restricted Taskbar](/wp-content/uploads/2013/10/Windows-Restricted-Taskbar.png)](/wp-content/uploads/2013/10/Windows-Restricted-Taskbar.png)
 
 <strong>SharePoint Icon</strong>
 
 Adds a simple icon to the desktop.
 
-[![Windows - SharePoint Icon](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-SharePoint-Icon.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-SharePoint-Icon.png)
+[![Windows - SharePoint Icon](/wp-content/uploads/2013/10/Windows-SharePoint-Icon.png)](/wp-content/uploads/2013/10/Windows-SharePoint-Icon.png)
 
-[![Windows - Icon Result](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Icon-Result.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Windows-Icon-Result.png)
+[![Windows - Icon Result](/wp-content/uploads/2013/10/Windows-Icon-Result.png)](/wp-content/uploads/2013/10/Windows-Icon-Result.png)
 
 <h2>Internet Explorer</h2>
 
@@ -127,18 +127,18 @@ Adds a simple icon to the desktop.
 
 Delete the browser cache on exit.
 
-[![Internet Explorer - Delete Cache](https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Delete-Cache.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Delete-Cache.png)
+[![Internet Explorer - Delete Cache](/wp-content/uploads/2013/10/Internet-Explorer-Delete-Cache.png)](/wp-content/uploads/2013/10/Internet-Explorer-Delete-Cache.png)
 
 <strong>Disable Save Passwords</strong>
 
 Internet explorer is not allowed to prompt for saving password information.
 
-[![Internet Explorer - Disable Save Passwords](https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Disable-Save-Passwords.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Disable-Save-Passwords.png)
+[![Internet Explorer - Disable Save Passwords](/wp-content/uploads/2013/10/Internet-Explorer-Disable-Save-Passwords.png)](/wp-content/uploads/2013/10/Internet-Explorer-Disable-Save-Passwords.png)
 
 <strong>Hide Menus</strong>
 
 Hide internet explorer menus.
 
-[![Internet Explorer - Hide Menus](https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Hide-Menus.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Hide-Menus.png)
+[![Internet Explorer - Hide Menus](/wp-content/uploads/2013/10/Internet-Explorer-Hide-Menus.png)](/wp-content/uploads/2013/10/Internet-Explorer-Hide-Menus.png)
 
-[![Internet Explorer - Result](https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Result.png)](https://janikvonrotz.ch/wp-content/uploads/2013/10/Internet-Explorer-Result.png)
+[![Internet Explorer - Result](/wp-content/uploads/2013/10/Internet-Explorer-Result.png)](/wp-content/uploads/2013/10/Internet-Explorer-Result.png)

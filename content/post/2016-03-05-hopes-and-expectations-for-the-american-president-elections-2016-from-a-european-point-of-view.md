@@ -8,7 +8,7 @@ guid: https://janikvonrotz.ch/?p=3852
 permalink: /2016/03/05/hopes-and-expectations-for-the-american-president-elections-2016-from-a-european-point-of-view/
 enclosure:
   - |
-    https://janikvonrotz.ch/wp-content/uploads/2016/03/Ronald-Drumpf.webm
+    /wp-content/uploads/2016/03/Ronald-Drumpf.webm
     23774428
     video/webm
     
@@ -28,7 +28,7 @@ tags:
 ---
 A visual manifestation of hopes and expectations for Donald Trumps presidential duties.
 
-<video width="680" height="384" controls><source src="https://janikvonrotz.ch/wp-content/uploads/2016/03/Ronald-Drumpf.webm" type="video/webm">Your browser does not support the video tag.</video>
+<video width="680" height="384" controls><source src="/wp-content/uploads/2016/03/Ronald-Drumpf.webm" type="video/webm">Your browser does not support the video tag.</video>
 
 Made me chuckle, so I had to share it.
 

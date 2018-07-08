@@ -36,26 +36,26 @@ Definitely a memory I'll never forget.
 
 This time I've added 2 more pictures to the usual 10, enjoy it:
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/07/Opera-House-20140704-1024x682.jpg" title="Of course I got a picture from the Sydney Opera House. The hole building is like a big bathroom, the walls and roffs a covered with bathroom tiles." >}}
+{{< figure src="/wp-content/uploads/2014/07/Opera-House-20140704-1024x682.jpg" title="Of course I got a picture from the Sydney Opera House. The hole building is like a big bathroom, the walls and roffs a covered with bathroom tiles." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/07/Hyde-Park-20140704-1024x682.jpg" title="A monument in Sydney Hyde Park. It's only beautiful there during the night time and evening." >}}
+{{< figure src="/wp-content/uploads/2014/07/Hyde-Park-20140704-1024x682.jpg" title="A monument in Sydney Hyde Park. It's only beautiful there during the night time and evening." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/07/Fire-Plant-20140706-1024x675.jpg" title="I forgot about the name of thais plant. Our guide in the blue mountains described this pine as the most australish plant. It seeds only due to bushfires." >}}
+{{< figure src="/wp-content/uploads/2014/07/Fire-Plant-20140706-1024x675.jpg" title="I forgot about the name of thais plant. Our guide in the blue mountains described this pine as the most australish plant. It seeds only due to bushfires." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/07/three-sisters-20140706-1024x682.jpg" title="The three sister peaks are very popular for the a ablue mountain sightseen. What most tourists don't know is the funny fairy tale about these cliffs. Look it up on Google. It's worth it." >}}
+{{< figure src="/wp-content/uploads/2014/07/three-sisters-20140706-1024x682.jpg" title="The three sister peaks are very popular for the a ablue mountain sightseen. What most tourists don't know is the funny fairy tale about these cliffs. Look it up on Google. It's worth it." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/07/Koala-20140709-1024x682.jpg" title="Koalas, they stink, don't do anything else than sleeping and eating. They're boring as fuck.  But they're so cute <3 Look at him!" >}}
+{{< figure src="/wp-content/uploads/2014/07/Koala-20140709-1024x682.jpg" title="Koalas, they stink, don't do anything else than sleeping and eating. They're boring as fuck.  But they're so cute <3 Look at him!" >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/07/Backflip-5-20140710-1024x682.jpg" title="Le me doing a backflip on a dune in the most boring town on the east coat. People only go to Rainbow beach for a Fraser island trip." >}}
+{{< figure src="/wp-content/uploads/2014/07/Backflip-5-20140710-1024x682.jpg" title="Le me doing a backflip on a dune in the most boring town on the east coat. People only go to Rainbow beach for a Fraser island trip." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/07/ship-wreck-20140713-1024x682.jpg" title="You'll find this ship wreck on Fraser island. The interesting thing is the funny story about how this ship ended up here." >}}
+{{< figure src="/wp-content/uploads/2014/07/ship-wreck-20140713-1024x682.jpg" title="You'll find this ship wreck on Fraser island. The interesting thing is the funny story about how this ship ended up here." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/07/Fraser-Island-20140713-1024x682.jpg" title="It's not cheap but an awesome adventure. The Fraser island are definitely worth seeing." >}}
+{{< figure src="/wp-content/uploads/2014/07/Fraser-Island-20140713-1024x682.jpg" title="It's not cheap but an awesome adventure. The Fraser island are definitely worth seeing." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/07/good-morning-20140722-1024x682.jpg" title="A beautiful morning in Cairns. This was the start of my 3 day Great Barrier Reef trip." >}}
+{{< figure src="/wp-content/uploads/2014/07/good-morning-20140722-1024x682.jpg" title="A beautiful morning in Cairns. This was the start of my 3 day Great Barrier Reef trip." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/07/withsunday-20140717-1024x682.jpg" title="The withsundays, some say it's the most beautiful beach in Australia." >}}
+{{< figure src="/wp-content/uploads/2014/07/withsunday-20140717-1024x682.jpg" title="The withsundays, some say it's the most beautiful beach in Australia." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/07/coral-garden-20140725-1024x768.jpg" title="A gorgeous coral scenery at Flynn Reef - Tracey's Bommie." >}}
+{{< figure src="/wp-content/uploads/2014/07/coral-garden-20140725-1024x768.jpg" title="A gorgeous coral scenery at Flynn Reef - Tracey's Bommie." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/07/Nemo-20140725-1024x768.jpg" title="Found him! Wasn't that difficult to find Nemo." >}}
+{{< figure src="/wp-content/uploads/2014/07/Nemo-20140725-1024x768.jpg" title="Found him! Wasn't that difficult to find Nemo." >}}

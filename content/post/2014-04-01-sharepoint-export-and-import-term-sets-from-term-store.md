@@ -47,7 +47,7 @@ $Metadata = @{
 	Tags = "powershell, function, sharepoint, managed, metadata, terms, export"
 	Project = ""
 	Author = "Janik von Rotz"
-	AuthorContact = "http://janikvonrotz.ch"
+	AuthorContact = "https://janikvonrotz.ch"
 	CreateDate = "2014-03-31"
 	LastEditDate = "2014-03-31"
 	Url = ""
@@ -258,4 +258,4 @@ With this function you can export the a specific term set into a CSV file or sho
 
 Here's an example for an export to gridview.
 
-[![Update Wiki Terms Excel from Termstore](https://janikvonrotz.ch/wp-content/uploads/2014/04/Update-Wiki-Terms-Excel-from-Termstore.gif)](https://janikvonrotz.ch/2014/04/01/sharepoint-export-and-import-term-sets-from-term-store/update-wiki-terms-excel-from-termstore/)
+[![Update Wiki Terms Excel from Termstore](/wp-content/uploads/2014/04/Update-Wiki-Terms-Excel-from-Termstore.gif)](https://janikvonrotz.ch/2014/04/01/sharepoint-export-and-import-term-sets-from-term-store/update-wiki-terms-excel-from-termstore/)

@@ -34,7 +34,7 @@ I had an issue where the UserPrincipalName from a user in the Office 365 windows
 <!--more-->
 
 First I checked the attribute flow of the synchronization job and as you can in see in picture below the DirSync service will update the attribute first by the users DN, then by it's sAMAccountname and at least by the UserPrincipalName .
-![DirSync UPN Config](https://janikvonrotz.ch/wp-content/uploads/2014/01/DirSync-UPN-Config-1024x558.jpg)
+![DirSync UPN Config](/wp-content/uploads/2014/01/DirSync-UPN-Config-1024x558.jpg)
 
 I'm not quite shure wether the sync problem is caused by this configuration or not, but I don't recommend to edit these rules, in order the get the UserPrincipalName synced correctly.
 

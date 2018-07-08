@@ -111,4 +111,4 @@ render(){
 
 The final result:
 
-![confirm modal react](https://janikvonrotz.ch/wp-content/uploads/2016/03/confirm-modal-react-300x97.png)
+![confirm modal react](/wp-content/uploads/2016/03/confirm-modal-react-300x97.png)

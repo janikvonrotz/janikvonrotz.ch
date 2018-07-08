@@ -23,7 +23,7 @@ The PowerShell ActiveDirectory modules from Microsoft are definitely a pain. Tha
 
 I would like to show you how I create and update my AD users.
 
-As base there's always a CSV file like this one: <a href="https://janikvonrotz.ch/wp-content/uploads/2013/08/TemplateADUsers.csv">TemplateADUsers</a>
+As base there's always a CSV file like this one: <a href="/wp-content/uploads/2013/08/TemplateADUsers.csv">TemplateADUsers</a>
 
 <!--more-->
 

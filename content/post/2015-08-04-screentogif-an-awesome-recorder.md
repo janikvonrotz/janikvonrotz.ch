@@ -27,4 +27,4 @@ I'm using ScreenToGif almost every day to create short and precise online documa
 
 Here's a gif recorded with ScreenToGif how I'm using ScreenToGif to create a gif of my desktop actions.
 
-![Screen To Gif Example](https://janikvonrotz.ch/wp-content/uploads/2015/08/ScreenToGif.gif)
+![Screen To Gif Example](/wp-content/uploads/2015/08/ScreenToGif.gif)

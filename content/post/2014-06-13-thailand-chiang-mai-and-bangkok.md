@@ -39,24 +39,24 @@ Almost 2 weeks passed since I've left home to go to Thailand. It's unbelievable 
 * Eaten the best meals so far
 * And much more ;)
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/Bamboo-rafting-20140606-1024x682.jpg" title="On this bamboo we've spent 4 hours." >}}
+{{< figure src="/wp-content/uploads/2014/06/Bamboo-rafting-20140606-1024x682.jpg" title="On this bamboo we've spent 4 hours." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/A-happy-elephant-20140605-1024x682.jpg" title="This elephant lives in the northern jungle." >}}
+{{< figure src="/wp-content/uploads/2014/06/A-happy-elephant-20140605-1024x682.jpg" title="This elephant lives in the northern jungle." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/Bangkok-city-jungle-20140610-1024x682.jpg" title="Just a gaze of the Bangkok city jungle." >}}
+{{< figure src="/wp-content/uploads/2014/06/Bangkok-city-jungle-20140610-1024x682.jpg" title="Just a gaze of the Bangkok city jungle." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/Boat-ride-20140612-1024x682.jpg" title="Boat ride next to the floating market." >}}
+{{< figure src="/wp-content/uploads/2014/06/Boat-ride-20140612-1024x682.jpg" title="Boat ride next to the floating market." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/Chinatown-in-Bangkok-20140610-1024x682.jpg" title="Chinatown in Bangkok a very busy place." >}}
+{{< figure src="/wp-content/uploads/2014/06/Chinatown-in-Bangkok-20140610-1024x682.jpg" title="Chinatown in Bangkok a very busy place." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/the-tiger-kingdom-20140603-1024x682.jpg" title="He's thinking about meat." >}}
+{{< figure src="/wp-content/uploads/2014/06/the-tiger-kingdom-20140603-1024x682.jpg" title="He's thinking about meat." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/The-doi-suthep-temple-20140608-1024x682.jpg" title="The doi suthep temple is on top of an hill next to Chiang Mai city. You'll get the most beautiful view from up there." >}}
+{{< figure src="/wp-content/uploads/2014/06/The-doi-suthep-temple-20140608-1024x682.jpg" title="The doi suthep temple is on top of an hill next to Chiang Mai city. You'll get the most beautiful view from up there." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/Northern-hill-tribe-village-20140604-1024x682.jpg" title="In this village of the northern hill tribes we spent our first night. A beautiful and peaceful place." >}}
+{{< figure src="/wp-content/uploads/2014/06/Northern-hill-tribe-village-20140604-1024x682.jpg" title="In this village of the northern hill tribes we spent our first night. A beautiful and peaceful place." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/Me-doing-flips-20140611-1024x682.jpg" title="The temples are the best places to do parkour." >}}
+{{< figure src="/wp-content/uploads/2014/06/Me-doing-flips-20140611-1024x682.jpg" title="The temples are the best places to do parkour." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/Eating-scorpion-20140610-1024x682.jpg" title="Tasted like crisps. Not bad at all." >}}
+{{< figure src="/wp-content/uploads/2014/06/Eating-scorpion-20140610-1024x682.jpg" title="Tasted like crisps. Not bad at all." >}}
 
 If you d'like to get a full resolution version of these pictures you can <a href="https://janikvonrotz.ch/contact/" title="contact">contact</a> at any time ;)

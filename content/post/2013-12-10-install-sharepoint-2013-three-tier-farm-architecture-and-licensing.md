@@ -23,7 +23,7 @@ tags:
 ---
 *This post of is part of my [Install SharePoint 2013 Three-tier Farm](https://janikvonrotz.ch/projects/install-sharepoint-2013-three-tier-farm/) project.*
 
-[![Network Scheme SharePoint Farm](https://janikvonrotz.ch/wp-content/uploads/2013/12/Network-Scheme-SharePoint-Farm.png)](https://janikvonrotz.ch/wp-content/uploads/2013/12/Network-Scheme-SharePoint-Farm.png)
+[![Network Scheme SharePoint Farm](/wp-content/uploads/2013/12/Network-Scheme-SharePoint-Farm.png)](/wp-content/uploads/2013/12/Network-Scheme-SharePoint-Farm.png)
 
 As the server architecture is already given in this case, I'm only going to show you the hardware requirements of those servers.
 

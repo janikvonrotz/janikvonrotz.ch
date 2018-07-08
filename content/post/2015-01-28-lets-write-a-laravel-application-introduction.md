@@ -32,7 +32,7 @@ I'm going to develop a [Laravel](http://laravel.com/) application with my friend
 As I've never used Laravel or another php framework before, I will share my first time experience here on my blog.
 Whenever I have to learn about a new technology I'm looking for some basic books and videos. For Laravel I've found the perfect beginners eBook, where you'll learn the most fundamental basics.
 
-**<a href="https://janikvonrotz.ch/wp-content/uploads/2015/01/Getting-Started-with-Laravel-4.pdf">Download - Getting Started with Laravel 4</a>**
+**<a href="/wp-content/uploads/2015/01/Getting-Started-with-Laravel-4.pdf">Download - Getting Started with Laravel 4</a>**
 
 And I also recommend to watch the YouTube videos from phpacademy. They'll tell you how you can build a simple blog engine from scratch.
 

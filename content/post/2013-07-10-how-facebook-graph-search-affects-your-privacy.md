@@ -20,4 +20,4 @@ via: <a href="https://t3n.de/news/privacy-einstellungen-solltet-461777/">https:
 
 <!--more-->
 
-![Facebook Graph Search Privacy](https://janikvonrotz.ch/wp-content/uploads/2013/07/Facebook-Graph-Search-916x2908.png)
+![Facebook Graph Search Privacy](/wp-content/uploads/2013/07/Facebook-Graph-Search-916x2908.png)

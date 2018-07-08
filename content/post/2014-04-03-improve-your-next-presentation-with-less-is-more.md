@@ -24,6 +24,6 @@ The less is more approach is a simple improvement strategy for your next present
 <!--more-->
 The <a href="http://darkhorseanalytics.com/blog/">Darkhorse Analytics company</a> has created some short animations about this strategy.
 
-[![Remove to Improve Clear Table](https://janikvonrotz.ch/wp-content/uploads/2014/04/Remove-to-Improve-Clear-Table.gif)](https://janikvonrotz.ch/2014/04/03/improve-your-next-presentation-with-less-is-more/remove-to-improve-clear-table/)
+[![Remove to Improve Clear Table](/wp-content/uploads/2014/04/Remove-to-Improve-Clear-Table.gif)](https://janikvonrotz.ch/2014/04/03/improve-your-next-presentation-with-less-is-more/remove-to-improve-clear-table/)
 
-[![Remove to Improve Data Ink](https://janikvonrotz.ch/wp-content/uploads/2014/04/Remove-to-Improve-Data-Ink.gif)](https://janikvonrotz.ch/2014/04/03/improve-your-next-presentation-with-less-is-more/remove-to-improve-data-ink/)
+[![Remove to Improve Data Ink](/wp-content/uploads/2014/04/Remove-to-Improve-Data-Ink.gif)](https://janikvonrotz.ch/2014/04/03/improve-your-next-presentation-with-less-is-more/remove-to-improve-data-ink/)

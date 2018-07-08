@@ -12,7 +12,7 @@ image: /wp-content/uploads/2014/04/HHVM-Logo.png
 categories:
   - HHVM
 ---
-*This post is part of my [Your own Virtual Private Server hosting solution](http://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
+*This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/10816750](https://gist.github.com/10816750).* 
 
 # Introduction

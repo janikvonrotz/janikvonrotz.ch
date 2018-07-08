@@ -47,7 +47,7 @@ $Metadata = @{
 	Tags = "powershell, sharepoint, update, user, alerts"
 	Project = ""
 	Author = "Janik von Rotz"
-	AuthorContact = "http://janikvonrotz.ch"
+	AuthorContact = "https://janikvonrotz.ch"
 	CreateDate = "2014-01-02"
 	LastEditDate = "2014-01-02"
 	Url = ""
@@ -251,7 +251,7 @@ try{
 
 The configuration attribute ListViewName and FilterIndex allows me to change to create an alert for an specific view.
 
-![SharePoint Create Alert on List View](https://janikvonrotz.ch/wp-content/uploads/2014/01/SharePoint-Create-Alert-on-List-View-746x1024.jpg)
+![SharePoint Create Alert on List View](/wp-content/uploads/2014/01/SharePoint-Create-Alert-on-List-View-746x1024.jpg)
 
 <h1>Requirements</h1>
 

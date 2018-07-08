@@ -89,4 +89,4 @@ try {
 
 And finally the log entry opened in the CMTrace viewer:
 
-[![Untitled](https://janikvonrotz.ch/wp-content/uploads/2017/10/CMTrace-example-log.png)](https://janikvonrotz.ch/wp-content/uploads/2017/10/CMTrace-example-log.png)
+[![Untitled](/wp-content/uploads/2017/10/CMTrace-example-log.png)](/wp-content/uploads/2017/10/CMTrace-example-log.png)

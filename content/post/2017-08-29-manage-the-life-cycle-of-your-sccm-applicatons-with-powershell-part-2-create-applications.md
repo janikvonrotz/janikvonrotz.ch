@@ -399,7 +399,7 @@ if($Uninstall) {
 
 The script creates all assets required to deploy an application and reduces the probability of misconfiguration drastically. Here's a screenshot of the assets for the VLC player package:
 
-[![Untitled](https://janikvonrotz.ch/wp-content/uploads/2017/08/SCCM-application-assets.png)](https://janikvonrotz.ch/wp-content/uploads/2017/08/SCCM-application-assets.png)
+[![Untitled](/wp-content/uploads/2017/08/SCCM-application-assets.png)](/wp-content/uploads/2017/08/SCCM-application-assets.png)
 
 The application package has PowerShell deployment type. Instead of an exectable a PowerShell is called to install the Application. Using a script allows to make additional configurations before and after the installation or uinstallation of the package.
 

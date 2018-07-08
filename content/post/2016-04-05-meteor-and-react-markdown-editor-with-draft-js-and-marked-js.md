@@ -42,7 +42,7 @@ Optionally: File upload with Meteor and FS Collection.
 <!--more-->
 Preview:
 
-![MarkdownEditor](https://janikvonrotz.ch/wp-content/uploads/2016/04/MarkdownEditor.gif)
+![MarkdownEditor](/wp-content/uploads/2016/04/MarkdownEditor.gif)
 
 So let's get started. I assume you're already running an application with React and Bootstrap and know how you can add new packages from npm to your project.
 

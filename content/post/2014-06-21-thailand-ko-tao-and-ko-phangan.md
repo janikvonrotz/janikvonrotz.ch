@@ -37,22 +37,22 @@ Apart from the moon parties (every six days for every phase of the moon) Ko Phan
 
 To round up this story some more pictures:
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/backflip-number-2-20140619-1024x682.jpg" title="A backfip again." >}}
+{{< figure src="/wp-content/uploads/2014/06/backflip-number-2-20140619-1024x682.jpg" title="A backfip again." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/boats-in-Ko-Tao-20140617-1024x682.jpg" title="Ko Tao is the divers place in Thailand. These boats transport the divers to the bigger diving boats out in the deep water." >}}
+{{< figure src="/wp-content/uploads/2014/06/boats-in-Ko-Tao-20140617-1024x682.jpg" title="Ko Tao is the divers place in Thailand. These boats transport the divers to the bigger diving boats out in the deep water." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/into-the-jungle-20140617-1024x682.jpg" title="You'll find this jungle entry on top the highest hill in Ko Tao. Very beautiful." >}}
+{{< figure src="/wp-content/uploads/2014/06/into-the-jungle-20140617-1024x682.jpg" title="You'll find this jungle entry on top the highest hill in Ko Tao. Very beautiful." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/Ko-Tao-20140617-1024x682.jpg" title="The town center of Ko Tao. Sombody had a leak in the apartment." >}}
+{{< figure src="/wp-content/uploads/2014/06/Ko-Tao-20140617-1024x682.jpg" title="The town center of Ko Tao. Sombody had a leak in the apartment." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/lizard-20140613-1024x682.jpg" title="This type of lizards can be as tall as a crocodile. They move freely in the cities." >}}
+{{< figure src="/wp-content/uploads/2014/06/lizard-20140613-1024x682.jpg" title="This type of lizards can be as tall as a crocodile. They move freely in the cities." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/scooter-riding-20140620-1024x682.jpg" title="scooter riding in Ko Phangan is much more relaxed than in Chiang Mai and Bangkok." >}}
+{{< figure src="/wp-content/uploads/2014/06/scooter-riding-20140620-1024x682.jpg" title="scooter riding in Ko Phangan is much more relaxed than in Chiang Mai and Bangkok." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/sunset-20140618-1024x682.jpg" title="It's getting dark in Ko Phangan." >}}
+{{< figure src="/wp-content/uploads/2014/06/sunset-20140618-1024x682.jpg" title="It's getting dark in Ko Phangan." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/the-flagship-20140620-1024x682.jpg" title="This flagship is placed in pool next to the harbor in Ko Phangan. It seems that nobody is aware of the purpose of this exhibition." >}}
+{{< figure src="/wp-content/uploads/2014/06/the-flagship-20140620-1024x682.jpg" title="This flagship is placed in pool next to the harbor in Ko Phangan. It seems that nobody is aware of the purpose of this exhibition." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/the-thai-door-20140613-1024x682.jpg" title="The typical thai door. A helmet for the scooter. Drinking waater from the store. Religious tag to please the spirits. Some herbs for nice meal. A chair to relax." >}}
+{{< figure src="/wp-content/uploads/2014/06/the-thai-door-20140613-1024x682.jpg" title="The typical thai door. A helmet for the scooter. Drinking waater from the store. Religious tag to please the spirits. Some herbs for nice meal. A chair to relax." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/voyeurism-20140619-1024x682.jpg" title="This sneaky guy spys on the people at the beach." >}}
+{{< figure src="/wp-content/uploads/2014/06/voyeurism-20140619-1024x682.jpg" title="This sneaky guy spys on the people at the beach." >}}

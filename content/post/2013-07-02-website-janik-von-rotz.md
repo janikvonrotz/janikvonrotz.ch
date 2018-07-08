@@ -44,28 +44,28 @@ For this project I've used these Typo3 extensions:
 
 ## Screenshots
 
-![homepage janikvonrotz 1](https://janikvonrotz.ch/wp-content/uploads/2013/07/homepage-janikvonrotz-1.png)
+![homepage janikvonrotz 1](/wp-content/uploads/2013/07/homepage-janikvonrotz-1.png)
 
-![homepage janikvonrotz 15](https://janikvonrotz.ch/wp-content/uploads/2013/07/homepage-janikvonrotz-15.png)
+![homepage janikvonrotz 15](/wp-content/uploads/2013/07/homepage-janikvonrotz-15.png)
 
-![homepage janikvonrotz 12](https://janikvonrotz.ch/wp-content/uploads/2013/07/homepage-janikvonrotz-12-1024x486.png)
+![homepage janikvonrotz 12](/wp-content/uploads/2013/07/homepage-janikvonrotz-12-1024x486.png)
 
-![homepage janikvonrotz 11](https://janikvonrotz.ch/wp-content/uploads/2013/07/homepage-janikvonrotz-11-1024x390.png)
+![homepage janikvonrotz 11](/wp-content/uploads/2013/07/homepage-janikvonrotz-11-1024x390.png)
 
-![homepage janikvonrotz 9](https://janikvonrotz.ch/wp-content/uploads/2013/07/homepage-janikvonrotz-9.png)
+![homepage janikvonrotz 9](/wp-content/uploads/2013/07/homepage-janikvonrotz-9.png)
 
-![homepage janikvonrotz 10](https://janikvonrotz.ch/wp-content/uploads/2013/07/homepage-janikvonrotz-10-1024x784.png)
+![homepage janikvonrotz 10](/wp-content/uploads/2013/07/homepage-janikvonrotz-10-1024x784.png)
 
-![homepage janikvonrotz 8](https://janikvonrotz.ch/wp-content/uploads/2013/07/homepage-janikvonrotz-8.png)
+![homepage janikvonrotz 8](/wp-content/uploads/2013/07/homepage-janikvonrotz-8.png)
 
-![homepage janikvonrotz 7](https://janikvonrotz.ch/wp-content/uploads/2013/07/homepage-janikvonrotz-7.png)
+![homepage janikvonrotz 7](/wp-content/uploads/2013/07/homepage-janikvonrotz-7.png)
 
-![homepage janikvonrotz 6](https://janikvonrotz.ch/wp-content/uploads/2013/07/homepage-janikvonrotz-6.png)
+![homepage janikvonrotz 6](/wp-content/uploads/2013/07/homepage-janikvonrotz-6.png)
 
-![homepage janikvonrotz 4](https://janikvonrotz.ch/wp-content/uploads/2013/07/homepage-janikvonrotz-4.png)
+![homepage janikvonrotz 4](/wp-content/uploads/2013/07/homepage-janikvonrotz-4.png)
 
-![homepage janikvonrotz 5](https://janikvonrotz.ch/wp-content/uploads/2013/07/homepage-janikvonrotz-5.png)
+![homepage janikvonrotz 5](/wp-content/uploads/2013/07/homepage-janikvonrotz-5.png)
 
-![homepage janikvonrotz 3](https://janikvonrotz.ch/wp-content/uploads/2013/07/homepage-janikvonrotz-3.png)
+![homepage janikvonrotz 3](/wp-content/uploads/2013/07/homepage-janikvonrotz-3.png)
 
-![homepage janikvonrotz 2](https://janikvonrotz.ch/wp-content/uploads/2013/07/homepage-janikvonrotz-2.png)
+![homepage janikvonrotz 2](/wp-content/uploads/2013/07/homepage-janikvonrotz-2.png)

@@ -40,7 +40,7 @@ In web development there are tons of programs and tools and due to that also com
 Luckily dependency handling got a lot easier. For my Laravel project setup we will use 3 different package managers.
 Every package manager of course manages a different resource, we will use composer for php packages, npm for everything related to Node.js and Bower for web packages.
 <!--more-->
-![Web Technologies](https://janikvonrotz.ch/wp-content/uploads/2015/01/Web-Technologies-1024x766.png)
+![Web Technologies](/wp-content/uploads/2015/01/Web-Technologies-1024x766.png)
 
 By following the instructions of this guide you'll get a very advanced Laravel project template with the following features:
 
@@ -233,7 +233,7 @@ In order to make use of the Live Reload feature, you can either add this JavaScr
 
 Or (what I recommend) download and install following blade template files.
 
-[Download template files](https://janikvonrotz.ch/wp-content/uploads/2015/01/Laravel-default-template.zip) or get the latest version [here](https://gist.github.com/janikvonrotz/68f4da6bc6a4374d9f9b).
+[Download template files](/wp-content/uploads/2015/01/Laravel-default-template.zip) or get the latest version [here](https://gist.github.com/janikvonrotz/68f4da6bc6a4374d9f9b).
 
 Add these files to a new folder called default in the app views folder `<project name>\app\views\default`
 

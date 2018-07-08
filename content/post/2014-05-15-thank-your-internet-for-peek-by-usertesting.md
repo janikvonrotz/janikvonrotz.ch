@@ -8,7 +8,7 @@ guid: https://janikvonrotz.ch/?p=2254
 permalink: /2014/05/15/thank-your-internet-for-peek-by-usertesting/
 enclosure:
   - |
-    https://janikvonrotz.ch/wp-content/uploads/2014/05/UserTesting-Peek-my-website.mp4
+    /wp-content/uploads/2014/05/UserTesting-Peek-my-website.mp4
     17318009
     video/mp4
     
@@ -37,6 +37,6 @@ I have to admit, first I didn't really believe that there will be real person vi
 
 Here's the video done by a random guy from the internet: 
 <!--more-->
-<video width="1280" height="716" controls><source src="https://janikvonrotz.ch/wp-content/uploads/2014/05/UserTesting-Peek-my-website.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+<video width="1280" height="716" controls><source src="/wp-content/uploads/2014/05/UserTesting-Peek-my-website.mp4" type="video/mp4">Your browser does not support the video tag.</video>
 
 Thank you UserTesting for this awesome service!

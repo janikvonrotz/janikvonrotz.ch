@@ -24,4 +24,4 @@ tags:
 ---
 This is the most accurate explanation I've found so far. Thanks to [xkcd](http://xkcd.com/).
 <!--more-->
-![heartbleed explanation](https://janikvonrotz.ch/wp-content/uploads/2014/04/heartbleed_explanation.png)
+![heartbleed explanation](/wp-content/uploads/2014/04/heartbleed_explanation.png)

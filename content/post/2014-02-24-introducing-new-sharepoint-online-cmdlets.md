@@ -77,6 +77,6 @@ In order to use these commands you have to install the Managed .NET Client-Side 
     <li>`<a href="https://github.com/janikvonrotz/PowerShell-PowerUp/tree/master/functions/SharePoint%20Online/Test-SPOField.ps1">Test-SPOField</a>`</li>
 </ul>
 <h2>Example</h2>
-[![SPO Example](https://janikvonrotz.ch/wp-content/uploads/2014/02/SPO-Example.jpg)](https://janikvonrotz.ch/wp-content/uploads/2014/02/SPO-Example.jpg)
+[![SPO Example](/wp-content/uploads/2014/02/SPO-Example.jpg)](/wp-content/uploads/2014/02/SPO-Example.jpg)
 
 </div>

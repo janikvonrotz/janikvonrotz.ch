@@ -8,7 +8,7 @@ guid: https://janikvonrotz.ch/?p=2383
 permalink: /2014/05/30/my-dogecoin-experience-mining-server/
 enclosure:
   - |
-    https://janikvonrotz.ch/wp-content/uploads/2014/05/My-Dogecoin-mining-server.mp4
+    /wp-content/uploads/2014/05/My-Dogecoin-mining-server.mp4
     12371367
     video/mp4
     
@@ -40,7 +40,7 @@ This time I show you the finished mining rig and summarize the most important co
 <!--more-->
 # My mining rig
 
-<video width="1280" height="720" controls><source src="https://janikvonrotz.ch/wp-content/uploads/2014/05/My-Dogecoin-mining-server.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+<video width="1280" height="720" controls><source src="/wp-content/uploads/2014/05/My-Dogecoin-mining-server.mp4" type="video/mp4">Your browser does not support the video tag.</video>
 
 # Basic Setup
 

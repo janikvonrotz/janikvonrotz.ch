@@ -55,4 +55,4 @@ node-debug app.js
 
 Your browser will open the developer console on the debugging page now.
 
-[![node inspector example](https://janikvonrotz.ch/wp-content/uploads/2014/02/node-inspector-example.jpg)](https://janikvonrotz.ch/wp-content/uploads/2014/02/node-inspector-example.jpg)PS: It is even possible to edit the code live in the browser!
+[![node inspector example](/wp-content/uploads/2014/02/node-inspector-example.jpg)](/wp-content/uploads/2014/02/node-inspector-example.jpg)PS: It is even possible to edit the code live in the browser!

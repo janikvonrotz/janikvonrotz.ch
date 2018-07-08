@@ -32,7 +32,7 @@ In addition I save important documents such as vouchers or IDs in my [OneDrive](
 
 In OneNote I've made a timeline with the most important events, stops and flights:
 
-[![Traveling Summer 2014 - Time Table](https://janikvonrotz.ch/wp-content/uploads/2014/05/Traveling-Summer-2014-Time-Table.png)](https://janikvonrotz.ch/wp-content/uploads/2014/05/Traveling-Summer-2014-Time-Table.png)
+[![Traveling Summer 2014 - Time Table](/wp-content/uploads/2014/05/Traveling-Summer-2014-Time-Table.png)](/wp-content/uploads/2014/05/Traveling-Summer-2014-Time-Table.png)
 
 Based on this table my [travel agency](http://www.statravel.com/) booked the flights and events. I was amazed that they could book the flights without an exception according to my table, I didn't even had to rewrite it once.
 

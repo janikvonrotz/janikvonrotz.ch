@@ -23,7 +23,7 @@ tags:
   - package
   - run
 ---
-*This post is part of my [Your own Virtual Private Server hosting solution](http://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
+*This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/9347463](https://gist.github.com/9347463).*  
 
 # Introduction
@@ -32,7 +32,7 @@ A simple CLI tool for ensuring that a given script runs continuously (i.e. forev
 <!--more-->
 # Requirements
 
-* [Ubuntu server](http://janikvonrotz.ch/2014/03/13/deploy-ubuntu-server/)
+* [Ubuntu server](https://janikvonrotz.ch/2014/03/13/deploy-ubuntu-server/)
 * [Node.js](https://janikvonrotz.ch/2014/03/27/install-node/)
 
 # Installation

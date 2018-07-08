@@ -182,7 +182,7 @@ export default Router
 
 As you can see the `isAllowed` function is used for all scenarios.
 
-[![Untitled](https://janikvonrotz.ch/wp-content/uploads/2017/05/Meteor-React-component-access-control.gif)](https://janikvonrotz.ch/wp-content/uploads/2017/05/Meteor-React-component-access-control.gif)
+[![Untitled](/wp-content/uploads/2017/05/Meteor-React-component-access-control.gif)](/wp-content/uploads/2017/05/Meteor-React-component-access-control.gif)
 
 Do you like this solution? Leave a comment and tell my more.
 

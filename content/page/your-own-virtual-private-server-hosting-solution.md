@@ -53,7 +53,7 @@ The installation of the VPS is built up according to a modular system. Every mod
 
 **Server installation**
 
-* [Ubuntu server](http://janikvonrotz.ch/2014/03/13/deploy-ubuntu-server/)
+* [Ubuntu server](https://janikvonrotz.ch/2014/03/13/deploy-ubuntu-server/)
 * [Update Ubuntu Server](https://janikvonrotz.ch/2014/03/24/update-ubuntu-server/)
 * [SSH and network hardening](https://janikvonrotz.ch/2014/03/21/ssh-and-network-hardening/)
 

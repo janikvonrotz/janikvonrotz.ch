@@ -8,7 +8,7 @@ guid: https://janikvonrotz.ch/?p=923
 permalink: /2014/01/10/nothing-to-do-here-cockroach-in-the-ear/
 enclosure:
   - |
-    https://janikvonrotz.ch/wp-content/uploads/2014/01/cockroach-in-the-ear.mp3
+    /wp-content/uploads/2014/01/cockroach-in-the-ear.mp3
     11226624
     audio/mpeg
     
@@ -26,4 +26,4 @@ tags:
   - interview
   - nothing
 ---
-https://janikvonrotz.ch/wp-content/uploads/2014/01/cockroach-in-the-ear.mp3
+/wp-content/uploads/2014/01/cockroach-in-the-ear.mp3

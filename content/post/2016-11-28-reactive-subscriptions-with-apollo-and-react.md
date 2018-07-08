@@ -37,7 +37,7 @@ As reference you can have look at this project: [Meteor Apollo Accounts Example]
 
 The concept of GraphQL subscriptions in Apollo:
 
-![apollo-subscription](https://janikvonrotz.ch/wp-content/uploads/2016/11/Apollo-Subscription.png)
+![apollo-subscription](/wp-content/uploads/2016/11/Apollo-Subscription.png)
 
 ## Install project requirements
 
@@ -267,7 +267,7 @@ There is nothing more to do. We can now subscribe to a publication and receive d
 
 Finally I give an example of a modified React component that is able to mutate a post model list, make subscriptions and receive emitted events from a publication. 
 
-![postlist-react-component-apollo-subscription](https://janikvonrotz.ch/wp-content/uploads/2016/11/PostList-React-component-Apollo-subscription.gif)
+![postlist-react-component-apollo-subscription](/wp-content/uploads/2016/11/PostList-React-component-Apollo-subscription.gif)
 
 **client/PostList.js**
 

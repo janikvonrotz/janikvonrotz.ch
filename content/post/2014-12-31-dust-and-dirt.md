@@ -37,24 +37,24 @@ With some friends I've seen a couple of these dirty und dusty places and made to
 
 You can download these picture in full resolution from my flick account (checkout the contact page for a link).
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/12/windows-1024x682.jpg" title="Son! Can you open the windows, we need some fresh air." >}}
+{{< figure src="/wp-content/uploads/2014/12/windows-1024x682.jpg" title="Son! Can you open the windows, we need some fresh air." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/12/holes-1024x682.jpg" title="Dust and dirt covers them all." >}}
+{{< figure src="/wp-content/uploads/2014/12/holes-1024x682.jpg" title="Dust and dirt covers them all." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/12/machines-1024x682.jpg" title="Some old machines." >}}
+{{< figure src="/wp-content/uploads/2014/12/machines-1024x682.jpg" title="Some old machines." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/12/brick-factory-1024x682.jpg" title="This was by far the most awesome place I've seen." >}}
+{{< figure src="/wp-content/uploads/2014/12/brick-factory-1024x682.jpg" title="This was by far the most awesome place I've seen." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/12/brick-oven-1024x681.jpg" title="This is a brick oven and it looks kinda creepy." >}}
+{{< figure src="/wp-content/uploads/2014/12/brick-oven-1024x681.jpg" title="This is a brick oven and it looks kinda creepy." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/12/picuture-of-a-place-in-switzerland-1024x682.jpg" title="Found this picture in an old villa next to old documents and news magazines." >}}
+{{< figure src="/wp-content/uploads/2014/12/picuture-of-a-place-in-switzerland-1024x682.jpg" title="Found this picture in an old villa next to old documents and news magazines." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/12/fresh-air-1024x682.jpg" title="A weird angle that had to be captured." >}}
+{{< figure src="/wp-content/uploads/2014/12/fresh-air-1024x682.jpg" title="A weird angle that had to be captured." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/12/hungry-1024x682.jpg" title="Time is eathing the house." >}}
+{{< figure src="/wp-content/uploads/2014/12/hungry-1024x682.jpg" title="Time is eathing the house." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/12/Banksy-who-1024x682.jpg" title="Who is that Banksy guy again?" >}}
+{{< figure src="/wp-content/uploads/2014/12/Banksy-who-1024x682.jpg" title="Who is that Banksy guy again?" >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/12/windows-2-1024x682.jpg" title="What a beautiful view." >}}
+{{< figure src="/wp-content/uploads/2014/12/windows-2-1024x682.jpg" title="What a beautiful view." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/12/fast-lane-1024x682.jpg" title="I threw tons of bricks down these stairs, sounded like the hole house is breaking." >}}
+{{< figure src="/wp-content/uploads/2014/12/fast-lane-1024x682.jpg" title="I threw tons of bricks down these stairs, sounded like the hole house is breaking." >}}

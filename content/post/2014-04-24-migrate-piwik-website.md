@@ -20,7 +20,7 @@ tags:
   - server
   - website
 ---
-*This post is part of my [Your own Virtual Private Server hosting solution](http://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
+*This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/9640572](https://gist.github.com/9640572).*
 
 # Introduction

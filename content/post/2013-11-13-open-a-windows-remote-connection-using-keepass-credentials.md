@@ -33,8 +33,8 @@ cmd://"C:\Windows\System32\cmd.exe" /c cmdkey.exe /generic:TERMSRV/{S:SERVER} /u
 
 Latest version of this code snippet: [https://gist.github.com/7449352](https://gist.github.com/7449352)
 
-[![KeePass Url RDP Connection 1](https://janikvonrotz.ch/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-1.png)](https://janikvonrotz.ch/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-1.png)
+[![KeePass Url RDP Connection 1](/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-1.png)](/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-1.png)
 
-[![KeePass Url RDP Connection 2](https://janikvonrotz.ch/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-2.png)](https://janikvonrotz.ch/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-2.png)
+[![KeePass Url RDP Connection 2](/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-2.png)](/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-2.png)
 
-[![KeePass Url RDP Connection 3](https://janikvonrotz.ch/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-3.png)](https://janikvonrotz.ch/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-3.png)
+[![KeePass Url RDP Connection 3](/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-3.png)](/wp-content/uploads/2013/11/KeePass-Url-RDP-Connection-3.png)

@@ -27,7 +27,7 @@ tags:
 ---
 To alter the Exchange owa policies you can access them Using the Office365 administration site and navigate to the Exchange section. In the default policy editor are only limited options available.
 
-<p style="text-align: center;">![owa policy settings](https://janikvonrotz.ch/wp-content/uploads/2013/09/2013-09-09-09_45_09-Outlook-Web-App-Postfachrichtlinie.png)</p>
+<p style="text-align: center;">![owa policy settings](/wp-content/uploads/2013/09/2013-09-09-09_45_09-Outlook-Web-App-Postfachrichtlinie.png)</p>
 
 <!--more-->
 

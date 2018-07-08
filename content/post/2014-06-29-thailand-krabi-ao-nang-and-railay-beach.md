@@ -33,22 +33,22 @@ Yesterday I left Thailand and went to Penang in Malaysia. I wished I had more ti
 
 And of course some more pictures:
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/another-backflip-20140624-1024x682.jpg" title="Another backflip with a beautiful background." >}}
+{{< figure src="/wp-content/uploads/2014/06/another-backflip-20140624-1024x682.jpg" title="Another backflip with a beautiful background." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/boats-near-Railay-20140624-1024x682.jpg" title="With these boats you get from Ao Nang beach to Railay beach." >}}
+{{< figure src="/wp-content/uploads/2014/06/boats-near-Railay-20140624-1024x682.jpg" title="With these boats you get from Ao Nang beach to Railay beach." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/Free-Wifi-20140626-1024x682.jpg" title="This is the first thing you'll see after a exhausting climb up of over 1200 steps to the tiger temple. Free Wifi seems to be more important than water." >}}
+{{< figure src="/wp-content/uploads/2014/06/Free-Wifi-20140626-1024x682.jpg" title="This is the first thing you'll see after a exhausting climb up of over 1200 steps to the tiger temple. Free Wifi seems to be more important than water." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/monkey-20140626-1024x682.jpg" title="He thinks about bananas." >}}
+{{< figure src="/wp-content/uploads/2014/06/monkey-20140626-1024x682.jpg" title="He thinks about bananas." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/Railay-beach-20140624-1024x682.jpg" title="Just some trees at the Railay pier." >}}
+{{< figure src="/wp-content/uploads/2014/06/Railay-beach-20140624-1024x682.jpg" title="Just some trees at the Railay pier." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/slumber-party-20140624-1024x682.jpg" title="The slumber party guesthouse isn't that bad." >}}
+{{< figure src="/wp-content/uploads/2014/06/slumber-party-20140624-1024x682.jpg" title="The slumber party guesthouse isn't that bad." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/small-pack-20140626-1024x682.jpg" title="Thais don't like big packs of chocolate or other sweets. These pack holds about 10 M&Ms." >}}
+{{< figure src="/wp-content/uploads/2014/06/small-pack-20140626-1024x682.jpg" title="Thais don't like big packs of chocolate or other sweets. These pack holds about 10 M&Ms." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/spider-20140627-1024x682.jpg" title="This spider was as big as my hand. Really freaked me out." >}}
+{{< figure src="/wp-content/uploads/2014/06/spider-20140627-1024x682.jpg" title="This spider was as big as my hand. Really freaked me out." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/Tiger-Cave-Temple-20140626-1024x682.jpg" title="This guys hold a big buddha statue on top of the tiger cave temple hill." >}}
+{{< figure src="/wp-content/uploads/2014/06/Tiger-Cave-Temple-20140626-1024x682.jpg" title="This guys hold a big buddha statue on top of the tiger cave temple hill." >}}
 
-{{< figure src="https://janikvonrotz.ch/wp-content/uploads/2014/06/viewpoint-Railay-20140624-1024x682.jpg" title="In Railay beach is a beautiful viewpoint where you can see the hole island." >}}
+{{< figure src="/wp-content/uploads/2014/06/viewpoint-Railay-20140624-1024x682.jpg" title="In Railay beach is a beautiful viewpoint where you can see the hole island." >}}

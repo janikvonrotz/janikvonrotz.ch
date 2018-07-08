@@ -8,7 +8,7 @@ guid: https://janikvonrotz.ch/?page_id=3554
 specific_page_layout:
   - default-sidebar
 ---
-[![Untitled](https://janikvonrotz.ch/wp-content/uploads/2015/09/profile-300x300.jpg)](https://janikvonrotz.ch/wp-content/uploads/2015/09/profile.jpg)
+[![Untitled](/wp-content/uploads/2015/09/profile-300x300.jpg)](/wp-content/uploads/2015/09/profile.jpg)
 
 Hi, my name is Janik von Rotz. I’m a system engineer and software developer from Switzerland and have got a BSc in Business and Information Technology.
 
@@ -55,7 +55,7 @@ Computer Scientist (full-time)
 - Developed system automation solutions with PowerShell.
 - Advised departments on SharePoint workflow integrations.
 - Built and maintained single sign-on services.
-- Contributed to an Office 365 project: [Informationsdrehscheibe aus der Cloud](https://janikvonrotz.ch/wp-content/uploads/2015/09/Informationsdrehscheibe-aus-der-Cloud.pdf).
+- Contributed to an Office 365 project: [Informationsdrehscheibe aus der Cloud](/wp-content/uploads/2015/09/Informationsdrehscheibe-aus-der-Cloud.pdf).
 
 08/2008 – 06/2012
 Apprenticeship Computer Specialist [EFZ](https://de.wikipedia.org/wiki/Eidgen%C3%B6ssisches_F%C3%A4higkeitszeugnis) System Engineering (full-time)

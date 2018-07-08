@@ -48,14 +48,14 @@ Overall I've used these Typo3 extensions for this project:
 
 # The Result
 
-![Vielen Dank](https://janikvonrotz.ch/wp-content/uploads/2013/07/Vielen-Dank.jpg)
+![Vielen Dank](/wp-content/uploads/2013/07/Vielen-Dank.jpg)
 
-![Startseite](https://janikvonrotz.ch/wp-content/uploads/2013/07/Startseite2.jpg)
+![Startseite](/wp-content/uploads/2013/07/Startseite2.jpg)
 
-![Schulungen](https://janikvonrotz.ch/wp-content/uploads/2013/07/Schulungen.jpg)
+![Schulungen](/wp-content/uploads/2013/07/Schulungen.jpg)
 
-![Login](https://janikvonrotz.ch/wp-content/uploads/2013/07/Login.jpg)
+![Login](/wp-content/uploads/2013/07/Login.jpg)
 
-![meine_schulungen](https://janikvonrotz.ch/wp-content/uploads/2013/07/meine_schulungen.jpg)
+![meine_schulungen](/wp-content/uploads/2013/07/meine_schulungen.jpg)
 
-![Registration](https://janikvonrotz.ch/wp-content/uploads/2013/07/Registration.jpg)
+![Registration](/wp-content/uploads/2013/07/Registration.jpg)

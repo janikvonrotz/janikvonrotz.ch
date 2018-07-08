@@ -37,9 +37,9 @@ There are different concepts and strategies to create service accounts for a Sha
 In case the link is broken, these documents will do fine:
 
 <ul>
-    <li><a href="https://janikvonrotz.ch/wp-content/uploads/2014/01/SharePoint-2013-Service-Accounts-Cheat-Sheet-Low-Security-Option.pdf">SharePoint 2013 Service Accounts Cheat Sheet-Low Security Option</a></li>
-    <li><a href="https://janikvonrotz.ch/wp-content/uploads/2014/01/SharePoint-2013-Service-Accounts-Cheat-Sheet-MediumSecurity-Option.pdf">SharePoint 2013 Service Accounts Cheat Sheet-MediumSecurity Option</a></li>
-    <li><a href="https://janikvonrotz.ch/wp-content/uploads/2014/01/SharePoint-2013-Service-Accounts-Cheat-Sheet-High-Security-Option.pdf">SharePoint 2013 Service Accounts Cheat Sheet-High Security Option</a></li>
+    <li><a href="/wp-content/uploads/2014/01/SharePoint-2013-Service-Accounts-Cheat-Sheet-Low-Security-Option.pdf">SharePoint 2013 Service Accounts Cheat Sheet-Low Security Option</a></li>
+    <li><a href="/wp-content/uploads/2014/01/SharePoint-2013-Service-Accounts-Cheat-Sheet-MediumSecurity-Option.pdf">SharePoint 2013 Service Accounts Cheat Sheet-MediumSecurity Option</a></li>
+    <li><a href="/wp-content/uploads/2014/01/SharePoint-2013-Service-Accounts-Cheat-Sheet-High-Security-Option.pdf">SharePoint 2013 Service Accounts Cheat Sheet-High Security Option</a></li>
 </ul>
 
 Each level of security contains a range of service accounts. Depending on you content and business requirements, you chose a suitable security level.

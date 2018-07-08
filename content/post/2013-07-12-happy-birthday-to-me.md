@@ -17,8 +17,8 @@ tags:
 ---
 I love this picture :D Anyway today is my birthday and that's why you get a cool vector collection of my favorite quotes:
 
-<p style="text-align: center;"><a href="https://janikvonrotz.ch/wp-content/uploads/2013/07/Quotes.zip">![Quotes](https://janikvonrotz.ch/wp-content/uploads/2013/07/Quotes.png)</a></p>
+<p style="text-align: center;"><a href="/wp-content/uploads/2013/07/Quotes.zip">![Quotes](/wp-content/uploads/2013/07/Quotes.png)</a></p>
 
-<p style="text-align: center;"><a class="btn" href="https://janikvonrotz.ch/wp-content/uploads/2013/07/Quotes.zip">Download zipped Quotes.svg</a></p>
+<p style="text-align: center;"><a class="btn" href="/wp-content/uploads/2013/07/Quotes.zip">Download zipped Quotes.svg</a></p>
 
 <p style="text-align: left;">Use software like Inkscape or Adobe Illustrator and create some big posters for your bedroom or office wall.</p>

@@ -35,6 +35,6 @@ That's why I don't need an IIS warm up script for our SharePoint infrastructure.
 
 In case you already have a running Zabbix server you can monitor your SharePoint web application with this web rule:
 
-![SharePoint 2013 - Zabbix web monitoring scenario](https://janikvonrotz.ch/wp-content/uploads/2014/04/SharePoint-2013-Zabbix-web-monitoring-scenario.jpg)
+![SharePoint 2013 - Zabbix web monitoring scenario](/wp-content/uploads/2014/04/SharePoint-2013-Zabbix-web-monitoring-scenario.jpg)
 
-![SharePoint 2013 - Zabbix web monitoring step](https://janikvonrotz.ch/wp-content/uploads/2014/04/SharePoint-2013-Zabbix-web-monitoring-step.jpg)
+![SharePoint 2013 - Zabbix web monitoring step](/wp-content/uploads/2014/04/SharePoint-2013-Zabbix-web-monitoring-step.jpg)

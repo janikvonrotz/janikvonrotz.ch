@@ -35,7 +35,7 @@ As you've seen there are 5 models in our application. This is not that much but 
 <!--more-->
 As always we create our filestructure first. Make sure the client eclipse project looks like:
 
-![Client Eclipse Filestructure](https://janikvonrotz.ch/wp-content/uploads/2015/03/Client-Eclipse-Filestructure.png)
+![Client Eclipse Filestructure](/wp-content/uploads/2015/03/Client-Eclipse-Filestructure.png)
 
 # App
 

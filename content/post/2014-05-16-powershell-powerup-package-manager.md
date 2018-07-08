@@ -22,7 +22,7 @@ tags:
 
 Here's a short example for a Notepad++ installation:
 <!--more-->
-![PowerShell PowerUp Package Manager](https://janikvonrotz.ch/wp-content/uploads/2014/05/PowerShell-PowerUp-Package-Manager.gif)
+![PowerShell PowerUp Package Manager](/wp-content/uploads/2014/05/PowerShell-PowerUp-Package-Manager.gif)
 
 The main features of the package manager:
 

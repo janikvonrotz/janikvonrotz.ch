@@ -27,8 +27,8 @@ You might already knew it, the link **http://code.msdn.microsoft.com/ULSViewer**
 
 Luckily I've found a copy on my SharePoint server, you can get it below.
 
-![Microsoft-ULS-Log-Viewer](https://janikvonrotz.ch/wp-content/uploads/2014/05/Microsoft-ULS-Log-Viewer.png)
+![Microsoft-ULS-Log-Viewer](/wp-content/uploads/2014/05/Microsoft-ULS-Log-Viewer.png)
 
-[**Download UlsViewer 2.0.3530.27850**](https://janikvonrotz.ch/wp-content/uploads/2014/05/UlsViewer-2.0.3530.27850.zip)
+[**Download UlsViewer 2.0.3530.27850**](/wp-content/uploads/2014/05/UlsViewer-2.0.3530.27850.zip)
 
 If you have a newer copy of the file it would be nice if you share it with me.

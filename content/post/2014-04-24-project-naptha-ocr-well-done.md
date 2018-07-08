@@ -26,4 +26,4 @@ With the said extension you can copy text within images. Naptha recognises text 
 <!--more-->
 This is truly amazing, isn't it? They went even further! You can erase text from images and translate text in images to different languages.
 
-![Project Naptha image text erased](https://janikvonrotz.ch/wp-content/uploads/2014/04/Project-Naptha-image-text-erased.gif)
+![Project Naptha image text erased](/wp-content/uploads/2014/04/Project-Naptha-image-text-erased.gif)
