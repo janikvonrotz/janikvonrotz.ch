@@ -5,6 +5,7 @@ description = "Curious, Dedicated, Humble"
 theme = "lithium"
 pygmentsCodeFences = "true"
 disqusShortname = "janikvonrotz-1"
+googleAnalytics = "UA-31105856-2"
 
 [permalinks]
     post = "/:year/:month/:title/"
