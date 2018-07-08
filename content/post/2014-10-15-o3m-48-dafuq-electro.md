@@ -22,4 +22,4 @@ tags:
   - playlist
   - soundcloud
 ---
-https://soundcloud.com/janikvonrotz/sets/o3m-48-dafuq
+{{< soundcloud 35927510 >}}

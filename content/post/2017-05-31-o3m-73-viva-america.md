@@ -22,4 +22,4 @@ tags:
 ---
 Feel good tracks I've listened to while doing roadtrips in California last autumn. 
 
-https://soundcloud.com/janikvonrotz/sets/o3m-73-viva-america
+{{< soundcloud 259801179 >}}

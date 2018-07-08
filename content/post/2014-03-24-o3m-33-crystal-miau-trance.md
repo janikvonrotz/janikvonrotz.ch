@@ -24,4 +24,4 @@ tags:
   - soundcloud
   - trance
 ---
-https://soundcloud.com/janikvonrotz/sets/o3m-33-crystal-miau-trance
+{{< soundcloud 15730402 >}}

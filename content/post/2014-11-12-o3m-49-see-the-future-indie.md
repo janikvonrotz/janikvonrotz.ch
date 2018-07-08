@@ -25,4 +25,4 @@ tags:
 ---
 A nice playlist to relax on a rainy sunday.
 
-https://soundcloud.com/janikvonrotz/sets/o3m-49-see-the-future-indie
+{{< soundcloud 36037551 >}}

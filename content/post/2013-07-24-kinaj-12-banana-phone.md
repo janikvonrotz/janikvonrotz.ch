@@ -16,4 +16,4 @@ tags:
   - electro
   - house
 ---
-https://soundcloud.com/janikvonrotz/sets/jr-12-banana-phone
+{{< soundcloud 5470253 >}}

@@ -25,4 +25,4 @@ tags:
 ---
 Is it difficult to get up in the morning? Hear this playlist and you'll make your employer proud.
 
-https://soundcloud.com/janikvonrotz/sets/o3m-50-awesone-shat-random
+{{< soundcloud 37382587 >}}

@@ -23,4 +23,4 @@ tags:
 ---
 Georgous mix of some very good sounds.
 
-https://soundcloud.com/janikvonrotz/sets/o3m-63-beauty-of-music
+{{< soundcloud 87091167 >}}

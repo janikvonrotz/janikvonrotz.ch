@@ -20,4 +20,4 @@ tags:
   - room
   - soundcloud
 ---
-https://soundcloud.com/janikvonrotz/sets/kinaj-25-party-hard-bigroom
+{{< soundcloud 11581483 >}}

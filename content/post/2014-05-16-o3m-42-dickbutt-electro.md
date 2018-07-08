@@ -21,4 +21,4 @@ tags:
   - o3m
   - one
 ---
-https://soundcloud.com/janikvonrotz/sets/o3m-42-dickbutt-electro
+{{< soundcloud 25670593 >}}

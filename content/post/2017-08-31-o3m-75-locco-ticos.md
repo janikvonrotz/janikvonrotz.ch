@@ -16,6 +16,6 @@ tags:
   - playlist
   - soundcloud
 ---
-https://soundcloud.com/janikvonrotz/sets/locco-ticos
+{{< soundcloud 270933792 >}}
 
 Make sure to enjoy the last summer vibes before autumn reaches out.

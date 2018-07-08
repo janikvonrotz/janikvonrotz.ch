@@ -24,4 +24,4 @@ tags:
 ---
 Alternative is love, Alternative is live.
 
-https://soundcloud.com/janikvonrotz/sets/o3m-57-back-to-the-future-good
+{{< soundcloud 70446114 >}}

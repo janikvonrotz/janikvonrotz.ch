@@ -24,4 +24,4 @@ tags:
   - one
   - playlist
 ---
-https://soundcloud.com/janikvonrotz/sets/o3m-47-flies-away-electro
+{{< soundcloud 35375096 >}}

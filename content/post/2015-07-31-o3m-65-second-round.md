@@ -26,4 +26,4 @@ tags:
 Oh my gosh, second round! Is this real? 
 Yes indeed it is sir!
 
-https://soundcloud.com/janikvonrotz/sets/o3m-65-second-round
+{{< soundcloud 99298620 >}}

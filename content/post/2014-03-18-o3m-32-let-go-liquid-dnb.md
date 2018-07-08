@@ -26,4 +26,4 @@ tags:
   - set
   - soudncloud
 ---
-https://soundcloud.com/janikvonrotz/sets/kinaj-32-liquid-dnb
+{{< soundcloud 14362685 >}}

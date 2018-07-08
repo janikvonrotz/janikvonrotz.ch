@@ -23,4 +23,4 @@ tags:
   - soundcloud
   - totally
 ---
-https://soundcloud.com/janikvonrotz/sets/kinaj-27-electro-house
+{{< soundcloud 12868395 >}}

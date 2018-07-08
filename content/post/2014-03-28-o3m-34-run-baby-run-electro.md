@@ -25,4 +25,4 @@ tags:
   - run
   - soundcloud
 ---
-https://soundcloud.com/janikvonrotz/sets/o3m-34-run-baby-run-electro
+{{< soundcloud 15733076 >}}

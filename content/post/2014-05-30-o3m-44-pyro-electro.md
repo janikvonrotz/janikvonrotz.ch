@@ -23,4 +23,4 @@ tags:
   - playlist
   - pyro
 ---
-https://soundcloud.com/janikvonrotz/sets/o3m-44-pyro-electro
+{{< soundcloud 28890954 >}}

@@ -24,4 +24,4 @@ tags:
 ---
 Have nice weekend!
 
-https://soundcloud.com/janikvonrotz/sets/o3m-66-fleshpound
+{{< soundcloud 112583888 >}}

@@ -22,4 +22,4 @@ tags:
   - rock
   - rucksack
 ---
-https://soundcloud.com/janikvonrotz/sets/kinaj-26-pop-rock-alternative
+{{< soundcloud 12652043 >}}

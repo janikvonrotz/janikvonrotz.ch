@@ -17,4 +17,4 @@ tags:
   - music
   - techno
 ---
-https://soundcloud.com/janikvonrotz/sets/weird
+{{< soundcloud 5166951 >}}

@@ -21,4 +21,4 @@ tags:
   - pop
   - shit
 ---
-https://soundcloud.com/janikvonrotz/sets/kinaj-31-pop
+{{< soundcloud 13893308 >}}

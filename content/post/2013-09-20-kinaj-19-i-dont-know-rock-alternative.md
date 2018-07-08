@@ -22,4 +22,4 @@ tags:
   - set
   - soundcloud
 ---
-https://soundcloud.com/janikvonrotz/sets/kinaj-20-i-dont-know-rock
+{{< soundcloud 8643516 >}}

@@ -21,4 +21,4 @@ tags:
   - stinson
   - suit up
 ---
-https://soundcloud.com/janikvonrotz/sets/kinaj-14-mixtaped
+{{< soundcloud 5979277 >}}

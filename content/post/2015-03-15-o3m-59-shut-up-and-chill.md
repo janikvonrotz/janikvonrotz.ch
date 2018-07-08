@@ -24,4 +24,4 @@ tags:
 ---
 Another week of hard work awaits you. If you're stressed and loose track of your daily business, try to take some time out and listen to this relaxing playlist.
 
-https://soundcloud.com/janikvonrotz/sets/o3m-59-shut-up-and-chill
+{{< soundcloud 74403909 >}}

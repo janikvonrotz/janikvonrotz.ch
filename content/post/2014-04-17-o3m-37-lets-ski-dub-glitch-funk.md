@@ -24,4 +24,4 @@ tags:
   - playlist
   - skiing
 ---
-https://soundcloud.com/janikvonrotz/sets/o3m-lets-ski
+{{< soundcloud 18570881 >}}

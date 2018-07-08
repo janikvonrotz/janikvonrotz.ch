@@ -17,4 +17,4 @@ tags:
   - soundcloud
   - trap
 ---
-https://soundcloud.com/janikvonrotz/sets/kinaj-21-its-a-trap-trap
+{{< soundcloud 8924360 >}}

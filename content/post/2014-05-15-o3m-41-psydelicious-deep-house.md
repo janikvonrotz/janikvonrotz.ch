@@ -22,4 +22,4 @@ tags:
   - one
   - psy
 ---
-https://soundcloud.com/janikvonrotz/sets/o3m-41-psydelicious-deep-house
+{{< soundcloud 24210677 >}}

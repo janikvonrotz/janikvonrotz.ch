@@ -22,4 +22,4 @@ tags:
 ---
 Mind melting music to make you feel stimulated. You are the tamagotchi.
 
-https://soundcloud.com/janikvonrotz/sets/o3m-70-tamagotchi
+{{< soundcloud 156739991 >}}

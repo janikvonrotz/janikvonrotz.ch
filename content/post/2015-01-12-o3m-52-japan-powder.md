@@ -28,4 +28,4 @@ tags:
 ---
 The perfect playlist for your next ride in deep powder.
 
-https://soundcloud.com/janikvonrotz/sets/o3m-52-japan-powder-skiing
+{{< soundcloud 57535141 >}}

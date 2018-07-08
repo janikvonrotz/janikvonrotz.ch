@@ -23,4 +23,4 @@ tags:
   - playlist
   - soundcloud
 ---
-https://soundcloud.com/janikvonrotz/sets/o3m-39-electro
+{{< soundcloud 20026059 >}}

@@ -19,4 +19,4 @@ tags:
   - salte
   - soundcloud
 ---
-https://soundcloud.com/janikvonrotz/sets/kinaj-17-salte-gr-lle
+{{< soundcloud 8143997 >}}

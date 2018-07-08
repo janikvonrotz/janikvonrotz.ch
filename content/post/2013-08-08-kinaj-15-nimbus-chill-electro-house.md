@@ -19,4 +19,4 @@ tags:
   - playlist
   - soundcloud
 ---
-https://soundcloud.com/janikvonrotz/sets/kinaj-15-nimbus-chill
+{{< soundcloud 6906762 >}}

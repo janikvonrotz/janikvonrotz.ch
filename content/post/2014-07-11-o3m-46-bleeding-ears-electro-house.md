@@ -25,4 +25,4 @@ tags:
   - one
   - playlist
 ---
-https://soundcloud.com/janikvonrotz/sets/o3m-46-bleeding-ears
+{{< soundcloud 29672744 >}}

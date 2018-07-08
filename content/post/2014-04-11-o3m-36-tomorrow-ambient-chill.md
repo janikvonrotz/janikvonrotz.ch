@@ -23,4 +23,4 @@ tags:
   - playlist
   - soundcloud
 ---
-https://soundcloud.com/janikvonrotz/sets/o3m-36-ambient-chill
+{{< soundcloud 17636846 >}}

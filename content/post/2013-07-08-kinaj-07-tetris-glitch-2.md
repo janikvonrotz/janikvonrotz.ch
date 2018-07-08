@@ -17,4 +17,4 @@ tags:
   - playlist
   - soundcloud
 ---
-https://soundcloud.com/janikvonrotz/sets/kinaj_07_tetris
+{{< soundcloud 5240389 >}}

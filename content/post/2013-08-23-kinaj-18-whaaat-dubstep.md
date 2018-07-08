@@ -20,4 +20,4 @@ tags:
   - set
   - soundcloud
 ---
-https://soundcloud.com/janikvonrotz/sets/kinaj-18-whaaat-dubstep
+{{< soundcloud 8206757 >}}

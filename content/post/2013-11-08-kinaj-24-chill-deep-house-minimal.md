@@ -22,4 +22,4 @@ tags:
   - playlist
   - soundcloud
 ---
-https://soundcloud.com/janikvonrotz/sets/kinaj-24-chill-deep-house
+{{< soundcloud 10857561 >}}

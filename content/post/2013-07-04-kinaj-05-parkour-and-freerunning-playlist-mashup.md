@@ -16,4 +16,4 @@ tags:
   - music
   - playlist
 ---
-https://soundcloud.com/janikvonrotz/sets/aptrix-parkour-freerunning
+{{< soundcloud 5240191 >}}

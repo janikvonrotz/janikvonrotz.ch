@@ -17,4 +17,4 @@ tags:
   - progressive house
   - soundcloud
 ---
-https://soundcloud.com/janikvonrotz/sets/kinaj-16-dampfkochtopf
+{{< soundcloud 7039654 >}}

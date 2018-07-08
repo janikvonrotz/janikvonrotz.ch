@@ -25,4 +25,4 @@ tags:
   - playlist
   - soundcloud
 ---
-https://soundcloud.com/janikvonrotz/sets/o3m-39-avec-plaisir-dance
+{{< soundcloud 19981084 >}}

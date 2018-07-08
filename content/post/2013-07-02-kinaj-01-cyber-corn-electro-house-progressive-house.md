@@ -17,4 +17,4 @@ tags:
   - music
   - progressive
 ---
-https://soundcloud.com/janikvonrotz/sets/cyber-corn
+{{< soundcloud 5166928 >}}

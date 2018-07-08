@@ -24,4 +24,4 @@ tags:
   - one
   - playlist
 ---
-https://soundcloud.com/janikvonrotz/sets/o3m-45-indiend-chillout
+{{< soundcloud 29045419 >}}

@@ -24,4 +24,4 @@ tags:
   - playlist
   - progressive
 ---
-https://soundcloud.com/janikvonrotz/sets/o3m-40-go-hard-or-go-home-bass
+{{< soundcloud 21951621 >}}

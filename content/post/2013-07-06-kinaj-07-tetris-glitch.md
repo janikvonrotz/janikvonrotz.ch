@@ -17,4 +17,4 @@ tags:
   - playlist
   - soundcloud
 ---
-https://soundcloud.com/janikvonrotz/sets/motion
+{{< soundcloud 5240369 >}}

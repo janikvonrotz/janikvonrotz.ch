@@ -23,4 +23,4 @@ tags:
 ---
 Some badass prog electro to start into the weekend.
 
-https://soundcloud.com/janikvonrotz/sets/o3m-55-overreaction-bass
+{{< soundcloud 66885315 >}}

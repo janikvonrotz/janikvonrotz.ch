@@ -22,4 +22,4 @@ tags:
   - progressive
   - soundcloud
 ---
-https://soundcloud.com/janikvonrotz/sets/o3m-35-what-tht-fuuu-damn-prog
+{{< soundcloud 17120824 >}}

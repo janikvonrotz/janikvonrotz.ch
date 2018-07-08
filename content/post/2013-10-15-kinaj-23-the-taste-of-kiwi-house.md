@@ -19,4 +19,4 @@ tags:
   - playlist
   - taste
 ---
-https://soundcloud.com/janikvonrotz/sets/kinaj-23-house
+{{< soundcloud 9699183 >}}
