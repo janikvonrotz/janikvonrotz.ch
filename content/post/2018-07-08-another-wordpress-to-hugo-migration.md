@@ -93,7 +93,7 @@ In order to preserve the Wordpress link structure `/YYYY/MM/DD/_SLUG_/`, you hav
 
 ```toml
 [permalinks]
-  post = "/:year/:month/:title/"
+  post = "/:year/:month/:day/:title/"
   page = "/:title/"
 ```
 

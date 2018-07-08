@@ -8,7 +8,7 @@ disqusShortname = "janikvonrotz-1"
 googleAnalytics = "UA-31105856-2"
 
 [permalinks]
-    post = "/:year/:month/:title/"
+    post = "/:year/:month/:day/:title/"
     page = "/:title/"
 
 [menu]
