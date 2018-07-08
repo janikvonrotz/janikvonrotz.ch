@@ -34,3 +34,15 @@ theme = "lithium"
         name = "Contact"
         url = "/contact/"
         weight = 5
+
+[params]
+    description = "Curious, Dedicated, Humble"
+
+    [params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+
+    [params.icon]
+    url = "logo.png"
