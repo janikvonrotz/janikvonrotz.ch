@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/janikvonrotz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://janikvonrotz.ch
+  * I am janikvonrotz (https://keybase.io/janikvonrotz) on keybase.
+  * I have a public key with fingerprint 256C CDF7 5B8F C4CC FA86  0382 6A0E A5EA F417 5898
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010167230814682acfa6ad4164ba7d40d858274dd3315e3b87c46fd8a6e29b0687270a",
+      "fingerprint": "256ccdf75b8fc4ccfa8603826a0ea5eaf4175898",
+      "host": "keybase.io",
+      "key_id": "6a0ea5eaf4175898",
+      "kid": "010167230814682acfa6ad4164ba7d40d858274dd3315e3b87c46fd8a6e29b0687270a",
+      "uid": "cc25520b9dfbcb96d98b1e7424a15119",
+      "username": "janikvonrotz"
+    },
+    "merkle_root": {
+      "ctime": 1531117184,
+      "hash_meta": "5f1b78ffddc65ee3d1e354917a1847a029e84bf56e22ea8717b17ad41d520f2f",
+      "seqno": 3218170
+    },
+    "revoke": {
+      "sig_ids": [
+        "540b4ce969408dc7da6d53ce359dd68f19894e73d6c3be82c1266cdf12d913150f"
+      ]
+    },
+    "service": {
+      "hostname": "janikvonrotz.ch",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1531117196,
+  "expire_in": 157680000,
+  "prev": "67ea2818c9118e4043313d72eead7edc279986d05d299ce4a60d77eea17ab9d4",
+  "seqno": 45,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.77
+Comment: https://keybase.io/crypto
+
+yMK8AnicrVNbaB1FGD5J4yWnNUYElRLTukgUGsvO7OxcTqU2hZY+WJC2IqaX09mZ
+f3PWk7N7srvnmKYeUIhSa02orXihT02hNCBHCJXaWlprRbRQDEaJBHwoFXyIIm1s
+9cHibFAE6aPzMpf/+7//m++fuXjPkly+5e5DYnq6selsy6ULjVpu+/pbB/ZaXqT3
+WIW9VhkWJxjUkKTFcqCtgmUjG1GGHZsjQjmWypdUaoIo8STTxNbc5ZgRrR0HueB4
+nClCfc0lBSw8m3KGmS2tXssPwgGIq3EQpoYWu1Qp7TPX474iyrByajscU2mDdEH6
+BDGXC24SS1GSZRhxnkxgdRCZM7MpLsq7Df5/1l1bpFMKuy62PaF9T3mCasE9BIxg
+IpGLkMiACcShrIBBvyDDoFyPwjhKR6xGr1WBuDwIxTiK0sxglQYZDLkOQoghTswl
+ZVIqViCVJtv1kce472utqAvgaASOSwRi0kCZtLEATjzfNUoxSM4Q80zM3E0bhT72
+jZYEhsLIKjgYccRsoyCGelSGrHgSDBjrEquw3XKJ7REFggpic62YllS7jjLVhNaU
++0hwQYA5mirHA44VwpSariGsBTK22b61s5EVi+uBWiTPenUbD1arkhFVNctIRYMm
+WErTalLIrEn3VDP0i+AV/+YpekGozWMxGXWIkyAKjVUG+R/XBO21YLgaxFAMMoTL
+KLfNyOpAPXsaDCTmiCuBEAdiE9NpRzMMIDUDrTATglNtuxoLoYBIamvGTNSYafpM
+/rWRuEanHDCcxrxQprUYrMaF8zvaci353J13tGa/KJdv7/znb/WvuOtWzwOF87Vn
+rx9m061vzs8f6fti4a3unuEH9y/kf1ny+9jIk4X2Tw/v/27dmcuT7+WOv98xrp9K
+u0vJI9a5hY3ndhwb90cqHS8dDTdt/erlrvw7B5rtTuXGETn5583Sr9cvHZz46ew3
+zVcnNr4xROdujN5HHn94c9spa3C69uEHT9zfs3L9lZl1P/bP7T519fKj4fPja39u
+Pnb8y29nfljaXHps6F14Zs3M2/kV+asjy3d3H3pu3+yqfaOb+1c2p7b0ydN9rW2z
+Ewef/q1z2c2jjbXLBl6fIruG5z/3locdo2Mn761uuHjts0++7+ocG/346y42t+2V
+jzb8MUVmtp5YtW2yNHFyFnttax567dqWK38BWVqA/g==
+=EpSY
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/janikvonrotz
+
+==================================================================
