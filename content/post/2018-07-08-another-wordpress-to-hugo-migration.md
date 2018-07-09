@@ -2,7 +2,7 @@
 title: Another Wordpress to Hugo migration
 date: 2018-07-08T09:11:28+00:00
 author: Janik von Rotz
-slug: another-wordpress-to-hugo-migratio
+slug: another-wordpress-to-hugo-migration
 categories:
   - Hugo
   - Wordpress
@@ -239,20 +239,20 @@ If you want to embed content in markdown, you have to use an iframe. Having html
 ```bash
 selector="*.md"
 
-# [caption ...]<img src="..." alt="..." ... /> ...[/caption] -> \{\{< figure src="..." title="..." >\}\}
-sed -i -r 's;\[caption .*\].*<img src="([^"]*)" .* />\s+(.*)\[/caption\];\{\{< figure src="\1" title="\2" >\}\};g' $selector
+# [caption ...]<img src="..." alt="..." ... /> ...[/caption] -> {{</* figure src="..." title="..." */>}}
+sed -i -r 's;\[caption .*\].*<img src="([^"]*)" .* />\s+(.*)\[/caption\];{{</* figure src="\1" title="\2" */>}};g' $selector
 
-# [caption ...]<a href="..." ...><img src="..." alt="" ... /></a>...[/caption] -> \{\{< figure src="..." title="..." >\}\}
-sed -i -r 's;\[caption .*\].*<img src="([^"]*)".*<\/a>\s+(.*)\[/caption\];\{\{< figure src="\1" title="\2" >\}\};g' $selector
+# [caption ...]<a href="..." ...><img src="..." alt="" ... /></a>...[/caption] -> {{</* figure src="..." title="..." */>}}
+sed -i -r 's;\[caption .*\].*<img src="([^"]*)".*<\/a>\s+(.*)\[/caption\];{{</* figure src="\1" title="\2" */>}};g' $selector
 
-# https://vimeo.com/64762621 -> \{\{< vimeo _ID9_ >\}\}
-sed -i -r 's;^https?\:\/\/vimeo.com\/(.{9});\{\{< vimeo \1 >\}\};g' $selector
+# https://vimeo.com/64762621 -> {{</* vimeo _ID9_ */>}}
+sed -i -r 's;^https?\:\/\/vimeo.com\/(.{9});{{</* vimeo \1 */>}};g' $selector
 
-# https://vimeo.com/64762621 -> \{\{< vimeo _ID8_ >\}\}
-sed -i -r 's;^https?\:\/\/vimeo.com\/(.{8});\{\{< vimeo \1 >\}\};g' $selector
+# https://vimeo.com/64762621 -> {{</* vimeo _ID8_ */>}}
+sed -i -r 's;^https?\:\/\/vimeo.com\/(.{8});{{</* vimeo \1 */>}};g' $selector
 
-# http://www.youtube.com/watch?v=_ID_ -> \{\{< youtube _ID_ >\}\}
-sed -i -r 's;^(https?://)?(www\.youtube\.com)\/watch\?v=(.{11});\{\{< youtube \3 >\}\};g' $selector
+# http://www.youtube.com/watch?v=_ID_ -> {{</* youtube _ID_ */>}}
+sed -i -r 's;^(https?://)?(www\.youtube\.com)\/watch\?v=(.{11});{{</* youtube \3 */>}};g' $selector
 
 # [video width="1280" height="716" mp4="..."][/video] -> <video width="1280" height="720" controls><source src="..." type="video/mp4">...</video>
 sed -i -r 's;\[video width="(.+)" height="(.+)" (webm|mp4)="([^"]+)"\]\[\/video\];<video width="\1" height="\2" controls><source src="\4" type="video\/\3">Your browser does not support the video tag.</video>;g' $selector
