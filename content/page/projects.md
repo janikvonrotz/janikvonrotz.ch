@@ -12,6 +12,7 @@ specific_page_layout:
   - default-sidebar
 ---
 This is a collection of projects by year since I came in touch with IT. It is supposed to be a showcase of my abilities and experience.
+
 **2018**
 
 [tudluk](https://github.com/janikvonrotz/tudluk) - Tudluk creates a static html page that showcases your favorite books. You can then use headless chrome to take a screenshot of the page and create a beautiful poster.

@@ -20,6 +20,7 @@ dsq_thread_id:
 [Facebook](https://www.facebook.com/janik.vonrotz)  
 [Google+](https://plus.google.com/+JanikvonRotz/posts)  
 [LinkedIn](https://www.linkedin.com/in/janik-von-rotz-b50aaa112)  
+[Hacker News](https://news.ycombinator.com/user?id=janikvonrotz)  
 [Twitter](https://twitter.com/janikvonrotz)  
 [Xing](https://www.xing.com/profile/Janik_vonRotz)  
 [Reddit](http://www.reddit.com/user/hakunamakuba/)  
@@ -36,3 +37,4 @@ dsq_thread_id:
 
 [GitHub](https://github.com/janikvonrotz)  
 [GitHub Gist](https://gist.github.com/janikvonrotz)  
+[GitLab](https://gitlab.com/users/janikvonrotz/projects)  
