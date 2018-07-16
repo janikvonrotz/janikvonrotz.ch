@@ -9,17 +9,9 @@ image: /wp-content/uploads/2014/02/O3M-30-Jizzesus-bass-electro-big-room1.jpg
 categories:
   - Music
 tags:
-  - bass
-  - big
-  - electro
-  - house
-  - jesus
-  - machine
-  - man
-  - music
-  - one
+  - electro music
   - playlist
-  - room
+  - one man music machine
   - soundcloud
 ---
 {{< soundcloud 13129555 >}}

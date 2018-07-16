@@ -11,12 +11,10 @@ categories:
 tags:
   - aptitude
   - development
-  - essential
-  - install
+  - installation
   - libaries
   - manager
   - package
-  - programs
   - tools
   - ubuntu
 ---

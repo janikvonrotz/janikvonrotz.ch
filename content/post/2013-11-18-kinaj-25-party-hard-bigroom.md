@@ -9,12 +9,8 @@ image: /wp-content/uploads/2013/11/Party-Hard.png
 categories:
   - Music
 tags:
-  - big
-  - house
-  - kinaj
-  - music
+  - bigroom music
   - playlist
-  - room
   - soundcloud
 ---
 {{< soundcloud 11581483 >}}

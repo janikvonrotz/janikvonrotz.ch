@@ -10,15 +10,8 @@ categories:
   - Music
 tags:
   - album
-  - crystal
-  - machine
-  - man
-  - miau
-  - music
-  - o3m
-  - one
   - playlist
   - soundcloud
-  - trance
+  - one man music machine
 ---
 {{< soundcloud 15730402 >}}

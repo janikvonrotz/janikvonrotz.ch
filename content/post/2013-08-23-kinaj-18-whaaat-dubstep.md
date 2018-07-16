@@ -9,12 +9,8 @@ image: /wp-content/uploads/2013/08/Whaaat.jpg
 categories:
   - Music
 tags:
-  - chapelle
-  - dave
-  - dubstep
-  - music
+  - dubstep music
   - playlist
-  - set
   - soundcloud
 ---
 {{< soundcloud 8206757 >}}

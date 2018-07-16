@@ -10,9 +10,7 @@ categories:
   - Active Directory
 tags:
   - activedirectory
-  - change
   - expiration
-  - mode
   - password
   - powershell
   - snippet

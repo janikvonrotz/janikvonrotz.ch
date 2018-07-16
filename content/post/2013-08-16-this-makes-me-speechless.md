@@ -10,9 +10,7 @@ categories:
   - Politics
 tags:
   - chicken
-  - comusption
-  - forget
-  - never
+  - consumption
   - politics
   - shocking
 ---

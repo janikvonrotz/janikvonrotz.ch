@@ -13,7 +13,7 @@ tags:
   - activedirectory
   - management
   - powershell
-  - quest
+  - quest module
   - user
 ---
 The PowerShell ActiveDirectory modules from Microsoft are definitely a pain. That's why Quest (Dell) has developed a bunch of <a href="https://www.quest.com/powershell/activeroles-server.aspx">CMDlets </a>to make the user management through PowerShell a lot easier.

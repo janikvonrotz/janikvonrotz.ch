@@ -9,12 +9,8 @@ image: /wp-content/uploads/2013/10/robot_unicorn_attack_by_robotpencil-d2zc0y9.j
 categories:
   - Music
 tags:
-  - house
-  - kinaj
   - playlist
-  - progressive
-  - robot
+  - progressive house musc
   - soundcloud
-  - unicorn
 ---
 {{< soundcloud 9230182 >}}

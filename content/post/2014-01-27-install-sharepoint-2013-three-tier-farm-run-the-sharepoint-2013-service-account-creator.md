@@ -9,18 +9,12 @@ image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:
-  - account
   - concept
-  - create
-  - farm
-  - install
+  - installation
   - powershell
-  - server
-  - service
   - sharepoint
-  - sql
-  - three
-  - tier
+  - sql server
+  - three tier
   - user
 ---
 *This post of is part of my [Install SharePoint 2013 Three-tier Farm](https://janikvonrotz.ch/projects/install-sharepoint-2013-three-tier-farm/) project.*

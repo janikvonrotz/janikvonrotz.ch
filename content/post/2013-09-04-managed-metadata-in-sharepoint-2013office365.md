@@ -10,15 +10,12 @@ categories:
   - SharePoint
 tags:
   - document
-  - get
   - managed
   - management
-  - metadta
+  - metadata
   - office365
   - service
   - sharepoint
-  - started
-  - system
 ---
 The Managed Metadata feature in SharePoint 2010/2013/Office365 enables a new way to manage your documents and other company related informations.
 

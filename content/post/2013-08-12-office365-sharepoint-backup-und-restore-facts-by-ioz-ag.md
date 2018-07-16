@@ -12,7 +12,6 @@ categories:
 tags:
   - backup
   - facts
-  - ioz
   - office365
   - restore
   - sharepoint

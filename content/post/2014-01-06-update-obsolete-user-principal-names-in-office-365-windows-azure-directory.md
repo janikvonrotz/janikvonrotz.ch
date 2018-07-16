@@ -10,18 +10,12 @@ categories:
   - Office 365
   - PowerShell
 tags:
-  - active
-  - attribute
   - azure
-  - directory
-  - flow
-  - name
+  - active directory
   - powershell
-  - principal
   - script
   - services
   - synchronisation
-  - update
   - user
 ---
 It could happen that the directory sync service (DirSync) doesn't sync the users UserPrincipalName correctly.

@@ -9,14 +9,11 @@ image: /wp-content/uploads/2013/08/exchange-2013-e1393417827333.jpg
 categories:
   - Exchange
 tags:
-  - active
-  - directory
+  - active directory
   - exchange
-  - groups
   - mailbox
   - permission
   - synchronize
-  - task
 ---
 I've tried many ways to assign permissions for an Active Directory group on a Exchange (2010) mailbox, but it's simply not possible.
 

@@ -11,22 +11,13 @@ categories:
   - SharePoint
 tags:
   - alert
-  - create
-  - default
-  - delete
   - deploy
-  - improve
-  - job
-  - list
   - manage
   - multiple
   - powershell
   - script
-  - settings
   - sharepoint
-  - update
   - users
-  - views
   - worfklow
 ---
 In certain cases SharePoint alerts are more useful than workflows, f.e. having the possibility to let users manager their alerts is not possible with workflows.

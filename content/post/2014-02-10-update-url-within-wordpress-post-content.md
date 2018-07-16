@@ -9,18 +9,7 @@ image: /wp-content/uploads/2014/02/wordpress-logo.jpg
 categories:
   - WordPress
 tags:
-  - changed
-  - content
-  - domain
-  - how
-  - name
-  - obsolete
-  - queries
-  - query
-  - replace
-  - sql
-  - update
-  - urls
+  - sql server
   - wordpress
 ---
 Recently I've change the url for one of my GitHub projects.

@@ -9,10 +9,8 @@ image: /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:
-  - chill
-  - electro house
-  - kinaj
-  - music
+  - electro music
+  - house music
   - playlist
   - soundcloud
 ---

@@ -10,10 +10,7 @@ categories:
   - Windows Server
 tags:
   - .net
-  - "2012"
-  - framwork
-  - install
-  - r2
+  - installation
   - server
   - windows
 ---

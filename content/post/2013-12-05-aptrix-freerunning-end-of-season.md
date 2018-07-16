@@ -10,7 +10,6 @@ categories:
   - Parkour
 tags:
   - aptrix
-  - end
   - freerunning
   - parkour
   - season

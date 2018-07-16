@@ -9,13 +9,9 @@ image: /wp-content/uploads/2014/01/O3M-28-Holy-Hip-Hop-trap-500x372.jpg
 categories:
   - Music
 tags:
-  - hip-hop
-  - machine
-  - man
-  - music
+  - one man music machine
   - o3m
-  - one
   - soundcloud
-  - trap
+  - trap music
 ---
 {{< soundcloud 12944620 >}}

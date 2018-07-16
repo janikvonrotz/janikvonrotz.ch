@@ -9,14 +9,8 @@ image: /wp-content/uploads/2013/09/03-The-Mask.png
 categories:
   - Music
 tags:
-  - alternative
-  - green
-  - kinaj
-  - mask
-  - music
+  - alternative music
   - playlist
-  - rock
-  - set
   - soundcloud
 ---
 {{< soundcloud 8643516 >}}

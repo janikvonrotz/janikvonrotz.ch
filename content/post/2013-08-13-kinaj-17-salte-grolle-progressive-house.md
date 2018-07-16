@@ -9,11 +9,8 @@ image: /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:
-  - grölle
-  - kinaj
   - playlist
-  - progressive house
-  - salte
+  - progressive house music
   - soundcloud
 ---
 {{< soundcloud 8143997 >}}

@@ -9,15 +9,9 @@ image: /wp-content/uploads/2014/01/O3M-29-Brot-Dubstep-502x372.jpg
 categories:
   - Music
 tags:
-  - dubstep
-  - hard
-  - machine
-  - man
-  - music
-  - one
+  - dubstep music
   - playlist
   - soundcloud
-  - step
-  - stupping
+  - one man music machine
 ---
 {{< soundcloud 13021623 >}}

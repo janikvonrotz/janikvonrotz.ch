@@ -13,17 +13,12 @@ categories:
   - SharePoint Online
 tags:
   - awesome
-  - bill
-  - clinton
   - conference
   - download
-  - for
-  - hangover
   - people
-  - poor
   - sharepoint
   - slides
-  - vegas
+  - las vegas
   - videos
 ---
 For those who couldn't attend SharePoint Conference 2014 including me, the guy from <a href="https://absolute-sharepoint.com/">Absolute SharePoint Blog</a> has published a script to download all slides and videos of the presentations at SPC2014.

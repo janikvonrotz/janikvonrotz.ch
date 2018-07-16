@@ -10,12 +10,8 @@ categories:
   - SharePoint
 tags:
   - activedirectory
-  - change
-  - display
-  - groups
-  - name
+  - display groups
   - sharepoint
-  - wrong
 ---
 When the name of an Active Directory group has been changed, this change won't affect the display name showed in the SharePoint permission editor.
 

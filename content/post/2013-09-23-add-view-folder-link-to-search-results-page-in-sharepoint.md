@@ -9,13 +9,10 @@ image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:
-  - add
   - folder
   - link
-  - result
   - search
   - sharepoint
-  - view
 ---
 In the default document search results in the SharePoint search center it is only possible to open the documents. It is not possible to navigate to the documents location. <!--more-->
 

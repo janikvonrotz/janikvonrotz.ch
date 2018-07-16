@@ -13,8 +13,6 @@ tags:
   - gridview
   - managed
   - metadata
-  - readable
-  - service
   - sharepoint
   - terms
 ---

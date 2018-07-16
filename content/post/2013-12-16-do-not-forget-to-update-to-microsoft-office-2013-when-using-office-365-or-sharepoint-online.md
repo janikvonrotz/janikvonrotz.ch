@@ -9,16 +9,11 @@ image: /wp-content/uploads/2013/12/SharePoint-Online-and-ADFS.gif
 categories:
   - Office 365
 tags:
-  - "2013"
-  - "365"
   - authentication
-  - benefit
-  - change
   - install
   - office
   - online
   - sharepoint
-  - simple
 ---
 When deploying a published SharePoint 2013 on-premise installation or a Office 365 installation or a SharePoint Online installation, it's highly recommended to update your Microsoft Office 2013 installation.
 

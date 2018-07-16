@@ -11,14 +11,9 @@ categories:
 tags:
   - apache
   - domain
-  - helicopter
-  - iis
   - ngnix
-  - obsolete
-  - permantent
   - redirect
   - site
-  - webpage
   - webserver
 ---
 It's obvious Apache2 is no more the first choice for a webserver, depending on the requirments <a href="https://www.theorganicagency.com/apache-vs-nginx-performance-comparison/" target="_blank">Ngnix </a>and IIS are now much more attractive.

@@ -9,7 +9,7 @@ image: /wp-content/uploads/2014/03/php-logo.jpeg
 categories:
   - PHP
 tags:
-  - install
+  - installation
   - php
   - ubuntu
 ---

@@ -13,12 +13,10 @@ categories:
   - Web development
 tags:
   - adfs
-  - change
   - expiration
   - handling
   - managing
   - office365
-  - part
   - password
   - reset
 ---

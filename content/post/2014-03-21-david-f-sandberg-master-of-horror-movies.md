@@ -9,20 +9,15 @@ image: /wp-content/uploads/2014/03/Vimeo-Logo-e1395386460524.jpg
 categories:
   - Blog
 tags:
-  - amazing
-  - award
+  - award winning
   - film
-  - horror
-  - movie
-  - random
-  - short
-  - stuff
+  - horror movie
   - vimeo
-  - winning
 ---
 David Sandberg recently won several short movie awards for his film Who's There.
 
-{{< vimeo 82920243 >}}
+{{< vimeo 82920243
+ >}}
 
 I'm not a fan of horror movies, but this is truly amazing.
 <!--more-->

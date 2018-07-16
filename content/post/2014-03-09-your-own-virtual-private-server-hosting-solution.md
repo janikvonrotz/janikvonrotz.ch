@@ -13,8 +13,7 @@ categories:
   - Ubuntu
 tags:
   - private
-  - virtual
-  - server
+  - virtual server
   - hosting
   - solution
   - guide

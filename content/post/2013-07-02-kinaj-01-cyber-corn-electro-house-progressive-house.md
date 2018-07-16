@@ -9,9 +9,7 @@ image: /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:
-  - electro
-  - house
-  - music
-  - progressive
+  - electro music
+  - progressive music
 ---
 {{< soundcloud 5166928 >}}

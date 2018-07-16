@@ -9,15 +9,9 @@ image: /wp-content/uploads/2014/01/O3M-27-Totally-electro-house-progressive-hous
 categories:
   - Music
 tags:
-  - electo
-  - house
-  - machine
-  - man
-  - music
-  - one
   - playlist
-  - progressive
+  - progressive music
   - soundcloud
-  - totally
+  - one man music machine
 ---
 {{< soundcloud 12868395 >}}

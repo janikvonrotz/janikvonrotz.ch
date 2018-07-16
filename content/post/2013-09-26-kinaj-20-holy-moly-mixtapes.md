@@ -9,13 +9,9 @@ image: /wp-content/uploads/2013/09/1276274153HolyMoly-logo.png
 categories:
   - Music
 tags:
-  - holy
-  - kinaj
   - mixtape
-  - moly
   - music
   - playlist
-  - set
   - soundcloud
 ---
 {{< soundcloud 8643911 >}}

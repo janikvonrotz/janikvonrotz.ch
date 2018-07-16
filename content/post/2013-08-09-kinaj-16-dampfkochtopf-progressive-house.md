@@ -9,9 +9,8 @@ image: /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:
-  - kinaj
   - playlist
-  - progressive house
+  - progressive house music
   - soundcloud
 ---
 {{< soundcloud 7039654 >}}

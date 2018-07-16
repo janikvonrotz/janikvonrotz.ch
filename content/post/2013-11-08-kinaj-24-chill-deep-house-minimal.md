@@ -9,13 +9,7 @@ image: /wp-content/uploads/2013/11/Insane-Buterfly1.jpg
 categories:
   - Music
 tags:
-  - butterfly
-  - chill
-  - deep house
-  - insane
-  - kinaj
-  - minimal
-  - music
+  - deep house music
   - playlist
   - soundcloud
 ---

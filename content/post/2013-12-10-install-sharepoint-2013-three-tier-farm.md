@@ -19,8 +19,7 @@ tags:
   - architecture
   - project
   - sharepoint
-  - three
-  - tier
+  - three tier
 ---
 <h1>About</h1>
 

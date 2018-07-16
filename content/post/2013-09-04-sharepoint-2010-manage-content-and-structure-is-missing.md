@@ -9,10 +9,6 @@ image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:
-  - content
-  - enable
-  - feature
-  - manage
   - missing
   - sharepoint
   - structure

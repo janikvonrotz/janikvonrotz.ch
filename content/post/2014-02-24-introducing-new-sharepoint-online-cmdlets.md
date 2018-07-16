@@ -9,11 +9,8 @@ image: /wp-content/uploads/2014/02/SharePoint-Online.jpg
 categories:
   - SharePoint Online
 tags:
-  - additional
   - cmdlets
-  - new
   - on-premise
-  - online
   - powershell
   - sharepoint
 ---

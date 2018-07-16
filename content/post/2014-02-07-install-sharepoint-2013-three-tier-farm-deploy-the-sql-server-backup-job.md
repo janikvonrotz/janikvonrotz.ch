@@ -10,22 +10,11 @@ categories:
   - SQL Server
 tags:
   - backup
-  - check
-  - everybody
-  - farm
-  - index
-  - install
-  - integrity
+  - installation
   - maintenance
-  - mvp
-  - optimize
-  - plan
-  - server
   - sharepoint
-  - solution
-  - sql
-  - three
-  - tier
+  - sql server
+  - three tier
 ---
 *This post of is part of my [Install SharePoint 2013 Three-tier Farm](https://janikvonrotz.ch/projects/install-sharepoint-2013-three-tier-farm/) project.*
 

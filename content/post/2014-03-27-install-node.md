@@ -10,15 +10,10 @@ categories:
   - Node.js
 tags:
   - git
-  - install
   - installation
-  - latest
-  - newest
-  - node
   - nodejs
-  - repo
+  - repository
   - ubuntu
-  - version
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/9346588](https://gist.github.com/9346588).*  

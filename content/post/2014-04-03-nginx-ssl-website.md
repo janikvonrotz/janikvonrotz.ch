@@ -9,23 +9,16 @@ image: /wp-content/uploads/2014/03/Nginx-Logo-e1394033855329.png
 categories:
   - Nginx
 tags:
-  - best
   - certificate
   - compliance
   - configuration
-  - improvement
-  - key
+  - private key
   - nginx
   - openssl
-  - practise
-  - private
-  - public
-  - secured
   - security
   - server
-  - site
+  - site web
   - ssl
-  - web
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/9408793](https://gist.github.com/9408793).*

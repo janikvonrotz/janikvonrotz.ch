@@ -11,17 +11,12 @@ categories:
   - PowerShell
 tags:
   - activedirectory
-  - add
-  - auto
   - group
   - management
   - organizational
   - powershell
-  - remove
   - script
   - security
-  - unit
-  - update
 ---
 As in on of my last <a title="Manage ActiveDirectory Distribution Groups" href="https://janikvonrotz.ch/2013/08/27/manage-activedirectory-distribution-groups/">post</a> I've showed you my approach to manage distribution groups in the hierarchical structure of an ActiveDirectory installation. In the mean time I've adapted a similiar approach for the security groups.
 

@@ -9,10 +9,8 @@ image: /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:
-  - ambient
-  - dubstep
+  - dubstep music
   - playlist
-  - snape
   - soundcloud
 ---
 {{< soundcloud 5469357 >}}

@@ -16,7 +16,6 @@ tags:
   - report
   - script
   - sharepoint
-  - unchecked
 ---
 Having unchecked files in the SharePoint is not a big deal as long as you aware of the those files.
 

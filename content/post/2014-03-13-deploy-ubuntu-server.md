@@ -9,7 +9,7 @@ image: /wp-content/uploads/2014/03/Ubuntu-Logo.png
 categories:
   - Ubuntu Server
 tags:
-  - amazon
+  - amazone
   - azure
   - deployment
   - installation

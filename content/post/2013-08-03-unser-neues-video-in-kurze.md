@@ -9,7 +9,7 @@ categories:
   - Parkour
 tags:
   - aptrix
-  - IFTTT
+  - ifttt
 ---
 <span style="color: #888888;">Die Schnellen haben es bemerkt, unser neues Video wurde veröffentlicht. Nur leider hat es nicht die gewünschte Qualität auf YouTube und wurde sogleich gelöscht. Wir werden einen neuen Versuch starten&#8230;</span>
 <br /><br />

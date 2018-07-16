@@ -9,9 +9,7 @@ image: /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:
-  - bbc
-  - essential
-  - mix
+  - bbc essential mix
   - playlist
   - radio
   - soundcloud

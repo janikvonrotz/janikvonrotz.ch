@@ -9,10 +9,7 @@ image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:
-  - "2013"
-  - log
   - sharepoint
-  - sign
   - user
 ---
 By default in SharePoint 2013 there is no option for "Sign in as different user".

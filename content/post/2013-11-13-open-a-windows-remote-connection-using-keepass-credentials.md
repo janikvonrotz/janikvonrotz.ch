@@ -12,8 +12,7 @@ tags:
   - credentials
   - desktop
   - keepass
-  - mstsc
-  - remote
+  - remote access
 ---
 KeePass is a highly recommended Passwordsafe. Despite its supposed to be used mainly by private people it's adaptable for business cases. In my company the KeePass password database is saved on a SharePoint folder and is encrypted with a password and a private key. The key has to be stored on the local machine.
 

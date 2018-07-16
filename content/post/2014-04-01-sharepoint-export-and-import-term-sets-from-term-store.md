@@ -9,22 +9,16 @@ image: /wp-content/uploads/2014/02/SharePoint-Online.jpg
 categories:
   - SharePoint
 tags:
-  - "2010"
-  - "2013"
   - csv
   - export
   - function
   - group
-  - import
   - managed
   - metadata
   - powershell
   - powerup
   - script
-  - service
-  - set
   - sharepoint
-  - store
   - term
 ---
 The SharePoint term store service is one of the most important parts of a SharePoint installation. It's the best place to store an manage global metadata for your companies documents.

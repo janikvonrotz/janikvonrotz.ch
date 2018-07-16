@@ -11,16 +11,11 @@ categories:
   - Office 365
   - PowerShell
 tags:
-  - disable
   - exchange
-  - light
   - office365
-  - online
-  - owa
   - policies
   - powershell
   - snippet
-  - version
 ---
 To alter the Exchange owa policies you can access them Using the Office365 administration site and navigate to the Exchange section. In the default policy editor are only limited options available.
 

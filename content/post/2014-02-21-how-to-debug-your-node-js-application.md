@@ -11,14 +11,11 @@ categories:
   - Node.js
 tags:
   - app
-  - best
   - debugging
   - editor
-  - ide
   - inspector
-  - js
-  - node
-  - text
+  - javascript
+  - node.js
 ---
 Recently I've started developing with Node.js. As a beginner I had to set up an <a href="https://en.wikipedia.org/wiki/Integrated_Development_Environment">IDE</a> which meets my requirements such as debugging code. I've tried several IDE's such as Microsofts's WebMatrix or Eclipse Node.js extension. But all of them literally sucked, they were are a pain to install or didn't work properly.
 

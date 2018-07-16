@@ -11,9 +11,6 @@ categories:
 tags:
   - consultant
   - factors
-  - five
-  - for
-  - next
   - project
   - sharepoint
   - success

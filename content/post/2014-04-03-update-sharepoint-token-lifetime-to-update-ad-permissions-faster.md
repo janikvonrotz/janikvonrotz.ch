@@ -9,20 +9,11 @@ image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:
-  - active
-  - ad
-  - changes
-  - claims
-  - directory
-  - effect
+  - active directory
   - group
-  - immediately
-  - life
-  - long
   - sharepoint
-  - time
+  - time to live
   - token
-  - update
 ---
 Since SharePoint 2013 only supports claim based authentication I discovered that updates in SharePoint Active Directory groups do not take effect immediately.
 

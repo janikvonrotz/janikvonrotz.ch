@@ -14,13 +14,11 @@ tags:
   - browser
   - chrome
   - error
-  - fails
   - login
   - logon
   - multiple
   - office365
   - prompt
-  - times
 ---
 Today I experienced an exotic behaviour, a client couldn't access his Office365 page due he wasn't able to login on the ADFS authentication prompt.
 

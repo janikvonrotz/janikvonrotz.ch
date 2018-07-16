@@ -9,19 +9,10 @@ image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:
-  - "2013"
-  - css
-  - cut
-  - fix
-  - issue
-  - 'off'
   - problem
   - sharepoint
   - solved
-  - sub
-  - titles
-  - ugly
-  - wtf
+  - sub titles
 ---
 By default SharePoint 2013 cuts off long sub menu titles in the navigation.
 

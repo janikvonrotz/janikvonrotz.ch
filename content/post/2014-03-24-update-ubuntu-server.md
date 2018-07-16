@@ -9,13 +9,10 @@ image: /wp-content/uploads/2014/03/Ubuntu-Logo.png
 categories:
   - Ubuntu Server
 tags:
-  - all
   - aptitude
-  - os
   - package
   - server
   - ubuntu
-  - update
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/9384311](https://gist.github.com/9384311).* 

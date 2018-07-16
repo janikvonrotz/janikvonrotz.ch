@@ -10,10 +10,7 @@ categories:
   - PHP
   - Ubuntu Server
 tags:
-  - essential
-  - fpm
-  - install
-  - list
+  - installation
   - modules
   - php
   - server

@@ -9,9 +9,7 @@ image: /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:
-  - dub
-  - minimal
-  - music
-  - techno
+  - minimal music
+  - techno music
 ---
 {{< soundcloud 5166951 >}}

@@ -9,16 +9,9 @@ image: /wp-content/uploads/2014/03/tumblr_logotype_white_blue_512.png
 categories:
   - Photography
 tags:
-  - beautiful
-  - days
-  - dedicated
-  - free
-  - high
-  - image
   - photographers
   - photographs
   - pictures
-  - resolution
   - tumblr
   - wallpaper
 ---

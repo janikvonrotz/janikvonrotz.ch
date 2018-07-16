@@ -11,15 +11,10 @@ categories:
 tags:
   - adfs
   - custom
-  - edit
-  - hide
-  - hint
   - login
-  - modifications
+  - modification
   - office365
   - page
-  - simple
-  - title
 ---
 The purpose of this article is to show the intention and implemention of the most common modifications for the ADFS login page.
 

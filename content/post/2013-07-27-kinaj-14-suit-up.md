@@ -9,9 +9,7 @@ image: /wp-content/uploads/2013/07/suit-up.jpg
 categories:
   - Music
 tags:
-  - mixes
   - mixtape
-  - music
   - playlist
   - soundcloud
 ---

@@ -9,15 +9,8 @@ image: /wp-content/uploads/2013/08/exchange-2013-e1393417827333.jpg
 categories:
   - Exchange
 tags:
-  - "2010"
-  - "2013"
-  - available
-  - command
-  - distribution
+  - distribution lists
   - exchange
-  - externally
-  - lists
-  - making
   - powershell
 ---
 This might not be best practise but based on the situation you as administrator have to enable this feature.

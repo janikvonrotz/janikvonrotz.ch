@@ -11,15 +11,11 @@ categories:
 tags:
   - bundle
   - certificate
-  - chain
-  - convert
   - encryption
   - file
-  - key
+  - private key
   - openssl
   - pkcs12
-  - private
-  - public
   - rsa
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  

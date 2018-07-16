@@ -9,11 +9,7 @@ image: /wp-content/uploads/2013/10/113431370810.jpg
 categories:
   - Music
 tags:
-  - house
-  - kinaj
-  - kiwi
-  - mice
+  - house music
   - playlist
-  - taste
 ---
 {{< soundcloud 9699183 >}}

@@ -10,19 +10,12 @@ categories:
   - SharePoint
 tags:
   - architecture
-  - collections
+  - collection
   - databases
-  - design
-  - farm
-  - hostname
   - installation
-  - logical
   - sharepoint
-  - site
-  - templates
-  - three
-  - tier
-  - urls
+  - site templates
+  - three tier
 ---
 *This post of is part of my [Install SharePoint 2013 Three-tier Farm](https://janikvonrotz.ch/projects/install-sharepoint-2013-three-tier-farm/) project.*
 

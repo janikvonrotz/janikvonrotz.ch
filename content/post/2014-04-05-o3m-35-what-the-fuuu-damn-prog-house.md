@@ -8,15 +8,10 @@ categories:
   - Music
 tags:
   - album
-  - fuck
-  - house
-  - machine
-  - man
-  - music
   - o3m
-  - one
+  - one man music machine
   - playlist
-  - progressive
+  - progressive house music
   - soundcloud
 ---
 {{< soundcloud 17120824 >}}

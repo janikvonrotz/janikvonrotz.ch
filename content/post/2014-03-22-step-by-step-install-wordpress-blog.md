@@ -9,16 +9,15 @@ image: /wp-content/uploads/2014/02/wordpress-logo.jpg
 categories:
   - WordPress
 tags:
-  - amazon
+  - amazone
   - aws
   - ec2
   - guide
-  - install
+  - installation
   - mysql
   - nginx
   - php
-  - phpmyadmin
-  - step
+  - phpmyadmin 
   - ubuntu
   - wordpess
 ---

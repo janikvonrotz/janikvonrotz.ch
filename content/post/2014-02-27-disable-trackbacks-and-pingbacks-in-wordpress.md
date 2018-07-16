@@ -9,14 +9,7 @@ image: /wp-content/uploads/2014/02/wordpress-logo.jpg
 categories:
   - WordPress
 tags:
-  - disable
-  - exisiting
-  - future
-  - pages
   - pingbacks
-  - posts
-  - published
-  - simple
   - solutions
   - trackbacks
   - wordpress

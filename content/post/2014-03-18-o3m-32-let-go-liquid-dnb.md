@@ -10,8 +10,6 @@ categories:
   - Music
 tags:
   - album
-  - bass
-  - drum
   - o3m
   - one man music machine
   - playlist

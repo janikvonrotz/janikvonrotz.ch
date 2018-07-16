@@ -9,18 +9,12 @@ image: /wp-content/uploads/2014/03/Nginx-Logo-e1394033855329.png
 categories:
   - Nginx
 tags:
-  - add
   - hosting
-  - install
-  - key
-  - latest
+  - installation
   - nginx
   - pgp
-  - remote
   - repository
   - server
-  - version
-  - web
   - websites
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  

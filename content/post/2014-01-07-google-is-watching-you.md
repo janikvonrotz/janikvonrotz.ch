@@ -9,18 +9,10 @@ image: /wp-content/uploads/2014/01/dont-track-us.png
 categories:
   - Politics
 tags:
-  - affect
-  - alternatives
-  - duck
-  - go
-  - googles
+  - duck duck go
   - issues
-  - life
   - neuland
   - privacy
-  - real
-  - tipps
-  - useful
 ---
 The site: <a href="https://donttrack.us/">https://donttrack.us/</a> shows in a comprehensible way how googles data greed can affect you real life.
 

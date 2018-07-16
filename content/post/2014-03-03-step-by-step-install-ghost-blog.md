@@ -14,13 +14,11 @@ tags:
   - configuration
   - ec2
   - firewall
-  - forever
   - ghost
   - git
   - guide
   - hardening
-  - install
-  - js
+  - javascript
   - linux
   - network
   - nginx
@@ -29,7 +27,6 @@ tags:
   - platform
   - security
   - ssh
-  - step
   - ubuntu
 ---
 **Latest Version of this guide: [https://gist.github.com/8542013](https://gist.github.com/8542013)**

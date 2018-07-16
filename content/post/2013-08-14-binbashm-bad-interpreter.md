@@ -10,7 +10,6 @@ categories:
   - Ubuntu Server
 tags:
   - bash
-  - character
   - error
   - linux
   - script

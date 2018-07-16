@@ -9,21 +9,12 @@ image: /wp-content/uploads/2014/03/web-development.jpg
 categories:
   - Web development
 tags:
-  - action
   - chrome
   - development
-  - essential
   - extension
-  - file
+  - hostfile
   - firefox
-  - host
   - improve
-  - saving
-  - speed
-  - time
-  - tool
-  - update
-  - web
 ---
 Domain-ip mapping is essential in developing new websites as you have to test URLs without changing DNS entries.
 

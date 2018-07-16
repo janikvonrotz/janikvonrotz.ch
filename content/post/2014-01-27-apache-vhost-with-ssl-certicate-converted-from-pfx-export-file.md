@@ -10,20 +10,13 @@ categories:
   - Apache
 tags:
   - apache
-  - certifcate
   - certificate
   - convert
   - file
-  - from
-  - key
-  - open
-  - pfx
-  - private
-  - server
+  - private key
+  - web server
   - ssl
-  - using
-  - vhost
-  - web
+  - virtual host
 ---
 This is an simple example for an Apache vHost SSL vHost configuration:
 

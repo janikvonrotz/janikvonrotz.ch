@@ -9,16 +9,12 @@ image: /wp-content/uploads/2014/03/Node.js-Logo.png
 categories:
   - Node.js
 tags:
-  - abort
   - applications
-  - forever
   - installation
   - interruption
   - manager
-  - node
   - npm
   - package
-  - run
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/9347463](https://gist.github.com/9347463).*  

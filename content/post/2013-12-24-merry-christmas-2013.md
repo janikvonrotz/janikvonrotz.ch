@@ -8,12 +8,8 @@ dsq_thread_id:
 categories:
   - Blog
 tags:
-  - christmas
-  - cold
-  - eckhoff
-  - ice
-  - merry
-  - tor
+  - merry christmas
+  - tor eckhoff
   - vodka
 ---
 {{< youtube 7o06sNy45Ns >}}

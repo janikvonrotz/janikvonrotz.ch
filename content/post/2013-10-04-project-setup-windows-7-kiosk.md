@@ -9,20 +9,13 @@ image: /wp-content/uploads/2013/10/Group-Policy.jpg
 categories:
   - Active Directory
 tags:
-  - access
   - activedirectory
   - desktop
-  - disable
   - explorer
-  - features
   - group
-  - hide
-  - internet
   - kiosk
-  - policies
   - policy
   - restricted
-  - setup
   - windows
 ---
 The goal of this project is a simple Windows 7 Kiosk installation with nothing else as the newest version of internet explorer installed. A user should not be allowed to do something than can malfunction the system or even elevating the user privileges. I want to show you in this post which GroupPolicies I've used and what configurations I made to set up this type of installation.

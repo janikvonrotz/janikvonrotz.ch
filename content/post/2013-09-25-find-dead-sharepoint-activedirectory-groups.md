@@ -11,14 +11,9 @@ categories:
   - PowerShell
   - SharePoint
 tags:
-  - access
   - activedirectory
-  - dead
   - groups
-  - handle
-  - issue
   - managment
-  - rights
   - sharepoint
 ---
 The are three ways to handle access rights in SharePoint.

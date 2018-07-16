@@ -9,11 +9,6 @@ categories:
   - Business
 tags:
   - design
-  - formatting
-  - improving
-  - is
-  - less
-  - more
   - presentation
   - skills
 ---

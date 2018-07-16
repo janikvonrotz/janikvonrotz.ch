@@ -9,14 +9,8 @@ image: /wp-content/uploads/2013/12/O3M-26-Rucksack-Alternative-Indie-Rock.jpg
 categories:
   - Music
 tags:
-  - alternative
-  - indie
-  - machine
-  - man
-  - music
+  - indie music
+  - one man music machine
   - o3m
-  - one
-  - rock
-  - rucksack
 ---
 {{< soundcloud 12652043 >}}

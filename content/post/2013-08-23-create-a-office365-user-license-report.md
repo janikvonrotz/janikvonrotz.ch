@@ -10,7 +10,6 @@ categories:
   - Office 365
   - PowerShell
 tags:
-  - cost
   - custom
   - gist
   - license

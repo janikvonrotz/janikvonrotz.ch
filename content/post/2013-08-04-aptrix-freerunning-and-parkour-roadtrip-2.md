@@ -9,7 +9,6 @@ image: /wp-content/uploads/2013/08/Logo.png
 categories:
   - Parkour
 tags:
-  - "2013"
   - aptrix
   - parkour
   - roadtrip

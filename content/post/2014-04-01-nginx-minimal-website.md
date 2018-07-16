@@ -10,14 +10,9 @@ categories:
   - Nginx
 tags:
   - configuration
-  - is
-  - less
-  - minimal
-  - more
   - nginx
   - server
   - template
-  - web
   - website
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  

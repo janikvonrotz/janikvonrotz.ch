@@ -10,9 +10,7 @@ categories:
   - Music
 tags:
   - artist
-  - day
   - music
-  - sir sly
   - soundcloud
 ---
 While crawling the soundcloud newcomers and indie artists I felt in love with Sir Sly.

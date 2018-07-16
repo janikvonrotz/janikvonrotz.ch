@@ -9,13 +9,8 @@ image: /wp-content/uploads/2014/03/O3M-31-dogde-that-shit-Pop.jpg
 categories:
   - Music
 tags:
-  - dodge
-  - machine
-  - man
-  - music
-  - one
+  - pop music
   - playlist
-  - pop
-  - shit
+  - one man music machine
 ---
 {{< soundcloud 13893308 >}}

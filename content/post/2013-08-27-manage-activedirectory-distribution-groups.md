@@ -21,7 +21,6 @@ tags:
   - powershell
   - profile
   - project
-  - redesign
   - script
   - snippet
 ---

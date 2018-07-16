@@ -11,9 +11,8 @@ categories:
 tags:
   - app
   - application
-  - js
+  - javascript
   - nginx
-  - node
   - nodejs
   - proxy
   - security

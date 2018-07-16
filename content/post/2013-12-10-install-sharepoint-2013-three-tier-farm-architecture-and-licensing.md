@@ -9,14 +9,12 @@ image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:
-  - "2013"
   - architecture
   - farm
   - license
   - project
   - sharepoint
-  - three
-  - tier
+  - three tier
 ---
 *This post of is part of my [Install SharePoint 2013 Three-tier Farm](https://janikvonrotz.ch/projects/install-sharepoint-2013-three-tier-farm/) project.*
 

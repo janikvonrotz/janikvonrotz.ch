@@ -13,11 +13,7 @@ categories:
 tags:
   - activedirectory
   - administrator
-  - assign
-  - client
   - computer
-  - list
-  - rights
   - sharepoint
   - temporary
   - user

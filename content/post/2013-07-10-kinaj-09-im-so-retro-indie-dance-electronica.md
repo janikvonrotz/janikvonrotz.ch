@@ -9,11 +9,10 @@ image: /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:
-  - dance
+  - dance music
   - electronica
-  - indie
+  - indie music
   - playlist
-  - retro
   - soundcloud
 ---
 {{< soundcloud 5468228 >}}

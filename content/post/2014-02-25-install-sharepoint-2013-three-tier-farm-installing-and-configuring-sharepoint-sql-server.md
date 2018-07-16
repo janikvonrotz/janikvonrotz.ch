@@ -10,15 +10,11 @@ categories:
   - SQL Server
 tags:
   - configuration
-  - farm
   - installation
   - project
-  - server
   - sharepoint
-  - sql
-  - three
-  - tier
-  - update
+  - sql server
+  - three tier
 ---
 *This post of is part of my [Install SharePoint 2013 Three-tier Farm](https://janikvonrotz.ch/projects/install-sharepoint-2013-three-tier-farm/) project.*
 

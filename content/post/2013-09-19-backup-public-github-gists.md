@@ -9,15 +9,11 @@ image: /wp-content/uploads/2013/09/github.jpg
 categories:
   - PowerShell
 tags:
-  - all
   - download
-  - fetch
   - gist
-  - gists
   - git
   - github
   - powershell
-  - pull
   - script
 ---
 To manage my code snippets I'm using <a href="https://gist.github.com/janikvonrotz">GitHubGist </a>connected with <a href="https://app.gistboxapp.com">Gistbox</a>.

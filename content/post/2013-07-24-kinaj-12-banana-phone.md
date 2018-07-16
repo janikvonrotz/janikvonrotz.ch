@@ -9,8 +9,7 @@ image: /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:
-  - edm
-  - electro
-  - house
+  - edm music
+  - house music
 ---
 {{< soundcloud 5470253 >}}

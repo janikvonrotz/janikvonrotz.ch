@@ -10,16 +10,11 @@ categories:
   - Windows Server
 tags:
   - apps
-  - farm
   - installation
-  - office
   - project
   - server
   - sharepoint
-  - three
-  - tier
-  - update
-  - web
+  - three tier
 ---
 *This post of is part of my [Install SharePoint 2013 Three-tier Farm](https://janikvonrotz.ch/projects/install-sharepoint-2013-three-tier-farm/) project.*
 

@@ -9,17 +9,9 @@ image: /wp-content/uploads/2014/03/Office-365-flat-Logo-e1394705523286.jpg
 categories:
   - Office 365
 tags:
-  - "365"
-  - found
-  - impossible
-  - in directory
-  - invalid
-  - login
-  - new
-  - office
-  - online
+  - active directory
+  - user login
   - provisioning
-  - user
 ---
 As part of the user provisioning process in my company every user account gets an Office 365 license.
 

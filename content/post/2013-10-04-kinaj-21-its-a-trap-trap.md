@@ -9,9 +9,7 @@ image: /wp-content/uploads/2013/10/Its-a-trap.jpg
 categories:
   - Music
 tags:
-  - kinaj
   - playlist
   - soundcloud
-  - trap
 ---
 {{< soundcloud 8924360 >}}

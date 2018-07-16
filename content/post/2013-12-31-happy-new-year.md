@@ -8,14 +8,9 @@ dsq_thread_id:
 categories:
   - Blog
 tags:
-  - "2014"
   - awesome
-  - cat
-  - grumpy
-  - loves
-  - new
-  - whatever
-  - year
+  - grumpy cat
+  - new year
 ---
 Wish you all the best, 2014 is going to be great :)
 

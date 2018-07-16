@@ -10,16 +10,9 @@ categories:
   - Music
 tags:
   - album
-  - amzing
-  - baby
-  - electro
-  - house
-  - machine
-  - man
-  - music
+  - electro music
   - o3m
-  - one
-  - run
+  - one man music machine
   - soundcloud
 ---
 {{< soundcloud 15733076 >}}

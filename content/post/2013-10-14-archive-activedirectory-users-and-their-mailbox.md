@@ -12,12 +12,9 @@ categories:
   - PowerShell
 tags:
   - activedirectory
-  - advanced
   - archive
   - configuration
-  - cycle
   - exchange
-  - life
   - mailbox
   - management
   - powershell
