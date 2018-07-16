@@ -12,15 +12,8 @@ tags:
   - album
   - bass
   - drum
-  - go
-  - liquid
-  - machine
-  - man
-  - music
   - o3m
-  - one
+  - one man music machine
   - playlist
-  - set
-  - soudncloud
 ---
 {{< soundcloud 14362685 >}}

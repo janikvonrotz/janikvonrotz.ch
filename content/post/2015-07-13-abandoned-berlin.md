@@ -13,13 +13,11 @@ tags:
   - berlin
   - car
   - deserted
-  - ferris
   - hospital
   - lost
   - park
   - people
   - photography
-  - spree
   - wheel
 ---
 Berlin is very famous for it's deserted and abandoned places. Last week I spent 3 days there doing parkour and take photos. Here are some impressions of my short Berlin trip:

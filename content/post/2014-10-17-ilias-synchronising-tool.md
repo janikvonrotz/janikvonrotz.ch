@@ -9,12 +9,9 @@ categories:
   - Blog
 tags:
   - automatically
-  - hochschule
   - ilias
-  - luzern
   - powershell
   - sync
-  - synchronisierung
   - tool
 ---
 My university [Hochschule Luzern](http://hslu.ch/) uses [ILIAS](http://www.ilias.de/docu/goto.php?target=root_1) as an open source e-learning and content management platform.

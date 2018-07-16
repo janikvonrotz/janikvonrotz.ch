@@ -20,7 +20,6 @@ tags:
   - pictures
   - resolution
   - tumblr
-  - ünsplash
   - wallpaper
 ---
 On the tumblr website <a href="https://unsplash.com/">https://unsplash.com/</a> you'll get every 10 days 10 new high resolution photographs made by various dedicated photographers.

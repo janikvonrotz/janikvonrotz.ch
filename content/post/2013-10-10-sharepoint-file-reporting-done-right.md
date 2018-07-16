@@ -19,7 +19,6 @@ tags:
   - script
   - sharepoint
   - storage
-  - unused
 ---
 To know what type of information a SharePoint Installation is holding could get more difficult as the platform grows.
 

@@ -10,7 +10,6 @@ categories:
   - Blog
   - Politics
 tags:
-  - basic
   - connect
   - countries
   - developing
@@ -24,7 +23,6 @@ tags:
   - people
   - privacy
   - web
-  - wide
   - world
 ---
 This video is a beautiful example of how internet access in remote areas improves the standards of health, education and prosperity. With the help from people all over the world Mahabir Pun has connected over 60.000 people to the world wide web.

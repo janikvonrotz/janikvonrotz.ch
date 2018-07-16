@@ -27,7 +27,6 @@ tags:
   - specific
   - user
   - username
-  - varaible
 ---
 For Meteor there are not many options left when choosing a user account package. The built-in option is the only use- and successful solution so far. The package is well documented and works like a charm. However, whenever I set up the account system in Meteor I am confronted with these two scenarios: 
 

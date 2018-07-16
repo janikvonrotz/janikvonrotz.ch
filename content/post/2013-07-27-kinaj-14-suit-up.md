@@ -9,13 +9,10 @@ image: /wp-content/uploads/2013/07/suit-up.jpg
 categories:
   - Music
 tags:
-  - barny
   - mixes
   - mixtape
   - music
   - playlist
   - soundcloud
-  - stinson
-  - suit up
 ---
 {{< soundcloud 5979277 >}}
