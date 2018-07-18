@@ -3,6 +3,7 @@ title: Another Wordpress to Hugo migration
 date: 2018-07-08T09:11:28+00:00
 author: Janik von Rotz
 slug: another-wordpress-to-hugo-migration
+image: /images/wordpress to hugo migration.png
 categories:
   - Hugo
   - Wordpress
