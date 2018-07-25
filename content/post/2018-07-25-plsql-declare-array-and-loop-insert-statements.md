@@ -1,5 +1,5 @@
 ---
-title: "PlSQL - Declare an array of objects and loop insert statements"
+title: "PL SQL - Declare an array of objects and loop insert statements"
 date: 2018-07-24T15:49:48+02:00
 slug: plsql-declare-an-array-of-objects-and-loop-insert-statements
 categories:
