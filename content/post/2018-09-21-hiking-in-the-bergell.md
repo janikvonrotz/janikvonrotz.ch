@@ -63,3 +63,5 @@ On our last day we headed down to the scenic village Soglio. Stone roofs, windig
 {{< figure src="/images/Hiking in the Bergell/08_Roofs of Soglio.jpg" title="Roofs of Soglio" >}}
 
 I hope my brief report inspires you to take some time off and to seek remote places. 😊
+
+You can download the images in this post in full resolution from my [flickr album](https://www.flickr.com/photos/janik-von-rotz/albums/72157698855198241).
