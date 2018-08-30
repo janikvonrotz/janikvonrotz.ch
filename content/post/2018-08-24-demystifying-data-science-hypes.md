@@ -28,7 +28,7 @@ He provided definitions for these overloaded terms and gave insight on what stat
 
 In the end it was all far less "magic" than expected. Companies such as IBM bloat these terms as part of their marketing campaigns in order to find companies to join the hypetrain and fund their research projects.
 
-Here is presentation download: ![AdN Presents Big Data Analytics](/documents/AdN Presents Big Data Analytics.pdf)
+Here is presentation download: [AdN Presents Big Data Analytics](/documents/AdN Presents Big Data Analytics.pdf)
 
-> IoT is about data, not things  
+> IoT is about data, not things.  
 > -- Prof. Dr. Diego Kuonen
