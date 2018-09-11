@@ -16,6 +16,7 @@ image: /images/numbers on white background.jpg
 ---
 
 Yesterday Prof. Dr. Diego Kuonen paid a visit at my company and held a lecture about data science and analytics. I enjoyed his presentation very much.
+<!--more-->
 
 He spent much time on demystifying well known hype words, such as:
 

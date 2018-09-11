@@ -15,6 +15,7 @@ image: /images/Hiking in the Bergell/09_Above Maloja.jpg
 A friend of mine, who went working abroad last year, spent a few weeks in Switzerland. As he missed the mountains a lot, we decided to go hiking and camping in the south of Switzerland.
 
 Equipped with two tents, 3 cookers and some clothes we took a 6 hour train ride from Central Switzerland to Bivio.
+<!--more-->
 
 ## Day 1 - Bivio
 
