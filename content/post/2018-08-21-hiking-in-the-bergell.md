@@ -1,6 +1,6 @@
 ---
 title: "Hiking in the Bergell"
-slug: 2018-09-21-hiking-in-the-bergell
+slug: 2018-08-21-hiking-in-the-bergell
 date: 2018-08-20T10:17:41+02:00
 categories:
  - Traveling
