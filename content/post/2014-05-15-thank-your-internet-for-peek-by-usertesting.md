@@ -12,7 +12,8 @@ enclosure:
     
 dsq_thread_id:
   - "2687193029"
-image: /wp-content/uploads/2014/05/peek-user-testing.png
+images:
+  - /wp-content/uploads/2014/05/peek-user-testing.png
 categories:
   - Web development
 tags:

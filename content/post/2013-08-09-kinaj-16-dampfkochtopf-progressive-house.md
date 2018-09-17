@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: kinaj-16-dampfkochtopf-progressive-house
 dsq_thread_id:
   - "1588949328"
-image: /wp-content/uploads/2013/07/soundcloud.png
+images:
+  - /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:

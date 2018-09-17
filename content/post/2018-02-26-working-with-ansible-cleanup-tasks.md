@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: working-with-ansible-cleanup-tasks
 specific_page_layout:
   - default-sidebar
-image: /wp-content/uploads/2018/02/Ansible-text-only-e1519640301147.png
+images:
+  - /wp-content/uploads/2018/02/Ansible-text-only-e1519640301147.png
 categories:
   - Ansible
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: kinaj-25-party-hard-bigroom
 dsq_thread_id:
   - "1976671752"
-image: /wp-content/uploads/2013/11/Party-Hard.png
+images:
+  - /wp-content/uploads/2013/11/Party-Hard.png
 categories:
   - Music
 tags:

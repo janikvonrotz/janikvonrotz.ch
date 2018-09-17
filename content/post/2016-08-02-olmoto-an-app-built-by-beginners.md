@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: olmoto-an-app-built-by-beginners
 dsq_thread_id:
   - "5033674694"
-image: /wp-content/uploads/2016/08/logo.png
+images:
+  - /wp-content/uploads/2016/08/logo.png
 categories:
   - Meteor
   - React

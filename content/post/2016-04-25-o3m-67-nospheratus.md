@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-67-nospheratus
 dsq_thread_id:
   - "4776186381"
-image: /wp-content/uploads/2016/04/O3M-67-Nospheratus.jpg
+images:
+  - /wp-content/uploads/2016/04/O3M-67-Nospheratus.jpg
 categories:
   - Blog
   - Music

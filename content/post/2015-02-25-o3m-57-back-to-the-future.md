@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-57-back-to-the-future
 dsq_thread_id:
   - "3547406542"
-image: /wp-content/uploads/2015/02/O3M-57-Back-to-the-future.jpg
+images:
+  - /wp-content/uploads/2015/02/O3M-57-Back-to-the-future.jpg
 categories:
   - Music
 tags:

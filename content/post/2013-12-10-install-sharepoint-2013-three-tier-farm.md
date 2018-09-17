@@ -12,7 +12,8 @@ dsq_thread_id:
 aliases:
   - /projects/install-sharepoint-2013-three-tier-farm/
   - /install-sharepoint-2013-three-tier-farm/
-image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
+images:
+  - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:

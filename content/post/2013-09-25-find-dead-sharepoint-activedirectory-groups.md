@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: find-dead-sharepoint-activedirectory-groups
 dsq_thread_id:
   - "1795902964"
-image: /wp-content/uploads/2013/07/PowerShell.png
+images:
+  - /wp-content/uploads/2013/07/PowerShell.png
 categories:
   - Active Directory
   - PowerShell

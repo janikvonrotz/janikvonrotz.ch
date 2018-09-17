@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: the-human-cost-of-electronics
 dsq_thread_id:
   - "2609033530"
-image: /wp-content/uploads/2014/04/The-Human-Cost-of-Electronics.png
+images:
+  - /wp-content/uploads/2014/04/The-Human-Cost-of-Electronics.png
 categories:
   - Politics
 tags:

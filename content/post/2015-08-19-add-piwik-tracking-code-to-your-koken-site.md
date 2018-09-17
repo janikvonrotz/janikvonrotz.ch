@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: add-piwik-tracking-code-to-your-koken-site
 dsq_thread_id:
   - "4046236797"
-image: /wp-content/uploads/2015/08/Koken-Logo.png
+images:
+  - /wp-content/uploads/2015/08/Koken-Logo.png
 categories:
   - Koken
 tags:

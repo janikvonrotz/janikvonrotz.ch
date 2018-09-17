@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: setup-ssh-on-windows-10
 specific_page_layout:
   - default-sidebar
-image: /wp-content/uploads/2018/01/windows-10-ssh-client-help.png
+images:
+  - /wp-content/uploads/2018/01/windows-10-ssh-client-help.png
 categories:
   - Windows
 tags:

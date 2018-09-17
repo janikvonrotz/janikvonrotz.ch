@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: usa-new-york
 dsq_thread_id:
   - "2969775600"
-image: /wp-content/uploads/2014/08/New-York-20140828.jpg
+images:
+  - /wp-content/uploads/2014/08/New-York-20140828.jpg
 categories:
   - Photography
   - Traveling

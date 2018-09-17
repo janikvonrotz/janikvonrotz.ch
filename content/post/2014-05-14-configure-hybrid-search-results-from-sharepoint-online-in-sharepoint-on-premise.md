@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: configure-hybrid-search-results-from-sharepoint-online-in-sharepoint-on-premise
 dsq_thread_id:
   - "2683850564"
-image: /wp-content/uploads/2014/04/SharePoint-Office-365-Hybrid-Solution.jpg
+images:
+  - /wp-content/uploads/2014/04/SharePoint-Office-365-Hybrid-Solution.jpg
 categories:
   - Blog
   - SharePoint

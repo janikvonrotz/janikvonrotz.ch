@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-26-rucksack-alternative-indie-rock
 dsq_thread_id:
   - "2054424149"
-image: /wp-content/uploads/2013/12/O3M-26-Rucksack-Alternative-Indie-Rock.jpg
+images:
+  - /wp-content/uploads/2013/12/O3M-26-Rucksack-Alternative-Indie-Rock.jpg
 categories:
   - Music
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-52-japan-powder
 dsq_thread_id:
   - "3418819760"
-image: /wp-content/uploads/2015/01/O3M-52-Japan-Powder-skiing.jpg
+images:
+  - /wp-content/uploads/2015/01/O3M-52-Japan-Powder-skiing.jpg
 categories:
   - Music
 tags:

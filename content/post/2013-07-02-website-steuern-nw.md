@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: website-steuern-nw
 dsq_thread_id:
   - "3468876786"
-image: /wp-content/uploads/2015/01/Typo3-Logo.jpg
+images:
+  - /wp-content/uploads/2015/01/Typo3-Logo.jpg
 categories:
   - Typo3
 tags:

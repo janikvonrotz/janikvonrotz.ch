@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: kinaj-17-salte-grolle-progressive-house
 dsq_thread_id:
   - "1602705519"
-image: /wp-content/uploads/2013/07/soundcloud.png
+images:
+  - /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: kinaj-21-its-a-trap-trap
 dsq_thread_id:
   - "1824313530"
-image: /wp-content/uploads/2013/10/Its-a-trap.jpg
+images:
+  - /wp-content/uploads/2013/10/Its-a-trap.jpg
 categories:
   - Music
 tags:

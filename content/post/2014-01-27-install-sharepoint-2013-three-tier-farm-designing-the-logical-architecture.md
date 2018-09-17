@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-sharepoint-2013-three-tier-farm-designing-the-logical-architecture
 dsq_thread_id:
   - "2180306074"
-image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
+images:
+  - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-45-indiend-ambient-chillout
 dsq_thread_id:
   - "2780407521"
-image: /wp-content/uploads/2014/05/O3M-45-InDiEnd-ambient-chillout1.png
+images:
+  - /wp-content/uploads/2014/05/O3M-45-InDiEnd-ambient-chillout1.png
 categories:
   - Music
 tags:

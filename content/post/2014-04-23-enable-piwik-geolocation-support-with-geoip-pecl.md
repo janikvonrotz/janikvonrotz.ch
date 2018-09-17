@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: enable-piwik-geolocation-support-with-geoip-pecl
 dsq_thread_id:
   - "2632437056"
-image: /wp-content/uploads/2014/12/logo-piwik-e1418200408662.png
+images:
+  - /wp-content/uploads/2014/12/logo-piwik-e1418200408662.png
 categories:
   - Piwik
 tags:

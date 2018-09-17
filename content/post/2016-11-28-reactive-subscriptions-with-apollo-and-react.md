@@ -7,7 +7,8 @@ dsq_thread_id:
   - "5337885808"
 dsq_needs_sync:
   - "1"
-image: /wp-content/uploads/2016/11/Apollo-Logo.png
+images:
+  - /wp-content/uploads/2016/11/Apollo-Logo.png
 categories:
   - Apollo
   - React

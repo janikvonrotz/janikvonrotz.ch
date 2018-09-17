@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: assign-temporary-administrator-rights-for-activedirectory-users-via-sharepoint-list
 dsq_thread_id:
   - "1976601577"
-image: /wp-content/uploads/2013/08/Active-Directory-Logo.png
+images:
+  - /wp-content/uploads/2013/08/Active-Directory-Logo.png
 categories:
   - Active Directory
   - PowerShell

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: finally-whatsapp-has-grown-up
 dsq_thread_id:
   - "3553983835"
-image: /wp-content/uploads/2015/02/WhatsApp-Logo.png
+images:
+  - /wp-content/uploads/2015/02/WhatsApp-Logo.png
 categories:
   - Web development
 tags:

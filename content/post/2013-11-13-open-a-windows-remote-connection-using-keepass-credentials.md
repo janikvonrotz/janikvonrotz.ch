@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: open-a-windows-remote-connection-using-keepass-credentials
 dsq_thread_id:
   - "1962619221"
-image: /wp-content/uploads/2013/11/KeePassIcon-e1393417316329.png
+images:
+  - /wp-content/uploads/2013/11/KeePassIcon-e1393417316329.png
 categories:
   - KeePass
 tags:

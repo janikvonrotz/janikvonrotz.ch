@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: backup-server-installations
 dsq_thread_id:
   - "3301838779"
-image: /wp-content/uploads/2014/03/Ubuntu-Logo.png
+images:
+  - /wp-content/uploads/2014/03/Ubuntu-Logo.png
 categories:
   - Ubuntu Server
 tags:

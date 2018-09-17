@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: timelapse-was-yesterday
 dsq_thread_id:
   - "3169142336"
-image: /wp-content/uploads/2014/10/Layerlapse-e1415086023151.png
+images:
+  - /wp-content/uploads/2014/10/Layerlapse-e1415086023151.png
 categories:
   - Photography
 tags:

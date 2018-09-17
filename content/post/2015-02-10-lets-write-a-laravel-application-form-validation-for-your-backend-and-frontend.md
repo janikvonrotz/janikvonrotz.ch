@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: lets-write-a-laravel-application-form-validation-for-your-backend-and-frontend
 dsq_thread_id:
   - "3500959987"
-image: /wp-content/uploads/2015/01/laravel-logo-e1422466263489.png
+images:
+  - /wp-content/uploads/2015/01/laravel-logo-e1422466263489.png
 categories:
   - Laravel
 tags:

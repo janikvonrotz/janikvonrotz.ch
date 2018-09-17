@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: thailand-chiang-mai-and-bangkok
 dsq_thread_id:
   - "2760030424"
-image: /wp-content/uploads/2014/06/The-doi-suthep-temple-20140608.jpg
+images:
+  - /wp-content/uploads/2014/06/The-doi-suthep-temple-20140608.jpg
 categories:
   - Photography
   - Traveling

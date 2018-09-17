@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: malaysia-penang-and-singapore
 dsq_thread_id:
   - "2814492981"
-image: /wp-content/uploads/2014/07/one-of-the-living-buildings-20140629.jpg
+images:
+  - /wp-content/uploads/2014/07/one-of-the-living-buildings-20140629.jpg
 categories:
   - Photography
   - Traveling

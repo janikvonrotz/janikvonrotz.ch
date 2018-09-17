@@ -12,7 +12,8 @@ enclosure:
     
 dsq_thread_id:
   - "4636535430"
-image: /wp-content/uploads/2016/03/election-banner-2016.jpg
+images:
+  - /wp-content/uploads/2016/03/election-banner-2016.jpg
 categories:
   - Politics
 tags:

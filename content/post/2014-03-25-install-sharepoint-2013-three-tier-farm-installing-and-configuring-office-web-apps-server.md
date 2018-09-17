@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-sharepoint-2013-three-tier-farm-installing-and-configuring-office-web-apps-server
 dsq_thread_id:
   - "2504593554"
-image: /wp-content/uploads/2014/03/Office-Web-Apps-Logo.png
+images:
+  - /wp-content/uploads/2014/03/Office-Web-Apps-Logo.png
 categories:
   - Windows Server
 tags:

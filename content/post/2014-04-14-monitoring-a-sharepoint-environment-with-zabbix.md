@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: monitoring-a-sharepoint-environment-with-zabbix
 dsq_thread_id:
   - "2610883638"
-image: /wp-content/uploads/2014/04/Zabbix-Logo-e1397484832591.png
+images:
+  - /wp-content/uploads/2014/04/Zabbix-Logo-e1397484832591.png
 categories:
   - Zabbix
 tags:

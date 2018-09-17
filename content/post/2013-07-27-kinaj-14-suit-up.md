@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: kinaj-14-suit-up
 dsq_thread_id:
   - "1536983866"
-image: /wp-content/uploads/2013/07/suit-up.jpg
+images:
+  - /wp-content/uploads/2013/07/suit-up.jpg
 categories:
   - Music
 tags:

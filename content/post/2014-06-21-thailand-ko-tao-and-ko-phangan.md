@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: thailand-ko-tao-and-ko-phangan
 dsq_thread_id:
   - "2783344513"
-image: /wp-content/uploads/2014/06/boats-in-Ko-Tao-20140617.jpg
+images:
+  - /wp-content/uploads/2014/06/boats-in-Ko-Tao-20140617.jpg
 categories:
   - Photography
   - Traveling

@@ -12,7 +12,8 @@ enclosure:
     
 dsq_thread_id:
   - "2724594746"
-image: /wp-content/uploads/2014/05/Dogecoin-future.jpg
+images:
+  - /wp-content/uploads/2014/05/Dogecoin-future.jpg
 categories:
   - Dogecoin
 tags:

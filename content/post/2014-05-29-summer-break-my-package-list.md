@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: summer-break-my-package-list
 dsq_thread_id:
   - "2721386704"
-image: /wp-content/uploads/2014/04/Traveling.png
+images:
+  - /wp-content/uploads/2014/04/Traveling.png
 categories:
   - Traveling
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: stock-market-analysis-with-r
 dsq_thread_id:
   - "4427593317"
-image: /wp-content/uploads/2015/12/R-language-logo.png
+images:
+  - /wp-content/uploads/2015/12/R-language-logo.png
 categories:
   - Blog
   - R programming language

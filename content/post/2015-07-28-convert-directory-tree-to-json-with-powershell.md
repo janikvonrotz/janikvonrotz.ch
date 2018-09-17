@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: convert-directory-tree-to-json-with-powershell
 dsq_thread_id:
   - "3979634859"
-image: /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png
+images:
+  - /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png
 categories:
   - PowerShell
 tags:

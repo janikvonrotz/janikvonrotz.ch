@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: get-a-free-verified-ssl-certificate-from-startssl
 dsq_thread_id:
   - "2513276401"
-image: /wp-content/uploads/2014/03/OpenSSL-Logo.png
+images:
+  - /wp-content/uploads/2014/03/OpenSSL-Logo.png
 categories:
   - OpenSSL
 tags:

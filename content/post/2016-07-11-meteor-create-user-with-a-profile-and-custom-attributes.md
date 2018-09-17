@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: meteor-create-user-with-a-profile-and-custom-attributes
 dsq_thread_id:
   - "4977952562"
-image: /wp-content/uploads/2015/12/Meteor-Logo.png
+images:
+  - /wp-content/uploads/2015/12/Meteor-Logo.png
 categories:
   - Meteor
 tags:

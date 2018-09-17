@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: sharepoint-export-and-import-term-sets-from-term-store
 dsq_thread_id:
   - "2570434568"
-image: /wp-content/uploads/2014/02/SharePoint-Online.jpg
+images:
+  - /wp-content/uploads/2014/02/SharePoint-Online.jpg
 categories:
   - SharePoint
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-npm-package-forever
 dsq_thread_id:
   - "2532782991"
-image: /wp-content/uploads/2014/03/Node.js-Logo.png
+images:
+  - /wp-content/uploads/2014/03/Node.js-Logo.png
 categories:
   - Node.js
 tags:

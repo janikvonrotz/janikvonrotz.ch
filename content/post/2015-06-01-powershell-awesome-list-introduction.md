@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: powershell-awesome-list-introduction
 dsq_thread_id:
   - "3811307919"
-image: /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png
+images:
+  - /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png
 categories:
   - PowerShell
 tags:

@@ -3,7 +3,8 @@ title: SOA and microservices explained well
 date: 2018-05-09T16:11:00+00:00
 author: Janik von Rotz
 slug: soa-and-microservices-explained-well
-image: /wp-content/uploads/2018/05/architecture.jpg
+images:
+  - /wp-content/uploads/2018/05/architecture.jpg
 categories:
   - Blog
 tags:

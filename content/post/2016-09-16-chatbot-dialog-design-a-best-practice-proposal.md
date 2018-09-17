@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: chatbot-dialog-design-a-best-practice-proposal
 dsq_thread_id:
   - "5149455320"
-image: /wp-content/uploads/2016/09/UX-banner-e1474038570257.jpg
+images:
+  - /wp-content/uploads/2016/09/UX-banner-e1474038570257.jpg
 categories:
   - Chatbot
 ---

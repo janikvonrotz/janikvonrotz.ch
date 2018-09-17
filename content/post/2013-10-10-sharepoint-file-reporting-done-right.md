@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: sharepoint-file-reporting-done-right
 dsq_thread_id:
   - "1843312893"
-image: /wp-content/uploads/2013/07/PowerShell.png
+images:
+  - /wp-content/uploads/2013/07/PowerShell.png
 categories:
   - PowerShell
   - SharePoint

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: kinaj-03-space-cat-electro-pop-electro-house-dance
 dsq_thread_id:
   - "1459936221"
-image: /wp-content/uploads/2013/07/soundcloud.png
+images:
+  - /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-ruby-and-rubygems-with-rvm
 dsq_thread_id:
   - "2644399290"
-image: /wp-content/uploads/2014/04/Ruby-Logo.png
+images:
+  - /wp-content/uploads/2014/04/Ruby-Logo.png
 categories:
   - Ruby
 ---

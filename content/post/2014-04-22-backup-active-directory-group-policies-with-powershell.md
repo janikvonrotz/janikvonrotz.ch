@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: backup-active-directory-group-policies-with-powershell
 dsq_thread_id:
   - "2629693584"
-image: /wp-content/uploads/2013/10/Group-Policy.jpg
+images:
+  - /wp-content/uploads/2013/10/Group-Policy.jpg
 categories:
   - Active Directory
   - PowerShell

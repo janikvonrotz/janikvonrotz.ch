@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: happy-birthday-to-me
 dsq_thread_id:
   - "1483448690"
-image: /wp-content/uploads/2013/07/Party-Hard.jpg
+images:
+  - /wp-content/uploads/2013/07/Party-Hard.jpg
 categories:
   - Blog
 tags:

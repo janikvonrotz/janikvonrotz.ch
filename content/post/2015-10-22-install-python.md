@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-python
 dsq_thread_id:
   - "4247785113"
-image: /wp-content/uploads/2015/10/Python-Logo.png
+images:
+  - /wp-content/uploads/2015/10/Python-Logo.png
 categories:
   - Python
 tags:

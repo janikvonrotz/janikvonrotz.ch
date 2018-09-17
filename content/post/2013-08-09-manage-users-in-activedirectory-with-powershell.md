@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: manage-users-in-activedirectory-with-powershell
 dsq_thread_id:
   - "1588015157"
-image: /wp-content/uploads/2013/08/Active-Directory-Logo.png
+images:
+  - /wp-content/uploads/2013/08/Active-Directory-Logo.png
 categories:
   - Active Directory
   - PowerShell

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: download-full-playlists-and-all-songs-by-an-artist-from-soundcloud
 dsq_thread_id:
   - "2681691439"
-image: /wp-content/uploads/2013/07/soundcloud.png
+images:
+  - /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
   - Ubuntu Server

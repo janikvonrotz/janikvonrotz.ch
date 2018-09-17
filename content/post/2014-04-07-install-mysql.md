@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-mysql
 dsq_thread_id:
   - "2592456287"
-image: /wp-content/uploads/2014/04/MySQL-Logo.png
+images:
+  - /wp-content/uploads/2014/04/MySQL-Logo.png
 categories:
   - MySQL
 tags:

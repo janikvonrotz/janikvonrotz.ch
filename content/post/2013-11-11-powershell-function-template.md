@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: powershell-function-template
 dsq_thread_id:
   - "1956333799"
-image: /wp-content/uploads/2013/07/PowerShell.png
+images:
+  - /wp-content/uploads/2013/07/PowerShell.png
 categories:
   - PowerShell
 tags:

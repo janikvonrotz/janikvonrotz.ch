@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-42-dickbutt-electro
 dsq_thread_id:
   - "2713992108"
-image: /wp-content/uploads/2014/05/O3M-42-DickButt-electro.jpg
+images:
+  - /wp-content/uploads/2014/05/O3M-42-DickButt-electro.jpg
 categories:
   - Music
 tags:

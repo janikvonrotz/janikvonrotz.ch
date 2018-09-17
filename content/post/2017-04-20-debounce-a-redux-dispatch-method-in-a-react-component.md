@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: debounce-a-redux-dispatch-method-in-a-react-component
 dsq_thread_id:
   - "5743813164"
-image: /wp-content/uploads/2017/03/Redux-and-React.png
+images:
+  - /wp-content/uploads/2017/03/Redux-and-React.png
 categories:
   - React
   - Redux

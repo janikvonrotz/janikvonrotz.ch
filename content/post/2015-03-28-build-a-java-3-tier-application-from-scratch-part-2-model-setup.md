@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: build-a-java-3-tier-application-from-scratch-part-2-model-setup
 dsq_thread_id:
   - "3634666145"
-image: /wp-content/uploads/2014/10/Java-logo.jpg
+images:
+  - /wp-content/uploads/2014/10/Java-logo.jpg
 categories:
   - Blog
 tags:

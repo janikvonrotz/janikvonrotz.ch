@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: simple-redirect-with-apache2
 dsq_thread_id:
   - "1967892452"
-image: /wp-content/uploads/2013/11/apache.jpg
+images:
+  - /wp-content/uploads/2013/11/apache.jpg
 categories:
   - Apache
 tags:

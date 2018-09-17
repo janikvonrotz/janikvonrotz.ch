@@ -7,7 +7,8 @@ categories:
 tags:
  - undo
  - merge
-image: /wp-content/uploads/2014/03/Git-Logo.png
+images:
+  - /wp-content/uploads/2014/03/Git-Logo.png
 ---
 
 First of all the solution to the problem I am tackling should not exist in the first place. If you have to revert a merge on a git branch, think about alternatives. If not other option is left, I'll show you how you can undo a merge with `git revert`.

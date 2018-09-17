@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: increase-max-upload-for-php5-fpm-website
 dsq_thread_id:
   - "2603118431"
-image: /wp-content/uploads/2014/03/php-logo.jpeg
+images:
+  - /wp-content/uploads/2014/03/php-logo.jpeg
 categories:
   - PHP
 tags:

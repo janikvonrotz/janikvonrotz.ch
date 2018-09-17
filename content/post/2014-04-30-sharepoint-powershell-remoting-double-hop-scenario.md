@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: sharepoint-powershell-remoting-double-hop-scenario
 dsq_thread_id:
   - "2650848952"
-image: /wp-content/uploads/2013/07/PowerShell.png
+images:
+  - /wp-content/uploads/2013/07/PowerShell.png
 categories:
   - PowerShell
   - SharePoint

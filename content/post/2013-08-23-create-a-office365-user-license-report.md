@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: create-a-office365-user-license-report
 dsq_thread_id:
   - "1633015026"
-image: /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg
+images:
+  - /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg
 categories:
   - Office 365
   - PowerShell

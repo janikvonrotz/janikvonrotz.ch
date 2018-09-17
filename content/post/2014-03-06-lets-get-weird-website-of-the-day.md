@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: lets-get-weird-website-of-the-day
 dsq_thread_id:
   - "2371075411"
-image: /wp-content/uploads/2014/03/letsgetweird.jpg
+images:
+  - /wp-content/uploads/2014/03/letsgetweird.jpg
 categories:
   - Blog
 tags:

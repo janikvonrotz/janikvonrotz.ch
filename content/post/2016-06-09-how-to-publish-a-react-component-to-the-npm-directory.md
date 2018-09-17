@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: how-to-publish-a-react-component-to-the-npm-directory
 dsq_thread_id:
   - "4896495057"
-image: /wp-content/uploads/2014/04/React-Logo.png
+images:
+  - /wp-content/uploads/2014/04/React-Logo.png
 categories:
   - Blog
   - Node.js

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: create-gpg-keys
 dsq_thread_id:
   - "2597967325"
-image: /wp-content/uploads/2014/03/GnuPG-Logo.png
+images:
+  - /wp-content/uploads/2014/03/GnuPG-Logo.png
 categories:
   - Ubuntu Server
 tags:

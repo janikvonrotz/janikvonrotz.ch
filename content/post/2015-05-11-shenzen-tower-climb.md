@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: shenzen-tower-climb
 dsq_thread_id:
   - "3766022789"
-image: /wp-content/uploads/2015/05/on-the-roofs-shenzen-tower-e1431368470625.jpg
+images:
+  - /wp-content/uploads/2015/05/on-the-roofs-shenzen-tower-e1431368470625.jpg
 categories:
   - Parkour
 tags:

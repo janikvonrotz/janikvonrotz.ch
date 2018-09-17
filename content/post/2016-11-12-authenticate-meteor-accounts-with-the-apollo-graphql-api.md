@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: authenticate-meteor-accounts-with-the-apollo-graphql-api
 dsq_thread_id:
   - "5298095930"
-image: /wp-content/uploads/2016/11/Apollo-Logo.png
+images:
+  - /wp-content/uploads/2016/11/Apollo-Logo.png
 categories:
   - Apollo
 tags:

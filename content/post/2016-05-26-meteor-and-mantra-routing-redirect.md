@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: meteor-and-mantra-routing-redirect
 dsq_thread_id:
   - "4858703770"
-image: /wp-content/uploads/2016/05/Mantra-Logo.jpeg
+images:
+  - /wp-content/uploads/2016/05/Mantra-Logo.jpeg
 categories:
   - Meteor
 tags:

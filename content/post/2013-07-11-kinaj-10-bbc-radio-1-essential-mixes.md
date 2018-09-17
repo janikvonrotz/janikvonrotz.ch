@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: kinaj-10-bbc-radio-1-essential-mixes
 dsq_thread_id:
   - "1487271735"
-image: /wp-content/uploads/2013/07/soundcloud.png
+images:
+  - /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:

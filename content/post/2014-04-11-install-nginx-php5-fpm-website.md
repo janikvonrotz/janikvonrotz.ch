@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-nginx-php5-fpm-website
 dsq_thread_id:
   - "2603114610"
-image: /wp-content/uploads/2014/03/Nginx-Logo-e1394033855329.png
+images:
+  - /wp-content/uploads/2014/03/Nginx-Logo-e1394033855329.png
 categories:
   - Nginx
   - PHP

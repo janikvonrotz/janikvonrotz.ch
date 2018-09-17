@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: kinaj-24-chill-deep-house-minimal
 dsq_thread_id:
   - "1947690194"
-image: /wp-content/uploads/2013/11/Insane-Buterfly1.jpg
+images:
+  - /wp-content/uploads/2013/11/Insane-Buterfly1.jpg
 categories:
   - Music
 tags:

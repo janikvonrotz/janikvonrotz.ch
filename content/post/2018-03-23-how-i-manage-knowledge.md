@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: how-i-manage-knowledge
 specific_page_layout:
   - default-sidebar
-image: /wp-content/uploads/2018/03/Knowledge-Book-Site.jpg
+images:
+  - /wp-content/uploads/2018/03/Knowledge-Book-Site.jpg
 categories:
   - Blog
 tags:

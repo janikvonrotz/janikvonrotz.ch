@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: some-art-and-photography-inspiration
 dsq_thread_id:
   - "3431569496"
-image: /wp-content/uploads/2015/01/Photography.jpg
+images:
+  - /wp-content/uploads/2015/01/Photography.jpg
 categories:
   - Photography
 tags:

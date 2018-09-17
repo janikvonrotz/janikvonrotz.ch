@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: disable-wordpress-plugins-manually
 dsq_thread_id:
   - "2648145178"
-image: /wp-content/uploads/2014/02/wordpress-logo.jpg
+images:
+  - /wp-content/uploads/2014/02/wordpress-logo.jpg
 categories:
   - WordPress
 tags:

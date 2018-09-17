@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: backup-your-onenote-files
 dsq_thread_id:
   - "3126193518"
-image: /wp-content/uploads/2014/03/Office-2013-Logo.jpg
+images:
+  - /wp-content/uploads/2014/03/Office-2013-Logo.jpg
 categories:
   - Office
 tags:

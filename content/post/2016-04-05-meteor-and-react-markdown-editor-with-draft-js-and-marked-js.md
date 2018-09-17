@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: meteor-and-react-markdown-editor-with-draft-js-and-marked-js
 dsq_thread_id:
   - "4721310765"
-image: /wp-content/uploads/2016/03/meteor-react-logo-1200x201.png
+images:
+  - /wp-content/uploads/2016/03/meteor-react-logo-1200x201.png
 categories:
   - Meteor
   - React

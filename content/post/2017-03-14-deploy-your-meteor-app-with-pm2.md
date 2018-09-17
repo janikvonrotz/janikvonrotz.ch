@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: deploy-your-meteor-app-with-pm2
 dsq_thread_id:
   - "5631475555"
-image: /wp-content/uploads/2017/02/Meteor-Logo-inverted.png
+images:
+  - /wp-content/uploads/2017/02/Meteor-Logo-inverted.png
 categories:
   - Meteor
 tags:

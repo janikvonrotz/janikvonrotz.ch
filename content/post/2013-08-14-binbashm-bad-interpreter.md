@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: binbashm-bad-interpreter
 dsq_thread_id:
   - "1605090780"
-image: /wp-content/uploads/2013/08/Linux-Logo.jpg
+images:
+  - /wp-content/uploads/2013/08/Linux-Logo.jpg
 categories:
   - Ubuntu Server
 tags:

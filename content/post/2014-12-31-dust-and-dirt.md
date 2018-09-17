@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: dust-and-dirt
 dsq_thread_id:
   - "3376588668"
-image: /wp-content/uploads/2014/12/dust-and-dirt.jpg
+images:
+  - /wp-content/uploads/2014/12/dust-and-dirt.jpg
 categories:
   - Photography
 tags:

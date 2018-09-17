@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: step-by-step-install-wordpress-blog
 dsq_thread_id:
   - "2482767459"
-image: /wp-content/uploads/2014/02/wordpress-logo.jpg
+images:
+  - /wp-content/uploads/2014/02/wordpress-logo.jpg
 categories:
   - WordPress
 tags:

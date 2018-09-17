@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: redesign-of-duckduckgo
 dsq_thread_id:
   - "2714182562"
-image: /wp-content/uploads/2014/05/DuckDuckGo-Logo.png
+images:
+  - /wp-content/uploads/2014/05/DuckDuckGo-Logo.png
 categories:
   - IT Security
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: graphql-with-apollo-meteor-and-react
 dsq_thread_id:
   - "5209861289"
-image: /wp-content/uploads/2016/10/react-meteor-graphl-apollo-1200x356.jpg
+images:
+  - /wp-content/uploads/2016/10/react-meteor-graphl-apollo-1200x356.jpg
 categories:
   - Apollo
   - Blog

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: website-update-ssl
 dsq_thread_id:
   - "2462518912"
-image: /wp-content/uploads/2014/03/Amazon-AWS-Logo.png
+images:
+  - /wp-content/uploads/2014/03/Amazon-AWS-Logo.png
 categories:
   - Blog
 ---

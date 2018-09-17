@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-limesurvey-webapp
 dsq_thread_id:
   - "3664178112"
-image: /wp-content/uploads/2015/04/LimeSurvey-Logo.png
+images:
+  - /wp-content/uploads/2015/04/LimeSurvey-Logo.png
 categories:
   - LimeSurvey
 tags:

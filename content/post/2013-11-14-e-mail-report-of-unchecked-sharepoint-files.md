@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: e-mail-report-of-unchecked-sharepoint-files
 dsq_thread_id:
   - "1965705690"
-image: /wp-content/uploads/2013/07/PowerShell.png
+images:
+  - /wp-content/uploads/2013/07/PowerShell.png
 categories:
   - SharePoint
 tags:

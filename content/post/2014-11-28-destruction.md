@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: destruction
 dsq_thread_id:
   - "3270506990"
-image: /wp-content/uploads/2014/11/Destruction-title.jpg
+images:
+  - /wp-content/uploads/2014/11/Destruction-title.jpg
 categories:
   - Photography
 tags:

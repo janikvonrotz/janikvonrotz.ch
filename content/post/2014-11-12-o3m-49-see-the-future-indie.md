@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-49-see-the-future-indie
 dsq_thread_id:
   - "3217963625"
-image: /wp-content/uploads/2014/11/O3M-49-See-The-Future-Indie.png
+images:
+  - /wp-content/uploads/2014/11/O3M-49-See-The-Future-Indie.png
 categories:
   - Music
 tags:

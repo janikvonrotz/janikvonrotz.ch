@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-net-framework-3-5-on-windows-server-2012-and-windows-server-2012-r2
 dsq_thread_id:
   - "2406018894"
-image: /wp-content/uploads/2014/03/Windows-Server-2012-Logo-e1394519276892.jpg
+images:
+  - /wp-content/uploads/2014/03/Windows-Server-2012-Logo-e1394519276892.jpg
 categories:
   - Windows Server
 tags:

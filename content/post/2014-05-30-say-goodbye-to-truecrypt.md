@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: say-goodbye-to-truecrypt
 dsq_thread_id:
   - "2723322151"
-image: /wp-content/uploads/2014/04/IT-security-logo.jpg
+images:
+  - /wp-content/uploads/2014/04/IT-security-logo.jpg
 categories:
   - IT Security
 tags:

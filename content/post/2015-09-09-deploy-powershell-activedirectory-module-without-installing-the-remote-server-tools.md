@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: deploy-powershell-activedirectory-module-without-installing-the-remote-server-tools
 dsq_thread_id:
   - "4113355907"
-image: /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png
+images:
+  - /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png
 categories:
   - PowerShell
 tags:

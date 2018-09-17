@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-63-beauty-of-music
 dsq_thread_id:
   - "3852929154"
-image: /wp-content/uploads/2015/06/O3M-63-Beauty-of-Music.jpg
+images:
+  - /wp-content/uploads/2015/06/O3M-63-Beauty-of-Music.jpg
 categories:
   - Music
 tags:

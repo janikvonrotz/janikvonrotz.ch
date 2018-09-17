@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-44-pyro-electro
 dsq_thread_id:
   - "2723720129"
-image: /wp-content/uploads/2014/05/O3M-44-Pyro-electro.png
+images:
+  - /wp-content/uploads/2014/05/O3M-44-Pyro-electro.png
 categories:
   - Music
 tags:

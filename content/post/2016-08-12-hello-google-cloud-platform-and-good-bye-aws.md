@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: hello-google-cloud-platform-and-good-bye-aws
 dsq_thread_id:
   - "5060595111"
-image: /wp-content/uploads/2016/08/Google-Cloud-Platform-1200x741.png
+images:
+  - /wp-content/uploads/2016/08/Google-Cloud-Platform-1200x741.png
 categories:
   - Blog
   - MySQL

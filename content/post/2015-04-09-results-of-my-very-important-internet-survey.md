@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: results-of-my-very-important-internet-survey
 dsq_thread_id:
   - "3667495750"
-image: /wp-content/uploads/2015/04/Survey.png
+images:
+  - /wp-content/uploads/2015/04/Survey.png
 categories:
   - Blog
 tags:

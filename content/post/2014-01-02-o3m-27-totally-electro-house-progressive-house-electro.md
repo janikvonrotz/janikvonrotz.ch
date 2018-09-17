@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-27-totally-electro-house-progressive-house-electro
 dsq_thread_id:
   - "2087326430"
-image: /wp-content/uploads/2014/01/O3M-27-Totally-electro-house-progressive-house-electro-500x372.jpg
+images:
+  - /wp-content/uploads/2014/01/O3M-27-Totally-electro-house-progressive-house-electro-500x372.jpg
 categories:
   - Music
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: add-a-new-file-type-in-sharepoint-keepass-example
 dsq_thread_id:
   - "2610061515"
-image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
+images:
+  - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - KeePass
   - SharePoint

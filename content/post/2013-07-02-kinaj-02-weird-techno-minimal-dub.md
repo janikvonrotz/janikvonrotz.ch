@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: kinaj-02-weird-techno-minimal-dub
 dsq_thread_id:
   - "1459858793"
-image: /wp-content/uploads/2013/07/soundcloud.png
+images:
+  - /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:

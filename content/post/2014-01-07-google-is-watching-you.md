@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: google-is-watching-you
 dsq_thread_id:
   - "2097735212"
-image: /wp-content/uploads/2014/01/dont-track-us.png
+images:
+  - /wp-content/uploads/2014/01/dont-track-us.png
 categories:
   - Politics
 tags:

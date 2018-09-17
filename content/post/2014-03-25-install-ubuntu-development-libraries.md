@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-ubuntu-development-libraries
 dsq_thread_id:
   - "2505364282"
-image: /wp-content/uploads/2014/03/Ubuntu-Logo.png
+images:
+  - /wp-content/uploads/2014/03/Ubuntu-Logo.png
 categories:
   - Ubuntu Server
 tags:

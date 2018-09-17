@@ -3,7 +3,8 @@ title: "Hugo Soundcloud shortcode"
 date: 2018-07-09T16:52:17+02:00
 author: Janik von Rotz
 slug: hugo-soundcloud-shortcode
-image: /images/hugo static site generator logo.jpg
+images:
+  - /images/hugo static site generator logo.jpg
 categories:
   - Hugo
   - Music

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-postfix-with-mail-forwarding
 dsq_thread_id:
   - "3293332395"
-image: /wp-content/uploads/2014/04/postfix-logo.png
+images:
+  - /wp-content/uploads/2014/04/postfix-logo.png
 categories:
   - Postfix
 tags:

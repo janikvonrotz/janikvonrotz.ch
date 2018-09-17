@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-38-avec-plaisir-dance-house
 dsq_thread_id:
   - "2661634770"
-image: /wp-content/uploads/2014/04/O3M-38-Avec-Plaisir-Dance-House.jpg
+images:
+  - /wp-content/uploads/2014/04/O3M-38-Avec-Plaisir-Dance-House.jpg
 categories:
   - Music
 tags:

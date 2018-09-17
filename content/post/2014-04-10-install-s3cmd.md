@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-s3cmd
 dsq_thread_id:
   - "2600602242"
-image: /wp-content/uploads/2014/03/Amazon-AWS-Logo.png
+images:
+  - /wp-content/uploads/2014/03/Amazon-AWS-Logo.png
 categories:
   - Ubuntu Server
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: adfs-login-customization
 dsq_thread_id:
   - "1871576330"
-image: /wp-content/uploads/2013/09/office-logo_v3.jpg
+images:
+  - /wp-content/uploads/2013/09/office-logo_v3.jpg
 categories:
   - Office 365
 tags:

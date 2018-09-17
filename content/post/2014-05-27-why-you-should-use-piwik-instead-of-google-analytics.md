@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: why-you-should-use-piwik-instead-of-google-analytics
 dsq_thread_id:
   - "2717745209"
-image: /wp-content/uploads/2014/12/logo-piwik-e1418200408662.png
+images:
+  - /wp-content/uploads/2014/12/logo-piwik-e1418200408662.png
 categories:
   - Piwik
 tags:

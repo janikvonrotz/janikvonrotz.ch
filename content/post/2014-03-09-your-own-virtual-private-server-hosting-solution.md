@@ -8,7 +8,8 @@ slug:
 aliases: your-own-virtual-private-server-hosting-solution
   - /your-own-virtual-private-server-hosting-solution/
   - /projects/your-own-virtual-private-server-hosting-solution/
-image: /wp-content/uploads/2014/03/Ubuntu-Logo.png
+images:
+  - /wp-content/uploads/2014/03/Ubuntu-Logo.png
 categories:
   - Ubuntu
 tags:

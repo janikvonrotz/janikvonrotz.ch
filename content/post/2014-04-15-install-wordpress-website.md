@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-wordpress-website
 dsq_thread_id:
   - "2612708517"
-image: /wp-content/uploads/2014/02/wordpress-logo.jpg
+images:
+  - /wp-content/uploads/2014/02/wordpress-logo.jpg
 categories:
   - WordPress
 tags:

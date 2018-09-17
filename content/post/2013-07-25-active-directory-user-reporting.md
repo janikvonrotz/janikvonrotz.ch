@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: active-directory-user-reporting
 dsq_thread_id:
   - "1529885769"
-image: /wp-content/uploads/2013/07/PowerShell.png
+images:
+  - /wp-content/uploads/2013/07/PowerShell.png
 categories:
   - PowerShell
 tags:

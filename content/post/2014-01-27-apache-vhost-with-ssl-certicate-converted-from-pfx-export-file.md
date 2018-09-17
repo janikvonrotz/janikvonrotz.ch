@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: apache-vhost-with-ssl-certicate-converted-from-pfx-export-file
 dsq_thread_id:
   - "2180845834"
-image: /wp-content/uploads/2013/11/apache.jpg
+images:
+  - /wp-content/uploads/2013/11/apache.jpg
 categories:
   - Apache
 tags:

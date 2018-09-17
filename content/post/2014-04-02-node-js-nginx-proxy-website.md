@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: node-js-nginx-proxy-website
 dsq_thread_id:
   - "2579972746"
-image: /wp-content/uploads/2014/03/Node.js-Logo.png
+images:
+  - /wp-content/uploads/2014/03/Node.js-Logo.png
 categories:
   - Node.js
 tags:

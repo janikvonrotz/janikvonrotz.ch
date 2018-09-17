@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: zabbix-stack-with-vagrant-coreos-and-docker
 dsq_thread_id:
   - "4206142138"
-image: /wp-content/uploads/2015/10/Docker-logo.png
+images:
+  - /wp-content/uploads/2015/10/Docker-logo.png
 categories:
   - Docker
 tags:

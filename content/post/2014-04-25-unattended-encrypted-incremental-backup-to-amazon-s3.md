@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: unattended-encrypted-incremental-backup-to-amazon-s3
 dsq_thread_id:
   - "2637431879"
-image: /wp-content/uploads/2014/03/Amazon-AWS-Logo.png
+images:
+  - /wp-content/uploads/2014/03/Amazon-AWS-Logo.png
 categories:
   - Blog
 tags:

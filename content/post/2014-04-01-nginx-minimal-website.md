@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: nginx-minimal-website
 dsq_thread_id:
   - "2570589685"
-image: /wp-content/uploads/2014/03/Nginx-Logo-e1394033855329.png
+images:
+  - /wp-content/uploads/2014/03/Nginx-Logo-e1394033855329.png
 categories:
   - Nginx
 tags:

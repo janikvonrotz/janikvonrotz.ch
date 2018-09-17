@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: summary-of-sharepoint-2013-archiving-features
 dsq_thread_id:
   - "2696211687"
-image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
+images:
+  - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 ---

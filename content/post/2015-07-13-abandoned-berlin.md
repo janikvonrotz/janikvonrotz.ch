@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: abandoned-berlin
 dsq_thread_id:
   - "3930288152"
-image: /wp-content/uploads/2015/07/Abandoned-Berlin.jpg
+images:
+  - /wp-content/uploads/2015/07/Abandoned-Berlin.jpg
 categories:
   - Photography
 tags:

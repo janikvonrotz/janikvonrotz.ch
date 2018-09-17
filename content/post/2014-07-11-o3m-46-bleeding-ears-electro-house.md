@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-46-bleeding-ears-electro-house
 dsq_thread_id:
   - "2858491354"
-image: /wp-content/uploads/2014/05/O3M-46-Bleeding-Ears-Electro-House1.png
+images:
+  - /wp-content/uploads/2014/05/O3M-46-Bleeding-Ears-Electro-House1.png
 categories:
   - Music
 tags:

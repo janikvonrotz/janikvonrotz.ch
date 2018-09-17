@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: impressions-of-the-turnerabend-2017
 specific_page_layout:
   - default-sidebar
-image: /wp-content/uploads/2017/11/1-Sportlight-Banner.jpg
+images:
+  - /wp-content/uploads/2017/11/1-Sportlight-Banner.jpg
 categories:
   - Photography
 tags:

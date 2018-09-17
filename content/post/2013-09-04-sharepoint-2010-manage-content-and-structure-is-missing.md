@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: sharepoint-2010-manage-content-and-structure-is-missing
 dsq_thread_id:
   - "1709542508"
-image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
+images:
+  - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:

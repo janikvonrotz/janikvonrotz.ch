@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: archive-activedirectory-users-and-their-mailbox
 dsq_thread_id:
   - "1856361269"
-image: /wp-content/uploads/2013/08/exchange-2013-e1393417827333.jpg
+images:
+  - /wp-content/uploads/2013/08/exchange-2013-e1393417827333.jpg
 categories:
   - Active Directory
   - Exchange

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: limitations-and-workarounds-for-managed-metadata-navigation-for-multiple-site-collections
 dsq_thread_id:
   - "2632498147"
-image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
+images:
+  - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - Blog
 tags:

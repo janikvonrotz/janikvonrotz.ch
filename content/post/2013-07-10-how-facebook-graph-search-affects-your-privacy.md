@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: how-facebook-graph-search-affects-your-privacy
 dsq_thread_id:
   - "1484480533"
-image: /wp-content/uploads/2014/12/logo-facebook2.png
+images:
+  - /wp-content/uploads/2014/12/logo-facebook2.png
 categories:
   - Politics
 tags:

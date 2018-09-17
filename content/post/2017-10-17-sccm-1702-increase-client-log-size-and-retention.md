@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: sccm-1702-increase-client-log-size-and-retention
 specific_page_layout:
   - default-sidebar
-image: /wp-content/uploads/2017/10/System-Center-Configuration-Manager-Logo.jpg
+images:
+  - /wp-content/uploads/2017/10/System-Center-Configuration-Manager-Logo.jpg
 categories:
   - Configuration Manager
 tags:

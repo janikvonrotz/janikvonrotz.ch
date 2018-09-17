@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: print-all-over-me-is-one-amazing-thing
 dsq_thread_id:
   - "3532541604"
-image: /wp-content/uploads/2015/02/Print-All-Over-Me-logo.png
+images:
+  - /wp-content/uploads/2015/02/Print-All-Over-Me-logo.png
 categories:
   - Blog
 tags:

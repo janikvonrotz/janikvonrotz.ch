@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: hilly-lisbon
 dsq_thread_id:
   - "4644693728"
-image: /wp-content/uploads/2016/03/Lisbon-graffiti-1200x425.jpg
+images:
+  - /wp-content/uploads/2016/03/Lisbon-graffiti-1200x425.jpg
 categories:
   - Photography
   - Traveling

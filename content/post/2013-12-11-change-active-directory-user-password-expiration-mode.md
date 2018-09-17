@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: change-active-directory-user-password-expiration-mode
 dsq_thread_id:
   - "2043937580"
-image: /wp-content/uploads/2013/12/PowerShell-and-ActiveDirectory.png
+images:
+  - /wp-content/uploads/2013/12/PowerShell-and-ActiveDirectory.png
 categories:
   - Active Directory
 tags:

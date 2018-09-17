@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: make-your-redux-react-app-multilingual
 dsq_thread_id:
   - "5596829010"
-image: /wp-content/uploads/2017/03/Redux-and-React.png
+images:
+  - /wp-content/uploads/2017/03/Redux-and-React.png
 categories:
   - React
   - Redux

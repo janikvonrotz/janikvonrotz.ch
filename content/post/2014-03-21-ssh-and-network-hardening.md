@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: ssh-and-network-hardening
 dsq_thread_id:
   - "2477781603"
-image: /wp-content/uploads/2014/03/Ubuntu-Logo.png
+images:
+  - /wp-content/uploads/2014/03/Ubuntu-Logo.png
 categories:
   - Ubuntu Server
 tags:

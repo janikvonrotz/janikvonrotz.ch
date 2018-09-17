@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-koken-website
 dsq_thread_id:
   - "4082754740"
-image: /wp-content/uploads/2015/08/Koken-Logo.png
+images:
+  - /wp-content/uploads/2015/08/Koken-Logo.png
 categories:
   - Koken
 tags:

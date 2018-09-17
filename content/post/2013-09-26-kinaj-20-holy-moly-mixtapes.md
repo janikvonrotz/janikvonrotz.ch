@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: kinaj-20-holy-moly-mixtapes
 dsq_thread_id:
   - "1798039908"
-image: /wp-content/uploads/2013/09/1276274153HolyMoly-logo.png
+images:
+  - /wp-content/uploads/2013/09/1276274153HolyMoly-logo.png
 categories:
   - Music
 tags:

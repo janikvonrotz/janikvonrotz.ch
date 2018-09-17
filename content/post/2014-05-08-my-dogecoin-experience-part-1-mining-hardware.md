@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: my-dogecoin-experience-part-1-mining-hardware
 dsq_thread_id:
   - "2672229533"
-image: /wp-content/uploads/2014/05/Dogecoin-banner.png
+images:
+  - /wp-content/uploads/2014/05/Dogecoin-banner.png
 categories:
   - Dogecoin
 tags:

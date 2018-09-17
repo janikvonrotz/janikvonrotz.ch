@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: california-and-costa-rica
 dsq_thread_id:
   - "5278719189"
-image: /wp-content/uploads/2016/11/California-and-Costa-Rica-banner-1200x559.jpg
+images:
+  - /wp-content/uploads/2016/11/California-and-Costa-Rica-banner-1200x559.jpg
 categories:
   - Photography
 tags:

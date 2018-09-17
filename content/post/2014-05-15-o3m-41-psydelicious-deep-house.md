@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-41-psydelicious-deep-house
 dsq_thread_id:
   - "2849761490"
-image: /wp-content/uploads/2014/05/O3M-41-Psydelicious-Deep-House.jpg
+images:
+  - /wp-content/uploads/2014/05/O3M-41-Psydelicious-Deep-House.jpg
 categories:
   - Music
 tags:

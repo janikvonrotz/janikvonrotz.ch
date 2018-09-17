@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: exclusive-interview-with-the-founder-of-parkour-david-belle
 dsq_thread_id:
   - "2888219348"
-image: /wp-content/uploads/2014/07/David-Belle-Parkour-Interview-Storm-e1406862037302.png
+images:
+  - /wp-content/uploads/2014/07/David-Belle-Parkour-Interview-Storm-e1406862037302.png
 categories:
   - Parkour
 tags:

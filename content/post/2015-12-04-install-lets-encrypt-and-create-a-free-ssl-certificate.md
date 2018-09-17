@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-lets-encrypt-and-create-a-free-ssl-certificate
 dsq_thread_id:
   - "4374741718"
-image: /wp-content/uploads/2015/03/Lets-Enrypt.png
+images:
+  - /wp-content/uploads/2015/03/Lets-Enrypt.png
 categories:
   - Nginx
   - OpenSSL

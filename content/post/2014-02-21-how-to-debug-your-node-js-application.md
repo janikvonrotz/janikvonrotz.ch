@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: how-to-debug-your-node-js-application
 dsq_thread_id:
   - "2298328026"
-image: /wp-content/uploads/2014/02/nodejs-2560x1440-e1394184527626.png
+images:
+  - /wp-content/uploads/2014/02/nodejs-2560x1440-e1394184527626.png
 categories:
   - Blog
   - Node.js

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: backup-public-github-gists
 dsq_thread_id:
   - "1777274297"
-image: /wp-content/uploads/2013/09/github.jpg
+images:
+  - /wp-content/uploads/2013/09/github.jpg
 categories:
   - PowerShell
 tags:

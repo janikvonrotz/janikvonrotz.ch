@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: enable-piwik-for-limesurvey
 dsq_thread_id:
   - "3667243567"
-image: /wp-content/uploads/2015/04/LimeSurvey-Logo.png
+images:
+  - /wp-content/uploads/2015/04/LimeSurvey-Logo.png
 categories:
   - LimeSurvey
 tags:

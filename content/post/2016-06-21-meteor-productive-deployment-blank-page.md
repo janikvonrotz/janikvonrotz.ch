@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: meteor-productive-deployment-blank-page
 dsq_thread_id:
   - "4927016387"
-image: /wp-content/uploads/2015/12/Meteor-Logo.png
+images:
+  - /wp-content/uploads/2015/12/Meteor-Logo.png
 categories:
   - Blog
   - Meteor

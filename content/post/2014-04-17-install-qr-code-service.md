@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-qr-code-service
 dsq_thread_id:
   - "2618446085"
-image: /wp-content/uploads/2014/04/QR-Code-service.png
+images:
+  - /wp-content/uploads/2014/04/QR-Code-service.png
 categories:
   - Nginx
   - PHP

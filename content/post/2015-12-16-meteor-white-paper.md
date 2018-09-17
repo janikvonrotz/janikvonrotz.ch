@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: meteor-white-paper
 dsq_thread_id:
   - "4409826194"
-image: /wp-content/uploads/2015/12/Meteor-Logo.png
+images:
+  - /wp-content/uploads/2015/12/Meteor-Logo.png
 categories:
   - Meteor
 tags:

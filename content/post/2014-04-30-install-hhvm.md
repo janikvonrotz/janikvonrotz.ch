@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-hhvm
 dsq_thread_id:
   - "2649547796"
-image: /wp-content/uploads/2014/04/HHVM-Logo.png
+images:
+  - /wp-content/uploads/2014/04/HHVM-Logo.png
 categories:
   - HHVM
 ---

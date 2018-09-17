@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: do-not-forget-to-update-to-microsoft-office-2013-when-using-office-365-or-sharepoint-online
 dsq_thread_id:
   - "2054392361"
-image: /wp-content/uploads/2013/12/SharePoint-Online-and-ADFS.gif
+images:
+  - /wp-content/uploads/2013/12/SharePoint-Online-and-ADFS.gif
 categories:
   - Office 365
 tags:

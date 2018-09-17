@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: create-a-hotspot-with-your-windows-8-computer
 dsq_thread_id:
   - "3401510431"
-image: /wp-content/uploads/2014/12/windwows-8-wlan.png
+images:
+  - /wp-content/uploads/2014/12/windwows-8-wlan.png
 categories:
   - Windows
 tags:

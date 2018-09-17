@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: step-by-step-install-ghost-blog
 dsq_thread_id:
   - "2351610251"
-image: /wp-content/uploads/2014/02/ghost-logo-e1393590335426.png
+images:
+  - /wp-content/uploads/2014/02/ghost-logo-e1393590335426.png
 categories:
   - Ghost
 tags:

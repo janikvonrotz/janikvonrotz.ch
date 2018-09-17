@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: build-a-java-3-tier-application-from-scratch-part-3-object-relational-mapping
 dsq_thread_id:
   - "3639842548"
-image: /wp-content/uploads/2014/10/Java-logo.jpg
+images:
+  - /wp-content/uploads/2014/10/Java-logo.jpg
 categories:
   - Java
 tags:

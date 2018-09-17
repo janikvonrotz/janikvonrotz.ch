@@ -7,7 +7,8 @@ tags:
  - Richard Thaler
  - Freakonomics
  - Podcast
-image: /images/professional microphone in recording studio.jpg
+images:
+  - /images/professional microphone in recording studio.jpg
 draft: false
 ---
 

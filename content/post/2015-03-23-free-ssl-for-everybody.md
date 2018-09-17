@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: free-ssl-for-everybody
 dsq_thread_id:
   - "3622670884"
-image: /wp-content/uploads/2015/03/Lets-Enrypt.png
+images:
+  - /wp-content/uploads/2015/03/Lets-Enrypt.png
 categories:
   - IT Security
 tags:

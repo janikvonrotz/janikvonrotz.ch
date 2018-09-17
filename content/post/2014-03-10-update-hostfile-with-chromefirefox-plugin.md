@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: update-hostfile-with-chromefirefox-plugin
 dsq_thread_id:
   - "2400205243"
-image: /wp-content/uploads/2014/03/web-development.jpg
+images:
+  - /wp-content/uploads/2014/03/web-development.jpg
 categories:
   - Web development
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: exchangeonline-owa-policies-disable-owa-light
 dsq_thread_id:
   - "1738866391"
-image: /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg
+images:
+  - /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg
 categories:
   - Exchange
   - Office 365

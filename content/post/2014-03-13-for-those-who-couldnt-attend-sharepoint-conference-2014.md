@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: for-those-who-couldnt-attend-sharepoint-conference-2014
 dsq_thread_id:
   - "2419566303"
-image: /wp-content/uploads/2014/03/SharePoint-Conference-2014-e1394698189555.png
+images:
+  - /wp-content/uploads/2014/03/SharePoint-Conference-2014-e1394698189555.png
 categories:
   - Business
   - Office 365

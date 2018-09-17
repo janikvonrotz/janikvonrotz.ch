@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: can-the-european-union-learn-from-switzerland-an-essay-by-till-rahn
 dsq_thread_id:
   - "4944542562"
-image: /wp-content/uploads/2016/06/switzerland-and-eu-1200x665.jpg
+images:
+  - /wp-content/uploads/2016/06/switzerland-and-eu-1200x665.jpg
 categories:
   - Blog
   - Business

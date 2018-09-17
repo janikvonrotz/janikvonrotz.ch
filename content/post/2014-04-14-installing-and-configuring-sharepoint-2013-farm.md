@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: installing-and-configuring-sharepoint-2013-farm
 dsq_thread_id:
   - "2610183207"
-image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
+images:
+  - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: powershell-powerup-package-manager
 dsq_thread_id:
   - "2690051872"
-image: /wp-content/uploads/2013/07/PowerShell.png
+images:
+  - /wp-content/uploads/2013/07/PowerShell.png
 categories:
   - PowerShell
 tags:

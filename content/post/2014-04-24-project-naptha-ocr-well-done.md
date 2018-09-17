@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: project-naptha-ocr-well-done
 dsq_thread_id:
   - "2637495405"
-image: /wp-content/uploads/2014/04/Project-Naptha-Logo.png
+images:
+  - /wp-content/uploads/2014/04/Project-Naptha-Logo.png
 categories:
   - Web development
 tags:

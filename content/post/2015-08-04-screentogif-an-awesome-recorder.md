@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: screentogif-an-awesome-recorder
 dsq_thread_id:
   - "4001325990"
-image: /wp-content/uploads/2015/07/Screen-To-Gif.png
+images:
+  - /wp-content/uploads/2015/07/Screen-To-Gif.png
 categories:
   - Work
 tags:

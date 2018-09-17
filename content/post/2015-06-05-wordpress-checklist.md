@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: wordpress-checklist
 dsq_thread_id:
   - "3822691219"
-image: /wp-content/uploads/2014/02/wordpress-logo.jpg
+images:
+  - /wp-content/uploads/2014/02/wordpress-logo.jpg
 categories:
   - Blog
 tags:

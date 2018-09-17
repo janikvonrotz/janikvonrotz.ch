@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: a-glimpse-of-china
 specific_page_layout:
   - default-sidebar
-image: /wp-content/uploads/2018/01/1-Pattern-Banner.jpg
+images:
+  - /wp-content/uploads/2018/01/1-Pattern-Banner.jpg
 categories:
   - Photography
 tags:

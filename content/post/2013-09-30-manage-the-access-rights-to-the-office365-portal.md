@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: manage-the-access-rights-to-the-office365-portal
 dsq_thread_id:
   - "1811070729"
-image: /wp-content/uploads/2013/09/office-logo_v3.jpg
+images:
+  - /wp-content/uploads/2013/09/office-logo_v3.jpg
 categories:
   - Active Directory
   - Office 365

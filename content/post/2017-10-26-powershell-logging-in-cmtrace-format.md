@@ -3,7 +3,8 @@ title: 'PowerShell - Logging in CMTrace format'
 date: 2017-10-26T07:15:24+00:00
 author: Janik von Rotz
 slug: powershell-logging-in-cmtrace-format
-image: /wp-content/uploads/2017/10/CMTrace-tool.png
+images:
+  - /wp-content/uploads/2017/10/CMTrace-tool.png
 categories:
   - Configuration Manager
   - PowerShell

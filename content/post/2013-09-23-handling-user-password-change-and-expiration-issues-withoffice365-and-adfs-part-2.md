@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: handling-user-password-change-and-expiration-issues-withoffice365-and-adfs-part-2
 dsq_thread_id:
   - "1788553262"
-image: /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg
+images:
+  - /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg
 categories:
   - Active Directory
   - Blog

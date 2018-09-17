@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: configure-lets-encrypt-auto-renewal-for-certificates
 dsq_thread_id:
   - "4579516678"
-image: /wp-content/uploads/2015/03/Lets-Enrypt.png
+images:
+  - /wp-content/uploads/2015/03/Lets-Enrypt.png
 categories:
   - OpenSSL
 tags:

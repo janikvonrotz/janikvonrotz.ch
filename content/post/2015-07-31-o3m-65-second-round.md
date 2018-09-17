@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-65-second-round
 dsq_thread_id:
   - "3990337096"
-image: /wp-content/uploads/2015/07/O3M-65-Second-Round.jpg
+images:
+  - /wp-content/uploads/2015/07/O3M-65-Second-Round.jpg
 categories:
   - Music
 tags:

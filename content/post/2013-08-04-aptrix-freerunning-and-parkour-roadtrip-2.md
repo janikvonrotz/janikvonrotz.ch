@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: aptrix-freerunning-and-parkour-roadtrip-2
 dsq_thread_id:
   - "1567543064"
-image: /wp-content/uploads/2013/08/Logo.png
+images:
+  - /wp-content/uploads/2013/08/Logo.png
 categories:
   - Parkour
 tags:

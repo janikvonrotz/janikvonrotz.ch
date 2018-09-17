@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: adobe-lightroom-switch-from-jpeg-raw-workflow-to-single-raw
 dsq_thread_id:
   - "2672235670"
-image: /wp-content/uploads/2014/05/Adobe-Lightroom-Logo.png
+images:
+  - /wp-content/uploads/2014/05/Adobe-Lightroom-Logo.png
 categories:
   - Photography
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: vagrant-portable-development-environment
 dsq_thread_id:
   - "1458874559"
-image: /wp-content/uploads/2013/07/vagrant-logo.png
+images:
+  - /wp-content/uploads/2013/07/vagrant-logo.png
 categories:
   - Vagrant
 tags:

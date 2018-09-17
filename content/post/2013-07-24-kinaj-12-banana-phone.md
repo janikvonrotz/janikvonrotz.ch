@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: kinaj-12-banana-phone
 dsq_thread_id:
   - "1525922730"
-image: /wp-content/uploads/2013/07/soundcloud.png
+images:
+  - /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:

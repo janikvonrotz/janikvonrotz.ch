@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: aptrix-freerunning-end-of-season
 dsq_thread_id:
   - "2026379429"
-image: /wp-content/uploads/2013/08/Logo.png
+images:
+  - /wp-content/uploads/2013/08/Logo.png
 categories:
   - Parkour
 tags:

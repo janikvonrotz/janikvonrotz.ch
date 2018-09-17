@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: replicate-term-set-changes-for-managed-metadata-navigations
 dsq_thread_id:
   - "2671794656"
-image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
+images:
+  - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - Blog
 ---

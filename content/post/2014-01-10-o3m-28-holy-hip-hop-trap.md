@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-28-holy-hip-hop-trap
 dsq_thread_id:
   - "2109423091"
-image: /wp-content/uploads/2014/01/O3M-28-Holy-Hip-Hop-trap-500x372.jpg
+images:
+  - /wp-content/uploads/2014/01/O3M-28-Holy-Hip-Hop-trap-500x372.jpg
 categories:
   - Music
 tags:

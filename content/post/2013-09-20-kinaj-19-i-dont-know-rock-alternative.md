@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: kinaj-19-i-dont-know-rock-alternative
 dsq_thread_id:
   - "1780516410"
-image: /wp-content/uploads/2013/09/03-The-Mask.png
+images:
+  - /wp-content/uploads/2013/09/03-The-Mask.png
 categories:
   - Music
 tags:

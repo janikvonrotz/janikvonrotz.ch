@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: summer-break
 dsq_thread_id:
   - "2721368284"
-image: /wp-content/uploads/2014/04/Traveling.png
+images:
+  - /wp-content/uploads/2014/04/Traveling.png
 categories:
   - Traveling
 tags:

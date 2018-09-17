@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: manage-sharepoint-list-alerts-for-multiple-users-on-multiple-lists
 dsq_thread_id:
   - "2087265617"
-image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
+images:
+  - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - PowerShell
   - SharePoint

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-31-dogde-that-shit-pop
 dsq_thread_id:
   - "2365677782"
-image: /wp-content/uploads/2014/03/O3M-31-dogde-that-shit-Pop.jpg
+images:
+  - /wp-content/uploads/2014/03/O3M-31-dogde-that-shit-Pop.jpg
 categories:
   - Music
 tags:

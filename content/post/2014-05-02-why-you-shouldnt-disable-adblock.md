@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: why-you-shouldnt-disable-adblock
 dsq_thread_id:
   - "2654647892"
-image: /wp-content/uploads/2014/04/how-adblock-plus-works.png
+images:
+  - /wp-content/uploads/2014/04/how-adblock-plus-works.png
 categories:
   - IT Security
 tags:

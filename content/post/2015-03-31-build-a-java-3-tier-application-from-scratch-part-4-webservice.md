@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: build-a-java-3-tier-application-from-scratch-part-4-webservice
 dsq_thread_id:
   - "3641869503"
-image: /wp-content/uploads/2014/10/Java-logo.jpg
+images:
+  - /wp-content/uploads/2014/10/Java-logo.jpg
 categories:
   - Java
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: overwerk-canon-ep
 dsq_thread_id:
   - "4287027468"
-image: /wp-content/uploads/2015/11/OVERTWERK.jpg
+images:
+  - /wp-content/uploads/2015/11/OVERTWERK.jpg
 categories:
   - Music
 tags:

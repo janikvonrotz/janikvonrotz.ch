@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: the-brain-hack-short-film
 dsq_thread_id:
   - "3931315930"
-image: /wp-content/uploads/2015/07/The-Brain-Hack-Short-Film.jpg
+images:
+  - /wp-content/uploads/2015/07/The-Brain-Hack-Short-Film.jpg
 categories:
   - Entertainment
 tags:

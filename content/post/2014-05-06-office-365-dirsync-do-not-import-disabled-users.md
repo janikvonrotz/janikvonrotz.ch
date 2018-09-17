@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: office-365-dirsync-do-not-import-disabled-users
 dsq_thread_id:
   - "2683080766"
-image: /wp-content/uploads/2014/03/Office-365-flat-Logo-e1394705523286.jpg
+images:
+  - /wp-content/uploads/2014/03/Office-365-flat-Logo-e1394705523286.jpg
 categories:
   - Office 365
 tags:

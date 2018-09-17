@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: open-ssl-heartbleed-bug
 dsq_thread_id:
   - "2598773837"
-image: /wp-content/uploads/2014/03/OpenSSL-Logo.png
+images:
+  - /wp-content/uploads/2014/03/OpenSSL-Logo.png
 categories:
   - IT Security
   - Ubuntu Server

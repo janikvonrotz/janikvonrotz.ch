@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: node-js-dynamic-settings
 dsq_thread_id:
   - "5094803262"
-image: /wp-content/uploads/2014/03/Node.js-Logo.png
+images:
+  - /wp-content/uploads/2014/03/Node.js-Logo.png
 categories:
   - Node.js
 tags:

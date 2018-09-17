@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-50-awesome-tomatoes
 dsq_thread_id:
   - "3308732968"
-image: /wp-content/uploads/2014/12/O3M-50-Awesone-Shat-get-ready.jpg
+images:
+  - /wp-content/uploads/2014/12/O3M-50-Awesone-Shat-get-ready.jpg
 categories:
   - Music
 tags:

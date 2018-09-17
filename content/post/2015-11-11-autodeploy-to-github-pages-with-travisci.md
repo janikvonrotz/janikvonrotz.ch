@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: autodeploy-to-github-pages-with-travisci
 dsq_thread_id:
   - "4308594906"
-image: /wp-content/uploads/2015/11/Travis-CI-logo.jpg
+images:
+  - /wp-content/uploads/2015/11/Travis-CI-logo.jpg
 categories:
   - Travis
 tags:

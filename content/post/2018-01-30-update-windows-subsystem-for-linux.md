@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: update-windows-subsystem-for-linux
 specific_page_layout:
   - default-sidebar
-image: /wp-content/uploads/2018/01/Bash-on-Ubuntu-on-Windows.png
+images:
+  - /wp-content/uploads/2018/01/Bash-on-Ubuntu-on-Windows.png
 categories:
   - Ubuntu
   - Windows

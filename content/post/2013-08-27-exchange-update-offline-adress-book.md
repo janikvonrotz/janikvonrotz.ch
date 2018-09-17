@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: exchange-update-offline-adress-book
 dsq_thread_id:
   - "1653822855"
-image: /wp-content/uploads/2013/08/exchange-2013-e1393417827333.jpg
+images:
+  - /wp-content/uploads/2013/08/exchange-2013-e1393417827333.jpg
 categories:
   - Exchange
   - PowerShell

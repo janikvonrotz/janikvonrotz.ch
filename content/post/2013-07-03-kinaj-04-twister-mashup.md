@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: kinaj-04-twister-mashup
 dsq_thread_id:
   - "1463233471"
-image: /wp-content/uploads/2013/07/soundcloud.png
+images:
+  - /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:

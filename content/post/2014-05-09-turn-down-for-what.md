@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: turn-down-for-what
 dsq_thread_id:
   - "2706986580"
-image: /wp-content/uploads/2014/03/letsgetweird.jpg
+images:
+  - /wp-content/uploads/2014/03/letsgetweird.jpg
 categories:
   - Music
 tags:

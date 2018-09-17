@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: office365-sharepoint-backup-und-restore-facts-by-ioz-ag
 dsq_thread_id:
   - "1600180115"
-image: /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg
+images:
+  - /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg
 categories:
   - Office 365
   - SharePoint

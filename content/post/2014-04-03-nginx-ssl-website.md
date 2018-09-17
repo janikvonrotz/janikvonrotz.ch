@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: nginx-ssl-website
 dsq_thread_id:
   - "2582605591"
-image: /wp-content/uploads/2014/03/Nginx-Logo-e1394033855329.png
+images:
+  - /wp-content/uploads/2014/03/Nginx-Logo-e1394033855329.png
 categories:
   - Nginx
 tags:

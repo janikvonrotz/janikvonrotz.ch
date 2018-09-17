@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: sharepoint-2013-navigation-sub-menu-titles-cut-off
 dsq_thread_id:
   - "2400906975"
-image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
+images:
+  - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:

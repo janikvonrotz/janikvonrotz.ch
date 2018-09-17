@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: barry-underwood-the-master-of-light-painting
 dsq_thread_id:
   - "2721925770"
-image: /wp-content/uploads/2014/05/03-Underwood-Wendover_forJohn.jpg
+images:
+  - /wp-content/uploads/2014/05/03-Underwood-Wendover_forJohn.jpg
 categories:
   - Photography
 tags:

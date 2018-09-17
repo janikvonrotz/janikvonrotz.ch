@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-sharepoint-2013-three-tier-farm-deploy-the-sql-server-backup-job
 dsq_thread_id:
   - "2232801594"
-image: /wp-content/uploads/2014/02/SQL-Server-e1393417625647.png
+images:
+  - /wp-content/uploads/2014/02/SQL-Server-e1393417625647.png
 categories:
   - SQL Server
 tags:

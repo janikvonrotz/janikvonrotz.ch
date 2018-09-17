@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: photography-filter-cheat-sheet
 dsq_thread_id:
   - "3930575649"
-image: /wp-content/uploads/2014/04/Photography-e1412934063722.jpg
+images:
+  - /wp-content/uploads/2014/04/Photography-e1412934063722.jpg
 categories:
   - Photography
 tags:

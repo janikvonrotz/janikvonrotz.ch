@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-55-overreaction
 dsq_thread_id:
   - "3520855237"
-image: /wp-content/uploads/2015/02/O3M-55-Overreaction.jpg
+images:
+  - /wp-content/uploads/2015/02/O3M-55-Overreaction.jpg
 categories:
   - Music
 tags:

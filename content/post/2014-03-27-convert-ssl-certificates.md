@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: convert-ssl-certificates
 dsq_thread_id:
   - "2523881052"
-image: /wp-content/uploads/2014/03/OpenSSL-Logo.png
+images:
+  - /wp-content/uploads/2014/03/OpenSSL-Logo.png
 categories:
   - OpenSSL
 tags:

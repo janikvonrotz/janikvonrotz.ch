@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: export-all-terms-from-managed-metadata-service
 dsq_thread_id:
   - "2121346675"
-image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
+images:
+  - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: lets-write-a-laravel-application-sortable-table
 dsq_thread_id:
   - "3484665405"
-image: /wp-content/uploads/2015/01/laravel-logo-e1422466263489.png
+images:
+  - /wp-content/uploads/2015/01/laravel-logo-e1422466263489.png
 categories:
   - Laravel
 tags:

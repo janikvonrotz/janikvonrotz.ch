@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: kinaj-23-the-taste-of-kiwi-house
 dsq_thread_id:
   - "1858547037"
-image: /wp-content/uploads/2013/10/113431370810.jpg
+images:
+  - /wp-content/uploads/2013/10/113431370810.jpg
 categories:
   - Music
 tags:

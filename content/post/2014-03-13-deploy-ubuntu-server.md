@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: deploy-ubuntu-server
 dsq_thread_id:
   - "2421625589"
-image: /wp-content/uploads/2014/03/Ubuntu-Logo.png
+images:
+  - /wp-content/uploads/2014/03/Ubuntu-Logo.png
 categories:
   - Ubuntu Server
 tags:

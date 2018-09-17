@@ -3,7 +3,8 @@ title: 'Manage the life cycle of your SCCM applicatons with PowerShell - Part 2 
 date: 2017-08-29T15:07:47+00:00
 author: Janik von Rotz
 slug: manage-the-life-cycle-of-your-sccm-applicatons-with-powershell-part-2-create-applications
-image: /wp-content/uploads/2017/08/SCCM-PowerShell-e1503910243136.jpeg
+images:
+  - /wp-content/uploads/2017/08/SCCM-PowerShell-e1503910243136.jpeg
 categories:
   - Configuration Manager
 tags:

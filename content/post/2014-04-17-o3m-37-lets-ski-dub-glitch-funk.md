@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-37-lets-ski-dub-glitch-funk
 dsq_thread_id:
   - "2629566832"
-image: /wp-content/uploads/2014/04/O3M-37-Lets-ski-dub-glitch-funk.jpg
+images:
+  - /wp-content/uploads/2014/04/O3M-37-Lets-ski-dub-glitch-funk.jpg
 categories:
   - Music
 tags:

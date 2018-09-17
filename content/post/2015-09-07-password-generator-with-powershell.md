@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: password-generator-with-powershell
 dsq_thread_id:
   - "4106282181"
-image: /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png
+images:
+  - /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png
 categories:
   - PowerShell
 tags:

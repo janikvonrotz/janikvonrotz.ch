@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: manage-multiple-wordpress-sites-with-jetpack
 dsq_thread_id:
   - "3339638958"
-image: /wp-content/uploads/2014/02/wordpress-logo.jpg
+images:
+  - /wp-content/uploads/2014/02/wordpress-logo.jpg
 categories:
   - WordPress
 tags:

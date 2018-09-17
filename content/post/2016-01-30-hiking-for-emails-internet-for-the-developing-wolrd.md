@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: hiking-for-emails-internet-for-the-developing-wolrd
 dsq_thread_id:
   - "4536176885"
-image: /wp-content/uploads/2016/01/net-neutrality.png
+images:
+  - /wp-content/uploads/2016/01/net-neutrality.png
 categories:
   - Blog
   - Politics

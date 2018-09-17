@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: galantis-ep-released
 dsq_thread_id:
   - "2597882361"
-image: /wp-content/uploads/2014/04/Galantis-EP.jpg
+images:
+  - /wp-content/uploads/2014/04/Galantis-EP.jpg
 categories:
   - Music
 tags:

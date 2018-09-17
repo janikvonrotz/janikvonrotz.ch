@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: beautiful-corsica
 dsq_thread_id:
   - "4542597397"
-image: /wp-content/uploads/2016/01/bicycle-1200x800.jpg
+images:
+  - /wp-content/uploads/2016/01/bicycle-1200x800.jpg
 categories:
   - Photography
 tags:

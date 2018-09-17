@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: kinaj-05-parkour-and-freerunning-playlist-mashup
 dsq_thread_id:
   - "1466437587"
-image: /wp-content/uploads/2013/07/soundcloud.png
+images:
+  - /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:

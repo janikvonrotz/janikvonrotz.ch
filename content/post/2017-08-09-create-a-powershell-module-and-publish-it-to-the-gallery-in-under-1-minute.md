@@ -3,7 +3,8 @@ title: Create a PowerShell module and publish it to the Gallery in under 1 minut
 date: 2017-08-09T11:26:58+00:00
 author: Janik von Rotz
 slug: create-a-powershell-module-and-publish-it-to-the-gallery-in-under-1-minute
-image: /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png
+images:
+  - /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png
 categories:
   - PowerShell
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: meteor-and-react-bootstrap-modal
 dsq_thread_id:
   - "4637306001"
-image: /wp-content/uploads/2016/03/meteor-react-logo-1200x201.png
+images:
+  - /wp-content/uploads/2016/03/meteor-react-logo-1200x201.png
 categories:
   - React
 tags:

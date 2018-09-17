@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: manage-activedirectory-distribution-groups
 dsq_thread_id:
   - "1654234472"
-image: /wp-content/uploads/2013/07/PowerShell.png
+images:
+  - /wp-content/uploads/2013/07/PowerShell.png
 categories:
   - Active Directory
   - Blog

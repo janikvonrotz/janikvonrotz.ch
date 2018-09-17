@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: meteor-register-ldap-login-request-handler
 dsq_thread_id:
   - "5534292034"
-image: /wp-content/uploads/2017/02/Meteor-Logo-inverted.png
+images:
+  - /wp-content/uploads/2017/02/Meteor-Logo-inverted.png
 categories:
   - Meteor
 tags:

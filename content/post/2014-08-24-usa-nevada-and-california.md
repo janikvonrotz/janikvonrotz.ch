@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: usa-nevada-and-california
 dsq_thread_id:
   - "2953981634"
-image: /wp-content/uploads/2014/08/Merica.png
+images:
+  - /wp-content/uploads/2014/08/Merica.png
 categories:
   - Photography
   - Traveling

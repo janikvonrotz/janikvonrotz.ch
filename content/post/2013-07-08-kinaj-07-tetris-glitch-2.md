@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: kinaj-07-tetris-glitch-2
 dsq_thread_id:
   - "1478077575"
-image: /wp-content/uploads/2013/07/soundcloud.png
+images:
+  - /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:

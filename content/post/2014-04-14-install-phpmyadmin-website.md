@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-phpmyadmin-website
 dsq_thread_id:
   - "2610220050"
-image: /wp-content/uploads/2014/04/phpMyAdmin-Logo.jpg
+images:
+  - /wp-content/uploads/2014/04/phpMyAdmin-Logo.jpg
 categories:
   - MySQL
   - PHP

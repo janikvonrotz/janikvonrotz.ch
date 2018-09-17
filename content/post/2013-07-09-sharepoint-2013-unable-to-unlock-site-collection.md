@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: sharepoint-2013-unable-to-unlock-site-collection
 dsq_thread_id:
   - "1480686573"
-image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
+images:
+  - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - PowerShell
   - SharePoint

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: hyper-reality-short-movie-about-augmented-reality
 dsq_thread_id:
   - "4854686217"
-image: /wp-content/uploads/2016/05/Hyper-Reality.png
+images:
+  - /wp-content/uploads/2016/05/Hyper-Reality.png
 categories:
   - Blog
 tags:

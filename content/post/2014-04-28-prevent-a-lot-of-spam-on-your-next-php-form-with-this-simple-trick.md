@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: prevent-a-lot-of-spam-on-your-next-php-form-with-this-simple-trick
 dsq_thread_id:
   - "2644724256"
-image: /wp-content/uploads/2014/04/Stop-Spam.jpg
+images:
+  - /wp-content/uploads/2014/04/Stop-Spam.jpg
 categories:
   - IT Security
   - PHP

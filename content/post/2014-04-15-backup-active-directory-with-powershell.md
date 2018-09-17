@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: backup-active-directory-with-powershell
 dsq_thread_id:
   - "2614387113"
-image: /wp-content/uploads/2013/12/PowerShell-and-ActiveDirectory.png
+images:
+  - /wp-content/uploads/2013/12/PowerShell-and-ActiveDirectory.png
 categories:
   - Active Directory
   - PowerShell

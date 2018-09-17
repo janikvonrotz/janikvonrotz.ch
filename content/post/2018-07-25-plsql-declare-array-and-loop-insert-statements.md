@@ -8,7 +8,8 @@ tags:
  - oracle
  - plsql
  - type declaration
-image: /images/oracle pl sql.jpg
+images:
+  - /images/oracle pl sql.jpg
 ---
 
 While gathering informations about how an array with objects can be declared in PlSQL and the processed by aa for loop, I ended up with very different results. Some people created temporary tables and other defined complex new types. It was difficult to see through. By prioritizing simpler and more common approaches, I ended up with a suitable solution.

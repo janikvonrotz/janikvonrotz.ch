@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: kinaj-18-whaaat-dubstep
 dsq_thread_id:
   - "1633289761"
-image: /wp-content/uploads/2013/08/Whaaat.jpg
+images:
+  - /wp-content/uploads/2013/08/Whaaat.jpg
 categories:
   - Music
 tags:

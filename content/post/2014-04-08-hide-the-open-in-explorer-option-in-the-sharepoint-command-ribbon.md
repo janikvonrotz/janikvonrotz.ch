@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: hide-the-open-in-explorer-option-in-the-sharepoint-command-ribbon
 dsq_thread_id:
   - "2596375540"
-image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
+images:
+  - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: how-the-heartbleed-bug-works
 dsq_thread_id:
   - "2609918911"
-image: /wp-content/uploads/2014/03/OpenSSL-Logo.png
+images:
+  - /wp-content/uploads/2014/03/OpenSSL-Logo.png
 categories:
   - IT Security
 tags:

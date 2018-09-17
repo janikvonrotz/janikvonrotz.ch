@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-43-and-again-trap-dubstep
 dsq_thread_id:
   - "2699706848"
-image: /wp-content/uploads/2014/05/O3M-43-And-Again-trap-dubstep.jpg
+images:
+  - /wp-content/uploads/2014/05/O3M-43-And-Again-trap-dubstep.jpg
 categories:
   - Music
 tags:

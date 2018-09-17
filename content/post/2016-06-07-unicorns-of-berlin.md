@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: unicorns-of-berlin
 dsq_thread_id:
   - "4890124629"
-image: /wp-content/uploads/2016/06/architecture-1200x901.jpg
+images:
+  - /wp-content/uploads/2016/06/architecture-1200x901.jpg
 categories:
   - Photography
 tags:

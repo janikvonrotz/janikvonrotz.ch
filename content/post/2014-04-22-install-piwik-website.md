@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-piwik-website
 dsq_thread_id:
   - "2629575470"
-image: /wp-content/uploads/2014/12/logo-piwik-e1418200408662.png
+images:
+  - /wp-content/uploads/2014/12/logo-piwik-e1418200408662.png
 categories:
   - Piwik
 tags:

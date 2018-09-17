@@ -3,7 +3,8 @@ title: Get unlinked GPOs with PowerShell
 date: 2017-10-06T10:06:49+00:00
 author: Janik von Rotz
 slug: get-unlinked-gpos-with-powershell
-image: /wp-content/uploads/2017/10/PowerShell-Get-unlinked-GPOs.png
+images:
+  - /wp-content/uploads/2017/10/PowerShell-Get-unlinked-GPOs.png
 categories:
   - PowerShell
 tags:

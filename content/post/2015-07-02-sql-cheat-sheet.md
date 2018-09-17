@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: sql-cheat-sheet
 dsq_thread_id:
   - "3898706952"
-image: /wp-content/uploads/2014/04/MySQL-Logo.png
+images:
+  - /wp-content/uploads/2014/04/MySQL-Logo.png
 categories:
   - MySQL
 tags:

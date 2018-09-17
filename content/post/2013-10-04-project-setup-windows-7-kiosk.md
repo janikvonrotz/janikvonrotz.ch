@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: project-setup-windows-7-kiosk
 dsq_thread_id:
   - "1824260455"
-image: /wp-content/uploads/2013/10/Group-Policy.jpg
+images:
+  - /wp-content/uploads/2013/10/Group-Policy.jpg
 categories:
   - Active Directory
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-66-fleshpound
 dsq_thread_id:
   - "4120385944"
-image: /wp-content/uploads/2015/09/O3M-66-Fleshpound.jpg
+images:
+  - /wp-content/uploads/2015/09/O3M-66-Fleshpound.jpg
 categories:
   - Music
 tags:

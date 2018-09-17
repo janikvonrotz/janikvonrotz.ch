@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-33-crystal-miau-trance
 dsq_thread_id:
   - "2573162336"
-image: /wp-content/uploads/2014/03/O3M-33-Crystal-Miau-Trance.jpg
+images:
+  - /wp-content/uploads/2014/03/O3M-33-Crystal-Miau-Trance.jpg
 categories:
   - Music
 tags:

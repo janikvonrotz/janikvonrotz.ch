@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: manage-security-groups-in-a-organizational-strcture
 dsq_thread_id:
   - "1910803381"
-image: /wp-content/uploads/2013/07/PowerShell.png
+images:
+  - /wp-content/uploads/2013/07/PowerShell.png
 categories:
   - Active Directory
   - PowerShell

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: superb-java-development-with-gradle-hibernate-flywaydb-javafx-and-eclipse-part-1
 dsq_thread_id:
   - "3564862222"
-image: /wp-content/uploads/2014/10/Java-logo.jpg
+images:
+  - /wp-content/uploads/2014/10/Java-logo.jpg
 categories:
   - Java
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: newars-project-todays-it-threads-well-explained
 dsq_thread_id:
   - "2662117893"
-image: /wp-content/uploads/2014/04/netwars-logo.jpg
+images:
+  - /wp-content/uploads/2014/04/netwars-logo.jpg
 categories:
   - IT Security
 tags:

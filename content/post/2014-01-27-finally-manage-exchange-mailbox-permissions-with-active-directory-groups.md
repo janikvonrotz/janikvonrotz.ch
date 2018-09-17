@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: finally-manage-exchange-mailbox-permissions-with-active-directory-groups
 dsq_thread_id:
   - "2181973874"
-image: /wp-content/uploads/2013/08/exchange-2013-e1393417827333.jpg
+images:
+  - /wp-content/uploads/2013/08/exchange-2013-e1393417827333.jpg
 categories:
   - Exchange
 tags:

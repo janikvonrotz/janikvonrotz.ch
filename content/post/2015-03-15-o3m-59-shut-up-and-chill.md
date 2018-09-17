@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-59-shut-up-and-chill
 dsq_thread_id:
   - "3597431477"
-image: /wp-content/uploads/2015/03/O3M-59-Shut-up-and-Chill.jpg
+images:
+  - /wp-content/uploads/2015/03/O3M-59-Shut-up-and-Chill.jpg
 categories:
   - Music
 tags:

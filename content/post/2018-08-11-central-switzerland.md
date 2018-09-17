@@ -9,7 +9,8 @@ tags:
  - mountains
  - winter
  - summer
-image: /images/Central Switzerland/08_View from Mt. Gitschen.jpg
+images:
+  - /images/Central Switzerland/08_View from Mt. Gitschen.jpg
 ---
 
 Over the last years I've visited many places in and around Central Switzerland. I've never been disappointed by the vast views and monumental mountains and valleys. Below you'll find a collection of my favorite images of Central Switzerland.

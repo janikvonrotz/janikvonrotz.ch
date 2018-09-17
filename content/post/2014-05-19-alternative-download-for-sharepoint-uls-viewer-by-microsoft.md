@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: alternative-download-for-sharepoint-uls-viewer-by-microsoft
 dsq_thread_id:
   - "2696715732"
-image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
+images:
+  - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:

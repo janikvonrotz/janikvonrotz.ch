@@ -3,7 +3,8 @@ title: 'O3M 73 - Viva America'
 date: 2017-05-31T13:28:56+00:00
 author: Janik von Rotz
 slug: o3m-73-viva-america
-image: /wp-content/uploads/2017/05/O3M-73-Viva-America.jpg
+images:
+  - /wp-content/uploads/2017/05/O3M-73-Viva-America.jpg
 categories:
   - Music
 tags:

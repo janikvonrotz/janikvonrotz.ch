@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: animes-i-love
 dsq_thread_id:
   - "3087917509"
-image: /wp-content/uploads/2014/10/Japan-Banner.jpg
+images:
+  - /wp-content/uploads/2014/10/Japan-Banner.jpg
 categories:
   - Blog
 tags:

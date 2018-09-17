@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: javafx-filterable-and-sortable-tableview-with-nested-objects
 dsq_thread_id:
   - "4362336468"
-image: /wp-content/uploads/2014/10/Java-logo.jpg
+images:
+  - /wp-content/uploads/2014/10/Java-logo.jpg
 categories:
   - Java
 tags:

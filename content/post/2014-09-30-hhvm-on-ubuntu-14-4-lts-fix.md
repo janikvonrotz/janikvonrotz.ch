@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: hhvm-on-ubuntu-14-4-lts-fix
 dsq_thread_id:
   - "3090427029"
-image: /wp-content/uploads/2014/04/HHVM-Logo.png
+images:
+  - /wp-content/uploads/2014/04/HHVM-Logo.png
 categories:
   - HHVM
 tags:

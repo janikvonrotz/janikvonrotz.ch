@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: office365-adfs-chrome-login-fails
 dsq_thread_id:
   - "1745104946"
-image: /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg
+images:
+  - /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg
 categories:
   - Office 365
 tags:

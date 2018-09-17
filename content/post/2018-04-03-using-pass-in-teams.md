@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: using-pass-in-teams
 specific_page_layout:
   - default-sidebar
-image: /wp-content/uploads/2018/04/multiple-locks.jpg
+images:
+  - /wp-content/uploads/2018/04/multiple-locks.jpg
 categories:
   - IT Security
 tags:

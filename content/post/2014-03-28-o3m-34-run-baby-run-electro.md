@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-34-run-baby-run-electro
 dsq_thread_id:
   - "2532831161"
-image: /wp-content/uploads/2014/03/O3M-34-Run-Baby-Run-Electro.jpg
+images:
+  - /wp-content/uploads/2014/03/O3M-34-Run-Baby-Run-Electro.jpg
 categories:
   - Music
 tags:

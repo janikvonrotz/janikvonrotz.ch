@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-php5-fpm
 dsq_thread_id:
   - "2468691830"
-image: /wp-content/uploads/2014/03/php-logo.jpeg
+images:
+  - /wp-content/uploads/2014/03/php-logo.jpeg
 categories:
   - PHP
 tags:

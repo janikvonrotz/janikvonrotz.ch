@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: australia-east-coast
 dsq_thread_id:
   - "2873691829"
-image: /wp-content/uploads/2014/07/good-morning-20140722.jpg
+images:
+  - /wp-content/uploads/2014/07/good-morning-20140722.jpg
 categories:
   - Photography
   - Traveling

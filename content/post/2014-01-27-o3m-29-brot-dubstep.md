@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: o3m-29-brot-dubstep
 dsq_thread_id:
   - "2182104588"
-image: /wp-content/uploads/2014/01/O3M-29-Brot-Dubstep-502x372.jpg
+images:
+  - /wp-content/uploads/2014/01/O3M-29-Brot-Dubstep-502x372.jpg
 categories:
   - Music
 tags:

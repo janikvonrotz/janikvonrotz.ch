@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: update-url-within-wordpress-post-content
 dsq_thread_id:
   - "2246601355"
-image: /wp-content/uploads/2014/02/wordpress-logo.jpg
+images:
+  - /wp-content/uploads/2014/02/wordpress-logo.jpg
 categories:
   - WordPress
 tags:

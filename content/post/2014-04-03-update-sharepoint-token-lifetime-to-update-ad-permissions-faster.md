@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: update-sharepoint-token-lifetime-to-update-ad-permissions-faster
 dsq_thread_id:
   - "2582712894"
-image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
+images:
+  - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:

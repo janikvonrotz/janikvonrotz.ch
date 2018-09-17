@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-wpscan
 dsq_thread_id:
   - "2646768728"
-image: /wp-content/uploads/2014/04/wpscan_logo_407x80.png
+images:
+  - /wp-content/uploads/2014/04/wpscan_logo_407x80.png
 categories:
   - IT Security
   - WordPress

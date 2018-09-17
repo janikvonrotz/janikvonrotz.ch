@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: migrate-piwik-website
 dsq_thread_id:
   - "2634847401"
-image: /wp-content/uploads/2014/12/logo-piwik-e1418200408662.png
+images:
+  - /wp-content/uploads/2014/12/logo-piwik-e1418200408662.png
 categories:
   - Piwik
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: kinaj-13-dynamite
 dsq_thread_id:
   - "1526150354"
-image: /wp-content/uploads/2013/07/soundcloud.png
+images:
+  - /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:

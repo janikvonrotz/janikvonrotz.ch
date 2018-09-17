@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: outdoor-life-slovenia
 dsq_thread_id:
   - "4203013161"
-image: /wp-content/uploads/2014/04/Traveling.png
+images:
+  - /wp-content/uploads/2014/04/Traveling.png
 categories:
   - Traveling
 tags:

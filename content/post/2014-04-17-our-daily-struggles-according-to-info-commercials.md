@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: our-daily-struggles-according-to-info-commercials
 dsq_thread_id:
   - "2618881458"
-image: /wp-content/uploads/2014/03/letsgetweird.jpg
+images:
+  - /wp-content/uploads/2014/03/letsgetweird.jpg
 categories:
   - Blog
 tags:

@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: this-makes-me-speechless
 dsq_thread_id:
   - "1610690790"
-image: /wp-content/uploads/2013/08/greed.jpg
+images:
+  - /wp-content/uploads/2013/08/greed.jpg
 categories:
   - Politics
 tags:

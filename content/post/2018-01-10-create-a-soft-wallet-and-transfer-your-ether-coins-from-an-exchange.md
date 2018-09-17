@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: create-a-soft-wallet-and-transfer-your-ether-coins-from-an-exchange
 specific_page_layout:
   - default-sidebar
-image: /wp-content/uploads/2018/01/ethereum-logo.png
+images:
+  - /wp-content/uploads/2018/01/ethereum-logo.png
 categories:
   - Ethereum
 tags:

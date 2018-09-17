@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: install-sharepoint-2013-three-tier-farm-installing-and-configuring-sharepoint-sql-server
 dsq_thread_id:
   - "2318367140"
-image: /wp-content/uploads/2014/02/SQL-Server-e1393417625647.png
+images:
+  - /wp-content/uploads/2014/02/SQL-Server-e1393417625647.png
 categories:
   - SQL Server
 tags:

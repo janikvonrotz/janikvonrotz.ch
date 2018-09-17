@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: thailand-krabi-ao-nang-and-railay-beach
 dsq_thread_id:
   - "2803796916"
-image: /wp-content/uploads/2014/06/Tiger-Cave-Temple-20140626.jpg
+images:
+  - /wp-content/uploads/2014/06/Tiger-Cave-Temple-20140626.jpg
 categories:
   - Photography
   - Traveling

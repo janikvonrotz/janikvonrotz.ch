@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: manage-your-sharepoint-default-settings-with-powershell
 dsq_thread_id:
   - "2585449962"
-image: /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
+images:
+  - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:

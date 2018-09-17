@@ -12,7 +12,8 @@ tags:
  - distributed systems
  - monitoring
  - unpredictability
-image: /images/rope meshwork.jpg
+images:
+  - /images/rope meshwork.jpg
 ---
 
 At the last [Jazoon tech days](https://jazoon.com/) I learned about the current state of DevOps and other related topics. During the talks "chaos engineering" and "observability" were mentioned many times. I didn't know either and became curious what it was about.

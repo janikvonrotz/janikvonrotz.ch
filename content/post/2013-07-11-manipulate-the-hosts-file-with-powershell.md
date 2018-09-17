@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: manipulate-the-hosts-file-with-powershell
 dsq_thread_id:
   - "1487179908"
-image: /wp-content/uploads/2013/07/PowerShell.png
+images:
+  - /wp-content/uploads/2013/07/PowerShell.png
 categories:
   - PowerShell
 tags:

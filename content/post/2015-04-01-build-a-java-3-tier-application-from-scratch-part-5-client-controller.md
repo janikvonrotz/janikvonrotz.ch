@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: build-a-java-3-tier-application-from-scratch-part-5-client-controller
 dsq_thread_id:
   - "3645281582"
-image: /wp-content/uploads/2014/10/Java-logo.jpg
+images:
+  - /wp-content/uploads/2014/10/Java-logo.jpg
 categories:
   - Java
 tags:

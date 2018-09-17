@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: react-image-loader-with-a-spinner
 dsq_thread_id:
   - "5007364372"
-image: /wp-content/uploads/2014/04/React-Logo.png
+images:
+  - /wp-content/uploads/2014/04/React-Logo.png
 categories:
   - Blog
   - React

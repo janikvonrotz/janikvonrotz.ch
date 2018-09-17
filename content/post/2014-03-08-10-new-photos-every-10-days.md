@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: 10-new-photos-every-10-days
 dsq_thread_id:
   - "2389408521"
-image: /wp-content/uploads/2014/03/tumblr_logotype_white_blue_512.png
+images:
+  - /wp-content/uploads/2014/03/tumblr_logotype_white_blue_512.png
 categories:
   - Photography
 tags:

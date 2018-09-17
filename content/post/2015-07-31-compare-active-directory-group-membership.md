@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: compare-active-directory-group-membership
 dsq_thread_id:
   - "3988953744"
-image: /wp-content/uploads/2013/12/PowerShell-and-ActiveDirectory.png
+images:
+  - /wp-content/uploads/2013/12/PowerShell-and-ActiveDirectory.png
 categories:
   - Active Directory
   - PowerShell

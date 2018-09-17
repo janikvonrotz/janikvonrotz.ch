@@ -5,7 +5,8 @@ author: Janik von Rotz
 slug: kinaj-01-cyber-corn-electro-house-progressive-house
 dsq_thread_id:
   - "1459749734"
-image: /wp-content/uploads/2013/07/soundcloud.png
+images:
+  - /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:
