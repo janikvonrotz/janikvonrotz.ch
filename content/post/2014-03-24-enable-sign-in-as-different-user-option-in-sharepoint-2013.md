@@ -1,5 +1,5 @@
 ---
-title: 'Enable &#8220;Sign in as different user&#8221; option in SharePoint 2013'
+title: 'Enable "Sign in as different user" option in SharePoint 2013'
 date: 2014-03-24T15:49:46+00:00
 author: Janik von Rotz
 slug: enable-sign-in-as-different-user-option-in-sharepoint-2013
