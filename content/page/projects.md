@@ -15,11 +15,11 @@ This is a collection of projects by year since I came in touch with IT. It is su
 
 **2018**
 
-Secret - Managed and implemented the onsite and offsite deployment system for a complex identity and access management project. Took part in various stages of the software development process such as provisioning of artifacts, continuous integration, data staging, build process, testing, release management, knowledge management and integration. Consulted customer on managing their VMWare infrastructure und build the integration stages.
+Secret - Managed and implemented the onsite and offsite deployment system for a complex identity and access management project. Took part in various stages of the software development process such as provisioning of artifacts, continuous integration, data staging, build process, testing, release management, knowledge management and integration. Consulted the customer on managing their VMWare infrastructure und building the integration stages.
 
 [tudluk](https://github.com/janikvonrotz/tudluk) - Tudluk creates a static html page that showcases your favorite books. You can then use headless chrome to take a screenshot of the page and create a beautiful poster.
 
-[Identitätsverbund Schweiz (IDV Schweiz)](https://www.idv-fsi.ch/) - Deployed and configured the IDV identity broker infrastructure. Debugged and patched SAML related issues. Implemented new features and project improvements. Assisted participating identity and service provider during broker integration.
+[Identitätsverbund Schweiz (IDV Schweiz)](https://www.idv-fsi.ch/) - Deployed and configured the IDV identity broker infrastructure. Debugged and patched SAML related issues. Implemented new features and project improvements. Assisted identity and service provider participants during broker integration.
 
 **2017**
 
