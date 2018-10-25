@@ -1,7 +1,7 @@
 ---
-title: "2018 10 24 Setup GoCD server and agent using docker"
-slug: 2018-10-24-setup-gocd-server-and-agent-using-docker
-date: 2018-10-24T12:11:01+02:00
+title: "Setup GoCD server and agent using docker"
+slug: 2018-10-26-setup-gocd-server-and-agent-using-docker
+date: 2018-10-26T12:11:01+02:00
 categories:
  - Blog
 tags:
@@ -85,4 +85,4 @@ Finish the wizard and unpause the pipeline.
 
 In case the docker host runs behind a proxy and GoCD cannot connect to the git repository, make sure to configure the proxy environment variable when starting the docker container.
 
-`docker run -e HTTPS_PROXY=https://_PROXY_HOST_:_PROXY_PORT_ ...`
+`docker run -e HTTPS_PROXY=https://_PROXY_HOST_:_PROXY_PORT_ HTTP_PROXY=http://_PROXY_HOST_:_PROXY_PORT_ ...`
