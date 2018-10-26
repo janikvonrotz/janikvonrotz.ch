@@ -5,7 +5,7 @@ author: Janik von Rotz
 specific_page_layout:
   - default-sidebar
 ---
-[![Untitled](/wp-content/uploads/2015/09/profile-300x300.jpg)](/wp-content/uploads/2015/09/profile.jpg)
+[![Untitled](/images/Moi.jpg)](/images/Moi.jpg)
 
 Hi, my name is Janik von Rotz. I’m a system engineer and software developer from Switzerland and have got a BSc in Business and Information Technology.
 
