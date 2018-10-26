@@ -21,13 +21,13 @@ Currently he is employed by AdNovum as an Associate IAM Engineer. In this positi
 
 ## Work Experience
 
-01/2018 - today  
+01|2018 – today  
 Associate IAM Engineer (full-time)  
 [AdNovum Informatik AG](https://www.adnovum.ch/)  
 
 * Design, conception and realisation of identity and access management solutions.
 
-08/2017 – 12/2017  
+08|2017 – 12|2017  
 System Engineer (full-time civil service)  
 [Kantonsspital Obwalden](https://ksow.ch)  
 
@@ -36,7 +36,7 @@ System Engineer (full-time civil service)
 * Implemented an internal and external public key infrastructure.
 * Automated business critical tasks with PowerShell.
 
-03/2017 – 07/2017  
+03|2017 – 07|2017  
 Web Developer (part-time)  
 [Apoveda GmbH](https://www.apoveda.ch/)  
 
@@ -44,68 +44,68 @@ Web Developer (part-time)
 * Improved the web development stack and workflow.
 * Implemented websites from Sketch designs.
 
-12/2012 – 06/2014  
+12|2012 – 06|2014  
 Computer Scientist (full-time)  
 [Verkehrsbetriebe Luzern AG](http://www.vbl.ch/)  
 
-- Worked as a System Administrator with Microsoft SharePoint, Exchange, SQL Server and Active Directory.
-- Developed system automation solutions with PowerShell.
-- Advised departments on SharePoint workflow integrations.
-- Built and maintained single sign-on services.
-- Contributed to an Office 365 project: [Informationsdrehscheibe aus der Cloud](/wp-content/uploads/2015/09/Informationsdrehscheibe-aus-der-Cloud.pdf).
+* Worked as a System Administrator with Microsoft SharePoint, Exchange, SQL Server and Active Directory.
+* Developed system automation solutions with PowerShell.
+* Advised departments on SharePoint workflow integrations.
+* Built and maintained single sign-on services.
+* Contributed to an Office 365 project: [Informationsdrehscheibe aus der Cloud](/wp-content/uploads/2015/09/Informationsdrehscheibe-aus-der-Cloud.pdf).
 
-08/2008 – 06/2012  
+08|2008 – 06|2012  
 Apprenticeship Computer Specialist [EFZ](https://de.wikipedia.org/wiki/Eidgen%C3%B6ssisches_F%C3%A4higkeitszeugnis) System Engineering (full-time)  
 [InformatikLeistungsZentrum Obwalden / Nidwalden](http://www.ilz.info/)  
 
-- Developed and deployed websites and solutions with the Typo3 CMS.
-- Provided second level support for customers.
-- Helped maintaining the company's IT infrastructure and services.
+* Developed and deployed websites and solutions with the Typo3 CMS.
+* Provided second level support for customers.
+* Helped maintaining the company's IT infrastructure and services.
 
 ## Education
 
-09/2014 – 07/2017  
+09|2014 – 07|2017  
 Bachelor of Science in Business and Information Technology  
 [Lucerne University of Applied Sciences and Arts](https://www.hslu.ch/)  
-03/2016 – 08/2016, Exchange semester in Berlin, [Berlin University of Business Administration and Engineering](http://www.htw-berlin.de/)  
-09/2016 – 10/2016, International campus experience, [Santa Clara University](https://www.scu.edu/)  
+03|2016 – 08|2016, Exchange semester in Berlin, [Berlin University of Business Administration and Engineering](http://www.htw-berlin.de/)  
+09|2016 – 10|2016, International campus experience, [Santa Clara University](https://www.scu.edu/)  
 
 * Focused on requirements engineering, software development and business process management
 * For my bachelor's project, I have implemented a Meteor app to manage configurations of bus fleet communication systems and enhance user collaboration for a public transport company.
 * Open source projects: [janikvonrotz.ch/projects](https://janikvonrotz.ch/projects)
 
-08/2008 – 06/2012  
+08|2008 – 06|2012  
 Vocational Engineering School Diploma  
 [Vocational Training Centre for Business, Information Technology and Engineering in Sursee](https://beruf.lu.ch/berufsbildungszentren/bbzw)  
 
-08/2008 – 06/2012  
+08|2008 – 06|2012  
 Computer Specialist EFZ System Engineering  
 [Vocational Training Centre for Business, Information Technology and Engineering in Sursee](https://beruf.lu.ch/berufsbildungszentren/bbzw)  
 
 ## Information Technology skills
 
-- Requirements engineering – Analyze and process customers’ requirements.
-- Project management – Agile and classic.
-- Programming languages – JavaScript and Java.
-- System administration – Able to manage common Microsoft and Linux systems.
-- Team collaboration – Introduce or enhance team collaboration with a variety of tools.
-- System automation – Automate processes and orchestrate server farms with PowerShell.
-- Network infrastructure – Build, monitor and maintain a network infrastructure.
+* Requirements engineering – Analyze and process customers’ requirements.
+* Project management – Agile and classic.
+* Programming languages – JavaScript and Java.
+* System administration – Able to manage common Microsoft and Linux systems.
+* Team collaboration – Introduce or enhance team collaboration with a variety of tools.
+* System automation – Automate processes and orchestrate server farms with PowerShell.
+* Network infrastructure – Build, monitor and maintain a network infrastructure.
 
 ## Soft skills
 
-- Teamwork – Efficient collaboration and communication within a team is very important to me.
-- Mentoring – Teaching skills to employers, employees, co-workers and customers.
-- Flexibility – Come up with creative solutions when facing setbacks or unexpected changes.
-- Presentation – Articulate and visualize ideas clearly in front of a group or meeting.
-- Determination – Stay focused and work towards a goal while keeping time and budget in mind.
-- Motivation – Encourage co-workers and myself to accomplish great challenges.
-- Identification – Highly identify myself with my work, the company and its image.
+* Teamwork – Efficient collaboration and communication within a team is very important to me.
+* Mentoring – Teaching skills to employers, employees, co-workers and customers.
+* Flexibility – Come up with creative solutions when facing setbacks or unexpected changes.
+* Presentation – Articulate and visualize ideas clearly in front of a group or meeting.
+* Determination – Stay focused and work towards a goal while keeping time and budget in mind.
+* Motivation – Encourage co-workers and myself to accomplish great challenges.
+* Identification – Highly identify myself with my work, the company and its image.
 
 ## Language skills
 
-German (mother tongue)
-English (fluently reading, writing and speaking) – First Certificate in English (FCE)
+German (mother tongue)  
+English (fluently reading, writing and speaking) – First Certificate in English (FCE)  
 French (mainly reading, hardly writing and speaking) – Diplome d&#39;etudes en langue francaise DELF B1
 
 ## Skills by keywords
