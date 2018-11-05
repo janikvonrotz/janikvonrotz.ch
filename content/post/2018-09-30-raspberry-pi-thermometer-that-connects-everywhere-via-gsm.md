@@ -13,15 +13,13 @@ draft: true
 
 In this tutorial I am going to show how you can build an online accessible thermometer using the Raspberry Pi 3 B-model.
 
-Using a GSM module and a thermo sensor the Raspberry will send temparature data to a server periodically.
+Using a GSM module and a thermo sensor the Raspberry we will retrieve temparature data and save it to a remote server.
 
-The data is stored within a database.
-
-Finally, I will show how the data can be visualized and embedded on a web page.
+I also gonna show how the data can be visualized and embedded on a web page.
 
 # Hardware
 
-The whole setup requires quite a few components:
+The setup consists of the following components:
 
 * Raspberry Pi 3 Model B
 * MicrosSDHC Card 32 GB
@@ -37,7 +35,7 @@ The whole setup requires quite a few components:
 * Altitude Tech IoT Bit GSM HAT for the Raspberry Pi
 * Prepaid SIM card
 
-All this components should be available at your favorite electronics shop.
+All this components should be available from your favorite electronics shop.
 
 # Set up the Raspberry
 
@@ -49,11 +47,11 @@ Once you've setup the pi, connect it to the internet and make sure everything is
 
 # Assemble the thermo sensor
 
-In this part we are going to assemble the themo sensor, connect it to the pi and read the temparature data.
+The layout is very simple:
 
-![layout]()
+![layout](/images/Project Lorauna/ds18b20_layout.png)
 
-![breadboard pins]()
+
 
 # Connect the pi
 
@@ -61,12 +59,46 @@ Enable the GSM module
 
 # Read the temperature
 
+Load the 1-Wire drivers by adding two modprobe commands to the modules config.
+
+**/etc/modules**
+
+```sh
+...
+modprobe w1-gpio
+modprobe w1-therm
+```
+
+Look up the device.
+
+```
+cd /sys/bus/w1/devices/
+ls
+```
+
 # Set up the mongoDB storage
 
-https://docs.mlab.com/data-api/
+**schema.js**
+
+```js
+
+```
+
+**resolver.js**
+
+```js
+
+```
+
+**curl.sh**
+
+```sh
+
+```
 
 # Configure job to push data
 
-Cron job that runs a script
+Cron job that runs a python script
 
 # Embed the thermo data
+
