@@ -51,13 +51,20 @@ The layout is very simple:
 
 ![layout](/images/Project Lorauna/ds18b20_layout.png)
 
-
-
 # Connect the pi
 
 Enable the GSM module
 
 # Read the temperature
+
+Enable the gpio interface.
+
+**/boot/config.txt**
+
+```
+...
+dtoverlay=w1–gpio
+```
 
 Load the 1-Wire drivers by adding two modprobe commands to the modules config.
 
@@ -102,3 +109,4 @@ Cron job that runs a python script
 
 # Embed the thermo data
 
+Show how the graphql server can be quried.
