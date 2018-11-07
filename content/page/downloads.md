@@ -2,12 +2,6 @@
 title: Downloads
 date: 2013-07-02T08:20:29+00:00
 author: Janik von Rotz
-dsq_thread_id:
-  - "1458070513"
-  - "1458070513"
-  - "1458070513"
-  - "1458070513"
-  - "1458070513"
 ---
 # Bachelor of Science in Business and Information Technology
 

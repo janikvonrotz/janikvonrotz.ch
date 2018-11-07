@@ -2,12 +2,6 @@
 title: Contact
 date: 2013-07-02T08:23:14+00:00
 author: Janik von Rotz
-dsq_thread_id:
-  - "1458482894"
-  - "1458482894"
-  - "1458482894"
-  - "1458482894"
-  - "1458482894"
 ---
 # Communication
 

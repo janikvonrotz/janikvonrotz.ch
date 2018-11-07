@@ -2,14 +2,6 @@
 title: Projects
 date: 2013-07-02T08:21:46+00:00
 author: Janik von Rotz
-dsq_thread_id:
-  - "1459701149"
-  - "1459701149"
-  - "1459701149"
-  - "1459701149"
-  - "1459701149"
-specific_page_layout:
-  - default-sidebar
 ---
 This is a collection of projects by year since I came in touch with IT. It is supposed to be a showcase of my abilities and experience.
 

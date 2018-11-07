@@ -49,3 +49,6 @@ googleAnalytics = "UA-31105856-2"
 
     [params.icon]
     url = "logo.png"
+
+    [params.archive]
+    url = "/archive/"
