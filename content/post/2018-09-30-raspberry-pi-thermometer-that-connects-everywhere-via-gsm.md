@@ -13,13 +13,17 @@ draft: true
 
 In this tutorial I am going to show how you can build an online accessible thermometer using the Raspberry Pi 3 B-model.
 
-Using a GSM module and a thermo sensor the Raspberry we will retrieve temparature data and save it to a remote server.
+We will start by buying the electronic components and finish with a chart showing the temperature data.
 
-I also gonna show how the data can be visualized and embedded on a web page.
+Walking through the tutorial requires basic knowledge in working with linux and advanced knowledge in building web applications. Whereas the web application part is optionally.
+
+Using a GSM module and a thermo sensor our Raspberry Pi will retrieve temparature data and save it to a graphql server.
+
+Using react and a graphql client library we will create a chart with the temperature data.
 
 # Hardware
 
-The setup consists of the following components:
+This is my hardware shopping list.
 
 * Raspberry Pi 3 Model B
 * MicrosSDHC Card 32 GB
@@ -28,12 +32,12 @@ The setup consists of the following components:
 * Mouse and keyboard
 * Housing for the Raspberry
 * Thermo sensor DS18B20+
-* Adafruit breadboard PCB
+* Adafruit breadboard PCB (optionally)
 * 4.75k ohm resistor
 * Jumper wire kit
 * Altitude Tech IoT Bit Antenna
 * Altitude Tech IoT Bit GSM HAT for the Raspberry Pi
-* Prepaid SIM card
+* IoT SIM card
 
 All this components should be available from your favorite electronics shop.
 
@@ -43,17 +47,23 @@ The offical [Getting started with the Raspberry Pi](https://projects.raspberrypi
 
 For this tutorial I've used NOOBS to setup the os.
 
-Once you've setup the pi, connect it to the internet and make sure everything is up-to-date.
+Once you've setup the pi, connect it to the internet via wifi and make sure everything is up and running.
 
 # Assemble the thermo sensor
 
-The layout is very simple:
+The thermo sensor must be connected with the gpio interface.
 
 ![layout](/images/Project Lorauna/ds18b20_layout.png)
 
+I got help from a friend who helped me to solder the resistor and wires.
+
 # Connect the pi
 
-Enable the GSM module
+The GSM module is literally a hat for the Rasperry Pi. Stack it on top of the Pi, insert the SIM, plug in the usb cable and boot the Pi for installation.
+
+```
+installation instructions
+```
 
 # Read the temperature
 
@@ -81,31 +91,77 @@ Look up the device.
 ```
 cd /sys/bus/w1/devices/
 ls
+cd 28-00000XXXXXXX
+cat w1_slave
 ```
+
+The temperature should be showed after `t=`.
 
 # Set up the mongoDB storage
 
+
+
 **schema.js**
 
-```js
+```gql
+type Temperature {
+    _id: String
+    created: Date
+    value: Float
+}
 
+type Query {
+    allTemperatures: [Temperature]
+}
+type Mutation {
+    createTemperature(value: Float): Temperature
+}
 ```
 
 **resolver.js**
 
 ```js
-
+...
+Query: {
+    allTemperatures: async (root, args, context) => {
+        return (await context.db.collection('temperature').find({}).sort({created: -1}).toArray()).map(prepare)
+    },
+},
+Mutation: {
+    createTemperature: async (root, args, context) => {
+        args.created = new Date()
+        let res = await context.db.collection('temperature').insertOne(args)
+        return prepare(res.ops[0])
+    },
+}
+...
 ```
 
-**curl.sh**
+**/home/pi/sendTemeperatureData.sh**
 
 ```sh
+# get temperature data from sensor
+data=$(cat /sys/bus/w1/devices/28-00000a6a12a3/w1_slave | grep 't=' | cut -d "=" -f 2)
 
+# convert into float
+data=$(echo $data | sed 's/.\{2\}/&./')
+
+curl \
+  -X POST \
+  -H "Content-Type: application/json" \
+  --data '{ "query": "mutation { createTemperature(value: '$data') { _id, created } }" }' \
+  https://example.com/graphql
 ```
 
 # Configure job to push data
 
-Cron job that runs a python script
+Login with the `pi` user and edit the crontab file.
+
+`crontab -e`
+
+Add the following entry to the crontab file, it will run the script every five minutes.
+
+`*/5 *  * * *   /home/pi/sendTemperatureData.sh`
 
 # Embed the thermo data
 
