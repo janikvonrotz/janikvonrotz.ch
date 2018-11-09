@@ -55,19 +55,52 @@ The thermo sensor must be connected with the gpio interface.
 
 ![layout](/images/Project Lorauna/ds18b20_layout.png)
 
-I got help from a friend who helped me to solder the resistor and wires.
+I got help from a friend to solder the resistor and wires.
 
 # Connect the pi
 
-The GSM module is literally a hat for the Rasperry Pi. Stack it on top of the Pi, insert the SIM, plug in the usb cable and boot the Pi for installation.
+The GSM module is literally a hat for the Rasperry Pi.
+
+* Stack it on top of the Pi
+* Insert the SIM
+* Plug the power usb cable to the *ower* slot on the hat
+* Connect a usb cable from the hat *Modem* slot to the Pi
+
+**Important:** The Pi will be powered by the hat.
+
+* Then boot the Pi
+
+To enable communication between the Pi and the hat, we need to install some drivers.
 
 ```
-installation instructions
+git clone https://github.com/Altitude-Tech/IOTBit_install
+cd IOTBit_install/
+chmod u+x ./IOTBit_install.sh
+unzip gobiseria-master.zip
+mv gobiserial-master/GobiSerial .
+sudo dpkg --configure -a
+sudo ./IOTBit_install.sh
 ```
+
+This will take a while.
+
+Once the installation has finished, check if the driver for the hat is available.
+
+```
+lsusb | grep Qualcomm
+```
+
+Install the gnome network manager.
+
+`sudo apt-get install network-manager-gnome`
+
+Source: [instructables - IOT BIT 4G, 3G V1.5 Hat for the Raspberry Pi](https://www.instructables.com/id/IoT-Bit/)
 
 # Read the temperature
 
-Enable the gpio interface.
+Rasperry Pi will communicate with sensor using the 1-Wire protocol. It is already installed. However, the gpio interface must be enabled to allow sensor connection.
+
+Enable the gpio interface by creating the following entry.
 
 **/boot/config.txt**
 
@@ -86,7 +119,11 @@ modprobe w1-gpio
 modprobe w1-therm
 ```
 
-Look up the device.
+Reboot the pi.
+
+`sudo reboot`
+
+Look up the device and output a temperature reading.
 
 ```
 cd /sys/bus/w1/devices/
@@ -97,9 +134,13 @@ cat w1_slave
 
 The temperature should be showed after `t=`.
 
+Source: [Circuit Basics - Raspberry Pi ds18b20 temperature sensor tutorial](http://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/)
+
 # Set up the mongoDB storage
 
+In the second part of the tutorial we are going to setup a simple web application to retrieve and store the temperature readings. This part requires advanced knowledge about creating and running web applications.
 
+## Graphql api
 
 **schema.js**
 
@@ -153,7 +194,7 @@ curl \
   https://example.com/graphql
 ```
 
-# Configure job to push data
+# Configure a cron job to send data
 
 Login with the `pi` user and edit the crontab file.
 
@@ -166,3 +207,27 @@ Add the following entry to the crontab file, it will run the script every five m
 # Embed the thermo data
 
 Show how the graphql server can be quried.
+
+**queries.js**
+
+```
+...
+
+...
+```
+
+# Troubleshooting
+
+### kernel header mismatch
+
+If the IOT Bit driver installation failes with an error message like:
+
+`Your kernel headers for kernel 4.14.56-v7+ cannot be found at`
+
+Run the following commands:
+
+```
+rpi-update
+rpi-source
+```
+
