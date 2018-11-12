@@ -75,7 +75,7 @@ The GSM module is literally a hat for the Rasperry Pi.
 To enable communication between the Pi and the hat, we need to enable the UART interface.
 
 ```
-git clone https://github.com/Altitude-Tech/IOTBit_GSM.git
+git clone https://github.com/janikvonrotz/IOTBit_GSM.git
 cd IOTBit_GSM
 chmod +x Uart_Enable_RPi3.sh
 sudo ./Uart_Enable_RPi3.sh
@@ -94,11 +94,28 @@ Source: [instructables - IOT BIT GSM V1.5 Hat for the Raspberry Pi](https://www.
 
 # Firmware update
 
+The GMS hat might require a firmware update. The update is also included in the cloned repository from the last chapter.
+
+Run the updater.
+
+```
+cd ~/IOTBit-GSM/IOTBit-GSM_Firmware_Updater
+sudo python Firmware_Updater_IOT.py
+```
+
+Enter: `/dev/serial0`
+
+If the programm finishes with *Verification ok* the upgrade was successful.
+
+
 # Network settings
 
 Install the gnome network manager.
 
-`sudo apt-get install network-manager-gnome`
+````
+sudo apt-get update
+sudo apt-get install network-manager-gnome
+```
 
 # Read the temperature
 
