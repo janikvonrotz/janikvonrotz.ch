@@ -41,6 +41,8 @@ This is my hardware shopping list.
 
 All this components should be available from your favorite electronics shop.
 
+Source: [Medium - How to build a Raspberry Pi thermometer you can access anywhere (a beginner’s guide)](https://blog.dataplicity.com/how-to-build-a-raspberry-pi-thermometer-you-can-access-anywhere-a-beginner-s-guide-4ad44ce9f4c9)
+
 # Set up the Raspberry
 
 The offical [Getting started with the Raspberry Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-getting-started) guide is everything you need to get the pi up and running.
@@ -63,38 +65,40 @@ The GSM module is literally a hat for the Rasperry Pi.
 
 * Stack it on top of the Pi
 * Insert the SIM
-* Plug the power usb cable to the *ower* slot on the hat
-* Connect a usb cable from the hat *Modem* slot to the Pi
+* Plug the power usb cable to the *Power* port on the hat
+* Connect a usb cable from the hat *Modem* port to the Pi
 
 **Important:** The Pi will be powered by the hat.
 
 * Then boot the Pi
 
-To enable communication between the Pi and the hat, we need to install some drivers.
+To enable communication between the Pi and the hat, we need to enable the UART interface.
 
 ```
-git clone https://github.com/Altitude-Tech/IOTBit_install
-cd IOTBit_install/
-chmod u+x ./IOTBit_install.sh
-unzip gobiseria-master.zip
-mv gobiserial-master/GobiSerial .
-sudo dpkg --configure -a
-sudo ./IOTBit_install.sh
+git clone https://github.com/Altitude-Tech/IOTBit_GSM.git
+cd IOTBit_GSM
+chmod +x Uart_Enable_RPi3.sh
+sudo ./Uart_Enable_RPi3.sh
 ```
 
-This will take a while.
-
-Once the installation has finished, check if the driver for the hat is available.
+Test if the GSM hat responds.
 
 ```
-lsusb | grep Qualcomm
+sudo apt-get install minicom
+minicom -D /dev/serial0
 ```
+
+If you see *Modem ready* the installation was a success.
+
+Source: [instructables - IOT BIT GSM V1.5 Hat for the Raspberry Pi](https://www.instructables.com/id/IOT-BIT-GSM-V15-Hat-for-the-Raspberry-Pi/)
+
+# Firmware update
+
+# Network settings
 
 Install the gnome network manager.
 
 `sudo apt-get install network-manager-gnome`
-
-Source: [instructables - IOT BIT 4G, 3G V1.5 Hat for the Raspberry Pi](https://www.instructables.com/id/IoT-Bit/)
 
 # Read the temperature
 
