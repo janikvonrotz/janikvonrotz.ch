@@ -3,36 +3,22 @@ title: Let’s write a Laravel application – Project template
 date: 2015-01-30T10:28:03+00:00
 author: Janik von Rotz
 slug: lets-write-a-laravel-application-project-template
-dsq_thread_id:
-  - "3469034417"
 images:
   - /wp-content/uploads/2015/01/laravel-logo-e1422466263489.png
 categories:
-  - Laravel
+  - Web development
 tags:
-  - artisan
-  - auto
-  - automatically
   - bootstrap
   - bower
-  - css
   - github
   - grunt
   - javascript
   - laravel
-  - live
-  - livereload
-  - minify
   - nodejs
   - npm
   - php
   - project
-  - refresh
-  - reload
-  - task
   - template
-  - uglify
-  - update
 ---
 In web development there are tons of programs and tools and due to that also complex and very different development strategies.
 Luckily dependency handling got a lot easier. For my Laravel project setup we will use 3 different package managers.

@@ -3,12 +3,10 @@ title: Disable Trackbacks and Pingbacks in WordPress
 date: 2014-02-27T08:24:50+00:00
 author: Janik von Rotz
 slug: disable-trackbacks-and-pingbacks-in-wordpress
-dsq_thread_id:
-  - "2328729110"
 images:
   - /wp-content/uploads/2014/02/wordpress-logo.jpg
 categories:
-  - WordPress
+  - Web development
 tags:
   - pingbacks
   - solutions

@@ -3,20 +3,14 @@ title: Migrate Piwik website
 date: 2014-04-24T07:23:42+00:00
 author: Janik von Rotz
 slug: migrate-piwik-website
-dsq_thread_id:
-  - "2634847401"
 images:
   - /wp-content/uploads/2014/12/logo-piwik-e1418200408662.png
 categories:
-  - Piwik
+  - Web server
 tags:
-  - database
-  - migrate
+  - migration
   - mysql
-  - new
   - piwik
-  - server
-  - website
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/9640572](https://gist.github.com/9640572).*

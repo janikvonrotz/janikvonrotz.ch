@@ -8,18 +8,11 @@ dsq_thread_id:
 images:
   - /wp-content/uploads/2015/10/Docker-logo.png
 categories:
-  - Docker
+  - System engineering
 tags:
-  - code
-  - configuration
-  - coreos
-  - deploy
   - docker
   - mysql
   - phpmyadmin
-  - script
-  - ship
-  - stack
   - vagrant
   - zabbix
 ---

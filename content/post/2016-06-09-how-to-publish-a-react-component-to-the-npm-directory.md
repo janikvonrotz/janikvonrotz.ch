@@ -3,28 +3,16 @@ title: How to publish a react component to the npm directory
 date: 2016-06-09T12:33:36+00:00
 author: Janik von Rotz
 slug: how-to-publish-a-react-component-to-the-npm-directory
-dsq_thread_id:
-  - "4896495057"
 images:
   - /wp-content/uploads/2014/04/React-Logo.png
 categories:
-  - Blog
-  - Node.js
-  - React
+  - JavaScript development
 tags:
   - babel
-  - best
-  - compile
-  - component
-  - index
   - javascript
   - node
   - npm
   - packagage
-  - practice
-  - publish
-  - source
-  - transpile
 ---
 This time I'll show you how to publish react components to the npm directory. This guide does not cover testing it only shows the easiest way to use your components for different projects as npm dependency.
 

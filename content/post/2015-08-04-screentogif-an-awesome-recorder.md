@@ -3,22 +3,14 @@ title: ScreenToGif an awesome recorder
 date: 2015-08-04T07:03:41+00:00
 author: Janik von Rotz
 slug: screentogif-an-awesome-recorder
-dsq_thread_id:
-  - "4001325990"
 images:
   - /wp-content/uploads/2015/07/Screen-To-Gif.png
 categories:
   - Work
 tags:
   - animation
-  - converter
   - documentation
-  - gif
-  - help
-  - movie
-  - screen
   - screentogif
-  - support
 ---
 I found the perfect tool to record desktop actions: [Screen-To-Gif recorder](https://screentogif.codeplex.com/).
 I'm using ScreenToGif almost every day to create short and precise online documations for my customer wiki.

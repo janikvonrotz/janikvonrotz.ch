@@ -3,8 +3,6 @@ title: 'Let’s get weird: Website of the day'
 date: 2014-03-06T11:19:08+00:00
 author: Janik von Rotz
 slug: lets-get-weird-website-of-the-day
-dsq_thread_id:
-  - "2371075411"
 images:
   - /wp-content/uploads/2014/03/letsgetweird.jpg
 categories:
@@ -13,4 +11,4 @@ tags:
   - interwebz
   - shit
 ---
-This is definitly the best website on the internet right now: <a href="https://www.lingscars.com">https://www.lingscars.com</a>
+This is definitely the best website on the internet right now: <a href="https://www.lingscars.com">https://www.lingscars.com</a>

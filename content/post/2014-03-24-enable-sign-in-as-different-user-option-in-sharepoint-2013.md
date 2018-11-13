@@ -3,15 +3,12 @@ title: 'Enable "Sign in as different user" option in SharePoint 2013'
 date: 2014-03-24T15:49:46+00:00
 author: Janik von Rotz
 slug: enable-sign-in-as-different-user-option-in-sharepoint-2013
-dsq_thread_id:
-  - "2499366773"
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:
   - sharepoint
-  - user
 ---
 By default in SharePoint 2013 there is no option for "Sign in as different user".
 

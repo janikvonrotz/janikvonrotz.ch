@@ -3,14 +3,11 @@ title: Manipulate the hosts file with PowerShell
 date: 2013-07-11T08:38:06+00:00
 author: Janik von Rotz
 slug: manipulate-the-hosts-file-with-powershell
-dsq_thread_id:
-  - "1487179908"
 images:
   - /wp-content/uploads/2013/07/PowerShell.png
 categories:
-  - PowerShell
+  - Scripting
 tags:
-  - file
   - function
   - hosts
   - manipulation

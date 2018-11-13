@@ -3,16 +3,12 @@ title: Redirected subdomains to domain
 date: 2014-04-04T06:59:12+00:00
 author: Janik von Rotz
 slug: redirected-subdomains-to-domain
-dsq_thread_id:
-  - "2585121297"
 images:
   - /wp-content/uploads/2014/03/Nginx-Logo-e1394033855329.png
 categories:
-  - Nginx
+  - Web server
 tags:
-  - canonical
   - domain
-  - module
   - nginx
   - redirect
   - rewrite

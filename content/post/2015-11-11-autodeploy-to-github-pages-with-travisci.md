@@ -3,17 +3,13 @@ title: Autodeploy to Github Pages with Travis CI
 date: 2015-11-11T09:37:05+00:00
 author: Janik von Rotz
 slug: autodeploy-to-github-pages-with-travisci
-dsq_thread_id:
-  - "4308594906"
 images:
   - /wp-content/uploads/2015/11/Travis-CI-logo.jpg
 categories:
-  - Travis
+  - Web development
 tags:
-  - continuous
+  - continuous integration
   - github
-  - integration
-  - pages
   - testing
   - travis
 ---

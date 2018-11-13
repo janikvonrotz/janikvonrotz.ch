@@ -3,19 +3,15 @@ title: Manage Users in ActiveDirectory with PowerShell
 date: 2013-08-09T10:18:06+00:00
 author: Janik von Rotz
 slug: manage-users-in-activedirectory-with-powershell
-dsq_thread_id:
-  - "1588015157"
 images:
   - /wp-content/uploads/2013/08/Active-Directory-Logo.png
 categories:
-  - Active Directory
-  - PowerShell
+  - Scripting
 tags:
   - activedirectory
   - management
   - powershell
   - quest module
-  - user
 ---
 The PowerShell ActiveDirectory modules from Microsoft are definitely a pain. That's why Quest (Dell) has developed a bunch of <a href="https://www.quest.com/powershell/activeroles-server.aspx">CMDlets </a>to make the user management through PowerShell a lot easier.
 

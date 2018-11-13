@@ -3,22 +3,14 @@ title: Monitoring a SharePoint Environment with Zabbix
 date: 2014-04-14T15:16:08+00:00
 author: Janik von Rotz
 slug: monitoring-a-sharepoint-environment-with-zabbix
-dsq_thread_id:
-  - "2610883638"
 images:
   - /wp-content/uploads/2014/04/Zabbix-Logo-e1397484832591.png
 categories:
-  - Zabbix
+  - Web server
 tags:
-  - end
-  - monitor
-  - open
+  - monitoring
   - reporting
-  - service
   - sharepoint
-  - site
-  - software
-  - source
   - zabbix
 ---
 *This post of is part of my [Install SharePoint 2013 Three-tier Farm](https://janikvonrotz.ch/projects/install-sharepoint-2013-three-tier-farm/) project.*

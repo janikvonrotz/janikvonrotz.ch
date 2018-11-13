@@ -3,28 +3,16 @@ title: 'Hiking for Emails - Internet for the developing world'
 date: 2016-01-30T11:51:34+00:00
 author: Janik von Rotz
 slug: hiking-for-emails-internet-for-the-developing-wolrd
-dsq_thread_id:
-  - "4536176885"
 images:
   - /wp-content/uploads/2016/01/net-neutrality.png
 categories:
-  - Blog
-  - Politics
+  - Economy
 tags:
-  - connect
-  - countries
-  - developing
   - facebook
-  - free
   - google
   - internet
-  - net
-  - neutral
   - neutrality
-  - people
   - privacy
-  - web
-  - world
 ---
 This video is a beautiful example of how internet access in remote areas improves the standards of health, education and prosperity. With the help from people all over the world Mahabir Pun has connected over 60.000 people to the world wide web.
 

@@ -2,17 +2,13 @@
 title: ILIAS Synchronising Tool
 date: 2014-10-17T18:27:19+00:00
 author: Janik von Rotz
-slug: ilias-synchronising-tool
-dsq_thread_id:
-  - "3127475757"
+slug: ilias-synchronising-tool"
 categories:
-  - Blog
+  - Scripting
 tags:
-  - automatically
   - ilias
   - powershell
-  - sync
-  - tool
+  - syncing
 ---
 My university [Hochschule Luzern](http://hslu.ch/) uses [ILIAS](http://www.ilias.de/docu/goto.php?target=root_1) as an open source e-learning and content management platform.
 

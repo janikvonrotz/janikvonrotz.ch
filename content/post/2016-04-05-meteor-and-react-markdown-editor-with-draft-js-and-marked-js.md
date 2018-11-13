@@ -3,29 +3,17 @@ title: 'Meteor and React: Markdown editor with draft.js and marked.js'
 date: 2016-04-05T09:15:29+00:00
 author: Janik von Rotz
 slug: meteor-and-react-markdown-editor-with-draft-js-and-marked-js
-dsq_thread_id:
-  - "4721310765"
 images:
   - /wp-content/uploads/2016/03/meteor-react-logo-1200x201.png
 categories:
-  - Meteor
-  - React
+  - JavaScript development
 tags:
   - bootstrap
-  - draft.js
-  - drag
-  - drop
-  - editor
+  - draftjs
   - facebook
-  - file
-  - html
   - markdown
-  - marked
   - meteor
-  - preview
   - react
-  - rendered
-  - upload
 ---
 Recently I switched my current project from Meteor 1.2 to 1.3. While doing so I reworked the code for my markdown editor. When created the markdown editor in the first place I learned about the necessity of a solid platform to build web editors. So this time I used draft.js as base. Facebook open sourced draft.js a few months ago. They use it almost everywhere on Facebook page, so it should be well-tested.
 

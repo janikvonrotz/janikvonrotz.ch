@@ -3,32 +3,22 @@ title: 'Build a Java 3-tier application from scratch - Part 1: Introduction and 
 date: 2015-03-15T16:57:38+00:00
 author: Janik von Rotz
 slug: build-a-java-3-tier-application-from-scratch-part-1-introduction-and-project-setup
-dsq_thread_id:
-  - "3597369871"
 images:
   - /wp-content/uploads/2014/10/Java-logo.jpg
 categories:
-  - Java
+  - Software development
 tags:
-  - 3-tier
-  - advanced
+  - three tier
   - application
-  - client
-  - common
-  - controller
   - eclipse
   - gradle
   - hibernate
   - java
   - javafx
-  - model
   - mvc
   - mysql
   - project
-  - tier
   - tutorial
-  - view
-  - webservice
 ---
 Welcome to my first post of the Java 3-tier application tutorial. In this tutorial I will tell show how you can develope a Model-View-Controller based Java desktop and server application using the latest tools and frameworks.
 <!--more-->

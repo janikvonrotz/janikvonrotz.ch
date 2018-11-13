@@ -3,22 +3,13 @@ title: Adobe Lightroom switch from jpeg raw workflow to single raw
 date: 2014-05-02T08:02:54+00:00
 author: Janik von Rotz
 slug: adobe-lightroom-switch-from-jpeg-raw-workflow-to-single-raw
-dsq_thread_id:
-  - "2672235670"
 images:
   - /wp-content/uploads/2014/05/Adobe-Lightroom-Logo.png
 categories:
   - Photography
 tags:
   - adobe
-  - change
-  - jpeg
   - lightroom
-  - multi
-  - raw
-  - single
-  - unify
-  - update
   - workflow
 ---
 I don't know since when I started to make photos in jpeg and raw. Also don't know the reasons for doing that any more.

@@ -3,22 +3,16 @@ title: Barry Underwood the master of light painting
 date: 2014-05-29T15:32:16+00:00
 author: Janik von Rotz
 slug: barry-underwood-the-master-of-light-painting
-dsq_thread_id:
-  - "2721925770"
 images:
   - /wp-content/uploads/2014/05/03-Underwood-Wendover_forJohn.jpg
 categories:
   - Photography
 tags:
-  - barry
   - exposure
   - light
-  - long
   - painted
   - photographer
   - photographs
-  - time
-  - underwood
 ---
 In my last tumblr session I came along a post about Barry Underwood's pictures. He's a photographer with a talent for amazing light painted photos. 
 

@@ -3,8 +3,6 @@ title: some art and photography inspiration
 date: 2015-01-18T12:00:35+00:00
 author: Janik von Rotz
 slug: some-art-and-photography-inspiration
-dsq_thread_id:
-  - "3431569496"
 images:
   - /wp-content/uploads/2015/01/Photography.jpg
 categories:
@@ -15,10 +13,7 @@ tags:
   - fascinating
   - inspiration
   - photography
-  - sources
-  - this
   - traveling
-  - watch
 ---
 This is an update and support for inspiration by my creative sources. I follow several blogs by either a creative collective, young entrepreneurs or talented photographers. In appreciation for sharing their work I would like to show you personal recent favourites.
 <!--more-->

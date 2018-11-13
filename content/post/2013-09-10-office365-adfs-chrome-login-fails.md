@@ -3,8 +3,6 @@ title: Office365 ADFS Chrome Login fails
 date: 2013-09-10T13:49:40+00:00
 author: Janik von Rotz
 slug: office365-adfs-chrome-login-fails
-dsq_thread_id:
-  - "1745104946"
 images:
   - /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg
 categories:
@@ -19,7 +17,6 @@ tags:
   - logon
   - multiple
   - office365
-  - prompt
 ---
 Today I experienced an exotic behaviour, a client couldn't access his Office365 page due he wasn't able to login on the ADFS authentication prompt.
 

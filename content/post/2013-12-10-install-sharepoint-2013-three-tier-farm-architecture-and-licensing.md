@@ -3,15 +3,12 @@ title: 'Install SharePoint 2013 Three-tier Farm - Architecture and Licensing'
 date: 2013-12-10T12:35:07+00:00
 author: Janik von Rotz
 slug: install-sharepoint-2013-three-tier-farm-architecture-and-licensing
-dsq_thread_id:
-  - "2040751075"
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:
   - architecture
-  - farm
   - license
   - project
   - sharepoint

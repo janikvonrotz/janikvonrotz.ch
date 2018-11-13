@@ -3,19 +3,14 @@ title: PowerShell awesome list introduction
 date: 2015-06-01T06:47:40+00:00
 author: Janik von Rotz
 slug: powershell-awesome-list-introduction
-dsq_thread_id:
-  - "3811307919"
 images:
   - /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png
 categories:
-  - PowerShell
+  - Scripting
 tags:
   - awesome
   - github
-  - list
   - powershell
-  - sindre
-  - sorhus
 ---
 Awesome lists are a great thing on GitHub. It's about collecting useful resources, packages and modules of a certain technology or subject. It's the best way of introduction if you have to learn about a new technology.
 Here's a good example of a [awesome Node.js list](https://github.com/sindresorhus/awesome-nodejs) by [Sindre Sorhus](https://github.com/sindresorhus) aka the inventor of bower, grunt and many other web tech.

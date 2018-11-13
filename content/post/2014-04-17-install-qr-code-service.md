@@ -3,24 +3,15 @@ title: Install QR code service
 date: 2014-04-17T10:35:03+00:00
 author: Janik von Rotz
 slug: install-qr-code-service
-dsq_thread_id:
-  - "2618446085"
 images:
   - /wp-content/uploads/2014/04/QR-Code-service.png
 categories:
-  - Nginx
-  - PHP
+  - Web server
 tags:
-  - code
-  - configuration
-  - fpm
   - nginx
   - php
   - php5
-  - qr
-  - service
   - ubuntu
-  - website
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/9445729](https://gist.github.com/9445729).*  

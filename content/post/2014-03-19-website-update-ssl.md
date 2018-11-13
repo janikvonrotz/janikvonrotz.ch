@@ -3,11 +3,10 @@ title: Website Update SSL
 date: 2014-03-19T15:15:21+00:00
 author: Janik von Rotz
 slug: website-update-ssl
-dsq_thread_id:
-  - "2462518912"
 images:
   - /wp-content/uploads/2014/03/Amazon-AWS-Logo.png
 categories:
+  - Security
   - Blog
 ---
 Hi visiter,

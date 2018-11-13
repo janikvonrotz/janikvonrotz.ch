@@ -3,21 +3,14 @@ title: Backup Active Directory Group Policies with PowerShell
 date: 2014-04-22T08:02:13+00:00
 author: Janik von Rotz
 slug: backup-active-directory-group-policies-with-powershell
-dsq_thread_id:
-  - "2629693584"
 images:
   - /wp-content/uploads/2013/10/Group-Policy.jpg
 categories:
-  - Active Directory
-  - PowerShell
+  - Scripting
 tags:
   - backup
-  - full
-  - group
-  - objects
   - policy
   - powershell
-  - snaphost
 ---
 Based on my last [Active Directory backup script](https://janikvonrotz.ch/2014/04/15/backup-active-directory-with-powershell/) I've developed a similar script to backup all group policies.
 

@@ -3,12 +3,10 @@ title: 'Vagrant - portable development environment'
 date: 2013-07-02T11:54:35+00:00
 author: Janik von Rotz
 slug: vagrant-portable-development-environment
-dsq_thread_id:
-  - "1458874559"
 images:
   - /wp-content/uploads/2013/07/vagrant-logo.png
 categories:
-  - Vagrant
+  - Containerization
 tags:
   - code
   - machine

@@ -3,17 +3,13 @@ title: Find dead SharePoint ActiveDirectory Groups
 date: 2013-09-25T15:33:07+00:00
 author: Janik von Rotz
 slug: find-dead-sharepoint-activedirectory-groups
-dsq_thread_id:
-  - "1795902964"
 images:
   - /wp-content/uploads/2013/07/PowerShell.png
 categories:
-  - Active Directory
-  - PowerShell
+  - Scripting
   - SharePoint
 tags:
   - activedirectory
-  - groups
   - managment
   - sharepoint
 ---

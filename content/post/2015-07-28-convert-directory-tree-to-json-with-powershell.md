@@ -3,21 +3,12 @@ title: Convert Directory Tree to Json with PowerShell
 date: 2015-07-28T15:07:23+00:00
 author: Janik von Rotz
 slug: convert-directory-tree-to-json-with-powershell
-dsq_thread_id:
-  - "3979634859"
 images:
   - /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png
 categories:
   - PowerShell
 tags:
-  - children
-  - convert
-  - data
-  - directory
-  - get-childitem
-  - json
   - powershell
-  - tree
 ---
 Today I wrote a simple script that converts a directory tree query with `get-childitem` into a json formatted data tree.
 <!--more-->

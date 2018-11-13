@@ -8,17 +8,14 @@ dsq_thread_id:
 images:
   - /wp-content/uploads/2014/03/Ubuntu-Logo.png
 categories:
-  - Ubuntu Server
+  - Web server
 tags:
-  - amazone
+  - aws
   - azure
   - deployment
-  - installation
   - private
   - project
   - rackspace
-  - server
-  - strategies
   - ubuntu
   - virtual
   - vps

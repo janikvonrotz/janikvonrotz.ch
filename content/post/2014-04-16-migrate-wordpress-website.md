@@ -3,21 +3,13 @@ title: Migrate WordPress website
 date: 2014-04-16T07:44:47+00:00
 author: Janik von Rotz
 slug: migrate-wordpress-website
-dsq_thread_id:
-  - "2615551343"
 images:
   - /wp-content/uploads/2014/02/wordpress-logo.jpg
 categories:
-  - WordPress
+  - Web server
 tags:
-  - altered
-  - blog
-  - migrate
-  - new
-  - obsolete
-  - old
-  - url
-  - website
+  - blogging
+  - migration
   - wordpress
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  

@@ -3,15 +3,11 @@ title: Add View Folder link to search results page in SharePoint
 date: 2013-09-23T11:19:09+00:00
 author: Janik von Rotz
 slug: add-view-folder-link-to-search-results-page-in-sharepoint
-dsq_thread_id:
-  - "1789065243"
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:
-  - folder
-  - link
   - search
   - sharepoint
 ---

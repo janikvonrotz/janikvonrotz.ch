@@ -3,21 +3,15 @@ title: Install Nginx php5-fpm website
 date: 2014-04-11T06:52:52+00:00
 author: Janik von Rotz
 slug: install-nginx-php5-fpm-website
-dsq_thread_id:
-  - "2603114610"
 images:
   - /wp-content/uploads/2014/03/Nginx-Logo-e1394033855329.png
 categories:
-  - Nginx
-  - PHP
+  - Web server
 tags:
   - application
-  - configuration
-  - minimal
   - nginx
   - php
   - php5
-  - website
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/9445746](https://gist.github.com/9445746).*  

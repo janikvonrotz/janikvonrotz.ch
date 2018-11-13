@@ -3,8 +3,6 @@ title: Animes I love
 date: 2014-10-06T10:55:17+00:00
 author: Janik von Rotz
 slug: animes-i-love
-dsq_thread_id:
-  - "3087917509"
 images:
   - /wp-content/uploads/2014/10/Japan-Banner.jpg
 categories:
@@ -13,7 +11,6 @@ tags:
   - anime
   - japan
   - movie
-  - series
 ---
 As I don't want to forget about the beautiful animes I've seen so far I've created a list of my favorite ones. Even if you don't know anything about the anime genre or don't bother about it, you'll should at least see one in my list. The art of anime is very underestimated in the western hemisphere, it's far more work to produce an anime than a ordinary hollywood movie.
 <!--more-->

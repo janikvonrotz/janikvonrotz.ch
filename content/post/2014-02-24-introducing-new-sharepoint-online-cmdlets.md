@@ -3,12 +3,10 @@ title: Introducing new SharePoint Online Cmdlets
 date: 2014-02-24T11:19:56+00:00
 author: Janik von Rotz
 slug: introducing-new-sharepoint-online-cmdlets
-dsq_thread_id:
-  - "2312627481"
 images:
   - /wp-content/uploads/2014/02/SharePoint-Online.jpg
 categories:
-  - SharePoint Online
+  - Office 365
 tags:
   - cmdlets
   - on-premise

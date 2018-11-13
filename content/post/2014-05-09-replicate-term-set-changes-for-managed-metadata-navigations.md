@@ -3,12 +3,10 @@ title: Replicate term set changes for managed metadata navigations
 date: 2014-05-09T08:24:47+00:00
 author: Janik von Rotz
 slug: replicate-term-set-changes-for-managed-metadata-navigations
-dsq_thread_id:
-  - "2671794656"
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
-  - Blog
+  - SharePoint
 ---
 This post is a supplement to <a href="https://janikvonrotz.ch/2014/04/23/limitations-and-workarounds-for-managed-metadata-navigation-for-multiple-site-collections/" title="Limitations and workarounds for managed metadata navigation for multiple site collections">Limitations and workarounds for managed metadata navigation for multiple site collections</a>.
 

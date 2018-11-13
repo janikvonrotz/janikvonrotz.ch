@@ -3,20 +3,15 @@ title: 'Project Naptha - OCR well done'
 date: 2014-04-24T07:59:02+00:00
 author: Janik von Rotz
 slug: project-naptha-ocr-well-done
-dsq_thread_id:
-  - "2637495405"
 images:
   - /wp-content/uploads/2014/04/Project-Naptha-Logo.png
 categories:
   - Web development
 tags:
   - amazing
-  - done
-  - naptha
   - ocr
   - project
   - recognition
-  - text
 ---
 On the [Project Naptha homepage](http://projectnaptha.com/) you can download a Google chrome extension that extends your browsers text copy function.
 

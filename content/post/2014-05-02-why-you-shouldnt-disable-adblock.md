@@ -3,20 +3,15 @@ title: 'Why you shouldn’t disable Adblock'
 date: 2014-05-02T07:16:14+00:00
 author: Janik von Rotz
 slug: why-you-shouldnt-disable-adblock
-dsq_thread_id:
-  - "2654647892"
 images:
   - /wp-content/uploads/2014/04/how-adblock-plus-works.png
 categories:
-  - IT Security
+  - Privacy
+  - Security
 tags:
   - adblocker
-  - adverbs
   - advertisement
-  - block
-  - hide
-  - online
-  - plus
+  - privacy
 ---
 Let's face it, there are people (count me in) who dislike any kind of advertisement.
 I really get annoyed of any kind of pop-up flashing attention distractions adverb on sites I'm visiting.

@@ -3,23 +3,15 @@ title: Install Koken website
 date: 2015-08-31T06:45:57+00:00
 author: Janik von Rotz
 slug: install-koken-website
-dsq_thread_id:
-  - "4082754740"
 images:
   - /wp-content/uploads/2015/08/Koken-Logo.png
 categories:
-  - Koken
+  - Web server
 tags:
   - guide
   - hosting
-  - install
   - koken
-  - private
-  - server
-  - step
   - ubuntu
-  - virtual
-  - website
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/2b582ca4e08a6a0e4de2](https://gist.github.com/2b582ca4e08a6a0e4de2).*  

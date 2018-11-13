@@ -3,23 +3,15 @@ title: Install MySQL
 date: 2014-04-07T07:14:46+00:00
 author: Janik von Rotz
 slug: install-mysql
-dsq_thread_id:
-  - "2592456287"
 images:
   - /wp-content/uploads/2014/04/MySQL-Logo.png
 categories:
-  - MySQL
+  - Web server
 tags:
   - aptitude
-  - database
-  - installation
-  - most
   - mysql
-  - popular
   - secure
-  - system
   - ubuntu
-  - version
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/9392658](https://gist.github.com/9392658).*

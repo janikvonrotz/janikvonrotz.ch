@@ -3,20 +3,15 @@ title: 'Project: Setup Windows 7 Kiosk'
 date: 2013-10-04T16:01:56+00:00
 author: Janik von Rotz
 slug: project-setup-windows-7-kiosk
-dsq_thread_id:
-  - "1824260455"
 images:
   - /wp-content/uploads/2013/10/Group-Policy.jpg
 categories:
-  - Active Directory
+  - Client management
 tags:
   - activedirectory
   - desktop
-  - explorer
-  - group
   - kiosk
   - policy
-  - restricted
   - windows
 ---
 The goal of this project is a simple Windows 7 Kiosk installation with nothing else as the newest version of internet explorer installed. A user should not be allowed to do something than can malfunction the system or even elevating the user privileges. I want to show you in this post which GroupPolicies I've used and what configurations I made to set up this type of installation.

@@ -3,23 +3,14 @@ title: Install LimeSurvey webapp
 date: 2015-04-08T09:07:55+00:00
 author: Janik von Rotz
 slug: install-limesurvey-webapp
-dsq_thread_id:
-  - "3664178112"
 images:
   - /wp-content/uploads/2015/04/LimeSurvey-Logo.png
 categories:
-  - LimeSurvey
+  - Web server
 tags:
-  - best
+  - analytics
   - guide
-  - install
-  - lime
   - limesurvey
-  - practice
-  - private
-  - server
-  - survey
-  - virtual
   - vps
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  

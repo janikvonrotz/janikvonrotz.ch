@@ -3,8 +3,6 @@ title: Happy new year
 date: 2013-12-31T23:55:18+00:00
 author: Janik von Rotz
 slug: happy-new-year
-dsq_thread_id:
-  - "2085040469"
 categories:
   - Blog
 tags:

@@ -3,17 +3,12 @@ title: 'Install SharePoint 2013 Three-tier Farm - Designing the Logical Architec
 date: 2014-01-27T09:10:29+00:00
 author: Janik von Rotz
 slug: install-sharepoint-2013-three-tier-farm-designing-the-logical-architecture
-dsq_thread_id:
-  - "2180306074"
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:
   - architecture
-  - collection
-  - databases
-  - installation
   - sharepoint
   - site templates
   - three tier

@@ -3,20 +3,14 @@ title: Say Goodbye to TrueCrypt
 date: 2014-05-30T07:21:00+00:00
 author: Janik von Rotz
 slug: say-goodbye-to-truecrypt
-dsq_thread_id:
-  - "2723322151"
 images:
   - /wp-content/uploads/2014/04/IT-security-logo.jpg
 categories:
-  - IT Security
+  - Security
 tags:
-  - disk
   - encryption
-  - open
   - security
-  - source
   - truecrypt
-  - windows
 ---
 Apparently the developer of TrueCrypt threw in the towel this week.
 

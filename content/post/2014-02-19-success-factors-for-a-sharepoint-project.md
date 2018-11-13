@@ -3,18 +3,14 @@ title: Success Factors for a SharePoint Project
 date: 2014-02-19T17:15:04+00:00
 author: Janik von Rotz
 slug: success-factors-for-a-sharepoint-project
-dsq_thread_id:
-  - "2289060840"
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:
   - consultant
-  - factors
   - project
   - sharepoint
-  - success
 ---
 Right now I've led the company internal SharePoint projects for about one year.
 

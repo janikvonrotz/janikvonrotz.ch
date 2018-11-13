@@ -3,8 +3,6 @@ title: Unicorns of Berlin
 date: 2016-06-07T07:54:38+00:00
 author: Janik von Rotz
 slug: unicorns-of-berlin
-dsq_thread_id:
-  - "4890124629"
 images:
   - /wp-content/uploads/2016/06/architecture-1200x901.jpg
 categories:
@@ -12,18 +10,8 @@ categories:
 tags:
   - architecture
   - berlin
-  - city
-  - collection
   - fleemarket
-  - homeless
-  - image
-  - lake
-  - living
-  - park
-  - photo
-  - tree
   - unicorns
-  - unique
 ---
 Unicorns are unique and might not exist. This is a collection of unique pictures of Berlin. I took them since staying there for 3 months. Berlin is quite a special place and will probably attract me a few more times.
 <!--more-->

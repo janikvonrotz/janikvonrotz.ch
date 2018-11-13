@@ -10,10 +10,8 @@ images:
 categories:
   - SharePoint
 tags:
-  - files
   - mail
   - powershell
-  - powershellprofile
   - report
   - script
   - sharepoint

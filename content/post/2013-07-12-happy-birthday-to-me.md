@@ -3,8 +3,6 @@ title: Happy Birthday to me
 date: 2013-07-12T07:22:13+00:00
 author: Janik von Rotz
 slug: happy-birthday-to-me
-dsq_thread_id:
-  - "1483448690"
 images:
   - /wp-content/uploads/2013/07/Party-Hard.jpg
 categories:

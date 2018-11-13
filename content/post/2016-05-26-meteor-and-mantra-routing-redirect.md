@@ -3,27 +3,16 @@ title: 'Meteor and Mantra - Routing redirect'
 date: 2016-05-26T10:03:22+00:00
 author: Janik von Rotz
 slug: meteor-and-mantra-routing-redirect
-dsq_thread_id:
-  - "4858703770"
 images:
   - /wp-content/uploads/2016/05/Mantra-Logo.jpeg
 categories:
-  - Meteor
+  - JavaScript development
 tags:
   - architecture
-  - config
-  - group
-  - logic
   - mantra
   - meteor
   - redirect
-  - rights
-  - role
-  - route
   - routing
-  - solution
-  - trigger
-  - user
 ---
 Recently I started using [Mantra]() to develop my Meteor apps. As with any other framework You'll find a lot of answers to common questions in a related forum or any other resource. However I couldn't get a good answer on how to implement routing logic properly. The Mantra specs also don't tell much about how to approach it. So here's my solution.
 <!--more-->

@@ -3,18 +3,13 @@ title: Install WordPress website
 date: 2014-04-15T07:00:32+00:00
 author: Janik von Rotz
 slug: install-wordpress-website
-dsq_thread_id:
-  - "2612708517"
 images:
   - /wp-content/uploads/2014/02/wordpress-logo.jpg
 categories:
-  - WordPress
+  - Web server
 tags:
-  - blog
-  - easy
-  - install
+  - blogging
   - ubuntu
-  - website
   - wordpress
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  

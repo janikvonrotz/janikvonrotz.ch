@@ -3,22 +3,14 @@ title: Installing and Configuring SharePoint 2013 Farm
 date: 2014-04-14T09:29:48+00:00
 author: Janik von Rotz
 slug: installing-and-configuring-sharepoint-2013-farm
-dsq_thread_id:
-  - "2610183207"
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:
-  - best
-  - deploy
-  - installation
-  - practice
-  - project
-  - server
+  - deployment
   - sharepoint
-  - three
-  - tier
+  - three tier
 ---
 *This post of is part of my [Install SharePoint 2013 Three-tier Farm](https://janikvonrotz.ch/projects/install-sharepoint-2013-three-tier-farm/) project.*
 

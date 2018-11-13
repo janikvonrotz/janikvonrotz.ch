@@ -3,8 +3,6 @@ title: OVERWERK Canon EP
 date: 2015-11-03T11:39:48+00:00
 author: Janik von Rotz
 slug: overwerk-canon-ep
-dsq_thread_id:
-  - "4287027468"
 images:
   - /wp-content/uploads/2015/11/OVERTWERK.jpg
 categories:
@@ -12,11 +10,9 @@ categories:
 tags:
   - bandcamp
   - electronic
-  - music
   - overwerk
   - progressive
   - soundcloud
-  - style
 ---
 Since the first debut I'm in love with the music from OVERWERK.
 His outstanding progressive and non-linear style always gives me chills.

@@ -3,23 +3,16 @@ title: Increase Max Upload for php5-fpm website
 date: 2014-04-11T06:55:10+00:00
 author: Janik von Rotz
 slug: increase-max-upload-for-php5-fpm-website
-dsq_thread_id:
-  - "2603118431"
 images:
   - /wp-content/uploads/2014/03/php-logo.jpeg
 categories:
-  - PHP
+  - Web server
 tags:
-  - applications
-  - fpm
-  - increase
-  - max
+  - application
   - nginx
   - php
   - php5
   - ubuntu
-  - upload
-  - website
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/9604715](https://gist.github.com/9604715).*  

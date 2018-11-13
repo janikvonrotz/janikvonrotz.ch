@@ -3,12 +3,10 @@ title: Website Seminars ILZ
 date: 2013-07-02T09:03:17+00:00
 author: Janik von Rotz
 slug: website-seminars-ilz
-dsq_thread_id:
-  - "3468872490"
 images:
   - /wp-content/uploads/2015/01/Typo3-Logo.jpg
 categories:
-  - Typo3
+  - Web design
 tags:
   - project
   - typo3

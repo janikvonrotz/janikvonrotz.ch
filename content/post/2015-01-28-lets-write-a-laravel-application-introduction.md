@@ -3,27 +3,16 @@ title: 'Let’s write a Laravel application - Introduction'
 date: 2015-01-28T18:36:10+00:00
 author: Janik von Rotz
 slug: lets-write-a-laravel-application-introduction
-dsq_thread_id:
-  - "3463688035"
 images:
   - /wp-content/uploads/2015/01/laravel-logo-e1422466263489.png
 categories:
-  - Blog
-  - Laravel
+  - Web development
 tags:
   - application
-  - download
-  - ebook
-  - experience
-  - first
   - laravel
   - learn
-  - project
-  - rowbook
-  - time
-  - tool
   - video
-  - watch
+  - guide
 ---
 I'm going to develop a [Laravel](http://laravel.com/) application with my friends. The application is called RowBook. It will be a simple tool to log all the trips of the [row club Lucerne](http://www.seeclub-luzern.ch/).
 <!--more-->

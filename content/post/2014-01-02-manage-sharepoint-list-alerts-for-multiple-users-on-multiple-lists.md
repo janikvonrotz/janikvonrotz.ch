@@ -3,22 +3,18 @@ title: manage SharePoint list alerts for multiple users on multiple lists
 date: 2014-01-02T14:38:25+00:00
 author: Janik von Rotz
 slug: manage-sharepoint-list-alerts-for-multiple-users-on-multiple-lists
-dsq_thread_id:
-  - "2087265617"
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
-  - PowerShell
+  - Scripting
   - SharePoint
 tags:
   - alert
   - deploy
   - manage
-  - multiple
   - powershell
   - script
   - sharepoint
-  - users
   - worfklow
 ---
 In certain cases SharePoint alerts are more useful than workflows, f.e. having the possibility to let users manager their alerts is not possible with workflows.

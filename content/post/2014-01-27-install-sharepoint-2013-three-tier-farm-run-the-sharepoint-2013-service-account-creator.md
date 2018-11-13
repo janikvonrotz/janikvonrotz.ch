@@ -3,20 +3,16 @@ title: 'Install SharePoint 2013 Three-tier Farm - Run the SharePoint 2013 Servic
 date: 2014-01-27T13:24:53+00:00
 author: Janik von Rotz
 slug: install-sharepoint-2013-three-tier-farm-run-the-sharepoint-2013-service-account-creator
-dsq_thread_id:
-  - "2180772344"
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:
   - concept
-  - installation
   - powershell
   - sharepoint
   - sql server
   - three tier
-  - user
 ---
 *This post of is part of my [Install SharePoint 2013 Three-tier Farm](https://janikvonrotz.ch/projects/install-sharepoint-2013-three-tier-farm/) project.*
 

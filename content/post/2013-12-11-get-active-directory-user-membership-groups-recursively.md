@@ -3,18 +3,15 @@ title: Get Active Directory User Membership Groups Recursively
 date: 2013-12-11T11:46:37+00:00
 author: Janik von Rotz
 slug: get-active-directory-user-membership-groups-recursively
-dsq_thread_id:
-  - "2043288310"
 images:
   - /wp-content/uploads/2013/12/PowerShell-and-ActiveDirectory.png
 categories:
-  - Active Directory
+  - Microsoft infrastructure
 tags:
   - activedirectory
   - function
   - powershell
   - report
-  - user
 ---
 To get a users member shipments recursively I've written an extended function based on the already existing function `Get-ADPrincipalGroupMembership` it simply loops through the users member shipments and outputs the data in tree styled list.
 

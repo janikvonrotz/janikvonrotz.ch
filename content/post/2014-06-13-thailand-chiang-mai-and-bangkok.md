@@ -3,8 +3,6 @@ title: 'Thailand - Chiang Mai and Bangkok'
 date: 2014-06-13T03:57:41+00:00
 author: Janik von Rotz
 slug: thailand-chiang-mai-and-bangkok
-dsq_thread_id:
-  - "2760030424"
 images:
   - /wp-content/uploads/2014/06/The-doi-suthep-temple-20140608.jpg
 categories:
@@ -13,15 +11,8 @@ categories:
 tags:
   - bangkok
   - chiang mai
-  - elephant
-  - explore
-  - market
   - memories
-  - people
-  - scorpion
-  - temples
   - thailand
-  - tiger
   - traveling
 ---
 Almost 2 weeks passed since I've left home to go to Thailand. It's unbelievable what happened in this short amount of time, here are my best memories so far.

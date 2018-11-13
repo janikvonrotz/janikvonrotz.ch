@@ -3,31 +3,15 @@ title: 'Build a Java 3-tier application from scratch - Part 2: Model setup'
 date: 2015-03-28T18:01:51+00:00
 author: Janik von Rotz
 slug: build-a-java-3-tier-application-from-scratch-part-2-model-setup
-dsq_thread_id:
-  - "3634666145"
 images:
   - /wp-content/uploads/2014/10/Java-logo.jpg
 categories:
-  - Blog
+  - Software development
 tags:
-  - 3-tier
+  - three tier
   - application
-  - classes
-  - client
-  - code
-  - common
-  - development
-  - diagram
   - eclipse
-  - interfaces
   - java
-  - layers. multi
-  - link
-  - models
-  - relationship
-  - server
-  - tier
-  - uml
 ---
 Last time we've set up our basic project structure with gradle. This time we are going to create the models aka our Java classes. Below is uml diagram showing all classes, interfaces and their relationship.
 

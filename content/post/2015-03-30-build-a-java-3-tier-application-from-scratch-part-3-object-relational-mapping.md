@@ -3,42 +3,20 @@ title: 'Build a Java 3-tier application from scratch – Part 3: Object-relation
 date: 2015-03-30T16:41:24+00:00
 author: Janik von Rotz
 slug: build-a-java-3-tier-application-from-scratch-part-3-object-relational-mapping
-dsq_thread_id:
-  - "3639842548"
 images:
   - /wp-content/uploads/2014/10/Java-logo.jpg
 categories:
-  - Java
+  - Software development
 tags:
-  - 3-tier
-  - access
+  - three tier
   - application
   - authentication
   - authenticator
-  - client
-  - controller
-  - create
-  - crud
-  - dao
-  - data
-  - delete
-  - development
   - faker
-  - filter
-  - get
   - java
   - jax-rs
-  - json
-  - layers
-  - method
-  - object
-  - request
-  - rest
   - restful
   - seeder
-  - server
-  - update
-  - webservice
 ---
 Welcome to third part of my 3-tier application tutorial. Within this and the next part we are going to develope simple webservice that communicates with the database and maps Java objects to data tables.
 We will create a controller that communicates with our MySQL database using the EclipseLink ORM to abstract this process.

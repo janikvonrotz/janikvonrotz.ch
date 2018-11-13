@@ -3,19 +3,12 @@ title: Hide the Open in Explorer option in the SharePoint command ribbon
 date: 2014-04-08T08:27:02+00:00
 author: Janik von Rotz
 slug: hide-the-open-in-explorer-option-in-the-sharepoint-command-ribbon
-dsq_thread_id:
-  - "2596375540"
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:
   - explorer
-  - farm
-  - hide
-  - open
-  - option
-  - remove
   - sharepoint
   - solution
 ---

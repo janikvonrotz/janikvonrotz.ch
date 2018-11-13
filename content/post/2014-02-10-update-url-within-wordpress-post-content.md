@@ -3,12 +3,10 @@ title: Update Url within WordPress Post Content
 date: 2014-02-10T13:06:55+00:00
 author: Janik von Rotz
 slug: update-url-within-wordpress-post-content
-dsq_thread_id:
-  - "2246601355"
 images:
   - /wp-content/uploads/2014/02/wordpress-logo.jpg
 categories:
-  - WordPress
+  - Web development
 tags:
   - sql server
   - wordpress

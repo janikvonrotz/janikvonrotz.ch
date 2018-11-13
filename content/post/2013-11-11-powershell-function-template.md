@@ -3,12 +3,10 @@ title: PowerShell Function Template
 date: 2013-11-11T16:04:39+00:00
 author: Janik von Rotz
 slug: powershell-function-template
-dsq_thread_id:
-  - "1956333799"
 images:
   - /wp-content/uploads/2013/07/PowerShell.png
 categories:
-  - PowerShell
+  - Scripting
 tags:
   - function
   - powershell

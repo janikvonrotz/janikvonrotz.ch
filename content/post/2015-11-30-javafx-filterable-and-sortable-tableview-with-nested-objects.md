@@ -3,27 +3,14 @@ title: 'JavaFX - Filterable and Sortable Tableview with nested Objects'
 date: 2015-11-30T10:01:22+00:00
 author: Janik von Rotz
 slug: javafx-filterable-and-sortable-tableview-with-nested-objects
-dsq_thread_id:
-  - "4362336468"
 images:
   - /wp-content/uploads/2014/10/Java-logo.jpg
 categories:
-  - Java
+  - Software development
 tags:
-  - cell
-  - display
-  - factory
-  - filterable
-  - form
   - java
   - javafx
-  - nested
-  - object
   - search
-  - sortable
-  - table
-  - value
-  - view
 ---
 This is a simple example for a sortable and filterable table view with properties from nested objects.
 <!--more-->

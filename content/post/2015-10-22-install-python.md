@@ -3,19 +3,12 @@ title: Install Python
 date: 2015-10-22T07:08:05+00:00
 author: Janik von Rotz
 slug: install-python
-dsq_thread_id:
-  - "4247785113"
 images:
   - /wp-content/uploads/2015/10/Python-Logo.png
 categories:
-  - Python
+  - Web server
 tags:
-  - install
-  - pip
-  - private
   - python
-  - server
-  - virtual
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/739313df400616f999d6](https://gist.github.com/739313df400616f999d6).*

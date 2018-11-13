@@ -3,17 +3,14 @@ title: Aptrix Freerunning // End of Season
 date: 2013-12-05T09:08:51+00:00
 author: Janik von Rotz
 slug: aptrix-freerunning-end-of-season
-dsq_thread_id:
-  - "2026379429"
 images:
   - /wp-content/uploads/2013/08/Logo.png
 categories:
-  - Parkour
+  - Sports
 tags:
   - aptrix
   - freerunning
   - parkour
   - season
-  - team
 ---
 {{< youtube MK865zo2WS0 >}}

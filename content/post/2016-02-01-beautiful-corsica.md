@@ -3,23 +3,13 @@ title: Beautiful Corsica
 date: 2016-02-01T19:35:55+00:00
 author: Janik von Rotz
 slug: beautiful-corsica
-dsq_thread_id:
-  - "4542597397"
 images:
   - /wp-content/uploads/2016/01/bicycle-1200x800.jpg
 categories:
   - Photography
 tags:
-  - bay
-  - beautiful
-  - blue
-  - boat
-  - bright
+  - beautifult
   - corsica
-  - island
-  - sea
-  - sunny
-  - village
 ---
 Last summer I did a cycle trip in Corsica. Here are a few impressions from this beautiful island:
 

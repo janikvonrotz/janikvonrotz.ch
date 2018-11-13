@@ -3,26 +3,16 @@ title: 'Meteor and React: Bootstrap Modal'
 date: 2016-03-05T12:42:05+00:00
 author: Janik von Rotz
 slug: meteor-and-react-bootstrap-modal
-dsq_thread_id:
-  - "4637306001"
 images:
   - /wp-content/uploads/2016/03/meteor-react-logo-1200x201.png
 categories:
-  - React
+  - JavaScript development
 tags:
   - bootstrap
-  - component
-  - confirm
   - css
-  - dialog
-  - display
-  - hide
   - jsx
   - meteor
-  - modal
   - react
-  - show
-  - toggle
   - twitter
 ---
 I would like to share my great experience I had with Meteor and React. This time I want to show how I've built a bootstrap modal component. There are already a lot of solutions out there, but none of them were suitable.

@@ -3,28 +3,14 @@ title: Manage your SharePoint default settings with PowerShell
 date: 2014-04-04T10:16:07+00:00
 author: Janik von Rotz
 slug: manage-your-sharepoint-default-settings-with-powershell
-dsq_thread_id:
-  - "2585449962"
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:
-  - active
-  - alternative
-  - default
-  - directory
-  - display
-  - groups
-  - inheritance
-  - language
-  - name
-  - navigation
   - powershell
   - script
-  - settings
   - sharepoint
-  - support
   - versioning
 ---
 *This post is part of my [PowerShell PowerUp](https://github.com/janikvonrotz/PowerShell-PowerUp) project.*

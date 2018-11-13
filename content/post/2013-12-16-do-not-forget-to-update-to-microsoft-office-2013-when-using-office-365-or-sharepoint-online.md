@@ -3,17 +3,13 @@ title: Do not forget to update to Microsoft Office 2013 when using Office 365 or
 date: 2013-12-16T18:07:01+00:00
 author: Janik von Rotz
 slug: do-not-forget-to-update-to-microsoft-office-2013-when-using-office-365-or-sharepoint-online
-dsq_thread_id:
-  - "2054392361"
 images:
   - /wp-content/uploads/2013/12/SharePoint-Online-and-ADFS.gif
 categories:
   - Office 365
 tags:
   - authentication
-  - install
   - office
-  - online
   - sharepoint
 ---
 When deploying a published SharePoint 2013 on-premise installation or a Office 365 installation or a SharePoint Online installation, it's highly recommended to update your Microsoft Office 2013 installation.

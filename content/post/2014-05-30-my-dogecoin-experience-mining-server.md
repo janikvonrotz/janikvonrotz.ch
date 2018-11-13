@@ -1,38 +1,16 @@
 ---
-id: 2383
 title: 'My Dogecoin experience: mining server'
 date: 2014-05-30T14:07:11+00:00
 author: Janik von Rotz
-slug: my-dogecoin-experience-mining-server
-enclosure:
-  - |
-    /wp-content/uploads/2014/05/My-Dogecoin-mining-server.mp4
-    12371367
-    video/mp4
-    
-dsq_thread_id:
-  - "2724594746"
+slug: my-dogecoin-experience-mining-server    
 images:
   - /wp-content/uploads/2014/05/Dogecoin-future.jpg
 categories:
-  - Dogecoin
+  - Blockchain
 tags:
-  - amd
-  - asus
-  - basic
-  - card
-  - cgminer
-  - configuration
   - dogecoin
-  - graphics
   - guide
-  - install
   - mining
-  - parameter
-  - server
-  - setup
-  - tweak
-  - windows 7
 ---
 In my <a href="https://janikvonrotz.ch/2014/05/08/my-dogecoin-experience-part-1-mining-hardware/" title="last post">last post</a> I've written about the hardware components I've bought for my dogecoin mining server.
 This time I show you the finished mining rig and summarize the most important configurations for the mining software.

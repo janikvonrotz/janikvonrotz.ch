@@ -3,22 +3,17 @@ title: 'Office365 and ADFS: Activate licenses for users depending on AD group me
 date: 2013-08-13T07:48:44+00:00
 author: Janik von Rotz
 slug: office365-and-adfs-activate-licenses-for-users-depending-on-ad-group-membership
-dsq_thread_id:
-  - "1602703987"
 images:
   - /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg
 categories:
-  - Active Directory
   - Office 365
-  - PowerShell
+  - Scripting
 tags:
   - activedirectory
-  - groups
   - license
   - membership
   - office365
   - powershell
-  - users
 ---
 On Office365 the users have to be licensed in order to get access to the Office365 application. I've developed a PowerShell script which add a license depending on the group membership in the ActiveDirectory.
 <!--more-->

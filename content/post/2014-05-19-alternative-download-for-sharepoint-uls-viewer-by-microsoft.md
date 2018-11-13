@@ -3,23 +3,13 @@ title: Alternative download for SharePoint ULS viewer by Microsoft
 date: 2014-05-19T13:32:37+00:00
 author: Janik von Rotz
 slug: alternative-download-for-sharepoint-uls-viewer-by-microsoft
-dsq_thread_id:
-  - "2696715732"
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:
-  - alternative
-  - available
-  - broken
-  - copy
-  - download
-  - link
   - microsoft
   - sharepoint
-  - uls
-  - viewer
 ---
 You might already knew it, the link **http://code.msdn.microsoft.com/ULSViewer** for the most popular ULS viewer doesn't work anymore.
 

@@ -3,15 +3,13 @@ title: Our daily struggles according to info commercials
 date: 2014-04-17T14:24:15+00:00
 author: Janik von Rotz
 slug: our-daily-struggles-according-to-info-commercials
-dsq_thread_id:
-  - "2618881458"
 images:
   - /wp-content/uploads/2014/03/letsgetweird.jpg
 categories:
   - Blog
 tags:
-  - fun random
-  - imgur
+  - random
+  - weird
 ---
 According to info commercials we life in a dangerous place and it's almost a wonder that most people know how to get up in the morning.
 

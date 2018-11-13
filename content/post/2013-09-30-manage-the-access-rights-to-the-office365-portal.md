@@ -3,21 +3,17 @@ title: Manage access rights to the Office365 portal
 date: 2013-09-30T14:24:08+00:00
 author: Janik von Rotz
 slug: manage-the-access-rights-to-the-office365-portal
-dsq_thread_id:
-  - "1811070729"
 images:
   - /wp-content/uploads/2013/09/office-logo_v3.jpg
 categories:
-  - Active Directory
   - Office 365
-  - PowerShell
+  - Scripting
 tags:
   - access
   - manage
   - office365
   - portal
-  - rights
-  - user
+  - permissions
 ---
 In addition to my last script showing how to manage the user licenses in Office365 I've written a new script for assign, remove or replace the access rights in the office365 portal.
 

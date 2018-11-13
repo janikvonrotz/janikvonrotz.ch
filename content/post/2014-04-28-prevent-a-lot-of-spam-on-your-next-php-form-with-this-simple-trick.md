@@ -3,24 +3,14 @@ title: Prevent a lot of spam on your next php form with this simple trick
 date: 2014-04-28T12:08:19+00:00
 author: Janik von Rotz
 slug: prevent-a-lot-of-spam-on-your-next-php-form-with-this-simple-trick
-dsq_thread_id:
-  - "2644724256"
 images:
   - /wp-content/uploads/2014/04/Stop-Spam.jpg
 categories:
-  - IT Security
-  - PHP
+  - Security
 tags:
-  - css
-  - field
-  - form
-  - hidden
   - php
-  - prevent
-  - robot
   - security
   - spam
-  - stop
 ---
 Spam bots were parsing websites html to code and searching for form patterns. What they luckily don't do in most cases is running javascript or applying css code.
 This behaviour is a good way to tell a human from a spambot apart.

@@ -3,8 +3,6 @@ title: Dust and Dirt
 date: 2014-12-31T11:56:09+00:00
 author: Janik von Rotz
 slug: dust-and-dirt
-dsq_thread_id:
-  - "3376588668"
 images:
   - /wp-content/uploads/2014/12/dust-and-dirt.jpg
 categories:
@@ -13,16 +11,7 @@ tags:
   - abandoned
   - dirt
   - dust
-  - experience
-  - forgotten
-  - live
-  - lost
-  - old
-  - past
   - photos
-  - picture
-  - places
-  - time
 ---
 Abandoned places have a special attraction to me. There are not many places where you literally can experience the past. Thinking of past times is always difficult, most of the times you'll end up thinking of black and white pictures you've seen somewhere before, would you agree? By visiting abandoned places you always get a small piece of past times. The more often you'll visit such places the more that picute of the past changes in you head.
 

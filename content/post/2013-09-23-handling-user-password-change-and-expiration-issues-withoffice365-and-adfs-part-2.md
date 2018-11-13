@@ -3,23 +3,16 @@ title: Handling user password change and expiration issues with Office365 and AD
 date: 2013-09-23T08:50:49+00:00
 author: Janik von Rotz
 slug: handling-user-password-change-and-expiration-issues-withoffice365-and-adfs-part-2
-dsq_thread_id:
-  - "1788553262"
 images:
   - /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg
 categories:
-  - Active Directory
-  - Blog
   - Office 365
   - Web development
 tags:
   - adfs
   - expiration
-  - handling
-  - managing
   - office365
   - password
-  - reset
 ---
 [https://janikvonrotz.ch/2013/08/08/handling-user-password-change-and-expiration-issues-with-office365-and-adfs-part-1/](https://janikvonrotz.ch/2013/08/08/handling-user-password-change-and-expiration-issues-with-office365-and-adfs-part-1/)
 

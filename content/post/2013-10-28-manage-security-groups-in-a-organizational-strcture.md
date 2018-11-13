@@ -3,20 +3,14 @@ title: Manage Security Groups in a organizational Strcture
 date: 2013-10-28T16:22:20+00:00
 author: Janik von Rotz
 slug: manage-security-groups-in-a-organizational-strcture
-dsq_thread_id:
-  - "1910803381"
 images:
   - /wp-content/uploads/2013/07/PowerShell.png
 categories:
-  - Active Directory
-  - PowerShell
+  - Scripting
 tags:
   - activedirectory
-  - group
-  - management
   - organizational
   - powershell
-  - script
   - security
 ---
 As in on of my last <a title="Manage ActiveDirectory Distribution Groups" href="https://janikvonrotz.ch/2013/08/27/manage-activedirectory-distribution-groups/">post</a> I've showed you my approach to manage distribution groups in the hierarchical structure of an ActiveDirectory installation. In the mean time I've adapted a similiar approach for the security groups.

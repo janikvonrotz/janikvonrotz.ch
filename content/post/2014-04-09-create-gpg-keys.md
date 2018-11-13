@@ -3,22 +3,16 @@ title: Create GPG Keys
 date: 2014-04-09T08:30:29+00:00
 author: Janik von Rotz
 slug: create-gpg-keys
-dsq_thread_id:
-  - "2597967325"
 images:
   - /wp-content/uploads/2014/03/GnuPG-Logo.png
 categories:
-  - Ubuntu Server
+  - Web server
 tags:
-  - create
   - encryption
-  - generate
   - gnupg
   - gpg
-  - key
-  - private
-  - public
-  - symmetric
+  - private key
+  - public key
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/9543913](https://gist.github.com/9543913).*  

@@ -3,16 +3,11 @@ title: Install php5 modules
 date: 2014-03-25T11:38:33+00:00
 author: Janik von Rotz
 slug: install-php5-modules
-dsq_thread_id:
-  - "2505352611"
 images:
   - /wp-content/uploads/2014/03/php-logo.jpeg
 categories:
-  - PHP
-  - Ubuntu Server
+  - Web server
 tags:
-  - installation
-  - modules
   - php
   - server
   - ubuntu

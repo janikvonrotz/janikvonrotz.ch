@@ -3,12 +3,6 @@ title: Install SharePoint 2013 Three-tier Farm
 date: 2013-12-10T11:20:29+00:00
 author: Janik von Rotz
 slug: install-sharepoint-2013-three-tier-farm
-dsq_thread_id:
-  - "2040595182"
-  - "2040595182"
-  - "2040595182"
-  - "2040595182"
-  - "2040595182"
 aliases:
   - /projects/install-sharepoint-2013-three-tier-farm/
   - /install-sharepoint-2013-three-tier-farm/

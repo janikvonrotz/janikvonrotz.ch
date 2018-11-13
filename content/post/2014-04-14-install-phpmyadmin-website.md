@@ -3,30 +3,18 @@ title: Install phpMyAdmin website
 date: 2014-04-14T09:49:37+00:00
 author: Janik von Rotz
 slug: install-phpmyadmin-website
-dsq_thread_id:
-  - "2610220050"
 images:
   - /wp-content/uploads/2014/04/phpMyAdmin-Logo.jpg
 categories:
-  - MySQL
-  - PHP
-  - phpMyAdmin
+  - Web server
 tags:
-  - admin
   - application
-  - database
-  - fpm
-  - install
-  - management
   - mysql
   - nginx
   - php
   - php5
   - phpmyadmin
-  - server
-  - sql
   - ubuntu
-  - webserver
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/9392925](https://gist.github.com/9392925).* 

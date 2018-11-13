@@ -3,19 +3,13 @@ title: Print all over me is one amazing thing
 date: 2015-02-19T22:30:25+00:00
 author: Janik von Rotz
 slug: print-all-over-me-is-one-amazing-thing
-dsq_thread_id:
-  - "3532541604"
 images:
   - /wp-content/uploads/2015/02/Print-All-Over-Me-logo.png
 categories:
-  - Blog
+  - Art
 tags:
-  - again
-  - all
   - fashion
-  - over
   - print
-  - reload
 ---
 For the folks that didn't know about [Print All Over Me](http://printallover.me/) yet, here some blabla:
 

@@ -3,23 +3,15 @@ title: Enable Piwik for LimeSurvey
 date: 2015-04-09T10:30:10+00:00
 author: Janik von Rotz
 slug: enable-piwik-for-limesurvey
-dsq_thread_id:
-  - "3667243567"
 images:
   - /wp-content/uploads/2015/04/LimeSurvey-Logo.png
 categories:
-  - LimeSurvey
+  - Web server
 tags:
-  - actions
   - analytics
-  - data
-  - events
   - insight
   - limesurvey
   - piwik
-  - survey
-  - track
-  - web
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/1d5043a9f40760716def](https://gist.github.com/1d5043a9f40760716def).*  

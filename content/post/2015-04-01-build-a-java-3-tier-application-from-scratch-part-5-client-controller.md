@@ -3,30 +3,14 @@ title: 'Build a Java 3-tier application from scratch – Part 5: Client controll
 date: 2015-04-01T09:27:32+00:00
 author: Janik von Rotz
 slug: build-a-java-3-tier-application-from-scratch-part-5-client-controller
-dsq_thread_id:
-  - "3645281582"
 images:
   - /wp-content/uploads/2014/10/Java-logo.jpg
 categories:
-  - Java
+  - Software development
 tags:
   - authentication
-  - client
-  - consume
-  - control
-  - controller
-  - data
-  - gui
-  - interface
   - java
   - javafx
-  - json
-  - login
-  - panes
-  - request
-  - resteasy
-  - scene
-  - switch
   - webservice
 ---
 As you've seen there are 5 models in our application. This is not that much but requires a lot of effort to display them in the client application. As this tutorial doesn't cover every aspect of a rich 3-tier applicatoin I will show only how you can authenticate the client application and edit the Employer entities.

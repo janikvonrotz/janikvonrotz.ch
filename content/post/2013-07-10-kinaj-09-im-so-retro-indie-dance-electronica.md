@@ -3,16 +3,14 @@ title: 'Kinaj 09 - I’m so RETRO (Indie Dance, Electronica)'
 date: 2013-07-10T06:55:46+00:00
 author: Janik von Rotz
 slug: kinaj-09-im-so-retro-indie-dance-electronica
-dsq_thread_id:
-  - "1483364567"
 images:
   - /wp-content/uploads/2013/07/soundcloud.png
 categories:
   - Music
 tags:
-  - dance music
+  - dance
   - electronica
-  - indie music
+  - indie
   - playlist
   - soundcloud
 ---

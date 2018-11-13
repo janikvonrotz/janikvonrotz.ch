@@ -3,20 +3,15 @@ title: Install Nginx
 date: 2014-03-31T09:43:19+00:00
 author: Janik von Rotz
 slug: install-nginx
-dsq_thread_id:
-  - "2561474269"
 images:
   - /wp-content/uploads/2014/03/Nginx-Logo-e1394033855329.png
 categories:
-  - Nginx
+  - Web server
 tags:
   - hosting
-  - installation
   - nginx
   - pgp
-  - repository
-  - server
-  - websites
+  - web server
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/9345486](https://gist.github.com/9345486).*  

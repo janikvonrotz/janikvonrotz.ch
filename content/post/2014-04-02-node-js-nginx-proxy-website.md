@@ -3,14 +3,11 @@ title: Node.js Nginx proxy website
 date: 2014-04-02T06:52:03+00:00
 author: Janik von Rotz
 slug: node-js-nginx-proxy-website
-dsq_thread_id:
-  - "2579972746"
 images:
   - /wp-content/uploads/2014/03/Node.js-Logo.png
 categories:
-  - Node.js
+  - Web server
 tags:
-  - app
   - application
   - javascript
   - nginx

@@ -3,21 +3,15 @@ title: Manage ActiveDirectory Distribution Groups
 date: 2013-08-27T12:39:11+00:00
 author: Janik von Rotz
 slug: manage-activedirectory-distribution-groups
-dsq_thread_id:
-  - "1654234472"
 images:
   - /wp-content/uploads/2013/07/PowerShell.png
 categories:
-  - Active Directory
-  - Blog
-  - Exchange
   - Office 365
-  - PowerShell
+  - Scripting
 tags:
   - adfs
   - distribution
   - exchange
-  - groups
   - office365
   - powershell
   - profile

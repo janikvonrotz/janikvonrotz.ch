@@ -3,15 +3,12 @@ title: New Office 365 user can not be found in directory
 date: 2014-03-13T11:22:32+00:00
 author: Janik von Rotz
 slug: new-office-365-can-not-be-found-in-directory
-dsq_thread_id:
-  - "2420379308"
 images:
   - /wp-content/uploads/2014/03/Office-365-flat-Logo-e1394705523286.jpg
 categories:
   - Office 365
 tags:
   - active directory
-  - user login
   - provisioning
 ---
 As part of the user provisioning process in my company every user account gets an Office 365 license.

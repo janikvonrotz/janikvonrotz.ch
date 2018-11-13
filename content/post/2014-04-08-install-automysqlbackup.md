@@ -3,20 +3,13 @@ title: Install automysqlbackup
 date: 2014-04-08T08:33:11+00:00
 author: Janik von Rotz
 slug: install-automysqlbackup
-dsq_thread_id:
-  - "2595242917"
 images:
   - /wp-content/uploads/2014/04/MySQL-Logo.png
 categories:
-  - MySQL
+  - Web server
 tags:
-  - auto
   - backup
-  - easy
-  - installation
   - mysql
-  - reliable
-  - simple
   - solution
   - ubuntu
 ---

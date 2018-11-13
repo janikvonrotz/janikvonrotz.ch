@@ -3,12 +3,10 @@ title: Website Steuern NW
 date: 2013-07-02T09:04:53+00:00
 author: Janik von Rotz
 slug: website-steuern-nw
-dsq_thread_id:
-  - "3468876786"
 images:
   - /wp-content/uploads/2015/01/Typo3-Logo.jpg
 categories:
-  - Typo3
+  - Web design
 tags:
   - project
   - typo3

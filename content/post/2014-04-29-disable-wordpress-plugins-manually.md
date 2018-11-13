@@ -3,19 +3,12 @@ title: Disable WordPress plugins manually
 date: 2014-04-29T08:05:06+00:00
 author: Janik von Rotz
 slug: disable-wordpress-plugins-manually
-dsq_thread_id:
-  - "2648145178"
 images:
   - /wp-content/uploads/2014/02/wordpress-logo.jpg
 categories:
-  - WordPress
+  - Web development
 tags:
-  - disable
-  - fix
-  - malicious
-  - manually
   - plugin
-  - update
   - wordpress
 ---
 With the WordPress 3.9 Update I also received several plugin updates for my blogs.

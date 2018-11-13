@@ -3,8 +3,6 @@ title: Hilly Lisbon
 date: 2016-03-08T15:28:28+00:00
 author: Janik von Rotz
 slug: hilly-lisbon
-dsq_thread_id:
-  - "4644693728"
 images:
   - /wp-content/uploads/2016/03/Lisbon-graffiti-1200x425.jpg
 categories:
@@ -12,12 +10,9 @@ categories:
   - Traveling
 tags:
   - beautiful
-  - city
   - historic
   - lisbon
-  - pictures
   - portugal
-  - white
 ---
 This winter I had the chance to visit the warm city of Lisbon. Settled in the south of Portugal it attracts thousands of tourists every year with its historic buildings and narrow streets.
 

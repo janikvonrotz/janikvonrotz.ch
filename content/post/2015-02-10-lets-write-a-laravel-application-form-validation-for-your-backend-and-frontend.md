@@ -3,22 +3,14 @@ title: 'Let’s write a Laravel application - Form validation for your backend a
 date: 2015-02-10T00:18:29+00:00
 author: Janik von Rotz
 slug: lets-write-a-laravel-application-form-validation-for-your-backend-and-frontend
-dsq_thread_id:
-  - "3500959987"
 images:
   - /wp-content/uploads/2015/01/laravel-logo-e1422466263489.png
 categories:
-  - Laravel
+  - Web development
 tags:
   - backend
-  - done
-  - form
-  - frontend
   - jquery
   - laravel
-  - right
-  - validation
-  - validator
 ---
 Form validation is always part of your data process workflow. With Laravel you can to validate the input on the controller or the eloquent model. To provide a seamless user experience it's better to validate a form with JavaScript in the frontend. However due to security reasons you have provide a backend validation, otherwise it would possible to inject non valid data.
 <!--more-->

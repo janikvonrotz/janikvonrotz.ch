@@ -3,29 +3,22 @@ title: 'Step by Step: Install Ghost Blog'
 date: 2014-03-03T16:34:55+00:00
 author: Janik von Rotz
 slug: step-by-step-install-ghost-blog
-dsq_thread_id:
-  - "2351610251"
 images:
   - /wp-content/uploads/2014/02/ghost-logo-e1393590335426.png
 categories:
-  - Ghost
+  - Web engineering
 tags:
-  - amazone
+  - aws
   - blogging
-  - configuration
   - ec2
-  - firewall
   - ghost
   - git
   - guide
-  - hardening
   - javascript
   - linux
-  - network
   - nginx
   - node
   - npm
-  - platform
   - security
   - ssh
   - ubuntu

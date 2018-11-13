@@ -3,25 +3,13 @@ title: Enable Piwik geolocation support with GeoIP PECL
 date: 2014-04-23T08:57:31+00:00
 author: Janik von Rotz
 slug: enable-piwik-geolocation-support-with-geoip-pecl
-dsq_thread_id:
-  - "2632437056"
 images:
   - /wp-content/uploads/2014/12/logo-piwik-e1418200408662.png
 categories:
-  - Piwik
+  - Web server
 tags:
   - analytics
-  - city
-  - country
-  - enable
-  - geo
-  - geoip
-  - ip
-  - location
-  - pecl
   - piwik
-  - support
-  - tagging
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/9758234](https://gist.github.com/9758234).*  

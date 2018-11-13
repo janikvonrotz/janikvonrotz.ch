@@ -3,20 +3,14 @@ title: You want to learn Java? BlueJ is the answer.
 date: 2014-10-08T16:47:39+00:00
 author: Janik von Rotz
 slug: you-want-to-learn-java-bluej-is-the-answer
-dsq_thread_id:
-  - "3096318887"
 images:
   - /wp-content/uploads/2014/10/Java-logo.jpg
 categories:
-  - Java
+  - Software devleopment
 tags:
   - bluej
-  - ide
   - java
-  - object
   - oop
-  - oriented
-  - programming
 ---
 So you decided to learn some Java programming, but you don't know where to start?
 

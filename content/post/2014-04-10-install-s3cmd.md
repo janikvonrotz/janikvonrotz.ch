@@ -3,22 +3,14 @@ title: Install s3cmd
 date: 2014-04-10T07:48:14+00:00
 author: Janik von Rotz
 slug: install-s3cmd
-dsq_thread_id:
-  - "2600602242"
 images:
   - /wp-content/uploads/2014/03/Amazon-AWS-Logo.png
 categories:
-  - Ubuntu Server
+  - Web server
 tags:
-  - access
-  - amazon
-  - cmd
-  - remote
-  - s3
-  - service
-  - tool
+  - aws
   - ubuntu
-  - web
+  - web server
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/9548802](https://gist.github.com/9548802).*  

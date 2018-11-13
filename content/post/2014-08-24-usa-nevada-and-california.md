@@ -3,28 +3,21 @@ title: 'USA - Nevada and California'
 date: 2014-08-24T06:17:14+00:00
 author: Janik von Rotz
 slug: usa-nevada-and-california
-dsq_thread_id:
-  - "2953981634"
 images:
   - /wp-content/uploads/2014/08/Merica.png
 categories:
   - Photography
   - Traveling
 tags:
-  - america
-  - bodie
   - california
   - death valley
   - joshua tree
   - landscape
   - las vegas
   - los angeles
-  - merica
   - national park
   - nevada
-  - night
   - san francisco
-  - stars
   - usa
   - venice beach
   - yosemity

@@ -12,7 +12,7 @@ tags:
   - o3m
   - one man music machine
   - playlist
-  - progressive house music
+  - progressive house
   - soundcloud
 ---
 {{< soundcloud 17120824 >}}

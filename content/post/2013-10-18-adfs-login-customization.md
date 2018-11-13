@@ -3,19 +3,13 @@ title: ADFS Login Customization
 date: 2013-10-18T13:04:41+00:00
 author: Janik von Rotz
 slug: adfs-login-customization
-dsq_thread_id:
-  - "1871576330"
 images:
   - /wp-content/uploads/2013/09/office-logo_v3.jpg
 categories:
   - Office 365
 tags:
   - adfs
-  - custom
-  - login
-  - modification
   - office365
-  - page
 ---
 The purpose of this article is to show the intention and implemention of the most common modifications for the ADFS login page.
 

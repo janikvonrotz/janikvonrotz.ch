@@ -8,17 +8,11 @@ dsq_thread_id:
 images:
   - /wp-content/uploads/2014/04/The-Human-Cost-of-Electronics.png
 categories:
-  - Politics
+  - Economy
 tags:
   - asia
-  - china
-  - cost
   - economics
-  - human
-  - issue
   - labor
-  - problem
-  - profit
 ---
 This evening I came along a short documentary that really touched me.
 

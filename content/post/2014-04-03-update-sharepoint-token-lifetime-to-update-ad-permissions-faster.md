@@ -3,15 +3,12 @@ title: Update SharePoint Token Lifetime to update AD permissions faster
 date: 2014-04-03T09:01:03+00:00
 author: Janik von Rotz
 slug: update-sharepoint-token-lifetime-to-update-ad-permissions-faster
-dsq_thread_id:
-  - "2582712894"
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:
   - active directory
-  - group
   - sharepoint
   - time to live
   - token

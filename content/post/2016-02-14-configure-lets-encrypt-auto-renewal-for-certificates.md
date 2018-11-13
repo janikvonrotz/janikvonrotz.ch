@@ -3,21 +3,14 @@ title: 'Configure Let’s Encrypt auto renewal for certificates'
 date: 2016-02-14T22:28:26+00:00
 author: Janik von Rotz
 slug: configure-lets-encrypt-auto-renewal-for-certificates
-dsq_thread_id:
-  - "4579516678"
 images:
   - /wp-content/uploads/2015/03/Lets-Enrypt.png
 categories:
-  - OpenSSL
+  - Web server
 tags:
-  - auto
-  - bash
   - certificate
-  - free
   - letsencrypt
   - nginx
-  - renew
-  - script
   - ssl
   - ubuntu
 ---

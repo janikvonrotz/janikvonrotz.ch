@@ -3,12 +3,10 @@ title: Install Ruby and RubyGems with RVM
 date: 2014-04-28T10:21:50+00:00
 author: Janik von Rotz
 slug: install-ruby-and-rubygems-with-rvm
-dsq_thread_id:
-  - "2644399290"
 images:
   - /wp-content/uploads/2014/04/Ruby-Logo.png
 categories:
-  - Ruby
+  - Web server
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*
 *Get the latest version of this article here: [https://gist.github.com/11215397](https://gist.github.com/11215397).*

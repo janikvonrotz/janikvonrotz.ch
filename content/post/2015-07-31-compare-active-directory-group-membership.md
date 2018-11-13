@@ -3,21 +3,13 @@ title: Compare Active Directory group membership
 date: 2015-07-31T07:21:26+00:00
 author: Janik von Rotz
 slug: compare-active-directory-group-membership
-dsq_thread_id:
-  - "3988953744"
 images:
   - /wp-content/uploads/2013/12/PowerShell-and-ActiveDirectory.png
 categories:
-  - Active Directory
-  - PowerShell
+  - Scripting
 tags:
-  - active
-  - compare
-  - directory
   - memebership
-  - module
   - powershell
-  - user
 ---
 The following scripts allows you to compare the group membership of two users.
 <!--more-->

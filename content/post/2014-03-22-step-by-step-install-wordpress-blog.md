@@ -3,18 +3,14 @@ title: 'Step by Step: Install WordPress Blog'
 date: 2014-03-22T10:26:15+00:00
 author: Janik von Rotz
 slug: step-by-step-install-wordpress-blog
-dsq_thread_id:
-  - "2482767459"
 images:
   - /wp-content/uploads/2014/02/wordpress-logo.jpg
 categories:
-  - WordPress
+  - Web server
 tags:
-  - amazone
   - aws
   - ec2
   - guide
-  - installation
   - mysql
   - nginx
   - php

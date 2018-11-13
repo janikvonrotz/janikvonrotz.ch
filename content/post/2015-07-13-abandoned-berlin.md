@@ -3,8 +3,6 @@ title: Abandoned Berlin
 date: 2015-07-13T15:13:13+00:00
 author: Janik von Rotz
 slug: abandoned-berlin
-dsq_thread_id:
-  - "3930288152"
 images:
   - /wp-content/uploads/2015/07/Abandoned-Berlin.jpg
 categories:
@@ -12,14 +10,8 @@ categories:
 tags:
   - abandoned
   - berlin
-  - car
   - deserted
-  - hospital
-  - lost
-  - park
-  - people
   - photography
-  - wheel
 ---
 Berlin is very famous for it's deserted and abandoned places. Last week I spent 3 days there doing parkour and take photos. Here are some impressions of my short Berlin trip:
 

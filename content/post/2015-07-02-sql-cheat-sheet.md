@@ -3,27 +3,15 @@ title: SQL Cheat Sheet
 date: 2015-07-02T18:16:54+00:00
 author: Janik von Rotz
 slug: sql-cheat-sheet
-dsq_thread_id:
-  - "3898706952"
 images:
   - /wp-content/uploads/2014/04/MySQL-Logo.png
 categories:
-  - MySQL
+  - Relational databases
 tags:
-  - cheat
-  - data
-  - datatype
+  - cheat sheet
   - function
-  - join
-  - language
   - procedure
-  - query
-  - select
-  - sheet
-  - sql
-  - table
   - transaction
-  - trigger
 ---
 You can get the latest version of this SQL cheat sheet here: [https://gist.github.com/janikvonrotz/6e27788f662fcdbba3fb](https://gist.github.com/janikvonrotz/6e27788f662fcdbba3fb)
 # SQL languages

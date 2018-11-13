@@ -3,8 +3,6 @@ title: 'Summer break - my package list'
 date: 2014-05-29T15:37:08+00:00
 author: Janik von Rotz
 slug: summer-break-my-package-list
-dsq_thread_id:
-  - "2721386704"
 images:
   - /wp-content/uploads/2014/04/Traveling.png
 categories:
@@ -13,10 +11,8 @@ tags:
   - backpack
   - break
   - list
-  - months
   - package
   - summer
-  - three
   - traveling
 ---
 In my <a href="https://janikvonrotz.ch/2014/05/29/summer-break/" title="Summer break">last post</a> I've showed my plans for the summer. This time I share my package list, hopefully you'll appreciate it someday for your journey.

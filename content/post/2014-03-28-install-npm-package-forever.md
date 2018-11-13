@@ -3,17 +3,13 @@ title: Install npm package forever
 date: 2014-03-28T12:49:20+00:00
 author: Janik von Rotz
 slug: install-npm-package-forever
-dsq_thread_id:
-  - "2532782991"
 images:
   - /wp-content/uploads/2014/03/Node.js-Logo.png
 categories:
-  - Node.js
+  - JavaScript development
+  - Web server
 tags:
-  - applications
-  - installation
-  - interruption
-  - manager
+  - application
   - npm
   - package
 ---

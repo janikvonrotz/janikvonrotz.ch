@@ -3,16 +3,12 @@ title: SharePoint 2013 navigation sub menu titles cut off
 date: 2014-03-10T14:35:34+00:00
 author: Janik von Rotz
 slug: sharepoint-2013-navigation-sub-menu-titles-cut-off
-dsq_thread_id:
-  - "2400906975"
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:
-  - problem
   - sharepoint
-  - solved
   - sub titles
 ---
 By default SharePoint 2013 cuts off long sub menu titles in the navigation.

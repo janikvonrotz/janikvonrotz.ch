@@ -3,17 +3,12 @@ title: 'Superb Java development with Gradle, Hibernate, FlywayDB, JavaFX and Ecl
 date: 2015-03-03T23:53:04+00:00
 author: Janik von Rotz
 slug: superb-java-development-with-gradle-hibernate-flywaydb-javafx-and-eclipse-part-1
-dsq_thread_id:
-  - "3564862222"
 images:
   - /wp-content/uploads/2014/10/Java-logo.jpg
 categories:
-  - Java
+  - Software development
 tags:
-  - abstraction
   - application
-  - database
-  - development
   - flyway
   - gradle
   - hibernate
@@ -21,9 +16,6 @@ tags:
   - javafx
   - mysql
   - nginx
-  - runner
-  - stack
-  - task
 ---
 > Wow that's the best Java tutorial I've seen so far!
 

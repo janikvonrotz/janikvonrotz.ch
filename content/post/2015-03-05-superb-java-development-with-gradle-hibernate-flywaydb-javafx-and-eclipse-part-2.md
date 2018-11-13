@@ -3,31 +3,17 @@ title: Superb Java development with Gradle, Hibernate, FlywayDB, JavaFX and Ecli
 date: 2015-03-05T17:01:57+00:00
 author: Janik von Rotz
 slug: superb-java-development-with-gradle-hibernate-flywaydb-javafx-and-eclipse-part-2
-dsq_thread_id:
-  - "3569968870"
 images:
   - /wp-content/uploads/2014/10/Java-logo.jpg
 categories:
-  - Java
+  - Software development
 tags:
   - application
-  - builder
-  - button
-  - call
-  - click
-  - column
-  - event
   - fxml
   - hibernate
-  - interface
   - java
   - javafx
-  - methods
-  - rich
-  - scene
-  - table
   - tutorial
-  - windows
 ---
 As promised here's the sequel to my last tutorial: <a href="https://janikvonrotz.ch/2015/03/03/superb-java-development-with-gradle-hibernate-flywaydb-javafx-and-eclipse-part-1/" title="Superb Java development with Gradle, Hibernate, FlywayDB, JavaFX and Eclipse – Part 1">Part 1</a>
 

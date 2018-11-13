@@ -3,21 +3,12 @@ title: SharePoint Class Registration Form
 date: 2014-04-07T12:25:53+00:00
 author: Janik von Rotz
 slug: sharepoint-class-registration-form
-dsq_thread_id:
-  - "2593004591"
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
   - SharePoint
 tags:
-  - "2013"
-  - class
-  - designer
-  - form
-  - management
   - registration
-  - remaining
-  - seats
   - sharepoint
   - solution
   - training

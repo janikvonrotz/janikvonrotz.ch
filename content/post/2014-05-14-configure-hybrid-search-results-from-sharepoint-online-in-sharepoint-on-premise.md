@@ -3,27 +3,17 @@ title: Configure hybrid search results from SharePoint Online in SharePoint on-p
 date: 2014-05-14T07:03:29+00:00
 author: Janik von Rotz
 slug: configure-hybrid-search-results-from-sharepoint-online-in-sharepoint-on-premise
-dsq_thread_id:
-  - "2683850564"
 images:
   - /wp-content/uploads/2014/04/SharePoint-Office-365-Hybrid-Solution.jpg
 categories:
-  - Blog
   - SharePoint
 tags:
   - adfs
   - certificate
   - dirsync
   - hybrid
-  - identity
-  - query
-  - results
-  - rule
   - search
-  - service
   - sharepoint
-  - source
-  - token
 ---
 *This post of is part of my [Install SharePoint 2013 Three-tier Farm](https://janikvonrotz.ch/projects/install-sharepoint-2013-three-tier-farm/) project.*
 *Get the latest version of this article here: [https://gist.github.com/10871110](https://gist.github.com/10871110)*

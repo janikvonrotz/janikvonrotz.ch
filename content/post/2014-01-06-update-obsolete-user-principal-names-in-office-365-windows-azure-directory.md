@@ -3,21 +3,17 @@ title: Update Obsolete User Principal Names in Office 365 Windows Azure Director
 date: 2014-01-06T13:02:55+00:00
 author: Janik von Rotz
 slug: update-obsolete-user-principal-names-in-office-365-windows-azure-directory
-dsq_thread_id:
-  - "2095263651"
 images:
   - /wp-content/uploads/2014/01/Windows-Azure-Directory-Services-672x200.png
 categories:
   - Office 365
-  - PowerShell
+  - Scripting
 tags:
   - azure
   - active directory
   - powershell
   - script
-  - services
   - synchronisation
-  - user
 ---
 It could happen that the directory sync service (DirSync) doesn't sync the users UserPrincipalName correctly.
 

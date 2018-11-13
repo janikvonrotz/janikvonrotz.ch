@@ -3,21 +3,13 @@ title: 'Add a new file type in SharePoint - KeePass example'
 date: 2014-04-14T08:15:07+00:00
 author: Janik von Rotz
 slug: add-a-new-file-type-in-sharepoint-keepass-example
-dsq_thread_id:
-  - "2610061515"
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
-  - KeePass
   - SharePoint
 tags:
-  - editing
-  - enable
-  - file
-  - new
+  - keepass
   - sharepoint
-  - support
-  - type
 ---
 In this post I'll show you how to enable a new file type in SharePoint.
 

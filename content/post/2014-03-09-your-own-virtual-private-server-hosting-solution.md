@@ -2,8 +2,6 @@
 title: Your own Virtual Private Server hosting solution
 date: 2014-03-09T11:16:23+00:00
 author: Janik von Rotz
-dsq_thread_id:
-  - "2394460880"
 slug: 
 aliases: your-own-virtual-private-server-hosting-solution
   - /your-own-virtual-private-server-hosting-solution/
@@ -11,12 +9,11 @@ aliases: your-own-virtual-private-server-hosting-solution
 images:
   - /wp-content/uploads/2014/03/Ubuntu-Logo.png
 categories:
-  - Ubuntu
+  - Web server
 tags:
   - private
   - virtual server
   - hosting
-  - solution
   - guide
 ---
 VPS (Virtual Private Server) hosting is the next level up from shared hosting.

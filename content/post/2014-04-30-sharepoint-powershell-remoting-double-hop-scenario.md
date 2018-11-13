@@ -3,19 +3,14 @@ title: SharePoint PowerShell remoting double hop scenario
 date: 2014-04-30T08:34:14+00:00
 author: Janik von Rotz
 slug: sharepoint-powershell-remoting-double-hop-scenario
-dsq_thread_id:
-  - "2650848952"
 images:
   - /wp-content/uploads/2013/07/PowerShell.png
 categories:
-  - PowerShell
+  - Scripting
   - SharePoint
 tags:
-  - double
-  - hop
   - powershell
   - remoting
-  - scenario
   - sharepoint
 ---
 PowerShell remoting can be difficult to understand. There are many things to configure and unknown limitations. With multiple server to access from one remoting session it gets even more difficult.

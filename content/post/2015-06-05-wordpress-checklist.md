@@ -3,20 +3,13 @@ title: WordPress checklist
 date: 2015-06-05T06:54:03+00:00
 author: Janik von Rotz
 slug: wordpress-checklist
-dsq_thread_id:
-  - "3822691219"
 images:
   - /wp-content/uploads/2014/02/wordpress-logo.jpg
 categories:
-  - Blog
+  - Content management systems
 tags:
-  - best
   - check
-  - contribute
-  - list
   - markdown
-  - practice
-  - todo
   - wordpress
 ---
 Simple todo list for new WordPress websites. I'll use it whenever I have to setup a new WordPress site.

@@ -3,21 +3,15 @@ title: 'USA - New York'
 date: 2014-08-29T14:38:49+00:00
 author: Janik von Rotz
 slug: usa-new-york
-dsq_thread_id:
-  - "2969775600"
 images:
   - /wp-content/uploads/2014/08/New-York-20140828.jpg
 categories:
   - Photography
   - Traveling
 tags:
-  - brooklyn
-  - ferry
   - good bye
   - new york
-  - rockefeller
   - staten island
-  - united states of america
   - usa
 ---
 After 3 months my trip has come in New York to an end. I'm feeling sad to finish travelling but also happy to some familiar faces soon.  

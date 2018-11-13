@@ -3,24 +3,15 @@ title: 'Malaysia - Penang and Singapore'
 date: 2014-07-03T12:11:40+00:00
 author: Janik von Rotz
 slug: malaysia-penang-and-singapore
-dsq_thread_id:
-  - "2814492981"
 images:
   - /wp-content/uploads/2014/07/one-of-the-living-buildings-20140629.jpg
 categories:
   - Photography
   - Traveling
 tags:
-  - big
-  - cities
-  - huge
-  - living
   - malaysia
-  - night
   - penang
-  - people
   - singapore
-  - sky
 ---
 Pipapo, blah, blah, blah. I don't have much battery left. Here are some pictures from Singapore and Penang (Malaysia):
 <!--more-->

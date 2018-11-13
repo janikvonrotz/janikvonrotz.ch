@@ -3,21 +3,15 @@ title: free SSL for everybody
 date: 2015-03-23T09:09:11+00:00
 author: Janik von Rotz
 slug: free-ssl-for-everybody
-dsq_thread_id:
-  - "3622670884"
 images:
   - /wp-content/uploads/2015/03/Lets-Enrypt.png
 categories:
-  - IT Security
+  - Security
 tags:
   - authority
   - certificate
-  - free
-  - secure
   - security
-  - server
   - ssl
-  - web
 ---
 [Let's Encrypt](https://letsencrypt.org/) is the latest initiative by the [Internet Security Research Group (ISRG)](https://letsencrypt.org/about/). 
 Their goal is simple, every site on the internet has to be SSL secured.

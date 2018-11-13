@@ -3,20 +3,11 @@ title: Create WordPress admin user with sql only
 date: 2015-03-24T17:54:28+00:00
 author: Janik von Rotz
 slug: create-wordpress-admin-user-with-sql-only
-dsq_thread_id:
-  - "3642482614"
 images:
   - /wp-content/uploads/2014/02/wordpress-logo.jpg
 categories:
-  - WordPress
+  - Content management system
 tags:
-  - add
-  - admin
-  - reset
-  - script
-  - snippet
-  - sql
-  - user
   - wordpress
 ---
 If you don't have access to you WordPress website anymore, but still can update the MySQL database. You can easily add a new admin user with this sql script:

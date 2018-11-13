@@ -3,22 +3,16 @@ title: Summer break
 date: 2014-05-29T15:36:13+00:00
 author: Janik von Rotz
 slug: summer-break
-dsq_thread_id:
-  - "2721368284"
 images:
   - /wp-content/uploads/2014/04/Traveling.png
 categories:
   - Traveling
 tags:
   - america
-  - around
   - australia
-  - journey
   - malaysia
   - thailand
   - travel
-  - trip
-  - word
 ---
 This summer I'm going to travel around the world. Based on the idea one month one country, I'll visit Thailand/Malaysia, Australia and America.
 

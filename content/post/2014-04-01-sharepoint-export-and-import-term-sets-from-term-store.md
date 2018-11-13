@@ -3,24 +3,17 @@ title: SharePoint Export and Import Term Sets from Term Store
 date: 2014-04-01T07:34:23+00:00
 author: Janik von Rotz
 slug: sharepoint-export-and-import-term-sets-from-term-store
-dsq_thread_id:
-  - "2570434568"
 images:
   - /wp-content/uploads/2014/02/SharePoint-Online.jpg
 categories:
   - SharePoint
 tags:
-  - csv
   - export
   - function
-  - group
-  - managed
   - metadata
   - powershell
-  - powerup
   - script
   - sharepoint
-  - term
 ---
 The SharePoint term store service is one of the most important parts of a SharePoint installation. It's the best place to store an manage global metadata for your companies documents.
 

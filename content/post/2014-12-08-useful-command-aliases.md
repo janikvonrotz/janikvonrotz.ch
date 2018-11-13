@@ -3,19 +3,14 @@ title: Useful command aliases
 date: 2014-12-08T10:04:00+00:00
 author: Janik von Rotz
 slug: useful-command-aliases
-dsq_thread_id:
-  - "3301837297"
 images:
   - /wp-content/uploads/2014/03/Ubuntu-Logo.png
 categories:
-  - Ubuntu Server
+  - Web server
 tags:
   - aliases
-  - command
-  - line
   - linux
   - ubuntu
-  - useful
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/5ac7998b00900a3680d7](https://gist.github.com/5ac7998b00900a3680d7).* 

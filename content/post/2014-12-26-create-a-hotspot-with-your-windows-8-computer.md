@@ -3,20 +3,13 @@ title: Create a hotspot with your windows 8 computer
 date: 2014-12-26T14:33:02+00:00
 author: Janik von Rotz
 slug: create-a-hotspot-with-your-windows-8-computer
-dsq_thread_id:
-  - "3401510431"
 images:
   - /wp-content/uploads/2014/12/windwows-8-wlan.png
 categories:
   - Windows
 tags:
-  - host
   - hotspot
-  - netowrk
   - network
-  - shared
-  - wifi
-  - windows
   - wlan
 ---
 This short guide will tell you how you can turn your computer into a hotspot to share a internet connection with you wlan devices.

@@ -3,16 +3,13 @@ title: 'Handling user password change and expiration issues with Office365 and A
 date: 2013-08-08T14:41:37+00:00
 author: Janik von Rotz
 slug: handling-user-password-change-and-expiration-issues-with-office365-and-adfs-part-1
-dsq_thread_id:
-  - "1585056725"
 images:
   - /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg
 categories:
   - Office 365
-  - PowerShell
+  - Scripting
 tags:
   - activedirectory
-  - change
   - expiration
   - federation
   - mail

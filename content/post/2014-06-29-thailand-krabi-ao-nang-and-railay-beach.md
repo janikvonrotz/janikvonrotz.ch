@@ -3,8 +3,6 @@ title: 'Thailand - Krabi, Ao Nang and Railay beach'
 date: 2014-06-29T07:35:22+00:00
 author: Janik von Rotz
 slug: thailand-krabi-ao-nang-and-railay-beach
-dsq_thread_id:
-  - "2803796916"
 images:
   - /wp-content/uploads/2014/06/Tiger-Cave-Temple-20140626.jpg
 categories:
@@ -13,14 +11,8 @@ categories:
 tags:
   - ao nang
   - beach
-  - beautiful
-  - farewell
-  - islands
   - krabi
   - landscape
-  - ride
-  - scooter
-  - sunny
   - thailand
   - traveling
 ---

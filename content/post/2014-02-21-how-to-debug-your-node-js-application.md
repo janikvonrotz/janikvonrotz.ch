@@ -3,20 +3,16 @@ title: How to debug your Node.js application
 date: 2014-02-21T14:20:13+00:00
 author: Janik von Rotz
 slug: how-to-debug-your-node-js-application
-dsq_thread_id:
-  - "2298328026"
 images:
   - /wp-content/uploads/2014/02/nodejs-2560x1440-e1394184527626.png
 categories:
-  - Blog
-  - Node.js
+  - JavaScript development
 tags:
   - app
   - debugging
-  - editor
   - inspector
   - javascript
-  - node.js
+  - nodejs
 ---
 Recently I've started developing with Node.js. As a beginner I had to set up an <a href="https://en.wikipedia.org/wiki/Integrated_Development_Environment">IDE</a> which meets my requirements such as debugging code. I've tried several IDE's such as Microsofts's WebMatrix or Eclipse Node.js extension. But all of them literally sucked, they were are a pain to install or didn't work properly.
 

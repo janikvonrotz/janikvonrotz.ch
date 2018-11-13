@@ -8,7 +8,7 @@ dsq_thread_id:
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
-  - PowerShell
+  - Scripting
   - SharePoint
 tags:
   - powershell

@@ -3,19 +3,15 @@ title: Meteor White Paper
 date: 2015-12-16T21:05:20+00:00
 author: Janik von Rotz
 slug: meteor-white-paper
-dsq_thread_id:
-  - "4409826194"
 images:
   - /wp-content/uploads/2015/12/Meteor-Logo.png
 categories:
-  - Meteor
+  - JavaScript development
 tags:
-  - about
   - javascript
   - meteor
-  - paper
+  - white paper
   - technology
-  - white
 ---
 # Introduction
 

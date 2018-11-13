@@ -3,21 +3,14 @@ title: Michio Kaku on solar revolution
 date: 2015-03-13T10:08:48+00:00
 author: Janik von Rotz
 slug: michio-kaku-on-solar-revolution
-dsq_thread_id:
-  - "3591967592"
 images:
   - /wp-content/uploads/2015/03/Think-Big-Michio-Kaku.jpg
 categories:
-  - Politics
+  - Economy
 tags:
-  - big
   - future
-  - futurist
   - michio kaku
-  - oil
-  - power
   - revolution
-  - solar
   - talk
   - think
 ---

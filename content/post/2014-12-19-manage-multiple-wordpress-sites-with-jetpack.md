@@ -3,21 +3,12 @@ title: Manage multiple WordPress sites with Jetpack
 date: 2014-12-19T12:05:02+00:00
 author: Janik von Rotz
 slug: manage-multiple-wordpress-sites-with-jetpack
-dsq_thread_id:
-  - "3339638958"
 images:
   - /wp-content/uploads/2014/02/wordpress-logo.jpg
 categories:
-  - WordPress
+  - Content management systems
 tags:
-  - autoupdate
-  - disable
-  - enable
-  - manage
-  - multiple
   - plugin
-  - sites
-  - update
   - wordpress
 ---
 Hurray, WordPress 4.1 and the Jetpack Plugin 3.3 has been released.

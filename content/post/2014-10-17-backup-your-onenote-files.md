@@ -3,20 +3,16 @@ title: Backup your OneNote files
 date: 2014-10-17T11:01:23+00:00
 author: Janik von Rotz
 slug: backup-your-onenote-files
-dsq_thread_id:
-  - "3126193518"
 images:
   - /wp-content/uploads/2014/03/Office-2013-Logo.jpg
 categories:
   - Office
 tags:
   - backup
-  - folder
   - office
   - onedrive
   - onenote
-  - sync
-  - tipps
+  - syncing
 ---
 If you're using OneDrive to sync your OneNote files, all OneNote data is stored online. There's no "real" file containing your notes on your computer.
 However by default OneNote backs up your Notebook. But you might not be shure where that is?

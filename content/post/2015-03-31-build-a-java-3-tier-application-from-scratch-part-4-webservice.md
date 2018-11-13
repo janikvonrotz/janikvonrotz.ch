@@ -3,35 +3,17 @@ title: 'Build a Java 3-tier application from scratch – Part 4: Webservice'
 date: 2015-03-31T08:05:04+00:00
 author: Janik von Rotz
 slug: build-a-java-3-tier-application-from-scratch-part-4-webservice
-dsq_thread_id:
-  - "3641869503"
 images:
   - /wp-content/uploads/2014/10/Java-logo.jpg
 categories:
-  - Java
+  - Software development
 tags:
-  - configuration
-  - controller
-  - crud
   - java
   - jax-rs
   - jetty
-  - json
-  - mapping
-  - model
-  - object
-  - orm
-  - path
-  - relational
-  - rest
   - resteasy
-  - route
   - tomcat
-  - url
-  - view
-  - web
   - webservice
-  - xml
 ---
 Our ORM is working so we are ready to create our JAX-RS restful webservice and implement a custom authentication mechanism. In addition I'll provide you a class to insert dummy data into the database, so you don't have to do it manually.
 <!--more-->

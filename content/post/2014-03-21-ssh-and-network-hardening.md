@@ -3,14 +3,11 @@ title: SSH and network hardening
 date: 2014-03-21T18:19:12+00:00
 author: Janik von Rotz
 slug: ssh-and-network-hardening
-dsq_thread_id:
-  - "2477781603"
 images:
   - /wp-content/uploads/2014/03/Ubuntu-Logo.png
 categories:
-  - Ubuntu Server
+  - Web server
 tags:
-  - access
   - hardening
   - network
   - security

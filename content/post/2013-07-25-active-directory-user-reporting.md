@@ -3,18 +3,15 @@ title: Active Directory User Reporting
 date: 2013-07-25T10:49:32+00:00
 author: Janik von Rotz
 slug: active-directory-user-reporting
-dsq_thread_id:
-  - "1529885769"
 images:
   - /wp-content/uploads/2013/07/PowerShell.png
 categories:
-  - PowerShell
+  - Scripting
 tags:
   - activedirectory
   - powershell
   - reporting
   - scripting
-  - user
   - windows
 ---
 This is a simple example of how to create a report of your Active Directory users.

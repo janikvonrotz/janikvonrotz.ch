@@ -3,8 +3,6 @@ title: Print all over me
 date: 2014-04-09T10:39:25+00:00
 author: Janik von Rotz
 slug: print-all-over-me
-dsq_thread_id:
-  - "2598190428"
 images:
   - /wp-content/uploads/2014/03/letsgetweird.jpg
 categories:

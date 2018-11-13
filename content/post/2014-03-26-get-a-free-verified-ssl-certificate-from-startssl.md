@@ -3,15 +3,12 @@ title: Get a free verified SSL certificate from StartSSL
 date: 2014-03-26T10:29:07+00:00
 author: Janik von Rotz
 slug: get-a-free-verified-ssl-certificate-from-startssl
-dsq_thread_id:
-  - "2513276401"
 images:
   - /wp-content/uploads/2014/03/OpenSSL-Logo.png
 categories:
-  - OpenSSL
+  - Security
 tags:
   - certificate
-  - free
   - security
   - start ssl
 ---

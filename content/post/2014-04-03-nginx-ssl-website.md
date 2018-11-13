@@ -3,22 +3,18 @@ title: Nginx SSL website
 date: 2014-04-03T07:54:04+00:00
 author: Janik von Rotz
 slug: nginx-ssl-website
-dsq_thread_id:
-  - "2582605591"
 images:
   - /wp-content/uploads/2014/03/Nginx-Logo-e1394033855329.png
 categories:
-  - Nginx
+  - Security
 tags:
   - certificate
   - compliance
-  - configuration
   - private key
   - nginx
   - openssl
   - security
-  - server
-  - site web
+  - web server
   - ssl
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  

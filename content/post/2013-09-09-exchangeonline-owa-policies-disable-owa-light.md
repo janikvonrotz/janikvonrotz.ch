@@ -3,14 +3,11 @@ title: 'ExchangeOnline OWA Policies - Disable OWA light'
 date: 2013-09-09T09:11:32+00:00
 author: Janik von Rotz
 slug: exchangeonline-owa-policies-disable-owa-light
-dsq_thread_id:
-  - "1738866391"
 images:
   - /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg
 categories:
-  - Exchange
   - Office 365
-  - PowerShell
+  - Scripting
 tags:
   - exchange
   - office365

@@ -3,12 +3,10 @@ title: Install HHVM
 date: 2014-04-30T08:27:48+00:00
 author: Janik von Rotz
 slug: install-hhvm
-dsq_thread_id:
-  - "2649547796"
 images:
   - /wp-content/uploads/2014/04/HHVM-Logo.png
 categories:
-  - HHVM
+  - Web server
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/10816750](https://gist.github.com/10816750).* 

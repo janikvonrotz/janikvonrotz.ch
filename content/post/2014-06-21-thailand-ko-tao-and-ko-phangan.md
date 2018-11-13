@@ -3,8 +3,6 @@ title: 'Thailand - Ko Tao and Ko Phangan'
 date: 2014-06-21T09:26:26+00:00
 author: Janik von Rotz
 slug: thailand-ko-tao-and-ko-phangan
-dsq_thread_id:
-  - "2783344513"
 images:
   - /wp-content/uploads/2014/06/boats-in-Ko-Tao-20140617.jpg
 categories:
@@ -12,20 +10,10 @@ categories:
   - Traveling
 tags:
   - amazing
-  - breathtaking
-  - hot
-  - island
   - ko phangan
   - ko tao
-  - people
-  - place
   - relaxing
-  - small
-  - south
-  - sunny
   - thailand
-  - travel
-  - world
 ---
 Back in Bangkok I had to say goodbye to my travel friends from Chiang Mai, first I was a bit anxious about me not being able to meet new people. However I didn't expect that's actually so easy, there are so many travellers down south with almost the same plan as me. And when you're travelling alone it's even more easy to meet new people as you don't stay in a isolated group.
 <!--more-->

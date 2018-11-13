@@ -8,20 +8,11 @@ dsq_thread_id:
 images:
   - /wp-content/uploads/2013/12/PowerShell-and-ActiveDirectory.png
 categories:
-  - Active Directory
-  - PowerShell
+  - Scripting
 tags:
-  - active
-  - ad
   - backup
-  - daily
-  - directory
-  - monthly
   - powershell
-  - ps
   - restore
-  - retention
-  - weekly
 ---
 Based on this [Technet article](http://technet.microsoft.com/en-us/library/dd581644(WS.10).aspx) I've developed a simple Active Directory backup tool with PowerShell.
 

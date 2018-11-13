@@ -3,18 +3,15 @@ title: Simple Redirect with Apache2
 date: 2013-11-15T10:46:47+00:00
 author: Janik von Rotz
 slug: simple-redirect-with-apache2
-dsq_thread_id:
-  - "1967892452"
 images:
   - /wp-content/uploads/2013/11/apache.jpg
 categories:
-  - Apache
+  - Web server
 tags:
   - apache
   - domain
   - ngnix
   - redirect
-  - site
   - webserver
 ---
 It's obvious Apache2 is no more the first choice for a webserver, depending on the requirments <a href="https://www.theorganicagency.com/apache-vs-nginx-performance-comparison/" target="_blank">Ngnix </a>and IIS are now much more attractive.

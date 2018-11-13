@@ -3,12 +3,10 @@ title: Google is watching you
 date: 2014-01-07T13:34:19+00:00
 author: Janik von Rotz
 slug: google-is-watching-you
-dsq_thread_id:
-  - "2097735212"
 images:
   - /wp-content/uploads/2014/01/dont-track-us.png
 categories:
-  - Politics
+  - Privacy
 tags:
   - duck duck go
   - issues

@@ -3,8 +3,6 @@ title: David F. Sandberg master of horror movies
 date: 2014-03-21T08:31:56+00:00
 author: Janik von Rotz
 slug: david-f-sandberg-master-of-horror-movies
-dsq_thread_id:
-  - "2475064304"
 images:
   - /wp-content/uploads/2014/03/Vimeo-Logo-e1395386460524.jpg
 categories:
@@ -17,8 +15,7 @@ tags:
 ---
 David Sandberg recently won several short movie awards for his film Who's There.
 
-{{< vimeo 82920243
- >}}
+{{< vimeo 82920243 >}}
 
 I'm not a fan of horror movies, but this is truly amazing.
 <!--more-->

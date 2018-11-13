@@ -3,18 +3,12 @@ title: Backup server installations
 date: 2014-12-08T10:04:07+00:00
 author: Janik von Rotz
 slug: backup-server-installations
-dsq_thread_id:
-  - "3301838779"
 images:
   - /wp-content/uploads/2014/03/Ubuntu-Logo.png
 categories:
-  - Ubuntu Server
+  - Web server
 tags:
   - backup
-  - files
-  - folders
-  - installation
-  - recommanded
   - ubuntu
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  

@@ -3,28 +3,18 @@ title: Unattended Encrypted Incremental Backup to Amazon S3
 date: 2014-04-25T07:28:09+00:00
 author: Janik von Rotz
 slug: unattended-encrypted-incremental-backup-to-amazon-s3
-dsq_thread_id:
-  - "2637431879"
 images:
   - /wp-content/uploads/2014/03/Amazon-AWS-Logo.png
 categories:
-  - Blog
+  - Web server
 tags:
   - amazon
-  - auto
   - backup
-  - data
   - encrypted
   - mysql
   - s3
-  - s3cmd
-  - service
-  - services
-  - simple
   - storage
-  - store
   - ubuntu
-  - web
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  
 *Get the latest version of this article here: [https://gist.github.com/9410478](https://gist.github.com/9410478).*  

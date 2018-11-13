@@ -3,8 +3,6 @@ title: 'O3M 45 - InDiEnd (ambient, chillout)'
 date: 2014-06-20T07:16:37+00:00
 author: Janik von Rotz
 slug: o3m-45-indiend-ambient-chillout
-dsq_thread_id:
-  - "2780407521"
 images:
   - /wp-content/uploads/2014/05/O3M-45-InDiEnd-ambient-chillout1.png
 categories:
@@ -14,12 +12,7 @@ tags:
   - ambient
   - chillout
   - indie
-  - machine
-  - man
-  - mix
-  - music
   - o3m
-  - one
   - playlist
 ---
 {{< soundcloud 29045419 >}}

@@ -3,8 +3,6 @@ title: 'Australia - East coast'
 date: 2014-07-26T00:08:36+00:00
 author: Janik von Rotz
 slug: australia-east-coast
-dsq_thread_id:
-  - "2873691829"
 images:
   - /wp-content/uploads/2014/07/good-morning-20140722.jpg
 categories:
@@ -14,17 +12,9 @@ tags:
   - airlie beach
   - australia
   - beach
-  - carins
-  - coast
-  - diving
-  - east
   - fraser island
-  - great barrier reef
-  - opera house
   - rainbow beach
-  - sea
   - sydney
-  - withsundays
 ---
 Within 3 weeks I've travelled the Australia East Coast. I've started in freezing cold Sydney and took a flight to Brisbane. From Brisbane I've travelled with the Greyhound buses up to Cairns and had a stop in Rainbow Beach (Fraser Island) and my favourite place Airlie Beach (Withsundays).
 <!--more-->

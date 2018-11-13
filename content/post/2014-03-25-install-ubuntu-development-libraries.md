@@ -3,20 +3,15 @@ title: Install Ubuntu development libraries
 date: 2014-03-25T11:42:14+00:00
 author: Janik von Rotz
 slug: install-ubuntu-development-libraries
-dsq_thread_id:
-  - "2505364282"
 images:
   - /wp-content/uploads/2014/03/Ubuntu-Logo.png
 categories:
-  - Ubuntu Server
+  - Web server
 tags:
   - aptitude
   - development
-  - installation
   - libaries
-  - manager
   - package
-  - tools
   - ubuntu
 ---
 *This post is part of my [Your own Virtual Private Server hosting solution](https://janikvonrotz.ch/your-own-virtual-private-server-hosting-solution/) project.*  

@@ -3,21 +3,13 @@ title: Stock market analysis with R
 date: 2015-12-23T10:56:29+00:00
 author: Janik von Rotz
 slug: stock-market-analysis-with-r
-dsq_thread_id:
-  - "4427593317"
 images:
   - /wp-content/uploads/2015/12/R-language-logo.png
 categories:
-  - Blog
-  - R programming language
+  - Statistic
 tags:
-  - computing
-  - market
-  - programming
   - R-language
-  - scripting
   - statistics
-  - stock
 ---
 R is a programming language designed for statistical computing. I recently bought a few stocks and decided to analyse some trends based on the current stock data. So here's my first contact with R and a stock analysis. 
 <!--more-->

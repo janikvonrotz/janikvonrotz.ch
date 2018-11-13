@@ -3,21 +3,16 @@ title: Assign Temporary Administrator Rights for ActiveDirectory Users via Share
 date: 2013-11-18T16:55:32+00:00
 author: Janik von Rotz
 slug: assign-temporary-administrator-rights-for-activedirectory-users-via-sharepoint-list
-dsq_thread_id:
-  - "1976601577"
 images:
   - /wp-content/uploads/2013/08/Active-Directory-Logo.png
 categories:
-  - Active Directory
-  - PowerShell
+  - Scripting
   - SharePoint
 tags:
   - activedirectory
   - administrator
-  - computer
   - sharepoint
   - temporary
-  - user
 ---
 In my company the user only have user rights on their computers. As you should know you'll face many problems with this restriction.
 

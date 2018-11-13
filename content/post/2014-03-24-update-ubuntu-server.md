@@ -3,12 +3,10 @@ title: Update Ubuntu server
 date: 2014-03-24T18:34:00+00:00
 author: Janik von Rotz
 slug: update-ubuntu-server
-dsq_thread_id:
-  - "2500275221"
 images:
   - /wp-content/uploads/2014/03/Ubuntu-Logo.png
 categories:
-  - Ubuntu Server
+  - Web server
 tags:
   - aptitude
   - package
