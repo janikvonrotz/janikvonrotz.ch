@@ -3,22 +3,12 @@ title: Node.js dynamic settings
 date: 2016-08-25T19:43:31+00:00
 author: Janik von Rotz
 slug: node-js-dynamic-settings
-dsq_thread_id:
-  - "5094803262"
 images:
   - /wp-content/uploads/2014/03/Node.js-Logo.png
 categories:
-  - Node.js
+  - JavaScript development
 tags:
-  - beginner
-  - configuration
-  - environment
-  - files
-  - load
-  - node
   - nodejs
-  - settings
-  - variables
 ---
 As I'm relatively new to Node I had to wrap my head around a very basic thing. Getting external variables into my app. Loading settings for different environments from config files and via environment variables (for heroku deployment) should supposedly be an easy challenge. However, none of the solutions I've found were well enough for my scenario:
 

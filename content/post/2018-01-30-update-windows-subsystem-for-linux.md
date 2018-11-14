@@ -3,21 +3,15 @@ title: Update Windows Subsystem for Linux
 date: 2018-01-30T10:32:51+00:00
 author: Janik von Rotz
 slug: update-windows-subsystem-for-linux
-specific_page_layout:
-  - default-sidebar
 images:
   - /wp-content/uploads/2018/01/Bash-on-Ubuntu-on-Windows.png
 categories:
-  - Ubuntu
-  - Windows
+  - Unix
+  - System tooling
 tags:
   - linux
-  - packages
   - trusty
   - ubuntu
-  - ugly hack
-  - update
-  - version
   - windows subsystem for linux
   - wsl
   - xenial

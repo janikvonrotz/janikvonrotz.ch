@@ -12,7 +12,7 @@ tags:
   - javascript
   - node
   - npm
-  - packagage
+  - package
 ---
 This time I'll show you how to publish react components to the npm directory. This guide does not cover testing it only shows the easiest way to use your components for different projects as npm dependency.
 

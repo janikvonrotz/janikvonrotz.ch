@@ -6,14 +6,14 @@ slug: archive-activedirectory-users-and-their-mailbox
 images:
   - /wp-content/uploads/2013/08/exchange-2013-e1393417827333.jpg
 categories:
-  - Scripting
+  - scripting
 tags:
   - activedirectory
   - archive
   - exchange
   - mailbox
   - powershell
-  - script
+  - scripting
   - snippet
 ---
 One of my company's requirements is the retention time of 10 years for user accounts and their mailbox data, I have to admit, this might not be common or even recommended.

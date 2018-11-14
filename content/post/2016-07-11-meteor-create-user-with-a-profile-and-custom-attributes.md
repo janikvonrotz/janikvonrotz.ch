@@ -3,31 +3,13 @@ title: Meteor create user with a profile and custom attributes
 date: 2016-07-11T20:34:48+00:00
 author: Janik von Rotz
 slug: meteor-create-user-with-a-profile-and-custom-attributes
-dsq_thread_id:
-  - "4977952562"
 images:
   - /wp-content/uploads/2015/12/Meteor-Logo.png
 categories:
-  - Meteor
+  - JavaScript development
 tags:
-  - account
-  - admin
-  - attribute
-  - create
-  - custom
-  - editable
-  - email
-  - field
-  - firstname
-  - lastname
+  - accounts
   - meteor
-  - password
-  - profile
-  - protected
-  - react
-  - specific
-  - user
-  - username
 ---
 For Meteor there are not many options left when choosing a user account package. The built-in option is the only use- and successful solution so far. The package is well documented and works like a charm. However, whenever I set up the account system in Meteor I am confronted with these two scenarios: 
 

@@ -7,13 +7,12 @@ images:
   - /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg
 categories:
   - Office 365
-  - Scripting
+  - scripting
 tags:
   - activedirectory
   - expiration
   - federation
   - mail
-  - management
   - office365
   - password
   - service

@@ -6,15 +6,13 @@ slug: configuration-manager-configure-requirement-rules-for-deployment-types-wit
 images:
   - /wp-content/uploads/2017/10/System-Center-Configuration-Manager-Logo.jpg
 categories:
-  - Configuration Manager
+  - Client management
 tags:
   - configuration manager
+  - life cycle
   - powershell
-  - requirement
-  - rules
-  - scripting
-  - system center
-  - user device affinity
+  - sccm
+  - system center configuration manager
 ---
 Configuration Manager applications can be equipped with powerful requirement rules. For example an application must be installed only if there is enough disk space on the target device or only if the device is the users primary device. The second example is an important requirement rule when working with [user device affinity](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/link-users-and-devices-with-user-device-affinity). Configuring this kind of rule is done in a few seconds using the management console. However, scripting the rule with PowerShell is much more difficult. As of today the cmdlets provided by Microsoft for automating Configuration Manager assets do not support building requirement rules for deployment types. But as always there is a workaround. In my case I've decided to create an application template containing all requirement rules and copy specific rules from there to other applications.
 <!--more-->

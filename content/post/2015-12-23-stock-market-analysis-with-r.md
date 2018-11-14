@@ -6,7 +6,7 @@ slug: stock-market-analysis-with-r
 images:
   - /wp-content/uploads/2015/12/R-language-logo.png
 categories:
-  - Statistic
+  - Statistics
 tags:
   - R-language
   - statistics

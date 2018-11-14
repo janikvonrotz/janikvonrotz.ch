@@ -8,7 +8,6 @@ images:
 categories:
   - JavaScript development
 tags:
-  - app
   - debugging
   - inspector
   - javascript

@@ -3,27 +3,17 @@ title: Create a soft wallet and transfer your Ether coins from an exchange
 date: 2018-01-10T14:58:27+00:00
 author: Janik von Rotz
 slug: create-a-soft-wallet-and-transfer-your-ether-coins-from-an-exchange
-specific_page_layout:
-  - default-sidebar
 images:
   - /wp-content/uploads/2018/01/ethereum-logo.png
 categories:
-  - Ethereum
+  - Blockchain
 tags:
-  - block
   - blockchain
   - encryption
-  - ether
   - ethereum
-  - exchange
-  - explorer
   - geth
   - kraken
   - parity
-  - platform
-  - soft wallet
-  - transaction
-  - wallet
 ---
 Intrigued by the title you might ask your self: What is the reason to store ether in a software wallet? Well, If you have cryptocoins on an exchange platform there is always the risk of the account getting hacked or the platform goes offline (see MtGox). Exchange platforms for cryptocoins are not as regulated and institutionalized as banks and trading centers are. The risk is in favor of the provider. To assert full control of your coins aka your money it is recommended to store them in a wallet.
 <!--more-->

@@ -11,7 +11,6 @@ tags:
   - beatport
   - dance
   - electronic
-  - music
   - soundcloud
 ---
 Galantis are two edm producers which recenlty have relesed their first EP (Extended play). I really love their music. It's unordinary and doesn't require mainstream music patterns to amaze your ears.

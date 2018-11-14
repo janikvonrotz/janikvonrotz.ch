@@ -6,10 +6,9 @@ slug: manipulate-the-hosts-file-with-powershell
 images:
   - /wp-content/uploads/2013/07/PowerShell.png
 categories:
-  - Scripting
+  - scripting
 tags:
   - function
-  - hosts
   - manipulation
   - powershell
 ---

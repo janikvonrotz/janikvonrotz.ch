@@ -3,22 +3,15 @@ title: Meteor project structure
 date: 2017-03-28T16:20:06+00:00
 author: Janik von Rotz
 slug: meteor-project-structure
-dsq_thread_id:
-  - "5673985614"
 images:
   - /wp-content/uploads/2016/03/meteor-react-logo-1200x201.png
 categories:
-  - Meteor
-  - React
+  - JavaScript development
 tags:
-  - file
-  - folder
   - meteor
-  - naming
   - project
   - proposal
   - specification
-  - structure
 ---
 Get the latest version of this specification here: [https://gist.github.com/d4755eb1b7a9d6b08515408ea6fd69bb](https://gist.github.com/d4755eb1b7a9d6b08515408ea6fd69bb)
 

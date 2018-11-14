@@ -6,19 +6,10 @@ slug: xkcd-powershell-password-generator
 images:
   - /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png
 categories:
-  - PowerShell
+  - scripting
 tags:
-  - generator
-  - list
-  - memorable
-  - nouns
   - password
   - powershell
-  - random
-  - remember
-  - secure
-  - udpate
-  - word
 ---
 > Through 20 ears of effort, we've successfully trained everyone to use passwords that are hard for humans to remember, but easy for computers to guess.
 

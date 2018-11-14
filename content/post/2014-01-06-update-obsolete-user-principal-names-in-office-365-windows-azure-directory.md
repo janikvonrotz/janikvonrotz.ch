@@ -7,12 +7,12 @@ images:
   - /wp-content/uploads/2014/01/Windows-Azure-Directory-Services-672x200.png
 categories:
   - Office 365
-  - Scripting
+  - scripting
 tags:
   - azure
-  - active directory
+  - activedirectory
   - powershell
-  - script
+  - scripting
   - synchronisation
 ---
 It could happen that the directory sync service (DirSync) doesn't sync the users UserPrincipalName correctly.

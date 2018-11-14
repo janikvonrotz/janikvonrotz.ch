@@ -6,18 +6,12 @@ slug: build-a-java-3-tier-application-from-scratch-part-6-client-view
 images:
   - /wp-content/uploads/2014/10/Java-logo.jpg
 categories:
-  - Java
+  - Software development
 tags:
   - 3-tier
   - application
-  - client
-  - controller
-  - graphical
-  - interface
   - java
   - javafx
-  - user
-  - view
 ---
 Welcome to the final part of my tutorial. In this last part we are going to write our view and run the client application.
 

@@ -4,20 +4,12 @@ date: 2017-04-23T08:44:28+00:00
 author: Janik von Rotz
 slug: get-rid-of-disqus
 categories:
-  - Blog
-  - WordPress
+  - Privacy
+  - Content management systems
 tags:
-  - alternative
-  - comment
-  - disable
   - disqus
-  - load
-  - network
-  - page
   - performance
   - privacy
-  - system
-  - time
   - tracking
 ---
 Recently I read an article on HN (Hacker News) [Replacing Disqus with Github Comments](http://donw.io/post/github-comments/) and decided to drop the Disqus commenting system on this site. A long time ago I've added Disqus to my page because of it was easy to use and had out-of-the-box spam prevention. The cost of it as I see now was a heavy breach in privacy and site performance. When I read the article mentioned above I was shocked what I was forcing on people visiting my site. Just to give you an idea what's going on:

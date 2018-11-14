@@ -7,13 +7,13 @@ images:
   - /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg
 categories:
   - Office 365
-  - Scripting
+  - scripting
 tags:
   - gist
   - license
   - office365
   - report
-  - script
+  - scripting
   - snippet
 ---
 With over 350 users in the Office365 cloud as in my case it's difficult being aware of which licenses I really need.

@@ -9,6 +9,6 @@ categories:
   - Music
 tags:
   - mashup
-  - music
+  - kinaj
 ---
 {{< soundcloud 5167001 >}}

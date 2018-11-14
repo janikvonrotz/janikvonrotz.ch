@@ -9,7 +9,6 @@ categories:
   - Privacy
 tags:
   - duck duck go
-  - issues
   - neuland
   - privacy
 ---

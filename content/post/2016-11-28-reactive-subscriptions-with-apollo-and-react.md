@@ -3,25 +3,17 @@ title: Reactive subscriptions with Apollo and React
 date: 2016-11-28T12:27:08+00:00
 author: Janik von Rotz
 slug: reactive-subscriptions-with-apollo-and-react
-dsq_thread_id:
-  - "5337885808"
 dsq_needs_sync:
   - "1"
 images:
   - /wp-content/uploads/2016/11/Apollo-Logo.png
 categories:
-  - Apollo
-  - React
+  - JavaScript development
 tags:
   - apollo
-  - publication
   - react
-  - reactive
   - reactivity
-  - real
-  - subscribe
   - subscription
-  - time
 ---
 Apollo server and client support real-time subscriptions with web sockets. Compared to Meteor's out of the box real-time communication this is a lot more difficult to set up. With this short tutorial I'll give you an example of how you can get a simple reactive subscriptions into your Apollo/React app. The idea is that you use real-time communication for a specific case only, f.g. sending notifications. We will accomplish this in five steps.
 

@@ -12,8 +12,7 @@ tags:
   - download
   - git
   - playlist
-  - script
-  - souncloud
+  - scripting
   - ubuntu
 ---
 # Introduction

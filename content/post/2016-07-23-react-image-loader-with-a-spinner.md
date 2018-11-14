@@ -3,24 +3,12 @@ title: React image loader with a spinner
 date: 2016-07-23T04:19:06+00:00
 author: Janik von Rotz
 slug: react-image-loader-with-a-spinner
-dsq_thread_id:
-  - "5007364372"
 images:
   - /wp-content/uploads/2014/04/React-Logo.png
 categories:
-  - Blog
-  - React
+  - JavaScript development
 tags:
-  - component
-  - failed
-  - file
-  - image
-  - load
-  - loader
-  - picture
   - react
-  - spinner
-  - status
 ---
 hey there, I've spent as usual a lot of time with React, Mantra and Meteor. While building a simple app I checked out the new Meteor standard for file handling [Meteor-Files](https://github.com/VeliovGroup/Meteor-Files). It works great, I really recommend this awesome package. But that's not what I want to show you. The app I'm working on loads pictures form the dropbox api. Downloading the pictures always takes a while. To make sure the user doesn't get impatient the app is now displaying a spinner when the image is loading. I would to like to show you how I've built this image loader and spinner component.
 <!--more-->

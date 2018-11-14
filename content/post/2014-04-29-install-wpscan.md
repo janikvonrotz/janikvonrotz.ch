@@ -10,7 +10,6 @@ categories:
 tags:
   - exploit
   - hardening
-  - scanner
   - security
   - vulnerability
   - wordpress

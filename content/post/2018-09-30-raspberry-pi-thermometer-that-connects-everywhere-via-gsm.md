@@ -3,9 +3,9 @@ title: "2018 09 30 Raspberry Pi thermometer that connects from anywhere via GSM"
 slug: 2018-09-30-raspberry-pi-thermometer-that-connects-anyywhere-via-gsm
 date: 2018-09-24T20:00:23+02:00
 categories:
- - Blog
+ - Maker
 tags:
- - hello
+ - rasperry pi
  - world
 image: /images/logo.png
 draft: true

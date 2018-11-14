@@ -6,12 +6,12 @@ slug: sharepoint-file-reporting-done-right
 images:
   - /wp-content/uploads/2013/07/PowerShell.png
 categories:
-  - Scripting
+  - scripting
   - SharePoint
 tags:
   - powershell
   - report
-  - script
+  - scripting
   - sharepoint
   - storage
 ---

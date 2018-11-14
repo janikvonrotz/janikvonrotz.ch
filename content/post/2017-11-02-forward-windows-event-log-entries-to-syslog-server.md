@@ -6,16 +6,12 @@ slug: forward-windows-event-log-entries-to-syslog-server
 images:
   - /wp-content/uploads/2017/08/SCCM-PowerShell-e1503910243136.jpeg
 categories:
-  - PowerShell
-  - Windows Server
+  - scripting
+  - Microsoft infrastructure
 tags:
   - event log
-  - forward
   - powershell
-  - schedule
-  - scripting
   - syslog
-  - windows
 ---
 Syslog is the defacto standard for sending log messages in an IP network. Instead of pulling log messages from a remote computer as you would do it in a windows environment, the log files are sent by remote computers to a central log repository. This way of managing log files has become the standard for Linux / Unix environments. As our IT systems tends to become hybrids, the questions arises how it possible to send syslog messages from a windows computer. In this post I will present you a simple approach.
 <!--more-->

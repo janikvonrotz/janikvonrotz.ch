@@ -6,7 +6,7 @@ slug: lets-write-a-laravel-application-fulltext-search
 images:
   - /wp-content/uploads/2015/01/laravel-logo-e1422466263489.png
 categories:
-  - Laravel
+  - Web development
 tags:
   - function
   - laravel

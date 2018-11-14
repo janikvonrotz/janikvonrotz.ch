@@ -6,7 +6,7 @@ slug: deploy-powershell-activedirectory-module-without-installing-the-remote-ser
 images:
   - /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png
 categories:
-  - Scripting
+  - scripting
 tags:
   - powershell
 ---

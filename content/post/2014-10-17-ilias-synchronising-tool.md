@@ -4,7 +4,7 @@ date: 2014-10-17T18:27:19+00:00
 author: Janik von Rotz
 slug: ilias-synchronising-tool"
 categories:
-  - Scripting
+  - scripting
 tags:
   - ilias
   - powershell

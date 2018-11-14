@@ -6,16 +6,12 @@ slug: another-wordpress-to-hugo-migration
 images:
   - /images/wordpress to hugo migration.png
 categories:
-  - Hugo
-  - Wordpress
+  - Content management systems
 tags:
  - wordpress
  - migration
  - hugo
  - cms
- - static
- - site
- - regex
 ---
 Using Wordpress to run this blog has become an overkill. It was time to change. Static site generators, no database content management systems and JavaScript based tools make Wordpress an deprecated blogging platform. I had the idea of moving away from Wordpress for a while and decided to take a chance two weeks ago. This post is about the migration process and the design decisions made in preparation of the migration. 
 

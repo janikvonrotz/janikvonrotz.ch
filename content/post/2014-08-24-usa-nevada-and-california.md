@@ -20,7 +20,7 @@ tags:
   - san francisco
   - usa
   - venice beach
-  - yosemity
+  - yosemite
   - zion
 ---
 My USA trip has almost come to an end. I had a great time here in California and Nevada. I never expected to meet so many people while travelling alone in the USA.

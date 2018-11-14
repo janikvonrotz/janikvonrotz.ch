@@ -8,7 +8,7 @@ images:
 categories:
   - Music
 tags:
-  - glitch music
+  - glitch
   - playlist
   - soundcloud
 ---

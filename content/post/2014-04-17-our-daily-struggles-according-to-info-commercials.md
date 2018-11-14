@@ -8,7 +8,7 @@ images:
 categories:
   - Blog
 tags:
-  - random
+  - funny
   - weird
 ---
 According to info commercials we life in a dangerous place and it's almost a wonder that most people know how to get up in the morning.

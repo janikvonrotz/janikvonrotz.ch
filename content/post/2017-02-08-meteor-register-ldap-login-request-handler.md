@@ -3,23 +3,13 @@ title: Meteor register LDAP login request handler
 date: 2017-02-08T20:53:56+00:00
 author: Janik von Rotz
 slug: meteor-register-ldap-login-request-handler
-dsq_thread_id:
-  - "5534292034"
 images:
   - /wp-content/uploads/2017/02/Meteor-Logo-inverted.png
 categories:
-  - Meteor
+  - JavaScript development
 tags:
-  - active
-  - auth
   - authentication
-  - custom
-  - directory
-  - handler
-  - ldap
-  - login
   - meteor
-  - request
 ---
 One requirement for my current Meteor project was that a user must login with their ActiveDirectory account. This means that Meteor must be able to authenticate against LDAP. In atmosphere there are already a few packages available which implement and support LDAP authentication. However, they are either outdated or difficult to configure. This is why I've decided to build my own custom login request handler for Meteor. 
 <!--more-->

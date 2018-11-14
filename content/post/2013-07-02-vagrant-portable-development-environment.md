@@ -6,7 +6,7 @@ slug: vagrant-portable-development-environment
 images:
   - /wp-content/uploads/2013/07/vagrant-logo.png
 categories:
-  - Containerization
+  - Continiuous delivery
 tags:
   - code
   - machine

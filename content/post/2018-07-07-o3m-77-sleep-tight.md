@@ -8,9 +8,6 @@ images:
 categories:
   - Music
 tags:
-  - light
-  - mix
-  - music
   - o3m
   - one man music machine
   - playlist

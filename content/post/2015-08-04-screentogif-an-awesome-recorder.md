@@ -6,7 +6,7 @@ slug: screentogif-an-awesome-recorder
 images:
   - /wp-content/uploads/2015/07/Screen-To-Gif.png
 categories:
-  - Work
+  - System tooling
 tags:
   - animation
   - documentation

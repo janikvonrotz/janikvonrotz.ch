@@ -7,13 +7,11 @@ images:
   - /wp-content/uploads/2013/09/office-logo_v3.jpg
 categories:
   - Office 365
-  - Scripting
+  - scripting
 tags:
   - access
-  - manage
   - office365
-  - portal
-  - permissions
+  - permission
 ---
 In addition to my last script showing how to manage the user licenses in Office365 I've written a new script for assign, remove or replace the access rights in the office365 portal.
 

@@ -3,8 +3,6 @@ title: E-Mail report of unchecked SharePoint files
 date: 2013-11-14T16:05:42+00:00
 author: Janik von Rotz
 slug: e-mail-report-of-unchecked-sharepoint-files
-dsq_thread_id:
-  - "1965705690"
 images:
   - /wp-content/uploads/2013/07/PowerShell.png
 categories:
@@ -12,8 +10,7 @@ categories:
 tags:
   - mail
   - powershell
-  - report
-  - script
+  - reporting
   - sharepoint
 ---
 Having unchecked files in the SharePoint is not a big deal as long as you aware of the those files.

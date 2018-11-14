@@ -3,24 +3,15 @@ title: Make your Redux React app multilingual
 date: 2017-03-02T12:51:10+00:00
 author: Janik von Rotz
 slug: make-your-redux-react-app-multilingual
-dsq_thread_id:
-  - "5596829010"
 images:
   - /wp-content/uploads/2017/03/Redux-and-React.png
 categories:
-  - React
-  - Redux
+  - JavaScript development
 tags:
-  - client
-  - component
-  - i18n
   - internationalization
   - multilanguage
   - react
   - redux
-  - state
-  - store
-  - translate
 ---
 For my current React app in development I'm using Redux to manage the client state. As this is the first time using Redux I'm not quite sure what to put in the store yet. But I've decided to give the multilingual labels and wordings a try. Below you'll find a simple approach on how I made my app multilingual using the Redux client state to store the translated content. I assume you are familiar with Redux and React.
 <!--more-->

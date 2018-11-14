@@ -6,15 +6,12 @@ slug: monitor-and-audit-active-directory-user-and-group-management
 images:
   - /wp-content/uploads/2017/10/Active-Directory-Logo.jpg
 categories:
-  - Active Directory
+  - Microsoft infrastructure
 tags:
   - audit
   - compliance
-  - event
   - group policy
-  - log
-  - monitor
-  - query
+  - monitoring
   - security
   - traceability
 ---

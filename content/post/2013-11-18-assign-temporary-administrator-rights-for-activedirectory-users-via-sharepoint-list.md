@@ -6,7 +6,7 @@ slug: assign-temporary-administrator-rights-for-activedirectory-users-via-sharep
 images:
   - /wp-content/uploads/2013/08/Active-Directory-Logo.png
 categories:
-  - Scripting
+  - scripting
   - SharePoint
 tags:
   - activedirectory

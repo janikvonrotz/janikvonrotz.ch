@@ -3,10 +3,9 @@ title: "Undo a pushed git merge"
 slug: 2018-11-09-undo-a-pushed-git-merge
 date: 2018-09-11T18:37:25+02:00
 categories:
- - Git
+ - Software development
 tags:
- - undo
- - merge
+ - git
 images:
   - /wp-content/uploads/2014/03/Git-Logo.png
 ---

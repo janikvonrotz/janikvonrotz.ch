@@ -6,7 +6,7 @@ slug: install-net-framework-3-5-on-windows-server-2012-and-windows-server-2012-r
 images:
   - /wp-content/uploads/2014/03/Windows-Server-2012-Logo-e1394519276892.jpg
 categories:
-  - Windows Server
+  - Microsoft infrastructure
 tags:
   - .net
   - server

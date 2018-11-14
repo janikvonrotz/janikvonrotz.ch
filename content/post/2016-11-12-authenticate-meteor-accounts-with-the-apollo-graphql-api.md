@@ -3,8 +3,6 @@ title: Authenticate Meteor accounts with the Apollo GraphQL API
 date: 2016-11-12T10:21:20+00:00
 author: Janik von Rotz
 slug: authenticate-meteor-accounts-with-the-apollo-graphql-api
-dsq_thread_id:
-  - "5298095930"
 images:
   - /wp-content/uploads/2016/11/Apollo-Logo.png
 categories:
@@ -14,12 +12,7 @@ tags:
   - apollo
   - authentication
   - graphql
-  - login
-  - logout
   - meteor
-  - module
-  - package
-  - user
 ---
 One of the popular features of Meteor is its accounts package. As you know, it makes it fairly easy to add a user authentication solution to your Meteor app or add support for different oAuth services. With the possibility to integrate an Apollo GraphQL API into your Meteor app this became a bit more difficult. The Apollo stack does not support an out of the box solutions to authenticate users with Meteor accounts. Jonas Helfer, one of the Apollo core devs, proposed [two ways to authenticate users with your app](https://dev-blog.apollodata.com/a-guide-to-authentication-in-graphql-e002a4039d1):
 <!--more-->

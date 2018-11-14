@@ -10,7 +10,6 @@ categories:
 tags:
   - document
   - managed
-  - management
   - metadata
   - office365
   - service

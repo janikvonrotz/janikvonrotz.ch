@@ -7,16 +7,15 @@ images:
   - /wp-content/uploads/2013/07/PowerShell.png
 categories:
   - Office 365
-  - Scripting
+  - scripting
 tags:
   - adfs
   - distribution
   - exchange
   - office365
   - powershell
-  - profile
   - project
-  - script
+  - scripting
   - snippet
 ---
 With Office365 connected with an ADFS you have to redesgin your Exchange distribution groups. ADFS only syncs distribution groups that have these definitions:

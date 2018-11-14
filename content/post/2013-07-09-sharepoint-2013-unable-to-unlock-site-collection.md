@@ -3,12 +3,10 @@ title: SharePoint 2013 unable to unlock site collection
 date: 2013-07-09T10:22:01+00:00
 author: Janik von Rotz
 slug: sharepoint-2013-unable-to-unlock-site-collection
-dsq_thread_id:
-  - "1480686573"
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
-  - Scripting
+  - scripting
   - SharePoint
 tags:
   - powershell

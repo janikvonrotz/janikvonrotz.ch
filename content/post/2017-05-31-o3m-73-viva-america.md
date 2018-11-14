@@ -9,14 +9,10 @@ categories:
   - Music
 tags:
   - america
-  - machine
-  - man
-  - music
-  - one
   - playlist
   - roadtrip
   - soundcloud
-  - viva
+  - o3m
 ---
 Feel good tracks I've listened to while doing roadtrips in California last autumn. 
 

@@ -8,7 +8,7 @@ images:
 categories:
   - Web server
 tags:
-  - packages
+  - package
   - server
   - ubuntu
 ---

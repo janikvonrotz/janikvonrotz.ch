@@ -6,17 +6,11 @@ slug: create-a-powershell-module-and-publish-it-to-the-gallery-in-under-1-minute
 images:
   - /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png
 categories:
-  - PowerShell
+  - scripting
 tags:
-  - create
-  - deploy
+  - deployment
   - example
-  - gallery
-  - install
-  - manifest
-  - module
   - powershell
-  - publish
 ---
 This tutorial is basically a script that creates a PowerShell module and publishes it to the PowerShell Gallery. Another scripts tells you how to install the published module and make us of it.
 <!--more-->

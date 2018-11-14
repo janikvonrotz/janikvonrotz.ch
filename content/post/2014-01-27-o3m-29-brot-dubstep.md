@@ -8,7 +8,7 @@ images:
 categories:
   - Music
 tags:
-  - dubstep music
+  - dubstep
   - playlist
   - soundcloud
   - one man music machine

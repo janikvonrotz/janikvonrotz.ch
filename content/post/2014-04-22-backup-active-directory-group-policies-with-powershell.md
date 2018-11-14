@@ -6,7 +6,7 @@ slug: backup-active-directory-group-policies-with-powershell
 images:
   - /wp-content/uploads/2013/10/Group-Policy.jpg
 categories:
-  - Scripting
+  - scripting
 tags:
   - backup
   - policy

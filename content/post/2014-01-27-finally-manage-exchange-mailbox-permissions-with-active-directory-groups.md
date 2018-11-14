@@ -8,7 +8,7 @@ images:
 categories:
   - Microsoft infrastructure
 tags:
-  - active directory
+  - activedirectory
   - exchange
   - mailbox
   - permission

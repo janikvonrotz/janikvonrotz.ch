@@ -3,18 +3,13 @@ title: Hello Google Cloud Platform and good bye AWS
 date: 2016-08-12T14:41:54+00:00
 author: Janik von Rotz
 slug: hello-google-cloud-platform-and-good-bye-aws
-dsq_thread_id:
-  - "5060595111"
 images:
   - /wp-content/uploads/2016/08/Google-Cloud-Platform-1200x741.png
 categories:
+  - Web server
+  - System engineering
+  - Cloud computing
   - Blog
-  - MySQL
-  - Nginx
-  - Piwik
-  - Ubuntu Server
-  - Web development
-  - WordPress
 tags:
   - google
   - hosting

@@ -8,7 +8,7 @@ images:
 categories:
   - Office 365
 tags:
-  - active directory
+  - activedirectory
   - provisioning
 ---
 As part of the user provisioning process in my company every user account gets an Office 365 license.

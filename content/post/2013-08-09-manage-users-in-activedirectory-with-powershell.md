@@ -6,10 +6,9 @@ slug: manage-users-in-activedirectory-with-powershell
 images:
   - /wp-content/uploads/2013/08/Active-Directory-Logo.png
 categories:
-  - Scripting
+  - scripting
 tags:
   - activedirectory
-  - management
   - powershell
   - quest module
 ---

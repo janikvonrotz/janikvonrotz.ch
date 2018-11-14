@@ -6,7 +6,7 @@ slug: powershell-powerup-package-manager
 images:
   - /wp-content/uploads/2013/07/PowerShell.png
 categories:
-  - Scripting
+  - scripting
 tags:
   - manager
   - package

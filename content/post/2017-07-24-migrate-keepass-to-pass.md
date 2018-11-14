@@ -6,21 +6,12 @@ slug: migrate-keepass-to-pass
 images:
   - /wp-content/uploads/2017/07/Pass-Unix-password-manager.png
 categories:
-  - KeePass
+  - Security
 tags:
-  - chrome
-  - cli
-  - commandline
   - keepass
-  - mac
-  - manager
   - migration
-  - pass
   - password
-  - solution
-  - standard
   - unix
-  - windows
 ---
 I'm using [KeePass](http://keepass.info/) for a few years now. It always has been the password manager of my choice. 
 Currently I'm using KeePass on my Mac and Windows connected to the same database file. The KeePass database file is stored in a OneDrive folder, encrypted with a password and keyfile, which is stored in the [Keybase](https://keybase.io) filesystem. This setup gives me maximum security and portability. However, it makes it impossible to use KeePass on my mobile device. Also I miss the possibility to use KeePass in my browser or on the command line. I've looked for an alternative solution, which doesn't compromise on security and gives me the same level of portability. 

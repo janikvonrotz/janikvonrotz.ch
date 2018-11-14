@@ -8,7 +8,6 @@ images:
 categories:
   - Music
 tags:
-  - locco ticos
   - o3m
   - one man music machine
   - playlist

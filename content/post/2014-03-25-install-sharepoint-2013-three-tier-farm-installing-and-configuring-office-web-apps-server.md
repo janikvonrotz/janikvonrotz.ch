@@ -8,7 +8,6 @@ images:
 categories:
   - Microsoft infrastructure
 tags:
-  - apps
   - project
   - server
   - sharepoint

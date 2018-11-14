@@ -3,19 +3,14 @@ title: Deploy your Meteor app with PM2
 date: 2017-03-14T14:12:42+00:00
 author: Janik von Rotz
 slug: deploy-your-meteor-app-with-pm2
-dsq_thread_id:
-  - "5631475555"
 images:
   - /wp-content/uploads/2017/02/Meteor-Logo-inverted.png
 categories:
-  - Meteor
+  - JavaScript development
 tags:
-  - configuration
-  - deploy
-  - management
+  - deployment
   - meteor
   - pm2
-  - process
 ---
 PM2 is a well-known node process manager. Not so well-known is its deployment feature. With pm2 you can reasonable easy deploy any node application. As Meteor is always a node app at its heart I've decided to deploy my current Meteor project with PM2.
 <!--more-->

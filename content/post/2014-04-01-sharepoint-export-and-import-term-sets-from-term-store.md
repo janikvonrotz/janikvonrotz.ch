@@ -12,7 +12,7 @@ tags:
   - function
   - metadata
   - powershell
-  - script
+  - scripting
   - sharepoint
 ---
 The SharePoint term store service is one of the most important parts of a SharePoint installation. It's the best place to store an manage global metadata for your companies documents.

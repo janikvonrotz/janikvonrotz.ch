@@ -6,7 +6,7 @@ slug: exchange-update-offline-adress-book
 images:
   - /wp-content/uploads/2013/08/exchange-2013-e1393417827333.jpg
 categories:
-  - Scripting
+  - scripting
 tags:
   - error
   - exchange

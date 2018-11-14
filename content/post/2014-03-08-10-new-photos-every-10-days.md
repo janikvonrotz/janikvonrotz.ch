@@ -8,7 +8,7 @@ images:
 categories:
   - Photography
 tags:
-  - photographers
+  - photographer
   - photographs
   - pictures
   - tumblr

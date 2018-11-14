@@ -6,25 +6,13 @@ slug: manage-the-life-cycle-of-your-sccm-applicatons-with-powershell-part-1-serv
 images:
   - /wp-content/uploads/2017/08/SCCM-PowerShell-e1503910243136.jpeg
 categories:
-  - Configuration Manager
+  - Client management
 tags:
-  - "1702"
-  - advanced
-  - application
-  - automation
   - configuration manager
-  - console
-  - current branch
-  - deploy
-  - deployment
-  - installation
   - life cycle
-  - management
   - powershell
   - sccm
-  - script
   - system center configuration manager
-  - wrapper
 ---
 I'm currently planning and building a System Center Configuration Manager (SCCM) infrastructure for a local hospital. SCCM is a complex system composed of various components to make the client and software life cycle management feasible. While configuring SCCM is a tedious job which is done once, managing applications is a recurring process. That's why the application life cycle is the perfect candidate for scripted automation. With the most recent SCCM release Microsoft made it a lot easier to use the power of PowerShell. I've developed a few scripts which help creating, deploying and deleting SCCM applications. Configuring applications manually can be very bothersome and is always at risk for misconfiguration. The benefit for automation is huge.
 <!--more-->

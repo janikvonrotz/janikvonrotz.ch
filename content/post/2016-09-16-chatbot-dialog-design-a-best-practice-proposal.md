@@ -3,12 +3,10 @@ title: 'Chatbot dialog design - a best practice proposal'
 date: 2016-09-16T17:38:22+00:00
 author: Janik von Rotz
 slug: chatbot-dialog-design-a-best-practice-proposal
-dsq_thread_id:
-  - "5149455320"
 images:
   - /wp-content/uploads/2016/09/UX-banner-e1474038570257.jpg
 categories:
-  - Chatbot
+  - Cognitive computing
 ---
 While working on a new chatbot I had to come up with good examples to start and led a conversation with the chatbot. For this I analyzed other bots, tracked the steps it takes to achieve a specific goal and kept notes on repeating patterns. In result me and my team came up with a few basic principles to design dialogs in conversational bots.
 <!--more-->

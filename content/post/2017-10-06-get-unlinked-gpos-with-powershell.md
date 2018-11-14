@@ -6,16 +6,12 @@ slug: get-unlinked-gpos-with-powershell
 images:
   - /wp-content/uploads/2017/10/PowerShell-Get-unlinked-GPOs.png
 categories:
-  - PowerShell
+  - scripting
 tags:
   - compliance
   - group policy
-  - list
-  - management
   - powershell
-  - report
-  - settings
-  - unlinked
+  - reporting
 ---
 In terms of IT compliance having valid GPOs is essential. They must be update to date and the GPO directory should be free of any unlinked GPOs. Retrieving a list of unlinked GPOs in the management console is impossible. With PowerShell it is quite easy.
 <!--more-->

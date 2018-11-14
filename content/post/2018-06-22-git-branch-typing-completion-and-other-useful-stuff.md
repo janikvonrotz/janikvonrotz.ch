@@ -6,7 +6,7 @@ slug: git-branch-typing-completion-and-other-useful-stuff
 images:
   - /wp-content/uploads/2018/06/git-completion-folder.png
 categories:
-  - Blog
+  - Software development
 ---
 Recently I was looking a way to have auto completion with git when checking out a branch. The solution was kind of obvious. The [github git mirror repository](https://github.com/git/git) has a [folder containing experimental tools](https://github.com/git/git/tree/master/contrib). One of these tools is a shell scripts that enables completion for various git sub commands. Exactly what I was looking for.
 <!--more-->

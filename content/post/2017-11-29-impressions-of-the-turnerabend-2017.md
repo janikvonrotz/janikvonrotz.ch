@@ -3,20 +3,16 @@ title: Impressions of the Turnerabend 2017
 date: 2017-11-29T19:26:40+00:00
 author: Janik von Rotz
 slug: impressions-of-the-turnerabend-2017
-specific_page_layout:
-  - default-sidebar
 images:
   - /wp-content/uploads/2017/11/1-Sportlight-Banner.jpg
 categories:
   - Photography
+  - Sports
 tags:
-  - cinema
   - community
   - event
   - gymnastic
-  - impressions
   - organization
-  - show
   - sports
 ---
 My local sports club [STV Kerns](https://www.tvkerns.ch) organized and performed a cinema themed gymnastic show [Turnerabend](http://turnerabend.ch). Together with other sports clubs we've put together a program and presented during two evenings and one after noon. During the event I was in charge of technical aspects and making photos of the show. Here are some of my favorites.

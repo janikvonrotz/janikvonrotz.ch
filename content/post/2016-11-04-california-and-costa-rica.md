@@ -3,25 +3,13 @@ title: California and Costa Rica
 date: 2016-11-04T18:20:25+00:00
 author: Janik von Rotz
 slug: california-and-costa-rica
-dsq_thread_id:
-  - "5278719189"
 images:
   - /wp-content/uploads/2016/11/California-and-Costa-Rica-banner-1200x559.jpg
 categories:
   - Photography
 tags:
   - america
-  - caribbean
-  - coast
-  - costa
   - costa rica
-  - lake
-  - life
-  - palms
-  - sea
-  - thaoe
-  - travel
-  - usa
   - yosemite
 ---
 During the last seven weeks I've spent a lot of time in California. With my study class we worked on projects with local companies in the Silicon Valley. It was a great experience. For the weekends I had decided to visit Yosemite and the beautiful lake Tahoe again. Despite the Californian drought I had some good hikes there. Before leaving for home I took a flight to Costa Rica and spent a week there. Seeing the caribbean  coast not on a post card was a very nice thing. Now here are some pictures you might like:

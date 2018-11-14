@@ -6,7 +6,7 @@ slug: manage-security-groups-in-a-organizational-strcture
 images:
   - /wp-content/uploads/2013/07/PowerShell.png
 categories:
-  - Scripting
+  - scripting
 tags:
   - activedirectory
   - organizational

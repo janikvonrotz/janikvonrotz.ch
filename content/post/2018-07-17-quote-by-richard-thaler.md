@@ -2,14 +2,12 @@
 title: "Quote by Richard Thaler"
 date: 2018-07-17T09:01:21+02:00
 categories:
- - Quote
+ - Quotes
 tags:
- - Richard Thaler
- - Freakonomics
- - Podcast
+ - freakonomics
+ - podcast
 images:
   - /images/professional microphone in recording studio.jpg
-draft: false
 ---
 
 > *People Aren’t Dumb. The World Is Hard.*  

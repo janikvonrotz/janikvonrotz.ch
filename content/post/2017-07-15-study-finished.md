@@ -9,10 +9,6 @@ categories:
   - Blog
 tags:
   - celebration
-  - degree
-  - finish
-  - honor
-  - received
   - speech
   - study
 ---

@@ -6,7 +6,7 @@ slug: powershell-awesome-list-introduction
 images:
   - /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png
 categories:
-  - Scripting
+  - scripting
 tags:
   - awesome
   - github

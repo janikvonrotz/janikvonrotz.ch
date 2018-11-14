@@ -3,22 +3,14 @@ title: Profiling Ansible roles and tasks
 date: 2018-03-07T13:11:25+00:00
 author: Janik von Rotz
 slug: profiling-ansible-roles-and-tasks
-specific_page_layout:
-  - default-sidebar
 images:
   - /wp-content/uploads/2018/02/Ansible-text-only-e1519640301147.png
 categories:
-  - Ansible
+  - Continiuous delivery
 tags:
   - ansible
-  - benachmark
-  - callback
-  - measure
+  - benchmark
   - performance
-  - plugin
-  - profile
-  - roles
-  - tasks
 ---
 Performance is critical when deploying an environment with Ansible. By default Ansible does not tell how much time elapsed for specific role or task. However, this information would be critical to identify inefficient tasks. Luckily Ansible offers an interface for callback plugins. With the help of a callback plugin one can hook into the role or task execution call. In this post I'll show you how to configure the callback plugins for profiling roles and tasks. It is quite easy.
 <!--more-->

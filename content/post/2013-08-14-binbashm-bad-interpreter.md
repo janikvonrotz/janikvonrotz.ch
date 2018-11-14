@@ -11,7 +11,7 @@ tags:
   - bash
   - error
   - linux
-  - script
+  - scripting
   - unix
 ---
 If you're using windows and linux/unix and your also a system administrator who likes to script. The chances are high that you'll get this error when executing a script on a linux/unix machine that has been made on a windows machine: `bin/bash^M: bad interpreter: No such file or directoy`

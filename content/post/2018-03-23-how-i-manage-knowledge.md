@@ -3,8 +3,6 @@ title: How I manage knowledge
 date: 2018-03-23T16:40:48+00:00
 author: Janik von Rotz
 slug: how-i-manage-knowledge
-specific_page_layout:
-  - default-sidebar
 images:
   - /wp-content/uploads/2018/03/Knowledge-Book-Site.jpg
 categories:
@@ -12,9 +10,6 @@ categories:
 tags:
   - knowledge base
   - knowledge management
-  - problem
-  - solution
-  - strategy
   - taxonomy
 ---
 So far I mostly posted about technical aspects of IT. Mainly solutions for particular problems. In future I would like to change that a bit. Not only because I am currently working on confidential projects, but also because I believe I have developed some ideas worth to be shared. 

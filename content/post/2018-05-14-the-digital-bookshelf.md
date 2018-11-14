@@ -8,11 +8,8 @@ images:
 categories:
   - Blog
 tags:
-  - book
-  - cover
   - epub
   - memories
-  - poster
   - tudluk
 ---
 Two years ago I've started to read books on my mobile device. I have skipped the whole e-reader thing and went straight from hard covers to e-books. Many doubt that you can read a book comfortably on the smart phone, but I can tell with certainty that it works well. It  is only a matter of changing your habits.

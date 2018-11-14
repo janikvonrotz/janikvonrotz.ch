@@ -3,11 +3,10 @@ title: "PL SQL - Declare an array of objects and loop insert statements"
 date: 2018-07-24T15:49:48+02:00
 slug: plsql-declare-an-array-of-objects-and-loop-insert-statements
 categories:
- - SQL-Server
+ - Relational databases
 tags:
  - oracle
  - plsql
- - type declaration
 images:
   - /images/oracle pl sql.jpg
 ---

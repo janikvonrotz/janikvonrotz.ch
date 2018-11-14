@@ -3,20 +3,15 @@ title: 'Working with Ansible - Cleanup tasks'
 date: 2018-02-26T11:30:13+00:00
 author: Janik von Rotz
 slug: working-with-ansible-cleanup-tasks
-specific_page_layout:
-  - default-sidebar
 images:
   - /wp-content/uploads/2018/02/Ansible-text-only-e1519640301147.png
 categories:
-  - Ansible
+  - Continiuous delivery
 tags:
   - ansible
   - cleanup
   - environments
-  - reinstallation
-  - task
   - transition
-  - uninstallation
 ---
 My current project is heavily based on [Ansible](https://www.ansible.com/). We use Ansible to deploy into different environments and domains. The configuration has become quite complex. That is why we need to cleanup a server from time to time. Especially when one has to upgrade services on a server and requires to get rid of the old services first. In this post I would like to show you, how we define and run Ansible cleanup tasks in our project.
 <!--more-->

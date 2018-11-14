@@ -6,9 +6,9 @@ slug: compare-active-directory-group-membership
 images:
   - /wp-content/uploads/2013/12/PowerShell-and-ActiveDirectory.png
 categories:
-  - Scripting
+  - scripting
 tags:
-  - memebership
+  - membership
   - powershell
 ---
 The following scripts allows you to compare the group membership of two users.

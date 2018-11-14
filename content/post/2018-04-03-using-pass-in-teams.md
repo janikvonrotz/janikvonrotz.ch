@@ -3,23 +3,14 @@ title: Using pass in teams
 date: 2018-04-03T08:29:22+00:00
 author: Janik von Rotz
 slug: using-pass-in-teams
-specific_page_layout:
-  - default-sidebar
 images:
   - /wp-content/uploads/2018/04/multiple-locks.jpg
 categories:
-  - IT Security
+  - Security
 tags:
-  - exchange
   - git
   - gpg
-  - key
-  - manager
-  - pass
   - password
-  - shared
-  - store
-  - team
   - unix
 ---
 # Introduction

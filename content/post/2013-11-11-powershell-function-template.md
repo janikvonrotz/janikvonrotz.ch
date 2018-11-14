@@ -6,11 +6,11 @@ slug: powershell-function-template
 images:
   - /wp-content/uploads/2013/07/PowerShell.png
 categories:
-  - Scripting
+  - scripting
 tags:
   - function
   - powershell
-  - script
+  - scripting
   - template
 ---
 A good way to start writing a custom function in PowerShell is an advanced template like this.

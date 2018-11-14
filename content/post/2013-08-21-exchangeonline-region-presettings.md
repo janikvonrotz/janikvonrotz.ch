@@ -7,12 +7,12 @@ images:
   - /wp-content/uploads/2013/08/exchange-2013-e1393417827333.jpg
 categories:
   - Office 365
-  - Scripting
+  - scripting
 tags:
   - exchange
   - office365
   - regional
-  - script
+  - scripting
   - settings
 ---
 This post is part of my Office365 experience. Today I've made a script to get startet with the ExchangeOnline PowerShell console.

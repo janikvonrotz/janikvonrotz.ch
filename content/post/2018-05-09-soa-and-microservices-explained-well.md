@@ -6,10 +6,9 @@ slug: soa-and-microservices-explained-well
 images:
   - /wp-content/uploads/2018/05/architecture.jpg
 categories:
-  - Blog
+  - System engineering
 tags:
-  - container
-  - link
+  - containerization
   - microservices
   - service-oriented-architecture
   - SOA

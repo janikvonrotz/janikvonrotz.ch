@@ -8,7 +8,7 @@ images:
 categories:
   - Photography
 tags:
-  - beautifult
+  - beautiful
   - corsica
 ---
 Last summer I did a cycle trip in Corsica. Here are a few impressions from this beautiful island:

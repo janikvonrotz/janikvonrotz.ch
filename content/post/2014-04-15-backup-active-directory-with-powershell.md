@@ -3,12 +3,10 @@ title: Backup Active Directory with PowerShell
 date: 2014-04-15T13:57:06+00:00
 author: Janik von Rotz
 slug: backup-active-directory-with-powershell
-dsq_thread_id:
-  - "2614387113"
 images:
   - /wp-content/uploads/2013/12/PowerShell-and-ActiveDirectory.png
 categories:
-  - Scripting
+  - scripting
 tags:
   - backup
   - powershell

@@ -6,14 +6,13 @@ slug: manage-sharepoint-list-alerts-for-multiple-users-on-multiple-lists
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
 categories:
-  - Scripting
+  - scripting
   - SharePoint
 tags:
-  - alert
   - deploy
   - manage
   - powershell
-  - script
+  - scripting
   - sharepoint
   - worfklow
 ---

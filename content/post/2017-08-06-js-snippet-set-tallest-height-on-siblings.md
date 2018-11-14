@@ -4,17 +4,11 @@ date: 2017-08-06T20:40:15+00:00
 author: Janik von Rotz
 slug: js-snippet-set-tallest-height-on-siblings
 categories:
-  - JavaScript
+  - JavaScript development
 tags:
   - function
-  - height
-  - js
+  - javascript
   - no-jquery
-  - pure
-  - set
-  - snippet
-  - tallest
-  - vanilla
 ---
 This post is another contribution to "I hope that I never have to use jQuery again". The problem solved this time is quite simple. We want to set the same height for a group of divs. So not like this:
 

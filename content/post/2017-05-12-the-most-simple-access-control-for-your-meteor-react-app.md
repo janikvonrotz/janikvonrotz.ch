@@ -6,23 +6,11 @@ slug: the-most-simple-access-control-for-your-meteor-react-app
 images:
   - /wp-content/uploads/2017/05/RBAC-Meteor.png
 categories:
-  - Blog
-  - Meteor
-  - React
+  - JavaScript development
 tags:
   - access
   - acl
-  - action
-  - control
-  - easy
-  - example
-  - list
-  - meteor
-  - permission
   - react
-  - role
-  - simple
-  - user
 ---
 For my last Meteor React app I've designed the most simple role based access control. The basic idea is that users can have multiple roles and every action possible is only allowed by a specified set of roles. For my Meteor React app the following scenarios were considered: 
 <!--more-->

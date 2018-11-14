@@ -6,19 +6,12 @@ slug: manage-the-life-cycle-of-your-sccm-applicatons-with-powershell-part-3-depl
 images:
   - /wp-content/uploads/2017/08/SCCM-PowerShell-e1503910243136.jpeg
 categories:
-  - Configuration Manager
+  - Client management
 tags:
-  - "1702"
-  - application
-  - automation
   - configuration manager
-  - current branch
-  - deployment
   - life cycle
-  - management
   - powershell
   - sccm
-  - script
   - system center configuration manager
 ---
 "Manage the life cycle of your SCCM applications with PowerShell" is a short post series where I share my PowerShell experience with System Center Configuration Manager. In [my last post](https://janikvonrotz.ch/2017/08/29/manage-the-life-cycle-of-your-sccm-applicatons-with-powershell-part-2-create-applications) I've shown you a script that creates applications and all assets required to deploy it. This time I have a script to distribute the application content and deploy the application to its collections.

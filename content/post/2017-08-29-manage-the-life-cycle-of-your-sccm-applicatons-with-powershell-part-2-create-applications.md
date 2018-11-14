@@ -6,19 +6,12 @@ slug: manage-the-life-cycle-of-your-sccm-applicatons-with-powershell-part-2-crea
 images:
   - /wp-content/uploads/2017/08/SCCM-PowerShell-e1503910243136.jpeg
 categories:
-  - Configuration Manager
+  - Client management
 tags:
-  - "1702"
-  - advanced
-  - application
-  - automation
   - configuration manager
-  - current branch
-  - deployment
-  - installation
+  - life cycle
   - powershell
   - sccm
-  - script
   - system center configuration manager
 ---
 "Manage the life cycle of your SCCM applications with PowerShell" is a short post series where I share my PowerShell experience with System Center Configuration Manager. In [my last post](https://janikvonrotz.ch/2017/08/29/manage-the-life-cycle-of-your-sccm-applicatons-with-powershell-part-1-service-accounts-and-package-source/) I've showed you a script that creates the package source folder structure and another that adds the service users for SCCM. As mentioned these scripts have only been published for a better understanding of the follow-up scripts.

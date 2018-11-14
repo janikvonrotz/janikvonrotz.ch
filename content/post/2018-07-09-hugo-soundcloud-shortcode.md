@@ -6,16 +6,11 @@ slug: hugo-soundcloud-shortcode
 images:
   - /images/hugo static site generator logo.jpg
 categories:
-  - Hugo
-  - Music
+  - Content management systems
 tags:
  - hugo
  - soundcloud
- - shortcode
- - embed
  - playlists
- - convert
- - markdown
 ---
 
 The Hugo templating system is very flexible. Even when markdown falls short you can add simple snippets inside the content files. Hugo created [shortcodes](https://gohugo.io/content-management/shortcodes/) to circumvent the limitations. For my blog I have create a custom shortcode for embeding Soundcloud playlists into my markdown posts. Creating custom shortcodes is very easy. I will show you how it is done and moreover provide a tool to convert existing Soundcloud set urls into the custom Soundcloud shortcode.

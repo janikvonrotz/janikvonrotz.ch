@@ -9,7 +9,6 @@ categories:
   - Music
 tags:
   - album
-  - dub
   - funk
   - glitch
   - playlist

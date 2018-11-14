@@ -14,7 +14,6 @@ tags:
   - naming concept
   - predictability
   - project management
-  - structure
   - taxonomy
 ---
 *This post is about a thought I wanted to process and thus wrote it down.*

@@ -3,25 +3,17 @@ title: Graphql with Apollo, Meteor and React
 date: 2016-10-09T19:39:30+00:00
 author: Janik von Rotz
 slug: graphql-with-apollo-meteor-and-react
-dsq_thread_id:
-  - "5209861289"
 images:
   - /wp-content/uploads/2016/10/react-meteor-graphl-apollo-1200x356.jpg
 categories:
-  - Apollo
-  - Blog
-  - Meteor
-  - React
+  - JavaScript development
 tags:
   - apollo
-  - build
   - graphql
   - javascript
   - meteor
   - project
   - react
-  - stack
-  - system
 ---
 For my last project I had to build a web application to administrate a MongoDB database. Due to using Meteor quite a lot I heard about Graphql and the Apollostack. Graphql, which is a specification done by Facebook engineers, promises to be the better REST API (which I hope it is). I became curious and decided the build the server API with Apollo. First I tried to evade using the Meteor as build system as I don't want to get too accustomed to this full-stack ecosystem. However, building a live-reload server and client build system in ES6 with Node.js, Babel and Webpack was simply too much work compared to building this simple web app. So in result this was my stack:
 <!--more-->

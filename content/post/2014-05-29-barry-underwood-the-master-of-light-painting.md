@@ -9,7 +9,6 @@ categories:
   - Photography
 tags:
   - exposure
-  - light
   - painted
   - photographer
   - photographs

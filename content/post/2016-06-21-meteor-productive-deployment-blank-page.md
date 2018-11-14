@@ -3,32 +3,18 @@ title: Meteor productive deployment blank page
 date: 2016-06-21T10:16:07+00:00
 author: Janik von Rotz
 slug: meteor-productive-deployment-blank-page
-dsq_thread_id:
-  - "4927016387"
 images:
   - /wp-content/uploads/2015/12/Meteor-Logo.png
 categories:
-  - Blog
-  - Meteor
+  - JavaScript development
 tags:
-  - blank
-  - deployment
-  - empty
   - es6
   - git
   - heroku
   - jsx
-  - master
   - meteor
-  - minifier
-  - minify
   - package
-  - page
-  - problem
-  - production
-  - push
   - react
-  - run
 ---
 First some background. I've built a Meteor app and decided to deploy it to Heroku. There are many short and simple guides out there on how to do that. As I did so and opened the App for the first on Heroku I simply received a blank page. Where did my javascript code go? Heroku logs didn't tell much.
 <!--more-->

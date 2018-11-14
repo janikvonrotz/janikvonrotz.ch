@@ -6,7 +6,7 @@ slug: find-dead-sharepoint-activedirectory-groups
 images:
   - /wp-content/uploads/2013/07/PowerShell.png
 categories:
-  - Scripting
+  - scripting
   - SharePoint
 tags:
   - activedirectory

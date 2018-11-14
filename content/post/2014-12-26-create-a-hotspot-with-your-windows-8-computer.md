@@ -6,7 +6,7 @@ slug: create-a-hotspot-with-your-windows-8-computer
 images:
   - /wp-content/uploads/2014/12/windwows-8-wlan.png
 categories:
-  - Windows
+  - System tooling
 tags:
   - hotspot
   - network

@@ -8,7 +8,7 @@ images:
 categories:
   - SharePoint
 tags:
-  - active directory
+  - activedirectory
   - sharepoint
   - time to live
   - token

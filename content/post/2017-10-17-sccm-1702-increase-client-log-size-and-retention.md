@@ -8,16 +8,13 @@ specific_page_layout:
 images:
   - /wp-content/uploads/2017/10/System-Center-Configuration-Manager-Logo.jpg
 categories:
-  - Configuration Manager
+  - Client management
 tags:
-  - client
   - configuration manager
-  - history
-  - increase
-  - logging
-  - retention
-  - size
-  - system center
+  - life cycle
+  - powershell
+  - sccm
+  - system center configuration manager
 ---
 With additional steps in an image deployment task sequence the log files will grow quite big. By default the Configuration Manager client keeps a log history of 0 and a size limit of 2 MB for each log file. In result you'll find yourself missing important details when trying to debug a failed operating system deployment. At some point the log files will be cut off. In order to increase the log size and retention, parameters must be configured in two places.
 <!--more-->

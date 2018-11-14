@@ -9,7 +9,7 @@ categories:
   - SharePoint
 tags:
   - powershell
-  - script
+  - scripting
   - sharepoint
   - versioning
 ---

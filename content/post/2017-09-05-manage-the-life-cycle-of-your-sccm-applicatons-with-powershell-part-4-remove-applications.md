@@ -6,18 +6,13 @@ slug: manage-the-life-cycle-of-your-sccm-applicatons-with-powershell-part-4-remo
 images:
   - /wp-content/uploads/2017/08/SCCM-PowerShell-e1503910243136.jpeg
 categories:
-  - Configuration Manager
+  - Client management
 tags:
-  - application
-  - automation
   - configuration manager
-  - deploy
-  - deployment
   - life cycle
-  - management
-  - removal
+  - powershell
   - sccm
-  - script
+  - system center configuration manager
 ---
 "Manage the life cycle of your SCCM applications with PowerShell" is a short post series where I share my PowerShell experience with System Center Configuration Manager. In [my last post](https://janikvonrotz.ch/2017/09/01/manage-the-life-cycle-of-your-sccm-applicatons-with-powershell-part-3-deploy-applications/) I've shown you a script to distribute application content and deploy an application to its collections. In my final post I'll show you the last part of the app life cycle - the termination. 
 <!--more-->

@@ -3,12 +3,11 @@ title: "System Observability and Chaos Engineering"
 slug: 2018-09-17-system-observability-and-chaos-engineering
 date: 2018-09-16T14:58:02+02:00
 categories:
- - Work
+ - System engineering
 tags:
- - chaos
- - engineering
+ - chaos engineering
  - observability
- - resilience
+ - system resilience
  - distributed systems
  - monitoring
  - unpredictability

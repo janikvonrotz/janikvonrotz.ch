@@ -6,18 +6,13 @@ slug: remove-provisioned-appx-packages-from-windows-image-for-operating-system-d
 images:
   - /wp-content/uploads/2017/09/Remove-selected-appx-packages-from-wim.png
 categories:
-  - Configuration Manager
+  - Client management
 tags:
-  - apps
   - configuration manager
-  - image
-  - provisioned
-  - remove
+  - life cycle
+  - powershell
   - sccm
-  - store
-  - system center
-  - windows
-  - windows 10
+  - system center configuration manager
 ---
 While preparing a Windows image for SCCM deployment I looked for a viable solution to remove Windows apps from the image. SCCM offers a lot options  to execute this kind of action such as running a task sequence or install an application. But none of the options worked out for me. Either they were too complicated to configure or simply didn't work as expected. Today I've found a [script on TechNet](https://gallery.technet.microsoft.com/Removing-Built-in-apps-65dc387b) seemed to a good solution. This script showed me how easy it is to mount a windows image and remove the app packages directory from it. However, the script was outdated and didn't offer the option to remove only selected apps. That's why I've created my own remix of the script.
 <!--more-->

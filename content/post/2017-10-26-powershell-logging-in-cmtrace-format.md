@@ -6,14 +6,10 @@ slug: powershell-logging-in-cmtrace-format
 images:
   - /wp-content/uploads/2017/10/CMTrace-tool.png
 categories:
-  - Configuration Manager
-  - PowerShell
+  - scripting
 tags:
   - cmtrace
   - configuration manager
-  - cycle
-  - format
-  - logging
   - powershell
   - scripting
   - system center

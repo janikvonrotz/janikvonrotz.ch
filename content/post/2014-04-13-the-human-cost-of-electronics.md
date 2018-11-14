@@ -3,8 +3,6 @@ title: The Human Cost of Electronics
 date: 2014-04-13T20:52:45+00:00
 author: Janik von Rotz
 slug: the-human-cost-of-electronics
-dsq_thread_id:
-  - "2609033530"
 images:
   - /wp-content/uploads/2014/04/The-Human-Cost-of-Electronics.png
 categories:
@@ -12,7 +10,7 @@ categories:
 tags:
   - asia
   - economics
-  - labor
+  - labor work
 ---
 This evening I came along a short documentary that really touched me.
 

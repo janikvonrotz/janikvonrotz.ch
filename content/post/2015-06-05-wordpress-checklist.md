@@ -8,7 +8,7 @@ images:
 categories:
   - Content management systems
 tags:
-  - check
+  - checklist
   - markdown
   - wordpress
 ---
