@@ -1,6 +1,6 @@
 ---
 title: "FDA for Algorithms and Technology"
-slug: 2018-11-14-fda-for-algorithms-and-technology
+slug: fda-for-algorithms-and-technology
 date: 2018-11-14T11:53:07+01:00
 categories:
  - Technology

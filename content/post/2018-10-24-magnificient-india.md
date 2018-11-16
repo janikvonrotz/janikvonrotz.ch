@@ -1,6 +1,6 @@
 ---
 title: "Magnificient India"
-slug: 2018-10-24-magnificient-india
+slug: magnificient-india
 date: 2018-10-24T21:00:56+02:00
 categories:
  - Traveling

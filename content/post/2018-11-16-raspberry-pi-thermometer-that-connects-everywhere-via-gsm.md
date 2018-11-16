@@ -1,23 +1,27 @@
 ---
-title: "2018 09 30 Raspberry Pi thermometer that connects from anywhere via GSM"
-slug: 2018-09-30-raspberry-pi-thermometer-that-connects-anyywhere-via-gsm
-date: 2018-09-24T20:00:23+02:00
+title: "2018 11 16 Raspberry Pi thermometer that connects from anywhere via GSM"
+slug: raspberry-pi-thermometer-that-connects-anyywhere-via-gsm
+date: 2018-11-16T20:00:23+02:00
 categories:
  - Maker
 tags:
  - rasperry pi
- - world
-image: /images/logo.png
+ - maker
+ - thermo sensor
+ - electronics
+ - graphql
+ - react
+image: /images/Project Lorauna/raspberry pi model 3.png
 draft: true
 ---
 
-In this tutorial I am going to show how you can build an online accessible thermometer using the Raspberry Pi 3 B-model.
+This tutorial is about how to build an online accessible thermometer using the Raspberry Pi 3 B-model.
 
 We will start by buying the electronic components and finish with a chart showing the temperature data.
 
 Walking through the tutorial requires basic knowledge in working with linux and advanced knowledge in building web applications. Whereas the web application part is optionally.
 
-Using a GSM module and a thermo sensor our Raspberry Pi will retrieve temparature data and save it to a graphql server.
+Using a mobile broadband connection and a thermo sensor our Raspberry Pi will measure the temparature and save it to a graphql server.
 
 Using react and a graphql client library we will create a chart with the temperature data.
 
@@ -43,7 +47,7 @@ This is my hardware shopping list.
 All this components should be available from your favorite electronics shop.
 
 **Edit:** I was not able to setup the GSM hat. The provided code by Altitude did not work: [Github - Missing timeout assignment issue](https://github.com/Altitude-Tech/IOTBit_GSM/issues/2). As an alternative I bought the [Huawei 
-E5330 - Mobile broadband router](https://consumer.huawei.com/in/mobile-broadband/e5330/). More details about the failed setup are below.
+E5330 - Mobile broadband router](https://consumer.huawei.com/in/mobile-broadband/e5330/). For more details about the failed setup read on.
 
 Source: [Medium - How to build a Raspberry Pi thermometer you can access anywhere (a beginner’s guide)](https://blog.dataplicity.com/how-to-build-a-raspberry-pi-thermometer-you-can-access-anywhere-a-beginner-s-guide-4ad44ce9f4c9)
 
@@ -63,9 +67,11 @@ The thermo sensor must be connected with the gpio interface.
 
 I got help from a friend to solder the resistor and wires.
 
+![assembled thermo sensor](/images/Project Lorauna/assembled thermo sensor.jpg)
+
 # Mobile internet connection
 
-**Edit:** Sadly I was not able to setup the GSM module. As mentioned in the first chapter the provided python library did not work for me. Also turns out that compared to the 3G and LTE modules you have to write an extensive set of low level commands in order to communicate with the module. So it so not a plugn'n play solution. Despite this drawbacks I've written down steps until I've failed.
+**Edit:** Sadly I was not able to setup the GSM module. As mentioned in the first chapter the provided python library did not work for me. Also it turned out that in comparison to the 3G and LTE modules you have to write an extensive set of low level commands in order to communicate with the GSM module. So it so not a plugn'n play solution. Despite this drawbacks I've written down the steps until I failed with the setup.
 
 ### Connect the pi
 
@@ -116,11 +122,9 @@ Enter: `/dev/serial0`
 If the programm finishes with *Verification ok* the upgrade was successful.
 
 **Edit:** This is how far I got. The scripts part of the IOTBit_GSM repo did not work for me. Instead I've setup the [Huawei 
-E5330 - Mobile broadband router](https://consumer.huawei.com/in/mobile-broadband/e5330/), which worked fine.
+E5330 - Mobile broadband router](https://consumer.huawei.com/in/mobile-broadband/e5330/), which worked perfectly.
 
-# Assemble everything
-
-![]()
+![mobile broadband router]()
 
 # Read the temperature
 
@@ -168,19 +172,22 @@ In the second part of the tutorial we are going to setup a simple web applicatio
 
 First signup for a [mLab](https://mlab.com/) account and create a new datbase and user.
 
+Write down the database connection  string.
+
 Then download the example api project.
 
 ```
 git clone https://github.com/janikvonrotz/lorauna-api
 cd lorauna-api
 touch .env
+vi .env
 ```
 
 Read the `README.md` file and set the environment variables accordingly.
 
 The example project not only allows to store temperatures, but also other data objects.
 
-Below detailed snippets are listed, which give a better undestanding of what is relevant for storing temperature data.
+Below snippets are listed, which should provide you a better undestanding of what is relevant for storing temperature data in the example project.
 
 The schema files describes the data properties and methods that are used to save a temperature measurement.
 
@@ -222,17 +229,17 @@ Mutation: {
 ...
 ```
 
-The example project can be deployed using [now by ZEIT](https://zeit.co/now) or any other deployment service (like Heroku, Netlify, ...).
+The example project can be deployed using [now by ZEIT](https://zeit.co/now) or any other deployment service (like Heroku, Netlify, DigitalOcean, ...).
 
 # Script for sending temperature data
 
 If you were able to deploy the example api, you can now create a script that acutally sends the data from the Raspberry Pi.
 
-**/home/pi/sendTemeperatureData.sh**
+**/home/pi/sendTemperatureData.sh**
 
 ```sh
 # get temperature data from sensor
-data=$(cat /sys/bus/w1/devices/28-00000a6a12a3/w1_slave | grep 't=' | cut -d "=" -f 2)
+data=$(cat /sys/bus/w1/devices/28-00000XXXXXXX/w1_slave | grep 't=' | cut -d "=" -f 2)
 
 # convert into float
 data=$(echo $data | sed 's/.\{2\}/&./')
@@ -260,23 +267,31 @@ Login with the `pi` user and edit the crontab file.
 
 `crontab -e`
 
-Add the following entry to the crontab file, it will run the script every five minutes.
+Add the following entry to the crontab file, it will run the script every ten minutes.
 
-`*/5 *  * * *   /home/pi/sendTemperatureData.sh`
+`*/10 *  * * *   /home/pi/sendTemperatureData.sh`
 
 # Query the thermo data
 
-If you successuflly send temeperature data, you can now query the api.
+If you successuflly sent temeperature data, you can now query the api.
 
-With curl it is very simple.
+Open the graphql playground in your browser `https://example.now.sh/` and enter the following query.
 
 ```sh
-curl 'https://lorauna-api.now.sh/' -H 'Accept-Encoding: gzip, deflate, br' -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Connection: keep-alive' -H 'DNT: 1' -H 'Origin: https://example.now.sh' --data-binary '{"query":"query {\n\tallTemperatures{\n    _id\n    value\n    created\n  }\n}"}' --compressed
+query {
+  allTemperatures {
+    _id
+    value
+    created
+  }
+}
 ```
+
+On the right side all temperature readings are listed.
 
 # Create a chart
 
-In order to visualize the temperature data I have created another example app.
+ I have created another example app for visualizing the temperature data.
 
 Same procedure here. Clone the react example app and update the `.env` file.
 
@@ -284,6 +299,7 @@ Same procedure here. Clone the react example app and update the `.env` file.
 git clone https://github.com/janikvonrotz/lorauna
 cd lorauna
 touch .env
+vi .env
 ```
 
 Now you can deploy the application with *now* or run the project locally.
@@ -297,25 +313,12 @@ yarn
 yarn dev
 ```
 
-Under `/temperatures` a chart like the one below should be showed.
+Open the app in your browser and navigate to `/temperatures`.
+
+Now a chart like the one below should be showed.
 
 ![temperature chart](/images/Project Lorauna/temperature chart.png)
 
 # Questions
 
-Any questions? Let me know if you were able to follow this tutorial or got stuck somewhere.
-
-# Troubleshooting
-
-### kernel header mismatch
-
-If the IOT Bit driver installation failes with an error message like:
-
-`Your kernel headers for kernel 4.14.56-v7+ cannot be found at`
-
-Run the following commands:
-
-```
-rpi-update
-rpi-source
-```
+Any questions? Let me know if you were able to follow this tutorial or got stuck somewhere. I am glad to help you.
