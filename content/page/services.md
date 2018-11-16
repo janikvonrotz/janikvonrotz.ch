@@ -12,13 +12,17 @@ images:
 draft: true
 ---
 
+# 
+
 # Web Application Development
+
 
 
 # Collaboration Process Design
 
 
-# Microsoft Client Infrastructure
+# Microsoft Infrastructure
+
 
 
 # Application Integration
@@ -26,5 +30,4 @@ draft: true
 
 
 # Knowledge Management
-
 
