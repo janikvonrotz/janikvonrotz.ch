@@ -235,6 +235,8 @@ The example project can be deployed using [now by ZEIT](https://zeit.co/now) or 
 
 If you were able to deploy the example api, you can now create a script that acutally sends the data from the Raspberry Pi.
 
+The script requries the *bc* binary, install it with yum `sudo apt install bc`
+
 **/home/pi/sendTemperatureData.sh**
 
 ```sh
@@ -242,7 +244,7 @@ If you were able to deploy the example api, you can now create a script that acu
 data=$(cat /sys/bus/w1/devices/28-00000XXXXXXX/w1_slave | grep 't=' | cut -d "=" -f 2)
 
 # convert into float
-data=$(echo $data | sed 's/.\{2\}/&./')
+data=$(echo "scale=3;$data/1000" | bc -l)
 
 curl \
   -X POST \
