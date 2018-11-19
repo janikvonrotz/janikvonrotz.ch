@@ -41,7 +41,7 @@ This is my hardware shopping list.
 * ~~Altitude Tech IoT Bit Antenna~~
 * ~~Altitude Tech IoT Bit GSM HAT for the Raspberry Pi~~
 * IoT SIM card
-* **
+* Mobile broadband router
 
 All this components should be available from your favorite electronics shop.
 
