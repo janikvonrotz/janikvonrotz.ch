@@ -22,14 +22,14 @@ However, it has changed not only for the good. A good example is Instagram. Driv
 
 The economic cost of this side effects is hug and not shared among the tech companies. They are not liable for the costs they cause by building addictive technologies and uncontrollable algorithms. Not yet.
 
-Of course they do not that on purpose, it is the result of maximizing peoples attention span and thus profit. Often developers do not have any intention in doing harm. They are told to increase user interaction, running A/B tests and make an app more user friendly. Sometimes only ethnic software designers are able to bring forward and adress the issue. They investigate whether products meet the companies vision of doing good or have been turned into a harmful technology.
+Of course they do not that on purpose, it is the result of maximizing peoples attention span and thus profit. Often developers do not have any intention in doing harm. They are told to increase user interaction, running A/B tests and make an app more user friendly. Sometimes only ethnic software designers are able to bring forward and address the issue. They investigate whether products meet the companies vision of doing good or have been turned into a harmful technology.
 
 Medicine faced this problem years ago. That is why the Hippocratic oath and the FDA have been established. They oath tells medicine manufacturers not to produce harmful medicine and the FDA makes sure they comply.
 The idea of "FDA for Algorithms and Technology" is building a similar construct and institution. The oath would be something like:
 
 > First do not harm the users health.
 
-And the Technology and Algorithm Adminsitration (TAA) would make sure tech companies comply. The TAA would be able to withdraw apps or platforms from the internet and app stores. Tech companies with a certain amount of users or a demographic minority such as children, would be audited on a regular basis.
+And the Technology and Algorithm Administration (TAA) would make sure tech companies comply. The TAA would be able to withdraw apps or platforms from the internet and app stores. Tech companies with a certain amount of users or a demographic minority such as children, would be audited on a regular basis.
 
 This is not my idea, but I like it. What do you think? Would welcome an institution such as the TAA? Do you think it would harm economic growth and innovation? Let me know in the comments.
 
