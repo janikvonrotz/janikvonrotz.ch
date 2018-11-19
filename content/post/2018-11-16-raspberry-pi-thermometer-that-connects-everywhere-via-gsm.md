@@ -1,5 +1,5 @@
 ---
-title: "2018 11 16 Raspberry Pi thermometer that connects from anywhere via GSM"
+title: "Raspberry Pi thermometer that connects from anywhere via GSM"
 slug: raspberry-pi-thermometer-that-connects-anyywhere-via-gsm
 date: 2018-11-16T20:00:23+02:00
 categories:
