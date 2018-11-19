@@ -16,6 +16,7 @@ images:
 I form my opinions and judgments not based on newspapers and talks with people, but mostly from listening to podcasts and reading [hacker news](https://news.ycombinator.com/news). An idea that showed up in my feed a lot recently, is establishing an Food and Drug Administration (FDA) for algorithms<sup>1</sup> and technologies<sup>2</sup>.
 
 Algorithms and technologies haven changed the very fabric of human interaction and communication. The economic landscape has shifted, the service sector took over the largest part of the pi and tech companies lead the top. Online platforms run by powerful algorithms and technologies have become the interchange for consumers and suppliers. Social networks turned into basic building block for socializing.
+<!--more-->
 
 However, it has changed not only for the good. A good example is Instagram. Driven by a strategic incentive to maximize profit the social networking app has turned into an highly addictive drug. Maximizing profit means increasing the attention span of the user. Thus social network apps have turned into uncontrollable addictive Frankensteins. Instagram does not have to care about the harm they do to society and peoples health.
 

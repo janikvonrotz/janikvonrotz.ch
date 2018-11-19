@@ -12,7 +12,6 @@ tags:
  - graphql
  - react
 image: /images/Project Lorauna/raspberry pi model 3.png
-draft: true
 ---
 
 This tutorial is about how to build an online accessible thermometer using the Raspberry Pi 3 B-model.
