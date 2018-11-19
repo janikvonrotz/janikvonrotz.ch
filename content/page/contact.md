@@ -7,7 +7,6 @@ author: Janik von Rotz
 # Subscribe
 
 <!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 <div id="mc_embed_signup">
 <form action="https://bitsherpa.us16.list-manage.com/subscribe/post?u=10eecb0b72c14442cc5ee25c9&amp;id=626f000b7a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
@@ -24,7 +23,6 @@ author: Janik von Rotz
     </div>
 </form>
 </div>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
 
 # Communication
