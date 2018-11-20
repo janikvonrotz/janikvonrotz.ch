@@ -24,6 +24,7 @@ Walking through the tutorial requires basic knowledge in working with linux and 
 Using a mobile broadband connection and a thermo sensor our Raspberry Pi will measure the temparature and save it to a graphql server.
 
 Using react and a graphql client library we will create a chart with the temperature data.
+<!--more-->
 
 # Hardware
 
