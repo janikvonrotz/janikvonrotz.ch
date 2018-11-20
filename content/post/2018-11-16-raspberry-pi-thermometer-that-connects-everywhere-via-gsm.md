@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi thermometer that connects from anywhere via broadband"
-slug: raspberry-pi-thermometer-that-connects-anyywhere-via-broadband
+slug: raspberry-pi-thermometer-that-connects-anywhere-via-broadband
 date: 2018-11-16T20:00:23+02:00
 categories:
  - Maker
