@@ -1,6 +1,6 @@
 ---
 title: "Demystifying Data Science Hypes"
-slug: 2018-08-24-demystifying-data-science-hypes
+slug: demystifying-data-science-hypes
 date: 2018-08-23T19:39:14+02:00
 categories:
  - Blog

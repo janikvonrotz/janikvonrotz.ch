@@ -1,6 +1,6 @@
 ---
 title: "Central Switzerland"
-slug: 2018-11-08-central-switzerland
+slug: central-switzerland
 date: 2018-08-11T16:36:48+02:00
 categories:
  - Photography

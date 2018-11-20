@@ -1,6 +1,6 @@
 ---
 title: "State of JavaScript 2018"
-slug: 2018-11-19-state-of-javascript-2018
+slug: state-of-javascript-2018
 date: 2018-11-19T11:16:09+01:00
 categories:
  - JavaScript development
