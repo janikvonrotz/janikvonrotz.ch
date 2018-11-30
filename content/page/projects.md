@@ -9,7 +9,7 @@ This is a collection of projects by year since I came in touch with IT. It is su
 
 [lorauna](https://github.com/janikvonrotz/lorauna) and [lorauna-api](https://github.com/janikvonrotz/lorauna-api) - Developed a side project. Used the [Apollo GraphQL ](https://www.apollographql.com/) products and facebook's [create-react-app](https://facebook.github.io/create-react-app/) to build a visitor management tool for a [sauna club](https://saunalorrainebad.ch/). Further installed a temperature sensor using a [Rasperry Pi](https://www.raspberrypi.org/) and integrated the measurements on the sauna website.
 
-Secret - Managed and implemented the onsite and offsite deployment system for a complex identity and access management project. Took part in various stages of the software development process such as provisioning of artifacts, continuous integration, data staging, build process, testing, release management, knowledge management and integration. Consulted the customer on managing their VMWare infrastructure und building the integration stages.
+Secret - Managed and implemented the onsite and offsite deployment system for a complex identity and access management project. Took part in various stages of the software development process such as provisioning of artifacts, continuous integration, data staging, build process, testing, release management, knowledge management and integration. Consulted the customer on managing their VMWare infrastructure and building the integration stages.
 
 [tudluk](https://github.com/janikvonrotz/tudluk) - Tudluk creates a static html page that showcases your favorite books. You can then use headless chrome to take a screenshot of the page and create a beautiful poster.
 
