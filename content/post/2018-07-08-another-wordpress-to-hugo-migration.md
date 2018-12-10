@@ -255,6 +255,8 @@ sed -i -r 's;^(https?://)?(www\.youtube\.com)\/watch\?v=(.{11});{{</* youtube \3
 # [video width="1280" height="716" mp4="..."][/video] -> <video width="1280" height="720" controls><source src="..." type="video/mp4">...</video>
 sed -i -r 's;\[video width="(.+)" height="(.+)" (webm|mp4)="([^"]+)"\]\[\/video\];<video width="\1" height="\2" controls><source src="\4" type="video\/\3">Your browser does not support the video tag.</video>;g' $selector
 
+# https://vimeo.com/64762621 -> {{< instagram  _ID8_ >}}
+sed -i -r 's;^https?\:\/\/vimeo.com\/(.{8});{{< instagram  \1 >}};g' $selector
 ```
 
 ## Media
@@ -361,6 +363,27 @@ selector="*.md"
 
 # permalink: /2017/08/06/js-snippet-set-tallest-height-on-siblings/ -> slug: js-snippet-set-tallest-height-on-siblings
 sed -i -r 's;permalink: /[0-9]{4}/[0-9]{2}/[0-9]{2}/([^/]+)/;slug: \1;g' $selector
+```
+
+## Metadata Cleanup
+
+The jekyll export posts and pages contain metadata that is not required for hugo. Below are the commands to get rid of the unsupported metadata.
+
+```bash
+selector="*.md"
+
+# remove id property 
+sed -i '/^id: .*/d' $selector
+
+# remove layout property
+sed -i '/^layout: .*/d' $selector
+
+# remove guid property
+sed -i '/^guid: .*/d' $selector
+
+# remove disqus id property
+sed -i '/^dsq_thread_id:/d' $selector
+sed -i '/  - \"[0-9]\{10\}\"/d' $selector
 ```
 
 ## Not Covered
