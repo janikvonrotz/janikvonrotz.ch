@@ -255,8 +255,8 @@ sed -i -r 's;^(https?://)?(www\.youtube\.com)\/watch\?v=(.{11});{{</* youtube \3
 # [video width="1280" height="716" mp4="..."][/video] -> <video width="1280" height="720" controls><source src="..." type="video/mp4">...</video>
 sed -i -r 's;\[video width="(.+)" height="(.+)" (webm|mp4)="([^"]+)"\]\[\/video\];<video width="\1" height="\2" controls><source src="\4" type="video\/\3">Your browser does not support the video tag.</video>;g' $selector
 
-# https://vimeo.com/64762621 -> {{< instagram  _ID8_ >}}
-sed -i -r 's;^https?\:\/\/vimeo.com\/(.{8});{{< instagram  \1 >}};g' $selector
+# https://vimeo.com/64762621 -> {{</* instagram  _ID8_ */>}}
+sed -i -r 's;^https?\:\/\/vimeo.com\/(.{8});{{</* instagram  \1 */>}};g' $selector
 ```
 
 ## Media
