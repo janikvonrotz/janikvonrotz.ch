@@ -1,6 +1,6 @@
 ---
-title: "Open multiple projects in Inellij"
-slug: open-multiple-projects-in-inellij
+title: "Open multiple projects in Intellij"
+slug: open-multiple-projects-in-intellij
 date: 2019-01-11T10:01:30+01:00
 categories:
  - Software development 
