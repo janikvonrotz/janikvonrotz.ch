@@ -13,8 +13,8 @@ images:
 ---
 
 Most IDEs provide workspaces that contain multiple projects and thus enable you to work on mutliple projects in one instance of the IDE.
-IntelliJ which has became the defacto standard for Java Devs does not support workspaces.
-So how is it possible to open mutliple projects in one IntelliJ instance?
+IntelliJ, which has becom the defacto standard for Java Devs, does not support workspaces.
+So, how is it possible to open mutliple projects in one IntelliJ instance?
 <!--more-->
 
 Well, it is quite simple. In context of IntelliJ you can replace the idea of wokspaces with projects and projects with modules. An IntelliJ project can contain multiple modules.
@@ -25,10 +25,10 @@ Next add a new module from an existing source:
 
 * File > New > Module from Existing Sources...
 * Select the project e.g. `/local/projects/projectX`
-  * If available select the buid.gradle or another file that indicates the project model.
+  * If available select the build.gradle or another file that indicates the project model.
 * Finish the wizard
 
-Now the module/project should be loaded on the top level of the root project. Depending the projec model IntelliJ should detect features and configure it accordingly.
+Now the module/project should be loaded in the top level of the root project folder. Depending on the project model IntelliJ should detect features and configure it accordingly.
 
 Any questions?
 
