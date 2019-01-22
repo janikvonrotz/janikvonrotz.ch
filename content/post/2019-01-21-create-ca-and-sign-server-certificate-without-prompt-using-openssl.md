@@ -3,7 +3,7 @@ title: "Create a certificate authority and sign server certificates without prom
 slug: create-a-certificate-authority-ca-and-sign-server-certificates-without-prompting-using-openssl
 date: 2019-01-21T16:20:35+01:00
 categories:
- - Blog
+ - Security
 tags:
  - keytool
  - openssl
