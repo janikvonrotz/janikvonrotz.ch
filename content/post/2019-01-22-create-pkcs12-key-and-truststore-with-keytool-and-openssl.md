@@ -73,3 +73,7 @@ keytool -list -storetype PKCS12 -keystore $APPLICATION_NAME-truststore.pkcs12 \
 ```
 
 Not sure if it is a bug that openssl cannot create pkcs12 stores from certs without keys. Nonetheless, the two step workflow is a convenient solution. Openssl creates the initial pkcs12 store and the keytool manipulates the store as required.
+
+**Update**: It seems you cannot import a certificate and its key with keytool. So you need to create the store with openssl in order to import the key.
+
+Source: [Stackoverflow - How to import an existing x509 certificate and private key in Java keystore to use in SSL?](https://stackoverflow.com/questions/906402/how-to-import-an-existing-x509-certificate-and-private-key-in-java-keystore-to-u)
