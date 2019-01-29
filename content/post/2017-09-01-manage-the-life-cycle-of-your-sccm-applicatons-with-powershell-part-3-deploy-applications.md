@@ -32,7 +32,7 @@ $Action = "Install"
 $Purpose = "Required"
 # use Available or Required
 
-$DistributionPointName = "OWSPAP08.GO4KSOW.NET"
+$DistributionPointName = "sccm.domain.net"
 $CMApplicationDeployment = Get-CMApplicationDeployment
 Get-CMApplication | Where-Object{ $_.LocalizedDisplayName -like $ApplicationName } | ForEach-Object {
     $Name = $_.LocalizedDisplayName

@@ -60,7 +60,7 @@ $AppConfigs = @{
     Url = "https://www.microsoft.com/en-us/cloud-platform/system-center-configuration-manager"
     Deploy = @{
         Type = "script"
-        Install = 'ConsoleSetup.exe /q TargetDir="C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole" EnableSQM=1 DefaultSiteServerName=owspap08.go4ksow.net'
+        Install = 'ConsoleSetup.exe /q TargetDir="C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole" EnableSQM=1 DefaultSiteServerName=sccm.domain.net'
         Uninstall = 'ConsoleSetup.exe /q TargetDir="C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole" /uninstall'
         InstallationBehaviorType = "InstallForSystem"
         LogonRequirementType = "WhereOrNotUserLoggedOn"
@@ -168,7 +168,7 @@ cd "$((Get-PSProvider | Where-Object {$_.Name -eq "CMSite"}).Drives.Name):"
 
 $CM_OU = "OU=SCCM,OU=AccessGroups,OU=Admin,DC=go4ksow,DC=net"
 $PackageSource = "D:\SCCM\Applications\"
-$HostName = "owspap08"
+$HostName = "sccm"
 . "$PSScriptRoot\AppConfigs.ps1"
 
 $Domain = Get-ADDomain

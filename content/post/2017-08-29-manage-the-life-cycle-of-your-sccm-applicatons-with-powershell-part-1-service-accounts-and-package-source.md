@@ -156,11 +156,11 @@ These service accounts must be configured in the SCCM console and will be grante
 # set the parameters
 $Source = "D:\SCCM"
 $ShareName = "PackageSource"
-$NetworkAccount = "go4ksow.net\sccm_network"
-$SiteAccount = "go4ksow.net\sccm_site"
+$NetworkAccount = "domain.net\sccm_network"
+$SiteAccount = "domain.net\sccm_site"
 $SystemAccount = "NT AUTHORITY\SYSTEM"
 $LocalServiceAccount = "LOCALSERVICE"
-$CaputreOSIAccount = "go4ksow.net\sccm_captureosi"
+$CaputreOSIAccount = "domain.net\sccm_captureosi"
 
 # create the source directory
 New-Item -ItemType Directory -Path "$Source"
