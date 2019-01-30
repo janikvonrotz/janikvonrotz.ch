@@ -17,6 +17,7 @@ images:
 In [my last post](https://janikvonrotz.ch/2019/01/22/create-pkcs12-key-and-truststore-with-keytool-and-openssl/) I have showed how to generate pkcs12 key- and truststores using openssl and keytool.
 
 For this post we assume that we want to automate the store assembling with Puppet. [Puppet](https://puppet.com/) is a configuration management tool that shares many ideas with [Ansible](https://www.ansible.com/). In the world of Puppet you define a [manifest file](https://puppet.com/docs/puppet/5.5/lang_summary.html#files) that describes a state of how a file, service or any type of resource should look like. Puppet applies these manifests and makes sure that the targeted system reaches the defined state.
+<!--more-->
 
 Using Puppets [exec resource](https://puppet.com/docs/puppet/5.3/types/exec.html) we are going to define key- and truststores using openssl and keytool.
 

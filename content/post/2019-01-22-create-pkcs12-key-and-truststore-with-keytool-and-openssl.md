@@ -15,6 +15,7 @@ images:
 In my [last post](https://janikvonrotz.ch/2019/01/21/create-a-certificate-authority-ca-and-sign-server-certificates-without-prompting-using-openssl/) I've showed you how to create a custom certificate authority and sign a server cert using openssl without user interaction.
 
 For this post I assume that we want to set up a webservice that requires a [pkcs12](https://en.wikipedia.org/wiki/PKCS_12) keystore. Using openssl and the java keytool we are going to create a pkcs12 store and add our ca cert, server cert and server key. Further, we assume that the application also requires a truststore containing the ca cert only.
+<!--more-->
 
 Make sure to walk through the last post before getting started.
 
