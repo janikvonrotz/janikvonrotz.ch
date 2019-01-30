@@ -83,59 +83,60 @@ class certbox (
 
 ) {
 
-    # create pkcs12 keystore with cert and key
-    exec { "create pkcs12 keystore":
-      onlyif => "/bin/test ! -f $keystore",
-      command => "/bin/openssl pkcs12 -in $cert1 -inkey $key1 -passin pass:$keyPassword1 -export -out $keystore -passout pass:$keystorePassword -name $cn1",
-    }
+  # create pkcs12 keystore with cert and key
+  exec { "create pkcs12 keystore":
+    onlyif => "/bin/test ! -f $keystore",
+    command => "/bin/openssl pkcs12 -in $cert1 -inkey $key1 -passin pass:$keyPassword1 -export -out $keystore -passout pass:$keystorePassword -name $cn1",
+  }
 
-    # add the ca cert to the keystore
-    exec { "add ca to keystore":
-      onlyif => "/bin/keytool -list -keystore $keystore -storepass $keystorePassword | grep ^ca ;test $? -eq 1",
-      command => "/bin/keytool -importcert -storetype PKCS12 -keystore $keystore -storepass $keystorePassword -alias ca -file $caCert -noprompt",
-    }
+  # add the ca cert to the keystore
+  exec { "add ca to keystore":
+    onlyif => "/bin/keytool -list -keystore $keystore -storepass $keystorePassword | grep $(openssl x509 -noout -fingerprint -sha1 -in $caCert | cut -f2 -d \"=\");test $? -eq 1",
+    command => "/bin/keytool -importcert -storetype PKCS12 -keystore $keystore -storepass $keystorePassword -alias ca -file $caCert -noprompt",
+  }
 
-    # create pkcs12 keystore for the second cert
-    exec { "create pkcs12 keystore for $cn2":
-      onlyif => "/bin/test ! -f $tmpKeystore2",
-      command => "/bin/openssl pkcs12 -in $cert2 -inkey $key2 -passin pass:$keyPassword2 -export -out $tmpKeystore2 -passout pass:$keystorePassword -name $cn2",
-    }
+  # create pkcs12 keystore for the second cert
+  exec { "create pkcs12 keystore for $cn2":
+    onlyif => "/bin/test ! -f $tmpKeystore2",
+    command => "/bin/openssl pkcs12 -in $cert2 -inkey $key2 -passin pass:$keyPassword2 -export -out $tmpKeystore2 -passout pass:$keystorePassword -name $cn2",
+  }
 
-    # merge second keystore into first
-    exec { "add $cn2 to keystore":
-      onlyif => "/bin/keytool -list -keystore $keystore -storepass $keystorePassword | grep ^$cn2 ;test $? -eq 1",
-      command => "/bin/keytool -importkeystore -storetype PKCS12 -destkeystore $keystore -deststorepass $keystorePassword -destkeypass $keystorePassword \
-        -srckeystore $tmpKeystore2 -srcstoretype PKCS12 -srcstorepass $keystorePassword -alias $cn2 -noprompt",
-    }
+  # merge second keystore into first
+  exec { "add $cn2 to keystore":
+    onlyif => "/bin/keytool -list -keystore $keystore -storepass $keystorePassword | grep $(openssl x509 -noout -fingerprint -sha1 -in $cert2 | cut -f2 -d \"=\");test $? -eq 1",
+    command => "/bin/keytool -importkeystore -storetype PKCS12 -destkeystore $keystore -deststorepass $keystorePassword -destkeypass $keystorePassword \
+      -srckeystore $tmpKeystore2 -srcstoretype PKCS12 -srcstorepass $keystorePassword -alias $cn2 -noprompt",
+  }
 
-    file { $keystore:
-      ensure => file,
-      owner => $owner,
-      group => $group,
-      mode => $fileReadMode,
-    }
+  file { $keystore:
+    ensure => file,
+    owner => $owner,
+    group => $group,
+    mode => $fileReadMode,
+  }
 
-    # create an empty pkcs12 truststore
-    exec { "create pkcs12 truststore":
-      onlyif => "/bin/test ! -f $truststore",
-      command => "/bin/openssl pkcs12 -in $caCert -nokeys -export -out $truststore -passout pass:$truststorePassword",
-    }
+  # create an empty pkcs12 truststore
+  exec { "create pkcs12 truststore":
+    onlyif => "/bin/test ! -f $truststore",
+    command => "/bin/openssl pkcs12 -in $caCert -nokeys -export -out $truststore -passout pass:$truststorePassword",
+  }
 
-    # import the ca cert to the truststore
-    exec { "add ca to truststore":
-      require => Exec["create pkcs12 truststore"],
-      onlyif => "/bin/keytool -list -keystore $truststore -storepass $truststorePassword | grep ^ca ;test $? -eq 1",
-      command => "/bin/keytool -importcert -storetype PKCS12 -keystore $truststore -storepass $truststorePassword -alias ca -file $caCert -noprompt",
-    }
+  # import the ca cert to the truststore
+  exec { "add ca to truststore":
+    onlyif => "/bin/keytool -list -keystore $truststore -storepass $truststorePassword | grep $(openssl x509 -noout -fingerprint -sha1 -in $caCert | cut -f2 -d \"=\");test $? -eq 1",
+    command => "/bin/keytool -importcert -storetype PKCS12 -keystore $truststore -storepass $truststorePassword -alias ca -file $caCert -noprompt",
+  }
 
-    file { $truststore:
-      ensure => file,
-      owner => $owner,
-      group => $group,
-      mode => $fileReadMode,
-    }
+  file { $truststore:
+    ensure => file,
+    owner => $owner,
+    group => $group,
+    mode => $fileReadMode,
+  }
 }
 ```
+
+**Update:** Compare sha1 of cert to assert if import should be executed.
 
 The manifest is kept fairly simple. However, you might ask why we have to merge our second certificate from a pkcs12 store. The answer is a bit more complicated. The openssl and keytool utilities help generating and managing key material. They provide similar tasks, but differ heavy in specific features. Here are the most important differences:
 
