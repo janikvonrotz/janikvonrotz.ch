@@ -85,7 +85,7 @@ class certbox (
 
   # create pkcs12 keystore with cert and key
   exec { "create pkcs12 keystore":
-    onlyif => "/bin/test ! -f $keystore",
+    onlyif => "/bin/keytool -list -keystore $keystore -storepass $keystorePassword | grep $(openssl x509 -noout -fingerprint -sha1 -in $cert1 | cut -f2 -d \"=\");test $? -eq 1",
     command => "/bin/openssl pkcs12 -in $cert1 -inkey $key1 -passin pass:$keyPassword1 -export -out $keystore -passout pass:$keystorePassword -name $cn1",
   }
 
@@ -136,7 +136,8 @@ class certbox (
 }
 ```
 
-**Update:** Compare sha1 of cert to assert if import should be executed.
+**Edit 1:** Compare sha1 of cert to assert if import should be executed.  
+**Edit 2:** On create keystore check not if store file already exist, but check if cert in keystore matches the sha1. The check should also act as expected if file does not exist.
 
 The manifest is kept fairly simple. However, you might ask why we have to merge our second certificate from a pkcs12 store. The answer is a bit more complicated. The openssl and keytool utilities help generating and managing key material. They provide similar tasks, but differ heavy in specific features. Here are the most important differences:
 
