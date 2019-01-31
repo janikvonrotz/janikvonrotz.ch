@@ -144,7 +144,7 @@ The manifest is kept fairly simple. However, you might ask why we have to merge 
 * Keytool cannot create pkcs12 stores from a certificate and key.
 * Openssl cannot manipulate existing pkcs12 stores.
 * Openssl cannot create pkcs12 with multiple certificates and keys.
-* Openssl cannot import certificates and keys into an existing pkcs12 store, however, it can import a pkcs12 store into an existing one.
+* Keytool cannot import certificates and keys into an existing pkcs12 store, however, it can import a pkcs12 store into an existing one.
 
 Hope this helps to understand the design decisions made here much better.
 
