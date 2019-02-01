@@ -49,55 +49,43 @@ Below is a copy-and-paste definition for our Puppet module. Create the manifest 
 **./modules/certbox/init.pp**
 
 ```rb
-class certbox (
+class pki (
 
-  # folder where key material resides
   String $certDir = "/var/tmp/certificates",
 
-  # path to ca cert
   String $caCert = "$certDir/ca_cert.pem",
 
-  # certificate 1 variables
   String $cn1 = "localhost",
   String $cert1 = "$certDir/${cn1}_cert.pem",
   String $key1 = "$certDir/${cn1}_key.pem",
   String $keyPassword1 = "password",
 
-  # certificate 2 variables
-  String $cn2 = "example.com",
+  String $cn2 = "adnvl044.zh.adnovum.ch",
   String $tmpKeystore2 = "$certDir/$cn2.pkcs12",
   String $cert2 = "$certDir/${cn2}_cert.pem",
   String $key2 = "$certDir/${cn2}_key.pem",
   String $keyPassword2 = "password",
 
-  # key- and truststore definitions
   String $keystore = "$certDir/webservice-keystore.pkcs12",
   String $truststore = "$certDir/webservice-truststore.pkcs12",
   String $keystorePassword = "password",
   String $truststorePassword = "password",
 
-  # file acccess configurations
   String $owner = "root",
   String $group = "root",
   String $fileReadMode = "a=,ug+r",
 
 ) {
 
-  # create pkcs12 keystore with cert and key
+  # create pkcs12 keystore with cert, key and trusted certs
   exec { "create pkcs12 keystore":
     onlyif => "/bin/keytool -list -keystore $keystore -storepass $keystorePassword | grep $(openssl x509 -noout -fingerprint -sha1 -in $cert1 | cut -f2 -d \"=\");test $? -eq 1",
-    command => "/bin/openssl pkcs12 -in $cert1 -inkey $key1 -passin pass:$keyPassword1 -export -out $keystore -passout pass:$keystorePassword -name $cn1",
-  }
-
-  # add the ca cert to the keystore
-  exec { "add ca to keystore":
-    onlyif => "/bin/keytool -list -keystore $keystore -storepass $keystorePassword | grep $(openssl x509 -noout -fingerprint -sha1 -in $caCert | cut -f2 -d \"=\");test $? -eq 1",
-    command => "/bin/keytool -importcert -storetype PKCS12 -keystore $keystore -storepass $keystorePassword -alias ca -file $caCert -noprompt",
+    command => "/bin/openssl pkcs12  -export -in $cert1 -inkey $key1 -passin pass:$keyPassword1 -certfile $caCert -out $keystore -passout pass:$keystorePassword -name $cn1",
   }
 
   # create pkcs12 keystore for the second cert
   exec { "create pkcs12 keystore for $cn2":
-    onlyif => "/bin/test ! -f $tmpKeystore2",
+    onlyif => "/bin/keytool -list -keystore $tmpKeystore2 -storepass $keystorePassword | grep $(openssl x509 -noout -fingerprint -sha1 -in $cert2 | cut -f2 -d \"=\");test $? -eq 1",
     command => "/bin/openssl pkcs12 -in $cert2 -inkey $key2 -passin pass:$keyPassword2 -export -out $tmpKeystore2 -passout pass:$keystorePassword -name $cn2",
   }
 
@@ -115,14 +103,8 @@ class certbox (
     mode => $fileReadMode,
   }
 
-  # create an empty pkcs12 truststore
-  exec { "create pkcs12 truststore":
-    onlyif => "/bin/test ! -f $truststore",
-    command => "/bin/openssl pkcs12 -in $caCert -nokeys -export -out $truststore -passout pass:$truststorePassword",
-  }
-
-  # import the ca cert to the truststore
-  exec { "add ca to truststore":
+  # create pkcs12 truststore containing the ca cert
+  exec { "pegasus_mock - create pkcs12 truststore":
     onlyif => "/bin/keytool -list -keystore $truststore -storepass $truststorePassword | grep $(openssl x509 -noout -fingerprint -sha1 -in $caCert | cut -f2 -d \"=\");test $? -eq 1",
     command => "/bin/keytool -importcert -storetype PKCS12 -keystore $truststore -storepass $truststorePassword -alias ca -file $caCert -noprompt",
   }
@@ -138,13 +120,16 @@ class certbox (
 
 **Edit 1:** Compare sha1 of cert to assert if import should be executed.  
 **Edit 2:** On create keystore check not if store file already exist, but check if cert in keystore matches the sha1. The check should also act as expected if file does not exist.
+**Edit 3:** Remove the create empty truststore task. If the truststore file does not exist, the keytool import command will create the file.
 
 The manifest is kept fairly simple. However, you might ask why we have to merge our second certificate from a pkcs12 store. The answer is a bit more complicated. The openssl and keytool utilities help generating and managing key material. They provide similar tasks, but differ heavy in specific features. Here are the most important differences:
 
-* Keytool cannot create pkcs12 stores from a certificate and key.
 * Openssl cannot manipulate existing pkcs12 stores.
 * Openssl cannot create pkcs12 with multiple certificates and keys.
-* Keytool cannot import certificates and keys into an existing pkcs12 store, however, it can import a pkcs12 store into an existing one.
+* ~~Keytool cannot create pkcs12 stores from a certificate and key.~~
+* ~~Keytool cannot import certificates and keys into an existing pkcs12 store, however, it can import a pkcs12 store into an existing one.~~
+
+**Edit 3:** Some of my claims turned out be wrong.
 
 Hope this helps to understand the design decisions made here much better.
 

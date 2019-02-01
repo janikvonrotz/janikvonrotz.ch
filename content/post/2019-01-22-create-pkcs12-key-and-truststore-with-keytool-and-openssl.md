@@ -29,18 +29,11 @@ SERVER_CERT_PASSWORD=password
 SERVER_CERT_CN=localhost
 ```
 
-Create the pkcs12 store containing the server cert.
+Create the pkcs12 store containing the server cert and the ca trust.
 
 ```bash
-openssl pkcs12 -in ${SERVER_CERT_CN}_cert.pem -inkey ${SERVER_CERT_CN}_key.pem -passin pass:$SERVER_CERT_PASSWORD \
-  -export -out $APPLICATION_NAME-keystore.pkcs12 -passout pass:$KEYSTORE_PASSWORD -name $SERVER_CERT_CN
-```
-
-Store manipulation is not possible with openssl. That is why the java keytool is required to import the ca cert into the store.
-
-```bash
-keytool -importcert -storetype PKCS12 -keystore $APPLICATION_NAME-keystore.pkcs12 \
-  -storepass $KEYSTORE_PASSWORD -alias ca -file ca_cert.pem -noprompt
+openssl pkcs12 -in ${SERVER_CERT_CN}_cert.pem -inkey ${SERVER_CERT_CN}_key.pem -passin pass:$SERVER_CERT_PASSWORD -certfile ca_cert.pem \
+  -export -out ${APPLICATION_NAME}_${SERVER_CERT_CN}-keystore.pkcs12 -passout pass:$KEYSTORE_PASSWORD -name $SERVER_CERT_CN
 ```
 
 Show the content of keystore.
@@ -50,16 +43,9 @@ keytool -list -storetype PKCS12 -keystore $APPLICATION_NAME-keystore.pkcs12 \
   -storepass $KEYSTORE_PASSWORD
 ```
 
-Openssl cannot create a pkcs12 store from cert without key. That is why we need to an empty truststore and use the keytool to import the ca cert.
+Openssl cannot create a pkcs12 store from cert without key. This is why we create the truststore with the keytool.
 
-Create an empty pkcs12 truststore with openssl.
-
-```bash
-openssl pkcs12 -in ca_cert.pem -nokeys \
-  -export -out $APPLICATION_NAME-truststore.pkcs12 -passout pass:$TRUSTSTORE_PASSWORD
-```
-
-Then add the ca cert using the keytool.
+Create a pkcs12 truststore containing the ca cert.
 
 ```bash
 keytool -importcert -storetype PKCS12 -keystore $APPLICATION_NAME-truststore.pkcs12 \
@@ -73,8 +59,11 @@ keytool -list -storetype PKCS12 -keystore $APPLICATION_NAME-truststore.pkcs12 \
   -storepass $TRUSTSTORE_PASSWORD
 ```
 
+**Edit 1**: Removed keystore ca import step. The openssl *certfile* parameter accepts a bundled .pem containing trusted certs.  
+**Edit 2**: Removed the create empty truststore step. Keytool will create the truststore file if it does not exist.  
+
 Not sure if it is a bug that openssl cannot create pkcs12 stores from certs without keys. Nonetheless, the two step workflow is a convenient solution. Openssl creates the initial pkcs12 store and the keytool manipulates the store as required.
 
-**Update**: It seems you cannot import a certificate and its key with keytool. So you need to create the store with openssl in order to import the key.
+**Note**: It seems you cannot import a certificate and its key with keytool. So you need to create the store with openssl in order to import the key.
 
 Source: [Stackoverflow - How to import an existing x509 certificate and private key in Java keystore to use in SSL?](https://stackoverflow.com/questions/906402/how-to-import-an-existing-x509-certificate-and-private-key-in-java-keystore-to-u)
