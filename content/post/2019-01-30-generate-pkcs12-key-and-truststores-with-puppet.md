@@ -77,20 +77,27 @@ class pki (
 
 ) {
 
-  # create pkcs12 keystore with cert, key and trusted certs
-  exec { "create pkcs12 keystore":
+  exec { "remove keystore for $cn1 if password changed":
+    onlyif => "/bin/keytool -list -storetype PKCS12 -keystore $keystore -storepass $keystorePass | grep 'password was incorrect'",
+    command => "/bin/rm $keystore1",
+  }
+
+  exec { "create pkcs12 keystore for $cn1":
     onlyif => "/bin/keytool -list -keystore $keystore -storepass $keystorePassword | grep $(openssl x509 -noout -fingerprint -sha1 -in $cert1 | cut -f2 -d \"=\");test $? -eq 1",
     command => "/bin/openssl pkcs12  -export -in $cert1 -inkey $key1 -passin pass:$keyPassword1 -certfile $caCert -out $keystore -passout pass:$keystorePassword -name $cn1",
   }
 
-  # create pkcs12 keystore for the second cert
+  exec { "remove keystore for $cn2 if password changed":
+    onlyif => "/bin/keytool -list -storetype PKCS12 -keystore $tmpKeystore2 -storepass $keystorePass | grep 'password was incorrect'",
+    command => "/bin/rm $tmpKeystore2",
+  }
+
   exec { "create pkcs12 keystore for $cn2":
     onlyif => "/bin/keytool -list -keystore $tmpKeystore2 -storepass $keystorePassword | grep $(openssl x509 -noout -fingerprint -sha1 -in $cert2 | cut -f2 -d \"=\");test $? -eq 1",
     command => "/bin/openssl pkcs12 -in $cert2 -inkey $key2 -passin pass:$keyPassword2 -export -out $tmpKeystore2 -passout pass:$keystorePassword -name $cn2",
   }
 
-  # merge second keystore into first
-  exec { "add $cn2 to keystore":
+  exec { "merge $cn2 into $cn1 keystore":
     onlyif => "/bin/keytool -list -keystore $keystore -storepass $keystorePassword | grep $(openssl x509 -noout -fingerprint -sha1 -in $cert2 | cut -f2 -d \"=\");test $? -eq 1",
     command => "/bin/keytool -importkeystore -storetype PKCS12 -destkeystore $keystore -deststorepass $keystorePassword -destkeypass $keystorePassword \
       -srckeystore $tmpKeystore2 -srcstoretype PKCS12 -srcstorepass $keystorePassword -alias $cn2 -noprompt",
@@ -103,8 +110,12 @@ class pki (
     mode => $fileReadMode,
   }
 
-  # create pkcs12 truststore containing the ca cert
-  exec { "pegasus_mock - create pkcs12 truststore":
+  exec { "remove truststore for $cn1 if password changed":
+    onlyif => "/bin/keytool -list -storetype PKCS12 -keystore $truststore -storepass $truststorePass | grep 'password was incorrect'",
+    command => "/bin/rm $truststore",
+  }
+
+  exec { "create pkcs12 truststore":
     onlyif => "/bin/keytool -list -keystore $truststore -storepass $truststorePassword | grep $(openssl x509 -noout -fingerprint -sha1 -in $caCert | cut -f2 -d \"=\");test $? -eq 1",
     command => "/bin/keytool -importcert -storetype PKCS12 -keystore $truststore -storepass $truststorePassword -alias ca -file $caCert -noprompt",
   }
@@ -121,6 +132,7 @@ class pki (
 **Edit 1:** Compare sha1 of cert to assert if import should be executed.  
 **Edit 2:** On create keystore check not if store file already exist, but check if cert in keystore matches the sha1. The check should also act as expected if file does not exist.
 **Edit 3:** Remove the create empty truststore task. If the truststore file does not exist, the keytool import command will create the file.
+**Edit 4:** Added exec task that remove the store file if the password has changed.
 
 The manifest is kept fairly simple. However, you might ask why we have to merge our second certificate from a pkcs12 store. The answer is a bit more complicated. The openssl and keytool utilities help generating and managing key material. They provide similar tasks, but differ heavy in specific features. Here are the most important differences:
 
