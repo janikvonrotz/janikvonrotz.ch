@@ -77,8 +77,8 @@ class pki (
 
 ) {
 
-  exec { "remove keystore for $cn1 if password changed":
-    onlyif => "/bin/keytool -list -storetype PKCS12 -keystore $keystore -storepass $keystorePass | grep 'password was incorrect'",
+  exec { "remove keystore for $cn1 if password changed or is empty":
+    onlyif => "/bin/keytool -list -storetype PKCS12 -keystore $keystore -storepass $keystorePass | grep 'password was incorrect\\|file exists, but is empty'",
     command => "/bin/rm $keystore1",
   }
 
@@ -87,8 +87,8 @@ class pki (
     command => "/bin/openssl pkcs12  -export -in $cert1 -inkey $key1 -passin pass:$keyPassword1 -certfile $caCert -out $keystore -passout pass:$keystorePassword -name $cn1",
   }
 
-  exec { "remove keystore for $cn2 if password changed":
-    onlyif => "/bin/keytool -list -storetype PKCS12 -keystore $tmpKeystore2 -storepass $keystorePass | grep 'password was incorrect'",
+  exec { "remove keystore for $cn2 if password changed or is empty":
+    onlyif => "/bin/keytool -list -storetype PKCS12 -keystore $tmpKeystore2 -storepass $keystorePass | grep 'password was incorrect\\|file exists, but is empty'",
     command => "/bin/rm $tmpKeystore2",
   }
 
