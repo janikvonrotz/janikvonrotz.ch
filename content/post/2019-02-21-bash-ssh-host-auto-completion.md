@@ -9,7 +9,6 @@ tags:
  - bash
 images:
  - /images/horrible openssh logo.gif
-
 ---
 
 By default the ssh command does not support auto completion for host names. However, it stores all hosts you have accessed in the `~/.ssh/known_hosts` file. We can take this data and use it for an auto completion function.
