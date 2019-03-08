@@ -46,10 +46,10 @@ Our Puppet module will be called *certbox*. Modules must follow a strict naming 
 
 Below is a copy-and-paste definition for our Puppet module. Create the manifest file and folders as showed.
 
-**./modules/certbox/init.pp**
+**modules/certbox/manifests/init.pp**
 
 ```rb
-class pki (
+class certbox (
 
   String $certDir = "/var/tmp/certificates",
 
@@ -145,7 +145,7 @@ Hope this helps to understand the design decisions made here much better.
 
 To apply the manifest with Puppet run the following command:
 
-`sudo puppet apply --modulepath=./modules/ -e "include certbox"`
+`sudo puppet apply --modulepath=modules/ -e "include certbox"`
 
 At this point Puppet should create the key- and truststores.
 

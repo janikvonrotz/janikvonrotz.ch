@@ -78,8 +78,8 @@ To create additional server certificates use the snippet below.
 ```bash
 CA_CERT_PASSWORD=password
 SERVER_CERT_PASSWORD=password
-SERVER_CERT_CN=adnvl044.zh.adnovum.ch
-SERVER_ALT_NAME=adnvl044.zh.adnovum.ch
+SERVER_CERT_CN=hostname
+SERVER_ALT_NAME=hostname
 
 openssl genrsa -des3 -passout pass:$SERVER_CERT_PASSWORD -out ${SERVER_CERT_CN}_key.pem 2048
   
