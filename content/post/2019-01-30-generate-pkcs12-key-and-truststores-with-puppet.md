@@ -60,7 +60,7 @@ class certbox (
   String $key1 = "$certDir/${cn1}_key.pem",
   String $keyPassword1 = "password",
 
-  String $cn2 = "adnvl044.zh.adnovum.ch",
+  String $cn2 = "example.com",
   String $tmpKeystore2 = "$certDir/$cn2.pkcs12",
   String $cert2 = "$certDir/${cn2}_cert.pem",
   String $key2 = "$certDir/${cn2}_key.pem",
