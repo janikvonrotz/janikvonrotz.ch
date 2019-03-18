@@ -5,6 +5,10 @@ author: Janik von Rotz
 ---
 This is a collection of projects by year since I came in touch with IT. It is supposed to be a showcase of my abilities and experience.
 
+**2019**
+
+[Puppet Artemis Module](https://github.com/janikvonrotz/puppet-artemis) - Local deployable Puppet module that configures an Artemis broker instance.
+
 **2018**
 
 [lorauna](https://github.com/janikvonrotz/lorauna) and [lorauna-api](https://github.com/janikvonrotz/lorauna-api) - Developed a side project. Used the [Apollo GraphQL ](https://www.apollographql.com/) products and facebook's [create-react-app](https://facebook.github.io/create-react-app/) to build a visitor management tool for a [sauna club](https://saunalorrainebad.ch/). Further installed a temperature sensor using a [Rasperry Pi](https://www.raspberrypi.org/) and integrated the measurements on the sauna website.
