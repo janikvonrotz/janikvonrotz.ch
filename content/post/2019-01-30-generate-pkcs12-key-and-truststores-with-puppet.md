@@ -130,9 +130,9 @@ class certbox (
 ```
 
 **Edit 1:** Compare sha1 of cert to assert if import should be executed.  
-**Edit 2:** On create keystore check not if store file already exist, but check if cert in keystore matches the sha1. The check should also act as expected if file does not exist.
-**Edit 3:** Remove the create empty truststore task. If the truststore file does not exist, the keytool import command will create the file.
-**Edit 4:** Added exec task that remove the store file if the password has changed.
+**Edit 2:** On create keystore check not if store file already exist, but check if cert in keystore matches the sha1. The check should also act as expected if file does not exist.  
+**Edit 3:** Remove the create empty truststore task. If the truststore file does not exist, the keytool import command will create the file.  
+**Edit 4:** Added exec task that remove the store file if the password has changed.  
 
 The manifest is kept fairly simple. However, you might ask why we have to merge our second certificate from a pkcs12 store. The answer is a bit more complicated. The openssl and keytool utilities help generating and managing key material. They provide similar tasks, but differ heavy in specific features. Here are the most important differences:
 
