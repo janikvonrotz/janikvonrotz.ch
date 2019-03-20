@@ -488,6 +488,24 @@ This is also resembles the life cycle of an rpm service.
 
 As usual if you have any questions, concerns or inputs feel free to make a comment.
 
+# Edit: Upgrade
+
+I also investigated the behavior in an upgrade scenario.
+
+Assuming the following points apply:
+ 
+ * Release or version is incremented
+ * A file e.g. README.html has been removed
+ * An rpm is already installed
+ * Yum does an rpm install
+ 
+ The results are as followed:
+ 
+ * Yum detects the upgrade
+ * The README file is removed
+
+It behaves as expected.
+
 # Sources
 
 Sources I relied on to build this tutorials:
