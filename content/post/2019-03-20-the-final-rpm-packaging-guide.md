@@ -239,11 +239,11 @@ cp -R schema $app_dir
 cp -R web $app_dir
 ```
 
+Here we create the Artemis service user and group and copy selected files from the build to buildroot folder.
+
 The `%install` section of an rpm spec file is not run on rpm package installation.
 
 The `%install` section is run during package creation to install the files that need to be packaged such that the rpmbuild process can package them up.
-
-Here we create the Artemis service user and group and copy selected files from the build to buildroot folder.
 
 ### File
 
