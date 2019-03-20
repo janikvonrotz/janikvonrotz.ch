@@ -488,7 +488,7 @@ This is also resembles the life cycle of an rpm service.
 
 As usual if you have any questions, concerns or inputs feel free to make a comment.
 
-# Source
+# Sources
 
 Sources I relied on to build this tutorials:
 
