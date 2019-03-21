@@ -488,7 +488,9 @@ This is also resembles the life cycle of an rpm service.
 
 As usual if you have any questions, concerns or inputs feel free to make a comment.
 
-# Edit: Upgrade
+# Edits
+
+## Edit 1: Upgrade
 
 I also investigated the behavior in an upgrade scenario.
 
@@ -505,6 +507,12 @@ Assuming the following points apply:
  * The README file is removed
 
 It behaves as expected.
+
+## Edit 2: Gradle Project
+
+I have created a gradle project to facilitate the build process.
+
+Link: [GitHub - Apache Artemis RPM](https://github.com/janikvonrotz/apache-artemis-rpm)
 
 # Sources
 
