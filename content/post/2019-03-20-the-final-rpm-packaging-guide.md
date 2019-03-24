@@ -17,9 +17,9 @@ images:
 
 A customer required that every component of a software project I worked for is delivered as rpm.
 
-This was problematic for [Apache ActiveMQ Artemis](http://activemq.apache.org/artemis/) as there is rpm provided.
+This was problematic for [Apache ActiveMQ Artemis](http://activemq.apache.org/artemis/) as there is no rpm available.
 
-But, the maintainer publish a binary tarball and that is all we need to build an rpm.
+But, the maintainer publishes a binary tarball and this is all we need to build an rpm.
 
 So in this post I am going to show how to build an rpm from a tarball and explain the rpm build process in detail.
 <!--more-->
