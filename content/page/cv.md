@@ -19,7 +19,7 @@ Currently he is employed by AdNovum as an Associate IAM Engineer. In this positi
 
 ## Work Experience
 
-01|2018 – today  
+01|2018 – 04|2019  
 Associate IAM Engineer (full-time)  
 [AdNovum Informatik AG](https://www.adnovum.ch/)  
 
