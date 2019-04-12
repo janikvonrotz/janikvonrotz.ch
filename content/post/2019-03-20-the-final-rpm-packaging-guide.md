@@ -3,7 +3,7 @@ title: "The final rpm packaging guide"
 slug: the-final-rpm-packaging-guide
 date: 2019-03-20T14:22:16+01:00
 categories:
- - Blog
+ - Software Configuration Management
 tags:
  - rpm
  - apache
