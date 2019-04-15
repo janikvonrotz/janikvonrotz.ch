@@ -82,7 +82,7 @@ And set the following content.
 ```bash
 Name:       hello-world
 Version:    1
-Release:    1
+Release:    0
 Summary:    Most simple RPM package
 License:    FIXME
 
@@ -115,7 +115,7 @@ Build the hello world rpm.
 
 Install the rpm.
 
-`sudo yum install RPMS/x86_64/hello-world-1-1.x86_64.rpm -y`
+`sudo yum install RPMS/x86_64/hello-world-1-0.x86_64.rpm -y`
 
 Run hello world.
 
@@ -158,7 +158,7 @@ The spec file has been split into multiple sections. Copy and paste the snippet 
 
 Name:           apache-artemis
 Version:        2.6.4
-Release:        1
+Release:        0
 Summary:        Rpm package for Apache ActiveMQ Artemis
 
 License:        ASL 2.0
@@ -299,7 +299,7 @@ If additional work needs to be done before or after the files are removed the `%
 ##### CHANGELOG SECTION #####
 %changelog
 
-* Wed Mar 20 2019 Janik vonRotz <contact@janikvonrotz.ch> - 2.6.4-1
+* Wed Mar 20 2019 Janik vonRotz <contact@janikvonrotz.ch> - 2.6.4-0
 - Init apache-artemis package
 ```
 
@@ -314,7 +314,7 @@ The final spec file should look like this.
 
 Name:           apache-artemis
 Version:        2.6.4
-Release:        1
+Release:        0
 Summary:        Rpm package for Apache ActiveMQ Artemis
 
 License:        ASL 2.0
@@ -421,7 +421,7 @@ esac
 ##### CHANGELOG SECTION #####
 %changelog
 
-* Wed Mar 20 2019 Janik vonRotz <contact@janikvonrotz.ch> - 2.6.4-1
+* Wed Mar 20 2019 Janik vonRotz <contact@janikvonrotz.ch> - 2.6.4-0
 - Init apache-artemis package
 
 ```
@@ -438,13 +438,13 @@ Build the rpm.
 
 Lint the rpm.
 
-`rpmlint RPMS/x86_64/apache-artemis-2.6.4-1.x86_64.rpm `
+`rpmlint RPMS/x86_64/apache-artemis-2.6.4-0.x86_64.rpm `
 
 There will be thousands of error and warnings. Ignore them for now.
 
 Install the rpm.
 
-`sudo yum install RPMS/x86_64/apache-artemis-2.6.4-1.May.rpm  -y`
+`sudo yum install RPMS/x86_64/apache-artemis-2.6.4-0.May.rpm  -y`
 
 Create a broker instance.
 

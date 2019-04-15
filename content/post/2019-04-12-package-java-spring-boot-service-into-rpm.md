@@ -121,7 +121,7 @@ And set the following content:
 
 Name:           spring-starter
 Version:        0.1.0
-Release:        1
+Release:        0
 Summary:        Rpm package for Spring Starter
 
 License:        ASL 2.0
@@ -245,7 +245,7 @@ esac
 ##### CHANGELOG SECTION #####
 %changelog
 
-* Wed Mar 20 2019 Janik vonRotz <contact@janikvonrotz.ch> - 0.1.0-1
+* Wed Mar 20 2019 Janik vonRotz <contact@janikvonrotz.ch> - 0.1.0-0
 - First spring-starter package
 ```
 
@@ -262,13 +262,13 @@ Build the rpm.
 
 Lint the rpm.
 
-`rpmlint RPMS/noarch/spring-starter-0.1.0-1.noarch.rpm`
+`rpmlint RPMS/noarch/spring-starter-0.1.0-0.noarch.rpm`
 
 Rpmlint is very verbose, most warnings can be ignored.
 
 Install the rpm.
 
-`sudo yum install RPMS/noarch/spring-starter-0.1.0-1.noarch.rpm -y`
+`sudo yum install RPMS/noarch/spring-starter-0.1.0-0.noarch.rpm -y`
 
 Check if the spring starter service is running.
 
