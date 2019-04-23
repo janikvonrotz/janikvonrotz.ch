@@ -7,6 +7,8 @@ This is a collection of projects by year since I came in touch with IT. It is su
 
 **2019**
 
+[lorauna-stats](https://github.com/janikvonrotz/lorauna-stats) - R markdown script that connects to he [lorauna-api](https://github.com/janikvonrotz/lorauna-api) database and generates a visitor performance report.
+
 [Puppet Artemis Module](https://github.com/janikvonrotz/puppet-artemis) - Local deployable Puppet module that configures an Artemis broker instance.
 
 **2018**
