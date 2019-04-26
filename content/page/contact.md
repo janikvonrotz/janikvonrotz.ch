@@ -35,7 +35,6 @@ author: Janik von Rotz
 # Social Media
 
 [Facebook](https://www.facebook.com/janik.vonrotz)  
-[Google+](https://plus.google.com/+JanikvonRotz/posts)  
 [LinkedIn](https://www.linkedin.com/in/janik-von-rotz-b50aaa112)  
 [Hacker News](https://news.ycombinator.com/user?id=janikvonrotz)  
 [Twitter](https://twitter.com/janikvonrotz)  
