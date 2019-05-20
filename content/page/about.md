@@ -23,5 +23,5 @@ and try whenver to ...
 let me know if ...
 
 * you come to Switzerland
-* you have are working on a cool project
+* you are working on a cool project
 * you want to discuss anything related to my work
