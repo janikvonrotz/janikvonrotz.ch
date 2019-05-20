@@ -24,6 +24,9 @@ Associate IAM Engineer (full-time)
 [AdNovum Informatik AG](https://www.adnovum.ch/)  
 
 * Design, conception and realisation of identity and access management solutions.
+* Configuration and development of the continuous delivery/integration infrastructure.
+* Review and setup of the project-internal public key infrastructure (PKI).
+* Integrate and deploy multi-stage project environments.
 
 08|2017 – 12|2017  
 System Engineer (full-time civil service)  
@@ -80,14 +83,14 @@ Vocational Engineering School Diploma
 Computer Specialist EFZ System Engineering  
 [Vocational Training Centre for Business, Information Technology and Engineering in Sursee](https://beruf.lu.ch/berufsbildungszentren/bbzw)  
 
-## Information Technology skills
+## Professinal skills
 
 * Requirements engineering – Analyze and process customers’ requirements.
 * Project management – Agile and classic.
-* Programming languages – JavaScript and Java.
+* Knowledge management – Document and populate technical knowledge.
 * System administration – Able to manage common Microsoft and Linux systems.
 * Team collaboration – Introduce or enhance team collaboration with a variety of tools.
-* System automation – Automate processes and orchestrate server farms with PowerShell.
+* System automation – Automate processes and orchestrate server farms.
 * Network infrastructure – Build, monitor and maintain a network infrastructure.
 
 ## Soft skills
@@ -106,9 +109,63 @@ German (mother tongue)
 English (fluently reading, writing and speaking) – First Certificate in English (FCE)  
 French (mainly reading, hardly writing and speaking) – Diplome d&#39;etudes en langue francaise DELF B1
 
-## Skills by keywords
+## Technical skills
 
-Active Directory, Agile Project Management, Apollo, BPMN, Business Process Management, Chatbot, Database Management, Directory Services, Git, GraphQL, Human Computer Interaction, Java, JavaScript, Kanban, Knowledge Management, Meteor, MongoDB, MySQL, Network Administration, Nginx, Node.js, NoSQL, Open Source Software, Powershell, Project Management, React.js, Redux, Relational Databases, Requirements Engineering, REST, Scrum, SharePoint, System Automation, System Administration, System Center Configuration Manager, Web Development
+**Collaboration**
+
+Confluence and SharePoint
+
+**Task Tracking**
+
+Jira
+
+**Configuration Management**
+
+Puppet, Ansible and System Center Configuration Manager
+
+**Build Automation**
+
+Gradle and Yarn
+
+**Continuous Integration**
+
+GoCD and Artifactory
+
+**Programming Languages**
+
+Java Script (ES6) and Java
+
+**Data Layer**
+
+GraphQL, REST and SOAP
+
+**Front-end Frameworks**
+
+React and Redux
+
+**Database**
+
+MongoDB, MySQL and Oracle
+
+**Back-end Frameworks**
+
+Express and Meteor
+
+**Scripting Languages**
+
+Bash and PowerShell
+
+**Environments**
+
+RedHat and Windows
+
+**Version Control System**
+
+Git
+
+**IDE**
+
+VIM, Visual Studio Code and IntelliJ
 
 ## Non-profit work
 
