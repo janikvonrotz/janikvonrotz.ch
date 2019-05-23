@@ -5,7 +5,7 @@ date: 2019-04-28T21:25:33+02:00
 categories:
  - Traveling
 tags:
- - bicycle tur
+ - bicycle tour
  - packing list
 images:
  - /images/Bicycle Tour/Trek 920 with Ortlieb bags.jpg
