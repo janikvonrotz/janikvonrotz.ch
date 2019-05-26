@@ -16,6 +16,7 @@ images:
 This is the first of three posts about a bicycle tour I recently finished.
 
 During three weeks me and a friend cycled from Athens to Dubrovnik through Albania and Montenegro. It was a joyful and sometimes exhausting experience. We started at the Airport in Athens and made our way along the south-west coast up to Ioaninna. With lots of head wind we had to endure a rough start and thus decided to take things afterwards a bit more relaxed. We enjoyed the various coffee shops, friendly Greece people and the always changing scenery. From Ioaninna we rented a car to visit the Meteora monasteries. A truly astonishing place, you should look it up. Afterwards we crossed to border to Albania and found ourselves in an entirely different place.
+<!--more-->
 
 As much as we enjoyed the Greece people, we felt sorry for how they were taking care of the environment. There was a lot of garbage left and right of the road. Even worse there is a trend of constantly drinking cold coffee from plastic cups and disposing the garbage in public space. We hope this practice will change soon.
 
@@ -25,7 +26,7 @@ Here is a map of our tour:
 
 {{< figure src="/images/Cycle tour/09_Cycling tour part 1 - Greece Map.jpg" title="Cycling tour part 1 - Greece Map" >}}
 
-And some impression from the road:
+And some impressions from the road:
 
 {{< figure src="/images/Cycle tour/02_On top of Athens.jpg" title="On top of Athens" >}}
 
