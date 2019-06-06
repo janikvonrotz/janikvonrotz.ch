@@ -6,7 +6,7 @@ slug: authenticate-meteor-accounts-with-the-apollo-graphql-api
 images:
   - /wp-content/uploads/2016/11/Apollo-Logo.png
 categories:
-  - Apollo
+  - JavaScript development
 tags:
   - accounts
   - apollo
