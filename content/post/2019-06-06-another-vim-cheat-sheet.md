@@ -213,8 +213,11 @@ Select curren word.
 
 ## Window
 
-Split window.  
+Split window vertically.  
 `:vs`
+
+Split window horizontally.  
+`:sp`
 
 Switch between splits.  
 `ctrl + w & {h,j,k,l}`
