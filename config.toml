@@ -60,6 +60,7 @@ googleAnalytics = "UA-31105856-2"
 
     [params.search]
     url = "/search/"
+    img = "/images/search.svg"
 
 [outputs]
     section = ["JSON", "HTML"]

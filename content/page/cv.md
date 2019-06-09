@@ -2,7 +2,9 @@
 title: CV
 date: 2015-09-25T07:59:36+00:00
 author: Janik von Rotz
+disable_comments: true
 ---
+
 [![Untitled](/images/Moi.jpg)](/images/Moi.jpg)
 
 Hi, my name is Janik von Rotz. I’m a system engineer and software developer from Switzerland and have got a BSc in Business and Information Technology.

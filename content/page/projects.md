@@ -2,7 +2,9 @@
 title: Projects
 date: 2013-07-02T08:21:46+00:00
 author: Janik von Rotz
+disable_comments: true
 ---
+
 This is a collection of projects by year since I came in touch with IT. It is supposed to be a showcase of my abilities and experience.
 
 **2019**

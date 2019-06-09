@@ -2,6 +2,7 @@
 title: About
 date: 2013-07-02T08:23:30+00:00
 author: Janik von Rotz
+disable_comments: true
 ---
 
 Hi, my name is Janik von Rotz. I’m a system engineer and software developer from Switzerland and have got a BSc in Business and Information Technology.
