@@ -1,5 +1,6 @@
 ---
-title: CV
+title: Curriculum Vitae
+slug: cv
 date: 2015-09-25T07:59:36+00:00
 author: Janik von Rotz
 disable_comments: true
