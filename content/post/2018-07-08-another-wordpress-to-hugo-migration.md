@@ -159,8 +159,17 @@ sed -i 's/&#8211;/-/g' $selector
 sed -i 's/&#8217;/’/g' $selector
 # &#039; -> ’ (get rid of ')
 sed -i "s/&#039;/’/g" $selector
-
+# &#8230; -> … 
+sed -i "s/&#8230;/…/g" $selector
+# &#8222; -> „
+sed -i "s/&#8222;/„/g" $selector
+# &#8220; -> "
+sed -i 's/&#8220;/"/g' $selector
+# &#038; -> &
+sed -i 's/&#038;/\&/g' $selector
 ```
+
+**2019-06-12 Edit:** Add new special characters.
 
 ## Contact Form
 
@@ -257,7 +266,12 @@ sed -i -r 's;\[video width="(.+)" height="(.+)" (webm|mp4)="([^"]+)"\]\[\/video\
 
 # https://vimeo.com/64762621 -> {{</* instagram  _ID8_ */>}}
 sed -i -r 's;^https?\:\/\/vimeo.com\/(.{8});{{</* instagram  \1 */>}};g' $selector
+
+# <iframe width="560" height="315" src="https://www.youtube.com/embed/_ID_" frameborder="0" allowfullscreen></iframe> -> {{</* youtube _ID_ */>}}
+sed -i -r 's;<iframe.+youtube.com\/embed\/([^"]+)".+\/iframe>;{{</* youtube  \1 */>}};g' $selector
 ```
+
+**2019-06-12 Edit:** Add youtube iframe converter.
 
 ## Media
 
@@ -336,21 +350,6 @@ for filename in $selector; do
         mv $filename  "$directory/$newfilename"
     fi
 done
-
-```
-
-**Remove-Lines.sh**
-
-Remove a matching line from all markdown files.
-
-```bash
-selector="*.md"
-
-# Get rid of unnecessary meta fields such as guid, id or layout
-sed -i '/guid: https:\/\/janikvonrotz.ch\/?p=/d' $selector
-sed -i '/guid: https:\/\/janikvonrotz.ch\/?page_id=/d' $selector
-sed -i '/id: [0-9]*/d' $selector
-sed -i '/layout: \(post\|page\)/d' $selector
 
 ```
 
