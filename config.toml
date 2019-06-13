@@ -1,4 +1,4 @@
-baseURL = "https://janikvonrotz.ch/"
+baseURL = ""
 languageCode = "en-us"
 title = "Janik von Rotz"
 description = "Curious, Dedicated, Open-Minded" 
@@ -47,13 +47,13 @@ googleAnalytics = "UA-31105856-2"
     description = "Curious, Dedicated, Humble"
 
     [params.logo]
-    url = "logo.png"
+    url = "/images/logo.png"
     width = 50
     height = 50
     alt = "Logo"
 
     [params.icon]
-    url = "logo.png"
+    url = "/images/logo.png"
 
     [params.archive]
     url = "/archive/"
