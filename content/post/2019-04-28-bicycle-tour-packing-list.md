@@ -106,7 +106,7 @@ Added the following items after my first cycling tour: USB plug, travel adapter,
 - [] Sunglasses  
 - [] Pocket knife  
 - [] #1 aid kit  
-- [] Sweing kit  
+- [] Sewing kit  
 - [] Washing powder  
 - [] Laundry bag  
 - [] Packing cube / Clothes bag 
