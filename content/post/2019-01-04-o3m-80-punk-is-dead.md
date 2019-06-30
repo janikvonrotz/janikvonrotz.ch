@@ -1,6 +1,6 @@
 ---
-title: "O3M - Punk is Dead"
-slug: o3m-punk-is-dead
+title: "O3M 80 - Punk is Dead"
+slug: o3m-80-punk-is-dead
 date: 2019-01-04T16:44:41+01:00
 categories:
  - Music
