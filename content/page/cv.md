@@ -8,7 +8,7 @@ disable_comments: true
 
 [![Untitled](/images/Moi.jpg)](/images/Moi.jpg)
 
-Hi, my name is Janik von Rotz. I’m a system engineer and software developer from Switzerland and have got a BSc in Business and Information Technology.
+Hi, my name is Janik von Rotz. I’m a Software Engineer / IT Consultant from Switzerland and have got a BSc in Business and Information Technology.
 
 > Complex problems can only be solved by interdisciplinary teams. We need leaders who are able to connect people rather than dictate them.
 
@@ -144,7 +144,7 @@ GraphQL, REST and SOAP
 
 **Front-end Frameworks**
 
-React and Redux
+React and Apollo Client
 
 **Database**
 
@@ -152,7 +152,7 @@ MongoDB, MySQL and Oracle
 
 **Back-end Frameworks**
 
-Express and Meteor
+Apollo Server, Express and Meteor
 
 **Scripting Languages**
 

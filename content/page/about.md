@@ -5,9 +5,13 @@ author: Janik von Rotz
 disable_comments: true
 ---
 
-Hi, my name is Janik von Rotz. I’m a system engineer and software developer from Switzerland and have got a BSc in Business and Information Technology.
+[![Untitled](/images/Moi occasionnel.jpg)](/images/Moi occasionnel.jpg)
 
-This is my blog where I share experiences of my personal and professional life. I firmly believe that sharing insightful stories and ideas without aiming for profit or reputation leads to a collaborative and progressive social community.
+Hi, my name is Janik von Rotz. I’m a Software Engineer / IT Consultant from Switzerland.
+
+This is my blog where I share experiences of my personal and professional life. Sharing insightful stories and ideas without aiming for profit or reputation plays an integral part in the vast open source software world.
+
+Here are a few things about me:
 
 I like to ...
 
@@ -20,6 +24,12 @@ and try whenver to ...
 * keep my identity small
 * make strong social bonds
 * aim for actions and results
+
+at work I value ...
+
+* Collaboration and autonomy
+* Openess and honesty
+* Leaness and speed
 
 let me know if ...
 

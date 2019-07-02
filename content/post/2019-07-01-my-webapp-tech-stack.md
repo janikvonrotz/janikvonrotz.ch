@@ -7,56 +7,61 @@ categories:
 tags:
  - tech stack
  - best practices
+ - technology
+ - methodology
 images:
- - /images/logo.png
-draft: true
+ - /images/toolbox.jpg
 ---
 
-In this post I am going to present you my personal tech stack for web development. I wanna tell more about the technologies and methodologies I am using to build web applications. Moreover, I intent to continiously update this list.
+In this post I am going to present you my personal tech stack for web development. I want to tell more about the technologies and methodologies I am using to build web applications. In that sense it would be glad if you share your stack and methodologies in the comment section.
+<!--more-->
 
-## Methodologies
+## Methodology
 
-Mobile and web first.
-[The twelfe-factor app](https://12factor.net/)
+My technology-independent methodology and approach to software development:
 
-https://de.slideshare.net/AmazonWebServices/getting-started-with-aws-lambda-and-the-serverless-cloud/29
+* Web apps over native apps (aka progressive web apps)
+* [The twelfe-factor app](https://12factor.net/)
+* [Serverless compute manifesto](https://de.slideshare.net/AmazonWebServices/getting-started-with-aws-lambda-and-the-serverless-cloud/29)
 
 ## Technology
 
-Language: JavaScript
+For every layer of a modern web application I focus on one technology.
 
-JavaScript has become an ubiquoes programming language for web development.
+**Language:** JavaScript
 
-UI Framework: [React](https://reactjs.org/)
+JavaScript has become an ubiquitous programming language for web development.
 
-React is the most popular user interface framework. Whereas AngularJS dominates the enterprise domain, React is the first choice for consumer apps.
+**UI Framework:** [React](https://reactjs.org/)
 
-UI Components: [Material-UI](https://material-ui.com/)
+React is the most popular user interface framework. Whereas Angular dominates the enterprise domain, React is the first choice for consumer apps.
 
-Material-UI unites Google's design principles and React's versatile components. Designing components and implementing a visual design that adhers to best practices has become a majore challange. Using Material-UI components makes it trivial to build an attractive UI within a short amount of time.
+**UI Components:** [Material-UI](https://material-ui.com/)
 
-Client State: [Apollo Client](https://www.apollographql.com/docs/react/)
+Material-UI unites Google's design principles and React's versatile components. Designing components and implementing a visual design that adheres to best practices has become a major challenge. Using Material-UI components makes it trivial to build an attractive UI within a short amount of time.
+
+**Client State:** [Apollo Client](https://www.apollographql.com/docs/react/)
 
 Apollo is a [GraphQL](https://graphql.org/) implementation. The Apollo client makes it easy to manage the [local state](https://www.apollographql.com/docs/react/essentials/local-state/) of a React app.
 
-Backend: [Apollo Server](https://www.apollographql.com/docs/apollo-server/)
+**Backend:** [Apollo Server](https://www.apollographql.com/docs/apollo-server/)
 
-Apollo provides the flexiblity and versatiliy required for designing and implementing complex APIs.
+Apollo provides the flexibility and versatility required for designing and implementing complex APIs. The schema language makes it easy to define a solid and coherent data model. Whereas resolvers offer the necessary flexibility to connect the schema to the business and persistence layer.
 
-Database: [MongoDB](https://www.mongodb.com/)
+**Database:** [MongoDB](https://www.mongodb.com/)
 
-The NoSQL approach has become outdated. However, if you design the schema with graphql there is no use in applying a schema to the database.
+The NoSQL approach has become outdated. However, if you design the schema with GraphQL there is no need in applying a schema to the database.
 
-Platform: [Zeit Now](https://zeit.co/now)
+**Platform:** [Zeit Now](https://zeit.co/now)
 
 Zeit's Now offers serverless deployments with little overhead for configuration. It supports monorepos and makes deployments automatically globally available.
 
-DB Platform: [mLab](https://mlab.com/)
+**DB Platform:** [mLab](https://mlab.com/)
 
-mLab is the most popular MongoDB hosting platform. I especially love their free tier plan.
+mLab is the most popular MongoDB hosting platform. I especially appreciate their free tier plan.
 
 ## Minor Tech
 
-Package manager: [yarn](https://yarnpkg.com)
-Auth Token: [JSON Web Token](https://www.apollographql.com/docs/react/essentials/local-state/)
-App Config: [dotenv](https://github.com/motdotla/dotenv)
+Package manager: [yarn](https://yarnpkg.com)  
+Auth Token: [JSON Web Token](https://www.apollographql.com/docs/react/essentials/local-state/)  
+App Config: [dotenv](https://github.com/motdotla/dotenv)  
