@@ -22,29 +22,29 @@ These are the values I care for when working on a project:
 
 ## Procedure
 
-Development of a web application takes place in 3 phases.
+Development of a web application takes place in 4 phases.
 
-### Phase 0 - Offer
+### Phase 1 - Offer
 
 * Connect
 * Interview stakeholder
 * Outline concept
 * Offer with estimations
 
-### Phase 1 - Analysis
+### Phase 2 - Analysis
 
 * Detailed requirements
 * Interface analysis
 * Interview stakeholder
-* Proof of concept
+* Proof of Concept
 
-### Phase 2 - Implementation
+### Phase 3 - Realisation
 
 * Iterative development
     * Implementation -> Testing -> Planning -> Requirements Analysis -> System Design -> Implementation -> ...
 * Deployment and integration
 
-### Phase 3 - Support
+### Phase 4 - Support
 
 * Support and consulting
 * Hosting and monitoring
