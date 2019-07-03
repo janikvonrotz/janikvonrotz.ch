@@ -58,7 +58,7 @@ Zeit's Now offers serverless deployments with little overhead for configuration.
 
 **DB Platform:** [mLab](https://mlab.com/)
 
-mLab is the most popular MongoDB hosting platform. I especially appreciate their free tier plan.
+mLab is the most popular MongoDB hosting platform. I especially appreciate their sandbox plan.
 
 ## Minor Tech
 
