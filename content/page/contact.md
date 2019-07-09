@@ -45,7 +45,6 @@ author: Janik Vonrotz
 
 [Flickr](https://www.flickr.com/photos/janik-von-rotz/)  
 [Soundcloud](https://soundcloud.com/janikvonrotz)  
-[Tumblr](http://tumblr.janikvonrotz.ch/)  
 [Vimeo](https://vimeo.com/janikvonrotz)  
 [Youtube](https://www.youtube.com/user/janikvonrotz)  
 
