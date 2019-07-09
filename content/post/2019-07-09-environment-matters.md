@@ -35,7 +35,7 @@ Based on our model we assess risks and dangers, make decisions and take action.
 We construct narratives about how we act and speak in certain situations.
 It is all about oneself and how one is able to influence other people.
 
-# Indiviuduality
+# Individuality
 
 The "I" takes a central role in our thinking.
 Everybody adhers to individuality.
@@ -80,15 +80,18 @@ Or in other words take your suroundings more seriously than yourself.
 Lets face it, sometimes you feel accepted in life.
 Your ideas and values resonate with people at work or your family at home.
 Sometimes you feel sad and cannot point a finger to the cause.
-You face conflicts at work or get into trouble with a stranger for no apparent reason.
+You face conflicts at work or get into trouble with somebody for no apparent reason.
 So sometimes you experience disonance and sometimes resonance.
 And the popularity of the individum makes you question yourself.
 "Why am I facing this issue or why do I feel unhappy?", you might ask.
 I claim more often it is the environment that matters and affects how one feels.
 
 You do not feel happy at work? The company your are working for might be the wrong environment and you should consider to look for a new one.
-You feel fulfilled and happy? You might have found the right place and wanna stick to it. 
+You feel fulfilled and happy? You might have found the right place and wanna stick to it.
 You feel distracted and restless? Seek out place that calms you.
 You have difficulty to sort your thoughts? Head out and go for a walk in the forest.
 
 # Conclusion
+
+My message here is simple. Once you have grown character, you should not if you are doing the right thing, you should ask if you are in the right place.
+Does my environment provide the job opportunities that I seek, do I have access to the social network of my choice or would I be better off in a different spot? These are the questions that should be answered.
