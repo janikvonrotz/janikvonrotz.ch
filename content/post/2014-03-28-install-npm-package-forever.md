@@ -1,7 +1,7 @@
 ---
 title: Install npm package forever
 date: 2014-03-28T12:49:20+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: install-npm-package-forever
 images:
   - /wp-content/uploads/2014/03/Node.js-Logo.png

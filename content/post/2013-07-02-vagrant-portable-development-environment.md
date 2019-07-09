@@ -1,7 +1,7 @@
 ---
 title: 'Vagrant - portable development environment'
 date: 2013-07-02T11:54:35+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: vagrant-portable-development-environment
 images:
   - /wp-content/uploads/2013/07/vagrant-logo.png

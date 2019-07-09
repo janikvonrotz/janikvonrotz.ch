@@ -1,7 +1,7 @@
 ---
 title: Office365 ADFS Chrome Login fails
 date: 2013-09-10T13:49:40+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: office365-adfs-chrome-login-fails
 images:
   - /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg

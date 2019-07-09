@@ -1,7 +1,7 @@
 ---
 title: Exchange Update Offline Address Book
 date: 2013-08-27T10:54:43+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: exchange-update-offline-adress-book
 images:
   - /wp-content/uploads/2013/08/exchange-2013-e1393417827333.jpg

@@ -1,7 +1,7 @@
 ---
 title: Useful command aliases
 date: 2014-12-08T10:04:00+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: useful-command-aliases
 images:
   - /wp-content/uploads/2014/03/Ubuntu-Logo.png

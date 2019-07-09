@@ -1,7 +1,7 @@
 ---
 title: Making Exchange Distribution Lists Externally Available
 date: 2013-11-12T08:36:52+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: making-exchange-distribution-lists-externally-available
 images:
   - /wp-content/uploads/2013/08/exchange-2013-e1393417827333.jpg

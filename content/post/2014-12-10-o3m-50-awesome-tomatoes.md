@@ -1,7 +1,7 @@
 ---
 title: 'O3M 50 - Awesome Tomatoes'
 date: 2014-12-10T09:12:31+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: o3m-50-awesome-tomatoes
 images:
   - /wp-content/uploads/2014/12/O3M-50-Awesone-Shat-get-ready.jpg

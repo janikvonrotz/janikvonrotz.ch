@@ -1,7 +1,7 @@
 ---
 title: 'Thank you internet for: Peek by UserTesting'
 date: 2014-05-15T12:44:00+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: thank-your-internet-for-peek-by-usertesting
 images:
   - /wp-content/uploads/2014/05/peek-user-testing.png

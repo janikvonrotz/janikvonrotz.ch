@@ -1,7 +1,7 @@
 ---
 title: Node.js dynamic settings
 date: 2016-08-25T19:43:31+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: node-js-dynamic-settings
 images:
   - /wp-content/uploads/2014/03/Node.js-Logo.png

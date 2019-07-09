@@ -1,7 +1,7 @@
 ---
 title: 'Kinaj 02 - Weird (Techno, Minimal, Dub)'
 date: 2013-07-02T19:11:31+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: kinaj-02-weird-techno-minimal-dub
 images:
   - /wp-content/uploads/2013/07/soundcloud.png

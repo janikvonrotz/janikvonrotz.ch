@@ -1,7 +1,7 @@
 ---
 title: Open a Windows Remote Connection using KeePass credentials
 date: 2013-11-13T15:15:16+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: open-a-windows-remote-connection-using-keepass-credentials
 images:
   - /wp-content/uploads/2013/11/KeePassIcon-e1393417316329.png

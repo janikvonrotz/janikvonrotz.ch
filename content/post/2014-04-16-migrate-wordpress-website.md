@@ -1,7 +1,7 @@
 ---
 title: Migrate WordPress website
 date: 2014-04-16T07:44:47+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: migrate-wordpress-website
 images:
   - /wp-content/uploads/2014/02/wordpress-logo.jpg

@@ -1,7 +1,7 @@
 ---
 title: 'O3M 67 - Nospheratus'
 date: 2016-04-25T20:33:14+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: o3m-67-nospheratus
 images:
   - /wp-content/uploads/2016/04/O3M-67-Nospheratus.jpg

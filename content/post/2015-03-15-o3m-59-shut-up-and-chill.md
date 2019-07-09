@@ -1,7 +1,7 @@
 ---
 title: 'O3M 59 - Shut up and Chill'
 date: 2015-03-15T17:27:59+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: o3m-59-shut-up-and-chill
 images:
   - /wp-content/uploads/2015/03/O3M-59-Shut-up-and-Chill.jpg

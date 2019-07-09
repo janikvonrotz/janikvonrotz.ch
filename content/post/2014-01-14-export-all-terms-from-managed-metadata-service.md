@@ -1,7 +1,7 @@
 ---
 title: Export all Terms from Managed Metadata Service
 date: 2014-01-14T16:18:44+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: export-all-terms-from-managed-metadata-service
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
@@ -35,7 +35,7 @@ $Metadata = @{
 	Description = ""
 	Tags = "powershell, script, sharepoint, managed, metadata, terms, export"
 	Project = ""
-	Author = "Janik von Rotz"
+	Author = "Janik Vonrotz"
 	AuthorContact = "https://janikvonrotz.ch"
 	CreateDate = "2014-01-14"
 	LastEditDate = "2014-01-14"

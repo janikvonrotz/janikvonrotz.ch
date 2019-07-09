@@ -1,7 +1,7 @@
 ---
 title: Timelapse was yesterday
 date: 2014-10-29T12:13:10+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: timelapse-was-yesterday
 images:
   - /wp-content/uploads/2014/10/Layerlapse-e1415086023151.png

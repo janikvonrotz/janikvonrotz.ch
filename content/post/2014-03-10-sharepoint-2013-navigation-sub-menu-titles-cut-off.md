@@ -1,7 +1,7 @@
 ---
 title: SharePoint 2013 navigation sub menu titles cut off
 date: 2014-03-10T14:35:34+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: sharepoint-2013-navigation-sub-menu-titles-cut-off
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png

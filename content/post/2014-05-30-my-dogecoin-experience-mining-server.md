@@ -1,7 +1,7 @@
 ---
 title: 'My Dogecoin experience: mining server'
 date: 2014-05-30T14:07:11+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: my-dogecoin-experience-mining-server    
 images:
   - /wp-content/uploads/2014/05/Dogecoin-future.jpg

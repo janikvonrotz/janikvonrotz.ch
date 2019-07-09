@@ -1,7 +1,7 @@
 ---
 title: Backup Active Directory with PowerShell
 date: 2014-04-15T13:57:06+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: backup-active-directory-with-powershell
 images:
   - /wp-content/uploads/2013/12/PowerShell-and-ActiveDirectory.png
@@ -28,7 +28,7 @@ $Metadata = @{
 	Description = ""
 	Tags = "backup, active, directory, ntsutil"
 	Project = ""
-	Author = "Janik von Rotz"
+	Author = "Janik Vonrotz"
 	AuthorContact = "https://janikvonrotz.ch"
 	CreateDate = "2014-04-15"
 	LastEditDate = "2014-04-15"

@@ -1,7 +1,7 @@
 ---
 title: 'Configuration Manager - Configure requirement rules for deployment types with PowerShell'
 date: 2017-10-20T09:49:46+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: configuration-manager-configure-requirement-rules-for-deployment-types-with-powershell
 images:
   - /wp-content/uploads/2017/10/System-Center-Configuration-Manager-Logo.jpg

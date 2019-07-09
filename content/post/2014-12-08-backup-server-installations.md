@@ -1,7 +1,7 @@
 ---
 title: Backup server installations
 date: 2014-12-08T10:04:07+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: backup-server-installations
 images:
   - /wp-content/uploads/2014/03/Ubuntu-Logo.png

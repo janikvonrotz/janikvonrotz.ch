@@ -1,7 +1,7 @@
 ---
 title: Add Piwik tracking code to your Koken site
 date: 2015-08-19T08:38:41+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: add-piwik-tracking-code-to-your-koken-site
 images:
   - /wp-content/uploads/2015/08/Koken-Logo.png

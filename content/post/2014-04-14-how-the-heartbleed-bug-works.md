@@ -1,7 +1,7 @@
 ---
 title: How the Heartbleed bug works
 date: 2014-04-14T06:39:22+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: how-the-heartbleed-bug-works
 images:
   - /wp-content/uploads/2014/03/OpenSSL-Logo.png

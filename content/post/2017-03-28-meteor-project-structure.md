@@ -1,7 +1,7 @@
 ---
 title: Meteor project structure
 date: 2017-03-28T16:20:06+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: meteor-project-structure
 images:
   - /wp-content/uploads/2016/03/meteor-react-logo-1200x201.png

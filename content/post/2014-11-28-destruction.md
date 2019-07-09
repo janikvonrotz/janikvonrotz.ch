@@ -1,7 +1,7 @@
 ---
 title: Destruction
 date: 2014-11-28T12:23:37+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: destruction
 images:
   - /wp-content/uploads/2014/11/Destruction-title.jpg

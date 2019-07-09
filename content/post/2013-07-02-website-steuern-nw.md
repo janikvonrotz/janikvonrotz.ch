@@ -1,7 +1,7 @@
 ---
 title: Website Steuern NW
 date: 2013-07-02T09:04:53+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: website-steuern-nw
 images:
   - /wp-content/uploads/2015/01/Typo3-Logo.jpg

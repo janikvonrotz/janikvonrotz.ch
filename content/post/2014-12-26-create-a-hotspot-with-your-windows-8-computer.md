@@ -1,7 +1,7 @@
 ---
 title: Create a hotspot with your windows 8 computer
 date: 2014-12-26T14:33:02+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: create-a-hotspot-with-your-windows-8-computer
 images:
   - /wp-content/uploads/2014/12/windwows-8-wlan.png

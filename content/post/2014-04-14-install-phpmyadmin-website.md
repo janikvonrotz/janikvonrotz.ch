@@ -1,7 +1,7 @@
 ---
 title: Install phpMyAdmin website
 date: 2014-04-14T09:49:37+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: install-phpmyadmin-website
 images:
   - /wp-content/uploads/2014/04/phpMyAdmin-Logo.jpg

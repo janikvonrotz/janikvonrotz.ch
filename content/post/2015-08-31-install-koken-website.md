@@ -1,7 +1,7 @@
 ---
 title: Install Koken website
 date: 2015-08-31T06:45:57+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: install-koken-website
 images:
   - /wp-content/uploads/2015/08/Koken-Logo.png

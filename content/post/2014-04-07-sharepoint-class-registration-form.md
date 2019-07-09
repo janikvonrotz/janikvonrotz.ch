@@ -1,7 +1,7 @@
 ---
 title: SharePoint Class Registration Form
 date: 2014-04-07T12:25:53+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: sharepoint-class-registration-form
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png

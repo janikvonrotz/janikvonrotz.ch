@@ -1,7 +1,7 @@
 ---
 title: 'Kinaj 06 - Motion (Mixtape)'
 date: 2013-07-06T12:14:42+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: kinaj-07-tetris-glitch
 images:
   - /wp-content/uploads/2013/07/soundcloud.png

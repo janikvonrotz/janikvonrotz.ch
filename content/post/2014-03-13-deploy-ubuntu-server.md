@@ -1,7 +1,7 @@
 ---
 title: Deploy Ubuntu server
 date: 2014-03-13T16:04:21+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: deploy-ubuntu-server
 images:
   - /wp-content/uploads/2014/03/Ubuntu-Logo.png

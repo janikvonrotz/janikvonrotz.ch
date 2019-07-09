@@ -1,7 +1,7 @@
 ---
 title: 'Let’s write a Laravel application - Sortable table'
 date: 2015-02-04T14:33:28+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: lets-write-a-laravel-application-sortable-table
 images:
   - /wp-content/uploads/2015/01/laravel-logo-e1422466263489.png

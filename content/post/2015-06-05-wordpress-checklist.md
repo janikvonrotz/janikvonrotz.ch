@@ -1,7 +1,7 @@
 ---
 title: WordPress checklist
 date: 2015-06-05T06:54:03+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: wordpress-checklist
 images:
   - /wp-content/uploads/2014/02/wordpress-logo.jpg

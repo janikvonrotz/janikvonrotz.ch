@@ -1,7 +1,7 @@
 ---
 title: Backup Active Directory Group Policies with PowerShell
 date: 2014-04-22T08:02:13+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: backup-active-directory-group-policies-with-powershell
 images:
   - /wp-content/uploads/2013/10/Group-Policy.jpg
@@ -28,7 +28,7 @@ $Metadata = @{
     Description = ""
     Tags = "backup, active, directory, group, object, policy"
     Project = ""
-    Author = "Janik von Rotz"
+    Author = "Janik Vonrotz"
     AuthorContact = "https://janikvonrotz.ch"
     CreateDate = "2014-04-22"
     LastEditDate = "2014-04-22

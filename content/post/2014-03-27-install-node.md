@@ -1,7 +1,7 @@
 ---
 title: Install Node
 date: 2014-03-27T16:46:14+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: install-node
 images:
   - /wp-content/uploads/2014/03/Node.js-Logo.png

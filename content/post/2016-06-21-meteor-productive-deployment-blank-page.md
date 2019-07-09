@@ -1,7 +1,7 @@
 ---
 title: Meteor productive deployment blank page
 date: 2016-06-21T10:16:07+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: meteor-productive-deployment-blank-page
 images:
   - /wp-content/uploads/2015/12/Meteor-Logo.png

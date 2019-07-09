@@ -1,7 +1,7 @@
 ---
 title: Backup your OneNote files
 date: 2014-10-17T11:01:23+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: backup-your-onenote-files
 images:
   - /wp-content/uploads/2014/03/Office-2013-Logo.jpg

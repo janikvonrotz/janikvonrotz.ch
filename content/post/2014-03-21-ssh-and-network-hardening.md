@@ -1,7 +1,7 @@
 ---
 title: SSH and network hardening
 date: 2014-03-21T18:19:12+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: ssh-and-network-hardening
 images:
   - /wp-content/uploads/2014/03/Ubuntu-Logo.png

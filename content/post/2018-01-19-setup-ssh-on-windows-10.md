@@ -1,7 +1,7 @@
 ---
 title: Setup SSH on Windows 10
 date: 2018-01-19T11:55:48+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: setup-ssh-on-windows-10
 images:
   - /wp-content/uploads/2018/01/windows-10-ssh-client-help.png
