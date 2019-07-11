@@ -1,7 +1,7 @@
 ---
 title: Nginx SSL website
 date: 2014-04-03T07:54:04+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: nginx-ssl-website
 images:
   - /wp-content/uploads/2014/03/Nginx-Logo-e1394033855329.png

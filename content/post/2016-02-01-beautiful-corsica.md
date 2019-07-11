@@ -1,7 +1,7 @@
 ---
 title: Beautiful Corsica
 date: 2016-02-01T19:35:55+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: beautiful-corsica
 images:
   - /wp-content/uploads/2016/01/bicycle-1200x800.jpg

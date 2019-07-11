@@ -1,7 +1,7 @@
 ---
 title: 'Office365 and ADFS: Activate licenses for users depending on AD group membership'
 date: 2013-08-13T07:48:44+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: office365-and-adfs-activate-licenses-for-users-depending-on-ad-group-membership
 images:
   - /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg
@@ -30,7 +30,7 @@ The script will remove inactive licenses or if necessary replace them.
 "@
     Tags = "powershell, activedirectory, office365, user, license, activation"
     Project = ""
-    Author = "Janik von Rotz"
+    Author = "Janik Vonrotz"
     AuthorContact = "https://janikvonrotz.ch"
     CreateDate = "2013-08-13"
     LastEditDate = "2013-09-30"

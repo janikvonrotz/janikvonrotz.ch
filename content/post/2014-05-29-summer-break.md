@@ -1,7 +1,7 @@
 ---
 title: Summer break
 date: 2014-05-29T15:36:13+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: summer-break
 images:
   - /wp-content/uploads/2014/04/Traveling.png

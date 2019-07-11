@@ -1,7 +1,7 @@
 ---
 title: Graphql with Apollo, Meteor and React
 date: 2016-10-09T19:39:30+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: graphql-with-apollo-meteor-and-react
 images:
   - /wp-content/uploads/2016/10/react-meteor-graphl-apollo-1200x356.jpg

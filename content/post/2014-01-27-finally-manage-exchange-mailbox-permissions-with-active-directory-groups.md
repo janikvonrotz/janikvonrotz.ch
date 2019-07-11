@@ -1,7 +1,7 @@
 ---
 title: Finally! Manage Exchange mailbox permissions with Active Directory groups
 date: 2014-01-27T19:04:37+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: finally-manage-exchange-mailbox-permissions-with-active-directory-groups
 images:
   - /wp-content/uploads/2013/08/exchange-2013-e1393417827333.jpg
@@ -39,7 +39,7 @@ $Metadata = @{
 	Description = ""
 	Tags = "powershell, activedirectory, exchange, synchronization, access, mailbox, groups, permissions"
 	Project = ""
-	Author = "Janik von Rotz"
+	Author = "Janik Vonrotz"
 	AuthorContact = "https://janikvonrotz.ch"
 	CreateDate = "2014-01-27"
 	LastEditDate = "2014-01-27"

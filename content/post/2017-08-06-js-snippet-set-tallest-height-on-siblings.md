@@ -1,7 +1,7 @@
 ---
 title: 'JS snippet: Set tallest height on siblings'
 date: 2017-08-06T20:40:15+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: js-snippet-set-tallest-height-on-siblings
 categories:
   - JavaScript development

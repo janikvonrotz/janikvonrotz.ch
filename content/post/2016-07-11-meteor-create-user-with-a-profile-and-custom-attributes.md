@@ -1,7 +1,7 @@
 ---
 title: Meteor create user with a profile and custom attributes
 date: 2016-07-11T20:34:48+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: meteor-create-user-with-a-profile-and-custom-attributes
 images:
   - /wp-content/uploads/2015/12/Meteor-Logo.png

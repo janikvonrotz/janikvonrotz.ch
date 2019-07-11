@@ -1,7 +1,7 @@
 ---
 title: Install WPScan
 date: 2014-04-29T07:10:57+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: install-wpscan
 images:
   - /wp-content/uploads/2014/04/wpscan_logo_407x80.png

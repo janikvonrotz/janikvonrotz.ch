@@ -1,7 +1,7 @@
 ---
 title: Barry Underwood the master of light painting
 date: 2014-05-29T15:32:16+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: barry-underwood-the-master-of-light-painting
 images:
   - /wp-content/uploads/2014/05/03-Underwood-Wendover_forJohn.jpg

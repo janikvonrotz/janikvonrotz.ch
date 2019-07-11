@@ -1,7 +1,7 @@
 ---
 title: Archive ActiveDirectory Users and their Mailbox
 date: 2013-10-14T17:04:19+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: archive-activedirectory-users-and-their-mailbox
 images:
   - /wp-content/uploads/2013/08/exchange-2013-e1393417827333.jpg

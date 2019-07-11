@@ -1,7 +1,7 @@
 ---
 title: Remove provisioned appx packages from Windows image for operating system deployment
 date: 2017-09-18T09:51:20+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: remove-provisioned-appx-packages-from-windows-image-for-operating-system-deployment
 images:
   - /wp-content/uploads/2017/09/Remove-selected-appx-packages-from-wim.png

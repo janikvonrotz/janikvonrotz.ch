@@ -1,7 +1,7 @@
 ---
 title: WHEN WILL THE BASS DROP?
 date: 2014-05-19T07:40:29+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: when-will-the-bass-drop
 images:
   - /wp-content/uploads/2014/03/letsgetweird.jpg

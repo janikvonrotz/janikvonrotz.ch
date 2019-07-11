@@ -1,7 +1,7 @@
 ---
 title: 'Summer break - my package list'
 date: 2014-05-29T15:37:08+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: summer-break-my-package-list
 images:
   - /wp-content/uploads/2014/04/Traveling.png

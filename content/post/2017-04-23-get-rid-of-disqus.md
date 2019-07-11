@@ -1,7 +1,7 @@
 ---
 title: Get rid of Disqus
 date: 2017-04-23T08:44:28+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: get-rid-of-disqus
 categories:
   - Privacy

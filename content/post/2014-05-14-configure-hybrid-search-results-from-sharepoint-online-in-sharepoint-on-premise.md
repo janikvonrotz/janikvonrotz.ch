@@ -1,7 +1,7 @@
 ---
 title: Configure hybrid search results from SharePoint Online in SharePoint on-premise
 date: 2014-05-14T07:03:29+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: configure-hybrid-search-results-from-sharepoint-online-in-sharepoint-on-premise
 images:
   - /wp-content/uploads/2014/04/SharePoint-Office-365-Hybrid-Solution.jpg

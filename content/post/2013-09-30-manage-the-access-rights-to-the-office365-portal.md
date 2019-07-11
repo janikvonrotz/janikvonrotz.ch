@@ -1,7 +1,7 @@
 ---
 title: Manage access rights to the Office365 portal
 date: 2013-09-30T14:24:08+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: manage-the-access-rights-to-the-office365-portal
 images:
   - /wp-content/uploads/2013/09/office-logo_v3.jpg
@@ -30,7 +30,7 @@ Assign Administration roles to the members of specified AD groups or by a users 
 "@
     Tags = "powershell, activedirectory, office365, user, rights"
     Project = ""
-    Author = "Janik von Rotz"
+    Author = "Janik Vonrotz"
     AuthorContact = "https://janikvonrotz.ch"
     CreateDate = "2013-08-13"
     LastEditDate = "2013-09-26"

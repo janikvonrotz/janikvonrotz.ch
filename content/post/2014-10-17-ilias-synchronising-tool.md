@@ -1,7 +1,7 @@
 ---
 title: ILIAS Synchronising Tool
 date: 2014-10-17T18:27:19+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: ilias-synchronising-tool"
 categories:
   - scripting

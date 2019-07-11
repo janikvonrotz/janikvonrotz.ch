@@ -1,7 +1,7 @@
 ---
 title: Install php5-fpm
 date: 2014-03-20T13:41:30+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: install-php5-fpm
 images:
   - /wp-content/uploads/2014/03/php-logo.jpeg

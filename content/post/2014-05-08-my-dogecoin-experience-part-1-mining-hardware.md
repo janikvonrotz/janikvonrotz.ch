@@ -1,7 +1,7 @@
 ---
 title: 'My Dogecoin experience part 1 - Mining Hardware'
 date: 2014-05-08T09:24:46+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: my-dogecoin-experience-part-1-mining-hardware
 images:
   - /wp-content/uploads/2014/05/Dogecoin-banner.png

@@ -1,7 +1,7 @@
 ---
 title: 'Working with Ansible - Cleanup tasks'
 date: 2018-02-26T11:30:13+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: working-with-ansible-cleanup-tasks
 images:
   - /wp-content/uploads/2018/02/Ansible-text-only-e1519640301147.png

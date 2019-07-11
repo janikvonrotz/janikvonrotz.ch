@@ -1,7 +1,7 @@
 ---
 title: Downloads
 date: 2013-07-02T08:20:29+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 ---
 # Bachelor of Science in Business and Information Technology
 

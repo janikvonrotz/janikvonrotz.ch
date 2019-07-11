@@ -1,7 +1,7 @@
 ---
 title: You want to learn Java? BlueJ is the answer
 date: 2014-10-08T16:47:39+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: you-want-to-learn-java-bluej-is-the-answer
 images:
   - /wp-content/uploads/2014/10/Java-logo.jpg

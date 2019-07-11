@@ -1,7 +1,7 @@
 ---
-title: Website Janik von Rotz
+title: Website Janik Vonrotz
 date: 2013-07-02T09:01:17+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: website-janik-von-rotz
 images:
   - /wp-content/uploads/2015/01/Typo3-Logo.jpg

@@ -1,7 +1,7 @@
 ---
 title: 'Australia - East coast'
 date: 2014-07-26T00:08:36+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: australia-east-coast
 images:
   - /wp-content/uploads/2014/07/good-morning-20140722.jpg

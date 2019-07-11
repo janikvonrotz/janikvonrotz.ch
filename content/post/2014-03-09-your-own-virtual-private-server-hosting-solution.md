@@ -1,7 +1,7 @@
 ---
 title: Your own Virtual Private Server hosting solution
 date: 2014-03-09T11:16:23+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: 
 aliases: your-own-virtual-private-server-hosting-solution
   - /your-own-virtual-private-server-hosting-solution/

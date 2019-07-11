@@ -1,7 +1,7 @@
 ---
 title: Autodeploy to Github Pages with Travis CI
 date: 2015-11-11T09:37:05+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: autodeploy-to-github-pages-with-travisci
 images:
   - /wp-content/uploads/2015/11/Travis-CI-logo.jpg

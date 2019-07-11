@@ -1,7 +1,7 @@
 ---
 title: Unicorns of Berlin
 date: 2016-06-07T07:54:38+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: unicorns-of-berlin
 images:
   - /wp-content/uploads/2016/06/architecture-1200x901.jpg

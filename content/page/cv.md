@@ -2,13 +2,13 @@
 title: Curriculum Vitae
 slug: cv
 date: 2015-09-25T07:59:36+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 disable_comments: true
 ---
 
 [![Untitled](/images/Moi.jpg)](/images/Moi.jpg)
 
-Hi, my name is Janik von Rotz. I’m a Software Engineer / IT Consultant from Switzerland and have got a BSc in Business and Information Technology.
+Hi, my name is Janik Vonrotz. I’m a Software Engineer / IT Consultant from Switzerland and have got a BSc in Business and Information Technology.
 
 > Complex problems can only be solved by interdisciplinary teams. We need leaders who are able to connect people rather than dictate them.
 

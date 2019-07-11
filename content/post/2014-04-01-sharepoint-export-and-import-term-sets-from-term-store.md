@@ -1,7 +1,7 @@
 ---
 title: SharePoint Export and Import Term Sets from Term Store
 date: 2014-04-01T07:34:23+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: sharepoint-export-and-import-term-sets-from-term-store
 images:
   - /wp-content/uploads/2014/02/SharePoint-Online.jpg
@@ -31,7 +31,7 @@ $Metadata = @{
 	Description = ""
 	Tags = "powershell, function, sharepoint, managed, metadata, terms, export"
 	Project = ""
-	Author = "Janik von Rotz"
+	Author = "Janik Vonrotz"
 	AuthorContact = "https://janikvonrotz.ch"
 	CreateDate = "2014-03-31"
 	LastEditDate = "2014-03-31"

@@ -1,7 +1,7 @@
 ---
 title: Update Hostfile with Chrome/Firefox Plugin
 date: 2014-03-10T10:56:12+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: update-hostfile-with-chromefirefox-plugin
 images:
   - /wp-content/uploads/2014/03/web-development.jpg

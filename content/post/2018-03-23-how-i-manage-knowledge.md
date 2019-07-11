@@ -1,7 +1,7 @@
 ---
 title: How I manage knowledge
 date: 2018-03-23T16:40:48+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: how-i-manage-knowledge
 images:
   - /wp-content/uploads/2018/03/Knowledge-Book-Site.jpg

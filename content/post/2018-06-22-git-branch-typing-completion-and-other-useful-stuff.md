@@ -1,7 +1,7 @@
 ---
 title: Git branch typing completion and other useful stuff
 date: 2018-06-22T09:11:28+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: git-branch-typing-completion-and-other-useful-stuff
 images:
   - /wp-content/uploads/2018/06/git-completion-folder.png

@@ -1,7 +1,7 @@
 ---
 title: ExchangeOnline Region Presettings
 date: 2013-08-21T15:37:23+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: exchangeonline-region-presettings
 images:
   - /wp-content/uploads/2013/08/exchange-2013-e1393417827333.jpg

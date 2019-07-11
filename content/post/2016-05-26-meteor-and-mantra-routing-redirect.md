@@ -1,7 +1,7 @@
 ---
 title: 'Meteor and Mantra - Routing redirect'
 date: 2016-05-26T10:03:22+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: meteor-and-mantra-routing-redirect
 images:
   - /wp-content/uploads/2016/05/Mantra-Logo.jpeg

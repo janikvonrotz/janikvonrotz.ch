@@ -1,7 +1,7 @@
 ---
 title: Struggle with arbitrary knowledge
 date: 2018-06-01T15:27:00+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: struggle-with-arbitrary-knowledge
 images:
   - /wp-content/uploads/2018/05/roller-coaster.jpg

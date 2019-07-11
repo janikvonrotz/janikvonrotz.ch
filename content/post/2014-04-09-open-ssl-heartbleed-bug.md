@@ -1,7 +1,7 @@
 ---
 title: Open SSL Heartbleed Bug
 date: 2014-04-09T15:25:47+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: open-ssl-heartbleed-bug
 images:
   - /wp-content/uploads/2014/03/OpenSSL-Logo.png

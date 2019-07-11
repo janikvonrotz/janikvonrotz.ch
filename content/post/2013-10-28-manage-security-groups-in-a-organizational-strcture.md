@@ -1,7 +1,7 @@
 ---
 title: Manage Security Groups in a organizational Strcture
 date: 2013-10-28T16:22:20+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: manage-security-groups-in-a-organizational-strcture
 images:
   - /wp-content/uploads/2013/07/PowerShell.png
@@ -96,7 +96,7 @@ $Metadata = @{
     Description = ""
     Tags = "powershell, activedirectory, security, groups, update"
     Project = ""
-    Author = "Janik von Rotz"
+    Author = "Janik Vonrotz"
     AuthorContact = "https://janikvonrotz.ch"
     CreateDate = "2013-10-07"
     LastEditDate = "2013-10-24"

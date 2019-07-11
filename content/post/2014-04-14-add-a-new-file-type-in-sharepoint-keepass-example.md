@@ -1,7 +1,7 @@
 ---
 title: 'Add a new file type in SharePoint - KeePass example'
 date: 2014-04-14T08:15:07+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: add-a-new-file-type-in-sharepoint-keepass-example
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png

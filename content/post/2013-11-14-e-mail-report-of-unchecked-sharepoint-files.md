@@ -1,7 +1,7 @@
 ---
 title: E-Mail report of unchecked SharePoint files
 date: 2013-11-14T16:05:42+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: e-mail-report-of-unchecked-sharepoint-files
 images:
   - /wp-content/uploads/2013/07/PowerShell.png
@@ -40,7 +40,7 @@ $Metadata = @{
 	Description = ""
 	Tags = ""
 	Project = "powershell, script, sharepoint, report, unchecked, file"
-	Author = "Janik von Rotz"
+	Author = "Janik Vonrotz"
 	AuthorContact = "https://janikvonrotz.ch"
 	CreateDate = "2013-11-14"
 	LastEditDate = "2013-11-14"

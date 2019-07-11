@@ -1,7 +1,7 @@
 ---
 title: Disable WordPress plugins manually
 date: 2014-04-29T08:05:06+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: disable-wordpress-plugins-manually
 images:
   - /wp-content/uploads/2014/02/wordpress-logo.jpg

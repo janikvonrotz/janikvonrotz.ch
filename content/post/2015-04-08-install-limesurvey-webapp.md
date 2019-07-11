@@ -1,7 +1,7 @@
 ---
 title: Install LimeSurvey webapp
 date: 2015-04-08T09:07:55+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: install-limesurvey-webapp
 images:
   - /wp-content/uploads/2015/04/LimeSurvey-Logo.png

@@ -1,7 +1,7 @@
 ---
 title: Contact
 date: 2013-07-02T08:23:14+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 ---
 
 # Subscribe
@@ -45,7 +45,6 @@ author: Janik von Rotz
 
 [Flickr](https://www.flickr.com/photos/janik-von-rotz/)  
 [Soundcloud](https://soundcloud.com/janikvonrotz)  
-[Tumblr](http://tumblr.janikvonrotz.ch/)  
 [Vimeo](https://vimeo.com/janikvonrotz)  
 [Youtube](https://www.youtube.com/user/janikvonrotz)  
 

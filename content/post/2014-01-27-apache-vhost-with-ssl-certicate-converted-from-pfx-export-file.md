@@ -1,7 +1,7 @@
 ---
 title: Apache vHost with SSL Certicate converted from .pfx Export file
 date: 2014-01-27T14:03:40+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: apache-vhost-with-ssl-certicate-converted-from-pfx-export-file
 images:
   - /wp-content/uploads/2013/11/apache.jpg

@@ -1,6 +1,6 @@
 baseURL = "https://janikvonrotz.ch/"
 languageCode = "en-us"
-title = "Janik von Rotz"
+title = "Janik Vonrotz"
 description = "Curious, Dedicated, Open-Minded" 
 theme = "lithium"
 pygmentsCodeFences = "true"

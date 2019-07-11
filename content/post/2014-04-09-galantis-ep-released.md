@@ -1,7 +1,7 @@
 ---
 title: Galantis EP released
 date: 2014-04-09T07:31:45+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: galantis-ep-released
 images:
   - /wp-content/uploads/2014/04/Galantis-EP.jpg

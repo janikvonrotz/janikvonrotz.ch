@@ -1,7 +1,7 @@
 ---
 title: 'O3M 70 - Tamagotchi'
 date: 2016-08-27T09:43:23+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: o3m-70-tamagotchi
 images:
   - /wp-content/uploads/2016/08/O3M-70-Tamagotchi.jpg

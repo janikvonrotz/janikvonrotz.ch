@@ -1,7 +1,7 @@
 ---
 title: Website Seminars ILZ
 date: 2013-07-02T09:03:17+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: website-seminars-ilz
 images:
   - /wp-content/uploads/2015/01/Typo3-Logo.jpg

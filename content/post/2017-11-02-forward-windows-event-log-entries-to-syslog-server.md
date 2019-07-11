@@ -1,7 +1,7 @@
 ---
 title: Forward Windows event log entries to syslog server
 date: 2017-11-02T12:41:37+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: forward-windows-event-log-entries-to-syslog-server
 images:
   - /wp-content/uploads/2017/08/SCCM-PowerShell-e1503910243136.jpeg

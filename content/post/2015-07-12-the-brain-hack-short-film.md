@@ -1,7 +1,7 @@
 ---
 title: 'The Brain Hack - Short Film'
 date: 2015-07-12T21:50:04+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: the-brain-hack-short-film
 images:
   - /wp-content/uploads/2015/07/The-Brain-Hack-Short-Film.jpg

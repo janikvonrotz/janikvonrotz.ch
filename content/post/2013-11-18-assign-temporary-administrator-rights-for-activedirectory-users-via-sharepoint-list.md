@@ -1,7 +1,7 @@
 ---
 title: Assign Temporary Administrator Rights for ActiveDirectory Users via SharePoint list
 date: 2013-11-18T16:55:32+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: assign-temporary-administrator-rights-for-activedirectory-users-via-sharepoint-list
 images:
   - /wp-content/uploads/2013/08/Active-Directory-Logo.png
@@ -46,7 +46,7 @@ $Metadata = @{
 	Description = ""
 	Tags = "powershell, script, activedirectory, assign, temporary, administrator, rights, computer"
 	Project = ""
-	Author = "Janik von Rotz"
+	Author = "Janik Vonrotz"
 	AuthorContact = "https://janikvonrotz.ch"
 	CreateDate = "2013-11-15"
 	LastEditDate = "2013-11-18"

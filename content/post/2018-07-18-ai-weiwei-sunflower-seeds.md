@@ -2,7 +2,7 @@
 title: "Ai Weiwei Sunflower Seeds"
 date: 2018-07-18T11:41:38+02:00
 slug: ai-weiwei-sunflower-seeds
-author: Janik von Rotz
+author: Janik Vonrotz
 images:
   - /images/sunflower seeds installation by ai weiwei.jpg
 categories:

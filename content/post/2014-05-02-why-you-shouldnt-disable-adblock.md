@@ -1,7 +1,7 @@
 ---
 title: 'Why you shouldn’t disable Adblock'
 date: 2014-05-02T07:16:14+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: why-you-shouldnt-disable-adblock
 images:
   - /wp-content/uploads/2014/04/how-adblock-plus-works.png

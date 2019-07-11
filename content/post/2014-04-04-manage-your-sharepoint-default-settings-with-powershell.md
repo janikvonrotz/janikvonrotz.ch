@@ -1,7 +1,7 @@
 ---
 title: Manage your SharePoint default settings with PowerShell
 date: 2014-04-04T10:16:07+00:00
-author: Janik von Rotz
+author: Janik Vonrotz
 slug: manage-your-sharepoint-default-settings-with-powershell
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
@@ -39,7 +39,7 @@ $Metadata = @{
 	Description = ""
 	Tags = "powershell, script, sharepoint, default settings"
 	Project = ""
-	Author = "Janik von Rotz"
+	Author = "Janik Vonrotz"
 	AuthorContact = "http://www.janikvonrotz.ch"
 	CreateDate = "2013-05-07"
 	LastEditDate = "2014-04-04"
