@@ -27,7 +27,7 @@ author: Janik von Rotz
 
 # Communication
 
-[Mail](mailto:login@janikvonrotz.ch)  
+[Mail](mailto:contact@janikvonrotz.ch)  
 [Call me on Skype](skype:janikvonrotz?call)  
 [Chat with me on Skype](skype:janikvonrotz?chat)  
 [Keybase](https://keybase.io/janikvonrotz)  
