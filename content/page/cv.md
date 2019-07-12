@@ -16,9 +16,9 @@ Hi, my name is Janik Vonrotz. I’m a Software Engineer / IT Consultant from Swi
 
 Born on July 12, 1991 in Lucerne; apprenticeship Computer Specialist EFZ System Engineering accompanied with a technical Vocational Engineering School Diploma; full-time bachelor's degree in Business and Information Technology at Lucerne University of Applied Sciences and Arts; exchange semester at Berlin University of Business Administration and Engineering; international campus experience, Santa Clara University, USA.
 
-After completing his apprenticeship, Janik worked as a SharePoint Administrator and System Engineer with focus on system automation at Public Transportation Luzern AG (VBL). During his studies he focused on requirements engineering, software development and business process management. In the last semester he supported Apoveda GmbH with the implementation of their online presence. Prior to joining AdNovum, Janik designed and implemented a Microsoft System Center Configuration Manager solution for the cantonal hospital in Obwalden.
+After completing his apprenticeship, Janik worked as a SharePoint Administrator and System Engineer with focus on system automation at Public Transportation Luzern AG (VBL). During his studies he focused on requirements engineering, software development and business process management. In the last semester he supported Apoveda GmbH with the implementation of their online presence. Prior to joining AdNovum, Janik designed and implemented a Microsoft System Center Configuration Manager solution for the cantonal hospital in Obwalden. Afterwards he was employed as an Associate IAM Engineer by AdNovum. In this position, he designed and implemented Identity and Access Management solutions for AdNovum customers.
 
-Currently he is employed by AdNovum as an Associate IAM Engineer. In this position, he designs and implements Identity and Access Management solutions for AdNovum customers.
+Currently Janik works as a freelancer and intends to establish his first company [Apland - Janik von Rotz](https://apland.ch).
 
 ## Work Experience
 
