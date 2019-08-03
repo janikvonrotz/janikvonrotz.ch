@@ -14,6 +14,7 @@ images:
 ---
 
 I am currently reading [The redemption of Time](https://www.goodreads.com/book/show/36262251-the-redemption-of-time) by Baoshu. It is a fan-fiction of the [three-body problem trilogy](https://www.goodreads.com/series/189931). A science fiction series that was [appraised by Obama](https://www.tor.com/2017/01/17/barack-obama-books-the-three-body-problem/) himself. The fan-fiction became popular as well, so popular that it was first honored by the author of the three-body problem and then turned into a book.
+<!--more-->
 
 The story so far depicts how a human specimen, which has been captured by the the hostile species, is tormented in order to comply and release secret informations. The hostile species called Trisolarians are not aware of deception as they broadcast their thoughts continuously to their peers. As humans are indeed capable of deception the Tirsolarians want to acquire this skill. The Trisolarians treat deception as an important defensive weapon they had to consider.
 
