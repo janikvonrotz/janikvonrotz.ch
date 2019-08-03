@@ -33,9 +33,8 @@ Added the following items after my first cycling tour: USB plug, travel adapter,
 - [] Spices  
 - [] Cutlery  
 - [] Plate  
-- [] Cup  
+- [] Cup/Mug  
 - [] Water bag  
-- [] Mug  
 - [] Cutting board
 - [] Carving knife
 - [] Bag for cooking utensils  
@@ -74,7 +73,7 @@ Added the following items after my first cycling tour: USB plug, travel adapter,
 - [] Bicycle trousers 2  
 - [] Bicycle overpants / Trainer trousers short  
 - [] T-Shirts Active 3  
-- [] T-Shirt Long Sleeve  
+- [] (T-Shirt Long Sleeve)  
 
 ## Leisure
 
@@ -131,7 +130,7 @@ Added the following items after my first cycling tour: USB plug, travel adapter,
 - [] Health insurance card  
 - [] Credit and debit card  
 - [] Writing material  
-- [] Flight tickets  
+- [] Train/Flight tickets  
 - [] Books  
 - [] Day backpack  
 - [] Playing cards  
