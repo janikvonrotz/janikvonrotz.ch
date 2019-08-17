@@ -1,1 +1,4 @@
-<video controls src="{{ index .Params 0 }}" style="width: 100%;"></video>
+<video controls style="width: 100%;">
+    <source src="{{ index .Params 0 }}">
+    Your browser does not support the video tag.
+</video>
