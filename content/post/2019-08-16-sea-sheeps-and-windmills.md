@@ -40,3 +40,5 @@ After my stay in Amrum I decided to not take the same way back to Hamburg, but i
 {{< figure src="/images/Bicycle Tour Amrum/7_A peculiar hotel in Hamburg.jpg" title="A peculiar hotel in Hamburg" >}}
 
 I finished off my trip in Hamburg having a nice coffee at the [Elbgold shop](https://www.elbgoldshop.com/) and enjoying the view on the Aussenlaster lake.
+
+You can download the full resolution images from my [flickr album](https://www.flickr.com/photos/janik-von-rotz/albums/72157710371431567).
