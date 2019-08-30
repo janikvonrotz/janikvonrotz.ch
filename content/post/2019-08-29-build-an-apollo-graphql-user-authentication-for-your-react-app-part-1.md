@@ -56,16 +56,16 @@ Next follows the user type.
 
 ```txt
 type User {
-	id: String!
-	email: String!
-	password: String!
-	firstname: String!
-	lastname: String!
+  id: String!
+  email: String!
+  password: String!
+  firstname: String!
+  lastname: String!
 
-	created: Date
-	created_by: String!
-	updated: Date
-	updated_by: String!
+  created: Date
+  created_by: String!
+  updated: Date
+  updated_by: String!
 }
 ```
 
@@ -73,12 +73,12 @@ Then the token and default response.
 
 ```txt
 type Token {
-	token: String!
+  token: String!
 }
 
 type Response {
-    success: Boolean!
-    message: String
+  success: Boolean!
+  message: String
 }
 ```
 
@@ -86,9 +86,9 @@ Queries are restricted by the custom directive.
 
 ```txt
 type Query {
-	me: User @isAuthenticated
-	users: [User] @isAuthenticated
-	loginUser(email: String!, password: String!): Token
+  currentUser: User @isAuthenticated
+  users: [User] @isAuthenticated
+  loginUser(email: String!, password: String!): Token
 }
 ```
 
@@ -96,9 +96,9 @@ And here are the mutation we need to actually create and manipulate a user.
 
 ```txt
 type Mutation {
-	createUser(email: String!, password: String!, firstname: String!, lastname: String!): User
-	updateUser(id: String!, email: String, password: String, firstname: String, lastname: String): Response
-	deleteUser(id: String!): Response
+  createUser(email: String!, password: String!, firstname: String!, lastname: String!): User
+  updateUser(id: String!, email: String, password: String, firstname: String, lastname: String): Response
+  deleteUser(id: String!): Response
 }
 `
 
@@ -118,85 +118,79 @@ const { GraphQLScalarType } = require('graphql')
 const { AuthenticationError, ForbiddenError } = require('apollo-server-micro')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
+const { Kind } = require('graphql/language')
 
 // Hash configuration
 const BCRYPT_ROUNDS = 12
 
 // Resolve GraphQL queries, mutations and graph paths
 const resolvers = {
-	Query: {
-		users: async (obj, args, context) => {
-     		let user // -> Access data layer and get user data
-			return user
-		},
-		me: async (obj, args, context) => {
-    		let user // -> Access data layer and get user data
-			return user
-		},
-		loginUser: async (obj, args, context) => {
+  Query: {
+    users: async (obj, args, context) => {
+      const user // -> Access data layer and get user data
+      return user
+    },
+    currentUser: async (obj, args, context) => {
+      const user // -> Access data layer and get user data
+      return user
+    },
+    loginUser: async (obj, args, context) => {
+      // Find user by email and password
+      const user // -> Access data layer and get user data
 
-			// Find user by email and password
-			let user // -> Access data layer and get user data
+      // Compare hash
+      if(user && await bcrypt.compare(args.password, user.password)) {
+        // Generate and return JWT token
+        const token = jwt.sign({ email: user.email, name: (user.firstname + ' ' + user.lastname) }, process.env.JWT_SECRET )
+        return { token: token }
+      } else {
+        // Throw authentication error
+        throw new AuthenticationError('Login failed.')
+      }
+    }
+  },
+  Mutation: {
+    createUser: async (obj, args, context) => {
+      // Check if user already exists
+      const user // -> Access data layer and get user data
+      if (user) {
+        throw new ForbiddenError('User already exists.')
+      }
 
-			// Compare hash
-			if(user && await bcrypt.compare(args.password, user.password)) {
+      // Hash password
+      args.password = await bcrypt.hash(args.password, BCRYPT_ROUNDS)
+      args.created = new Date()
+      args.created_by = context.name || "system"
+      const user // -> Access data layer and store user data
+      return user
+    },
+    updateUser: async (obj, args, context) => {
+      args.updated = new Date()
+      args.updated_by = context.name || "system"
 
-				// Generate and return JWT token
-				const token = jwt.sign({ email: user.email, name: (user.firstname + ' ' + user.lastname) }, process.env.JWT_SECRET )
-				return { token: token }
+      // Hash password if provided
+      if(args.password){
+        args.password = await bcrypt.hash(args.password, BCRYPT_ROUNDS)
+      }
 
-			} else {
-				
-				// Throw authentication error
-				throw new AuthenticationError('Login failed.')
-			}
-		}
-	},
-	Mutation: {
-		createUser: async (obj, args, context) => {
-
-			// Check if user already exists
-			let user // -> Access data layer and get user data
-			if (user) {
-				throw new ForbiddenError('User already exists.')
-			}
-
-			// Hash password
-      		args.password = await bcrypt.hash(args.password, BCRYPT_ROUNDS)
-      
-			args.created = new Date()
-     		args.created_by = context.name || "system"
-      		let user // -> Access data layer and store user data
-			return user
-		},
-		updateUser: async (obj, args, context) => {
-			args.updated = new Date()
-			args.updated_by = context.name || "system"
-
-			// Hash password if provided
-			if(args.password){
-				args.password = await bcrypt.hash(args.password, BCRYPT_ROUNDS)
-			}
-
-     		 // -> Access data layer and update user data
-			return { 
-       			success: true
-      		}
-		},
-		deleteUser: async (obj, args, context) => {
-     		// -> Access data layer and delete user data
-			return { 
-        		success: true
-     		}
-		}
-	},
-	User: {
-
-		// Hide password hash
-		password() {
-			return ''
-		}
-	}
+      // -> Access data layer and update user data
+      return { 
+        success: true
+      }
+    },
+    deleteUser: async (obj, args, context) => {
+      // -> Access data layer and delete user data
+      return { 
+        success: true
+      }
+    }
+  },
+  User: {
+    // Hide password hash
+    password() {
+      return ''
+    }
+  }
 }
 
 module.exports = resolvers
@@ -217,23 +211,24 @@ const { AuthenticationError } = require('apollo-server-micro')
 const jwt = require('jsonwebtoken')
 
 const context = ({ req }) => {
+  // Get the user token from the headers
+  let token = req.headers.authorization ? req.headers.authorization.split(' ')[1] : null
 
-    // Get the user token from the headers
-    let token = req.headers.authorization ? req.headers.authorization.split(' ')[1] : null
-
-    // Verify token if available
-    if (token) {
-        try {
-            token = jwt.verify(token, process.env.JWT_SECRET)
-        } catch (error) {
-            throw new AuthenticationError('Authentication token is invalid, please log in.')
-        }
+  // Verify token if available
+  if (token) {
+    try {
+      token = jwt.verify(token, process.env.JWT_SECRET)
+    } catch (error) {
+      throw new AuthenticationError(
+        'Authentication token is invalid, please log in.'
+      )
     }
+  }
 
-    return {
-        email: token ? token.email : null,
-        name: token ? token.name : null
-    }
+  return {
+    email: token ? token.email : null,
+    name: token ? token.name : null
+  }
 }
 
 module.exports = context
@@ -251,24 +246,21 @@ const { defaultFieldResolver } = require('graphql')
 
 // Custom directive to check if user is authenicated
 class isAuthenticated extends SchemaDirectiveVisitor {
+  // Field definition directive
+  visitFieldDefinition (field) {
+    // Get field resolver
+    const { resolve = defaultFieldResolver } = field
 
-    // Field definition directive
-    visitFieldDefinition(field) {
+    field.resolve = async function (...args) {
+      // Check if user email is in context
+      if (!args[2].email) {
+        throw new ForbiddenError('You are not authorized for this ressource.')
+      }
 
-        // Get field resolver
-        const { resolve = defaultFieldResolver } = field
-
-        field.resolve = async function(...args) {
-
-            // Check if user email is in context
-            if (!args[2].email) {
-                throw new ForbiddenError('You are not authorized for this ressource.')
-            }
-            
-            // Resolve field
-            return await resolve.apply(this, args)
-        }
+      // Resolve field
+      return resolve.apply(this, args)
     }
+  }
 }
 
 module.exports = { isAuthenticated: isAuthenticated }
@@ -290,27 +282,26 @@ const directives = require('./directives')
 
 // Initialize Apollo server
 const server = new ApolloServer({
-	typeDefs,
-	resolvers,
-	context: context,
-	introspection: true,
-	playground: true,
-	schemaDirectives: directives
+  typeDefs,
+  resolvers,
+  context: context,
+  introspection: true,
+  playground: true,
+  schemaDirectives: directives
 })
 
 // Export server as handler
 module.exports = cors((req, res) => {
-
-  // Workaround abort on Options method 
+  // Workaround abort on Options method
   if (req.method === 'OPTIONS') {
     res.end()
     return
   }
-  return server.createHandler({ path: '/graphql' })(req, res)
+  return server.createHandler({ path: '/api' })(req, res)
 })
 ```
 
-To those who noticed that I import `apollo-server-micro` instead of `apollo-micro`, it is because I am deploying my apps as serverless functions with [Zeit Now](https://zeit.co/home) using their [HTTP microservice](https://github.com/zeit/micro).
+To those who noticed that I import `apollo-server-micro` instead of `apollo-server`, it is because I am deploying my apps as serverless functions with [Zeit Now](https://zeit.co/home) using their [HTTP microservice](https://github.com/zeit/micro).
 
 ## Test
 
@@ -347,7 +338,7 @@ Copy the token in to the HTTP header field.
 Query the user info.
 
 ```txt
-{ me {
+{ currentUser {
   firstname
   lastname
   email
@@ -377,3 +368,7 @@ In order to provide a full user accounting module of course more queries are req
 * resetUserPassword: Query to initiate password reset.
 
 If you have any questions, feel free to ask below 👋.
+
+## Updates
+
+*2019/08/30:* Updated all code snippets after applying JavaScript Standard Style guide. Removed unnecessary await statements.
