@@ -31,6 +31,9 @@ Let's get started with an overview of the project files.
 * `Profile.js`: View for user profile
 * `queries.js`: Exports all Graphql queries and mutations
 * `Routes.js`: React router component
+* `hooks.js`: Export React hooks
+
+*2019-09-18 Edit: Added React hook file* 
 
 So obviously we are not going to build an React app from scratch. This guide assumes you already have one and intent to add authentication and authorization functionality.
 
@@ -77,22 +80,18 @@ import Button from '@material-ui/core/Button'
 import { LOGIN_USER } from './queries'
 import Loading from './Loading'
 import Error from './Error'
+import { useForm } from './hooks'
 
 const Login = () => {
 
-  // State to store form values
-  const [values, setValues] = React.useState(false)
-
-  // Handle method for form fields
-  const handleChange = name => event => {
-    setValues({ ...values, [name]: event.target.value })
-  }
+  // Use form state
+  const { values, handleChange, handleSubmit } = useForm((credentials) => loginUser(), {
+    email: '',
+    password: ''
+  })
 
   // Lazy query for login user method
-  const [loginUser, { called, loading, data, error }] = useLazyQuery(
-    LOGIN_USER,
-    { variables: { email: values.email, password: values.password } }
-  )
+  const [loginUser, { called, loading, data, error }] = useLazyQuery(LOGIN_USER, { variables: values })
 
   // Wait for lazy query
   if (called && loading) return <Loading />
@@ -109,14 +108,11 @@ const Login = () => {
   }
 
   return (
-    <Paper>
-      <Typography variant='h3' component='h1'>
-                Login
+    <Paper className={classes.paper}>
+      <Typography className={classes.title} variant='h3' component='h1'>
+        Login
       </Typography>
-      <form onSubmit={(e) => {
-        e.preventDefault()
-        loginUser()
-      }}
+      <form onSubmit={handleSubmit}
       >
         <TextField
           variant='outlined'
@@ -127,7 +123,8 @@ const Login = () => {
           name='email'
           label='Email Address'
           type='email'
-          onChange={handleChange('email')}
+          value={values.email}
+          onChange={handleChange}
           autoFocus
         />
         <TextField
@@ -139,13 +136,15 @@ const Login = () => {
           name='password'
           label='Password'
           type='password'
-          onChange={handleChange('password')}
+          value={values.password}
+          onChange={handleChange}
         />
         <Button
           type='submit'
           fullWidth
           variant='contained'
           color='primary'
+          className={classes.submit}
         >
           Sign in
         </Button>
@@ -158,6 +157,8 @@ export default Login
 ```
 
 The component presents a login form. When credentials are submitted a React hook is used to run the lazy Graphql query and retrieve the JWT token. If the login is successful the token is stored in the local storage of the browser.
+
+The form state is managed by a React hook as well. See the `hooks.js` for the simple `useForm` React hook example that can be reused for other form.
 
 As you can see the query is imported from the `queries.js` file. This is externalized because we want to share queries among component.
 
@@ -189,6 +190,41 @@ export {
 }
 
 ```
+
+And here is the `useForm` React hook.
+
+**hooks.js**
+
+```js
+import { useState } from 'react'
+
+const useForm = (callback, data) => {
+  const [values, setValues] = useState(data)
+
+  const handleChange = (event) => {
+    event.persist()
+    setValues(values => ({
+      ...values,
+      [event.target.name]: event.target.value
+    }))
+  }
+
+  const handleSubmit = (event, onSubmit) => {
+    event.preventDefault()
+    callback(values)
+  }
+
+  return {
+    handleChange,
+    handleSubmit,
+    values
+  }
+}
+
+export { useForm }
+```
+
+*2019-09-18 Edit: Added useForm React hook* 
 
 ## Apollo
 
@@ -328,3 +364,7 @@ As already mentioned in my last post I focus on the modifications you have to ma
 * Proper error and success notification
 * Redirect to error page if user is unauthorized
 * User signup process
+
+## Edits
+
+2019-09-18: Added useForm React hook.
