@@ -1,24 +1,45 @@
 ---
-title: "2019 08 31 Build an Apollo Graphql User Authentication for Your React App Part 3"
-slug: 2019-08-31-build-an-apollo-graphql-user-authentication-for-your-react-app-part-3
+title: "Build an Apollo Graphql user authentication for your React app - part 3"
+slug: build-an-apollo-graphql-user-authentication-for-your-react-app-part-3
 date: 2019-09-01T10:31:27+02:00
 categories:
- - Blog
+ - JavaScript development
 tags:
- - hello
- - world
+ - apollo
+ - graphql
+ - authentication
+ - react
+ - json web token
+ - directive
+ - authorization
 images:
- - /images/logo.png
+ - /images/metal network.jpg
 draft: true
 ---
 
-api/schema.js
+This is the final post of my GraphQl Auth series. Before reading this post checkout [post 1](/2019/08/27/build-an-apollo-graphql-user-authentication-for-your-react-app-part-1) and [post 2](/2019/08/29/build-an-apollo-graphql-user-authentication-for-your-react-app-part-2).
+
+As mentioned in my last post we need to polish our auth solution. First we wanna ensure that the JWT token expires. Second, I think the `isAuthenticated` directive is insufficient for proper permission management on our types, queries and mutations. We need a role based solution. While the first point is simple to implement, the second is more complex and definitely requires walking through the previous posts.
+
+## Files
+
+The `api` folder holds the GraphQl files and the `app` folder our React app files.
+
+* `api/schema.js`:
+* `api/context.js`:
+* `api/directives.js`:
+* `api/resolvers.js`:
+
+## Schema
+
+**api/schema.js**
 
 ```js
 const { gql } = require('apollo-server-micro')
 
 // GraphQL schema
 const typeDefs = gql`
+...
 
 directive @hasRole(roles: [Role!]) on FIELD_DEFINITION
 
@@ -58,7 +79,15 @@ type Mutation {
 module.exports = typeDefs
 ```
 
-api/context.js
+In addition to our `isAuthenticated` there is now a `hasRole` directive. This directive accepts a list of Roles and only grants user equipped with such role access or execution rights.
+
+The `User` type has a new property `role`. It is now possible to assign a role from the enum to every user.
+
+## Context
+
+**api/context.js**
+
+The user role is retrieved 
 
 ```js
 ...
@@ -88,7 +117,9 @@ api/context.js
 module.exports = context
 ```
 
-api/directives.js
+## Directive
+
+**api/directives.js**
 
 ```js
 const { SchemaDirectiveVisitor, ForbiddenError } = require('apollo-server-micro')
@@ -125,7 +156,9 @@ class hasRole extends SchemaDirectiveVisitor {
 module.exports = { isAuthenticated: isAuthenticated, hasRole: hasRole }
 ```
 
-api/resolvers.js
+## Resolver
+
+**api/resolvers.js**
 
 ```js
 ...
@@ -147,3 +180,22 @@ api/resolvers.js
     },
 ...
 ```
+
+## Login
+
+**api/resolvers.js**
+
+```js
+...
+
+...
+```
+
+## Conclusion
+
+
+
+## Addition
+
+
+- JWT referesh token
