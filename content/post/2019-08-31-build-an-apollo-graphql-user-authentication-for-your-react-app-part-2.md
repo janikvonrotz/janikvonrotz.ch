@@ -18,6 +18,7 @@ images:
 
 In my [last post](/2019/08/27/build-an-apollo-graphql-user-authentication-for-your-react-app-part-1) we built a Graphql API that handles user authentication and authorization. In particular we added a `loginUser` query that returns a JWT token. This token can be used to access restricted resources.
 In this post I will show what the implementation looks like on Reacts side.
+<!--more-->
 
 Walking through this guide requires basic React knowledge. We will use [React Router](https://reacttraining.com/react-router/) for routing, [React Hooks](https://reactjs.org/docs/hooks-intro.html) for executing Graphql queries and [Matieral-UI](https://material-ui.com/) for the component framework.
 
