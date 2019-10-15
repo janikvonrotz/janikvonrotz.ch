@@ -22,6 +22,10 @@ Currently Janik works as a freelancer and intends to establish his first company
 
 ## Work Experience
 
+09|2019 - Today  
+Software and Business Developer (part-time)  
+[Abilium GmbH](https://abilium.com/)
+
 01|2018 – 04|2019  
 Associate IAM Engineer (full-time)  
 [AdNovum Informatik AG](https://www.adnovum.ch/)  
