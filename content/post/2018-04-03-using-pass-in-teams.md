@@ -48,13 +48,6 @@ Passwords are encrypted with a gpg key. In a team environment the gpg key should
 
 ```bash
 gpg --gen-key
-# (1) RSA and RSA (default)
-> enter
-# What keysize do you want? (2048)
-> enter
-# 0 = key does not expire
-> enter
-> y
 # Real name:
 > $TEAM_MAIL
 # Email address:
@@ -118,7 +111,7 @@ Then submit a request by committing the gpg id.
 
 ```bash
 cd ~/.password-store/$PROJECT_NAME
-git add .gpg-id
+git add .
 git commit -m "Request access for $PERSONAL_MAIL"
 git push
 ```
@@ -139,9 +132,9 @@ gpg --import $PERSONAL_MAIL.gpg
 Then sign the imported key.
 
 ```bash
+gpg --local-user $TEAM_MAIL --sign-key $PERSONAL_MAIL
 gpg --edit-key $PERSONAL_MAIL
-# sign it
-> lsign
+# Confirm
 > y
 # enter the passphrase for $TEAM_MAIL
 > save
@@ -150,12 +143,10 @@ gpg --edit-key $PERSONAL_MAIL
 Reinitialize the password store.  
 `pass init -e -p $PROJECT_NAME $(cat ~/.password-store/$PROJECT_NAME/.gpg-id)`
 
-Commit the changes.
+Push the changes.
 
 ```bash
 cd ~/.password-store/$PROJECT_NAME
-git add .
-git commit -m "Access granted for $PERSONAL_MAIL"
 git push
 ```
 
@@ -189,7 +180,8 @@ If there is a gpg registry you can obtain the public keys from there. There woul
 
 # Updates
 
-*2019-10-16 Edit: Renamed the variables with a '$' prefix. Ensuring bash compatiblity.*
+*2019-10-16 Edit: Renamed the variables with a '$' prefix. Ensuring bash compatiblity.*  
+*2019-10-16 Edit: Updated guide for latest pass version.*
 
 # Sources
 
