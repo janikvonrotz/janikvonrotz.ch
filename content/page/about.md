@@ -11,6 +11,8 @@ Hi, my name is Janik Vonrotz. I’m a Software Engineer / IT Consultant from Swi
 
 This is my blog where I share experiences of my personal and professional life. Sharing insightful stories and ideas without aiming for profit or reputation plays an integral part in the vast open source software world.
 
+Currently I am working as a freelancer and building my first company [Apland GmbH](https://apland.ch).
+
 Here are a few things about me:
 
 I like to ...
