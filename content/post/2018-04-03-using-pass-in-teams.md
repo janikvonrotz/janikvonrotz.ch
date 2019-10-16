@@ -26,10 +26,10 @@ This document is a guideline for users which require access to a shared pass sto
 
 In the document you will find different variables starting and ending with **_** underscore. Below is a description of what those variables mean.
 
-    _PROJECT_NAME_: A unique name for the shared pass store folder.
-    _GIT_REMOTE_URL_: Remote url of the shared pass store git repository.
-    _PERSONAL_MAIL_: Personal mail address which is used as gpg key id.
-    _TEAM_MAIL_: Shared team mail address which is used for the shared gpg key id.
+    $PROJECT_NAME: A unique name for the shared pass store folder.
+    $GIT_REMOTE_URL_: Remote url of the shared pass store git repository.
+    $PERSONAL_MAIL: Personal mail address which is used as gpg key id.
+    $TEAM_MAIL: Shared team mail address which is used for the shared gpg key id.
 
 # Setup a shared pass store
 
@@ -42,7 +42,7 @@ If you do not have a personal gpg key, create one. Make sure to set a correct ma
 `gpg --gen-key`
 
 Initialize a personal pass store.  
-`pass init _PERSONAL_MAIL_`
+`pass init $PERSONAL_MAIL`
 
 Passwords are encrypted with a gpg key. In a team environment the gpg key should not impersonate somebody but rather the team itself. That is why a new gpg key is required.
 
@@ -56,9 +56,9 @@ gpg --gen-key
 > enter
 > y
 # Real name:
-> _TEAM_MAIL_
+> $TEAM_MAIL
 # Email address:
-> _TEAM_MAIL_
+> $TEAM_MAIL
 # Confirm
 > O
 # Enter the password
@@ -66,19 +66,19 @@ gpg --gen-key
 ```
 
 Create a new pass store in a subfolder.  
-`pass init -p _PROJECT_NAME_ _TEAM_MAIL_`
+`pass init -p $PROJECT_NAME $TEAM_MAIL`
 
 Add the gpg test password to the new store.  
-`pass generate _PROJECT_NAME_/sharedpass 20`
+`pass generate $PROJECT_NAME/sharedpass 20`
 
 Setup a git repo for the shared pass store.
 
 ```bash
-cd ~/.password-store/_PROJECT_NAME_
+cd ~/.password-store/$PROJECT_NAME
 git init
 git add .
-git commit -m "Init _PROJECT_NAME_ password store"
-git remote add origin _GIT_REMOTE_URL_
+git commit -m "Init $PROJECT_NAME password store"
+git remote add origin $GIT_REMOTE_URL_
 git push --set-upstream origin master
 ```
 
@@ -86,9 +86,9 @@ Add the gpg public key to the store.
 
 ```bash
 mkdir .gpg-keys
-gpg --output .gpg-keys/_TEAM_MAIL_.gpg --export _TEAM_MAIL_
-git add _TEAM_MAIL_.gpg
-git commit -m "Add _TEAM_MAIL_ public key"
+gpg --output .gpg-keys/$TEAM_MAIL.gpg --export $TEAM_MAIL
+git add $TEAM_MAIL.gpg
+git commit -m "Add $TEAM_MAIL public key"
 git push
 ```
 
@@ -99,7 +99,7 @@ The remote repo can be cloned as a subfolder into the existing pass store folder
 In the following steps we assume that another member of the team requires access to the shared pass store.
 
 Clone the shared pass store repository.  
-`git clone _GIT_REMOTE_URL_  ~/.password-store/_PROJECT_NAME_`
+`git clone $GIT_REMOTE_URL_  ~/.password-store/$PROJECT_NAME`
 
 The shared pass store is now available as subfolder to your personal pass store. If you have enabled git for the personal pass store the subfolder will be treated as git submodule. Changes in the shared pass store will not affect your personal store.
 
@@ -109,21 +109,21 @@ List your gpg keys.
 `gpg --list-key`
 
 Add the personal key to the shared pass store.  
-`echo "_PERSONAL_MAIL_" >> ~/.password-store/_PROJECT_NAME_/.gpg-id`
+`echo "$PERSONAL_MAIL" >> ~/.password-store/$PROJECT_NAME/.gpg-id`
 
 And export the public gpg key.  
-`gpg --output ~/.password-store/_PROJECT_NAME_/.gpg-keys/_PERSONAL_MAIL_.gpg --export _PERSONAL_MAIL_`
+`gpg --output ~/.password-store/$PROJECT_NAME/.gpg-keys/$PERSONAL_MAIL.gpg --export $PERSONAL_MAIL`
 
 Then submit a request by committing the gpg id.
 
 ```bash
-cd ~/.password-store/_PROJECT_NAME_
+cd ~/.password-store/$PROJECT_NAME
 git add .gpg-id
-git commit -m "Request access for _PERSONAL_MAIL_"
+git commit -m "Request access for $PERSONAL_MAIL"
 git push
 ```
 
-The receiver of this request is the owner of the shared pass store signer key `_TEAM_MAIL_`.
+The receiver of this request is the owner of the shared pass store signer key `$TEAM_MAIL`.
 
 # Grant access to users
 
@@ -132,50 +132,50 @@ The owner of the signer key must sign all keys of new team members.
 First import the new keys.
 
 ```bash
-cd ~/.password-store/_PROJECT_NAME_/.gpg-keys
-gpg --import _PERSONAL_MAIL_.gpg
+cd ~/.password-store/$PROJECT_NAME/.gpg-keys
+gpg --import $PERSONAL_MAIL.gpg
 ```
 
 Then sign the imported key.
 
 ```bash
-gpg --edit-key _PERSONAL_MAIL_
+gpg --edit-key $PERSONAL_MAIL
 # sign it
 > lsign
 > y
-# enter the passphrase for _TEAM_MAIL_
+# enter the passphrase for $TEAM_MAIL
 > save
 ```
 
 Reinitialize the password store.  
-`pass init -e -p _PROJECT_NAME_ $(cat ~/.password-store/_PROJECT_NAME_/.gpg-id)`
+`pass init -e -p $PROJECT_NAME $(cat ~/.password-store/$PROJECT_NAME/.gpg-id)`
 
 Commit the changes.
 
 ```bash
-cd ~/.password-store/_PROJECT_NAME_
+cd ~/.password-store/$PROJECT_NAME
 git add .
-git commit -m "Access granted for _PERSONAL_MAIL_"
+git commit -m "Access granted for $PERSONAL_MAIL"
 git push
 ```
 
-The user should now be able the decrypt the password using the `_PERSONAL_MAIL_` key.
+The user should now be able the decrypt the password using the `$PERSONAL_MAIL` key.
 
 # Contribute to a shared pass store
 
-New password insertions must be encrypted with the `_TEAM_MAIL_` gpg key.
+New password insertions must be encrypted with the `$TEAM_MAIL` gpg key.
 
 The gpg key can be imported from the shared pass folder.
 
 ```bash
-cd ~/.password-store/_PROJECT_NAME_/.gpg-keys
-gpg --import _TEAM_MAIL_.gpg
+cd ~/.password-store/$PROJECT_NAME/.gpg-keys
+gpg --import $TEAM_MAIL.gpg
 ```
 
 In order to encrypt new pass entries, you must trust the key.
 
 ```bash
-gpg --edit-key _TEAM_MAIL_.gpg
+gpg --edit-key $TEAM_MAIL.gpg
 > trust
 > 5
 # exit the cli
@@ -186,6 +186,10 @@ Now you can start creating new entries using the [pass cli](https://git.zx2c4.co
 # Notes
 
 If there is a gpg registry you can obtain the public keys from there. There would be no need to exchange public key as files.
+
+# Updates
+
+*2019-10-16 Edit: Renamed the variables with a '$' prefix. Ensuring bash compatiblity.*
 
 # Sources
 
