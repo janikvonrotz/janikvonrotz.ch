@@ -12,6 +12,7 @@ images:
 ---
 
 I usually come up with the important questions way too late. "Why do I not like working in hierarchical organizations?" is the question I should have asked a year ago. But it is never too late. So here we go.
+<!--more-->
 
 I always thought that I don't like working in hierarchical organization because I don't require anybody to explaining me what to do. To be self-reliant, self-reflective and take responsibility is natural to me. And I always stood up to this values. Nonetheless, I struggled working in big project organizations. Did not like how people looked after themselves and only their part of the project. It just seemed inefficient to me, but I was not able to point the finger to a particular problem. I ended up with the conclusion that I am not fit to work in an hierarchical organization.
 
