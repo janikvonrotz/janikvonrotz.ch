@@ -88,7 +88,7 @@ Vocational Engineering School Diploma
 Computer Specialist EFZ System Engineering  
 [Vocational Training Centre for Business, Information Technology and Engineering in Sursee](https://beruf.lu.ch/berufsbildungszentren/bbzw)  
 
-## Professinal skills
+## Professional skills
 
 * Requirements engineering – Analyze and process customers’ requirements.
 * Project management – Agile and classic.
