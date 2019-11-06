@@ -116,61 +116,21 @@ French (mainly reading, hardly writing and speaking) – Diplome d&#39;etudes en
 
 ## Technical skills
 
-**Collaboration**
-
-Confluence and SharePoint
-
-**Task Tracking**
-
-Jira
-
-**Configuration Management**
-
-Puppet, Ansible and System Center Configuration Manager
-
-**Build Automation**
-
-Gradle and Yarn
-
-**Continuous Integration**
-
-GoCD and Artifactory
-
-**Programming Languages**
-
-Java Script (ES6) and Java
-
-**Data Layer**
-
-GraphQL, REST and SOAP
-
-**Front-end Frameworks**
-
-React and Apollo Client
-
-**Database**
-
-MongoDB, MySQL and Oracle
-
-**Back-end Frameworks**
-
-Apollo Server, Express and Meteor
-
-**Scripting Languages**
-
-Bash and PowerShell
-
-**Environments**
-
-RedHat and Windows
-
-**Version Control System**
-
-Git
-
-**IDE**
-
-VIM, Visual Studio Code and IntelliJ
+**Collaboration:** Confluence and SharePoint  
+**Task Tracking:** Jira  
+**Configuration Management:** Puppet, Ansible and System Center Configuration Manager  
+**Build Automation:** Gradle and Yarn  
+**Continuous Integration:** GoCD and Artifactory  
+**Programming Languages:** Java Script (ES6) and Java  
+**Data Layer:** GraphQL, REST and SOAP  
+**Frontend Frameworks:** React and Apollo Client  
+**Database:** MongoDB, MySQL and Oracle  
+**Backend Frameworks:** Apollo Server, Express and Meteor  
+**Scripting Languages:** Bash and PowerShell  
+**Environments:** RedHat and Windows  
+**Version Control System:** Git  
+**IDE:** VIM, Visual Studio Code and IntelliJ  
+**Containers and Packaging:**  Docker and RPM
 
 ## Non-profit work
 
