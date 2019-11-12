@@ -8,11 +8,13 @@ tags:
  - writing prompt
  - unfinished
 images:
- - /images/logo.png
+ - /images/macbook.jpg
 ---
 
-I found this [funny text editor](https://rolandasb.github.io/firstdraft/) and this was the result:
+I found this [funny text editor](https://rolandasb.github.io/firstdraft/), started writing a story and this was the result:
+<!--more-->
 
+``` 
 But how does this really work?
 Nobody seems to know.
 Whoever I ask nods in desparity.
@@ -33,3 +35,6 @@ A glistening light, nor bright nor dark.
 A mesmerizing view. I started to lose my mind.
 I pulled the trigger.
 But it was too late.
+```
+
+What do you think?
