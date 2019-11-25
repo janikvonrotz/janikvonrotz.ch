@@ -24,6 +24,10 @@ After completing his apprenticeship, Janik worked as a SharePoint Administrator 
 Software and Business Developer (part-time)  
 [Abilium GmbH](https://abilium.com/)
 
+* Create offers and concepts for tenders
+* Commissioning of a monitoring system
+* Establishing a web presence
+
 01|2018 – 04|2019  
 Associate IAM Engineer (full-time)  
 [AdNovum Informatik AG](https://www.adnovum.ch/)  
