@@ -7,5 +7,8 @@
             "use": "@now/static-build",
             "config": { "distDir": "public" }
         }
+    ],
+    "routes": [
+        { "src": "/pgp", "status": 301, "headers": { "Location": "https://keybase.io/janikvonrotz/pgp_keys.asc" } }
     ]
 }  

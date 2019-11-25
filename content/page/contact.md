@@ -31,6 +31,7 @@ author: Janik Vonrotz
 [Call me on Skype](skype:janikvonrotz?call)  
 [Chat with me on Skype](skype:janikvonrotz?chat)  
 [Keybase](https://keybase.io/janikvonrotz)  
+[My public PGP key](https:janikvonrotz/pgp)  
 
 # Social Media
 
