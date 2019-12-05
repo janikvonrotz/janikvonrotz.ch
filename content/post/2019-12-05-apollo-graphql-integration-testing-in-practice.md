@@ -3,10 +3,12 @@ title: "Apollo Graphql integration testing in practice"
 slug: apollo-graphql-integration-testing-in-practice
 date: 2019-12-05T10:16:19+01:00
 categories:
- - Blog
+ - Software development
 tags:
  - integration
  - testing
+ - graphql
+ - apollo
 images:
  - /images/intertwined.jpg
 ---
