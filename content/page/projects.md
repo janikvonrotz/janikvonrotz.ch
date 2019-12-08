@@ -9,6 +9,8 @@ This is a collection of projects by year since I came in touch with IT. It is su
 
 **2019**
 
+[ansible-docker-elk](https://github.com/janikvonrotz/ansible-docker-elk) - This Ansible project deploys a fully configured ELK stack secured by a Nginx proxy. For each service there is an Ansible role. Services can be deployed independently.
+
 [abilium.com](https://github.com/Abilium-GmbH/abilium.com) - New static website for the Abilium GmbH. Built and deployed with [Hugo](https://gohugo.io/), Bootstrap and Jenkins.
 
 [labtrail](https://github.com/janikvonrotz/labtrail) - QR-code manager with multi-tenant support. Built with React, Apollo Graphql, Material-UI and the [Zeit Now](https://zeit.co/now) platform.
