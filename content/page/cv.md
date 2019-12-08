@@ -16,11 +16,11 @@ Hi, my name is Janik Vonrotz. I’m a Software Engineer / IT Consultant from Swi
 
 Born on July 12, 1991 in Lucerne; apprenticeship Computer Specialist EFZ System Engineering accompanied with a technical Vocational Engineering School Diploma; full-time bachelor's degree in Business and Information Technology at Lucerne University of Applied Sciences and Arts; exchange semester at Berlin University of Business Administration and Engineering; international campus experience, Santa Clara University, USA.
 
-After completing his apprenticeship, Janik worked as a SharePoint Administrator and System Engineer with focus on system automation at Verkehrsbetriebe Luzern AG. During his studies he focused on requirements engineering, software development and business process management. In the last semester he supported Apoveda GmbH with the implementation of their online presence. Prior to joining AdNovum, Janik designed and implemented a Microsoft System Center Configuration Manager solution for the cantonal hospital in Obwalden. Afterwards he was employed as an Associate IAM Engineer by AdNovum. In this position, he designed and implemented Identity and Access Management solutions for AdNovum customers. In the meantime Janik decided to work at a smaller scale and thus joined the Abilium GmbH, where he helps acquiring new projects and developing web applications.
+After completing his apprenticeship, Janik worked as a SharePoint Administrator and System Engineer with focus on system automation at Verkehrsbetriebe Luzern AG. During his studies he focused on requirements engineering, software development and business process management. In the last semester he supported Apoveda GmbH with the implementation of their online presence. Prior to joining AdNovum, Janik designed and implemented a Microsoft System Center Configuration Manager solution for the cantonal hospital in Obwalden. Afterwards he was employed as an Associate IAM Engineer by AdNovum. In this position, he designed and implemented Identity and Access Management solutions for AdNovum customers. In the meantime Janik decided to work on a smaller scale and thus joined the Abilium GmbH, where he helps acquiring new projects and developing web applications.
 
 ## Work Experience
 
-09|2019 - Today  
+09|2019 - 12|2019  
 Software and Business Developer (part-time)  
 [Abilium GmbH](https://abilium.com/)
 
@@ -97,10 +97,11 @@ Computer Specialist EFZ System Engineering
 * Requirements engineering – Analyze and process customers’ requirements.
 * Project management – Agile and classic.
 * Knowledge management – Document and populate technical knowledge.
-* System administration – Able to manage common Microsoft and Linux systems.
+* DevOps - Contribute to software development and operation processes.
+* System integration – Manage Linux based systems and integrate software into complex environments.
 * Team collaboration – Introduce or enhance team collaboration with a variety of tools.
 * System automation – Automate processes and orchestrate server farms.
-* Network infrastructure – Build, monitor and maintain a network infrastructure.
+* Infrastructure management – Build, monitor and maintain IT infrastructure.
 
 ## Soft skills
 

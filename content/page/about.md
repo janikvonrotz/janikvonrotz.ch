@@ -11,13 +11,6 @@ Hi, my name is Janik Vonrotz. I’m a Software Engineer / IT Consultant from Swi
 
 This is my blog where I share experiences of my personal and professional life. Sharing insightful stories and ideas without aiming for profit or reputation plays an integral part in the vast open source software world.
 
-Currently I am working on various opportuinites and projects:
-
-* Aquiring projects for [Abilium GmbH](https://abilium.com)
-* Completing a software project as [Apland GmbH](https://apland.ch)
-* Looking for interesting business models
-* Help small business be founded and strive on their innovation
-
 Here are a few things about me:
 
 I like to ...
@@ -43,3 +36,10 @@ let me know if ...
 * you come to Switzerland
 * you are working on a cool project
 * you want to discuss anything related to my work
+
+Currently I am working on various opportuinites and projects ...
+
+* completing a software project as [Apland GmbH](https://apland.ch)
+* looking for interesting business models
+* helping small business to be founded and strive on their innovation
+* searching for job opportunities to elevate my skills
