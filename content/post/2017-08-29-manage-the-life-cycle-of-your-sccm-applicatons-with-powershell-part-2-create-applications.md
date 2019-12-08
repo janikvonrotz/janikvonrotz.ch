@@ -1,8 +1,8 @@
 ---
-title: 'Manage the life cycle of your SCCM applicatons with PowerShell - Part 2 Create Applications'
+title: 'Manage the life cycle of your SCCM applications with PowerShell - Part 2 Create Applications'
 date: 2017-08-29T15:07:47+00:00
 author: Janik Vonrotz
-slug: manage-the-life-cycle-of-your-sccm-applicatons-with-powershell-part-2-create-applications
+slug: manage-the-life-cycle-of-your-sccm-applications-with-powershell-part-2-create-applications
 images:
   - /wp-content/uploads/2017/08/SCCM-PowerShell-e1503910243136.jpeg
 categories:
@@ -14,7 +14,7 @@ tags:
   - sccm
   - system center configuration manager
 ---
-"Manage the life cycle of your SCCM applications with PowerShell" is a short post series where I share my PowerShell experience with System Center Configuration Manager. In [my last post](https://janikvonrotz.ch/2017/08/29/manage-the-life-cycle-of-your-sccm-applicatons-with-powershell-part-1-service-accounts-and-package-source/) I've showed you a script that creates the package source folder structure and another that adds the service users for SCCM. As mentioned these scripts have only been published for a better understanding of the follow-up scripts.
+"Manage the life cycle of your SCCM applications with PowerShell" is a short post series where I share my PowerShell experience with System Center Configuration Manager. In [my last post](https://janikvonrotz.ch/2017/08/29/manage-the-life-cycle-of-your-sccm-applications-with-powershell-part-1-service-accounts-and-package-source/) I've showed you a script that creates the package source folder structure and another that adds the service users for SCCM. As mentioned these scripts have only been published for a better understanding of the follow-up scripts.
 <!--more-->
 
 This time I would like to present you the script that adds new applications to the SCCM catalog. Here are the main features of the script:

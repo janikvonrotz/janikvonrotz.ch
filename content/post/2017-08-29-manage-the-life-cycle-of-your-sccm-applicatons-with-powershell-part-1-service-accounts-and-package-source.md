@@ -1,8 +1,8 @@
 ---
-title: 'Manage the life cycle of your SCCM applicatons with PowerShell - Part 1 Service Accounts and Package Source'
+title: 'Manage the life cycle of your SCCM applications with PowerShell - Part 1 Service Accounts and Package Source'
 date: 2017-08-29T12:19:29+00:00
 author: Janik Vonrotz
-slug: manage-the-life-cycle-of-your-sccm-applicatons-with-powershell-part-1-service-accounts-and-package-source
+slug: manage-the-life-cycle-of-your-sccm-applications-with-powershell-part-1-service-accounts-and-package-source
 images:
   - /wp-content/uploads/2017/08/SCCM-PowerShell-e1503910243136.jpeg
 categories:

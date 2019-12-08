@@ -1,8 +1,8 @@
 ---
-title: 'Manage the life cycle of your SCCM applicatons with PowerShell - Part 4 Remove Applications'
+title: 'Manage the life cycle of your SCCM applications with PowerShell - Part 4 Remove Applications'
 date: 2017-09-05T08:32:11+00:00
 author: Janik Vonrotz
-slug: manage-the-life-cycle-of-your-sccm-applicatons-with-powershell-part-4-remove-applications
+slug: manage-the-life-cycle-of-your-sccm-applications-with-powershell-part-4-remove-applications
 images:
   - /wp-content/uploads/2017/08/SCCM-PowerShell-e1503910243136.jpeg
 categories:
@@ -14,7 +14,7 @@ tags:
   - sccm
   - system center configuration manager
 ---
-"Manage the life cycle of your SCCM applications with PowerShell" is a short post series where I share my PowerShell experience with System Center Configuration Manager. In [my last post](https://janikvonrotz.ch/2017/09/01/manage-the-life-cycle-of-your-sccm-applicatons-with-powershell-part-3-deploy-applications/) I've shown you a script to distribute application content and deploy an application to its collections. In my final post I'll show you the last part of the app life cycle - the termination. 
+"Manage the life cycle of your SCCM applications with PowerShell" is a short post series where I share my PowerShell experience with System Center Configuration Manager. In [my last post](https://janikvonrotz.ch/2017/09/01/manage-the-life-cycle-of-your-sccm-applications-with-powershell-part-3-deploy-applications/) I've shown you a script to distribute application content and deploy an application to its collections. In my final post I'll show you the last part of the app life cycle - the termination. 
 <!--more-->
 
 Like the last script this one is also fairly simple. Provide the name of the application you would like to remove and the script is going to remove all assets related and the application itself. For security measures the script asks for confirmation before removing anything.
