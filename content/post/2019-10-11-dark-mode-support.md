@@ -12,7 +12,7 @@ images:
  - /images/dark-mode.png
 ---
 
-Every website has to support dark mode now. Probably because of the new iPhone launch or so. Nonetheless, I added a bunch of CSS to theme as well.
+Every website has to support dark mode now. Probably because of the new iPhone launch or so. Nonetheless, I added a bunch of CSS to this theme as well.
 <!--more-->
 
 ```css
