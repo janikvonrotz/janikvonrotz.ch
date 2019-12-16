@@ -14,6 +14,7 @@ images:
 ---
 
 The [Apollo Graphql documention](https://www.apollographql.com/docs) offers a pretty comprehensive guide on how to [test your Graphql API](https://www.apollographql.com/docs/apollo-server/testing/testing). But sure its different once you implement tests for your non generic project. That is why I wrote this post. First I would like to introduce you to integration tests and how they are different from the other testing levels. And then I'll give you a hands on experience for writing integration tests for Apollo Graphql with [Ava](https://github.com/avajs/ava).
+<!--more-->
 
 ## Testing levels
 

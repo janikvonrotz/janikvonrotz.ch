@@ -3,7 +3,7 @@ title: "Deploy ELK stack with Ansible and Docker"
 slug: deploy-elk-stack-with-ansible-and-docker
 date: 2019-10-28T17:18:48+01:00
 categories:
-  - Continiuous delivery
+  - Continuous delivery
 tags:
  - ansible
  - docker

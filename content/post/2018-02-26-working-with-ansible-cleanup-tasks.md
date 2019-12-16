@@ -6,7 +6,7 @@ slug: working-with-ansible-cleanup-tasks
 images:
   - /wp-content/uploads/2018/02/Ansible-text-only-e1519640301147.png
 categories:
-  - Continiuous delivery
+  - Continuous delivery
 tags:
   - ansible
   - cleanup

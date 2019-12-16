@@ -3,7 +3,7 @@ title: "Setup GoCD environment using docker"
 slug: setup-gocd-environment-using-docker
 date: 2018-11-06T12:11:01+02:00
 categories:
- - Continiuous delivery
+ - Continuous delivery
 tags:
  - continuous delivery
  - gocd
