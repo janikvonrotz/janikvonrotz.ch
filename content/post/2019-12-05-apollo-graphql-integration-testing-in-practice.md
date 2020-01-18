@@ -241,6 +241,6 @@ Running the tests is simple. I created a script task to run Ava with yarn.
 
 And running `yarn test` will do the job.
 
-For more details on the Ava checkout the [documentation](https://github.com/avajs/ava/tree/master/docs).
+For more details on Ava checkout the [documentation](https://github.com/avajs/ava/tree/master/docs).
 
 Hope this tutorial gave you an idea about testing and how to apply it to Apollo Graphql 😊
