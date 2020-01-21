@@ -13,7 +13,7 @@ tags:
  - github action
  - now
 images:
- - /images/chatbot.webp
+ - /images/chatbot.png
 ---
 
 
@@ -37,11 +37,11 @@ Part 1:
 * Add a /start reply
 * Deploy
 
-Part 2:
+[Part 2](/2020/01/21/build-a-stateful-serverless-telegram-bot-part-2/):
 
 * Setup redis connector
 * Add /newreminder reply
-* Add /listreminder reply
+* Add /listreminders reply
 * Deploy
 
 Assuming you want to build a similar bot, follow these instructions.
@@ -103,7 +103,7 @@ Define the environment variables for the now deployment.
 ```json
 {
   "env": {
-    "TELEGRAM_TOKEN": "@hydrome_bot_telegram_token"
+    "TELEGRAM_TOKEN": "@example_bot_telegram_token"
   }
 }
 ```
@@ -124,7 +124,7 @@ Export the variable and create a now secret.
 
 ```bash
 export $(cat .env | xargs)
-now secrets add hydrome_bot_telegram_token $TELEGRAM_TOKEN
+now secrets add example_bot_telegram_token $TELEGRAM_TOKEN
 ```
 
 That's it for now 😉
@@ -261,7 +261,7 @@ module.exports = async (message) => {
 
 # Deploy
 
-Now we can deploy our bot with now. Run the `now --prod` in the root folder.
+Now we can deploy our bot with now. Run `now --prod` in the root folder.
 
 Once the deployment and building has finished you receive url like `https://example-bot.now.sh`.
 
@@ -269,4 +269,4 @@ As final step we need to set the webhook url. Once more export the Telegram toke
 
 If the response was successful, open [Telegram](https://web.telegram.com) and start chatting with your bot.
 
-Hope everything worked! See you in part 2 🏃
+Hope everything worked! See you in [part 2](/2020/01/21/build-a-stateful-serverless-telegram-bot-part-2/) 🏃
