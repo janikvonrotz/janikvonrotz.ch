@@ -21,7 +21,7 @@ We will start by buying the electronic components and finish with a chart showin
 
 Walking through the tutorial requires basic knowledge in working with linux and advanced knowledge in building web applications. Whereas the web application part is optionally.
 
-Using a mobile broadband connection and a thermo sensor our Raspberry Pi will measure the temparature and save it to a graphql server.
+Using a mobile broadband connection and a thermo sensor our Raspberry Pi will measure the temperature and save it to a graphql server.
 
 Using react and a graphql client library we will create a chart with the temperature data.
 <!--more-->
@@ -72,7 +72,7 @@ I got help from a friend to solder the resistor and wires.
 
 # Mobile internet connection
 
-**Edit:** Sadly I was not able to setup the GSM module. As mentioned in the first chapter the provided python library did not work for me. Also it turned out that in comparison to the 3G and LTE modules you have to write an extensive set of low level commands in order to communicate with the GSM module. So it so not a plugn'n play solution. Despite this drawbacks I've written down the steps until I failed with the setup.
+**Edit:** Sadly I was not able to setup the GSM module. As mentioned in the first chapter the provided python library did not work for me. Also it turned out that in comparison to the 3G and LTE modules you have to write an extensive set of low level commands in order to communicate with the GSM module. So it so not a plug'n play solution. Despite this drawbacks I've written down the steps until I failed with the setup.
 
 ### Connect the pi
 
@@ -125,8 +125,6 @@ If the programm finishes with *Verification ok* the upgrade was successful.
 **Edit:** This is how far I got. The scripts part of the IOTBit_GSM repo did not work for me. Instead I've setup the [Huawei 
 E5330 - Mobile broadband router](https://consumer.huawei.com/in/mobile-broadband/e5330/), which worked perfectly.
 
-![mobile broadband router]()
-
 # Read the temperature
 
 Rasperry Pi will communicate with the sensor using the 1-Wire protocol. It is already installed. However, the gpio interface must be enabled to allow a sensor connection.
@@ -171,7 +169,7 @@ Source: [Circuit Basics - Raspberry Pi ds18b20 temperature sensor tutorial](http
 
 In the second part of the tutorial we are going to setup a simple web application to retrieve and store the temperature readings. This part requires advanced knowledge about creating and running web applications.
 
-First signup for a [mLab](https://mlab.com/) account and create a new datbase and user.
+First signup for a [mLab](https://mlab.com/) account and create a new database and user.
 
 Write down the database connection  string.
 
@@ -188,7 +186,7 @@ Read the `README.md` file and set the environment variables accordingly.
 
 The example project not only allows to store temperatures, but also other data objects.
 
-Below snippets are listed, which should provide you a better undestanding of what is relevant for storing temperature data in the example project.
+Below snippets are listed, which should provide you a better understanding of what is relevant for storing temperature data in the example project.
 
 The schema files describes the data properties and methods that are used to save a temperature measurement.
 
@@ -209,7 +207,7 @@ type Mutation {
 }
 ```
 
-The resolver file acutally implements the methods.
+The resolver file actually implements the methods.
 
 **resolver.js**
 
@@ -276,7 +274,7 @@ Add the following entry to the crontab file, it will run the script every ten mi
 
 # Query the thermo data
 
-If you successuflly sent temeperature data, you can now query the api.
+If you successfully sent temperature data, you can now query the api.
 
 Open the graphql playground in your browser `https://example.now.sh/` and enter the following query.
 
@@ -294,7 +292,7 @@ On the right side all temperature readings are listed.
 
 # Create a chart
 
- I have created another example app for visualizing the temperature data.
+I have created another example app for visualizing the temperature data.
 
 Same procedure here. Clone the react example app and update the `.env` file.
 

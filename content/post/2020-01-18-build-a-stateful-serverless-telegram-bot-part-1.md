@@ -17,7 +17,7 @@ images:
 ---
 
 
-For the first time in my life I bought a plant to decor my room. The plant is a [Monstera](https://en.wikipedia.org/wiki/Monstera), growing up to 2 meters if watered properly. It actually needs to be watered every two weeks. Now there are various options to remind myself of watering it. Installing an app, set an alarm on my phone or place a paper calendar next to the plant. But this is to easy, lets make it more complicated.
+For the first time in my life I bought a plant to decor my room. The plant is a [Monstera](https://en.wikipedia.org/wiki/Monstera), growing up to 2 meters if watered properly. It actually needs to be watered every two weeks. Now there are various options to remind myself of watering it. Installing an app, set an alarm on my phone or place a paper calendar next to the plant. But this is too easy, lets make it more complicated.
 <!--more-->
 
 More and more people start using Telegram. Telegram is a secure alternative to Whatsapp and most importantly it supports chatbots! For a while I've planed to build a bot. And by having the need to build a reminder I came up with the following idea: I am going to create a bot that manages the reminders for watering my plants. It will be hosted on the [Now](https://zeit.co) platform and I will use [GitHub Actions](https://github.com/features/actions) to schedule the reminders. The reminders are stored in a [redis database](https://redis.io/) and everything is MANAGED via the Telegram bot interface.
