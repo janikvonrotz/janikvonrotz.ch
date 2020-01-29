@@ -17,6 +17,7 @@ images:
 ---
 
 In [part 1](/2020/01/18/build-a-stateful-serverless-telegram-bot-part-1/) of this tutorial we've setup the initial folder structure for our chatbot and made a first deployment. In part 2 we are going to teach the bot some new commands and implement a state management for the chat dialog chain.
+<!--more-->
 
 When thinking about a dialog flow think of a state machine. A state machine is a set of states and transitions. Every action of sending a message, pressing a button or replying to a question in a chatbot dialog is a transition. A state is a set informations that the bot requires to complete his tasks. Here is an example of a state machine:
 

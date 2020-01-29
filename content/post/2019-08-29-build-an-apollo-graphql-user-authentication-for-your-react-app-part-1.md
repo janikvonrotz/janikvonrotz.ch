@@ -38,7 +38,7 @@ Let us start with the type definitions. I have split the `schema.js` file into s
 
 **schema.js**
 
-```txt
+```js
 const { gql } = require('apollo-server-micro')
 
 // GraphQL schema
@@ -54,7 +54,7 @@ The `isAuthenticated` directive will be discussed later.
 
 Next follows the user type.
 
-```txt
+```gql
 type User {
   id: String!
   email: String!
@@ -71,7 +71,7 @@ type User {
 
 Then the token and default response.
 
-```txt
+```gql
 type Token {
   token: String!
 }
@@ -84,7 +84,7 @@ type Response {
 
 Queries are restricted by the custom directive.
 
-```txt
+```gql
 type Query {
   currentUser: User @isAuthenticated
   users: [User] @isAuthenticated
@@ -94,7 +94,7 @@ type Query {
 
 And here are the mutation we need to actually create and manipulate a user.
 
-```txt
+```gql
 type Mutation {
   createUser(email: String!, password: String!, firstname: String!, lastname: String!): User
   updateUser(id: String!, email: String, password: String, firstname: String, lastname: String): Response
@@ -309,10 +309,10 @@ Start the Apollo server and open the Graphql playground.
 
 Create a user with the `createUser` mutation.
 
-```txt
+```js
 mutation { 
   createUser(
-    email: "login@example.com", 
+    email: "login@example.com",
     password: "password",
     firstname: "Login",
     lastname: "Example"
@@ -321,7 +321,7 @@ mutation {
 
 Login with this user.
 
-```txt
+```js
 { loginUser(email: "login@example.org", password: "password") {
   token
 } }
@@ -337,7 +337,7 @@ Copy the token in to the HTTP header field.
 
 Query the user info.
 
-```txt
+```js
 { currentUser {
   firstname
   lastname
