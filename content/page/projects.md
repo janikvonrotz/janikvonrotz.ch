@@ -7,6 +7,12 @@ disable_comments: true
 
 This is a collection of projects by year since I came in touch with IT. It is supposed to be a showcase of my abilities and experience.
 
+**2020**
+
+[TODO.md](https://github.com/todo-md/todo-md) - Standard for markdown todo files.
+
+[HydroMeBot](https://github.com/janikvonrotz/hydrome-bot) - HydroMeBot is a Telegram bot that reminds you to water your plants.
+
 **2019**
 
 [ansible-docker-elk](https://github.com/janikvonrotz/ansible-docker-elk) - This Ansible project deploys a fully configured ELK stack secured by a Nginx proxy. For each service there is an Ansible role. Services can be deployed independently.
@@ -33,7 +39,7 @@ Secret - Managed and implemented the onsite and offsite deployment system for a 
 
 [Turnerabend](https://github.com/janikvonrotz/turnerabend) - A minimal one pager for a sports event built with gulp.
 
-[Learning Culture](https://www.learningculture.ch/) - Built a basic SCSS framework for the site and implemented a Sketch redesign. 
+[Learning Culture](https://www.learningculture.ch/) - Built a basic SCSS framework for the site and implemented a Sketch redesign.
 
 [Zenkom](https://github.com/janikvonrotz/Zenkom) - Source of my bachelor's degree project. Implemented a Meteor app to manage configurations of bus fleet communication systems and enhance user collaboration for a public transport company.
 
@@ -75,8 +81,6 @@ Secret - Managed and implemented the onsite and offsite deployment system for a 
 
 [ActiveDirectory Password Change](https://github.com/janikvonrotz/ActiveDirectory-Password-Change) - Simple php application to change an Active Directory user password.
 
-[JuBla Kerns - Website](http://kerns.jubla.ch/) - Local community website.
-
 [WP Bright Theme](https://github.com/janikvonrotz/WP-Bright-Theme) - My first and last WordPress theme.
 
 [PowerShell PowerUp](https://janikvonrotz.github.io/PowerShell-PowerUp/) - Super awesome PowerShell framework.
@@ -106,5 +110,7 @@ Secret - Managed and implemented the onsite and offsite deployment system for a 
 2015 - RowBook - My first Laravel application.
 
 2014 - Sebastian Vonrotz - Website - Wordpress website for my brother.
+
+2013 - [JuBla Kerns Website](https://web.archive.org/web/20131209021808/http://kerns.jubla.ch/2013/08/02/willkommen-auf-jubla-kerns-2/) - Local community website.
 
 2013 - The taste of Kiwi - Wordpress Website for a friend of mine.
