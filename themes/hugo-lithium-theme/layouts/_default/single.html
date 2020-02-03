@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+
+<main role="main">
+
+  <article>
+
+    {{ partial "title.html" . }}
+
+    <section>
+      {{ .Content }}
+    </section>
+    
+  </article>
+
+</main>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,20 @@
+<section class="tag">
+    
+    <article>
+
+        {{ partial "title.html" (dict "Title" (printf "Category: %s" $.Title ) ) }}
+        <p><a href="/categories/">Show all categories</a></p>
+
+        <section>
+            
+            <ul>
+                {{ range .Data.Pages.ByDate.Reverse }}
+                    <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a></li>
+                {{ end }}
+            </ul>
+
+        </section>
+
+    </article>
+
+</section>

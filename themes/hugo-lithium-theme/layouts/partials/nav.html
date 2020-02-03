@@ -1,0 +1,23 @@
+<nav>
+
+  <a href="{{ .Site.BaseURL }}" class="logo">
+    <img src="{{ .Site.Params.logo.url }}" 
+      width="{{ .Site.Params.logo.width }}" 
+      height="{{ .Site.Params.logo.height }}" 
+      alt="{{ .Site.Params.logo.alt }}">
+  </a>
+
+  <ul class="links">
+    {{ range .Site.Menus.main }}
+    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+    {{ end }}
+
+    {{ if .Site.Params.search }}
+    <li><a href="{{ .Site.Params.search.url }}" class="search">
+      <img src="{{ .Site.Params.search.img }}" alt="Search">
+    </a></li>
+    {{ end }}
+
+  </ul>
+
+</nav>

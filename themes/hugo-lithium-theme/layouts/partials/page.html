@@ -1,0 +1,17 @@
+<section class="page">
+
+    <article>
+
+        {{ partial "title.html" . }}
+
+        <section>
+            {{ .Content }}
+        </section>
+
+    </article>
+
+    {{ if and (not (eq .Site.DisqusShortname "")) (not .Params.disable_comments) }}
+    {{ template "_internal/disqus.html" . }}
+    {{ end }}
+
+</section>

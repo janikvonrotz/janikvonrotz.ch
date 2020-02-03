@@ -1,0 +1,30 @@
+<section class="posts">
+
+    <article>
+
+        {{ $paginator := .Paginate (where .Pages "Type" "post") }}
+        {{ range $paginator.Pages }}
+
+            <a href="{{ .RelPermalink }}"> {{ partial "image.html" . }}</a>
+
+            <a href="{{ .RelPermalink }}">{{ partial "title.html" . }}</a>
+
+            {{ partial "date.html" . }}
+
+            <section>
+                <p>{{ .Summary }}</p>
+            </section>
+
+            <p><a href="{{ .RelPermalink }}">Read More...</a></p>
+
+            <hr />
+
+            <br />
+
+        {{ end }}
+
+    </article>
+
+    {{ partial "pagination.html" . }}
+
+</section>
