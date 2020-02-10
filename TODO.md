@@ -1,5 +1,9 @@
 # Todo
 
+## Framework
+
+- [ ] Bump Hugo version
+
 ## Content
 
 - [x] Update CV
