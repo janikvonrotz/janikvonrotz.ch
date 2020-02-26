@@ -1,6 +1,6 @@
 ---
 title: "Nginx WAF with ModSecurity and OWASP CRS"
-slug: nginx-waf-with-modsecurity-and-owas-crs
+slug: nginx-waf-with-modsecurity-and-owasp-crs
 date: 2020-02-26T08:57:31+01:00
 categories:
  - Security
@@ -237,7 +237,7 @@ Edit the ModSecuity config to do so.
 
 **etc/modsecurity.d/modsecurity.conf**
 
-```
+```conf
 ...
 SecRuleEngine On
 ...
