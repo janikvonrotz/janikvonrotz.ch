@@ -356,6 +356,8 @@ That's it! 🎉
 
 In the next and final post we are going to improve our solution regarding security. Cliff hanger questions: What if the user copies the token and paste it after logout? How can we ensure that a token cannot be used indefinitely 😕?
 
+Navigate to [part 1](/2019/08/27/build-an-apollo-graphql-user-authentication-for-your-react-app-part-1) or [part 3](2019/09/26/build-an-apollo-graphql-user-authentication-for-your-react-app-part-3).
+
 ## Additions
 
 As already mentioned in my last post I focus on the modifications you have to make to the app in order get a user authentication. Proper implementation of course requires various other features. So here are some I can think of:
