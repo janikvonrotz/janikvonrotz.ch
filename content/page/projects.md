@@ -9,6 +9,12 @@ This is a collection of projects by year since I came in touch with IT. It is su
 
 **2020**
 
+[Ansible Playbooks](https://github.com/Mint-System/Ansible-Playbooks) - Collection of Ansible playbooks and roles.
+
+[Odoo Development](https://github.com/Mint-System/Odoo-Development) - Setup Odoo development environment with Docker Compose.
+
+[Sauna Lorrainebad App](https://github.com/janikvonrotz/sauna-lorrainebad) - React native app for Sauna Lorrainebad.
+
 [TODO.md](https://github.com/todo-md/todo-md) - Standard for markdown todo files.
 
 [HydroMeBot](https://github.com/janikvonrotz/hydrome-bot) - HydroMeBot is a Telegram bot that reminds you to water your plants.
