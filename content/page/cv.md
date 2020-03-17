@@ -146,8 +146,9 @@ French (mainly reading, hardly writing and speaking) – Diplome d&#39;etudes en
 
 ## Non-profit work
 
-* Active member of the sports club [STV Kerns](https://www.tvkerns.ch/).
-* Support other clubs hosting their websites and social media.
+* Supporting the [Republik magazine](https://www.republik.ch) since day one.
+* Ative member of [https://opendata.ch/](OpenData.ch) and [CH open](https://www.ch-open.ch/).
+* Support various clubs hosting their websites and social media.
 * Helped planning and realize private and public sports club events.
 
 ## References
