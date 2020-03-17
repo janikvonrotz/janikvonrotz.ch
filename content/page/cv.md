@@ -30,9 +30,8 @@ Software and Business Developer (self-employed)
 Software and Business Developer (part-time, temporary)  
 [Abilium GmbH](https://abilium.com/)
 
-* Create offers and concepts for tenders
-* Commissioning of a monitoring system
-* Establishing a web presence
+* Created offers and concepts for tenders
+* Provided a monitoring system
 
 01|2018 – 04|2019  
 Associate IAM Engineer (full-time)  
@@ -41,16 +40,16 @@ Associate IAM Engineer (full-time)
 * Design, conception and realisation of identity and access management solutions.
 * Configuration and development of the continuous delivery/integration infrastructure.
 * Review and setup of the project-internal public key infrastructure (PKI).
-* Integrate and deploy multi-stage project environments.
+<!-- * Integrate and deploy multi-stage project environments. -->
 
 08|2017 – 12|2017  
 System Engineer (full-time, civil service)  
 [Kantonsspital Obwalden](https://ksow.ch)  
 
 * Conceptualized and configured a Microsoft System Center Configuration Manager solution.
-* Helped migrating data from the obsolete software deployment and client management system.
 * Implemented an internal and external public key infrastructure.
 * Automated business critical tasks with PowerShell.
+<!-- * Helped migrating data from the obsolete software deployment and client management system. -->
 
 03|2017 – 07|2017  
 Web Developer (part-time)  
@@ -65,10 +64,10 @@ Computer Scientist (full-time)
 [Verkehrsbetriebe Luzern AG](http://www.vbl.ch/)  
 
 * Worked as a System Administrator with Microsoft SharePoint, Exchange, SQL Server and Active Directory.
-* Developed system automation solutions with PowerShell.
 * Advised departments on SharePoint workflow integrations.
-* Built and maintained single sign-on services.
 * Contributed to an Office 365 project: [Informationsdrehscheibe aus der Cloud](/wp-content/uploads/2015/09/Informationsdrehscheibe-aus-der-Cloud.pdf).
+<!-- * Developed system automation solutions with PowerShell.
+* Built and maintained single sign-on services. -->
 
 08|2008 – 06|2012  
 Apprenticeship Computer Specialist [EFZ](https://de.wikipedia.org/wiki/Eidgen%C3%B6ssisches_F%C3%A4higkeitszeugnis) System Engineering (full-time)  
@@ -87,7 +86,7 @@ Bachelor of Science in Business and Information Technology
 09|2016 – 10|2016, International campus experience, [Santa Clara University](https://www.scu.edu/)  
 
 * Focused on requirements engineering, software development and business process management
-* For my bachelor's project, I have implemented a Meteor app to manage configurations of bus fleet communication systems and enhance user collaboration for a public transport company.
+* For my bachelor's project, I have implemented a web application to manage configurations of bus fleet communication systems and enhance user collaboration for a public transport company.
 * Open source projects: [janikvonrotz.ch/projects](https://janikvonrotz.ch/projects)
 
 08|2008 – 06|2012  
@@ -106,12 +105,12 @@ Computer Specialist EFZ System Engineering
 * DevOps - Contribute to software development and operation processes.
 * System integration – Manage Linux based systems and integrate software into complex environments.
 * Team collaboration – Introduce or enhance team collaboration with a variety of tools.
-* System automation – Automate processes and orchestrate server farms.
 * Infrastructure management – Build, monitor and maintain IT infrastructure.
+<!-- * System automation – Automate processes and orchestrate server farms. -->
 
 ## Soft skills
 
-* Teamwork – Efficient collaboration and communication within a team is very important to me.
+* Efficient cooperation and communication within a team plays a major role for me.
 * Mentoring – Teaching skills to employers, employees, co-workers and customers.
 * Flexibility – Come up with creative solutions when facing setbacks or unexpected changes.
 * Presentation – Articulate and visualize ideas clearly in front of a group or meeting.
@@ -146,7 +145,7 @@ French (mainly reading, hardly writing and speaking) – Diplome d&#39;etudes en
 ## Non-profit work
 
 * Supporting the [Republik magazine](https://www.republik.ch) since day one.
-* Ative member of [https://opendata.ch/](OpenData.ch) and [CH open](https://www.ch-open.ch/).
+* Ative member of [OpenData.ch](https://opendata.ch/) and [CH open](https://www.ch-open.ch/).
 * Support various clubs hosting their websites and social media.
 * Helped planning and realize private and public sports club events.
 
