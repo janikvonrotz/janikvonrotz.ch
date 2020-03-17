@@ -24,7 +24,7 @@ googleAnalytics = "UA-31105856-2"
         weight = 2
 
     [[menu.main]]
-        name = "Downloads"
+        name = "DL"
         url = "/downloads/"
         weight = 3
 

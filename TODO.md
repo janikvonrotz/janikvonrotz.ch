@@ -1,5 +1,9 @@
 # Todo
 
+## Bugs
+
+- [ ] Fix gpg link https://janikvonrotz.ch/contact/janikvonrotz/pgp
+
 ## Framework
 
 - [ ] Bump Hugo version

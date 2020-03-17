@@ -25,7 +25,6 @@ Software and Business Developer (self-employed)
 [Apland GmbH](https://apland.ch)  
 
 * Development of web applications
-* 
 
 09|2019 - 12|2019  
 Software and Business Developer (part-time, temporary)  

@@ -31,11 +31,10 @@ author: Janik Vonrotz
 [Call me on Skype](skype:janikvonrotz?call)  
 [Chat with me on Skype](skype:janikvonrotz?chat)  
 [Keybase](https://keybase.io/janikvonrotz)  
-[My public PGP key](https:janikvonrotz/pgp)  
+[My public PGP key](https:janikvonrotz.ch/pgp)  
 
 # Social Media
 
-[Facebook](https://www.facebook.com/janik.vonrotz)  
 [LinkedIn](https://www.linkedin.com/in/janik-Vonrotz)  
 [Hacker News](https://news.ycombinator.com/user?id=janikvonrotz)  
 [Twitter](https://twitter.com/janikvonrotz)  
@@ -53,4 +52,4 @@ author: Janik Vonrotz
 
 [GitHub](https://github.com/janikvonrotz)  
 [GitHub Gist](https://gist.github.com/janikvonrotz)  
-[GitLab](https://gitlab.com/users/janikvonrotz/projects)  
+[GitLab](https://gitlab.com/janikvonrotz)  
