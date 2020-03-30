@@ -7,53 +7,53 @@ author: Janik Vonrotz
 
 **6. Semester**
 
-* <a href="/wp-content/uploads/2013/07/Zusammenfassung-Strategie.pdf">Zusammenfassung - Strategie</a>
-* <a href="/wp-content/uploads/2013/07/Zusammenfassung-Online-Kommunikation.pdf">Zusammenfassung - Online Kommunikation</a>
+* [Zusammenfassung - Strategie](/wp-content/uploads/2013/07/Zusammenfassung-Strategie.pdf)
+* [Zusammenfassung - Online Kommunikation](/wp-content/uploads/2013/07/Zusammenfassung-Online-Kommunikation.pdf)
 
 **5. Semester**
 
-* <a href="/wp-content/uploads/2013/07/Zusammenfassung-Geschäftsprozessmanagement.pdf">Zusammenfassung - Geschäftsprozessmanagement</a>
-* <a href="/wp-content/uploads/2013/07/Zusammenfassung-Multimediale-Kommunikation-Janik-von-Rotz.pdf">Zusammenfassung - Multimediale Kommunikation</a>
+* [Zusammenfassung - Geschäftsprozessmanagement](/wp-content/uploads/2013/07/Zusammenfassung-Geschäftsprozessmanagement.pdf)
+* [Zusammenfassung - Multimediale Kommunikation](/wp-content/uploads/2013/07/Zusammenfassung-Multimediale-Kommunikation-Janik-von-Rotz.pdf)
 
 **4. Semester at HTW Berlin**
 
-* <a href="/wp-content/uploads/2013/07/Zusammenfassung-Marketing.pdf">Zusammenfassung - Marketing</a>
-* <a href="/wp-content/uploads/2013/07/Zusammenfassung-Prodwi-Logistik.pdf">Zusammenfassung - Prodwi Logistik</a>
+* [Zusammenfassung - Marketing](/wp-content/uploads/2013/07/Zusammenfassung-Marketing.pdf)
+* [Zusammenfassung - Prodwi Logistik](/wp-content/uploads/2013/07/Zusammenfassung-Prodwi-Logistik.pdf)
 
 **3. Semester**
 
-* <a href="/wp-content/uploads/2013/07/Merkblatt-Finanzen.pdf"rel="">Merkblatt - Finanzen</a>
-* <a href="/wp-content/uploads/2013/07/Merkblatt-Datawarehouse.pdf"rel="">Merkblatt - Datawarehouse</a>
-* <a href="/wp-content/uploads/2013/07/Zusammenfassung-Mathematik.pdf"rel="">Zusammenfassung - Mathematik</a>
-* <a href="/wp-content/uploads/2013/07/Zusammenfassung-Kostenmanagement.pdf"rel="">Zusammenfassung - Kostenmanagement</a>
-* <a href="/wp-content/uploads/2013/07/Zusammenfassung-Kommunikationstechnologien.pdf"rel="">Zusammenfassung - Kommunikationstechnologien</a>
-* <a href="/wp-content/uploads/2013/07/Zusammenfassung-Finanzmanagement.pdf"rel="">Zusammenfassung - Finanzmanagement</a>
-* <a href="/wp-content/uploads/2013/07/Merkblatt-Finanzunterstützungssysteme-Buchungen-und-Stornierung.pdf"rel="">Merkblatt - Finanzunterstützungssysteme - Buchungen und Stornierung</a>
+* [Merkblatt - Finanzen](/wp-content/uploads/2013/07/Merkblatt-Finanzen.pdf)
+* [Merkblatt - Datawarehouse](/wp-content/uploads/2013/07/Merkblatt-Datawarehouse.pdf)
+* [Zusammenfassung - Mathematik](/wp-content/uploads/2013/07/Zusammenfassung-Mathematik.pdf)
+* [Zusammenfassung - Kostenmanagement](/wp-content/uploads/2013/07/Zusammenfassung-Kostenmanagement.pdf)
+* [Zusammenfassung - Kommunikationstechnologien](/wp-content/uploads/2013/07/Zusammenfassung-Kommunikationstechnologien.pdf)
+* [Zusammenfassung - Finanzmanagement](/wp-content/uploads/2013/07/Zusammenfassung-Finanzmanagement.pdf)
+* [Merkblatt - Finanzunterstützungssysteme - Buchungen und Stornierung](/wp-content/uploads/2013/07/Merkblatt-Finanzunterstützungssysteme-Buchungen-und-Stornierung.pdf)
 
 **2. Semester**
 
 * [SQL Cheat Sheet](https://janikvonrotz.ch/2015/07/02/sql-cheat-sheet/)
-* <a href="/wp-content/uploads/2013/07/Formeln-Wirtschaftsmathematik2.pdf">Formeln - Wirtschaftsmathematik2</a>
-* <a href="/wp-content/uploads/2013/07/Snippets-Datenmanagement.pdf">Snippets - Datenmanagement</a>
-* <a href="/wp-content/uploads/2013/07/Zusammenfassung-Datenmanagement.pdf">Zusammenfassung - Datenmanagement</a>
-* <a href="/wp-content/uploads/2013/07/Zusammenfassung-English.pdf">Zusammenfassung - English</a>
-* <a href="/wp-content/uploads/2013/07/Zusammenfassung-Kommunikation.pdf">Zusammenfassung - Kommunikation</a>
-* <a href="/wp-content/uploads/2013/07/Zusammenfassung-Management1.pdf">Zusammenfassung - Management1</a>
-* <a href="/wp-content/uploads/2013/07/Zusammenfassung-Softwarekomponenten.pdf">Zusammenfassung - Softwarekomponenten</a>
-* <a href="/wp-content/uploads/2013/07/Zusammenfassung-Volkswirtschaftslehre2.pdf">Zusammenfassung - Volkswirtschaftslehre2</a>
+* [Formeln - Wirtschaftsmathematik2](/wp-content/uploads/2013/07/Formeln-Wirtschaftsmathematik2.pdf)
+* [Snippets - Datenmanagement](/wp-content/uploads/2013/07/Snippets-Datenmanagement.pdf)
+* [Zusammenfassung - Datenmanagement](/wp-content/uploads/2013/07/Zusammenfassung-Datenmanagement.pdf)
+* [Zusammenfassung - English](/wp-content/uploads/2013/07/Zusammenfassung-English.pdf)
+* [Zusammenfassung - Kommunikation](/wp-content/uploads/2013/07/Zusammenfassung-Kommunikation.pdf)
+* [Zusammenfassung - Management1](/wp-content/uploads/2013/07/Zusammenfassung-Management1.pdf)
+* [Zusammenfassung - Softwarekomponenten](/wp-content/uploads/2013/07/Zusammenfassung-Softwarekomponenten.pdf)
+* [Zusammenfassung - Volkswirtschaftslehre2](/wp-content/uploads/2013/07/Zusammenfassung-Volkswirtschaftslehre2.pdf)
 
 **1. Semester**
 
-* <a href="/wp-content/uploads/2015/02/Zusammenfassung-Informationssysteme.pdf">Zusammenfassung - Informationssysteme</a>
-* <a href="/wp-content/uploads/2015/02/Zusammenfassung-English.pdf">Zusammenfassung - English</a>
-* <a href="/wp-content/uploads/2015/02/Zusammenfassung-Betriebswirtschaftslehre.pdf">Zusammenfassung - Betriebswirtschaftslehre</a>
-* <a href="/wp-content/uploads/2015/02/Glossar-Wirtschaft.pdf">Glossar - Wirtschaft</a>
-* <a href="/wp-content/uploads/2015/02/Formeln-Mathematik.pdf">Formeln - Mathematik</a>
-* <a href="/wp-content/uploads/2015/02/Zusammenfassung-Volkswirtschaftslehre.pdf">Zusammenfassung - Volkswirtschaftslehre</a>
-* <a href="/wp-content/uploads/2015/02/Zusammenfassung-Rechnungswesen.pdf">Zusammenfassung - Rechnungswesen</a>
-* <a href="/wp-content/uploads/2015/02/Zusammenfassung-Programmieren.pdf">Zusammenfassung - Programmieren</a>
-* <a href="/wp-content/uploads/2015/02/Zusammenfassung-Mathematik.pdf">Zusammenfassung - Mathematik</a>
-* <a href="/wp-content/uploads/2015/02/Zusammenfassung-Kommunikation.pdf">Zusammenfassung - Kommunikation</a>
+* [Zusammenfassung - Informationssysteme](/wp-content/uploads/2015/02/Zusammenfassung-Informationssysteme.pdf)
+* [Zusammenfassung - English](/wp-content/uploads/2015/02/Zusammenfassung-English.pdf)
+* [Zusammenfassung - Betriebswirtschaftslehre](/wp-content/uploads/2015/02/Zusammenfassung-Betriebswirtschaftslehre.pdf)
+* [Glossar - Wirtschaft](/wp-content/uploads/2015/02/Glossar-Wirtschaft.pdf)
+* [Formeln - Mathematik](/wp-content/uploads/2015/02/Formeln-Mathematik.pdf)
+* [Zusammenfassung - Volkswirtschaftslehre](/wp-content/uploads/2015/02/Zusammenfassung-Volkswirtschaftslehre.pdf)
+* [Zusammenfassung - Rechnungswesen](/wp-content/uploads/2015/02/Zusammenfassung-Rechnungswesen.pdf)
+* [Zusammenfassung - Programmieren](/wp-content/uploads/2015/02/Zusammenfassung-Programmieren.pdf)
+* [Zusammenfassung - Mathematik](/wp-content/uploads/2015/02/Zusammenfassung-Mathematik.pdf)
+* [Zusammenfassung - Kommunikation](/wp-content/uploads/2015/02/Zusammenfassung-Kommunikation.pdf)
 
 # Apprenticeship as IT System Engineer
 
