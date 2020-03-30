@@ -191,7 +191,7 @@ If a restic server docker image is defined, the install tasks are included.
       max-file: "{{ docker_log_max_file }}"
 ```
 
-The install tasks set up a `.htpasswd` user in the mounted directory and then start a restic server container with configurations from the inventory.
+The install tasks creates a `.htpasswd` file in the mounted directory and then starts a restic server container with configurations applied from the inventory.
 
 As you can see the http communication is not encrypted. However, this is not a problem as restic encrypts its payload.
 
