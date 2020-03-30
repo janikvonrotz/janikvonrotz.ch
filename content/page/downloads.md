@@ -12,7 +12,7 @@ author: Janik Vonrotz
 
 **5. Semester**
 
-* [Zusammenfassung - Geschäftsprozessmanagement](/wp-content/uploads/2013/07/Zusammenfassung-Geschäftsprozessmanagement.pdf)
+* [Zusammenfassung - Geschäftsprozessmanagement](/wp-content/uploads/2013/07/Zusammenfassung-Geschäftsprozessmanagement.pdf)
 * [Zusammenfassung - Multimediale Kommunikation](/wp-content/uploads/2013/07/Zusammenfassung-Multimediale-Kommunikation-Janik-von-Rotz.pdf)
 
 **4. Semester at HTW Berlin**
