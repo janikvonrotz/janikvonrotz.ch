@@ -1,7 +1,12 @@
 # Todo
 
+## Files
+
+- [ ] Move files into folder
+
 ## Bugs
 
+- [ ] Post not shown in list! -> bump now version for hugo
 - [ ] Fix gpg link https://janikvonrotz.ch/contact/janikvonrotz/pgp
 
 ## Framework
