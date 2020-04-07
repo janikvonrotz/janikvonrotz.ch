@@ -4,3 +4,5 @@ default.vim
 public
 .vscode/settings.json
 content/.vscode/settings.json
+
+.now
