@@ -98,7 +98,7 @@ Ensure the script is executable.
 
 `$ sudo chmod +x /usr/local/bin/odoo-backup`.
 
-Create an odoo backup for your database lik this:
+Create an odoo backup for your database like this:
 
 `$ odoo-backup -d nameofyourdatabase -h https://odoo.example.com -p secretmasterpassword`
 
