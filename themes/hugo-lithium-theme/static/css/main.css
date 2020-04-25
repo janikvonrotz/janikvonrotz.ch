@@ -399,7 +399,7 @@ footer .links-kudos img {
 	nav .search img {
 		filter: invert(1)
 	}
-	p code {
+	p code, li code {
 		color: #444;
 	}
 
