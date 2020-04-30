@@ -47,9 +47,10 @@ Implicit Flow Enabled: *On*
 Odoo OAuth requires the implicit flow.
 
 Valid Redirect URIs:
-- `/realms/example.com/account/*`
-- `http://odoo.example.com/auth_oauth/signin`
-- `http://localhost:8069/auth_oauth/signin` *for development purposes*
+
+* `/realms/example.com/account/*`
+* `http://odoo.example.com/auth_oauth/signin`
+* `http://localhost:8069/auth_oauth/signin` *for development purposes*
 
 Allow redirection to the odoo login page.
 

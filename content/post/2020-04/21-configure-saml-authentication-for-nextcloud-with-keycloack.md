@@ -140,11 +140,10 @@ Name: `roles`
 Mapper Type: *Role List*  
 Role attribute name: `Roles`  
 Friendly Name: `Roles`  
-SAML Attribute Name: `email`  
 SAML Attribute NameFormat: *Basic*  
 Single Role Attribute: *On*
 
-The `Single Role Attribute` requires to be set in a different section in addition. Navigate to *Configure > Client scopes > role_list > Mappers > role_list* and toggle the *Single Role Attribute* to *On*.
+In addition the *Single Role Attribute* option needs to be enabled in a different section. Navigate to *Configure > Client scopes > role_list > Mappers > role_list* and toggle the *Single Role Attribute* to *On*.
 
 If these mappers have been created, we are ready to log in.
 
