@@ -15,6 +15,7 @@ images:
 Role based access control (RBAC) is a common feature in identity and access management (IAM) systems. Granting access to applications by assigning roles to a selection of users is the proper way to manage access permissions.
 
 In this guide I will show you how this can be implemented with Keycloak. We will create a authentication flow that checks if a user is eligible to access the client. This authentication flow can be applied to any Keycloak client.
+<!--more-->
 
 Lets assume that we have set up the following Keycloak resources:
 
