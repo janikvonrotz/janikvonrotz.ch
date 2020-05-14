@@ -16,9 +16,25 @@ Hi, my name is Janik Vonrotz. I’m a Software Engineer / IT Consultant from Swi
 
 Born on July 12, 1991 in Lucerne; apprenticeship Computer Specialist EFZ System Engineering accompanied with a technical Vocational Engineering School Diploma; full-time bachelor's degree in Business and Information Technology at Lucerne University of Applied Sciences and Arts; exchange semester at Berlin University of Business Administration and Engineering; international campus experience, Santa Clara University, USA.
 
-After completing his apprenticeship, Janik worked as a SharePoint Administrator and System Engineer with focus on system automation at Verkehrsbetriebe Luzern AG. During his studies he focused on requirements engineering, software development and business process management. In the last semester he supported Apoveda GmbH with the implementation of their online presence. Prior to joining AdNovum, Janik designed and implemented a Microsoft System Center Configuration Manager solution for the cantonal hospital in Obwalden. Afterwards he was employed as an Associate IAM Engineer by AdNovum. In this position, he designed and implemented Identity and Access Management solutions for AdNovum customers. In the meantime, Janik supported Abilium GmbH in the acquisition of new projects and explors with Apland GmbH the world of self-employment.
+After completing his apprenticeship, Janik worked as a SharePoint Administrator and System Engineer with focus on system automation at Verkehrsbetriebe Luzern AG. During his studies he focused on requirements engineering, software development and business process management. In the last semester he supported Apoveda GmbH with the implementation of their online presence. Prior to joining AdNovum, Janik designed and implemented a Microsoft System Center Configuration Manager solution for the cantonal hospital in Obwalden. Afterwards he was employed as an Associate IAM Engineer by AdNovum. In this position, he designed and implemented Identity and Access Management solutions for AdNovum customers. In 2019/2020 a lot has changed. Janik supported Abilium GmbH in the acquisition of new projects and explores with Apland GmbH the world of self-employment. With two collegues from canton Uri he founded the Mint System GmbH, which specializes in distributing the ERP-System Odoo.
 
 ## Work Experience
+
+04|2020 - now  
+Web Developer (part-time)  
+[Dachverband Schweizer Jugendparlamente DSJ
+](https://www.dsj.ch/)
+
+* Develope and maintain the [engage.ch](https://www.engage.ch/) web application
+* Contribute to democratic participation projects
+
+03|2020 - now  
+Chief Technical Officer (self-employed)  
+[Mint Sytem GmbH](https://www.mint-system.ch/)
+
+* Introduce and implement [Odoo](https://www.odoo.com) based software solutions
+* Business and product development
+* Manage infrastructure for on-premise hosting
 
 06|2019 - now  
 Software and Business Developer (self-employed)  
@@ -66,8 +82,8 @@ Computer Scientist (full-time)
 * Worked as a System Administrator with Microsoft SharePoint, Exchange, SQL Server and Active Directory.
 * Advised departments on SharePoint workflow integrations.
 * Contributed to an Office 365 project: [Informationsdrehscheibe aus der Cloud](/wp-content/uploads/2015/09/Informationsdrehscheibe-aus-der-Cloud.pdf).
-<!-- * Developed system automation solutions with PowerShell.
-* Built and maintained single sign-on services. -->
+<!-- * Developed system automation solutions with PowerShell.  -->
+<!-- * Built and maintained single sign-on services. -->
 
 08|2008 – 06|2012  
 Apprenticeship Computer Specialist [EFZ](https://de.wikipedia.org/wiki/Eidgen%C3%B6ssisches_F%C3%A4higkeitszeugnis) System Engineering (full-time)  
