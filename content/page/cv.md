@@ -30,7 +30,7 @@ Web Developer (part-time)
 
 03|2020 - now  
 Chief Technical Officer (self-employed)  
-[Mint Sytem GmbH](https://www.mint-system.ch/)
+[Mint System GmbH](https://www.mint-system.ch/)
 
 * Introduce and implement [Odoo](https://www.odoo.com) based software solutions
 * Business and product development
