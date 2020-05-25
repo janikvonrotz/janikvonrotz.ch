@@ -16,7 +16,7 @@ images:
 Odoo's database manager provides an simple interface to backup an odoo database (tenant). This interface can be used to run automated backups. I have created a script to easily request odoo backup archives. The script works like every other command line tool.
 <!--more-->
 
-Create the following script on a server that is running an odoo instance.
+Create the following script on a server that is running an Odoo instance.
 
 **/usr/local/bin/odoo-backup**
 
@@ -28,20 +28,20 @@ set -e
 
 # Display Help
 Help() {
-    echo
-    echo "odoo-backup"
-    echo "###########"
-    echo
-    echo "Description: Backup odoo database."
-    echo "Syntax: odoo-backup [-p|-d|-o|-h|help]"
-    echo "Example: odoo-backup -p secret -d odoo -o /tmp -h https://odoo.example.com"
-    echo "options:"
-    echo "  -p    Odoo master password. Defaults to \$ODOO_MASTER_PASSWORD env var."
-    echo "  -d    Database name."
-    echo "  -o    Output directory. Defaults to '/var/tmp'"
-    echo "  -h    Odoo host. Defaults to 'http://localhost:8069'"
-    echo "  help  Show odoo-backup manual."
-    echo
+  echo
+  echo "odoo-backup"
+  echo "###########"
+  echo
+  echo "Description: Backup odoo database."
+  echo "Syntax: odoo-backup [-p|-d|-o|-h|help]"
+  echo "Example: odoo-backup -p secret -d odoo -o /tmp -h https://odoo.example.com"
+  echo "options:"
+  echo "  -p    Odoo master password. Defaults to \$ODOO_MASTER_PASSWORD env var."
+  echo "  -d    Database name."
+  echo "  -o    Output directory. Defaults to '/var/tmp'"
+  echo "  -h    Odoo host. Defaults to 'http://localhost:8069'"
+  echo "  help  Show odoo-backup manual."
+  echo
 }
 
 # Show help and exit
@@ -51,7 +51,7 @@ if [[ $1 == 'help' ]]; then
 fi
 
 # Process params
-while getopts ":p:d:o:h:help:" opt; do
+while getopts ":p: :d: :o: :h:" opt; do
   case $opt in
     h) HOST="$OPTARG"
     ;;
@@ -68,26 +68,28 @@ while getopts ":p:d:o:h:help:" opt; do
 done
 
 # Fallback to environment vars and default values
-: ${PASSWORD:=${ODOO_MASTER_PASSWORD}}
+: ${PASSWORD:=${ODOO_MASTER_PASSWORD:='admin'}}
 : ${DIR:='/var/tmp'}
 : ${HOST:='http://localhost:8069'}
 
 # Verify variables
-[[ -z "$PASSWORD" ]] && { echo "Parameter -p|password is empty" ; exit 1; }
 [[ -z "$DATABASE" ]] && { echo "Parameter -d|database is empty" ; exit 1; }
 [[ -z "$DIR" ]] && { echo "Parameter -d|dir is empty" ; exit 1; }
 [[ -z "$HOST" ]] && { echo "Parameter -h|host is empty" ; exit 1; }
 
+# Ensure output directory exists
+mkdir -p $DIR
+
 # Request backup with curl
 curl -X POST \
-    -F "master_pwd=${PASSWORD}" \
-    -F "name=${DATABASE}" \
-    -F "backup_format=zip" \
-    -o ${DIR}/${DATABASE}.zip \
-    ${HOST}/web/database/backup
+  -F "master_pwd=${PASSWORD}" \
+  -F "name=${DATABASE}" \
+  -F "backup_format=zip" \
+  -o ${DIR}/${DATABASE}.zip \
+  ${HOST}/web/database/backup
 
 # Validate zip file
-unzip -t "${DIR}/${DATABASE}.zip"
+unzip -q -t "${DIR}/${DATABASE}.zip"
 
 # Notify if backup has finished
 echo "The Odoo backup has finished: ${DIR}/${DATABASE}.zip"
@@ -110,6 +112,6 @@ $ sudo crontab -l
 30 1 * * * . /etc/environment; odoo-backup -d erp; restic backup /var/tmp/erp.zip --tag odoo --tag odoo01
 ```
 
-The odoo master password can be declared in `/etc/environments`.
+The Odoo master password can be declared in `/etc/environments`.
 
 This example is part of my [Ansible Playbook project](https://github.com/Mint-System/Ansible-Playbooks)
