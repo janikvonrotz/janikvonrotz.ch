@@ -164,8 +164,6 @@ The Ansible playbook `setup.yml` supports two running modes. The default mode an
   roles:
   - role: docker
     tags: docker
-  - role: iam
-    tags: iam
   - role: update
     tags: update,never
 ```
