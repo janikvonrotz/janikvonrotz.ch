@@ -81,7 +81,7 @@ I will demonstrate the pin version feature using this package.
 
 The host vars simply tell wether this host should be updated or not.
 
-**inventories/setup/host_vars/server1.yml
+**inventories/setup/host_vars/server1.yml**
 
 ```yml
 update: yes
@@ -135,6 +135,7 @@ The update role refreshes the repo cache and runs a dist upgrade.
   apt:
     update_cache: yes
     force_apt_get: yes
+    cache_valid_time: 3600
 
 - name: Upgrade all packages
   apt:
