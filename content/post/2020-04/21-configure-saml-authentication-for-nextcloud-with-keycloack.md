@@ -127,12 +127,14 @@ Create these mappers:
 Name: `username`  
 Mapper Type: *User Property*  
 Property: `username`  
+Friendly Name: `username`  
 SAML Attribute Name: `username`  
 SAML Attribute NameFormat: *Basic*
 
 Name: `email`  
 Mapper Type: *User Property*  
 Property: `email`  
+Friendly Name: `email`  
 SAML Attribute Name: `email`  
 SAML Attribute NameFormat: *Basic*
 
@@ -156,9 +158,9 @@ First ensure that there is a Keycloack user in the realm to login with. Navigate
 * Credentials
 * Role Mappings
 
-The role can be managed under *Configure > Roles* and then set in the user view under the *Role Mappings* tab.
+The role can be managed under *Configure > Roles* and then set in the user view under the *Role Mappings* tab. Or you can set a role per client under *Configure > Clients > *select client* > Tab Roles*.
 
-In your browser open [https://login.example.com](https://login.example.com) and choose *login.example.com*. You will now be redirected to the Keycloack login page. Enter your credentials and on a succesfull login you should see the Nextcloud home page.
+In your browser open [https://cloud.example.com](https://cloud.example.com) and choose *login.example.com*. You will now be redirected to the Keycloack login page. Enter your credentials and on a successfull login you should see the Nextcloud home page.
 
 Nextcloud will create the user if it is not available.
 
