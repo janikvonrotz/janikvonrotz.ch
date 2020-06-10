@@ -73,7 +73,7 @@ For the IDP *Provider 1* set these configurations:
 **General**
 
 Attribute to map the UID to: `username`  
-Optional display name: `login.example.com`
+Optional display name: `Login Example`
 
 The user id will be mapped from the `username` attribute in the SAML assertion.
 
