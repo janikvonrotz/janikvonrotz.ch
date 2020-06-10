@@ -141,7 +141,7 @@ The update role refreshes the repo cache and runs a dist upgrade.
   apt:
     upgrade: dist
 
-- name: check if reboot is required
+- name: Check if reboot is required
   stat: 
     path: /var/run/reboot-required
   register: reboot_required
