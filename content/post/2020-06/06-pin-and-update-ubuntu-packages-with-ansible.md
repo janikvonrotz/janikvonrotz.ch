@@ -94,6 +94,12 @@ The setup role installs docker ce and pins its version if the package string con
 **roles/docker/tasks/install.yml**
 
 ```yml
+- name: Unpin docker-ce version
+  dpkg_selections:
+    name: "{{ docker_package }}"
+    selection: hold
+  when: "'=' not in docker_package"
+
 - name: Update apt and install docker-ce
   apt:
     update_cache: yes
@@ -104,12 +110,6 @@ The setup role installs docker ce and pins its version if the package string con
     name: "{{ docker_package.split('=')[0] }}"
     selection: hold
   when: "'=' in docker_package"
-
-- name: Unpin docker-ce version
-  dpkg_selections:
-    name: "{{ docker_package }}"
-    selection: hold
-  when: "'=' not in docker_package"
 ```
 
 Once a package has been pinned, it cannot be updated by the package manger.
