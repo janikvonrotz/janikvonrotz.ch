@@ -6,7 +6,7 @@ author: Janik Vonrotz
 disable_comments: true
 ---
 
-[![Untitled](/images/Moi.jpg)](/images/Moi.jpg)
+[![Untitled](/images/me-cv.jpg)](/images/me-cv.jpg)
 
 Hi, my name is Janik Vonrotz. I’m a Software Engineer / IT Consultant from Switzerland and have got a BSc in Business and Information Technology.
 
