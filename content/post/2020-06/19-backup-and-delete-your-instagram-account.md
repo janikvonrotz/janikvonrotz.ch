@@ -9,7 +9,7 @@ tags:
  - social media
  - privacy
 images:
- - "images/delete social media.png"
+ - "/images/delete social media.png"
 ---
 
 For a while I had the idea that I need an account on all social media platforms in order to stay up to date. But as many other did, I grew tired of social media. Not only tired, but also bothered of having my personal data sold. Facebook is the elephant in the room. Not only have the failed to moderate their content properly, but they also showed an in-compliance with their own terms. This platform is no longer about connecting people, it is all about connecting data points and make it more useful for advertiser. The deal of getting social interaction and provide data in exchange has turned for the worse. I firmly believe that social media companies do not have a sustainable business model and therefore should not be supported.
