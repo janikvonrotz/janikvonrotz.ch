@@ -18,151 +18,159 @@ Starting tomorrow I will head down to Athen (Greece) and the cycle to Dubrovnik 
 
 Added the following items after my first cycling tour: USB plug, travel adapter, down jacket, bicycle computer, mocha coffee maker, zipping bags and tarp. Also made some adjustments to the amounts of clothes and fixed typos.
 
+**Update 2020-07**
+
+Went on one-week trip and added some more stuff.
+
 # Cooking
 
-- [] Cooker  
-- [] Mocha coffee maker
-- [] Cartridge with gas/petrol  
-- [] Pan Large  
-- [] Pan Small  
-- [] Stable wool  
-- [] Sponge  
-- [] Disposable flap  
-- [] Abrasion cloth  
-- [] Flushing agent  
-- [] Spices  
-- [] Cutlery  
-- [] Plate  
-- [] Cup/Mug  
-- [] Water bag  
-- [] Cutting board
-- [] Carving knife
-- [] Bag for cooking utensils  
-- [] Zipping bags for food
+- [ ] Cooker  
+- [ ] Mocha coffee maker
+- [ ] Cartridge with gas/petrol  
+- [ ] Pan Large  
+- [ ] Pan Small  
+- [ ] Steel wool  
+- [ ] Sponge  
+- [ ] Disposable flap  
+- [ ] Abrasion cloth  
+- [ ] Flushing agent  
+- [ ] Spices  
+- [ ] Cutlery  
+- [ ] Plate  
+- [ ] Cup/Mug  
+- [ ] Water bag  
+- [ ] Cutting board
+- [ ] Carving knife
+- [ ] Bag for cooking utensils  
+- [ ] Zipping bags for food
+- [ ] Cooking cutlery
+- [ ] Oil dispenser
 
 # Repair
 
-- [] Repair tool  
-- [] Replacement hose  
-- [] Spare spoke  
-- [] Spare tyre
-- [] Screw set  
-- [] Chain oil  
-- [] Tyre levers  
-- [] Chain riveter  
-- [] Chain links  
-- [] Pump  
-- [] Presta to schrader adapter
+- [ ] Repair tool  
+- [ ] Replacement hose  
+- [ ] Spare spoke  
+- [ ] Spare tyre
+- [ ] Screw set  
+- [ ] Chain oil  
+- [ ] Tyre levers  
+- [ ] Chain riveter  
+- [ ] Chain links  
+- [ ] Pump  
+- [ ] Presta to schrader adapter
 
 # Clothing
 
 ## Weather
 
-- [] Rain jacket  
-- [] Rain trousers  
-- [] Shoe cover or plastic bag  
-- [] Down jacket
+- [ ] Rain jacket  
+- [ ] Rain trousers  
+- [ ] Shoe cover or plastic bag  
+- [ ] Down jacket
 
 ## Cycling
 
-- [] Bicycle shoes  
-- [] Bicycle gloves  
-- [] Wind jacket  
-- [] Bicycle leg and arm warmers    
-- [] Cap  
-- [] Bicycle trousers 2  
-- [] Bicycle overpants / Trainer trousers short  
-- [] T-Shirts Active 3  
-- [] (T-Shirt Long Sleeve)  
+- [ ] Bicycle shoes  
+- [ ] Bicycle gloves  
+- [ ] Wind jacket  
+- [ ] Bicycle leg and arm warmers    
+- [ ] Cap  
+- [ ] Bicycle trousers 2x  
+- [ ] Bicycle overpants / Trainer trousers short  
+- [ ] T-Shirts Active 3x  
+- [ ] (T-Shirt Long Sleeve)  
 
 ## Leisure
 
-- [] Sweater  
-- [] T-Shirts 2  
-- [] Underwear 3  
-- [] Socks 3  
-- [] Swim trunks  
-- [] FlipFlops  
-- [] Trekking shoes  
-- [] Long trousers  
-- [] Short trousers  
-- [] Trainer trousers long  
+- [ ] Sweater  
+- [ ] T-Shirts 2  
+- [ ] Underwear 3  
+- [ ] Socks 3  
+- [ ] Swim trunks  
+- [ ] FlipFlops  
+- [ ] Trekking shoes  
+- [ ] Long trousers  
+- [ ] Short trousers  
+- [ ] Trainer trousers long  
 
 # Camping
 
-- [] Tent  
-- [] Tent underlay / Footprint  
-- [] Tarp
-- [] Sleeping bag  
-- [] Insulating mat  
-- [] Silk sleeping bag  
-- [] Storage bag  
+- [ ] Tent  
+- [ ] Tent underlay / Footprint  
+- [ ] Tarp
+- [ ] Sleeping bag  
+- [ ] Insulating mat  
+- [ ] Silk sleeping bag  
+- [ ] Storage bag  
 
 # Various Equipment
 
-- [] Headlamp  
-- [] Lighter  
-- [] Sunglasses  
-- [] Pocket knife  
-- [] #1 aid kit  
-- [] Sewing kit  
-- [] Washing powder  
-- [] Laundry bag  
-- [] Packing cube / Clothes bag 
+- [ ] Headlamp  
+- [ ] Lighter  
+- [ ] Sunglasses  
+- [ ] Pocket knife  
+- [ ] #1 aid kit  
+- [ ] Sewing kit  
+- [ ] Washing powder  
+- [ ] Laundry bag  
+- [ ] Packing cube / Clothes bag 
 
 # Electronics
 
-- [] Solar panel  
-- [] Power bank  
-- [] iPhone charging cable  
-- [] Charging cable mini USB  
-- [] Smartphone  
-- [] Wristwatch  
-- [] Camera  
-- [] Bicycle computer
-- [] USB plug
-- [] Travel dapter
+- [ ] Solar panel  
+- [ ] Power bank  
+- [ ] iPhone charging cable  
+- [ ] Charging cable mini USB  
+- [ ] Smartphone  
+- [ ] Wristwatch  
+- [ ] Camera  
+- [ ] Bicycle computer
+- [ ] USB plug
+- [ ] Travel dapter
 
 # On the road
 
-- [] Offline map  
-- [] Passport, ID  
-- [] Health insurance card  
-- [] Credit and debit card  
-- [] Writing material  
-- [] Train/Flight tickets  
-- [] Books  
-- [] Day backpack  
-- [] Playing cards  
+- [ ] Offline map  
+- [ ] Passport, ID  
+- [ ] Health insurance card  
+- [ ] Credit and debit card  
+- [ ] Writing material  
+- [ ] Train/Flight tickets  
+- [ ] Books  
+- [ ] Day backpack  
+- [ ] Playing cards  
 
 # Care
 
-- [] Shampoo  
-- [] Microfibre terry towel  
-- [] Drugs  
-- [] Toiletry bag  
-- [] Toilet paper  
-- [] Sun cream  
-- [] Dental floss  
-- [] Toothbrush  
-- [] Lip balm  
-- [] Sport tape  
-- [] Nail clipper  
-- [] Washing towel
+- [ ] Shampoo  
+- [ ] Microfibre terry towel  
+- [ ] Drugs  
+- [ ] Toiletry bag  
+- [ ] Toilet paper  
+- [ ] Sun cream  
+- [ ] Dental floss  
+- [ ] Toothbrush  
+- [ ] Lip balm  
+- [ ] Sport tape  
+- [ ] Nail clipper  
+- [ ] Washing towel
+- [ ] Moskito spray
+- [ ] Razor
 
 # Bicycle
 
-- [] Mudguard  
-- [] Front and rear light  
-- [] Pocket set  
-- [] Bottle cage  
-- [] Bicycle helmet  
-- [] Bidon  
-- [] Bell  
-- [] Bicycle lock  
+- [ ] Mudguard  
+- [ ] Front and rear light  
+- [ ] Pocket set  
+- [ ] Bottle cage  
+- [ ] Bicycle helmet  
+- [ ] Bidon  
+- [ ] Bell  
+- [ ] Bicycle lock  
 
 # Transport
 
-- [] Transport bag for bicycle bags  
-- [] Bicycle cardboard  
-- [] Disc brake protection  
+- [ ] Transport bag for bicycle bags  
+- [ ] Bicycle cardboard  
+- [ ] Disc brake protection  
