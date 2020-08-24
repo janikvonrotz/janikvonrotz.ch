@@ -14,17 +14,12 @@ googleAnalytics = "UA-31105856-2"
 [menu]
 
     [[menu.main]]
-        name = "Home"
-        url = "/"
-        weight = 1
-
-    [[menu.main]]
         name = "Projects"
         url = "/projects/"
         weight = 2
 
     [[menu.main]]
-        name = "DL"
+        name = "Downloads"
         url = "/downloads/"
         weight = 3
 
@@ -45,6 +40,7 @@ googleAnalytics = "UA-31105856-2"
 
 [params]
     description = "Curious, Dedicated, Humble"
+    subscribeURL = "https://eepurl.com/geDd05"
 
     [params.logo]
     url = "/images/logo.png"
