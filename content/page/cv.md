@@ -161,7 +161,7 @@ French (mainly reading, hardly writing and speaking) – Diplome d&#39;etudes en
 ## Non-profit work
 
 * Supporting the [Republik magazine](https://www.republik.ch) since day one.
-* Ative member of [OpenData.ch](https://opendata.ch/) and [CH open](https://www.ch-open.ch/).
+* Active member of [OpenData.ch](https://opendata.ch/) and [CH open](https://www.ch-open.ch/).
 * Support various clubs hosting their websites and social media.
 * Helped planning and realize private and public sports club events.
 
