@@ -13,7 +13,7 @@ images:
  - /images/metal network.jpg
 ---
 
-GraphQl is not opinionated about sorting and pagination. It is up to you to implement a the sorting for your query. I've seen various approaches doing that, but none seemed elegant. After compiling a few blog posts and tutorials I came up with the following solution.
+GraphQl is not opinionated about sorting and pagination. It is up to you to implement the sorting for your query. I've seen various approaches doing that, but none seemed elegant. After compiling a few blog posts and tutorials I came up with the following solution.
 <!--more-->
 
 We want to make a selected query sortable. Therefore we add an optional parameter to the query in the schema. The parameter is a custom input type. It consists of a field name and a sort order. The field property is a string and the order property is an enum. Order is either ascending or descending.
