@@ -2,7 +2,7 @@ baseURL = "https://janikvonrotz.ch/"
 languageCode = "en-us"
 title = "Janik Vonrotz"
 description = "Curious, Dedicated, Open-Minded" 
-theme = "hugo-lithium-theme"
+theme = "new-css"
 pygmentsCodeFences = "true"
 disqusShortname = "janikvonrotz-1"
 googleAnalytics = "UA-31105856-2"
@@ -12,6 +12,11 @@ googleAnalytics = "UA-31105856-2"
     page = "/:slug/"
 
 [menu]
+
+    [[menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 1
 
     [[menu.main]]
         name = "Projects"
