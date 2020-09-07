@@ -1,0 +1,3 @@
+[submodule "theme/hugo-new-css-theme"]
+	path = theme/hugo-new-css-theme
+	url = https://github.com/janikvonrotz/hugo-new-css-theme.git
