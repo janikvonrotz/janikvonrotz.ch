@@ -1,6 +1,0 @@
-<p class="categories">Categories:&nbsp;
-    {{ range $i, $e := .Params.categories }}
-        {{if $i}},{{end}}
-        <a href="/categories/{{ . | urlize }}">{{ . }}</a>
-    {{ end }}
-</p>
