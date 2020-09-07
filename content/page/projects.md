@@ -9,6 +9,8 @@ This is a collection of projects by year since I came in touch with IT. It is su
 
 **2020**
 
+[Hugo new.css theme](https://github.com/janikvonrotz/hugo-new-css-theme) - This hugo theme is made from vanilla html and the default [new.css](https://newcss.net/).
+
 [Ansible Playbooks](https://github.com/Mint-System/Ansible-Playbooks) - Collection of Ansible playbooks and roles.
 
 [Odoo Development](https://github.com/Mint-System/Odoo-Development) - Setup Odoo development environment with Docker Compose.
