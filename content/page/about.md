@@ -15,7 +15,7 @@ Here are a few things about me:
 
 * I did some [traveling](https://gist.github.com/janikvonrotz/37dc61480790b07ab91d88d624caef2b) in the past. Not so much anymore as flying has a huge impact on the environment.
 * There is not enough time to [read books](https://gist.github.com/janikvonrotz/48bfb518239970395b12285b3c23fbfd).
-* Like with books I'm not taking enough [photos](/categories/photography/).
+* As with books I'm not taking enough [photos](/categories/photography/).
 
 I describe my personality in 3 words:
 
@@ -34,6 +34,12 @@ Let me know if you:
 * Come to Switzerland
 * Are working on a cool project and need help
 * Want to discuss anything related to my work
+
+I believe in:
+
+* [User Data Manifesto](https://userdatamanifesto.org/)
+* [GNU Manifest](https://www.gnu.org/gnu/manifesto.html)
+* [Open Source Software](https://opensourcesoftware.ch)
 
 Currently I am working on various opportunities and projects:
 
