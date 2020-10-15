@@ -5,7 +5,7 @@ description = "Curious, Dedicated, Open-Minded"
 theme = "hugo-new-css-theme"
 pygmentsCodeFences = "true"
 googleAnalytics = "UA-31105856-2"
-disqusShortname = "janikvonrotz-1"
+# disqusShortname = "janikvonrotz-1"
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
@@ -47,6 +47,10 @@ disqusShortname = "janikvonrotz-1"
     description = "Curious, Dedicated, Humble"
     subscribeURL = "https://eepurl.com/geDd05"
     # commentoUrl = "https://comment.apland.ch/js/commento.js"
+
+    [params.remark42]
+    url = "https://comment.apland.ch"
+    siteId = "janikvonrotz.ch"
 
     [params.logo]
     url = "/images/logo.png"
