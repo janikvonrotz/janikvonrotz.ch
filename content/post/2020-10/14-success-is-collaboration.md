@@ -16,11 +16,11 @@ The public perception of success seems very wrong to me. if media and the public
 
 But where does one draw the line between success and exploit? To me these two terms are very much related. I tell you why.
 
-A exploit is a vulnerability of a system that allows an individual with limited resources to compromise the whole system. This definition is true in the context of IT systems and economic systems. In the economic sense a company is able pass its competitors by exploiting a lack of regulation in an established market.
+An exploit is a vulnerability of a system that allows an individual with limited resources to compromise the whole system. This definition is true in the context of IT systems and economic systems. In the economic sense a company is able pass its competitors by exploiting a lack of regulation in an established market.
 
 > Every disruptive business model is an exploit
 
-Let's talk this through with some examples. In the public eye AirBnB and Uber are successful companies and share a innovative business model.  
+Let's talk this through with some examples. In the public eye AirBnB and Uber are successful companies and share an innovative business model.  
 To me AirBnB and Uber are not innovative business models at all. What combines them is the lack of responsibility to comply with regulations.
 
 - Uber made profit from not treating its drivers as employers and therefore do not have to pay for social expenses.
@@ -37,6 +37,7 @@ Building success in most cases is a joint venture. People, institutions and comp
 Being rewarded for finding an exploit is still legitimate under one circumstance. It is disclosed publicly and fixed in a timely manner. In IT an exploit can be fixed on the same day, in economic markets regulated by governments it can take years. This must be taken into consideration.
 
 I like to finish this post with wishful thinking. We often have personal utopias and hope that they become reality. Here are my wishes for the future regarding the understanding of success:
+
 * The public is changing its perception of success
 * Sustainable business models are valued higher than others
 * Legal entities can be established and act more easily
