@@ -12,7 +12,6 @@ images:
  - /images/lightbulb.jpg
 ---
 
-![](confused.png)
 The terms URL, URI and URN can be confusing. I wanna make sense for once and for all.
 <!--more-->
 
