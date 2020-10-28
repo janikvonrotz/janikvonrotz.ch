@@ -4,5 +4,7 @@ default.vim
 public
 .vscode/settings.json
 content/.vscode/settings.json
-
 .now
+.vercel
+.obsidian/graph.json
+.obsidian/workspace

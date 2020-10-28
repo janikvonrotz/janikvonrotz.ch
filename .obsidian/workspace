@@ -1,0 +1,83 @@
+{
+  "main": {
+    "id": "c4543f265786c6e5",
+    "type": "split",
+    "children": [
+      {
+        "id": "a6fe879555b14352",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "content/post/2020-10/28-components-of-a-uri.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "66a07918d42b2a13",
+    "type": "split",
+    "children": [
+      {
+        "id": "b27a24ff22a5c18d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2cee56aad0c74090",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "d418320b3dacd3af",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": ""
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4a70844ce6089c4c",
+    "type": "split",
+    "children": [
+      {
+        "id": "fffd816c4b0ff403",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5765f86fd22c4fc6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/post/2020-10/28-components-of-a-uri.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "lastOpenFiles": [
+    "content/post/2020-10/28-components-of-a-uri.md",
+    "static/images/Pasted image 20201028090616.png",
+    "static/images/Pasted image 20201028090001.png",
+    "static/images/Pasted image 20201028085832.png"
+  ]
+}
