@@ -116,7 +116,7 @@ Finish the wizard and open the tab *Stages*.
 Select the *build* stage, then the *build* job and add a new task.
 
 task type: *More...*  
-command: `/bin-bash`  
+command: `/bin/bash`  
 argument:
 
 ```
@@ -129,7 +129,7 @@ Add one more stage with the following details:
 stage name: *test*  
 job name: *test*  
 task type: *More...*  
-command: `/bin-bash`  
+command: `/bin/bash`  
 argument:
 
 ```
