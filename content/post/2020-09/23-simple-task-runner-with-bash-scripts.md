@@ -41,6 +41,8 @@ It is a nice solution for a common interface to manage projects. But as mentione
 ```zsh
 #!/bin/zsh
 
+set -euo pipefail
+
 function start() {
     docker-compose up -d
 }
