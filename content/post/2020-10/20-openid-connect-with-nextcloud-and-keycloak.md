@@ -17,6 +17,7 @@ Keycloak and Nextcloud are both popular open source software. The first is an id
 <!--more-->
 
 In our scenario we have these hosts and configurations:
+
 * Keycloak server (OpenID Provider)
 	* host: `login.example.com`
 	* realm: `example.com`
