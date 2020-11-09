@@ -94,9 +94,11 @@ function authenticate(context) {
     LOG.info(script.name + " trace auth for: " + username);
 
     var client = session.getContext().getClient();
-    var rolesClient = user.getClientRoleMappings(client);
+    //var rolesClient = user.getClientRoleMappings(client);
+    var roleModel = client.getRole("access");
 
-    if (rolesClient.isEmpty()) {
+    // if (rolesClient.isEmpty()) {
+    if (user.hasRole(roleModel)) {
 
         context.forkWithErrorMessage(new FormMessage('label', 'User is not allowed to access this client.'));
         return;
@@ -105,6 +107,8 @@ function authenticate(context) {
     context.success();
 }
 ```
+
+**Update 1:** The script has been updated to check if user actually has the role *access* and not only any role of the client. This change was proposed in the comments by @rogier.
 
 The script retrieves the roles mappings of the current client from the session context and if the user has not assigned any roles it will deny access.
 
