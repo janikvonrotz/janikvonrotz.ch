@@ -7,12 +7,14 @@ pygmentsCodeFences = "true"
 # googleAnalytics = "UA-31105856-2"
 # disqusShortname = "janikvonrotz-1"
 
+[markup.goldmark.renderer]
+    unsafe = true
+
 [permalinks]
     post = "/:year/:month/:day/:slug/"
     page = "/:slug/"
 
 [menu]
-
     [[menu.main]]
         name = "Home"
         url = "/"
@@ -47,6 +49,7 @@ pygmentsCodeFences = "true"
     description = "Curious, Dedicated, Humble"
     subscribeURL = "https://eepurl.com/geDd05"
     plausibleAnalaytics = "janikvonrotz.ch"
+    gitUrl = "https://github.com/janikvonrotz/janikvonrotz.ch/tree/master/content"
     
     [params.remark42]
     url = "https://comment.apland.ch"
