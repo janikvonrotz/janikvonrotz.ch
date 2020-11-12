@@ -43,6 +43,18 @@ It is a nice solution for a common interface to manage projects. But as mentione
 
 set -euo pipefail
 
+function help() {
+echo
+echo "$1 <command> [options]"
+echo
+echo "commands:"
+echo
+echo "   start                      Start docker container."
+echo "   stop                       Stop docker container."
+echo "   run-script     [option]    Run script with option."
+echo
+}
+
 function start() {
     docker-compose up -d
 }
@@ -59,10 +71,10 @@ case "$1" in
         stop
         ;;
     run-script)
-        ./scripts/another-script
+        . ./scripts/script $2
         ;;
     *)
-        echo $"Usage: $0 {start|stop|run-script}"
+        echo task
         exit 1
 esac
 ```
