@@ -49,9 +49,7 @@ echo "$1 <command> [options]"
 echo
 echo "commands:"
 echo
-echo "   start                      Start docker container."
-echo "   stop                       Stop docker container."
-echo "   run-script     [option]    Run script with option."
+column -t -s"|" ./task.md | tail -n +3
 echo
 }
 
@@ -80,5 +78,17 @@ esac
 ```
 
 Create an alias `alias task='./task'`, make the script executable `chmod +x task` and run task commands like this `task start`.
+
+For instructions add a `task.md` file containing a markdown table with command instructions:
+
+**task.md**
+
+```md
+command|option|description
+-|-|-
+start| |Start docker container.
+stop| |Stop docker container.
+run-script|[option]|Run script with option.
+```
 
 Simple isn't it?
