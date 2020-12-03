@@ -59,7 +59,7 @@ fi
 # Process params
 while getopts ":p: :d: :o: :h:" opt; do
   case $opt in
-    h) HOST="$OPTARG"
+    h) ODOO_HOST="$OPTARG"
     ;;
     p) PASSWORD="$OPTARG"
     ;;
@@ -76,12 +76,12 @@ done
 # Fallback to environment vars and default values
 : ${PASSWORD:=${ODOO_MASTER_PASSWORD:='admin'}}
 : ${OUTPUT:='/var/tmp'}
-: ${HOST:='http://localhost:8069'}
+: ${ODOO_HOST:='http://localhost:8069'}
 
 # Verify variables
 [[ -z "$DATABASE" ]] && { echo "Parameter -d|database is empty" ; exit 1; }
 [[ -z "$OUTPUT" ]] && { echo "Parameter -d|dir is empty" ; exit 1; }
-[[ -z "$HOST" ]] && { echo "Parameter -h|host is empty" ; exit 1; }
+[[ -z "$ODOO_HOST" ]] && { echo "Parameter -h|host is empty" ; exit 1; }
 
 # Check if dir var is file or folder
 if [ "${OUTPUT: -4}" = ".zip" ];then
@@ -107,7 +107,7 @@ curl -X POST \
   -F "name=${DATABASE}" \
   -F "backup_format=zip" \
   -o ${DIR}/${FILE} \
-  ${HOST}/web/database/backup
+  ${ODOO_HOST}/web/database/backup
 
 # Validate zip file
 unzip -q -t "${DIR}/${FILE}"
