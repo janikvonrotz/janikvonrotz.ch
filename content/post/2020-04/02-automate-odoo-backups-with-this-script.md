@@ -21,26 +21,32 @@ Create the following script on a server that is running an Odoo instance.
 **/usr/local/bin/odoo-backup**
 
 ```bash
-#!/bin/bash
+#!/bin/zsh
 
 # Exit script if command fails
-set -e
+# -u stops the script on unset variables
+# -e stops the script on errors
+# -o pipefail stops the script if a pipe fails
+set -eo pipefail
+
+# Get script name
+SCRIPT=$(basename "$0")
 
 # Display Help
 Help() {
   echo
-  echo "odoo-backup"
+  echo "$SCRIPT"
   echo "###########"
   echo
   echo "Description: Backup odoo database."
-  echo "Syntax: odoo-backup [-p|-d|-o|-h|help]"
-  echo "Example: odoo-backup -p secret -d odoo -o /tmp -h https://odoo.example.com"
+  echo "Syntax: $SCRIPT [-p|-d|-o|-h|help]"
+  echo "Example: $SCRIPT -p secret -d odoo -o /tmp -h https://odoo.example.com"
   echo "options:"
   echo "  -p    Odoo master password. Defaults to \$ODOO_MASTER_PASSWORD env var."
   echo "  -d    Database name."
-  echo "  -o    Output directory. Defaults to '/var/tmp'"
+  echo "  -o    Output directory with or without name. Defaults to '/var/tmp'"
   echo "  -h    Odoo host. Defaults to 'http://localhost:8069'"
-  echo "  help  Show odoo-backup manual."
+  echo "  help  Show $SCRIPT manual."
   echo
 }
 
@@ -59,7 +65,7 @@ while getopts ":p: :d: :o: :h:" opt; do
     ;;
     d) DATABASE="$OPTARG"
     ;;
-    o) DIR="$OPTARG"
+    o) OUTPUT="$OPTARG"
     ;;
     \?) echo "Invalid option -$OPTARG" >&2
     Help
@@ -69,31 +75,45 @@ done
 
 # Fallback to environment vars and default values
 : ${PASSWORD:=${ODOO_MASTER_PASSWORD:='admin'}}
-: ${DIR:='/var/tmp'}
+: ${OUTPUT:='/var/tmp'}
 : ${HOST:='http://localhost:8069'}
 
 # Verify variables
 [[ -z "$DATABASE" ]] && { echo "Parameter -d|database is empty" ; exit 1; }
-[[ -z "$DIR" ]] && { echo "Parameter -d|dir is empty" ; exit 1; }
+[[ -z "$OUTPUT" ]] && { echo "Parameter -d|dir is empty" ; exit 1; }
 [[ -z "$HOST" ]] && { echo "Parameter -h|host is empty" ; exit 1; }
+
+# Check if dir var is file or folder
+if [ "${OUTPUT: -4}" = ".zip" ];then
+  DIR=`dirname "$OUTPUT"`
+  FILE=`basename "$OUTPUT"`
+else
+  DIR=$OUTPUT
+fi
 
 # Ensure output directory exists
 mkdir -p $DIR
+
+# Ensure file name is set
+if [ -z "$FILE" ];then
+  FILE="$DATABASE.zip"
+fi
+
+echo "Backup database $DATABASE to ${DIR}/${FILE}"
 
 # Request backup with curl
 curl -X POST \
   -F "master_pwd=${PASSWORD}" \
   -F "name=${DATABASE}" \
   -F "backup_format=zip" \
-  -o ${DIR}/${DATABASE}.zip \
+  -o ${DIR}/${FILE} \
   ${HOST}/web/database/backup
 
 # Validate zip file
-unzip -q -t "${DIR}/${DATABASE}.zip"
+unzip -q -t "${DIR}/${FILE}"
 
 # Notify if backup has finished
-echo "The Odoo backup has finished: ${DIR}/${DATABASE}.zip"
-
+echo "The Odoo backup has finished: ${DIR}/${FILE}"
 ```
 
 Ensure the script is executable.

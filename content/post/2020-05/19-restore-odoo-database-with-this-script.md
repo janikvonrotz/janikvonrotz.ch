@@ -21,27 +21,33 @@ Copy the following script to an Odoo server to have the restore command at your 
 **/usr/local/bin/odoo-restore**
 
 ```bash
-#!/bin/bash
+#!/bin/zsh
 
 # Exit script if command fails
-set -e
+# -u stops the script on unset variables
+# -e stops the script on errors
+# -o pipefail stops the script if a pipe fails
+set -eo pipefail
+
+# Get script name
+SCRIPT=$(basename "$0")
 
 # Display Help
 Help() {
   echo
-  echo "odoo-restore"
+  echo "$SCRIPT"
   echo "############"
   echo
   echo "Description: Restore odoo database."
-  echo "Syntax: odoo-restore [-p|-n|-f|-h|-d|help]"
-  echo "Example: odoo-restore -p secret -n odoo -f /tmp/odoo.zip -h https://odoo.example.org"
+  echo "Syntax: $SCRIPT [-p|-d|-f|-h|-r|help]"
+  echo "Example: $SCRIPT -p secret -d odoo -f /tmp/odoo.zip -h https://odoo.example.org"
   echo "options:"
   echo "  -p    Odoo master password. Defaults to \$ODOO_MASTER_PASSWORD env var."
-  echo "  -n    Database name."
+  echo "  -d    Database name."
   echo "  -f    Odoo database backup file. Defaults to '/var/tmp/odoo.zip'"
   echo "  -h    Odoo host. Defaults to 'http://localhost:8069'"
-  echo "  -d    Delete existing database."  
-  echo "  help  Show odoo-restore manual."
+  echo "  -r    Replace existing database."  
+  echo "  help  Show $SCRIPT manual."
   echo
 }
 
@@ -52,18 +58,18 @@ if [[ $1 == 'help' ]]; then
 fi
 
 # Initialise option flag with a false value
-DELETE='false'
+REPLACE='false'
 
 # Process params
-while getopts ":d :p: :n: :f: :h:" opt; do
+while getopts ":r :p: :d: :f: :h:" opt; do
   case $opt in
-    d) DELETE='true'
+    r) REPLACE='true'
     ;;
-    h) HOST="$OPTARG"
+    h) ODOO_HOST="$OPTARG"
     ;;
     p) PASSWORD="$OPTARG"
     ;;
-    n) DATABASE="$OPTARG"
+    d) DATABASE="$OPTARG"
     ;;
     f) FILE="$OPTARG"
     ;;
@@ -76,41 +82,41 @@ done
 # Fallback to environment vars and default values
 : ${PASSWORD:=${ODOO_MASTER_PASSWORD:='admin'}}
 : ${FILE:='/var/tmp/odoo.zip'}
-: ${HOST:='http://localhost:8069'}
+: ${ODOO_HOST:='http://localhost:8069'}
 
 # Verify variables
 [[ -z "$DATABASE" ]] && { echo "Parameter -n|database is empty" ; exit 1; }
 [[ -z "$FILE" ]] && { echo "Parameter -f|file is empty" ; exit 1; }
-[[ -z "$HOST" ]] && { echo "Parameter -h|host is empty" ; exit 1; }
+[[ -z "$ODOO_HOST" ]] && { echo "Parameter -h|host is empty" ; exit 1; }
+[[ ! "$ODOO_HOST" =~ "^http" ]]  && { echo "Parameter -h|host must start with http/s" ; exit 1; }
 
 # Validate zip file
 unzip -q -t $FILE
 
-if $DELETE ; then
+if $REPLACE; then
   echo "Deleting Odoo database $DATABASE ..."
 
   curl \
     --silent \
     -F "master_pwd=${PASSWORD}" \
     -F "name=${DATABASE}" \
-    ${HOST}/web/database/drop | grep -q 'Internal Server Error'
+    ${ODOO_HOST}/web/database/drop | grep -q -E 'Internal Server Error|Redirecting...'
 fi
 
 # Start restore
 echo "Requesting restore for Odoo database $DATABASE ..."
 
 # Request restore with curl
-curl \
-  --silent \
+CURL=$(curl \
   -F "master_pwd=${PASSWORD}" \
   -F "name=${DATABASE}" \
   -F backup_file=@$FILE \
   -F 'copy=true' \
-  ${HOST}/web/database/restore | grep -q 'Redirecting...'
+  ${ODOO_HOST}/web/database/restore)
+  
+echo $CURL | grep -q 'Redirecting...' || echo "The restore failed:"; echo $CURL | grep error; exit 1
 
-# Notify if restore has finished
 echo "The restore for Odoo database $DATABASE has finished."
-
 ```
 
 The Odoo master password can be declared in `/etc/environments`. Ensure that the script is executable.

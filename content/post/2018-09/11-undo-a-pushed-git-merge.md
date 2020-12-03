@@ -23,7 +23,7 @@ Have a look into the git log and look for the hash of the merge commit.
 
 Now undo the merge using the revert command.
 
-`git revert -m 1 _COMMIT_HASH_`
+`git revert -m 1 COMMIT_HASH`
 
 As mentioned undoing is a dangerous process. Depending on how far the merge commit is from the head of your branch you end up with a lot of conflicts.
 
