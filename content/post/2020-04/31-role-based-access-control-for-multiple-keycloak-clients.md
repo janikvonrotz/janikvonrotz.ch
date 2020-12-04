@@ -98,7 +98,7 @@ function authenticate(context) {
     var roleModel = client.getRole("access");
 
     // if (rolesClient.isEmpty()) {
-    if (user.hasRole(roleModel)) {
+    if (!user.hasRole(roleModel)) {
 
         context.forkWithErrorMessage(new FormMessage('label', 'User is not allowed to access this client.'));
         return;
