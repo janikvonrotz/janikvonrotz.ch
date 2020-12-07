@@ -39,9 +39,15 @@ It is a nice solution for a common interface to manage projects. But as mentione
 **task**
 
 ```zsh
-#!/bin/zsh
+#!/bin/sh
 
 set -euo pipefail
+
+# load env vars
+if [ -f .env ]
+then
+  export $(cat .env | sed 's/#.*//g' | xargs)
+fi
 
 function help() {
 echo
