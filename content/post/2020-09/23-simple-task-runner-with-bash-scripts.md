@@ -78,7 +78,7 @@ case "$1" in
         . ./scripts/script $2
         ;;
     *)
-        echo task
+        help task
         exit 1
 esac
 ```
