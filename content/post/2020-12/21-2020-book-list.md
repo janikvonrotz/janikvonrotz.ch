@@ -15,7 +15,7 @@ In 2020 I read 20 books. Out of these books I can remember only a few. I will pr
 
 * [Denken mit George Orwell](https://openlibrary.org/works/OL1168027W/Denken_mit_Orwell): This book inspired me to read more about philosophy. George Orwells critic on totalitarianism goes beyond his time.
 * [Factfulness](https://openlibrary.org/works/OL17877260W/Factfulness): To see the world for what it really is. Hans Rosling taught me how to be aware of my own biases and learn about the world through statistic.
-* [Guild](https://openlibrary.org/authors/OL6826925A/Ferdinand_von_Schirach): I have become a huge fan of Ferdinand Schirach. His short stories tell how difficult it is to judge a human being. Schirach can describe life and its tragedy on one page.
+* [Guilt](https://openlibrary.org/authors/OL6826925A/Ferdinand_von_Schirach): I have become a huge fan of Ferdinand Schirach. His short stories tell how difficult it is to judge a human being. Schirach can describe life and its tragedy on one page.
 
 <!--more-->
 
