@@ -39,7 +39,7 @@ It is a nice solution for a common interface to manage projects. But as mentione
 **task**
 
 ```zsh
-#!/bin/sh
+#!/bin/bash
 
 set -euo pipefail
 
