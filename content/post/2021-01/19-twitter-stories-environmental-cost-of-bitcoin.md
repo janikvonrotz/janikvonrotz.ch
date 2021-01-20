@@ -49,6 +49,7 @@ Climate scientists have estimated that Bitcoin emissions alone could push global
 Climate change is not some abstract threat happening elsewhere, it is very real, and is happening everywhere we chose to invest in unsustainable and wasteful technology. The absurd waste of bitcoin is a simultaneously both an environmental and a moral disaster. (15)
 
 Stephen, this is really bad, how can I help change this? 
+
 * Don't buy bitcoins.
 * Tell friends not to buy bitcoins.
 * Consider ethics of holding dirty companies \$MSTR,  \$S, \$SQ, \$PYPL, Coinbase) in your portfolio.
