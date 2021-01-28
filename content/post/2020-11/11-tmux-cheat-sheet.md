@@ -24,6 +24,9 @@ See https://github.com/tmux/tmux/wiki/Installing for details.
 Start new session.  
 `tmux`
 
+Attach to last session.  
+`tmux a`
+
 Show time.  
 <kbd>ctrl + b</kbd> <kbd>t</kbd>
 
