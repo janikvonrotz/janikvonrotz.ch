@@ -7,6 +7,10 @@ disable_comments: true
 
 This is a collection of projects by year since I came in touch with IT. It is supposed to be a showcase of my abilities and experience.
 
+**20201**
+
+[Certificate Planner](https://github.com/Mint-System/Certificate-Planner) - Odoo apps to approve and manage aircraft documents and certificates.
+
 **2020**
 
 [Hugo new.css theme](https://github.com/janikvonrotz/hugo-new-css-theme) - This hugo theme is made from vanilla html and the default [new.css](https://newcss.net/).
