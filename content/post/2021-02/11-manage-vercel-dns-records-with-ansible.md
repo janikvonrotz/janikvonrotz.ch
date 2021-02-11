@@ -9,7 +9,7 @@ tags:
  - dns
  - vercel
 images:
- - /wp-content/uploads/2018/02/Ansible-Logo.png
+ - /wp-content/uploads/2018/02/Ansible-text-only.png
 ---
 
 At [Mint System](https://www.mint-system.ch/) we are using Ansible extensively to configure our infrastructure and services. From setting up new hosts up to deploying a customer specific customization for an application, all is managed by Ansible. Only one piece was missing. Until recently we could not update DNS records automatically.
