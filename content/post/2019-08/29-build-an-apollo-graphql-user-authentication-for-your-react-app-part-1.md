@@ -355,7 +355,7 @@ If this worked you have reached the end of part 1 😊.
 
 ## Next
 
-In [part 2](2019/08/29/build-an-apollo-graphql-user-authentication-for-your-react-app-part-2/) I will show how we implement the user authentication mechanism in a React app.
+In [part 2](/2019/08/29/build-an-apollo-graphql-user-authentication-for-your-react-app-part-2/) I will show how we implement the user authentication mechanism in a React app.
 
 ## Additions
 
