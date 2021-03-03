@@ -21,13 +21,14 @@ Copy the following script to an Odoo server to have the restore command at your 
 **/usr/local/bin/odoo-restore**
 
 ```bash
-#!/bin/zsh
+#!/bin/bash
 
 # Exit script if command fails
 # -u stops the script on unset variables
 # -e stops the script on errors
 # -o pipefail stops the script if a pipe fails
-set -eo pipefail
+set -e
+
 
 # Get script name
 SCRIPT=$(basename "$0")
@@ -36,14 +37,13 @@ SCRIPT=$(basename "$0")
 Help() {
   echo
   echo "$SCRIPT"
-  echo "############"
   echo
   echo "Description: Restore odoo database."
   echo "Syntax: $SCRIPT [-p|-d|-f|-h|-r|help]"
   echo "Example: $SCRIPT -p secret -d odoo -f /tmp/odoo.zip -h https://odoo.example.org"
   echo "options:"
-  echo "  -p    Odoo master password. Defaults to \$ODOO_MASTER_PASSWORD env var."
-  echo "  -d    Database name."
+  echo "  -p    Odoo master password. Defaults to \$ODOO_MASTER_PASSWORD env var and 'admin'."
+  echo "  -d    Database name. Defaults to filename."
   echo "  -f    Odoo database backup file. Defaults to '/var/tmp/odoo.zip'"
   echo "  -h    Odoo host. Defaults to 'http://localhost:8069'"
   echo "  -r    Replace existing database."  
@@ -83,12 +83,12 @@ done
 : ${PASSWORD:=${ODOO_MASTER_PASSWORD:='admin'}}
 : ${FILE:='/var/tmp/odoo.zip'}
 : ${ODOO_HOST:='http://localhost:8069'}
+FILENAME=$(basename -- "$FILE")
+: ${DATABASE:="${FILENAME%%.*}"}
 
 # Verify variables
-[[ -z "$DATABASE" ]] && { echo "Parameter -n|database is empty" ; exit 1; }
-[[ -z "$FILE" ]] && { echo "Parameter -f|file is empty" ; exit 1; }
-[[ -z "$ODOO_HOST" ]] && { echo "Parameter -h|host is empty" ; exit 1; }
-[[ ! "$ODOO_HOST" =~ "^http" ]]  && { echo "Parameter -h|host must start with http/s" ; exit 1; }
+[[ "$ODOO_HOST" == http* ]]  || { echo "Parameter -h|host must start with 'http/s'" ; exit 1; }
+[[ "${FILENAME##*.}" != "zip" ]] && { echo "Parameter -f|filename must end with '.zip'" ; exit 1; }
 
 # Validate zip file
 unzip -q -t $FILE
@@ -100,7 +100,7 @@ if $REPLACE; then
     --silent \
     -F "master_pwd=${PASSWORD}" \
     -F "name=${DATABASE}" \
-    ${ODOO_HOST}/web/database/drop | grep -q -E 'Internal Server Error|Redirecting...'
+    ${ODOO_HOST%/}/web/database/drop | grep -q -E 'Internal Server Error|Redirecting...'
 fi
 
 # Start restore
@@ -108,11 +108,11 @@ echo "Requesting restore for Odoo database $DATABASE ..."
 
 # Request restore with curl
 CURL=$(curl \
-  -F "master_pwd=${PASSWORD}" \
-  -F "name=${DATABASE}" \
+  -F "master_pwd=$PASSWORD" \
+  -F "name=$DATABASE" \
   -F backup_file=@$FILE \
   -F 'copy=true' \
-  ${ODOO_HOST}/web/database/restore)
+  "${ODOO_HOST%/}/web/database/restore")
   
 (echo $CURL | grep -q 'Redirecting...') || (echo "The restore failed:"; echo $CURL | grep error; exit 1)
 

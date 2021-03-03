@@ -21,13 +21,13 @@ Create the following script on a server that is running an Odoo instance.
 **/usr/local/bin/odoo-backup**
 
 ```bash
-#!/bin/zsh
+#!/bin/bash
 
 # Exit script if command fails
 # -u stops the script on unset variables
 # -e stops the script on errors
 # -o pipefail stops the script if a pipe fails
-set -eo pipefail
+set -e
 
 # Get script name
 SCRIPT=$(basename "$0")
@@ -36,7 +36,6 @@ SCRIPT=$(basename "$0")
 Help() {
   echo
   echo "$SCRIPT"
-  echo "###########"
   echo
   echo "Description: Backup odoo database."
   echo "Syntax: $SCRIPT [-p|-d|-o|-h|help]"
@@ -99,21 +98,30 @@ if [ -z "$FILE" ];then
   FILE="$DATABASE.zip"
 fi
 
-echo "Backup database $DATABASE to ${DIR}/${FILE}"
+# Set file path
+FILEPATH="${DIR}/${FILE}"
+
+echo "Backup database $DATABASE to $FILEPATH"
 
 # Request backup with curl
 curl -X POST \
-  -F "master_pwd=${PASSWORD}" \
-  -F "name=${DATABASE}" \
+  -F "master_pwd=$PASSWORD" \
+  -F "name=$DATABASE" \
   -F "backup_format=zip" \
-  -o ${DIR}/${FILE} \
-  ${ODOO_HOST}/web/database/backup
+  -o "$FILEPATH" \
+  "$ODOO_HOST/web/database/backup"
+
+# Grep error if is html response
+FILETYPE=$(file --mime-type -b "$FILEPATH")
+if [[ "$FILETYPE" == 'text/html' ]]; then
+  grep error "$FILEPATH"
+fi
 
 # Validate zip file
-unzip -q -t "${DIR}/${FILE}"
+unzip -q -t "$FILEPATH"
 
 # Notify if backup has finished
-echo "The Odoo backup has finished: ${DIR}/${FILE}"
+echo "The Odoo backup has finished: $FILEPATH"
 ```
 
 Ensure the script is executable.

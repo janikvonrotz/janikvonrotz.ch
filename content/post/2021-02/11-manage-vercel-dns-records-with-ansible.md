@@ -90,7 +90,7 @@ First all managed domains are retrieved from Vercel. The second task checks weth
     headers:
       Content-Type: "application/json"
       Authorization: "Bearer {{ vercel_token }}"
-    body: "{{ item.1 | to_json }}"
+    body: "{{ item.1  | dict2items | rejectattr('key', 'equalto', 'state') | list | items2dict | to_json }}"
   with_subelements:
     - "{{ vercel_dns }}"
     - records

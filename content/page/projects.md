@@ -9,7 +9,7 @@ This is a collection of projects by year since I came in touch with IT. It is su
 
 **20201**
 
-[Certificate Planner](https://github.com/Mint-System/Certificate-Planner) - Odoo apps to approve and manage aircraft documents and certificates.
+[Certificate Planner](https://github.com/Mint-System/Certificate-Planner) - Odoo app to approve and manage aircraft documents and certificates.
 
 **2020**
 
@@ -20,6 +20,8 @@ This is a collection of projects by year since I came in touch with IT. It is su
 [Odoo Development](https://github.com/Mint-System/Odoo-Development) - Setup Odoo development environment with Docker Compose.
 
 [Sauna Lorrainebad App](https://github.com/janikvonrotz/sauna-lorrainebad) - React native app for Sauna Lorrainebad.
+
+[engage.ch](https://gitlab.com/dsj1/engage.ch) - Create a self-hosted solution for engage.ch Drupal application. Implement minor tweaks and design updates. Document internal strcture and create administration manuals.
 
 [TODO.md](https://github.com/todo-md/todo-md) - Standard for markdown todo files.
 
