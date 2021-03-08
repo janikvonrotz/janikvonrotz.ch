@@ -86,6 +86,7 @@ Allowed: [ x ]
 Keycloak: [ x ]  
 Body: `Login Example`  
 Authentication URL: `https://login.example.com/auth/realms/example.com/protocol/openid-connect/auth`  
+Scope: `profile`  
 Validation URL: `https://login.example.com/auth/realms/example.com/protocol/openid-connect/userinfo`  
 
 # Update portal user template
@@ -104,3 +105,7 @@ Logout out of Odoo. You should now see a button *Login Example*. Click on it and
 
 [Odoo Help - Keycloak Authentication on v12](https://www.odoo.com/de_DE/forum/hilfe-1/question/keycloak-authentication-on-v12-146506)  
 [Digital OCean Tutorials - An Introduction to OAuth 2](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2)
+
+# Edits
+
+**2021-03-08**: Set value for scope parameter when configuring the Odoo OAuth provider.
