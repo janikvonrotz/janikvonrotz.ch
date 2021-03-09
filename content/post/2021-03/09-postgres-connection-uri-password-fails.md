@@ -10,6 +10,7 @@ tags:
 images:
  - images/PostgreSQL-logo.png
 ---
+
 With the `psql` command line tool you can either pass the connection credentials as parameters or simply as one connection string.
 
 The general form for a connection URI is:
