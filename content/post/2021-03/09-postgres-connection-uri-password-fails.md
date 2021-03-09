@@ -1,5 +1,5 @@
 ---
-title: "Posgres connection URI password fails"
+title: "Postgres connection URI password fails"
 slug: postgres-connection-uri-password-fails
 date: 2021-03-09T14:16:59+01:00
 categories:
@@ -8,7 +8,7 @@ tags:
  - psql
  - postgres
 images:
- - images/PostgreSQL-logo.png
+ - /images/postgres-logo.png
 ---
 
 With the `psql` command line tool you can either pass the connection credentials as parameters or simply as one connection string.

@@ -9,7 +9,7 @@ tags:
  - parse
  - bash
 images:
- - images/Bash-logo.png
+ - /images/Bash-logo.png
 ---
 Use the bash script below to extract any segment of an URL. For example you can use it like this `parse-url https://www.example.com subdomain,proto`  and get the subdomain and protocol of the url as reponse.
 
