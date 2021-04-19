@@ -112,6 +112,7 @@ GF_AUTH_GENERIC_OAUTH_NAME: "Login Keycloak"
 GF_AUTH_GENERIC_OAUTH_ALLOW_SIGN_UP: "true"
 GF_AUTH_GENERIC_OAUTH_CLIENT_ID: "monitor.example.com"
 GF_AUTH_GENERIC_OAUTH_CLIENT_SECRET: "$KEYCLOAK_CLIENT_SECRET"
+GF_AUTH_GENERIC_OAUTH_SCOPES: profile
 GF_AUTH_GENERIC_OAUTH_AUTH_URL: "https://login.example.com/auth/realms/example.com/protocol/openid-connect/auth"
 GF_AUTH_GENERIC_OAUTH_TOKEN_URL: "https://login.example.com/auth/realms/example.com/protocol/openid-connect/token"
 GF_AUTH_GENERIC_OAUTH_API_URL: "https://login.example.com/auth/realms/example.com/protocol/openid-connect/userinfo"
