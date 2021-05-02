@@ -7,7 +7,7 @@ disable_comments: true
 
 This is a collection of projects by year since I came in touch with IT. It is supposed to be a showcase of my abilities and experience.
 
-**20201**
+**2021**
 
 [python.casa](https://python.casa) - Python course for beginners. Built with Obsidian and Vuepress.
 
