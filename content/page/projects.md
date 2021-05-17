@@ -9,6 +9,8 @@ This is a collection of projects by year since I came in touch with IT. It is su
 
 **2021**
 
+[encrypt.casa](https://encrypt.casa) - Python course about cryptography and encryption. Built with Obsidian and Vuepress.
+
 [python.casa](https://python.casa) - Python course for beginners. Built with Obsidian and Vuepress.
 
 [Certificate Planner](https://github.com/Mint-System/Certificate-Planner) - Odoo app to approve and manage aircraft documents and certificates.
