@@ -99,7 +99,7 @@ Title: `Example`
 Authorize url: 	`https://login.example.com/auth/realms/example.com/protocol/openid-connect/auth`  
 Token url: `https://login.example.com/auth/realms/example.com/protocol/openid-connect/token`  
 User info URL (optional): `https://login.example.com/auth/realms/example.com/protocol/openid-connect/userinfo`  
-Logout URL (optional): `https://login.example.com/auth/realms/example.com/protocol/openid-connect/logout`  
+Logout URL (optional): `https://login.example.com/auth/realms/example.com/protocol/openid-connect/logout?redirect_uri=https%3A%2F%2Fnextcloud.example.com`  
 Client Id: `nextcloud.example.com`  
 Client Secret: Copy from ephermal note  
 Scope: `openid`  
