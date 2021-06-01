@@ -52,7 +52,7 @@ pygmentsCodeFences = "true"
     gitUrl = "https://github.com/janikvonrotz/janikvonrotz.ch/tree/master/content"
     
     [params.remark42]
-    url = "https://comment.apland.ch"
+    url = "https://comment.janikvonrotz.ch"
     siteId = "janikvonrotz.ch"
 
     [params.logo]
