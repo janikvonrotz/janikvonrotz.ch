@@ -30,7 +30,7 @@ Können wir uns eine Landschwirtschaft ohne Pestizide vorstellen und wenn ja, wa
 
 Ohne Experte zu sein [^1], bin ich ziemlich sicher, dass es eine Landwirtschaft ohne Pestizide möglich ist. Es gibt bereits erfolgreiche Betriebe (Biobetriebe zählen nicht dazu), die das mehrfach bewiesen haben. Sie haben alternative Methoden zur Schädlingsbekämpfung und Rekombination von Pflanzen-DNA zur Verbesserung der Resistenz entwickelt. Die Ansprüche an einen gesunden Boden und einer nachhaltigen Wirtschaft sind für diese Betriebe eine Selbstverständlichkeit.
 
-Die verfahrenen Strukturen der Agrapoltik haben dazu geführt, dass sich diese alternativen Methoden und Kompetenzen nicht durchsetzen und etablieren konnten. 
+Die verfahrenen Strukturen der Agrarpoltik haben dazu geführt, dass sich diese alternativen Methoden und Kompetenzen nicht durchsetzen und etablieren konnten. 
 
 Die Arbeit von Bauern soll fair vergütet werden. Subventionen als Anreizsystem hat vermutlich ausgedient. Wenn die Umwelt im Wandel ist, muss man sich als Unternehmer den neuen Gegebenheiten anpassen können. Die Subventionspolitik braucht zu lange um die richtigen Anreize zu setzen.
 
