@@ -36,9 +36,9 @@ Chief Technical Officer (self-employed)
 * Business and product development
 * Manage infrastructure for on-premise hosting
 
-06|2019 - now  
+06|2019 - 03|2021  
 Software and Business Developer (self-employed)  
-[Apland GmbH](https://apland.ch)  
+[Apland GmbH](https://apland.vercel.app)  
 
 * Development of web applications
 
