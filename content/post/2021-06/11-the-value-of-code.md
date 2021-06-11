@@ -5,7 +5,7 @@ date: 2021-06-11T19:33:08+02:00
 categories:
  - Software development
 tags:
- - throughts
+ - thoughts
  - code
  - open source
 images:
