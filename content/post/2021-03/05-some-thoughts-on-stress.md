@@ -37,8 +37,6 @@ We need new strategies to mitigate the effects of micro-stresses.
 
 Our personal resources and time is limited, you need to prioritize. Prioritize the top of the micro-stressors and take care of them. Often we have a short-tail-long-tail-situation.
 
-![[long term vs. short term.png]]
-
 A fewer number of stressors have a higher impact on the overall experience.
 
 **Align**
