@@ -79,7 +79,7 @@ esac
 
 ```
 
-And an has example for a help file.
+And here is its help file.
 
 **/\*\*/task.md**
 
@@ -98,7 +98,7 @@ The autocompletion should list the available commands on `task <TAB>`. This is d
 ```bash
 #compdef task
 
-_arguments '1: :->tasks'
+_arguments '1: :->tasks' '2: :_files'
 case "$state" in
     tasks)
         args=$(awk -F"|" '{print $2}' ./task.md | tail -n +3 | xargs)
@@ -112,8 +112,13 @@ esac
 Whenever the tabulator is hit after entering `task` the completion script will lookup command in the help file and output them as arguments.
 
 ```bash
-➜  dotfiles git:(master) task
+➜  dotfiles git:(master) task <TAB>
 install-docker            install-tools 
 ```
 
-Easy, isn't it?
+Easy, isn't it? If the command is completed it will list files.
+
+```bash
+➜  dotfiles git:(master) ✗ task install-tools <TAB>
+default.vim             oh-my-zsh-completions/ 
+```
