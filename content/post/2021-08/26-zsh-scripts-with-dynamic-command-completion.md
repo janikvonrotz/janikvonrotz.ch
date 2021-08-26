@@ -98,7 +98,7 @@ The autocompletion should list the available commands on `task <TAB>`. This is d
 ```bash
 #compdef task
 
-_arguments '1: :->tasks' '2: :_files'
+_arguments '1: :->tasks' '*: :_files'
 case "$state" in
     tasks)
         args=$(awk -F"|" '{print $2}' ./task.md | tail -n +3 | xargs)
