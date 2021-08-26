@@ -25,7 +25,7 @@ Extend the default `unlink` (aka delete) method.
 **models/post_certification_item.py**
 
 ```py
-from odoo import models, fields, api, _
+from odoo import models, fields
 from odoo.exceptions import UserError
 
 class PostCertificationItem(models.Model):
