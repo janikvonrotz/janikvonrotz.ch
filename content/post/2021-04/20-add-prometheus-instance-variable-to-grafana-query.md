@@ -31,3 +31,7 @@ Next open a panel and insert `{instance=~"$instance"}` into your metric like thi
 ![](/images/add-varaible-to-grafana-query.png)
 
 Now all the panel data will be filtered by whatever is set for the variable.
+
+**Update 2021-09-06**
+
+You can also add filters to the query. Use the  `label_values({job!="blackbox"},instance)` query to return labels for instances that are not monitored by a blackbox exporter.
