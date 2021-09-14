@@ -37,6 +37,6 @@ Enable mutli edit is very simple. Simply add `multi_edit="1"` to the `<tree>` ta
 
 This tree viewwill provide multi edit for all fields. Check the records you want to update, set the value for one record and hit enter. A confirmation prompt will show up and asks wether you want to perform this action.
 
-![](../../../static/images/odoo-development-enable-multi-edit.png)
+![](/images/odoo-development-enable-multi-edit.png)
 
 Note: Allowing mass editing can have side effects. Multiple records can be updated at will and if not tracked such a change will go unnoticed.
