@@ -1,5 +1,5 @@
 ---
-title: "Odoo Development: Create a settins page"
+title: "Odoo Development: Create a settings page"
 slug: odoo_development_create_a_settings_page
 date: 2021-09-14T16:36:23+02:00
 categories:
