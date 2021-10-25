@@ -72,6 +72,14 @@ Move pane left.
 Convert pane into a window.  
 <kbd>ctrl + b</kbd> <kbd>!</kbd>
 
+Resize  pane vertically.
+<kbd>ctrl + b + ↑</kbd>
+<kbd>ctrl + b + ↓</kbd>
+
+Resize  pane horizontally.
+<kbd>ctrl + b + ←</kbd>
+<kbd>ctrl + b + →</kbd>
+
 ## Session
 Detach from session.  
 <kbd>ctrl + b</kbd> <kbd>d</kbd>
