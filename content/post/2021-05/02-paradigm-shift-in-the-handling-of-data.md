@@ -28,15 +28,15 @@ Without an application, there is no data, even if it belongs to the user.
 
 # The new way
 
-On Zero Data App is described how this problem can be solved. Data is stored decoupled from the application. If an application wants to access the data, the user must explicitly allow it.
+On [Zero Data App](https://0data.app/) is described how this problem can be solved. Data is stored decoupled from the application. If an application wants to access the data, the user must explicitly allow it.
 
 ![](/images/the-new-way.png)
 
-Applications that fulfill this principle are built on certain technologies. One of these technologies is Solid.
+Applications that fulfill this principle are built on certain technologies. One of these technologies is [Solid](https://solidproject.org/.
 
 # Solid
 
-Founded by the inventor of the Internet Sir Tim Berners-Lee as an initiative to restore privacy to Internet users, Solid ensures that data is stored in a decentralized and secure manner. At the heart of the Solid specification are what are known as pods. Pods are personal servers for data. The owner decides how to share data with other users and applications.
+Founded by the inventor of the Internet [Sir Tim Berners-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee) as an initiative to restore privacy to Internet users, Solid ensures that data is stored in a decentralized and secure manner. At the heart of the [Solid specification](https://solidproject.org/TR/protocol) are what are known as pods. Pods are personal servers for data. The owner decides how to share data with other users and applications.
 
 When applications are developed according to this principle, not only are the problems of data protection eliminated, but an environment is created where users can move their data and change providers without effort.
 
