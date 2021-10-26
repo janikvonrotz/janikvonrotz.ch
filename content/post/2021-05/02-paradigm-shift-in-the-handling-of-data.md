@@ -32,7 +32,7 @@ On [Zero Data App](https://0data.app/) is described how this problem can be solv
 
 ![](/images/the-new-way.png)
 
-Applications that fulfill this principle are built on certain technologies. One of these technologies is [Solid](https://solidproject.org/.
+Applications that fulfill this principle are built on certain technologies. One of these technologies is [Solid](https://solidproject.org/).
 
 # Solid
 
