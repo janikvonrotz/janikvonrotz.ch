@@ -33,7 +33,7 @@ Wie sich die Freiheitstrychler inszenieren und präsentieren ist ebenfalls fragw
 
 Der bekannte Schriftsteller Dürrenmant bezeichnet eine Idelogie provokant als Mantel zur Legitimierung von Gewalt[^5]. Wer ideologisch geprägt ist, läuft Gefahr extreme Meinungen mit einfachen Mitteln zu rechtfertigen.
 
-Ich behaupte das passiert gerade bei den Freiheitstrychlern. Ohne dass wir hier ins Detail gehen, sehe ich den Ruf nach Freiheit als Verschleierung einer *Might makes right*-Moral[^6]. Die Starken sollen die Schwachen überleben - das hat weder was mit Freiheit noch mit Trychler zu tun.
+Ich behaupte das passiert gerade bei den Freiheitstrychlern. Ohne dass wir hier ins Detail gehen, sehe ich den Ruf nach Freiheit als Verschleierung einer *Might makes right*-Moral[^6]. Die Stärkeren bestimmten was recht und was unrecht ist - das hat weder was mit Freiheit noch mit Trychler zu tun.
 
 Quellen:  
 		[^1]: <https://www.obwalden-tourismus.ch/de/ideen-tipps/brauchtum-und-tradition/st-nikolaus-einzuege/>  
