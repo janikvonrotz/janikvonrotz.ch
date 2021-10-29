@@ -7,7 +7,7 @@ categories:
 tags:
  - obsidian
  - git
- - synchronisation
+ - synchronization
 images:
  - /images/obsidian-banner.png
 ---
