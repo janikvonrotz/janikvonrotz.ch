@@ -32,4 +32,4 @@ Richterin Besic machte kurzen Prozess. *"Die Regeln sind klar Herr Berchtold. Mi
 
 Die Situation ist klar. Bewohner Berchtold muss sich in Anstand üben. Im Wohnhaus verhält es sich wie in der Wohngemeinschaft, das Zusammenleben bleibt konfliktfrei, wenn man sich an bestimmte Regeln hält.
 
-Ob sich Berchtold weiterhin an den Waschplan hält wird sich zeigen. Hätte man ein psychologisches Gutachten ausgestellt, wäre "Antiautoritär" bei ihm sicher ein ausgeprägtes Merkmal. Moralische Überzeugungen sitzen tief und Anstand bleibt eine Frage der Auslegung.
+Ob sich Berchtold weiterhin an den Waschplan hält wird sich zeigen. Hätte man für ihn ein psychologisches Gutachten ausgestellt, wäre "Antiautoritär" sicher ein ausgeprägtes Merkmal. Moralische Überzeugungen sitzen tief und Anstand bleibt eine Frage der Auslegung.
