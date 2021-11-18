@@ -24,7 +24,7 @@ Anderer Meinung war hier Bewohner Berchtold (Name geändert). Mit einem Überang
 **Ort:** Bezirksgericht WG  
 **Zeit:** 17. November 2021, 19.30 Uhr  
 **Fall-Nr.:** DH210021  
-**Thema:** Verstoss gegen Waschplan
+**Thema:** Verstoss gegen den Waschplan
 
 Richterin Besic machte kurzen Prozess. *"Die Regeln sind klar Herr Berchtold. Mit dem Unterzeichnen des Mietvertrags, willigen sie ein die Waschküchen ordnungsgemäss zu verwenden. Und dazu gehört auch der Waschplan."* Der beschuldige Bewohner Berchtold zeigt sich räuig. Zu seinem Vorteil trägt er in diesem Fall keine Verfahrenskosten, jedoch muss er seine moralischen Werte überdenken.
 
