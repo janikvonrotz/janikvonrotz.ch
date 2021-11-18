@@ -28,7 +28,7 @@ Anderer Meinung war hier Bewohner Berchtold (Name geändert). Mit einem Überang
 
 Richterin Besic machte kurzen Prozess. *"Die Regeln sind klar Herr Berchtold. Mit dem Unterzeichnen des Mietvertrags, willigen sie ein die Waschküchen ordnungsgemäss zu verwenden. Und dazu gehört auch der Waschplan."* Der beschuldige Bewohner Berchtold zeigt sich räuig. Zu seinem Vorteil trägt er in diesem Fall keine Verfahrenskosten, jedoch muss er seine moralischen Werte überdenken.
 
-*"Das ist doch wie Stau. Wenn ich spät nach Hause komme, muss ich mit Stau rechnen. Es wäre viel zu komplex einen Fahrplan für Strassen einführen und genau so verhält es sich mit dem Waschplan. Ich bin durch und durch bürgerlich und Anstand ist mein oberstes Gebot."*, verteidigte sich Bewohner Berchtold gegen die Anschuldigungen von Bewohner Stricker. Stricker missfällt, dass sich Berchtold nicht an den Waschplan hält. *"Das ist total asozial! Mehr gibt es nicht zu sagen."*, empört er sich nach dem Kontrollgang in Untergeschoss.
+*"Das ist doch wie Stau. Wenn ich spät nach Hause komme, muss ich mit Stau rechnen. Es wäre viel zu komplex einen Fahrplan für Strassen einzuführen und genau so verhält es sich mit dem Waschplan. Ich bin durch und durch bürgerlich und Anstand ist mein oberstes Gebot."*, verteidigte sich Bewohner Berchtold gegen die Anschuldigungen von Bewohner Stricker. Stricker missfällt, dass sich Berchtold nicht an den Waschplan hält. *"Das ist total asozial! Mehr gibt es nicht zu sagen."*, empört er sich nach dem Kontrollgang in Untergeschoss.
 
 Die Situation ist klar. Bewohner Berchtold muss sich in Anstand üben. Im Wohnhaus verhält es sich wie in der Wohngemeinschaft, das Zusammenleben bleibt konfliktfrei, wenn man sich an bestimmte Regeln hält.
 
