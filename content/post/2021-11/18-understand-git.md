@@ -1,6 +1,6 @@
 ---
 title: "Understand Git"
-slug: 18-understand-git
+slug: understand-git
 date: 2021-11-18T08:29:50+01:00
 categories:
  - Software development
