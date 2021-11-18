@@ -15,7 +15,7 @@ Ein 30er-jähriger Softwareentwickler ignoriert den Waschplan im Wohnhaus und wi
 
 <!--more-->
 
-Die Immobiliengeseschlaft Livit AG verwaltet mehre Liegenschaften an der Effingerstrasse. Ein Besonderheit der Wohnhäuser an der Effingerstrasse 6X liegt im Untergrund. Die Kellerabteile sind miteinander verbunden und so ist auch die Waschküchen für alle verfügbar.
+Die Immobiliengeseschlaft Livit AG verwaltet mehre Liegenschaften an der Effingerstrasse. Ein Besonderheit der Wohnhäuser an der Effingerstrasse 6X liegt im Untergrund. Die Kellerabteile sind miteinander verbunden und so sind auch die Waschküchen für alle verfügbar.
 
 Mit einem Arsenal an Waschmaschinen können die BewohnerInnen zu fast jeder Tageszeit ihre Wäsche machen. Doch die Verfügbarkeit der Maschinen und Räume ist auch hier geregelt. Mit einem aufgelegten Waschplan können die Bewohner ihre Waschzeiten eintragen und sicher sein, dass die Maschinen frei bleiben. Eigentlich ganz einfach.
 
