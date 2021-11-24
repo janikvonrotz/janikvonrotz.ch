@@ -11,7 +11,7 @@ images:
  - /images/am-gericht.png
 ---
 
-Ein 30er-jähriger Softwareentwickler ignoriert den Waschplan im Wohnhaus und wird in eine Diskussion über Moral und Anstand verwickelt.
+Ein 30-jähriger Softwareentwickler ignoriert den Waschplan im Wohnhaus und wird in eine Diskussion über Moral und Anstand verwickelt.
 
 <!--more-->
 
