@@ -208,7 +208,7 @@ Move line up or down.
 Select text between character.  
 `vi{c}`
 
-Select curren word.  
+Select current word.  
 `vw`
 
 ## Window
