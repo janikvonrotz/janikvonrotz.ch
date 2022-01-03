@@ -21,7 +21,7 @@ And here is the full 2021 book list:
 
 <!--more-->
 
-![](../../../static/images/9788790755768.png)
+![](/images/9788790755768.png)
 Title: Schuld\
 Author: Ferdinand von Schirach\
 Comment: Ferdinand abducts the readers into the gray area of law and justice with his concise and attentive writings. In this book he presents short stories about guilt.\
@@ -29,7 +29,7 @@ Rating: 7/10\
 ISBN: 9788790755768\
 Finished: 2021-01-05\
 
-![](../../../static/images/9783641271169.png)
+![](/images/9783641271169.png)
 
 Title: Trotzdem\
 Author: Ferdinand von Schirach; Alexander Kluge\
@@ -38,7 +38,7 @@ Rating: 4/10\
 ISBN: 9783641271169\
 Finished: 2021-01-05\
 
-![](../../../static/images/9781101886700.png)
+![](/images/9781101886700.png)
 
 Title: Sleeping Giants\
 Series: Themis Files #1\
@@ -48,7 +48,7 @@ Rating: 8/10\
 ISBN: 9781101886700\
 Finished: 2021-01-06\
 
-![](../../../static/images/9783734045844.png)
+![](/images/9783734045844.png)
 
 Title: Ecce Homo\
 Author: Friedrich Nietzsche\
@@ -57,7 +57,7 @@ Rating: 8/10\
 ISBN: 9783734045844\
 Finished: 2021-01-09\
 
-![](../../../static/images/9783641256067.png)
+![](/images/9783641256067.png)
 
 Title: GOTT\
 Author: Ferdinand von Schirach\
@@ -66,7 +66,7 @@ Rating: 7/10\
 ISBN: 9783641256067\
 Finished: 2021-01-10\
 
-![](../../../static/images/9781101886731.png)
+![](/images/9781101886731.png)
 
 Title: Waking Gods\
 Series: Themis Files #2\
@@ -76,7 +76,7 @@ Rating: 7/10\
 ISBN: 9781101886731\
 Finished: 2021-01-17\
 
-![](../../../static/images/9781405935715.png)
+![](/images/9781405935715.png)
 
 Title: Only Human\
 Series: Themis Files #3\
@@ -86,7 +86,7 @@ Rating: 6/10\
 ISBN: 9781405935715\
 Finished: 2021-02-13\
 
-![](../../../static/images/9781429963947.png)
+![](/images/9781429963947.png)
 
 Title: Speaker for the Dead\
 Series: Ender's Saga #2\
@@ -96,7 +96,7 @@ Rating: 7/10\
 ISBN: 9781429963947\
 Finished: 2021-03-03\
 
-![](../../../static/images/9783257600469.png)
+![](/images/9783257600469.png)
 
 Title: Der Koch\
 Author: Martin Suter\
@@ -105,7 +105,7 @@ Rating: 6/10\
 ISBN: 9783257600469\
 Finished: 2021-04-18\
 
-![](../../../static/images/9780312861872.png)
+![](/images/9780312861872.png)
 
 Title: Xenocide\
 Series: Ender's Saga #3\
@@ -115,7 +115,7 @@ Rating: 7/10\
 ISBN: 9780312861872\
 Finished: 2021-05-08\
 
-![](../../../static/images/9783641283742.png)
+![](/images/9783641283742.png)
 
 Title: Jeder Mensch\
 Author: Ferdinand von Schirach\
@@ -124,7 +124,7 @@ Rating: X/10\
 ISBN: 9783641283742\
 Finished: 2021-05-08\
 
-![](../../../static/images/9783945034897.png)
+![](/images/9783945034897.png)
 
 Title: Der Ursprung der Liebe\
 Author: Liv Strömquist\
@@ -133,7 +133,7 @@ Rating: 8/10\
 ISBN: 9783945034897\
 Finished: 2021-06-03\
 
-![](../../../static/images/9783641281199.png)
+![](/images/9783641281199.png)
 
 Title: Von der Pflicht\
 Author: Richard David Precht\
@@ -142,7 +142,7 @@ Rating: 6/10\
 ISBN: 9783641281199\
 Finished: 2021-06-27\
 
-![](../../../static/images/9781429963923.png)
+![](/images/9781429963923.png)
 
 Title: Children of the Mind\
 Series: Ender's Saga #4\
@@ -152,7 +152,7 @@ Rating: 6/10\
 ISBN: 9781429963923\
 Finished: 2021-07-16\
 
-![](../../../static/images/9780553278392.png)
+![](/images/9780553278392.png)
 
 Title: Prelude to Foundation\
 Series: Foundation (Publication Order) #6\
@@ -162,7 +162,7 @@ Rating: 8/10\
 ISBN: 9780553278392\
 Finished: 2021-08-04\
 
-![](../../../static/images/9780547539638.png)
+![](/images/9780547539638.png)
 
 Title: Flowers for Algernon\
 Author: Daniel Keyes\
@@ -171,7 +171,7 @@ Rating: 9/10\
 ISBN: 9780547539638\
 Finished: 2021-08-31\
 
-![](../../../static/images/Pasted%20image%2020220103181714.png)
+![](/images/Pasted%20image%2020220103181714.png)
 
 Title: Hold Up the Sky\
 Author: Cixin Liu\
@@ -180,7 +180,7 @@ Rating: 5/10\
 ISBN: 9781838937638\
 Finished: 2021-09-26\
 
-![](../../../static/images/9783257261585.png)
+![](/images/9783257261585.png)
 
 Title: Gedankenschlosser\
 Author: Friedrich Dürrenmatt\
@@ -190,7 +190,7 @@ ISBN: 9783257261585\
 Finished: 2021-10-06\
 
 
-![](../../../static/images/Pasted%20image%2020220103181824.png)
+![](/images/Pasted%20image%2020220103181824.png)
 
 Title: Ilium\
 Series: Ilium #1\
@@ -200,7 +200,7 @@ Rating: 10/10\
 ISBN: 9780575087989\
 Finished: 2021-10-30\
 
-![](../../../static/images/9783641203405.png)
+![](/images/9783641203405.png)
 
 Title: Carl Tohrberg\
 Author: Ferdinand von Schirach\
