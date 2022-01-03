@@ -22,6 +22,7 @@ And here is the full 2021 book list:
 <!--more-->
 
 ![](/images/9788790755768.png)
+
 Title: Schuld\
 Author: Ferdinand von Schirach\
 Comment: Ferdinand abducts the readers into the gray area of law and justice with his concise and attentive writings. In this book he presents short stories about guilt.\
