@@ -171,7 +171,7 @@ Rating: 9/10\
 ISBN: 9780547539638\
 Finished: 2021-08-31\
 
-![](/images/Pasted%20image%2020220103181714.png)
+![](/images/9781838937638.png)
 
 Title: Hold Up the Sky\
 Author: Cixin Liu\
@@ -190,7 +190,7 @@ ISBN: 9783257261585\
 Finished: 2021-10-06\
 
 
-![](/images/Pasted%20image%2020220103181824.png)
+![](/images/9780575087989.png)
 
 Title: Ilium\
 Series: Ilium #1\
