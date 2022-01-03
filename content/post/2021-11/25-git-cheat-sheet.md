@@ -131,7 +131,10 @@ git submodule deinit -f path_to_submodule
 git rm --cached path_to_submodule
 
 # Remove submodule form .git/modules directory
-rm -rf .git/modules/path_to_submodule 
+rm -rf .git/modules/path_to_submodule
+
+# Remove submodule
+rm -rf path_to_submodule
 ```
 
 Get current branch of submodules.\

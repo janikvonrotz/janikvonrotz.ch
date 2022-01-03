@@ -1,5 +1,5 @@
 ---
-title: "2020 book list"
+title: "2020 Book List"
 slug: 2020-book-list
 date: 2020-12-21T09:55:24+01:00
 categories:
