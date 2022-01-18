@@ -140,7 +140,7 @@ rm -rf path_to_submodule
 Get current branch of submodules.\
 `git submodule foreach 'git status' | grep 'On branch' -b1`
 
-## diff
+## Diff
 
 Setup merge tool.\
 `git config merge.tool vimdiff`

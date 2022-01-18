@@ -53,7 +53,7 @@ Finished: 2021-01-06\
 
 Title: Ecce Homo\
 Author: Friedrich Nietzsche\
-Comment: Difficult to read. I might give this another try, but first want to know more about Nietsche.\
+Comment: Difficult to read. I might give this another try, but first want to know more about Nietzsche.\
 Rating: 8/10\
 ISBN: 9783734045844\
 Finished: 2021-01-09\
@@ -190,7 +190,6 @@ Rating: 7/10\
 ISBN: 9783257261585\
 Finished: 2021-10-06\
 
-
 ![](/images/9780575087989.png)
 
 Title: Ilium\
@@ -209,4 +208,3 @@ Comment: Three short stories by Ferdinand.\
 Rating: 7/10\
 ISBN: 9783641203405\
 Finished: 2021-11-02\
-
