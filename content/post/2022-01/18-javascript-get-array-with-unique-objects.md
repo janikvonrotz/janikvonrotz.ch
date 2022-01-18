@@ -1,5 +1,5 @@
 ---
-title: "JavaScript Get Array With Unique Objects"
+title: "JavaScript: Get array with unique objects"
 slug: javascript-get-array-with-unique-objects
 date: 2022-01-18T11:38:00+01:00
 categories:
