@@ -21,6 +21,9 @@ Change last commit message.\
 
 ## Remote
 
+List remotes.\
+`git remote -v`
+
 List remote branches.\
 `git branch -r`
 
@@ -30,11 +33,14 @@ git remote set-url origin --push --add <a remote>
 git remote set-url origin --push --add <another remote>
 ```
 
-Show remote branches.\
-`git remote show origin`
+Add upstream.\
+`git remote add upstream ssh@example.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git`
 
-Set upstream.\
-`git push -u origin $BRANCH`
+Update fork.\
+```bash
+git fetch upstream
+git merge upstream/main
+```
 
 Resolve history mismatch.\
 ````
