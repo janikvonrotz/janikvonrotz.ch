@@ -1,6 +1,6 @@
 ---
 title: "I want to report a crime"
-slug: 26-i-want-to-report-a-crime
+slug: i-want-to-report-a-crime
 date: 2022-01-26T11:38:17+01:00
 categories:
  - Blog
