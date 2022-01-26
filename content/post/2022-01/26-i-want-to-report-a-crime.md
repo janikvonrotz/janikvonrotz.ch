@@ -17,6 +17,11 @@ Waking up in the morning and getting going is always hard for me. It's much easi
 
 Nothing more than a crime against humanity was committed:
 
+<details>
+<summary>Click here to reveal.</summary>
+
 ![](/images/butter-hole.jpg)
+
+</details>
 
 If you feel that there is no wrongdoing here, please seek help.
