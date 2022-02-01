@@ -20,7 +20,7 @@ But how do we achive this for `tree` elements where `attrs` is not available?
 
 The solution is simple, we are adding a inherited view that sets the property conditionally. In our scenario we want to enable the delete action only if a user is member of a specific group.
 
-Thus example is based on the Odoo App [Certificate Planner](https://github.com/Mint-System/Certificate-Planner).
+This example is based on the Odoo App [Certificate Planner](https://github.com/Mint-System/Certificate-Planner).
 
 First set the `delete` property of tree element to `false`.
 
