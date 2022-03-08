@@ -102,7 +102,16 @@ Start new session.
 ## Copy Mode
 
 Enter copy mode.  
-<kbd>ctrl + b</kbd> <kbd>[</kbd>
+<kbd>ctrl + b</kbd> <kbd>[</kbd> or <kbd>v</kbd>
+
+Search down.  
+<kbd>/</kbd>
+
+Search up.  
+<kbd>?</kbd>
+
+Next keyword occurance.    
+<kbd>n</kbd>
 
 Navigate up and down.  
 <kbd>ctrl + u</kbd> <kbd>ctrl + d</kbd>
@@ -126,7 +135,7 @@ Save buffer.
 `save-buffer buf.txt`
 
 Return to normal mode.  
-<kbd>ctrl + x</kbd>
+<kbd>ctrl + c</kbd>
 
 ## Plugins
 ### tmux-resurrect
