@@ -1,7 +1,7 @@
 ---
 title: "Axiome Der Vernunft"
 slug: 12-axiome-der-vernunft
-date: 2022-03-12T07:53:15+01:00
+date: 2022-03-12T07:52:15+01:00
 categories:
  - Thoughts
 tags:
