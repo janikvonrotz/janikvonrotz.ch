@@ -36,6 +36,7 @@ These platforms are used by security researchers to find security holes in the c
 The opposite is called "security through obscurity". This approach is [no longer recommended by security researchers](https://en.wikipedia.org/wiki/Security_through_obscurity#Criticism).
 
 In summary, the following conclusions can be drawn:
+
 * The value of software code lies in the number of executions.
 * The number of executions increases when the code is on open platforms.
 * There are incentives to search the code on these platforms for security vulnerabilities and to close them.
