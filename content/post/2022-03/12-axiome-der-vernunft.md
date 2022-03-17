@@ -23,6 +23,7 @@ Ich habe hier meine persönlichen Axiome der Vernunft festgehalten:
 
 - Mündig sein bedeutet selber zu denken. Und das ist anstregend.
 - Der Mensch kann glauben was er will. Aber allzu oft hat er zu wenig Vorstellungskraft dafür.
+- Der Glaube lenkt, auch auf Abwege.
 
 **Beziehung**
 
@@ -52,7 +53,7 @@ Ich habe hier meine persönlichen Axiome der Vernunft festgehalten:
 
 * Mit Aufmerksamkeit kultiviert man das Bewusstsein.
 * Aufmerksamkeit ist das höchste Gut.
-* Urteilfreies Denken braucht Übung.
+* Urteil freies Denken braucht Übung.
 
 **Körper**
 
