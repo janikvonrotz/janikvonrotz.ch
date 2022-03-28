@@ -1,7 +1,7 @@
 ---
 title: "Manage Python versions with pyenv"
 slug: manage-python-versions-with-pyenv
-date: 2022-03-25T16:44:45+01:00
+date: 2022-03-25T16:00:45+01:00
 categories:
  - Python
 tags:
