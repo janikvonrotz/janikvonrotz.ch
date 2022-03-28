@@ -47,4 +47,4 @@ Python 3.8.6
 
 Here is an overview of the python version is selected when working with pyenv.
 
-![pyenv-pyramid](../../../images/pyenv-pyramid.webp)
+![pyenv-pyramid](/images/pyenv-pyramid.webp)
