@@ -37,7 +37,7 @@ We are not able to change situation in short terms, but we have the ability to r
 
 ### Think without judgment
 
-The cultivation of consciousness does not need a detailed explanation. A consciousness in a healthy state is able to think without judgment. Thoughts are flowing almost uninterrupted, obstacles are elegantly avoided and there is a sense of profound fulfillment. There are many practices that help maintaining your attention. Anything from a stroll in the forest to an elaborate hike in the mountains will give you some peace of mind.
+The cultivation of consciousness does not need a detailed explanation. A consciousness in a healthy state is able to think without judgment. Thoughts flow almost uninterrupted, obstacles are elegantly avoided and there is a sense of profound fulfillment. There are many practices that help maintaining your attention. Anything from a stroll in the forest to an elaborate hike in the mountains will give you some peace of mind.
 
 > It is crucial that we own our attention, only then we can be conscious.
 
