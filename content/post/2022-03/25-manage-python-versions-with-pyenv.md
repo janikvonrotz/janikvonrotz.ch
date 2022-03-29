@@ -47,4 +47,10 @@ Python 3.8.6
 
 Here is an overview of the python version is selected when working with pyenv.
 
-![pyenv-pyramid](/images/pyenv-pyramid.webp)
+![](/images/python-versions.png)
+
+You can reset the global version by setting `system` as python version.
+
+```bash
+➜  ~ echo system > ~/.pyenv/version
+```
