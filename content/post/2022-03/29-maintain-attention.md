@@ -31,7 +31,7 @@ Individualism and social media make great pairing, at least profit wise. Big tec
 
 The [attention economy](https://en.wikipedia.org/wiki/Attention_economy) is an approach to apply economic theories to solve information management problems. It views human attention as a commodity and does not care about ethic and moral. Companies using economic theories and technology to captivate our attention. Not only can they keep us in echo chambers, but also steer what occupies our minds. What reads like a conspiracy theory, has become the harsh reality.
 
-### Overgrown Garden
+### Overgrown garden
 
 We are not able to change situation in short terms, but we have the ability to reason and discuss the value of attention right now. We also have the ability to tender our consciousness. Think of consciousness as a garden. It constantly changes, evolves and flourishes. New plants and thoughts strive under the right conditions, however,  there are also weeds and pests. From time to time you need to weed the garden and therefore cultivate your consciousness.
 
