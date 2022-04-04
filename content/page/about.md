@@ -14,7 +14,7 @@ This is my blog where I share my personal and professional experiences. It is mo
 Here are a few things about me:
 
 * I did some [traveling](https://gist.github.com/janikvonrotz/37dc61480790b07ab91d88d624caef2b) in the past. Not so much anymore as flying has a huge impact on the environment.
-* There is not enough time to [read books](https://gist.github.com/janikvonrotz/48bfb518239970395b12285b3c23fbfd).
+* There is not enough time to [read books](/tags/book).
 * As with books I'm not taking enough [photos](/categories/photography/).
 
 I describe my personality in 3 words:
