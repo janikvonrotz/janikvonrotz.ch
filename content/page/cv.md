@@ -20,14 +20,6 @@ After completing his apprenticeship, Janik worked as a SharePoint Administrator 
 
 ## Work Experience
 
-04|2020 - now  
-Web Developer (part-time)  
-[Dachverband Schweizer Jugendparlamente DSJ
-](https://www.dsj.ch/)
-
-* Develope and maintain the [engage.ch](https://www.engage.ch/) web application
-* Contribute to democratic participation projects
-
 03|2020 - now  
 Chief Technical Officer (self-employed)  
 [Mint System GmbH](https://www.mint-system.ch/)
@@ -35,6 +27,14 @@ Chief Technical Officer (self-employed)
 * Introduce and implement [Odoo](https://www.odoo.com) based software solutions
 * Business and product development
 * Manage infrastructure for on-premise hosting
+
+04|2020 - 05|2022  
+Web Developer (part-time)  
+[Dachverband Schweizer Jugendparlamente DSJ
+](https://www.dsj.ch/)
+
+* Develope and maintain the [engage.ch](https://www.engage.ch/) web application
+* Contribute to democratic participation projects
 
 06|2019 - 03|2021  
 Software and Business Developer (self-employed)  
@@ -117,7 +117,7 @@ Computer Specialist EFZ System Engineering
 
 * Requirements engineering – Analyze and process customers’ requirements.
 * Project management – Agile and classic.
-* Knowledge management – Document and populate technical knowledge.
+* Knowledge sharing – Document and populate technical knowledge.
 * DevOps - Contribute to software development and operation processes.
 * System integration – Manage Linux based systems and integrate software into complex environments.
 * Team collaboration – Introduce or enhance team collaboration with a variety of tools.
