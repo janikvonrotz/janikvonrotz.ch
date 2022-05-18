@@ -7,8 +7,7 @@ author: Janik Vonrotz
 # Communication
 
 [Mail](mailto:contact@janikvonrotz.ch)  
-[Keybase](https://keybase.io/janikvonrotz)  
-[My public PGP key](https:janikvonrotz.ch/pgp)  
+[My public PGP key](/contact_janikvonrotz_ch_public.asc)
 
 # Social Media
 
