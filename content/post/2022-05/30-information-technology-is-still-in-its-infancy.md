@@ -5,8 +5,9 @@ date: 2022-05-30T09:14:10+02:00
 categories:
  - open source
 tags:
- - hello
- - world
+ - information
+ - technology
+ - open source
 images:
  - /images/building-site.jpg
 ---
