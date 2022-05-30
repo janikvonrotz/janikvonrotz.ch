@@ -35,4 +35,4 @@ IT people are high in demand. They end up in well paid position with a lot of pe
 
 The digital age has pushed economic crime to another level. Combating economic crime in the internet requires cooperation of public institutions and international organisations. However, this type of cooperation is hardly to find. Local law enforces have almost no ability to track an internet criminal. 
 
-Until this points are not resolved Information technology has not matured.
+Information technology is not mature until these points are not resolved.
