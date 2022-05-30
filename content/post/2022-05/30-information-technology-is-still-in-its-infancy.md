@@ -12,7 +12,7 @@ images:
  - /images/building-site.jpg
 ---
 
-I firmly believe that information technology desptite being perceived as the most advanced technology, its sill in its infancy. It is an unpopular opinion and therefore requires good arguments.
+I firmly believe that information technology despite being perceived as the most advanced technology, its sill in its infancy. It is an unpopular opinion and therefore requires good arguments.
 
 <!--more-->
 
