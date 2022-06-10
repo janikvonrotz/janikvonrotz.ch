@@ -52,13 +52,13 @@ odoo.define('$MODULE_NAME.show_last_updated_date', function (require) {
     ListController.include({
         renderButtons: function($node) {
             this._super(...arguments)
-            if(this.$buttons.find('.container_last_updated_on')) {
+            if(this.$buttons.find('.container_last_updated_on').length) {
                 this.set_last_update_date()
             }
          },
          updateButtons() {
             this._super(...arguments)
-            if(this.$buttons.find('.container_last_updated_on')) {
+            if(this.$buttons.find('.container_last_updated_on').length) {
                 this.set_last_update_date()
             }
         },
