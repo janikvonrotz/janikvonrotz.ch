@@ -55,7 +55,7 @@ Now it is time to update the authentication flow.
 
 Navigate to *Configure > Authentication > Flow* and select the *Browser* flow. Make a copy of the flow and set as *New Name* `browser role access control`.
 
-At the end of the *Browser Role Access Control Forms* row click on *Actions > Add exection exection*. Select *Script* from the provider list and hit save. Move the new entry with the arrow button up until it is below the *Username Password Form* row. Then set the requirement to *REQUIRED* for the Script row.
+At the end of the *Browser Role Access Control Forms* row click on *Actions > Add execution*. Select *Script* from the provider list and hit save. Move the new entry with the arrow button up until it is below the *Username Password Form* row. Then set the requirement to *REQUIRED* for the Script row.
 
 Now we will add the script that checks if a user has a client role. Click on *Actions > Config* at the end of the Script row. Update the script as showed below.
 
