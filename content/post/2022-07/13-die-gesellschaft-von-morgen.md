@@ -11,7 +11,7 @@ images:
  - /images/society.jpg
 ---
 
-Der Zukunft mit Optimismus zu begnen fällt aktuell schwer. 
+Der Zukunft mit Optimismus zu begegnen fällt aktuell schwer. 
 Die Pandemie (fast) hinter uns, aktuell der Krieg in der Ukraine und die nächste Krise stellt sich bereits in die Warteschlange und wartet auf den Ausbruch. 
 Mit dem Kampf gegen die Klimawandel werden wir vollends auf die Probe gestellt. 
 Psychisch und ökonomisch angeschlagen geht es demnächst um nichts anderes als die Umwelt und uns zu retten. 
@@ -30,12 +30,12 @@ Wir müssen uns heute Gedanken machen, wie die Gesellschaft von Morgen aussieht.
 
 **Vom Leistungsgedanken zur Wertschätzung**
 
-Die Merokratie bezeichnet eine Gesellschaft, die sich nach der Leistung ihrer Individuen orientiert. 
-Der Leistungsgedanke und das Streben nach Erfolg ist der zentrale Anzreiz in diesem System. 
-Jedoch ist gerade dieser Anreiz verantwortlich für eine zunehmende Unlgleichheit. 
-Der Riss zwischen Arm und Reich und die dadurch entstehende Entsolidiarisierung hat den Ursprung in diesem Leistungsgedanken. 
+Die Meritokratie bezeichnet eine Gesellschaft, die sich nach der Leistung ihrer Individuen orientiert. 
+Der Leistungsgedanke und das Streben nach Erfolg ist der zentrale Anreiz in diesem System. 
+Jedoch ist gerade dieser Anreiz verantwortlich für eine zunehmende Ungleichheit. 
+Der Riss zwischen Arm und Reich und die dadurch entstehende Entsolidarisierung hat den Ursprung in diesem Leistungsgedanken. 
 
-Als Gesellschaftlicher Wert hat die Leistungfähigkeit ausgedient. 
+Als Gesellschaftlicher Wert hat die Leistungsfähigkeit ausgedient. 
 Bei der Gestaltung der Arbeitswelt spricht man schon lange von Interdisziplinarität. 
 Nur kollaborativ entsteht heute echter Erfolg. 
 Damit eine Zusammenarbeit funktioniert, braucht es ein bestimmtes Mass an Wertschätzung und Vertrauen. 
@@ -45,16 +45,16 @@ Obgleich in der Arbeitswelt oder Öffentlichkeit die Wertschätzung soll als Wer
 
 Effektiv Handeln, heisst grosses Leisten. 
 Die kommende Klimakrise ist nicht gelöst indem man sich im Supermarkt für Bio-Produkte entscheidet oder auf das Fliegen verzichtet. 
-Denn wir wissen dass der Apell an den Einzelnen mit der Hoffnung auf eine Verhaltensänderung unwahrscheinlich ist. 
+Denn wir wissen dass der Appell an den Einzelnen mit der Hoffnung auf eine Verhaltensänderung unwahrscheinlich ist. 
 
 Politisches Engagement, die Entwicklung von soliden Konzepten und vor allem die Fähigkeit gemeinsam etwas zu erarbeiten, sind gefragt. 
-Weg vom Selbstverständis als Konsument hin zum wirksamen Produzent. 
+Weg vom Selbstverständnis als Konsument hin zum wirksamen Produzent. 
 
 **Fokus statt Aufmerksamkeit**
 
 Unser kostbarstes Gut ist die Aufmerksamkeit und es geht viel davon in der digitale Suche nach Nähe und Verbundenheit verloren. 
 Die Aufmerksamkeitsspanne ist kürzer und die Flutt an Informationen überwältigend. 
-Es ist fast unmöglich allen Ansprüche Rechnung zu tragen, ohne dass man sich wiederspricht. 
+Es ist fast unmöglich allen Ansprüche Rechnung zu tragen, ohne dass man sich widerspricht. 
 
 Es braucht wieder mehr Fokus. 
 Konzentrieren wir uns auf das Wesentliche und ignorieren den Lärm. 
