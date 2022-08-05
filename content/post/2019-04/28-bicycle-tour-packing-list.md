@@ -29,7 +29,7 @@ Went on one-week trip and added some more stuff.
 - [ ] Cartridge with gas/petrol
 - [ ] Pan Large
 - [ ] Pan Small
-- [ ] (Steel wool)
+- [ ] *Steel wool*
 - [ ] Sponge
 - [ ] Disposable flap
 - [ ] Abrasion cloth
@@ -38,7 +38,7 @@ Went on one-week trip and added some more stuff.
 - [ ] Cutlery
 - [ ] Plate
 - [ ] Cup/Mug
-- [ ] (Water bag)
+- [ ] *Water bag*
 - [ ] Cutting board
 - [ ] Carving knife
 - [ ] Bag for cooking utensils
@@ -65,7 +65,7 @@ Went on one-week trip and added some more stuff.
 ## Weather
 
 - [ ] Rain jacket
-- [ ] (Rain trousers)
+- [ ] *Rain trousers*
 - [ ] (Shoe cover or plastic bag)
 - [ ] Down jacket
 
@@ -75,11 +75,11 @@ Went on one-week trip and added some more stuff.
 - [ ] Bicycle gloves
 - [ ] Wind jacket
 - [ ] Bicycle leg and arm warmers
-- [ ] (Cap)
+- [ ] *Cap*
 - [ ] Bicycle trousers 2x
-- [ ] (Bicycle overpants / Trainer pants short)
+- [ ] *Bicycle overpants / Trainer pants short*
 - [ ] T-Shirts Active 3x
-- [ ] (T-Shirt Long Sleeve)
+- [ ] *T-Shirt Long Sleeve*
 
 ## Leisure
 
@@ -98,11 +98,11 @@ Went on one-week trip and added some more stuff.
 
 - [ ] Tent
 - [ ] Tent underlay / Footprint
-- [ ] (Tarp)
+- [ ] *Tarp*
 - [ ] Sleeping bag
 - [ ] Insulating mat
 - [ ] Silk sleeping bag
-- [ ] (Storage bag)
+- [ ] *Storage bag*
 
 Tipp: Use the hull of the sleeping bag to make a nice pillow.
 
@@ -120,7 +120,7 @@ Tipp: Use the hull of the sleeping bag to make a nice pillow.
 
 # Electronics
 
-- [ ] (Solar panel)
+- [ ] *Solar panel*
 - [ ] Power bank
 - [ ] iPhone charging cable
 - [ ] Charging cable mini USB
