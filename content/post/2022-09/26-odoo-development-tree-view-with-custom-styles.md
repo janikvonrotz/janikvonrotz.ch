@@ -1,5 +1,5 @@
 ---
-title: "Odoo Developmen: Tree view with custom styles"
+title: "Odoo Development: Tree view with custom styles"
 slug: odoo-development-tree-view-with-custom-styles
 date: 2022-09-26T09:13:47+02:00
 categories:
