@@ -1,0 +1,133 @@
+{
+  "main": {
+    "id": "5dc11e46ed4c4d8d",
+    "type": "split",
+    "children": [
+      {
+        "id": "f9f53e53b1a749c4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6fa7d199f0d02cd1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2022-10/28-the-bird-is-dead.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "66784e11666ad5ed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2022-10/28-the-bird-is-dead.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bfb3bba088da1a0b",
+    "type": "split",
+    "children": [
+      {
+        "id": "e86a8890f49d0e7b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb5a9d21cdf81762",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c14f5059cd45714c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "exection",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 489
+  },
+  "right": {
+    "id": "2846f509c4149e2a",
+    "type": "split",
+    "children": [
+      {
+        "id": "71f150b2312f3161",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b5a6895b5387278d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/post/2022-10/28-the-bird-is-dead.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8061bb9ed569d7c2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/post/2022-10/28-the-bird-is-dead.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 319
+  },
+  "active": "66784e11666ad5ed",
+  "lastOpenFiles": [
+    "static/images/quit-twitter.png",
+    "content/post/2022-10/28-the-bird-is-dead.md",
+    "content/post/2022-10/03-ueber-besitz-und-leistung.md",
+    "content/post/2022-10/The bird is dead.md",
+    "static/images/talking-wall.jpg",
+    "content/post/2022-09/27-müdigkeitsgesellschaft.md",
+    "content/post/2022-09/26-odoo-development-tree-view-with-custom-styles.md",
+    "static/images/Byung-Chul-Han.png",
+    "content/post/2022-06/08-odoo-development-show-last-updated-date-above-list-view.md",
+    "content/post/2022-03/25-manage-python-versions-with-pyenv.md"
+  ]
+}
