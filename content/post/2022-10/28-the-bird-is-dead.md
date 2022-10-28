@@ -13,7 +13,7 @@ images:
 
 > The bird is dead and so is social media.
 
-As of 27th of October 2022 Elon Musk owns Twitter. With the $44 billion acquisition Twitter went private. As I am not a big fan of Musk (he is a megalomaniac) I think the time has come to quit Twitter. For me quitting Twitter is one more to quit social media entirely.
+As of 27th of October 2022 Elon Musk owns Twitter. With the $44 billion acquisition Twitter went private. As I am not a big fan of Musk (he is a megalomaniac) I think the time has come to quit Twitter. For me quitting Twitter is one more step to quit social media entirely.
 
 <!--more-->
 
