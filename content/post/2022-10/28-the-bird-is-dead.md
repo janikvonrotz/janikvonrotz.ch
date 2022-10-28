@@ -8,7 +8,7 @@ tags:
  - twitter
  - dead
 images:
- - /images/quit-twitter.png)
+ - /images/quit-twitter.png
 ---
 
 > The bird is dead and so is social media.
