@@ -10,7 +10,6 @@ tags:
  - problem
 images:
  - /images/cloudy.jpg
-
 ---
 
 Hyperscalers are cloud service provider such as Google, Alibaba, Amazon Web Services or Microsoft Azure. They provide infrastructure, computing power and a variety of services. Companies, states and organisations can use their services and are billed by usage.
