@@ -4,85 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f9f53e53b1a749c4",
+        "id": "6a12a0ff4f08ff28",
         "type": "tabs",
         "children": [
           {
-            "id": "6fa7d199f0d02cd1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/post/2022-10/28-the-bird-is-dead.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "94972b7ecc0eb80f",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "static/images/horizontal-integration.excalidraw.svg"
-              }
-            }
-          },
-          {
-            "id": "dd33936aa5e09e82",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "static/images/vertical-integration.excalidraw.svg"
-              }
-            }
-          },
-          {
-            "id": "1560369648194b6d",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "static/images/vertical-integration.excalidraw.svg"
-              }
-            }
-          },
-          {
-            "id": "3e67ca8bdefd5f37",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "static/images/vertical-integration.excalidraw.svg"
-              }
-            }
-          },
-          {
-            "id": "8b630d7024b81ad8",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "static/images/horizontal-integration.excalidraw.svg"
-              }
-            }
-          },
-          {
-            "id": "f41c746f99348300",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/post/2022-11/10-why-hyperscalers-are-a-menace.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1aa3b129f229624c",
+            "id": "afd8cc3c5fd34c55",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -93,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "vertical"
@@ -179,14 +104,14 @@
     "direction": "horizontal",
     "width": 319
   },
-  "active": "1aa3b129f229624c",
+  "active": "afd8cc3c5fd34c55",
   "lastOpenFiles": [
-    "static/images/cloudy.jpg",
-    "content/post/2022-11/10-why-hyperscalers-are-a-menace.md",
-    "static/images/horizontal-integration.excalidraw.svg",
     "content/post/2022-10/28-the-bird-is-dead.md",
-    "content/post/2022-11/vertical-integration.excalidraw.md",
+    "static/images/horizontal-integration.excalidraw.svg",
     "static/images/vertical-integration.excalidraw.svg",
+    "content/post/2022-11/10-why-hyperscalers-are-a-menace.md",
+    "static/images/cloudy.jpg",
+    "content/post/2022-11/vertical-integration.excalidraw.md",
     "content/post/2022-11/horizontal-integration.excalidraw.md",
     "content/post/2022-11/Drawing 2022-11-10 11.22.24.excalidraw.png",
     "Untitled.md",

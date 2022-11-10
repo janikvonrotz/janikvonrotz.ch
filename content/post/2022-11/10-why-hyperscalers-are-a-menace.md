@@ -34,10 +34,10 @@ This is the most important argument. When comparing the stack of value (networki
 
 Bad: Vertically integrated hyperscalers
 
-![](../../../static/images/vertical-integration.excalidraw.svg)
+![](/images/vertical-integration.excalidraw.svg)
 
 Good: Horizontal integration
 
-![](../../../static/images/horizontal-integration.excalidraw.svg)
+![](/images/horizontal-integration.excalidraw.svg)
 
 In a horizontal integration different provider compete for each value layer. Grantees and contracts between the value layers are managed with service level agreements (SLAs). Moreover if competition is given interoperability between providers becomes a must.
