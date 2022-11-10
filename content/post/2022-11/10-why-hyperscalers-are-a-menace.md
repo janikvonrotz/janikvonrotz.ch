@@ -20,7 +20,7 @@ At first thought it seems like good practice, however, there a few issues that m
 
 <!--more-->
 
-## Monopolies
+### Monopolies
 
 It is well known that a free market with monopolistic actors causes a welfare loss. Every hyperscaler currently is aiming for a global monopoly position and everybody seems to turn a blind eye. Companies that try to create a monopoly in a free market must be regulated. 
 
