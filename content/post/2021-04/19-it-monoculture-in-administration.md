@@ -25,7 +25,7 @@ What the FOPH has experienced is now awaiting public administration at all level
 
 Just as monocultures are a problem in agriculture, they are also a problem in the IT landscape. What the corn sead from Monsanto is for the farmer, are products from Microsoft in public administration. We have yet to see a sovereign IT strategy that is not dictated by Microsoft products. And that's a problem. Because monocultures inhibit the ability to innovate.
 
-The design of IT is at the crossroads of **efficiency**, **innovativeness** and **sovereignty**. Microsoft's products allow efficient and flexible work, but you only develop as far as the products and therefore Microsoft allow. How can you overshoot the mark?
+The design of IT is at the crossroads of **efficiency**, **innovativeness** and **sovereignity**. Microsoft's products allow efficient and flexible work, but you only develop as far as the products and therefore Microsoft allow. How can you overshoot the mark?
 
 ### Open Source the solution?
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/2022-11/10-why-hyperscalers-are-a-menace.md",
+                "file": "content/post/2021-04/19-it-monoculture-in-administration.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "exection",
+                "query": "sovereignty",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,7 +57,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -77,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/2022-11/10-why-hyperscalers-are-a-menace.md",
+                "file": "content/post/2021-04/19-it-monoculture-in-administration.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/post/2022-11/10-why-hyperscalers-are-a-menace.md"
+                "file": "content/post/2021-04/19-it-monoculture-in-administration.md"
               }
             }
           }
@@ -104,12 +105,12 @@
     "direction": "horizontal",
     "width": 319
   },
-  "active": "bb5a9d21cdf81762",
+  "active": "afd8cc3c5fd34c55",
   "lastOpenFiles": [
+    "content/post/2022-11/10-why-hyperscalers-are-a-menace.md",
     "content/post/2022-10/28-the-bird-is-dead.md",
     "static/images/horizontal-integration.excalidraw.svg",
     "static/images/vertical-integration.excalidraw.svg",
-    "content/post/2022-11/10-why-hyperscalers-are-a-menace.md",
     "static/images/cloudy.jpg",
     "content/post/2022-11/vertical-integration.excalidraw.md",
     "content/post/2022-11/horizontal-integration.excalidraw.md",

@@ -40,4 +40,4 @@ Good: Horizontal integration
 
 ![](/images/horizontal-integration.excalidraw.svg)
 
-In a horizontal integration different provider compete for each value layer. Guarantees and contracts between the value layers are managed with service level agreements (SLAs). Moreover if competition is given interoperability between providers becomes a must.
+In a horizontal integration different provider compete for each value layer. Guarantees and contracts between the value layers are managed with service level agreements (SLAs). Moreover, if competition is given interoperability between providers becomes a must.
