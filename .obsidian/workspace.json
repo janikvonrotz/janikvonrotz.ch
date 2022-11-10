@@ -20,19 +20,81 @@
             }
           },
           {
-            "id": "66784e11666ad5ed",
+            "id": "94972b7ecc0eb80f",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "static/images/horizontal-integration.excalidraw.svg"
+              }
+            }
+          },
+          {
+            "id": "dd33936aa5e09e82",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "static/images/vertical-integration.excalidraw.svg"
+              }
+            }
+          },
+          {
+            "id": "1560369648194b6d",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "static/images/vertical-integration.excalidraw.svg"
+              }
+            }
+          },
+          {
+            "id": "3e67ca8bdefd5f37",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "static/images/vertical-integration.excalidraw.svg"
+              }
+            }
+          },
+          {
+            "id": "8b630d7024b81ad8",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "static/images/horizontal-integration.excalidraw.svg"
+              }
+            }
+          },
+          {
+            "id": "f41c746f99348300",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/2022-10/28-the-bird-is-dead.md",
+                "file": "content/post/2022-11/10-why-hyperscalers-are-a-menace.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1aa3b129f229624c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2022-11/10-why-hyperscalers-are-a-menace.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -90,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/2022-10/28-the-bird-is-dead.md",
+                "file": "content/post/2022-11/10-why-hyperscalers-are-a-menace.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +169,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/post/2022-10/28-the-bird-is-dead.md"
+                "file": "content/post/2022-11/10-why-hyperscalers-are-a-menace.md"
               }
             }
           }
@@ -117,17 +179,17 @@
     "direction": "horizontal",
     "width": 319
   },
-  "active": "66784e11666ad5ed",
+  "active": "1aa3b129f229624c",
   "lastOpenFiles": [
-    "static/images/quit-twitter.png",
+    "static/images/cloudy.jpg",
+    "content/post/2022-11/10-why-hyperscalers-are-a-menace.md",
+    "static/images/horizontal-integration.excalidraw.svg",
     "content/post/2022-10/28-the-bird-is-dead.md",
-    "content/post/2022-10/03-ueber-besitz-und-leistung.md",
-    "content/post/2022-10/The bird is dead.md",
-    "static/images/talking-wall.jpg",
-    "content/post/2022-09/27-müdigkeitsgesellschaft.md",
-    "content/post/2022-09/26-odoo-development-tree-view-with-custom-styles.md",
-    "static/images/Byung-Chul-Han.png",
-    "content/post/2022-06/08-odoo-development-show-last-updated-date-above-list-view.md",
-    "content/post/2022-03/25-manage-python-versions-with-pyenv.md"
+    "content/post/2022-11/vertical-integration.excalidraw.md",
+    "static/images/vertical-integration.excalidraw.svg",
+    "content/post/2022-11/horizontal-integration.excalidraw.md",
+    "content/post/2022-11/Drawing 2022-11-10 11.22.24.excalidraw.png",
+    "Untitled.md",
+    "static/images/quit-twitter.png"
   ]
 }
