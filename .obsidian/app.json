@@ -12,5 +12,6 @@
     "en-US",
     "de-DE"
   ],
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "showInlineTitle": false
 }
