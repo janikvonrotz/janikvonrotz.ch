@@ -47,8 +47,5 @@ I am an (addicted) [Magic: The Gathering](https://en.wikipedia.org/wiki/Magic:_T
 > Waiting for others\
 > Calling for mother
 >
-> Only a memory\
-> Maybe a fallacy
->
 > There is no restart\
 > when falling apart
