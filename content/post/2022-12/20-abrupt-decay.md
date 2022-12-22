@@ -19,33 +19,33 @@ I am an (addicted) [Magic: The Gathering](https://en.wikipedia.org/wiki/Magic:_T
 
 > Dreaming a life beyond others\
 > Nothing to fear nothing to bother
->
+> 
 > Still human still craving\
 > Always healing and raving
->
+> 
 > An invincible structure\
 > Yet built to puncture
->
+> 
 > Once robust and strong\
 > Now crumbling for long
->
-> Contained by ignorance\
-> Attend the last dance
->
+> 
 > A fleeting grasp for more\
 > Silently pulled from the shore
->
+> 
+> Contained by ignorance\
+> Attend the last dance
+> 
 > A thought to deny\
 > is to believe in a lie 
->
+> 
 > A ferocious rile\
 > with a desperate smile
->
+> 
 > Here for the eve\
 > Nothing to leave
->
+> 
 > Waiting for others\
 > Calling for mother
->
+> 
 > There is no restart\
 > when falling apart
