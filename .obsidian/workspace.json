@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/2022-12/22-ei-d.md",
+                "file": "content/post/2022-12/20-abrupt-decay.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/2022-12/22-ei-d.md",
+                "file": "content/post/2022-12/20-abrupt-decay.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/post/2022-12/22-ei-d.md"
+                "file": "content/post/2022-12/20-abrupt-decay.md"
               }
             }
           }
@@ -129,8 +129,8 @@
   },
   "active": "0c5730f3aeadeda8",
   "lastOpenFiles": [
-    "static/images/e-id.png",
     "content/post/2022-12/22-ei-d.md",
+    "static/images/e-id.png",
     "content/post/2022-12/20-abrupt-decay.md",
     "content/post/2022-11/10-why-hyperscalers-are-a-menace.md",
     "static/images/abrupt-decay-art.png",

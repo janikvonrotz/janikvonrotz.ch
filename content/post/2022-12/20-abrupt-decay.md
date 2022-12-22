@@ -29,7 +29,7 @@ I am an (addicted) [Magic: The Gathering](https://en.wikipedia.org/wiki/Magic:_T
 > Once robust and strong\
 > Now crumbling for long
 >
-> Maintain an ignorance\
+> Contained by ignorance\
 > Attend the last dance
 >
 > A fleeting grasp for more\
@@ -48,7 +48,7 @@ I am an (addicted) [Magic: The Gathering](https://en.wikipedia.org/wiki/Magic:_T
 > Calling for mother
 >
 > Only a memory\
-> Maybe a theory
+> Maybe a fallacy
 >
 > There is no restart\
 > when falling apart
