@@ -36,7 +36,7 @@ I am an (addicted) [Magic: The Gathering](https://en.wikipedia.org/wiki/Magic:_T
 > Attend the last dance
 > 
 > A thought to deny\
-> is to believe in a lie 
+> to believe in a lie 
 > 
 > A ferocious rile\
 > with a desperate smile
