@@ -11,8 +11,12 @@
             "id": "edc64d0baba2cd35",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2022-12/22-ei-d.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "content/post/2022-12/22-ei-d.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,7 +93,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "content/post/2022-12/22-ei-d.md"
+              }
             }
           }
         ]
@@ -109,15 +116,15 @@
   },
   "active": "edc64d0baba2cd35",
   "lastOpenFiles": [
-    "content/post/2022-12/22-ei-d.md",
-    "content/post/2022-12/20-abrupt-decay.md",
-    "static/images/e-id.png",
     "content/post/2022-11/10-why-hyperscalers-are-a-menace.md",
+    "content/post/2022-11/vertical-integration.excalidraw.md",
+    "content/post/2022-12/20-abrupt-decay.md",
+    "content/post/2022-12/22-ei-d.md",
+    "static/images/e-id.png",
     "static/images/abrupt-decay-art.png",
     "content/post/2021-04/19-it-monoculture-in-administration.md",
     "content/post/2022-10/28-the-bird-is-dead.md",
     "static/images/horizontal-integration.excalidraw.svg",
-    "static/images/vertical-integration.excalidraw.svg",
-    "static/images/cloudy.jpg"
+    "static/images/vertical-integration.excalidraw.svg"
   ]
 }

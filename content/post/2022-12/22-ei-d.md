@@ -20,6 +20,6 @@ Bei [AdNovum](https://www.adnovum.com/) war ich als Identity und Access Manageme
 
 <!--more-->
 
-![](../../../static/images/Behörde.svg)
+![](/images/Behörde.svg)
 
 Ich bin gespannt wie sich das Projekt entwickelt wird und mal schauen ob es Überschneidungen mit meiner Vorstellung gibt.
