@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8386ec241866e246",
+        "id": "cc09d72faa0ee683",
         "type": "tabs",
         "children": [
           {
-            "id": "edc64d0baba2cd35",
+            "id": "f460343d1c6421bf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/2022-12/22-ei-d.md",
+                "file": "content/post/2023-01/06-2022-book-list.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/2022-12/22-ei-d.md",
+                "file": "content/post/2023-01/06-2022-book-list.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/post/2022-12/22-ei-d.md"
+                "file": "content/post/2023-01/06-2022-book-list.md"
               }
             }
           }
@@ -114,17 +114,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "edc64d0baba2cd35",
+  "active": "f460343d1c6421bf",
   "lastOpenFiles": [
-    "content/post/2022-11/10-why-hyperscalers-are-a-menace.md",
-    "content/post/2022-11/vertical-integration.excalidraw.md",
-    "content/post/2022-12/20-abrupt-decay.md",
-    "content/post/2022-12/22-ei-d.md",
-    "static/images/e-id.png",
-    "static/images/abrupt-decay-art.png",
-    "content/post/2021-04/19-it-monoculture-in-administration.md",
-    "content/post/2022-10/28-the-bird-is-dead.md",
-    "static/images/horizontal-integration.excalidraw.svg",
-    "static/images/vertical-integration.excalidraw.svg"
+    "content/post/2022-01/03-2021-book-list.md",
+    "images/9788790755768.png.md",
+    "content/post/2023-01/06-2022-book-list.md",
+    "static/images/9783882216165.png",
+    "static/images/9781529051902.png",
+    "static/images/9783104030609.png",
+    "static/images/9780547572291.png",
+    "static/images/9783843725392.png",
+    "static/images/9783641203320.png",
+    "static/images/9781529045383.png"
   ]
 }
