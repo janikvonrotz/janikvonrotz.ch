@@ -11,7 +11,7 @@ images:
  - /images/books.jpg
 ---
 
-In 2021 I read 18 books. Some of them were good and some bad. Out of these books only two stuck with me: **There Is No Antimemetics Division** by qntm and **Undinge** by Byung-Chul Han.
+In 2022 I read 18 books. Some of them were good and some bad. Out of these books only two stuck with me: **There Is No Antimemetics Division** by qntm and **Undinge** by Byung-Chul Han.
 
 **There Is No Antimemetics Division** deals with the idea of antimemes, which is the opposite of a meme or to put it plainly is non-information. [qntm](https://qntm.org/)  is a prolific writer for the [scp wiki](https://scp-wiki.wikidot.com/). Scp is a database of fictional anomalous objects, entities, and phenomena. The idea of antimemes is very strange and difficult to grasp, however, qntm built a very engaing story with this subject.
 
