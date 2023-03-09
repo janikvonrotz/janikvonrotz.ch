@@ -1,7 +1,7 @@
 ---
 title: 'hyper reality - short movie about augmented reality'
 date: 2016-05-24T21:07:54+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: hyper-reality-short-movie-about-augmented-reality
 images:
   - /wp-content/uploads/2016/05/Hyper-Reality.png

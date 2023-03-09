@@ -1,7 +1,7 @@
 ---
 title: 'Thailand - Ko Tao and Ko Phangan'
 date: 2014-06-21T09:26:26+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: thailand-ko-tao-and-ko-phangan
 images:
   - /wp-content/uploads/2014/06/boats-in-Ko-Tao-20140617.jpg

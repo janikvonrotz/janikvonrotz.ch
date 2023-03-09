@@ -1,7 +1,7 @@
 ---
 title: 'Build a Java 3-tier application from scratch – Part 3: Object-relational mapping'
 date: 2015-03-30T16:41:24+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: build-a-java-3-tier-application-from-scratch-part-3-object-relational-mapping
 images:
   - /wp-content/uploads/2014/10/Java-logo.jpg

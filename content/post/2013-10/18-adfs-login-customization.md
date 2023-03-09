@@ -1,7 +1,7 @@
 ---
 title: ADFS Login Customization
 date: 2013-10-18T13:04:41+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: adfs-login-customization
 images:
   - /wp-content/uploads/2013/09/office-logo_v3.jpg

@@ -1,7 +1,7 @@
 ---
 title: Impressions of the Turnerabend 2017
 date: 2017-11-29T19:26:40+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: impressions-of-the-turnerabend-2017
 images:
   - /wp-content/uploads/2017/11/1-Sportlight-Banner.jpg

@@ -1,7 +1,7 @@
 ---
 title: ScreenToGif an awesome recorder
 date: 2015-08-04T07:03:41+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: screentogif-an-awesome-recorder
 images:
   - /wp-content/uploads/2015/07/Screen-To-Gif.png

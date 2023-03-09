@@ -1,7 +1,7 @@
 ---
 title: Simple Redirect with Apache2
 date: 2013-11-15T10:46:47+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: simple-redirect-with-apache2
 images:
   - /wp-content/uploads/2013/11/apache.jpg

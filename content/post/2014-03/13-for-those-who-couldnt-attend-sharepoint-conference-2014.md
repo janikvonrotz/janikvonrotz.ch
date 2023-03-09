@@ -1,7 +1,7 @@
 ---
 title: 'For those who couldn’t attend SharePoint Conference 2014'
 date: 2014-03-13T09:23:00+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: for-those-who-couldnt-attend-sharepoint-conference-2014
 images:
   - /wp-content/uploads/2014/03/SharePoint-Conference-2014-e1394698189555.png

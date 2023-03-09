@@ -1,13 +1,13 @@
 ---
 title: About
 date: 2013-07-02T08:23:30+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 disable_comments: true
 ---
 
 [![Untitled](/images/me-casual.jpg)](/images/me-casual.jpg)
 
-Hi, my name is Janik Vonrotz. I’m a Software Engineer / IT Consultant from Switzerland.
+Hi, my name is Janik von Rotz. I’m a Software Engineer / IT Consultant from Switzerland.
 
 This is my blog where I share my personal and professional experiences. It is mostly about IT-related stuff. I always and still admire the Open Source Software (OSS) community, where everybody shares their insight and solution for the benefit of the whole. This blog is a contribution to this community.
 

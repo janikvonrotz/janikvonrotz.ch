@@ -1,7 +1,7 @@
 ---
 title: HHVM on Ubuntu 14.4 LTS fix
 date: 2014-09-30T13:33:30+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: hhvm-on-ubuntu-14-4-lts-fix
 images:
   - /wp-content/uploads/2014/04/HHVM-Logo.png

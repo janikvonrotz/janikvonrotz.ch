@@ -1,7 +1,7 @@
 ---
 title: Website Update SSL
 date: 2014-03-19T15:15:21+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: website-update-ssl
 images:
   - /wp-content/uploads/2014/03/Amazon-AWS-Logo.png
@@ -13,7 +13,7 @@ Hi visiter,
 
 As you might have already seen, this websites is now  accessible over https.
 
-![Janik Vonrotz loves SSL](/wp-content/uploads/2014/03/Janik-von-Rotz-loves-SSL.jpg)
+![Janik von Rotz loves SSL](/wp-content/uploads/2014/03/Janik-von-Rotz-loves-SSL.jpg)
 
 I've moved this website to a new custom webserver run by [Amazon AWS EC2](https://aws.amazon.com/de/ec2/).
 

@@ -1,7 +1,7 @@
 ---
 title: PowerShell Function Template
 date: 2013-11-11T16:04:39+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: powershell-function-template
 images:
   - /wp-content/uploads/2013/07/PowerShell.png
@@ -26,7 +26,7 @@ $Metadata = @{
 	Description = ""
 	Tags = ""
 	Project = ""
-	Author = "Janik Vonrotz"
+	Author = "Janik von Rotz"
 	AuthorContact = "https://janikvonrotz.ch"
 	CreateDate = "yyyyy-mm-dd hh:mm"
 	LastEditDate = "yyyyy-mm-dd hh:mm"

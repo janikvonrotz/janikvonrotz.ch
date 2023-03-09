@@ -1,7 +1,7 @@
 ---
 title: 'USA - New York'
 date: 2014-08-29T14:38:49+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: usa-new-york
 images:
   - /wp-content/uploads/2014/08/New-York-20140828.jpg

@@ -1,7 +1,7 @@
 ---
 title: 'O3M 57 - Back to the future'
 date: 2015-02-25T14:17:15+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: o3m-57-back-to-the-future
 images:
   - /wp-content/uploads/2015/02/O3M-57-Back-to-the-future.jpg

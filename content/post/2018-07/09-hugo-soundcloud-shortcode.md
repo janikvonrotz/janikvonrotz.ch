@@ -1,7 +1,7 @@
 ---
 title: "Hugo Soundcloud shortcode"
 date: 2018-07-09T16:52:17+02:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: hugo-soundcloud-shortcode
 images:
   - /images/hugo static site generator logo.jpg

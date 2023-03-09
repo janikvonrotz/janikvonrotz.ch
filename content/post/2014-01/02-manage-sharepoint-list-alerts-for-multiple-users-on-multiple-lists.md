@@ -1,7 +1,7 @@
 ---
 title: manage SharePoint list alerts for multiple users on multiple lists
 date: 2014-01-02T14:38:25+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: manage-sharepoint-list-alerts-for-multiple-users-on-multiple-lists
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
@@ -30,7 +30,7 @@ $Metadata = @{
 	Description = ""
 	Tags = "powershell, sharepoint, update, user, alerts"
 	Project = ""
-	Author = "Janik Vonrotz"
+	Author = "Janik von Rotz"
 	AuthorContact = "https://janikvonrotz.ch"
 	CreateDate = "2014-01-02"
 	LastEditDate = "2014-01-02"

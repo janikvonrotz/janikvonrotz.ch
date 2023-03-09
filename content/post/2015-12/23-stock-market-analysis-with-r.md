@@ -1,7 +1,7 @@
 ---
 title: Stock market analysis with R
 date: 2015-12-23T10:56:29+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: stock-market-analysis-with-r
 images:
   - /wp-content/uploads/2015/12/R-language-logo.png

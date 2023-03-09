@@ -1,7 +1,7 @@
 ---
 title: 'Build a Java 3-tier application from scratch – Part 5: Client controller'
 date: 2015-04-01T09:27:32+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: build-a-java-3-tier-application-from-scratch-part-5-client-controller
 images:
   - /wp-content/uploads/2014/10/Java-logo.jpg

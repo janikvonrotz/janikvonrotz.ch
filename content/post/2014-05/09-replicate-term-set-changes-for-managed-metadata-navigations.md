@@ -1,7 +1,7 @@
 ---
 title: Replicate term set changes for managed metadata navigations
 date: 2014-05-09T08:24:47+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: replicate-term-set-changes-for-managed-metadata-navigations
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png
@@ -23,7 +23,7 @@ $Metadata = @{
 	Description = ""
 	Tags = "sharepoint, managed, metadata, navigation"
 	Project = ""
-	Author = "Janik Vonrotz"
+	Author = "Janik von Rotz"
 	AuthorContact = "https://janikvonrotz.ch"
 	CreateDate = "2014-05-09"
 	LastEditDate = "2014-05-09"

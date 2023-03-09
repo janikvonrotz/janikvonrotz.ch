@@ -1,7 +1,7 @@
 ---
 title: 'OLMOTO - An app built by beginners'
 date: 2016-08-02T12:30:05+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: olmoto-an-app-built-by-beginners
 images:
   - /wp-content/uploads/2016/08/logo.png

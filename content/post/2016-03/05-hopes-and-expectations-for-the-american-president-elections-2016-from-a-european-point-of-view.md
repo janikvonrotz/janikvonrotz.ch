@@ -2,7 +2,7 @@
 id: 3852
 title: Hopes and expectations for the american president elections 2016 from a european point of view
 date: 2016-03-05T12:38:44+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: hopes-and-expectations-for-the-american-president-elections-2016-from-a-european-point-of-view
 images:
   - /wp-content/uploads/2016/03/election-banner-2016.jpg

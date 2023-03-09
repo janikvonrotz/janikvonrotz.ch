@@ -1,7 +1,7 @@
 ---
 title: Cold Days
 date: 2017-02-24T19:47:00+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: cold-days
 categories:
   - Photography

@@ -1,7 +1,7 @@
 ---
 title: SCCM 1702 increase client log size and retention
 date: 2017-10-17T13:46:41+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: sccm-1702-increase-client-log-size-and-retention
 specific_page_layout:
   - default-sidebar

@@ -1,7 +1,7 @@
 ---
 title: Get Active Directory User Membership Groups Recursively
 date: 2013-12-11T11:46:37+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: get-active-directory-user-membership-groups-recursively
 images:
   - /wp-content/uploads/2013/12/PowerShell-and-ActiveDirectory.png
@@ -26,7 +26,7 @@ $Metadata = @{
 	Description = ""
 	Tags = "powershell, activedirectory, get, prinicipal, group, membership, recurse"
 	Project = ""
-	Author = "Janik Vonrotz"
+	Author = "Janik von Rotz"
 	AuthorContact = "https://janikvonrotz.ch"
 	CreateDate = "2013-12-11"
 	LastEditDate = "2013-12-11"

@@ -1,7 +1,7 @@
 ---
 title: Our daily struggles according to info commercials
 date: 2014-04-17T14:24:15+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: our-daily-struggles-according-to-info-commercials
 images:
   - /wp-content/uploads/2014/03/letsgetweird.jpg

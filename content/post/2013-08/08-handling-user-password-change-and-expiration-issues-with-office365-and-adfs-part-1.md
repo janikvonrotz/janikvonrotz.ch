@@ -1,7 +1,7 @@
 ---
 title: 'Handling user password change and expiration issues with Office365 and ADFS - Part 1'
 date: 2013-08-08T14:41:37+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: handling-user-password-change-and-expiration-issues-with-office365-and-adfs-part-1
 images:
   - /wp-content/uploads/2013/08/microsoft-office-365-e1394705447131.jpg
@@ -55,7 +55,7 @@ $Metadata = @{
 	Description = ""
 	Tags = "powershell, script, jobs"
 	Project = ""
-	Author = "Janik Vonrotz"
+	Author = "Janik von Rotz"
 	AuthorContact = "http://.janikvonrotz.ch"
 	CreateDate = "2013-08-08"
 	LastEditDate = "2013-11-25"

@@ -1,7 +1,7 @@
 ---
 title: Install s3cmd
 date: 2014-04-10T07:48:14+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: install-s3cmd
 images:
   - /wp-content/uploads/2014/03/Amazon-AWS-Logo.png

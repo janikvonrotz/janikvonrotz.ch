@@ -1,7 +1,7 @@
 ---
 title: 'Meteor and React: Fullscreen Viewer Component'
 date: 2016-03-08T15:51:29+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: meteor-and-react-fullscreen-viewer-component
 images:
   - /wp-content/uploads/2016/03/meteor-react-logo-1200x201.png

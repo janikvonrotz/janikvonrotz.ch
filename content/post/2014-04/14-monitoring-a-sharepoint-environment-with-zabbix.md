@@ -1,7 +1,7 @@
 ---
 title: Monitoring a SharePoint Environment with Zabbix
 date: 2014-04-14T15:16:08+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: monitoring-a-sharepoint-environment-with-zabbix
 images:
   - /wp-content/uploads/2014/04/Zabbix-Logo-e1397484832591.png

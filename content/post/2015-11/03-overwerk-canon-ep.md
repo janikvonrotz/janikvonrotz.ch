@@ -1,7 +1,7 @@
 ---
 title: OVERWERK Canon EP
 date: 2015-11-03T11:39:48+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: overwerk-canon-ep
 images:
   - /wp-content/uploads/2015/11/OVERTWERK.jpg

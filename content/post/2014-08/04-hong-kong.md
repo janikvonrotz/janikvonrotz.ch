@@ -1,7 +1,7 @@
 ---
 title: Hong Kong
 date: 2014-08-04T18:20:12+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: hong-kong
 images:
   - /wp-content/uploads/2014/08/crowded-20140731.jpg

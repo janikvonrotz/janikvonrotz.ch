@@ -1,7 +1,7 @@
 ---
 title: SQL Cheat Sheet
 date: 2015-07-02T18:16:54+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: sql-cheat-sheet
 images:
   - /wp-content/uploads/2014/04/MySQL-Logo.png

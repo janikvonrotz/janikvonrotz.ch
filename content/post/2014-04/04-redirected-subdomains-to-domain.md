@@ -1,7 +1,7 @@
 ---
 title: Redirected subdomains to domain
 date: 2014-04-04T06:59:12+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: redirected-subdomains-to-domain
 images:
   - /wp-content/uploads/2014/03/Nginx-Logo-e1394033855329.png

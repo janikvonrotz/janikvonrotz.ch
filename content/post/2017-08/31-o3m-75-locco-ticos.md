@@ -1,7 +1,7 @@
 ---
 title: 'O3M 75 - Locco Ticos'
 date: 2017-08-31T09:00:58+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: o3m-75-locco-ticos
 images:
   - /wp-content/uploads/2017/08/O3M-75-Locco-Ticos.jpg

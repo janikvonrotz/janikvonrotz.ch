@@ -1,7 +1,7 @@
 ---
 title: Kung Fury
 date: 2015-05-31T10:57:29+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: kung-fury
 images:
   - /wp-content/uploads/2015/05/Kung-Fury.jpg

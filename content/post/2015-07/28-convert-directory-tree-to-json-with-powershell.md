@@ -1,7 +1,7 @@
 ---
 title: Convert Directory Tree to Json with PowerShell
 date: 2015-07-28T15:07:23+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: convert-directory-tree-to-json-with-powershell
 images:
   - /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png

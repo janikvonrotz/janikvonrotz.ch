@@ -1,7 +1,7 @@
 ---
 title: Another Wordpress to Hugo migration
 date: 2018-07-08T09:11:28+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: another-wordpress-to-hugo-migration
 images:
   - /images/wordpress to hugo migration.png
@@ -68,7 +68,7 @@ Update the parameters in the `config.toml` file to finish the installation. Set 
 ```
 baseURL = "https://janikvonrotz.ch"
 languageCode = "en-us"
-title = "Janik Vonrotz"
+title = "Janik von Rotz"
 description = "Curious, Dedicated, Humble" 
 theme = "hugo-lithium-theme"
 ```

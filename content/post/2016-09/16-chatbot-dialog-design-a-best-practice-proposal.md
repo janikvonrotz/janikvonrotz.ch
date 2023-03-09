@@ -1,7 +1,7 @@
 ---
 title: 'Chatbot dialog design - a best practice proposal'
 date: 2016-09-16T17:38:22+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: chatbot-dialog-design-a-best-practice-proposal
 images:
   - /wp-content/uploads/2016/09/UX-banner-e1474038570257.jpg

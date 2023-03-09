@@ -1,7 +1,7 @@
 ---
 title: 'Let’s write a Laravel application - Form validation for your backend and frontend'
 date: 2015-02-10T00:18:29+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: lets-write-a-laravel-application-form-validation-for-your-backend-and-frontend
 images:
   - /wp-content/uploads/2015/01/laravel-logo-e1422466263489.png

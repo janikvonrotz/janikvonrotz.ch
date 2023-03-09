@@ -1,7 +1,7 @@
 ---
 title: Unattended Encrypted Incremental Backup to Amazon S3
 date: 2014-04-25T07:28:09+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: unattended-encrypted-incremental-backup-to-amazon-s3
 images:
   - /wp-content/uploads/2014/03/Amazon-AWS-Logo.png

@@ -1,7 +1,7 @@
 ---
 title: 'O3M 44 - Pyro (electro)'
 date: 2014-05-30T12:00:27+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: o3m-44-pyro-electro
 images:
   - /wp-content/uploads/2014/05/O3M-44-Pyro-electro.png

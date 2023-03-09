@@ -1,7 +1,7 @@
 ---
 title: 'Netwars Project - Today’s IT threads well explained'
 date: 2014-05-01T13:19:00+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: newars-project-todays-it-threads-well-explained
 images:
   - /wp-content/uploads/2014/04/netwars-logo.jpg

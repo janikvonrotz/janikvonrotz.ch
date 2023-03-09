@@ -1,7 +1,7 @@
 ---
 title: Create WordPress admin user with sql only
 date: 2015-03-24T17:54:28+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: create-wordpress-admin-user-with-sql-only
 images:
   - /wp-content/uploads/2014/02/wordpress-logo.jpg

@@ -1,7 +1,7 @@
 ---
 title: A Glimpse of China
 date: 2018-01-04T15:47:36+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: a-glimpse-of-china
 images:
   - /wp-content/uploads/2018/01/1-Pattern-Banner.jpg

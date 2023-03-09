@@ -1,7 +1,7 @@
 ---
 title: Using pass in teams
 date: 2018-04-03T08:29:22+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: using-pass-in-teams
 images:
   - /wp-content/uploads/2018/04/multiple-locks.jpg

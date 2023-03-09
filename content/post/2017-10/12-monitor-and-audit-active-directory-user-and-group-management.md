@@ -1,7 +1,7 @@
 ---
 title: Monitor and audit Active Directory user and group management
 date: 2017-10-12T15:54:08+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: monitor-and-audit-active-directory-user-and-group-management
 images:
   - /wp-content/uploads/2017/10/Active-Directory-Logo.jpg

@@ -1,7 +1,7 @@
 ---
 title: 'Meteor and React: Markdown editor with draft.js and marked.js'
 date: 2016-04-05T09:15:29+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: meteor-and-react-markdown-editor-with-draft-js-and-marked-js
 images:
   - /wp-content/uploads/2016/03/meteor-react-logo-1200x201.png

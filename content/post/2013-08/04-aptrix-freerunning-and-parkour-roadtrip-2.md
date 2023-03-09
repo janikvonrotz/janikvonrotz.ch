@@ -1,7 +1,7 @@
 ---
 title: 'Aptrix - Freerunning and Parkour Roadtrip'
 date: 2013-08-04T10:33:40+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: aptrix-freerunning-and-parkour-roadtrip-2
 images:
   - /wp-content/uploads/2013/08/Logo.png

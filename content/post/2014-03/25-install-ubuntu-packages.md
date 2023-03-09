@@ -1,7 +1,7 @@
 ---
 title: Install Ubuntu packages
 date: 2014-03-25T11:52:54+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: install-ubuntu-packages
 images:
   - /wp-content/uploads/2014/03/Ubuntu-Logo.png

@@ -1,7 +1,7 @@
 ---
 title: Website Familie OW
 date: 2013-07-02T08:57:03+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: website-familie-ow
 images:
   - /wp-content/uploads/2015/01/Typo3-Logo.jpg

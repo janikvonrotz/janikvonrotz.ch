@@ -1,7 +1,7 @@
 ---
 title: Download full playlists and all songs by an artist from SoundCloud
 date: 2014-05-13T07:53:13+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: download-full-playlists-and-all-songs-by-an-artist-from-soundcloud
 images:
   - /wp-content/uploads/2013/07/soundcloud.png

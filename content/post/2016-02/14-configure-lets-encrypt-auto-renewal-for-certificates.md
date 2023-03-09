@@ -1,7 +1,7 @@
 ---
 title: 'Configure Let’s Encrypt auto renewal for certificates'
 date: 2016-02-14T22:28:26+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: configure-lets-encrypt-auto-renewal-for-certificates
 images:
   - /wp-content/uploads/2015/03/Lets-Enrypt.png

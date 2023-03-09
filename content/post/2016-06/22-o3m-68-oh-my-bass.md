@@ -1,7 +1,7 @@
 ---
 title: 'O3M 68 - Oh my bass'
 date: 2016-06-22T19:22:26+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: o3m-68-oh-my-bass
 images:
   - /wp-content/uploads/2016/06/O3M-68-Oh-my-bass.jpg

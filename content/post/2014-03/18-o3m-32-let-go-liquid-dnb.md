@@ -1,7 +1,7 @@
 ---
 title: 'O3M 32 - Let Go (Liquid DnB)'
 date: 2014-03-18T08:48:45+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: o3m-32-let-go-liquid-dnb
 images:
   - /wp-content/uploads/2014/03/O3M-32-Let-Go-Liquid-DnB.jpg

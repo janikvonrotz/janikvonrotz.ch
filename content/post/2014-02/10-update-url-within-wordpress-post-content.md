@@ -1,7 +1,7 @@
 ---
 title: Update Url within WordPress Post Content
 date: 2014-02-10T13:06:55+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: update-url-within-wordpress-post-content
 images:
   - /wp-content/uploads/2014/02/wordpress-logo.jpg

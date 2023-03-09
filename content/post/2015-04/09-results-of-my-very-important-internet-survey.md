@@ -1,7 +1,7 @@
 ---
 title: Results of my very important internet survey
 date: 2015-04-09T12:29:11+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: results-of-my-very-important-internet-survey
 images:
   - /wp-content/uploads/2015/04/Survey.png

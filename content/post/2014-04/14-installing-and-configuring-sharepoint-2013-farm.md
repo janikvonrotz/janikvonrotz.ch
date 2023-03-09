@@ -1,7 +1,7 @@
 ---
 title: Installing and Configuring SharePoint 2013 Farm
 date: 2014-04-14T09:29:48+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: installing-and-configuring-sharepoint-2013-farm
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png

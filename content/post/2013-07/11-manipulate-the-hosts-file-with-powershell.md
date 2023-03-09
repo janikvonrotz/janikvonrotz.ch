@@ -1,7 +1,7 @@
 ---
 title: Manipulate the hosts file with PowerShell
 date: 2013-07-11T08:38:06+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: manipulate-the-hosts-file-with-powershell
 images:
   - /wp-content/uploads/2013/07/PowerShell.png

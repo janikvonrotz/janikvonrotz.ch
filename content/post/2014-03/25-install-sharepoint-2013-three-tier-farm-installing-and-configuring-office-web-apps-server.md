@@ -1,7 +1,7 @@
 ---
 title: Install SharePoint 2013 Three-tier Farm – Installing and Configuring Office Web Apps Server
 date: 2014-03-25T09:18:05+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: install-sharepoint-2013-three-tier-farm-installing-and-configuring-office-web-apps-server
 images:
   - /wp-content/uploads/2014/03/Office-Web-Apps-Logo.png

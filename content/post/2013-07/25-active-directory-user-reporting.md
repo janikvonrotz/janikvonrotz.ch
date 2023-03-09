@@ -1,7 +1,7 @@
 ---
 title: Active Directory User Reporting
 date: 2013-07-25T10:49:32+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: active-directory-user-reporting
 images:
   - /wp-content/uploads/2013/07/PowerShell.png

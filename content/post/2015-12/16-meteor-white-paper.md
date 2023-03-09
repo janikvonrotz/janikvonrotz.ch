@@ -1,7 +1,7 @@
 ---
 title: Meteor White Paper
 date: 2015-12-16T21:05:20+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: meteor-white-paper
 images:
   - /wp-content/uploads/2015/12/Meteor-Logo.png

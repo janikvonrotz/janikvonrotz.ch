@@ -1,7 +1,7 @@
 ---
 title: free SSL for everybody
 date: 2015-03-23T09:09:11+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: free-ssl-for-everybody
 images:
   - /wp-content/uploads/2015/03/Lets-Enrypt.png

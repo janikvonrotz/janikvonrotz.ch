@@ -1,7 +1,7 @@
 ---
 title: 'O3M 36 - Tomorrow (Ambient, Chill)'
 date: 2014-04-11T07:06:28+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: o3m-36-tomorrow-ambient-chill
 images:
   - /wp-content/uploads/2014/04/O3M-36-Tomorrow-Ambient-Chill.jpg

@@ -1,7 +1,7 @@
 ---
 title: Find dead SharePoint ActiveDirectory Groups
 date: 2013-09-25T15:33:07+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: find-dead-sharepoint-activedirectory-groups
 images:
   - /wp-content/uploads/2013/07/PowerShell.png

@@ -1,7 +1,7 @@
 ---
 title: Enable Piwik geolocation support with GeoIP PECL
 date: 2014-04-23T08:57:31+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: enable-piwik-geolocation-support-with-geoip-pecl
 images:
   - /wp-content/uploads/2014/12/logo-piwik-e1418200408662.png

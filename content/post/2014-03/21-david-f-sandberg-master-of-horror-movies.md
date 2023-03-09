@@ -1,7 +1,7 @@
 ---
 title: David F. Sandberg master of horror movies
 date: 2014-03-21T08:31:56+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: david-f-sandberg-master-of-horror-movies
 images:
   - /wp-content/uploads/2014/03/Vimeo-Logo-e1395386460524.jpg

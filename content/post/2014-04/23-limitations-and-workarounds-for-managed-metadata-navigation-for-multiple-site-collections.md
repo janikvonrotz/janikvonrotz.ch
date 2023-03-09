@@ -1,7 +1,7 @@
 ---
 title: Limitations and workarounds for managed metadata navigation for multiple site collections
 date: 2014-04-23T09:53:45+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: limitations-and-workarounds-for-managed-metadata-navigation-for-multiple-site-collections
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png

@@ -1,7 +1,7 @@
 ---
 title: Migrate KeePass to Pass
 date: 2017-07-24T10:05:46+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: migrate-keepass-to-pass
 images:
   - /wp-content/uploads/2017/07/Pass-Unix-password-manager.png

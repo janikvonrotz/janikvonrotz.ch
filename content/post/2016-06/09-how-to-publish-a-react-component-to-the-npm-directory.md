@@ -1,7 +1,7 @@
 ---
 title: How to publish a react component to the npm directory
 date: 2016-06-09T12:33:36+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: how-to-publish-a-react-component-to-the-npm-directory
 images:
   - /wp-content/uploads/2014/04/React-Logo.png

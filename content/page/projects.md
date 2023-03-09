@@ -1,7 +1,7 @@
 ---
 title: Projects
 date: 2013-07-02T08:21:46+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 disable_comments: true
 ---
 
@@ -109,7 +109,7 @@ Secret - Managed and implemented the onsite and offsite deployment system for a 
 
 **2012**
 
-[Website Janik Vonrotz](https://janikvonrotz.ch/2013/07/02/website-janik-von-rotz/) - My first website using a windows tiles design.
+[Website Janik von Rotz](https://janikvonrotz.ch/2013/07/02/website-janik-von-rotz/) - My first website using a windows tiles design.
 
 [Website Familie OW](https://janikvonrotz.ch/2013/07/02/website-familie-ow) - Typo3 website for the local family care department.
 

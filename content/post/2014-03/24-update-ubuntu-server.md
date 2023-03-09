@@ -1,7 +1,7 @@
 ---
 title: Update Ubuntu server
 date: 2014-03-24T18:34:00+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: update-ubuntu-server
 images:
   - /wp-content/uploads/2014/03/Ubuntu-Logo.png

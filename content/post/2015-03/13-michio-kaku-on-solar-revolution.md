@@ -1,7 +1,7 @@
 ---
 title: Michio Kaku on solar revolution
 date: 2015-03-13T10:08:48+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: michio-kaku-on-solar-revolution
 images:
   - /wp-content/uploads/2015/03/Think-Big-Michio-Kaku.jpg

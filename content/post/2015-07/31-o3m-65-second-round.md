@@ -1,7 +1,7 @@
 ---
 title: 'O3M 65 - Second Round'
 date: 2015-07-31T16:23:46+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: o3m-65-second-round
 images:
   - /wp-content/uploads/2015/07/O3M-65-Second-Round.jpg

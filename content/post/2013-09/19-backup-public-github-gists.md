@@ -1,7 +1,7 @@
 ---
 title: Backup Public GitHub Gists
 date: 2013-09-19T12:52:32+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: backup-public-github-gists
 images:
   - /wp-content/uploads/2013/09/github.jpg

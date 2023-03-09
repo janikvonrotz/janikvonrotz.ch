@@ -1,7 +1,7 @@
 ---
 title: The most simple access control for your Meteor React app
 date: 2017-05-12T09:46:48+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: the-most-simple-access-control-for-your-meteor-react-app
 images:
   - /wp-content/uploads/2017/05/RBAC-Meteor.png

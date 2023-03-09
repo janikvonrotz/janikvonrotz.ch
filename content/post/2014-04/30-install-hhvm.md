@@ -1,7 +1,7 @@
 ---
 title: Install HHVM
 date: 2014-04-30T08:27:48+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: install-hhvm
 images:
   - /wp-content/uploads/2014/04/HHVM-Logo.png

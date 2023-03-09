@@ -1,7 +1,7 @@
 ---
 title: Summary of SharePoint 2013 archiving features
 date: 2014-05-19T09:25:35+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: summary-of-sharepoint-2013-archiving-features
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png

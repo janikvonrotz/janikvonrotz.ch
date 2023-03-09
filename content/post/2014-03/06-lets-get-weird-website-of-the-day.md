@@ -1,7 +1,7 @@
 ---
 title: 'Let’s get weird: Website of the day'
 date: 2014-03-06T11:19:08+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: lets-get-weird-website-of-the-day
 images:
   - /wp-content/uploads/2014/03/letsgetweird.jpg

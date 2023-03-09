@@ -1,7 +1,7 @@
 ---
 title: 10 new photos every 10 days
 date: 2014-03-08T17:59:32+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: 10-new-photos-every-10-days
 images:
   - /wp-content/uploads/2014/03/tumblr_logotype_white_blue_512.png

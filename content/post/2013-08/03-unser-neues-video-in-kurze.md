@@ -1,7 +1,7 @@
 ---
 title: Unser neues Video in kürze…
 date: 2013-08-03T19:50:55+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: unser-neues-video-in-kurze
 categories:
   - Sports

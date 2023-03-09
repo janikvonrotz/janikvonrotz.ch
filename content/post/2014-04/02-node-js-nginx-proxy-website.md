@@ -1,7 +1,7 @@
 ---
 title: Node.js Nginx proxy website
 date: 2014-04-02T06:52:03+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: node-js-nginx-proxy-website
 images:
   - /wp-content/uploads/2014/03/Node.js-Logo.png

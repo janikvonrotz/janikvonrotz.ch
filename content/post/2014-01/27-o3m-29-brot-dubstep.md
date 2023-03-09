@@ -1,7 +1,7 @@
 ---
 title: 'O3M 29 - Brot (Dubstep)'
 date: 2014-01-27T19:17:04+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: o3m-29-brot-dubstep
 images:
   - /wp-content/uploads/2014/01/O3M-29-Brot-Dubstep-502x372.jpg

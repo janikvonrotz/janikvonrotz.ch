@@ -1,7 +1,7 @@
 ---
 title: Let’s write a Laravel application – Project template
 date: 2015-01-30T10:28:03+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: lets-write-a-laravel-application-project-template
 images:
   - /wp-content/uploads/2015/01/laravel-logo-e1422466263489.png

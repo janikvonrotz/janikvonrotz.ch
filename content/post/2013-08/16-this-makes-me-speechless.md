@@ -1,7 +1,7 @@
 ---
 title: This makes me speechless
 date: 2013-08-16T14:31:22+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: this-makes-me-speechless
 images:
   - /wp-content/uploads/2013/08/greed.jpg

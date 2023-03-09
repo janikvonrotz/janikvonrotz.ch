@@ -1,7 +1,7 @@
 ---
 title: 'Project: Setup Windows 7 Kiosk'
 date: 2013-10-04T16:01:56+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: project-setup-windows-7-kiosk
 images:
   - /wp-content/uploads/2013/10/Group-Policy.jpg

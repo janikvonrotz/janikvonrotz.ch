@@ -1,7 +1,7 @@
 ---
 title: Redesign of DuckDuckGo
 date: 2014-05-20T14:17:15+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: redesign-of-duckduckgo
 images:
   - /wp-content/uploads/2014/05/DuckDuckGo-Logo.png

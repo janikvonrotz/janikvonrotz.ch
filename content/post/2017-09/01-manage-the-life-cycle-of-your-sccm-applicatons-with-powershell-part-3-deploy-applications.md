@@ -1,7 +1,7 @@
 ---
 title: 'Manage the life cycle of your SCCM applications with PowerShell - Part 3 Deploy Applications'
 date: 2017-09-01T09:00:58+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: manage-the-life-cycle-of-your-sccm-applications-with-powershell-part-3-deploy-applications
 images:
   - /wp-content/uploads/2017/08/SCCM-PowerShell-e1503910243136.jpeg

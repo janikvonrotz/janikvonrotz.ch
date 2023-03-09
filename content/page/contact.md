@@ -1,7 +1,7 @@
 ---
 title: Contact
 date: 2013-07-02T08:23:14+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 ---
 
 # Communication

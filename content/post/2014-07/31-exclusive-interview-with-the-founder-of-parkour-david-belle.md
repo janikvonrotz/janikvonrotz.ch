@@ -1,7 +1,7 @@
 ---
 title: Exclusive interview with the founder of Parkour David Belle
 date: 2014-07-31T12:34:19+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: exclusive-interview-with-the-founder-of-parkour-david-belle
 images:
   - /wp-content/uploads/2014/07/David-Belle-Parkour-Interview-Storm-e1406862037302.png

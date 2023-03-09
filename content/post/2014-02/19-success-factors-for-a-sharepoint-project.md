@@ -1,7 +1,7 @@
 ---
 title: Success Factors for a SharePoint Project
 date: 2014-02-19T17:15:04+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: success-factors-for-a-sharepoint-project
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png

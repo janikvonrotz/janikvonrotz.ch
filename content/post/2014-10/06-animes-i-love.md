@@ -1,7 +1,7 @@
 ---
 title: Animes I love
 date: 2014-10-06T10:55:17+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: animes-i-love
 images:
   - /wp-content/uploads/2014/10/Japan-Banner.jpg

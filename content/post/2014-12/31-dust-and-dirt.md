@@ -1,7 +1,7 @@
 ---
 title: Dust and Dirt
 date: 2014-12-31T11:56:09+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: dust-and-dirt
 images:
   - /wp-content/uploads/2014/12/dust-and-dirt.jpg

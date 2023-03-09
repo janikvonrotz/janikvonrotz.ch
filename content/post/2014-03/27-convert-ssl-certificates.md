@@ -1,7 +1,7 @@
 ---
 title: Convert SSL certificates
 date: 2014-03-27T14:01:50+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: convert-ssl-certificates
 images:
   - /wp-content/uploads/2014/03/OpenSSL-Logo.png

@@ -1,7 +1,7 @@
 ---
 title: 'O3M 77 - Sleep tight'
 date: 2018-07-07T21:58:19+02:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: o3m-77-sleep-tight
 images:
   - /images/O3M 77 - Sleep tight.jpg

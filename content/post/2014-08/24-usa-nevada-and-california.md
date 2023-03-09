@@ -1,7 +1,7 @@
 ---
 title: 'USA - Nevada and California'
 date: 2014-08-24T06:17:14+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: usa-nevada-and-california
 images:
   - /wp-content/uploads/2014/08/Merica.png

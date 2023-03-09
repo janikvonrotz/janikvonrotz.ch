@@ -1,7 +1,7 @@
 ---
 title: 'O3M 56 - TripTrap'
 date: 2015-02-13T09:43:36+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: o3m-56-triptrap
 images:
   - /wp-content/uploads/2015/02/O3M-56-TripTrap.jpg

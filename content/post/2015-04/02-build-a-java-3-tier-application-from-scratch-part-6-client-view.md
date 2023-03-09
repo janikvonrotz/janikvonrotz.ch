@@ -1,7 +1,7 @@
 ---
 title: 'Build a Java 3-tier application from scratch – Part 6: Client view'
 date: 2015-04-02T07:13:31+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: build-a-java-3-tier-application-from-scratch-part-6-client-view
 images:
   - /wp-content/uploads/2014/10/Java-logo.jpg

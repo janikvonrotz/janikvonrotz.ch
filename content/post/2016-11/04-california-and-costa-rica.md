@@ -1,7 +1,7 @@
 ---
 title: California and Costa Rica
 date: 2016-11-04T18:20:25+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: california-and-costa-rica
 images:
   - /wp-content/uploads/2016/11/California-and-Costa-Rica-banner-1200x559.jpg

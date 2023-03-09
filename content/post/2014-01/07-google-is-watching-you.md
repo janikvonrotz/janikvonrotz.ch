@@ -1,7 +1,7 @@
 ---
 title: Google is watching you
 date: 2014-01-07T13:34:19+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: google-is-watching-you
 images:
   - /wp-content/uploads/2014/01/dont-track-us.png

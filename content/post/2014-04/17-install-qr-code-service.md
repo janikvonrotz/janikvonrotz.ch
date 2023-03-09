@@ -1,7 +1,7 @@
 ---
 title: Install QR code service
 date: 2014-04-17T10:35:03+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: install-qr-code-service
 images:
   - /wp-content/uploads/2014/04/QR-Code-service.png

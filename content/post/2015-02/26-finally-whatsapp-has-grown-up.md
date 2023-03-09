@@ -1,7 +1,7 @@
 ---
 title: Finally WhatsApp has grown up
 date: 2015-02-26T17:31:00+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: finally-whatsapp-has-grown-up
 images:
   - /wp-content/uploads/2015/02/WhatsApp-Logo.png

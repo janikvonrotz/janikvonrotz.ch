@@ -1,7 +1,7 @@
 ---
 title: Install piwik website
 date: 2014-04-22T06:43:16+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: install-piwik-website
 images:
   - /wp-content/uploads/2014/12/logo-piwik-e1418200408662.png

@@ -1,7 +1,7 @@
 ---
 title: Install Nginx
 date: 2014-03-31T09:43:19+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: install-nginx
 images:
   - /wp-content/uploads/2014/03/Nginx-Logo-e1394033855329.png

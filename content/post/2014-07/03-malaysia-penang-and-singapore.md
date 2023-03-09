@@ -1,7 +1,7 @@
 ---
 title: 'Malaysia - Penang and Singapore'
 date: 2014-07-03T12:11:40+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: malaysia-penang-and-singapore
 images:
   - /wp-content/uploads/2014/07/one-of-the-living-buildings-20140629.jpg

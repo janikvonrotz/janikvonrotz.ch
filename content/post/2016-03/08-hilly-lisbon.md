@@ -1,7 +1,7 @@
 ---
 title: Hilly Lisbon
 date: 2016-03-08T15:28:28+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: hilly-lisbon
 images:
   - /wp-content/uploads/2016/03/Lisbon-graffiti-1200x425.jpg

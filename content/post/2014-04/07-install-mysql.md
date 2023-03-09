@@ -1,7 +1,7 @@
 ---
 title: Install MySQL
 date: 2014-04-07T07:14:46+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: install-mysql
 images:
   - /wp-content/uploads/2014/04/MySQL-Logo.png

@@ -1,7 +1,7 @@
 ---
 title: Superb Java development with Gradle, Hibernate, FlywayDB, JavaFX and Eclipse – Part 2
 date: 2015-03-05T17:01:57+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: superb-java-development-with-gradle-hibernate-flywaydb-javafx-and-eclipse-part-2
 images:
   - /wp-content/uploads/2014/10/Java-logo.jpg

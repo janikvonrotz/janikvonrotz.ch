@@ -1,7 +1,7 @@
 ---
 title: React image loader with a spinner
 date: 2016-07-23T04:19:06+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: react-image-loader-with-a-spinner
 images:
   - /wp-content/uploads/2014/04/React-Logo.png

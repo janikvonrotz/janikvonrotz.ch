@@ -1,7 +1,7 @@
 ---
 title: 'O3M 61 - Pharao'
 date: 2015-04-08T09:07:03+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: o3m-61-pharao
 images:
   - /wp-content/uploads/2015/04/O3M-61-Pharao.jpg

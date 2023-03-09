@@ -1,7 +1,7 @@
 ---
 title: Create a PowerShell module and publish it to the Gallery in under 1 minute
 date: 2017-08-09T11:26:58+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: create-a-powershell-module-and-publish-it-to-the-gallery-in-under-1-minute
 images:
   - /wp-content/uploads/2015/06/PowerShell-logo-e1433137513315.png
@@ -57,7 +57,7 @@ function Get-RandomPassword {
 
 # Create the module manifest
 
-New-ModuleManifest "./PowerUp/PowerUp.psd1" -RootModule "PowerUp" -FunctionsToExport Get-RandomPassword -ModuleVersion "1.0.0" -Author "Janik Vonrotz" -Description "A collection of useful PowerShell functions."
+New-ModuleManifest "./PowerUp/PowerUp.psd1" -RootModule "PowerUp" -FunctionsToExport Get-RandomPassword -ModuleVersion "1.0.0" -Author "Janik von Rotz" -Description "A collection of useful PowerShell functions."
 
 # Test the module manifest
 

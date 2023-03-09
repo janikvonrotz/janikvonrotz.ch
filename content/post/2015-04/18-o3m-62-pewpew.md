@@ -1,7 +1,7 @@
 ---
 title: 'O3M 62 - PewPew'
 date: 2015-04-18T07:57:50+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: o3m-62-pewpew
 images:
   - /wp-content/uploads/2015/04/O3M-62-PewPew.jpg

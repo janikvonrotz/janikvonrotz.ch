@@ -1,7 +1,7 @@
 ---
 title: PowerShell PowerUp Package Manager
 date: 2014-05-16T15:04:37+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: powershell-powerup-package-manager
 images:
   - /wp-content/uploads/2013/07/PowerShell.png

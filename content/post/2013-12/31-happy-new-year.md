@@ -1,7 +1,7 @@
 ---
 title: Happy new year
 date: 2013-12-31T23:55:18+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: happy-new-year
 categories:
   - Blog

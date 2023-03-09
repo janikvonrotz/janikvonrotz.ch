@@ -1,7 +1,7 @@
 ---
 title: How to debug your Node.js application
 date: 2014-02-21T14:20:13+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: how-to-debug-your-node-js-application
 images:
   - /wp-content/uploads/2014/02/nodejs-2560x1440-e1394184527626.png

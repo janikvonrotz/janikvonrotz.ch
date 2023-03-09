@@ -1,7 +1,7 @@
 ---
 title: Install php5 modules
 date: 2014-03-25T11:38:33+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: install-php5-modules
 images:
   - /wp-content/uploads/2014/03/php-logo.jpeg

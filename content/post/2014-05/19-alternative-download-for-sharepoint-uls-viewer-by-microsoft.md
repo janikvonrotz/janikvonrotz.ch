@@ -1,7 +1,7 @@
 ---
 title: Alternative download for SharePoint ULS viewer by Microsoft
 date: 2014-05-19T13:32:37+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: alternative-download-for-sharepoint-uls-viewer-by-microsoft
 images:
   - /wp-content/uploads/2013/07/SharePoint-2013-Logo.png

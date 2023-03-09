@@ -1,7 +1,7 @@
 ---
 title: 'Install Let’s Encrypt and create a free SSL certificate'
 date: 2015-12-04T11:23:57+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: install-lets-encrypt-and-create-a-free-ssl-certificate
 images:
   - /wp-content/uploads/2015/03/Lets-Enrypt.png

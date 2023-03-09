@@ -1,7 +1,7 @@
 ---
 title: The digital bookshelf
 date: 2018-05-14T09:45:00+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: the-digital-bookshelf
 images:
   - /wp-content/uploads/2018/05/screenshot.png

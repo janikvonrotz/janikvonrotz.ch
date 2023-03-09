@@ -1,7 +1,7 @@
 ---
 title: Manage ActiveDirectory Distribution Groups
 date: 2013-08-27T12:39:11+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: manage-activedirectory-distribution-groups
 images:
   - /wp-content/uploads/2013/07/PowerShell.png
@@ -55,7 +55,7 @@ $Metadata = @{
     Description = "Create or update ActiveDirectory distribution groups"
     Tags = "powershell, activedirectory, distribution, groups, create, update"
     Project = ""
-    Author = "Janik Vonrotz"
+    Author = "Janik von Rotz"
     AuthorContact = "https://janikvonrotz.ch"
     CreateDate = "2013-08-27"
     LastEditDate = "2013-09-30"

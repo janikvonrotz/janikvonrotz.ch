@@ -1,7 +1,7 @@
 ---
 title: Prevent a lot of spam on your next php form with this simple trick
 date: 2014-04-28T12:08:19+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: prevent-a-lot-of-spam-on-your-next-php-form-with-this-simple-trick
 images:
   - /wp-content/uploads/2014/04/Stop-Spam.jpg

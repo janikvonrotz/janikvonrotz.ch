@@ -1,7 +1,7 @@
 ---
 title: Shenzen tower climb
 date: 2015-05-11T19:21:59+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: shenzen-tower-climb
 images:
   - /wp-content/uploads/2015/05/on-the-roofs-shenzen-tower-e1431368470625.jpg

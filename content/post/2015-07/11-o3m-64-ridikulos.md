@@ -1,7 +1,7 @@
 ---
 title: 'O3M 64 - Ridikulös'
 date: 2015-07-11T09:52:44+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: o3m-64-ridikulos
 images:
   - /wp-content/uploads/2015/07/O3M-64-Ridikulös.jpg

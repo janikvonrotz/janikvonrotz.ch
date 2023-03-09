@@ -1,7 +1,7 @@
 ---
 title: some art and photography inspiration
 date: 2015-01-18T12:00:35+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: some-art-and-photography-inspiration
 images:
   - /wp-content/uploads/2015/01/Photography.jpg

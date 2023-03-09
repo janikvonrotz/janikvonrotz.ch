@@ -1,7 +1,7 @@
 ---
 title: Install Python
 date: 2015-10-22T07:08:05+00:00
-author: Janik Vonrotz
+author: Janik von Rotz
 slug: install-python
 images:
   - /wp-content/uploads/2015/10/Python-Logo.png
