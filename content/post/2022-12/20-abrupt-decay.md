@@ -9,6 +9,7 @@ tags:
  - gathering
  - poem
  - Gedankenschlosser
+ - cringe
 images:
  - /images/abrupt-decay-art.png
 ---

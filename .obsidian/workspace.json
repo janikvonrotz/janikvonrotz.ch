@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/2023-03/10-future-words.md",
+                "file": "content/post/2022-12/20-abrupt-decay.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/2023-03/10-future-words.md",
+                "file": "content/post/2022-12/20-abrupt-decay.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/post/2023-03/10-future-words.md"
+                "file": "content/post/2022-12/20-abrupt-decay.md"
               }
             }
           }
@@ -129,8 +129,8 @@
   },
   "active": "6e1aa822bb62a13b",
   "lastOpenFiles": [
-    "static/images/future-unwritten.png",
     "content/post/2023-03/10-future-words.md",
+    "static/images/future-unwritten.png",
     "content/post/2023-01/06-2022-book-list.md",
     "content/post/2016-02/01-beautiful-corsica.md",
     "content/post/2022-01/03-2021-book-list.md",
