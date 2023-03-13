@@ -7,15 +7,15 @@ author: Janik von Rotz
 # Communication
 
 [Mail](mailto:contact@janikvonrotz.ch)  
-[My public PGP key](/contact_janikvonrotz_ch_public.asc)
+[My PGP Public Key](/contact_janikvonrotz_ch_public.asc)
+[Matrix](https://matrix.to/#/@janikv:matrix.org)
 
 # Social Media
 
+[Mastodon](https://fosstodon.org/@janikvonrotz)
 [LinkedIn](https://www.linkedin.com/in/janik-Vonrotz)  
 [Hacker News](https://news.ycombinator.com/user?id=janikvonrotz)  
-[Twitter](https://twitter.com/janikvonrotz)  
 [Xing](https://www.xing.com/profile/Janik_vonRotz)  
-[Reddit](http://www.reddit.com/user/hakunamakuba/)  
 
 # Media
 
