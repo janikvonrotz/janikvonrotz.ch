@@ -13,7 +13,7 @@ images:
  - /images/firefox-treestyle-tab.png
 ---
 
-As the workspace for developers has moved almost entirely into the browser, browser extensions have become an integral part for customizing the workflow. Recently I started to the use the Tree Style addons: <https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/>
+As the workspace for developers has moved almost entirely into the browser, browser extensions have become an integral part for customizing the workflow. Recently, I started to the use the Tree Style addons: <https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/>
 
 When using this extension, the native tab bar becomes obsolete. The following part of the post is an instruction on how to hide the native tab bar (which is a bit difficult).
 
