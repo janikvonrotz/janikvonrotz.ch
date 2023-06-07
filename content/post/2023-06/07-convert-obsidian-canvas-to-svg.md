@@ -1,0 +1,262 @@
+---
+title: "Convert Obsidian canvas to SVG"
+slug: 07-convert-obsidian-canvas-to-svg
+date: 2023-06-07T09:47:45+02:00
+categories:
+ - Knowledge
+tags:
+ - obisidan
+ - svg
+ - canvas
+images:
+ - /images/obsidian-logo-old.png
+---
+
+I am using [Obsidian](https://obsidian.md/) for note taking and writing documentation. With [Canvas-Feature](https://obsidian.md/canvas) you can create simple visualizations and link notes from the vault. Here is an example:
+
+![](/images/obsidian-canvas-editor.png)
+
+As simple as it seems, there was not builtin-way to export the visualization and f.g. publish it on a website. Luckily, the canvas file is a simple JSON document and therefore can be processed pretty easy. I build a render Method in JavaScript that takes the canvas content and returns it as a SVG image.
+
+<!--more-->
+
+Here is what it a canvas file looks like:
+
+**Obsidian.canvas**
+
+```json
+{
+	"nodes":[
+		{"id":"c2b83b58ff104957","x":-150,"y":-200,"width":250,"height":60,"color":"1","type":"text","text":"Create canvas in Obsidian"},
+		{"id":"28b7d169be420aea","x":-200,"y":-80,"width":350,"height":240,"color":"#803dd1","type":"file","file":"Obsidian.md"},
+		{"type":"text","text":"Export as SVG","id":"3bbb4a8b9a8a726b","x":240,"y":10,"width":250,"height":60,"color":"5"}
+	],
+	"edges":[
+		{"id":"9a41a93da6186142","fromNode":"c2b83b58ff104957","fromSide":"bottom","toNode":"28b7d169be420aea","toSide":"top"},
+		{"id":"14fcc8b5466e0f72","fromNode":"28b7d169be420aea","fromSide":"right","toNode":"3bbb4a8b9a8a726b","toSide":"left"}
+	]
+}
+```
+
+Nodes are the rectangles in the canvas editor and edges are the arrows connecting them.
+
+With the help of JavaScript I was able to generate this SVG:
+
+**Obsidian.svg**
+
+![](/images/Obsidian.svg)
+
+The script has several methods:
+
+* **mapColor**: Maps the Obsidian color id to the actual hex color.
+* **renderRect**: Given a canvas node it renders a SVG rectangle
+* **renderArrow**: Given a canvas edge it renders a SVG line with a marker
+* **convertCanvasToSVG**: This is the main function that process the nodes and edges and calculates the position for the elements
+
+The main challenge was to calculate the actual positions of the arrows. As you can see in the canvas document the edges do not have a fixed position.
+
+```js
+function mapColor(color) {
+    colors = {
+        0: '#7e7e7e',
+        1: '#aa363d',
+        2: '#a56c3a',
+        3: '#aba960',
+        4: '#199e5c',
+        5: '#249391',
+        6: '#795fac'
+    }
+    let appliedColor = colors[0]
+    
+    if (color && (0 < color.length < 2)) {
+        appliedColor = colors[color]
+    }
+    if (color && (1 < color.length)) {
+        appliedColor = color
+    }
+    return appliedColor
+}
+```
+
+```js
+function renderRect(node) {
+    const strockWidth = 7
+    const fontWeight = 'bold'
+
+    let textOffsetX = 15
+    let textOffsetY = 30
+    let fontColor = '#2c2d2c'
+    let text = node['text']
+    let fontSize = 18
+
+    // Link markdown file
+
+    if (node['file'] && node['file'].endsWith('.md')) {
+        title = node['file'].replace('.md', '')
+        text = `<a href="/${title.toLowerCase()}.html">${title}</a>`
+        fontColor = '#9a7fee'
+        fontSize = 28
+        textOffsetX = 30
+        textOffsetY = 45
+    }
+
+    content = `\t<text x="${node['x'] + textOffsetX}" y="${node['y'] + textOffsetY}" font-family="Arial" font-size="${fontSize}" font-weight="${fontWeight}" fill="${fontColor}">${text}</text>`
+    
+    // If file is not markdown file render as image
+
+    if (node['file'] && !node['file'].endsWith('.md')) {
+        filePath = node['file']
+        content = `<image href="${gitUrl + filePath}?raw=true" x="${node['x']}" y="${node['y']}" width="${node['width']}" height="${node['height']}" clip-path="inset(0% round 15px)" />`
+        fontColor = '#9a7fee'
+    }
+
+    return `
+    \t<rect x="${node['x']}" y="${node['y']}" width="${node['width']}" height="${node['height']}" rx="15" stroke="${mapColor(node['color'])}" stroke-width="${strockWidth}" fill="none"/>\n
+    \t${content}
+    `
+}
+```
+
+```js
+function renderArrow(edge) {
+    const strockWidth = 7
+    const color = mapColor(edge['color'])
+    
+    return `
+    <marker xmlns="http://www.w3.org/2000/svg" id="triangle-${color}" viewBox="0 0 10 10" refX="0" refY="5" fill="${color}" markerUnits="strokeWidth" markerWidth="4" markerHeight="3" orient="auto">
+        <path d="M 0 0 L 10 5 L 0 10 z"/>
+    </marker>
+    \t<line x1="${edge['fromX']}" y1="${edge['fromY']}" x2="${edge['toX']}" y2="${edge['toY']}" stroke="${color}" stroke-width="${strockWidth}" marker-end="url(#triangle-${color})" />\n
+    `
+}
+```
+
+```js
+function convertCanvasToSVG(content) {
+
+    nodes = content['nodes']
+    edges = content['edges']
+
+    let svg = ""
+    svg += '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n'
+    svg += '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">\n'    
+
+    // Calculate view box position
+
+    let minX = 0
+    let minY = 0
+
+    for (const node of nodes) {
+        nodeX = node['x']
+        nodeY = node['y']
+        nodeWith = node['width']
+        nodeHeight = node['height']
+
+        if (nodeX < minX) {
+            minX = nodeX
+        }
+        if (nodeY < minY) {
+            minY = nodeY
+        }
+    }
+
+    // Caclulate view box size
+
+    let width = 0
+    let height = 0
+
+    for (const node of nodes) {
+        nodeX = node['x']
+        nodeY = node['y']
+        nodeWith = node['width']
+        nodeHeight = node['height']
+
+        nodeMaxX = Math.abs(nodeX - minX) + nodeWith
+        if (width < nodeMaxX) {
+            width = nodeMaxX
+        }
+        nodeMaxY = Math.abs(nodeY - minY) + nodeHeight
+        if (height < nodeMaxY) {
+            height = nodeMaxY
+        }
+    }
+
+    // Add view box
+
+    const spacing = 10
+    
+    svg += `<svg viewBox="${minX-spacing} ${minY-spacing} ${width+spacing*2} ${height+spacing*2}" xmlns="http://www.w3.org/2000/svg">\n`
+
+    // Render edges as lines
+
+    for (const edge of edges) {
+        const fromOffset = 5
+        const toOffset = 20
+
+        // Get start and target nodes
+
+        fromNode = nodes.filter(node => (node['id'] === edge['fromNode']))[0]
+        toNode = nodes.filter(node => (node['id'] === edge['toNode']))[0]
+        let fromX = 0
+        let fromY = 0
+        let toX = 0
+        let toY = 0
+        
+        // Calculate x and y position of arrow start
+
+        if (edge['fromSide'] === 'right') {
+            fromX = fromNode['x'] + fromNode['width'] + fromOffset
+            fromY = fromNode['y'] + fromNode['height'] / 2
+        }
+        if (edge['fromSide'] === 'bottom') {
+            fromX = fromNode['x'] + fromNode['width'] / 2 
+            fromY = fromNode['y'] + fromNode['height'] + fromOffset
+        }
+        if (edge['fromSide'] === 'left') {
+            fromX = fromNode['x'] - fromOffset
+            fromY = fromNode['y'] + fromNode['height'] / 2
+        }
+        if (edge['fromSide'] === 'top') {
+            fromX = fromNode['x'] + fromNode['width'] / 2
+            fromY = fromNode['y'] - fromOffset
+        }
+        edge['fromX'] = fromX
+        edge['fromY'] = fromY
+
+        // Calculate x and y position of arrow target        
+
+        if (edge['toSide'] === 'right') {
+            toX = toNode['x'] + toNode['width'] + toOffset
+            toY = toNode['y'] + toNode['height'] / 2
+        }
+        if (edge['toSide'] === 'bottom') {
+            toX = toNode['x'] + toNode['width'] / 2 
+            toY = toNode['y'] + toNode['height'] + toOffset
+        }
+        if (edge['toSide'] === 'left') {
+            toX = toNode['x'] - toOffset
+            toY = toNode['y'] + toNode['height'] / 2
+        }
+        if (edge['toSide'] === 'top') {
+            toX = toNode['x'] + toNode['width'] / 2
+            toY = toNode['y'] - toOffset
+        }
+        edge['toX'] = toX
+        edge['toY'] = toY
+
+        svg += renderArrow(edge)
+    }
+
+    // Render nodes as rect
+
+    for (const node of nodes) {
+        svg += renderRect(node)
+    }
+
+    svg += '</svg>'
+
+    return svg
+}
+```
+
+I am pretty sure the calculation can be done more efficiently. Nonetheless, it was a lot of fun to wrap my head around this problem.
