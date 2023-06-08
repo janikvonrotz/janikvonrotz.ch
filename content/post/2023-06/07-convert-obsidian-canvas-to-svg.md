@@ -48,9 +48,10 @@ With the help of JavaScript I was able to generate this SVG:
 
 The script has several methods:
 
-* **mapColor**: Maps the Obsidian color id to the actual hex color.
-* **renderRect**: Given a canvas node it renders a SVG rectangle
-* **renderArrow**: Given a canvas edge it renders a SVG line with a marker
+* **mapColor**: Maps the Obsidian color id to the actual hex color
+* **renderNode**: Given a canvas node it renders a SVG rectangle and either show a text, link markdown file or embeding an image
+* **renderGroup**: Renders a SVG rectrange from a canvas group
+* **renderEdge**: Given a canvas edge it renders a SVG line with a marker
 * **convertCanvasToSVG**: This is the main function that process the nodes and edges and calculates the position for the elements
 
 The main challenge was to calculate the actual positions of the arrows. As you can see in the canvas document the edges do not have a fixed position.
@@ -79,8 +80,8 @@ function mapColor(color) {
 ```
 
 ```js
-function renderRect(node) {
-    const strockWidth = 7
+function renderNode(node) {
+    const strockWidth = 4
     const fontWeight = 'bold'
 
     let textOffsetX = 15
@@ -88,6 +89,18 @@ function renderRect(node) {
     let fontColor = '#2c2d2c'
     let text = node['text']
     let fontSize = 18
+    let fontFamily = 'Roboto, Oxygen, Ubuntu, Cantarell, sans-serif'
+    
+    // Process multiline text
+
+    if (text && text.split('\n').length > 1) {
+        let spans = ''
+        for (const line of text.split('\n')) {
+            spans += `<tspan x="${node['x'] + textOffsetX}" dy="${fontSize + 3}">${line}</tspan>`
+        }
+        text = spans
+        textOffsetY = 10
+    }
 
     // Link markdown file
 
@@ -100,7 +113,7 @@ function renderRect(node) {
         textOffsetY = 45
     }
 
-    content = `\t<text x="${node['x'] + textOffsetX}" y="${node['y'] + textOffsetY}" font-family="Arial" font-size="${fontSize}" font-weight="${fontWeight}" fill="${fontColor}">${text}</text>`
+    content = `<text x="${node['x'] + textOffsetX}" y="${node['y'] + textOffsetY}" font-family="${fontFamily}" font-size="${fontSize}" font-weight="${fontWeight}" fill="${fontColor}">${text}</text>`
     
     // If file is not markdown file render as image
 
@@ -111,22 +124,41 @@ function renderRect(node) {
     }
 
     return `
-    \t<rect x="${node['x']}" y="${node['y']}" width="${node['width']}" height="${node['height']}" rx="15" stroke="${mapColor(node['color'])}" stroke-width="${strockWidth}" fill="none"/>\n
-    \t${content}
+    <rect x="${node['x']}" y="${node['y']}" width="${node['width']}" height="${node['height']}" rx="15" stroke="${mapColor(node['color'])}" stroke-width="${strockWidth}" fill="none"/>
+    ${content}
     `
 }
 ```
 
 ```js
-function renderArrow(edge) {
-    const strockWidth = 7
+function renderGroup(group) {
+    const strockWidth = 4
+    const fontWeight = 'bold'
+
+    let textOffsetX = 15
+    let textOffsetY = -15
+    let fontColor = '#2c2d2c'
+    let text = group['label']
+    let fontSize = 24
+    let fontFamily = 'Roboto, Oxygen, Ubuntu, Cantarell, sans-serif'
+
+    return `
+    <rect x="${group['x']}" y="${group['y']}" width="${group['width']}" height="${group['height']}" rx="30" stroke="${mapColor(group['color'])}" stroke-width="${strockWidth}" fill="none"/>
+    <text x="${group['x'] + textOffsetX}" y="${group['y'] + textOffsetY}" font-family="${fontFamily}" font-size="${fontSize}" font-weight="${fontWeight}" fill="${fontColor}">${text}</text>
+    `
+}
+```
+
+```js
+function renderEdge(edge) {
+    const strockWidth = 5
     const color = mapColor(edge['color'])
     
     return `
-    <marker xmlns="http://www.w3.org/2000/svg" id="triangle-${color}" viewBox="0 0 10 10" refX="0" refY="5" fill="${color}" markerUnits="strokeWidth" markerWidth="4" markerHeight="3" orient="auto">
+    <marker xmlns="http://www.w3.org/2000/svg" id="triangle-${color}" viewBox="0 0 10 10" refX="1" refY="5" fill="${color}" markerUnits="strokeWidth" markerWidth="3" markerHeight="3" orient="auto">
         <path d="M 0 0 L 10 5 L 0 10 z"/>
     </marker>
-    \t<line x1="${edge['fromX']}" y1="${edge['fromY']}" x2="${edge['toX']}" y2="${edge['toY']}" stroke="${color}" stroke-width="${strockWidth}" marker-end="url(#triangle-${color})" />\n
+    <line x1="${edge['fromX']}" y1="${edge['fromY']}" x2="${edge['toX']}" y2="${edge['toY']}" stroke="${color}" stroke-width="${strockWidth}" marker-end="url(#triangle-${color})" />
     `
 }
 ```
@@ -183,15 +215,15 @@ function convertCanvasToSVG(content) {
 
     // Add view box
 
-    const spacing = 10
+    const spacing = 50
     
     svg += `<svg viewBox="${minX-spacing} ${minY-spacing} ${width+spacing*2} ${height+spacing*2}" xmlns="http://www.w3.org/2000/svg">\n`
 
     // Render edges as lines
 
     for (const edge of edges) {
-        const fromOffset = 5
-        const toOffset = 20
+        const fromOffset = 3
+        const toOffset = 15
 
         // Get start and target nodes
 
@@ -244,14 +276,21 @@ function convertCanvasToSVG(content) {
         edge['toX'] = toX
         edge['toY'] = toY
 
-        svg += renderArrow(edge)
+        svg += renderEdge(edge)
     }
 
     // Render nodes as rect
 
-    for (const node of nodes) {
-        svg += renderRect(node)
+    for (const node of nodes.filter(node => (['text', 'file'].includes(node['type'])))) {
+        svg += renderNode(node)
     }
+
+    // Render group as rect
+
+    for (const group of nodes.filter(node => (node['type'] === 'group'))) {
+        svg += renderGroup(group)
+    }
+
 
     svg += '</svg>'
 
