@@ -138,12 +138,13 @@ function renderGroup(group) {
     let textOffsetX = 15
     let textOffsetY = -15
     let fontColor = '#2c2d2c'
+    let fillColor = '#fbfbfb'
     let text = group['label']
     let fontSize = 24
     let fontFamily = 'Roboto, Oxygen, Ubuntu, Cantarell, sans-serif'
 
     return `
-    <rect x="${group['x']}" y="${group['y']}" width="${group['width']}" height="${group['height']}" rx="30" stroke="${mapColor(group['color'])}" stroke-width="${strockWidth}" fill="none"/>
+    <rect x="${group['x']}" y="${group['y']}" width="${group['width']}" height="${group['height']}" rx="30" stroke="${mapColor(group['color'])}" stroke-width="${strockWidth}" fill="${fillColor}"/>
     <text x="${group['x'] + textOffsetX}" y="${group['y'] + textOffsetY}" font-family="${fontFamily}" font-size="${fontSize}" font-weight="${fontWeight}" fill="${fontColor}">${text}</text>
     `
 }
@@ -219,11 +220,17 @@ function convertCanvasToSVG(content) {
     
     svg += `<svg viewBox="${minX-spacing} ${minY-spacing} ${width+spacing*2} ${height+spacing*2}" xmlns="http://www.w3.org/2000/svg">\n`
 
+	// Render group as rect
+
+    for (const group of nodes.filter(node => (node['type'] === 'group'))) {
+        svg += renderGroup(group)
+    }
+    
     // Render edges as lines
 
     for (const edge of edges) {
-        const fromOffset = 3
-        const toOffset = 15
+        const fromOffset = 1
+        const toOffset = 12
 
         // Get start and target nodes
 
@@ -284,13 +291,6 @@ function convertCanvasToSVG(content) {
     for (const node of nodes.filter(node => (['text', 'file'].includes(node['type'])))) {
         svg += renderNode(node)
     }
-
-    // Render group as rect
-
-    for (const group of nodes.filter(node => (node['type'] === 'group'))) {
-        svg += renderGroup(group)
-    }
-
 
     svg += '</svg>'
 
