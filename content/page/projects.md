@@ -7,6 +7,10 @@ disable_comments: true
 
 This is a collection of projects by year since I came in touch with IT. It is supposed to be a showcase of my abilities and experience.
 
+**2022**
+
+[odoo-wiki.org](https://www.odoo-wiki.org/) - An extensive documentation for Odoo users.
+
 **2021**
 
 [encrypt.casa](https://encrypt.casa) - Python course about cryptography and encryption. Built with Obsidian and Vuepress.
@@ -19,9 +23,9 @@ This is a collection of projects by year since I came in touch with IT. It is su
 
 [Hugo new.css theme](https://github.com/janikvonrotz/hugo-new-css-theme) - This hugo theme is made from vanilla html and the default [new.css](https://newcss.net/).
 
-[Ansible Playbooks](https://github.com/Mint-System/Ansible-Playbooks) - Collection of Ansible playbooks and roles.
+[Ansible Build](https://ansible.build) - Collection of Ansible playbooks and roles.
 
-[Odoo Development](https://github.com/Mint-System/Odoo-Development) - Setup Odoo development environment with Docker Compose.
+[Odoo Build](https://odoo.build) - Setup Odoo development environment with Docker Compose.
 
 [Sauna Lorrainebad App](https://github.com/janikvonrotz/sauna-lorrainebad) - React native app for Sauna Lorrainebad.
 

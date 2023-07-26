@@ -1,6 +1,6 @@
 ---
 title: "Convert Obsidian canvas to SVG"
-slug: 07-convert-obsidian-canvas-to-svg
+slug: convert-obsidian-canvas-to-svg
 date: 2023-06-07T09:47:45+02:00
 categories:
  - Knowledge

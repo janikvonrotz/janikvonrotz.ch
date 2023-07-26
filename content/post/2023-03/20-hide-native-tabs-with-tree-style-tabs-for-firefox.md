@@ -1,6 +1,6 @@
 ---
 title: "Hide native tabs with Tree Style tabs for Firefox"
-slug: 20-hide-native-tabs-with-tree-style-tabs-for-firefox
+slug: hide-native-tabs-with-tree-style-tabs-for-firefox
 date: 2023-03-20T17:15:22+01:00
 categories:
   - Web development
