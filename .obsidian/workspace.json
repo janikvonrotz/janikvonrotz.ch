@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/page/projects.md",
+                "file": "content/post/2023-06/07-convert-obsidian-canvas-to-svg.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/page/projects.md",
+                "file": "content/post/2023-06/07-convert-obsidian-canvas-to-svg.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/page/projects.md"
+                "file": "content/post/2023-06/07-convert-obsidian-canvas-to-svg.md"
               }
             }
           }
@@ -136,6 +136,7 @@
   },
   "active": "6fa7d199f0d02cd1",
   "lastOpenFiles": [
+    "content/page/projects.md",
     "content/post/2023-07/26-noise-cancelling.md",
     "content/post/2022-07/13-die-gesellschaft-von-morgen.md",
     "content/post/2022-06/08-odoo-development-show-last-updated-date-above-list-view.md",

@@ -83,26 +83,43 @@ function mapColor(color) {
 function renderNode(node) {
     const strockWidth = 4
     const fontWeight = 'bold'
+    const fontFamily = 'Roboto, Oxygen, Ubuntu, Cantarell, sans-serif'
 
     let textOffsetX = 15
-    let textOffsetY = 30
+    let textOffsetY = 0
     let fontColor = '#2c2d2c'
-    let text = node['text']
-    let fontSize = 18
-    let fontFamily = 'Roboto, Oxygen, Ubuntu, Cantarell, sans-serif'
-    
-    // Process multiline text
+    let fontSize = 15
+    let content = ''
 
-    if (text && text.split('\n').length > 1) {
-        let spans = ''
-        for (const line of text.split('\n')) {
-            spans += `<tspan x="${node['x'] + textOffsetX}" dy="${fontSize + 3}">${line}</tspan>`
-        }
-        text = spans
-        textOffsetY = 10
+    // Render default text
+
+    if (node['text']) {
+        content = `
+        <style>
+            p {
+                font-family: ${fontFamily};
+                font-size: ${fontSize}px;
+                color: ${fontColor};
+            }
+        </style>
+        <foreignObject x="${node['x'] + textOffsetX}" y="${node['y'] + textOffsetY}" width="${node['width'] - textOffsetX*2}" height="${node['height'] - textOffsetY*2}">
+        <p xmlns="http://www.w3.org/1999/xhtml" class="${node['id']}">${node['text']}</p>
+        </foreignObject>
+        `
     }
 
-    // Link markdown file
+    // Render multiline text
+
+    if (node['text'] && node['text'].split('\n').length > 1) {
+        let spans = ''
+        for (const line of node['text'].split('\n')) {
+            spans += `<tspan x="${node['x'] + textOffsetX}" dy="${fontSize + 3}">${line}</tspan>`
+        }
+        textOffsetY = 10
+        content = `<text x="${node['x'] + textOffsetX}" y="${node['y'] + textOffsetY}" font-family="${fontFamily}" fill="${fontColor}">${spans}</text>`
+    }
+
+    // Render linked markdown file
 
     if (node['file'] && node['file'].endsWith('.md')) {
         title = node['file'].replace('.md', '')
@@ -111,15 +128,18 @@ function renderNode(node) {
         fontSize = 28
         textOffsetX = 30
         textOffsetY = 45
+        content = `<text x="${node['x'] + textOffsetX}" y="${node['y'] + textOffsetY}" font-family="${fontFamily}" font-size="${fontSize}" font-weight="${fontWeight}" fill="${fontColor}">${text}</text>`
     }
-
-    content = `<text x="${node['x'] + textOffsetX}" y="${node['y'] + textOffsetY}" font-family="${fontFamily}" font-size="${fontSize}" font-weight="${fontWeight}" fill="${fontColor}">${text}</text>`
     
-    // If file is not markdown file render as image
+    // Render image
 
     if (node['file'] && !node['file'].endsWith('.md')) {
         filePath = node['file']
-        content = `<image href="${gitUrl + filePath}?raw=true" x="${node['x']}" y="${node['y']}" width="${node['width']}" height="${node['height']}" clip-path="inset(0% round 15px)" />`
+
+        const base64_content = fs.readFileSync(filePath, "base64")
+        extension = path.extname(filePath).replace('.', '')
+
+        content = `<image href="${`data:image/{extension};base64,${base64_content}`}" x="${node['x']}" y="${node['y']}" width="${node['width']}" height="${node['height']}" clip-path="inset(0% round 15px)" />`
         fontColor = '#9a7fee'
     }
 
@@ -134,6 +154,7 @@ function renderNode(node) {
 function renderGroup(group) {
     const strockWidth = 4
     const fontWeight = 'bold'
+    const fontFamily = 'Roboto, Oxygen, Ubuntu, Cantarell, sans-serif'
 
     let textOffsetX = 15
     let textOffsetY = -15
@@ -141,7 +162,6 @@ function renderGroup(group) {
     let fillColor = '#fbfbfb'
     let text = group['label']
     let fontSize = 24
-    let fontFamily = 'Roboto, Oxygen, Ubuntu, Cantarell, sans-serif'
 
     return `
     <rect x="${group['x']}" y="${group['y']}" width="${group['width']}" height="${group['height']}" rx="30" stroke="${mapColor(group['color'])}" stroke-width="${strockWidth}" fill="${fillColor}"/>
@@ -157,6 +177,9 @@ function renderEdge(edge) {
     const color = mapColor(edge['color'])
     const fromSide = edge['fromSide']
     const toSide = edge['toSide']
+    const fontFamily = 'Roboto, Oxygen, Ubuntu, Cantarell, sans-serif'
+    const fontColor = '#2c2d2c'
+
     let marker = `marker-end="url(#arrow-end-${id})"`
     let fromOffset = 1
     let toOffset = 11
@@ -164,7 +187,10 @@ function renderEdge(edge) {
     let fromY = edge['fromY']
     let toX = edge['toX']
     let toY = edge['toY']
-    
+    let label = ''
+
+    // Set arrow marker
+
     if(edge['fromEnd'] === 'arrow') {
         marker = `marker-end="url(#arrow-end-${id})" marker-start="url(#arrow-start-${id})"`
         fromOffset = 11
@@ -173,6 +199,9 @@ function renderEdge(edge) {
         marker = ''
         toOffset = 1
     }
+
+    // Calculate position with offset
+
     if (fromSide === 'right') {
         fromX += fromOffset
     }
@@ -198,6 +227,31 @@ function renderEdge(edge) {
         toY -= toOffset
     }
 
+    // Add label if is set
+
+    if(edge['label']) {
+        
+        // Calculate position with offset
+        let labelLength = edge['label'].length*4
+        let labelX = fromX - labelLength
+        let labelY = fromY
+
+        if (toX > fromX) {
+            labelX += Math.abs((fromX-toX)/2)
+        }
+        if (toY > fromY) {
+            labelY += Math.abs((fromY-toY)/2)
+        }
+        if (toX < fromX) {
+            labelX -= Math.abs((toX-fromY)/2)
+        }
+        if (toY < fromY) {
+            labelY -= Math.abs((toY-fromY)/2)
+        }
+
+        label = content = `<text x="${labelX}" y="${labelY}" font-family="${fontFamily}" fill="${fontColor}">${edge['label']}</text>`
+    }
+
     return `
     <marker xmlns="http://www.w3.org/2000/svg" id="arrow-end-${id}" viewBox="0 0 10 10" refX="1" refY="5" fill="${color}" markerUnits="strokeWidth" markerWidth="3" markerHeight="3" orient="auto">
         <path d="M 0 0 L 7 5 L 0 10 z"/>
@@ -206,6 +260,7 @@ function renderEdge(edge) {
         <path d="M 0 0 L -7 -5 L -0 -10 z"/>
     </marker>
     <line x1="${fromX}" y1="${fromY}" x2="${toX}" y2="${toY}" stroke="${color}" stroke-width="${strockWidth}" ${marker} />
+    ${label}
     `
 }
 ```
