@@ -17,7 +17,7 @@ And here is the full 2022 book list:
 
 <!--more-->
 
-![](../../../static/images/Pasted%20image%2020240101172714.png)
+![](/images/Pasted%20image%2020240101172714.png)
 
 Title: Valuable Humans in Transit and Other Stories\
 Author: qntm\
@@ -25,7 +25,7 @@ Comment: Fascinating sci-fi short stories.\
 Rating: 8/10\
 Finished: 2023-01-04
 
-![](../../../static/images/9783257609912.png)
+![](/images/9783257609912.png)
 
 Title: Allmen und der Koi\
 Author: Suter, Martin\
@@ -34,7 +34,7 @@ Rating: 7/10\
 ISBN: 9783257609912\
 Finished: 2023-01-24
 
-![](../../../static/images/9781529051964.png)
+![](/images/9781529051964.png)
 
 Title: Eyes of the Void\
 Series: The Final Architecture #2\
@@ -44,7 +44,7 @@ Rating: 8/10\
 ISBN: 9781529051964\
 Finished: 2023-03-01
 
-![](../../../static/images/9781857989984.png)
+![](/images/9781857989984.png)
 
 Title: Non-stop\
 Author: Aldiss, Brian Wilson\
@@ -53,7 +53,7 @@ Rating: X/10\
 ISBN: 9781857989984\
 Finished: 2023-03-07
 
-![](../../../static/images/9781504053709.png)
+![](/images/9781504053709.png)
 
 Title: Tau Zero\
 Author: Anderson, Poul\
@@ -62,7 +62,7 @@ Rating: 7/10\
 ISBN: 9781504053709\
 Finished: 2023-03-21
 
-![](../../../static/images/9781590177051.png)
+![](/images/9781590177051.png)
 
 Title: Inverted World\
 Author: Priest, Christopher\
@@ -71,7 +71,7 @@ Rating: 8/10\
 ISBN: 9781590177051\
 Finished: 2023-04-10
 
-![](../../../static/images/9783518471456.png)
+![](/images/9783518471456.png)
 
 Title: The Futurological Congress\
 Author: Lem, Stanislaw\
@@ -80,7 +80,7 @@ Rating: 10/10\
 ISBN: 9783518471456\
 Finished: 2023-04-26
 
-![](../../../static/images/9780156837507.png)
+![](/images/9780156837507.png)
 
 Title: Solaris\
 Author: Lem, Stanisław\
@@ -89,7 +89,7 @@ Rating: 9/10\
 ISBN: 9780156837507\
 Finished: 2023-05-19
 
-![](../../../static/images/9783751805643.png)
+![](/images/9783751805643.png)
 
 Title: Die Krise der Narration\
 Author: Han, Byung-Chul\
@@ -98,7 +98,7 @@ Rating: 6/10\
 ISBN: 9783751805643\
 Finished: 2023-05-20
 
-![](../../../static/images/9783466373031.png)
+![](/images/9783466373031.png)
 
 Title: Demokratie braucht Religion\
 Author: Rosa, Hartmut\
@@ -107,7 +107,7 @@ Rating: 6/10\
 ISBN: 9783466373031\
 Finished: 2023-05-21
 
-![](../../../static/images/9780575077331.png)
+![](/images/9780575077331.png)
 
 Title: Rendezvous with Rama\
 Author: Clarke, Arthur C.\
@@ -116,7 +116,7 @@ Rating: 9/10\
 ISBN: 9780575077331\
 Finished: 2023-07-09
 
-![](../../../static/images/9783257613100.png)
+![](/images/9783257613100.png)
 Title: Going Zero\
 Author: McCarten, Anthony\
 Comment: A story about surveillance capitalism in the hand of a megalomaniac and genius girl going against it. The characters are a bit dull at the beginning, but get better to the end.\
@@ -124,7 +124,7 @@ Rating: 6/10\
 ISBN: 9783257613100\
 Finished: 2023-07-19
 
-![](../../../static/images/9781982154103.png)
+![](/images/9781982154103.png)
 
 Title: Corruptible\
 Author: Klaas, Brian\
@@ -133,7 +133,7 @@ Rating: 8/10\
 ISBN: 9781982154103\
 Finished: 2023-08-10
 
-![](../../../static/images/9780358447849.png)
+![](/images/9780358447849.png)
 
 Title: Wool\
 Series: Silo #1\
@@ -143,7 +143,7 @@ Rating: 8/10\
 ISBN: 9780358447849\
 Finished: 2023-08-27
 
-![](../../../static/images/9781448151639.png)
+![](/images/9781448151639.png)
 
 Title: First Shift: Legacy\
 Series: Silo #2\
@@ -153,7 +153,7 @@ Rating: 8/10\
 ISBN: 9781448151639\
 Finished: 2023-09-16
 
-![](../../../static/images/9781490904382.png)
+![](/images/9781490904382.png)
 
 Title: Dust\
 Series: Silo #3\
@@ -163,7 +163,7 @@ Rating: 8/10\
 ISBN: 9781490904382\
 Finished: 2023-10-05
 
-![](../../../static/images/9780451528520.png)
+![](/images/9780451528520.png)
 
 Title: The Invisible Man\
 Author: Wells, HG\
