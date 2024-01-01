@@ -49,7 +49,7 @@ Finished: 2023-03-01
 Title: Non-stop\
 Author: Aldiss, Brian Wilson\
 Comment: Started to read the SF Masterworks collection and was not disappointed. A very intruiging read. You will not know the twist until the very end.\
-Rating: X/10\
+Rating: 8/10\
 ISBN: 9781857989984\
 Finished: 2023-03-07
 
@@ -102,7 +102,7 @@ Finished: 2023-05-20
 
 Title: Demokratie braucht Religion\
 Author: Rosa, Hartmut\
-Comment: I learned about Rosa Hartmut from philosoph talk show. I elaborated his ideas about experiencing resonance. A very interesting take on how to live fulfilling and happy life. However, this short novel seems to be out-of-bounds from his usual talks and writings.\
+Comment: I learned about Rosa Hartmut from philosoph talk show. He elaborated his ideas about experiencing resonance. A very interesting take on how to live fulfilling and happy life. However, this short novel seems to be out-of-bounds from his usual talks and writings.\
 Rating: 6/10\
 ISBN: 9783466373031\
 Finished: 2023-05-21
