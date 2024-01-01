@@ -4,34 +4,239 @@
     "type": "split",
     "children": [
       {
-        "id": "4f27e0489a61a1b5",
+        "id": "9fd6aa12bf554364",
         "type": "tabs",
         "children": [
           {
-            "id": "6fa7d199f0d02cd1",
+            "id": "2e9f3c8353bcebcb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/2023-06/07-convert-obsidian-canvas-to-svg.md",
+                "file": "content/post/2024-01/01-2023-book-list.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2dc85df0c180b1f3",
+            "id": "30cc68537f394b26",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/2022-07/13-die-gesellschaft-von-morgen.md",
+                "file": "content/post/2024-01/01-2023-book-list.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "70a33e9126e282e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2024-01/01-2023-book-list.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "54b1f90706525dc8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2024-01/01-2023-book-list.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7a5b7e5c1a8688a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2024-01/01-2023-book-list.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ce8a7871d206b424",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2024-01/01-2023-book-list.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "07a93aefa92432bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2024-01/01-2023-book-list.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "000957d6889a8102",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2024-01/01-2023-book-list.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dccdfcd39f17911a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2024-01/01-2023-book-list.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "82c92898d325c645",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2024-01/01-2023-book-list.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d359f82e0590456f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2024-01/01-2023-book-list.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ae878c42679443a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2024-01/01-2023-book-list.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8019e574e6a6358b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2024-01/01-2023-book-list.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "71a92244fc97cc3d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2024-01/01-2023-book-list.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d7f0ba49e16e8fc6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2024-01/01-2023-book-list.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0b0521bd7348f7a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2024-01/01-2023-book-list.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "41a7b54101b8afd8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2024-01/01-2023-book-list.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7dc89e01aa5d3ba1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2024-01/01-2023-book-list.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5825db3a263eb533",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2023-01/06-2022-book-list.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 17
       }
     ],
     "direction": "vertical"
@@ -60,7 +265,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "exection",
+                "query": "tag:#book",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +302,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/2023-06/07-convert-obsidian-canvas-to-svg.md",
+                "file": "content/post/2024-01/01-2023-book-list.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +319,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/post/2023-06/07-convert-obsidian-canvas-to-svg.md"
+                "file": "content/post/2024-01/01-2023-book-list.md"
+              }
+            }
+          },
+          {
+            "id": "5f232f4c6dc19da6",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
               }
             }
           }
@@ -134,26 +349,41 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "6fa7d199f0d02cd1",
+  "active": "7dc89e01aa5d3ba1",
   "lastOpenFiles": [
+    "static/images/9780451528520.png",
+    "content/post/2024-01/01-2023-book-list.md",
+    "static/images/9781490904382.png",
+    "static/images/9781448151639.png",
+    "static/images/9781982154103.png",
+    "static/images/9780358447849.png",
+    "static/images/9783257613100.png",
+    "static/images/9780575077331.png",
+    "static/images/9783466373031.png",
+    "static/images/9783751805643.png",
+    "static/images/9780156837507.png",
+    "content/post/2023-01/06-2022-book-list.md",
+    "content/post/2022-01/03-2021-book-list.md",
+    "content/post/2020-12/21-2020-book-list.md",
+    "content/page/about.md",
+    "tags/book.md",
+    "tags",
+    "content/post/2019-06/06-another-vim-cheat-sheet.md",
+    "content/post/2024-01",
+    "content/post/2020-10/20-openid-connect-with-nextcloud-and-keycloak.md",
+    "content/post/2022-07/13-die-gesellschaft-von-morgen.md",
+    "content/post/2023-06/07-convert-obsidian-canvas-to-svg.md",
     "content/page/projects.md",
     "content/post/2023-07/26-noise-cancelling.md",
-    "content/post/2022-07/13-die-gesellschaft-von-morgen.md",
     "content/post/2022-06/08-odoo-development-show-last-updated-date-above-list-view.md",
     "content/post/2022-09/27-müdigkeitsgesellschaft.md",
     "content/post/2022-10/03-ueber-besitz-und-leistung.md",
-    "content/post/2023-06/07-convert-obsidian-canvas-to-svg.md",
     "content/post/2023-03/20-hide-native-tabs-with-tree-style-tabs-for-firefox.md",
-    "content/post/2023-01/06-2022-book-list.md",
     "content/post/2023-03/10-future-words.md",
-    "static/images/noice-cancelling.png",
     "content/post/2023-07",
-    "static/images/talking-wall.jpg",
     "content/post/2022-09/26-odoo-development-tree-view-with-custom-styles.md",
-    "static/images/Byung-Chul-Han.png",
     "content/post/2022-03/25-manage-python-versions-with-pyenv.md",
     "content/post/2021-11/25-git-cheat-sheet.md",
-    "content/post/2022-08/17-get-public-ip-with-curl.md",
-    "static/wp-content/uploads/2013/08/Linux-Logo.jpg"
+    "content/post/2022-08/17-get-public-ip-with-curl.md"
   ]
 }
