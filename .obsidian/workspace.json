@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "87a333ce4c2bb10c",
+        "id": "748532018126d238",
         "type": "tabs",
         "children": [
           {
-            "id": "79858e16db081aee",
+            "id": "a1df7dae5cb29c86",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/post/2020-11/11-tmux-cheat-sheet.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/2020-11/11-tmux-cheat-sheet.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,9 +96,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "content/post/2020-11/11-tmux-cheat-sheet.md"
-              }
+              "state": {}
             }
           },
           {
@@ -134,8 +127,9 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "79858e16db081aee",
+  "active": "a1df7dae5cb29c86",
   "lastOpenFiles": [
+    "content/post/2020-11/11-tmux-cheat-sheet.md",
     "content/post/2023-01/06-2022-book-list.md",
     "content/post/2024-01/01-2023-book-list.md",
     "images/9780061801884.png.md",
