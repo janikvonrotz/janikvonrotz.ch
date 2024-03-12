@@ -47,6 +47,12 @@ Close window.
 Select window.  
 <kbd>ctrl + b</kbd> <kbd>[0-9]</kbd>
 
+List windows.  
+`ctrl + b w`
+
+Enter window index.  
+`ctrl + b '`
+
 ## Pane
 Split vertically.  
 <kbd>ctrl + b</kbd> <kbd>%</kbd>
