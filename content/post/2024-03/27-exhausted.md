@@ -10,7 +10,7 @@ tags:
   - stress
 images:
   - /images/stress.png
-draft: true
+draft: false
 ---
 I felt very exhausted. I thought of it as normal and hoped for the better until I hit a wall. Being employed to think and to care can become a quite burden over time. I thought about "stress" a lot and would like to share my learnings:
 
