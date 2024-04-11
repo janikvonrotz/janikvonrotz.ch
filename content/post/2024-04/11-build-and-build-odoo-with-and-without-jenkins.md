@@ -75,7 +75,7 @@ This docker compose file is templated in the deployment step. As you can see the
 
 **odoo.conf.template**
 
-```
+```ini
 [options]
 addons_path = /mnt/extra-addons
 data_dir = /var/lib/odoo
@@ -176,7 +176,7 @@ This is a copy of the Odoo entrypoint script, but with an `auto_envsubst` functi
 
 **Dockerfile**
 
-```
+```bash
 ARG ODOO_IMAGE
 
 FROM $ODOO_IMAGE
@@ -200,7 +200,7 @@ The new entrypoint script and the Odoo conf template is copied during the build 
 
 **.dockerignore**
 
-```
+```bash
 **
 !extra-addons
 !odoo.conf.template
