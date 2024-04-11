@@ -12,7 +12,6 @@ images:
   - /images/odoo_development.jpg
 draft: false
 ---
-
 Jenkins is a popular but outdated CI/CD system. Compared to modern CI/CD systems such as GitHub Actions or GitLab Workflows, Jenkins does not deliver on containerization. As Docker containers are high in demand for building and hosting applications Jenkins has to go some extra miles. Nontheless, Jenkins is yet the only self-hostable feature-rich CI/CD solution. For a project I went with Jenkins to deploy a multi-stage Odoo envrionment.
 
 In this post I would like to present the main parts of the final project such as the Docker setup or the Jenkins pipeline. An important goal was that the deployment can be done without Jenkins.
