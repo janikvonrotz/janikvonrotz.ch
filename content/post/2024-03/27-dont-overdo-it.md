@@ -20,13 +20,13 @@ Being employed to think and to care can become a quite burden over time. I thoug
 
 **Experience**
 
-Hit the wall as early as possible.
-
-The time to recover is more or less the same time that you got you there.
+Hit the wall as early as possible. Or know your limits.
 
 A mental "rubber wall" prevents exhaustive thoughts.
 
 Make sure to know what gives you energy and what drains it. A net positive is a must.
+
+The time to recover is a time for reflection.
 
 **Biology**
 
