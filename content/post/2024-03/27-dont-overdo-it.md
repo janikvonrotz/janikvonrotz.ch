@@ -1,6 +1,6 @@
 ---
-title: Exhausted
-slug: exhausted
+title: Don't overdo it
+slug: dont-overdo-it
 date: 2024-03-27T16:31:22+01:00
 categories:
   - Thoughts
@@ -9,10 +9,12 @@ tags:
   - management
   - stress
 images:
-  - /images/stress.png
+  - /images/talking-wall.jpg
 draft: false
 ---
-I felt very exhausted. I thought of it as normal and hoped for the better until I hit a wall. Being employed to think and to care can become a quite burden over time. I thought about "stress" a lot and would like to share my learnings:
+Being employed to think and to care can become a quite burden over time. I thought about "stress" a lot and would like to share my learnings:
+
+*Edit 2024-04-11: I updated the title and image, it felt too negative.*
 
 <!--more-->
 
@@ -22,7 +24,7 @@ Hit the wall as early as possible.
 
 The time to recover is more or less the same time that you got you there.
 
-A mental rubber wall prevents invasive thoughts.
+A mental rubber wall prevents thoughts.
 
 Make sure to know what gives you energy and what drains it. A net positive is a must.
 
