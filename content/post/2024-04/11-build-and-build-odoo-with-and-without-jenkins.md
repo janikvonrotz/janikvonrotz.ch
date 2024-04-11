@@ -75,7 +75,7 @@ This docker compose file is templated in the deployment step. As you can see the
 
 **odoo.conf.template**
 
-```ini
+```bash
 [options]
 addons_path = /mnt/extra-addons
 data_dir = /var/lib/odoo
