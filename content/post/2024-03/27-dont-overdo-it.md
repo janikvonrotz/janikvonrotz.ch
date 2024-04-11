@@ -24,7 +24,7 @@ Hit the wall as early as possible.
 
 The time to recover is more or less the same time that you got you there.
 
-A mental rubber wall prevents thoughts.
+A mental "rubber wall" prevents exhaustive thoughts.
 
 Make sure to know what gives you energy and what drains it. A net positive is a must.
 
@@ -32,7 +32,7 @@ Make sure to know what gives you energy and what drains it. A net positive is a 
 
 As a species, we share the human psyche like our skeleton. The mental processes are mostly the same.
 
-When working physically you become tired. When working mentally you don't.
+When working physically you become tired. When working mentally you don't. Having idle times is important
 
 Biologically we fail to handle constant stress. We adapt continuously until the body revolts. Very much like the [boiling frog](https://en.wikipedia.org/wiki/Boiling_frog)
 
