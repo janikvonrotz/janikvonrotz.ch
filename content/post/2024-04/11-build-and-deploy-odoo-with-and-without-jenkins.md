@@ -186,13 +186,11 @@ RUN apt-get update && \
 apt-get install -y --no-install-recommends \
 gettext
 
+RUN python -m pip install prometheus-client astor fastapi python-multipart ujson a2wsgi parse-accept-language pyjwt python-jose
+
+COPY ./odoo.conf.template /etc/odoo/
+
 USER odoo
-
-COPY ./build/odoo.conf.template /etc/odoo/
-
-COPY ./build/entrypoint.sh /
-
-RUN pip3 install prometheus-client
 ```
 
 The new entrypoint script and the Odoo conf template is copied during the build step.
@@ -220,17 +218,24 @@ if [[ -a ".env" ]]; then
     export $(cat .env | sed 's/^#.*//g' | xargs)
 fi
 
-: "${GIT_HASH=$(git rev-parse --short HEAD)}"
+# Static env vars
+
+ODOO_IMAGE=example/odoo:16.0.2024.0405
+DOCKER_REGISTRY=example
+DOCKER_TAG=odoo:16.0
+DOCKER_USERNAME=example
+DEPLOY_TARGET=server.example.com
+DOCKER_NETWORK="example.com"
+PGHOST=postgres01
+PGUSER=odoo
+
+# Dynamic env vars
+
 : "${BRANCH:=${GIT_BRANCH##origin/}}"
 : "${BRANCH:=$(git symbolic-ref --short -q HEAD)}"
-: "${BUILD_ID:=$GIT_HASH}"
-: "${DOCKER_TAG:=odoo:16.0}"
 : "${SERVICE_NAME:=odoo-$BRANCH}"
-: "${DOCKER_NETWORK:=example.com}"
 : "${DEPLOY_USERNAME:=$USERNAME}"
 : "${VOLUME_NAME:=$SERVICE_NAME}"
-: "${ARTIFACT:=odoo-cd-$GIT_HASH}"
-: "${ARTIFACT:=odoo-cd-$GIT_HASH}"
 : "${LOG_LEVEL:=warn}"
 [[ "integration,development" =~ $ENVIRONMENT ]] && { LOG_LEVEL=debug; }
 
@@ -240,19 +245,28 @@ function help() {
     echo
     echo "commands:"
     echo
-    cat << EOF
-| command   | option  | description                     |
-| --------- | ------- | ------------------------------- |
-| all       |         | Run all tasks.                  |
-| version   |         | Show version of required tools. |
-| submodule |         | Checkout all git submodules.    |
-| prepare   |         | Find and copy all Odoo modules. |
-| build     |         | Build Docker image.             |
-| publish   |         | Publish Docker image.           |
-| deploy    |         | Deploy Docker image.            |
-| init      |         | Init database on container.     |
-| cleanup   |         | Cleanup workspace.              |
-EOF
+
+    # Define column widths
+    cmd_width=10
+    opt_width=6
+    desc_width=32
+
+    # Print table header
+    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "Command" "Option" "Description"
+    echo "|$(printf '%*s' $((cmd_width + 2)) '' | tr ' ' '-')|$(printf '%*s' $((opt_width + 2)) '' | tr ' ' '-')|$(printf '%*s' $((desc_width + 2)) '' | tr ' ' '-')|"
+
+    # Print table rows
+    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "all" "" "Run all tasks."
+    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "version" "" "Show version of required tools."
+    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "submodule" "" "Checkout all git submodules."
+    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "prepare" "" "Find and copy all Odoo modules."
+    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "build" "" "Build Docker image."
+    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "publish" "" "Publish Docker image."
+    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "deploy" "" "Deploy Docker image."
+    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "init" "" "Init database on container."
+    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "cleanup" "" "Cleanup workspace."
+    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "handler" "" "Checkout submodule reference."
+
     echo
 }
 
@@ -307,7 +321,7 @@ function prepare() {
 }
 
 function build() {
-    echo "Run Docker build $BUILD_ID with arg $ODOO_IMAGE"
+    echo "Build Docker image"
     docker build . --build-arg ODOO_IMAGE="$ODOO_IMAGE" -t "$DOCKER_REGISTRY"/"$DOCKER_TAG"
 }
 
@@ -473,17 +487,9 @@ pipeline {
     agent any
 
     environment {
-        ODOO_IMAGE = 'odoo@sha256:7f6185af13681be1acafe491510e48584ac51a2bbda0cd322196b02ba4da6bf9'
-        
-        DOCKER_REGISTRY = 'example'
-        DOCKER_USERNAME = 'example'
         DOCKER_PASSWORD = credentials('docker-password')
-        
-        DEPLOY_TARGET = 'server.example.com'
-        DEPLOY_USERNAME = 'eample-git-bot'
-        PGHOST = 'postgres01'
-        PGUSER = 'odoo'
         PGPASSWORD = credentials('odoo-pgpassword')
+        DEPLOY_USERNAME = 'eample-git-bot'
     }
     
     stages {
@@ -573,16 +579,9 @@ ANONYMIZE=false
 BRANCH=dev
 ODOO_BASE_URL=https://odoo-dev.example.com
 
-ODOO_IMAGE=odoo@sha256:9b0eae5f92d511274b0f770bb01e09af24dec4a8316300e01a74411ecf5a6ffd
-
-DOCKER_REGISTRY=example.com
-DOCKER_USERNAME=example.com
 DOCKER_PASSWORD=
-
-DEPLOY_TARGET=server.example.com
-PGHOST=postgres01
-PGUSER=odoo
 PGPASSWORD=
+
 ODOO_ADDONS_INSTALL=web_environment_ribbon
 ODOO_ADDONS_UPDATE=base
 ODOO_ADDONS_UNINSTALL=
