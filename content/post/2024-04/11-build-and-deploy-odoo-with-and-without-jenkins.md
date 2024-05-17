@@ -42,6 +42,7 @@ Lets have a closer look at these files.
 
 ```yml
 version: "3"
+name: ${COMPOSE_PROJECT_NAME}
 services:
   ${SERVICE_NAME}:
     image: ${DOCKER_REGISTRY}/${DOCKER_TAG}
@@ -333,6 +334,19 @@ function publish() {
     docker push "$DOCKER_REGISTRY"/"$DOCKER_TAG"
 }
 
+function substitute() {
+    export PGHOST
+    export PGUSER
+    export DOCKER_NETWORK
+    export DOCKER_TAG
+    export SERVICE_NAME
+    export LOG_LEVEL
+    export COMPOSE_PROJECT_NAME=odoo-cd
+    export DB_NAME="$SERVICE_NAME"
+    echo "Sbustitute env vars from docker-compose.yml.template to docker-compose.yml"
+    envsubst < "docker-compose.yml.template" > "docker-compose.yml"
+}
+
 function deploy() {
     start_timer
     ssh_exec="ssh $DEPLOY_USERNAME@$DEPLOY_TARGET"
@@ -347,13 +361,6 @@ function deploy() {
     OLD_CONTAINER_ID=$($ssh_exec docker ps -f "name=$SERVICE_NAME" -q | tail -n1)
     NGINX_CONTAINER=$($ssh_exec docker ps --format '{{.Names}}' -f "name=nginx")
 
-    export DOCKER_NETWORK
-    export DOCKER_TAG
-    export SERVICE_NAME
-    export LOG_LEVEL
-    export COMPOSE_PROJECT_NAME=odoo-cd
-    export DB_NAME="$SERVICE_NAME"
-    envsubst < "docker-compose.yml.template" > "docker-compose.yml"
     echo "Scale service $SERVICE_NAME to 2"
     docker-compose -H "ssh://$DEPLOY_USERNAME@$DEPLOY_TARGET" up -d --no-deps --scale "$SERVICE_NAME=2" --no-recreate "$SERVICE_NAME"
     
@@ -458,6 +465,9 @@ case "$1" in
     publish)
         publish
         ;;
+    substitute)
+        substitute
+        ;;
     deploy)
         deploy
         ;;
@@ -531,6 +541,11 @@ pipeline {
                     ./task publish
                     '''
                 }
+            }
+        }
+        stage('substitute') {
+            steps {
+                sh './task substitute'
             }
         }
         stage('deploy') {
