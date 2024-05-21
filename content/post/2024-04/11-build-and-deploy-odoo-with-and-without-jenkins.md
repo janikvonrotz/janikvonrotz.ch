@@ -302,9 +302,14 @@ function version() {
 
 function submodule() {
     echo "Update git submodule remote urls"
-    git submodule set-url hr-attendance git@github.com:example/hr-attendance.git
+    git submodule set-url hr-attendance git@github.com:sozialinfo/hr-attendance.git
+
     echo "Checkout git submodules"
     git submodule update --init
+
+    echo "Reset git submodules"
+    git reset --hard --recurse-submodule
+
     echo "Remove deprecated git submodules"
     rm -rf "odoo-apps-server-tools"
     rm -rf "odoo-apps-partner-contact"
