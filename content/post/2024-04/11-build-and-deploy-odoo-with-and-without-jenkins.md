@@ -27,11 +27,13 @@ The project files are checked into a GitHub repo. It follows the GitOps approach
 On all branches there are these files:
 
 * **docker-comopse.yml.template**: Template for docker compose config
+* **.gitignore**: Ignorefile for git files and folders
+* **.gitmodules**: Git submodules with Odoo repositories
 * **odoo.conf.template**: Odoo config with env vars
-* **entrypoint.sh**: Odoo start script that templates the odoo.conf with env vars
+* **.dockerignore**: Ignorefile for Docker image build
 * **Dockerfile**: Build instructions for the Docker image
-* **.dockerignore**: Ignore files for Docker image build
 * **.gitmodules**: Odoo modules are added as git submodules
+* **.rsyncignore**: Ignorefile for rsync command
 * **task**: Bash script that contains the build and deployment instructions
 * **Jenkinsfile**: Jenkins pipeline definition that wraps the task script
 * **.env.template**: Template for .env file for deployment from localhost
@@ -58,6 +60,7 @@ services:
       DB_NAME: ${DB_NAME}
       LOG_LEVEL: ${LOG_LEVEL}
       ODOO_BASE_URL: ${ODOO_BASE_URL}
+      ODOO_ADDONS_PATH: /mnt/extra-addons
     volumes:
       - /usr/share/${SERVICE_NAME}/addons:/mnt/extra-addons
       - ${SERVICE_NAME}:/var/lib/odoo
@@ -73,11 +76,38 @@ volumes:
 
 This docker compose file is templated in the deployment step. As you can see the service name is variable. The service name translates to the git branch.
 
+**.gitignore**
+
+```txt
+.env
+__pycache__
+docker-compose.yml
+odoo.conf
+default.vim
+```
+
+This files and folders are ignored in the git project.
+
+**.gitmodules**
+
+```toml
+[submodule "enterprise"]
+	path = enterprise
+	url = git@github.com:odoo/enterprise.git
+	branch = 16.0
+[submodule "web"]
+	path = web
+	url = git@github.com:OCA/web.git
+	branch = 16.0
+```
+
+This file contains the Odoo repsitories that are checked out and deployed to the environment.
+
 **odoo.conf.template**
 
 ```bash
 [options]
-addons_path = /mnt/extra-addons
+addons_path = $ODOO_ADDONS_PATH,$ADDONS_PATH
 data_dir = /var/lib/odoo
 admin_passwd = $pbkdf2-sha512$25000$ZWlQaGFlbmVlMWVlamV1Tmc0S2k$4562zeZ1EPUwULaA6PtxViA.zM3TYAu0du2EPxciiZcFLMpjBJ5HeyNuXrEuSDh9.5EpZueQfy7ZGMfCiP6kYA
 limit_request = 8192
@@ -95,84 +125,16 @@ web.base.url = $ODOO_BASE_URL
 
 By default the Odoo conf does not support env vars. With the new entrypoint script we can pass env vars into the Odoo conf.
 
-**entrypoint.sh**
+**.dockerignore**
 
 ```bash
-#!/bin/bash
-
-set -e
-
-if [ -v PASSWORD_FILE ]; then
-    PASSWORD="$(< $PASSWORD_FILE)"
-fi
-
-# set the postgres database host, port, user and password according to the environment
-# and pass them as arguments to the odoo process if not present in the config file
-: ${HOST:=${DB_PORT_5432_TCP_ADDR:='db'}}
-: ${PORT:=${DB_PORT_5432_TCP_PORT:=5432}}
-: ${USER:=${DB_ENV_POSTGRES_USER:=${POSTGRES_USER:='odoo'}}}
-: ${PASSWORD:=${DB_ENV_POSTGRES_PASSWORD:=${POSTGRES_PASSWORD:='odoo'}}}
-
-ME=$(basename "$0")
-
-entrypoint_log() {
-    if [ -z "${ODOO_ENTRYPOINT_QUIET_LOGS:-}" ]; then
-        echo "$@"
-    fi
-}
-
-auto_envsubst() {
-    local TEMPLATE_FILE="${ODOO_ENVSUBST_TEMPLATE_FILE:-/etc/odoo/odoo.conf.template}"
-    local OUTPUT_FILE="${ODOO_ENVSUBST_OUTPUT_FILE:-/etc/odoo/odoo.conf}"
-    local FILTER="${ODOO_ENVSUBST_FILTER:-}"
-
-    DEFINED_ENVS=$(printf '${%s} ' $(awk "END { for (name in ENVIRON) { print ( name ~ /${FILTER}/ ) ? name : \"\" } }" < /dev/null ))
-
-    if [[ -f "$TEMPLATE_FILE" ]]; then 
-        entrypoint_log "$ME: Running envsubst on $TEMPLATE_FILE to $OUTPUT_FILE"
-        envsubst "$DEFINED_ENVS" < "$TEMPLATE_FILE" > "$OUTPUT_FILE"
-    fi
-}
-
-auto_envsubst
-
-DB_ARGS=()
-function check_config() {
-    param="$1"
-    value="$2"
-    if grep -q -E "^\s*\b${param}\b\s*=" "$ODOO_RC" ; then
-        value=$(grep -E "^\s*\b${param}\b\s*=" "$ODOO_RC" |cut -d " " -f3|sed 's/["\n\r]//g')
-    fi;
-    DB_ARGS+=("--${param}")
-    DB_ARGS+=("${value}")
-}
-check_config "db_host" "$HOST"
-check_config "db_port" "$PORT"
-check_config "db_user" "$USER"
-check_config "db_password" "$PASSWORD"
-
-case "$1" in
-    -- | odoo)
-        shift
-        if [[ "$1" == "scaffold" ]] ; then
-            exec odoo "$@"
-        else
-            wait-for-psql.py ${DB_ARGS[@]} --timeout=30
-            exec odoo "$@" "${DB_ARGS[@]}"
-        fi
-        ;;
-    -*)
-        wait-for-psql.py ${DB_ARGS[@]} --timeout=30
-        exec odoo "$@" "${DB_ARGS[@]}"
-        ;;
-    *)
-        exec "$@"
-esac
-
-exit 1
+**
+!extra-addons
+!odoo.conf.template
+!entrypoint.sh
 ```
 
-This is a copy of the Odoo entrypoint script, but with an `auto_envsubst` function and call (copied from the Nginx entrypoint script). This function populates the odoo.conf with env vars.
+Only these files are sent to the build context.
 
 **Dockerfile**
 
@@ -183,10 +145,6 @@ FROM $ODOO_IMAGE
 
 USER root
 
-RUN apt-get update && \
-apt-get install -y --no-install-recommends \
-gettext
-
 RUN python -m pip install prometheus-client astor fastapi python-multipart ujson a2wsgi parse-accept-language pyjwt python-jose
 
 COPY ./odoo.conf.template /etc/odoo/
@@ -194,22 +152,20 @@ COPY ./odoo.conf.template /etc/odoo/
 USER odoo
 ```
 
-The new entrypoint script and the Odoo conf template is copied during the build step.
+Install additional python libraries and copy a custom Odoo configuration template to the image.
 
-**.dockerignore**
+**.rsyncignore**
 
-```bash
-**
-!extra-addons
-!odoo.conf.template
-!entrypoint.sh
+```txt
+/setup
+.git
 ```
 
-Only these files are in the build context.
+These folders are ignored when syncing the submodules.
 
 **task**
 
-This is the juicy part. The following script is a command line tool to execute the build and deployment steps.
+Now comes the juicy part. The following script is a command line tool to execute the build and deployment steps.
 
 ```bash
 #!/bin/bash
@@ -305,25 +261,16 @@ function submodule() {
     git submodule set-url hr-attendance git@github.com:sozialinfo/hr-attendance.git
 
     echo "Checkout git submodules"
-    git submodule update --init
+    git submodule update --init --recursive --checkout
 
-    echo "Reset git submodules"
-    git reset --hard --recurse-submodule
+    # echo "Reset git submodules"
+    # git reset --hard --recurse-submodule
 
     echo "Remove deprecated git submodules"
     rm -rf "odoo-apps-server-tools"
     rm -rf "odoo-apps-partner-contact"
     rm -rf "odoo-apps-survey"
-}
-
-function prepare() {
-    start_timer
-    echo "Copy modules to extra-addons folder"
-    rm -rf ./extra-addons
-    mkdir extra-addons
-    MODULES=$(find . -type f -name "__manifest__.py" -not -path "./extra-addons/*" | xargs dirname | sort -u)
-    echo $MODULES | xargs cp -r -t extra-addons/
-    end_timer && log_elapsed_time "prepare"
+    rm -rf "odoo-apps-vertical-job-portal"
 }
 
 function build() {
@@ -343,6 +290,7 @@ function substitute() {
     export PGHOST
     export PGUSER
     export DOCKER_NETWORK
+    export DOCKER_REGISTRY
     export DOCKER_TAG
     export SERVICE_NAME
     export LOG_LEVEL
@@ -352,13 +300,25 @@ function substitute() {
     envsubst < "docker-compose.yml.template" > "docker-compose.yml"
 }
 
+function sync() {
+    start_timer
+    ssh_exec="ssh $DEPLOY_USERNAME@$DEPLOY_TARGET"
+    SUBMODULE_PATH_FILE="submodule-paths.txt"
+
+    echo "Generate file with paths to submodules"
+    git config --file .gitmodules --get-regexp path | awk '{ print $2 }' > "$SUBMODULE_PATH_FILE"
+    echo "untracked-odoo-apps" >> "$SUBMODULE_PATH_FILE"
+
+    echo "Sync submodule folders to $DEPLOY_TARGET"
+    $ssh_exec mkdir -p "/usr/share/$SERVICE_NAME/addons"
+    rsync --recursive --links --update --delete --files-from="$SUBMODULE_PATH_FILE" --exclude-from=".rsyncignore"  ./ "$DEPLOY_USERNAME@$DEPLOY_TARGET:/usr/share/$SERVICE_NAME/addons/"
+
+    end_timer && log_elapsed_time "sync"
+}
+
 function deploy() {
     start_timer
     ssh_exec="ssh $DEPLOY_USERNAME@$DEPLOY_TARGET"
-
-    echo "Sync addons folder"
-    $ssh_exec mkdir -p "/usr/share/$SERVICE_NAME/addons"
-    rsync --recursive --update --delete "./extra-addons/" "$DEPLOY_USERNAME@$DEPLOY_TARGET:/usr/share/$SERVICE_NAME/addons/"
 
     echo "Deploy image $DOCKER_REGISTRY/$DOCKER_TAG to $DEPLOY_TARGET"
     $ssh_exec docker pull "$DOCKER_REGISTRY"/"$DOCKER_TAG"
@@ -446,9 +406,10 @@ case "$1" in
     all)
         version
         submodule
-        prepare
         build
         publish
+        substitute
+        sync
         deploy
         init
         ;;
@@ -461,9 +422,6 @@ case "$1" in
     submodule)
         submodule
         ;;
-    prepare)
-        prepare
-        ;;
     build)
         build
         ;;
@@ -472,6 +430,9 @@ case "$1" in
         ;;
     substitute)
         substitute
+        ;;
+    sync)
+        sync
         ;;
     deploy)
         deploy
@@ -490,7 +451,7 @@ esac
 
 The most important step is the deploy function. This step deploys the container with zero downtime. It does so by starting the container so the old and new container are running at the same time (scale=2). Then it shuts down the old container and ensures only one and only the new container is running (scale=1). Once the new container is started the proxy config is reloaded to ensure the service name resolves with the new container ip address.
 
-In the init step the Odoo database is duplicated, defused and update. On the deployment target it is expected that the [Ansible Build scripts](https://ansible.build/scripts.html) are installed.
+In the init step the Odoo database is duplicated, defused and update. It is expected that the [Ansible Build scripts](https://ansible.build/scripts.html) are installed on the deployment target.
 
 **Jenkinsfile**
 
@@ -504,7 +465,7 @@ pipeline {
     environment {
         DOCKER_PASSWORD = credentials('docker-password')
         PGPASSWORD = credentials('odoo-pgpassword')
-        DEPLOY_USERNAME = 'eample-git-bot'
+        DEPLOY_USERNAME = 'sozialinfo-git-bot'        
     }
     
     stages {
@@ -518,18 +479,13 @@ pipeline {
         }
         stage('submodule') {
             steps {
-                sshagent(credentials: ['example-git-bot']) {
+                sshagent(credentials: ['sozialinfo-git-bot']) {
                     sh '''#!/bin/bash
                     [ -d ~/.ssh ] || mkdir ~/.ssh && chmod 0700 ~/.ssh
                     ssh-keyscan -t rsa,dsa github.com >> ~/.ssh/known_hosts
                     ./task submodule
                     '''
                 }
-            }
-        }
-        stage('prepare') {
-            steps {
-                sh './task prepare'
             }
         }
         stage('build') {
@@ -539,7 +495,7 @@ pipeline {
         }
         stage('publish') {
             steps {
-                sshagent(credentials: ['example-git-bot']) {
+                sshagent(credentials: ['sozialinfo-git-bot']) {
                     sh '''#!/bin/bash
                     [ -d ~/.ssh ] || mkdir ~/.ssh && chmod 0700 ~/.ssh
                     ssh-keyscan -t rsa,dsa $DOCKER_TARGET >> ~/.ssh/known_hosts
@@ -553,9 +509,20 @@ pipeline {
                 sh './task substitute'
             }
         }
+        stage('sync') {
+            steps {
+                sshagent(credentials: ['sozialinfo-git-bot']) {
+                    sh '''#!/bin/bash
+                    [ -d ~/.ssh ] || mkdir ~/.ssh && chmod 0700 ~/.ssh
+                    ssh-keyscan -t rsa,dsa $DOCKER_TARGET >> ~/.ssh/known_hosts
+                    ./task publish
+                    '''
+                }
+            }
+        }
         stage('deploy') {
             steps {
-                sshagent(credentials: ['example-git-bot']) {
+                sshagent(credentials: ['sozialinfo-git-bot']) {
                     sh '''#!/bin/bash
                     [ -d ~/.ssh ] || mkdir ~/.ssh && chmod 0700 ~/.ssh
                     ssh-keyscan -t rsa,dsa $DOCKER_TARGET >> ~/.ssh/known_hosts
@@ -566,7 +533,7 @@ pipeline {
         }
         stage('init') {
             steps {
-                sshagent(credentials: ['example-git-bot']) {
+                sshagent(credentials: ['sozialinfo-git-bot']) {
                     sh '''#!/bin/bash
                     [ -d ~/.ssh ] || mkdir ~/.ssh && chmod 0700 ~/.ssh
                     ssh-keyscan -t rsa,dsa github.com >> ~/.ssh/known_hosts
@@ -596,15 +563,14 @@ A selection of environment variables is set statically and other are passed as b
 ENVIRONMENT=development
 RESET=false
 ANONYMIZE=false
+ODOO_ADDONS_INSTALL=web_environment_ribbon
+ODOO_ADDONS_UPDATE=
+ODOO_ADDONS_UNINSTALL=
 BRANCH=dev
 ODOO_BASE_URL=https://odoo-dev.example.com
 
 DOCKER_PASSWORD=
 PGPASSWORD=
-
-ODOO_ADDONS_INSTALL=web_environment_ribbon
-ODOO_ADDONS_UPDATE=base
-ODOO_ADDONS_UNINSTALL=
 ```
 
 As mentioned the build and deployment works on the locally by executing the task scrip. Credentials are loaded from the .env file.
