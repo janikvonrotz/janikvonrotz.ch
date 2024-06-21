@@ -313,6 +313,11 @@ function sync() {
     $ssh_exec mkdir -p "/usr/share/$SERVICE_NAME/addons"
     rsync --recursive --links --update --delete --files-from="$SUBMODULE_PATH_FILE" --exclude-from=".rsyncignore"  ./ "$DEPLOY_USERNAME@$DEPLOY_TARGET:/usr/share/$SERVICE_NAME/addons/"
 
+    if [[ "production,integration,development" =~ $ENVIRONMENT && -n "$ODOO_ADDONS_UPDATE" ]]; then
+        echo "Update Odoo modules for $SERVICE_NAME"
+        $ssh_exec docker-odoo-update -c "$SERVICE_NAME" -d "$SERVICE_NAME" -u "$ODOO_ADDONS_UPDATE"
+    fi
+    
     end_timer && log_elapsed_time "sync"
 }
 
@@ -362,11 +367,6 @@ function init() {
     if [[ "integration,development" =~ $ENVIRONMENT && -n "$ODOO_ADDONS_INSTALL" ]]; then
         echo "Install Odoo modules for $SERVICE_NAME"
         $ssh_exec docker-odoo-install -c "$SERVICE_NAME" -d "$SERVICE_NAME" -i "$ODOO_ADDONS_INSTALL"
-    fi
-
-    if [[ "integration,development" =~ $ENVIRONMENT && -n "$ODOO_ADDONS_UPDATE" ]]; then
-        echo "Update Odoo modules for $SERVICE_NAME"
-        $ssh_exec docker-odoo-update -c "$SERVICE_NAME" -d "$SERVICE_NAME" -u "$ODOO_ADDONS_UPDATE"
     fi
 
     if [[ "integration,development" =~ $ENVIRONMENT && -n "$ODOO_ADDONS_UNINSTALL" ]]; then
@@ -563,8 +563,8 @@ A selection of environment variables is set statically and other are passed as b
 ENVIRONMENT=development
 RESET=false
 ANONYMIZE=false
+ODOO_ADDONS_UPDATE=partner_firstname,partner_fax
 ODOO_ADDONS_INSTALL=web_environment_ribbon
-ODOO_ADDONS_UPDATE=
 ODOO_ADDONS_UNINSTALL=
 BRANCH=dev
 ODOO_BASE_URL=https://odoo-dev.example.com
