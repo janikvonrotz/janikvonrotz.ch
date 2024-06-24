@@ -364,9 +364,9 @@ function init() {
         $ssh_exec docker-odoo-drop -c "$SERVICE_NAME" -d "$SERVICE_NAME"
     fi
 
-    if [[ "integration,development" =~ $ENVIRONMENT && -n "$ODOO_ADDONS_INSTALL" ]]; then
+    if [[ "integration,development" =~ $ENVIRONMENT && -n "$ODOO_ADDONS_INIT" ]]; then
         echo "Install Odoo modules for $SERVICE_NAME"
-        $ssh_exec docker-odoo-install -c "$SERVICE_NAME" -d "$SERVICE_NAME" -i "$ODOO_ADDONS_INSTALL"
+        $ssh_exec docker-odoo-init -c "$SERVICE_NAME" -d "$SERVICE_NAME" -i "$ODOO_ADDONS_INIT"
     fi
 
     if [[ "integration,development" =~ $ENVIRONMENT && -n "$ODOO_ADDONS_UNINSTALL" ]]; then
@@ -564,7 +564,7 @@ ENVIRONMENT=development
 RESET=false
 ANONYMIZE=false
 ODOO_ADDONS_UPDATE=partner_firstname,partner_fax
-ODOO_ADDONS_INSTALL=web_environment_ribbon
+ODOO_ADDONS_INIT=web_environment_ribbon
 ODOO_ADDONS_UNINSTALL=
 BRANCH=dev
 ODOO_BASE_URL=https://odoo-dev.example.com
