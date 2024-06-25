@@ -18,7 +18,7 @@ In this post I would like to present the main parts of the final project such as
 
 <!--more-->
 
-The project files are checked into a GitHub repo. It follows the GitOps approach. The repo has three branches with differetn roles:
+The project files are checked into a GitHub repo. It follows the GitOps approach. The repo has three branches with differnt roles:
 
 * **main (production)**: Productive Odoo environment
 * **int (integration)**: Copies and updates Odoo database from production
