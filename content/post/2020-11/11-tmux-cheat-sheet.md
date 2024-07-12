@@ -53,6 +53,13 @@ List windows.
 Enter window index.  
 `ctrl + b '`
 
+Swap windows.
+```
+ctrl + b :
+swap-window -s 3 -t 1
+```
+
+
 ## Pane
 Split vertically.  
 <kbd>ctrl + b</kbd> <kbd>%</kbd>
