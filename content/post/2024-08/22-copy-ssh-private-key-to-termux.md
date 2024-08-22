@@ -11,7 +11,7 @@ tags:
   - 3-tier
 images:
   - /images/Termux.png
-draft: true
+draft: false
 ---
 [Termux](https://termux.dev/en/) is a beautiful terminal emulator Android app. As I am working mostly on the command line I wanted to be able to do the same on phone. And most importantly in a case of emergency where I don't have access to my computer I want to able to access my servers and run some commands. This requires to setup existing SSH private keys in the Termux.
 
