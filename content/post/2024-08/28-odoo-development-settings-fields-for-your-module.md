@@ -128,7 +128,7 @@ The values can be loaded from a demo data file.
 
 The values are defined in the settings model but defined in the system parameter model. When opening the the system parameter you'll find the entries.
 
-![](/Odoo%20System%20Parameter%20Meilisearch.png)
+![](/images/Odoo%20System%20Parameter%20Meilisearch.png)
 
 Now using the config values in your code is simple. You call the system parameter model with sudo and retrive value by its key: `self.env["ir.config_parameter"].sudo().get_param("meilisearch.api_url")`
 
