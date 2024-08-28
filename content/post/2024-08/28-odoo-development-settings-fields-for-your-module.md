@@ -163,4 +163,4 @@ class MeilisearchIndex(models.Model):
         )
 ```
 
-You can view the full code of this example here: <https://github.com/Mint-System/Odoo-Apps-Connector/>
+You can view the full code of this example here: <https://github.com/Mint-System/Odoo-Apps-Connector/tree/16.0/meilisearch_base>
