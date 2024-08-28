@@ -99,6 +99,7 @@ To display the the settings field we will extend the `base_setup.res_config_sett
 The settings box is inserted in the `integration` section. To do so the module must depend on `base_setup`. This edit will produce this result:
 
 ![](/images/Odoo%20Settings%20Page%20Meilisearch.png)
+
 The values can be loaded from a demo data file.
 
 **meilisearch_index_demo.xml**
