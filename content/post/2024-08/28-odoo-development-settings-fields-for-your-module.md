@@ -1,5 +1,5 @@
 ---
-title: "Odoo Development:  Settings field for your module"
+title: "Odoo Development:  Settings fields for your module"
 slug: odoo-development-settings-fields-for-your-module
 date: 2024-08-28T16:41:29+02:00
 categories:
