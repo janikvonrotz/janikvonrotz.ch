@@ -67,6 +67,19 @@ Checkout file from index.
 Show file history.  
 `:Gblame`
 
+Rebase interactive.
+
+```bash
+# Rebase last 10 commits
+git rebase -i HEAD~10
+
+# Navigate and replace word
+cw
+
+# Enter letter for commands
+d
+```
+
 ### vim indent guides
 
 Show indents.  
