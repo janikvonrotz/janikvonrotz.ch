@@ -353,18 +353,24 @@ function deploy() {
 function init() {
     ssh_exec="ssh $DEPLOY_USERNAME@$DEPLOY_TARGET"
 
+    if [[ $ENVIRONMENT = "development" && $RESET = true ]]; then
+        echo "Initialize database Odoo for $SERVICE_NAME"
+        $ssh_exec docker-odoo-drop -c "$SERVICE_NAME" -d "$SERVICE_NAME"
+        $ssh_exec docker-odoo-init -c "$SERVICE_NAME" -d "$SERVICE_NAME" -i "base" -l de_CH -w
+    fi
+
+    if [[ $ENVIRONMENT = "development" && -n "$ODOO_ADDONS_INIT" ]]; then
+        echo "Install Odoo modules for $SERVICE_NAME"
+        $ssh_exec docker-odoo-init -c "$SERVICE_NAME" -d "$SERVICE_NAME" -i "$ODOO_ADDONS_INIT" -w
+    fi
+
     if [[ $ENVIRONMENT = "integration" && $RESET = true ]]; then
         echo "Duplicate Odoo database and filestore for $SERVICE_NAME"
         $ssh_exec docker-odoo-duplicate -c "$SERVICE_NAME" -s odoo-main -t "$SERVICE_NAME" -u -r -i
         $ssh_exec docker-volume-copy -s odoo-main:/filestore/odoo-main -t "${SERVICE_NAME}:/filestore/${SERVICE_NAME}" -f
     fi
 
-    if [[ $ENVIRONMENT = "development" && $RESET = true ]]; then
-        echo "Initialize database Odoo for $SERVICE_NAME"
-        $ssh_exec docker-odoo-drop -c "$SERVICE_NAME" -d "$SERVICE_NAME"
-    fi
-
-    if [[ "integration,development" =~ $ENVIRONMENT && -n "$ODOO_ADDONS_INIT" ]]; then
+    if [[ $ENVIRONMENT = "integration" && -n "$ODOO_ADDONS_INIT" ]]; then
         echo "Install Odoo modules for $SERVICE_NAME"
         $ssh_exec docker-odoo-init -c "$SERVICE_NAME" -d "$SERVICE_NAME" -i "$ODOO_ADDONS_INIT"
     fi
@@ -377,19 +383,17 @@ function init() {
     if [[ $ENVIRONMENT = "integration" && $ANONYMIZE = true ]]; then
         echo "Anonymize Odoo database $SERVICE_NAME"
         $ssh_exec bash <<EOF
-docker-odoo-shell -c "$SERVICE_NAME" -d "$SERVICE_NAME" -f -p "env['hr.payslip'].search([]).cancel_sheet()"
-docker-odoo-shell -c "$SERVICE_NAME" -d "$SERVICE_NAME" -f -p "env['hr.payslip'].search([]).unlink()"
-docker-odoo-shell -c "$SERVICE_NAME" -d "$SERVICE_NAME" -f -p "env['hr.payroll.register'].search([]).unlink()"
-docker-odoo-shell -c "$SERVICE_NAME" -d "$SERVICE_NAME" -f -p "env['account.move.line.salary'].search([]).unlink()"
+docker-odoo-shell -c "$SERVICE_NAME" -d "$SERVICE_NAME" -f -p "env['hr.payslip'].search([]).cancel_sheet()
+env['hr.payslip'].search([]).unlink()
+env['hr.payroll.register'].search([]).unlink()
+env['account.move.line.salary'].search([]).unlink()"
 docker-odoo-shell -c "$SERVICE_NAME" -d "$SERVICE_NAME" -f -p "env['ir.model.fields.anonymize'].search([]).action_anonymize_records()"
 EOF
     fi
 
     if [[ "integration,development" =~ $ENVIRONMENT ]]; then
-        echo "Restart Odoo container $SERVICE_NAME"
-        ODOO_CONTAINER=$($ssh_exec docker ps -f "name=$SERVICE_NAME" -q | head -n1)
+        echo "Restart Nginx process"
         NGINX_CONTAINER=$($ssh_exec docker ps --format '{{.Names}}' -f "name=nginx")
-        $ssh_exec docker restart "$ODOO_CONTAINER"
         $ssh_exec docker-nginx-reload -c "$NGINX_CONTAINER"
     fi
 }
