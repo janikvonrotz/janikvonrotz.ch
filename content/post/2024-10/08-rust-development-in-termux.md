@@ -78,7 +78,7 @@ Switch to normal mode <kbd>esc</kbd>. Then save the file with <kbd>:</kbd> and <
 Then split the window with tmux <kbd>ctrl</kbd>+<kbd>b</kbd> and <kbd>%</kbd>. In the new window run the rust program.
 
 ```bash
-restc hello.rs
+rustc hello.rs
 ```
 
 This will produce a binary `hello` that can be run with `./hello`. You should see the output of the print statement.
