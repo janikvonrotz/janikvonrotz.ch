@@ -14,6 +14,7 @@ images:
 ---
 
 Mermaid and Markdown is widely supported match. With mermaid you can describe diagrams and get them rendered next to your Markdown text. It is kind of a markdown flavor, but not supported by all Markdown processors. Use this guide to get result as described in the title.
+
 <!--more-->
 
 You will need:
