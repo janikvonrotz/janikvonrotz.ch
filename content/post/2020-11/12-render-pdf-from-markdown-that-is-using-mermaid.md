@@ -40,6 +40,7 @@ After everything installed (assume that `pandoc` and `mermaid-filter` are
 available in your `echo $PATH`)
 
 ## Example
+
 This document itself is written in markdown. Access the source and save it as `mermaid-pandoc-guide.md` then use pandoc and the filter to create a PDF.
 
 ```zsh
