@@ -17,6 +17,7 @@ Mermaid and Markdown is widely supported match. With mermaid you can describe di
 <!--more-->
 
 You will need:
+
 - [Pandoc](https://pandoc.org/installing.html)
 
 ```zsh
