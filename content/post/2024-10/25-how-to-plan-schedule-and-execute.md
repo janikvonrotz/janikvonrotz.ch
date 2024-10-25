@@ -12,7 +12,7 @@ images:
   - /images/krazam-microservices.png
 draft: false
 ---
-<small>[Image Credit](https://www.youtube.com/watch?v=y8OnoxKotPQ)</small>
+<small>[Title Image Source](https://www.youtube.com/watch?v=y8OnoxKotPQ)</small>
 
 Being self-employed teaches you a lot. Especially how to manage your personal resources.
 
