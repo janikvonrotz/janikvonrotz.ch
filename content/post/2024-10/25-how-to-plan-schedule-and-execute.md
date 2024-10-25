@@ -48,11 +48,11 @@ I have a private and a business Odoo instance. In both cases I use the project a
 
 Making a clear distinction between todos and tasks is very important. I analyse task into multiple todos. Todos are checkboxes that can be ticked off.
 
-![](../../../static/images/Pasted%20image%2020240906103328.png)
+![](/images/odoo-task.png)
 
 The task is pinned on a kanban board. The lanes of the kanban board always look like this:
 
-![](../../../static/images/Pasted%20image%2020240906163856.png)
+![](/images/odoo-project-kanban.png)
 
 Note the "Postlog" column. It is literally the opposite of backlog. Tasks that are continuously done and never really finished belong there.
 
@@ -70,7 +70,7 @@ With instant messaging you receive often low quality, high alert and distractful
 
 Whenever possible I use the Odoo chatter to send mails. It allows to send and receive messages in the context of a task or any other Odoo documents. Here is the task from before:
 
-![](../../../static/images/Pasted%20image%2020240906103638.png)
+![](/images/odoo-chatter.png)
 
 **4. How do you communicate in the team?**
 
@@ -84,7 +84,7 @@ First of all I use Thunderbird for mailing. It is stable and what I call a borin
 
 For transactional mails I have move-rules. Based on the sender the mails ends up in a folder. So I have only mails by humans in my inbox. My inbox usually looks like this:
 
-![](../../../static/images/Pasted%20image%2020240906080101.png)
+![](/images/thunderbird-inbox.png)
 
 The "Group by Sort" filter is an awesome feature of Thunderbird. This sorting function shows the urgency of a message.
 
@@ -116,7 +116,7 @@ On the other side Obsidian can become very complicated and advanced. There are t
 
 Here is an image of the Obsidian graph. It shows how the notes are linked:
 
-![](../../../static/images/Pasted%20image%2020240906164949.png)
+![](/images/obsidian-graph.png)
 
 **10. Are there any AI-tools you recommend?**
 
