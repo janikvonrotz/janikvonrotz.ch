@@ -54,11 +54,14 @@ Enter window index.
 `ctrl + b '`
 
 Swap windows.
+
 ```
 ctrl + b :
 swap-window -s 3 -t 1
 ```
 
+Renumber windows.
+`ctrl + b` `move-window -r`
 
 ## Pane
 Split vertically.  
