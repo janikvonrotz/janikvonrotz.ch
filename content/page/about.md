@@ -41,9 +41,8 @@ I believe in:
 * [GNU Manifest](https://www.gnu.org/gnu/manifesto.html)
 * [Open Source Software](https://opensourcesoftware.ch)
 
-Currently I am working on various opportunities and projects:
+Currently I am working on:
 
-* Get the latest startup [Mint System GmbH](https://www.mint-system.ch/) up and running.
-* Developing web applications as [Apland GmbH](https://apland.ch).
-* Helping companies to improve their business with software.
-* Searching for challenges to improve my soft and tech skills.
+* Learning Kubernetes
+* Build a SaaS-Plattform for my company [Mint System GmbH](https://www.mint-system.ch/) 
+* Support Open Source Software
