@@ -1,5 +1,7 @@
 {
   "theme": "system",
   "baseFontSize": 16,
-  "accentColor": ""
+  "accentColor": "",
+  "interfaceFontFamily": "Ubuntu Mono",
+  "textFontFamily": "Ubuntu Mono"
 }
