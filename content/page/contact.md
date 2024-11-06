@@ -3,7 +3,6 @@ title: Contact
 date: 2013-07-02T08:23:14+00:00
 author: Janik von Rotz
 ---
-
 # Communication
 
 [Matrix Private](https://matrix.to/#/@janikv:matrix.org)
