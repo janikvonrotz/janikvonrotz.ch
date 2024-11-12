@@ -1,5 +1,5 @@
 ---
-title: SSH vs. VPN
+title: SSH vs VPN
 slug: ssh-vs-vpn
 date: 2024-11-11T11:45:58+01:00
 categories:
@@ -10,10 +10,10 @@ tags:
   - security
   - comparison
 images:
-  - /images/logo.png
-draft: true
+  - /images/ssh-vs-vpn.png
+draft: false
 ---
-Often when I deploy an application to a server owned by a customer or the customers IT provider, they require me to setup a virtual private network (VPN) connection. I then tell them about Secure Shell (SSH) protocol and how is better for this use case. As they are used to Windows server environment, where SSH is mostly absent, they insist on using VPNs.
+When I deploy an application to a server that is owned by the customer or the customers IT provider, they very often require me to setup a virtual private network (VPN) connection. I tell them about Secure Shell (SSH) protocol and how is better fit for this use case. As they are used to Windows server environment, where SSH is mostly absent, they insist on using VPNs.
 
 In this post I will compare the two technologies and explain why SSH is the better option in this use case.
 
@@ -24,30 +24,31 @@ SSH is a protocol for secure connections.
 
 With SSH you establish a connection from your computer to a remote server. 
 
-![](../../../static/images/secure%20shell%20connection.png)
+![](/images/secure%20shell%20connection.png)
 
 For user authentication SSH uses private/public keys. The user submits the public SSH key (think of a keylock) to the Operator of the SSH server. Only the user who owns the private key (also encrypted) can access the server.
 
 The pros of SSH:
 
-\+ Easy to setup on server
+\+ Easy to setup on server\
 \+ Connects to one server only
+\+ SSH is widely supported
 
 The difficulties of SSH:
 
-\- Requires named user on server
-\- Different standards for private/public keys
+\- Requires user management on sever\
+\- Different standards for private/public keys\
 \- No control of key management
 
 ### VPN
 
-VPN is about a concept.
+VPN is a networking concept.
 
 With a VPN you connect your computer to a remote network. The whole traffic of the computer is routed to the remote network.
 
-![](../../../static/images/virtual%20private%20network.png)
+![](/images/virtual%20private%20network.png)
 
-There are various vendor for VPN software solutions and each of them is using different protocols and standards for 2 factor authentication (2FA).
+There are various vendors for VPN software solutions and they are using different protocols and proprietary standards 2 factor authentication (2FA).
 
 * WireGuard
 * IPSec
@@ -56,17 +57,17 @@ There are various vendor for VPN software solutions and each of them is using di
 
 The pros of VPN:
 
-\+ VPN solution is often bundled with Firewall
-\+ UI clients for installation
+\+ Firewall bundled with VPN solution\
+\+ UI clients for installation\
+\+ Easy rollout for new users
 
 The difficulties of VPN:
 
-\- Exposes a network to the remote computer
-\- Private traffic goes through corporate network
-\- Different standards for 2FA
-
+\- Exposes an entire network to remote computer\
+\- Private traffic goes through corporate network\
+\- Different standards for VPN and 2FA
 ### Summary
 
-In our use case we want to deploy a web application to a server. We only need access to a specific server and not other servers and services of the network. Therefore a SSH connection makes more sense.
+In our use case we want to deploy an application to a server. We only need access to one specific server of the remote network. In this case a direct connection with SSH make more sense.
 
-A VPN makes sense when you want to access a corporate infrastructure in order to access your mail and file server. Or when you want to route your internet traffic from a different IP.
+A VPN is the better option when you require to access a corporate infrastructure and multiple server (mail, files, intranet, ...). Moreover, when you need privacy and need to hide your IP adress, a VPN can route your traffic to a different exit gateway.
