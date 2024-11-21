@@ -3,5 +3,8 @@
   "baseFontSize": 16,
   "accentColor": "",
   "interfaceFontFamily": "Ubuntu Mono",
-  "textFontFamily": "Ubuntu Mono"
+  "textFontFamily": "Ubuntu Mono",
+  "enabledCssSnippets": [
+    "snippet"
+  ]
 }
