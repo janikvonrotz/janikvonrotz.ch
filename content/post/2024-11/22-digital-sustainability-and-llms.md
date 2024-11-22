@@ -14,14 +14,14 @@ images:
   - /images/factorio-pollution.png
 draft: false
 ---
-I experienced several events during the last week:
+This week I experienced:
 
 - [Dinacon](https://dinacon.ch/) 2024 - a yearly conference about digital sustainability
 - Playing the game [Factorio Space Age](https://www.factorio.com/space-age/overview)
 - Not having access to [Codeium](https://codeium.com/) and therefore writing code "offline"
 - Not being able to buy an [H100 GPU](https://www.amazon.com/NVIDIA-Graphics-Memory-Learning-Compute/dp/B0CMJCD2HG)
 
-And even though these events seem very different they have a lot in common. This is all about over consumption and resource availability. Let me elaborate ...
+And even though these events seem unrelated, I think they have a lot in common. This is all about over consumption and resource availability. Let me elaborate ...
 
 <!--more-->
 
