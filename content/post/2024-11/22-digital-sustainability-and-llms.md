@@ -49,7 +49,7 @@ Taking the leadership in this context is taking the full responsibility and acco
 
 What I am trying to explain here can be simulated in games. In Factorio you build, automate and expand a factory that produces goods with growing complexity. The game constantly confronts you with resource limits and attacks on the factory. When producing too much pollution the inhabitants of the planet will try to destroy the factory. You can choose to produce sustainable energy (which is hardly enough to run the factory) or improve the defensive capabilities.
 
-So much about the game. But, what it makes really interesting is the fact that you can play this with many friends. You have to cooperate, negotiate and make difficult decisions. Not often you end up arguing about a virtual blueprint of a non-existing part of the factory. This seems ridiculous at first glance, but the process of solving these problems within those game parameters, can produce meaningful strategies for the real world.
+So much about the game. But, what it makes really interesting is the fact that you can play this with many friends. You have to cooperate, negotiate and make difficult decisions. Not often you end up arguing about a virtual blueprint of a non-existing part of the factory. You have to build a complex train network and share the workload to build this among the players. The tasks don't feel fullfilling and some would say playing Factorio can feel like work. This all seems ridiculous at first glance, but the process of solving these problems within those game parameters, can produce meaningful strategies for the real world.
 
 **What this is all about**
 
