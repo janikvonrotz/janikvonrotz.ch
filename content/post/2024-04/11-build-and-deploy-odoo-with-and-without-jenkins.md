@@ -258,7 +258,7 @@ function version() {
 
 function submodule() {
     echo "Update git submodule remote urls"
-    git submodule set-url hr-attendance git@github.com:sozialinfo/hr-attendance.git
+    git submodule set-url hr-attendance git@github.com:OCA/hr-attendance.git
 
     echo "Checkout git submodules"
     git submodule update --init --recursive --checkout
@@ -269,8 +269,6 @@ function submodule() {
     echo "Remove deprecated git submodules"
     rm -rf "odoo-apps-server-tools"
     rm -rf "odoo-apps-partner-contact"
-    rm -rf "odoo-apps-survey"
-    rm -rf "odoo-apps-vertical-job-portal"
 }
 
 function build() {
@@ -373,6 +371,9 @@ function init() {
     if [[ $ENVIRONMENT = "integration" && -n "$ODOO_ADDONS_INIT" ]]; then
         echo "Install Odoo modules for $SERVICE_NAME"
         $ssh_exec docker-odoo-init -c "$SERVICE_NAME" -d "$SERVICE_NAME" -i "$ODOO_ADDONS_INIT"
+
+        echo "Restart Odoo container after module installation."
+        $ssh_exec docker restart "$SERVICE_NAME"
     fi
 
     if [[ "integration,development" =~ $ENVIRONMENT && -n "$ODOO_ADDONS_UNINSTALL" ]]; then
