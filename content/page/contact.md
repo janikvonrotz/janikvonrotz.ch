@@ -19,8 +19,8 @@ author: Janik von Rotz
 
 [Flickr](https://www.flickr.com/photos/janik-von-rotz/)\
 [Soundcloud](https://soundcloud.com/janikvonrotz) \
-[Vimeo](https://vimeo.com/janikvonrotz)\
-# Coding
+[Vimeo](https://vimeo.com/janikvonrotz)
+# Code
 
 [GitHub](https://github.com/janikvonrotz)\
 [GitLab](https://gitlab.com/janikvonrotz)
