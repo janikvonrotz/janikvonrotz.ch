@@ -31,7 +31,7 @@ Rating: 8/10\
 ISBN: 9780061801884\
 Finished: 2022-01-09\
 
-![](/images/Pasted%20i9780593135211mage%2020230106115031.png)
+![](/images/9780593135211.png)
 
 Title: Project Hail Mary\
 Author: Weir, Andy\

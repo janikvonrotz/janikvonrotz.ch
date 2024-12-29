@@ -13,7 +13,7 @@ draft: false
 ---
 In 2023 I read 17 books. Most of them were great, it was difficult to choose my favorites. As most of them were science fiction books, I chose a non-fiction and a fiction book. My favorite fiction book was **The Futurological Congress** by Stanislaw Lem and the non-fiction book is **Corruptible** by Brian Klaas.
 
-And here is the full 2022 book list:
+And here is the full 2023 book list:
 
 <!--more-->
 
