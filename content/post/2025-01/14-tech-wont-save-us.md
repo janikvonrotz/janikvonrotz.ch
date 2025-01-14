@@ -24,7 +24,7 @@ To show better options, I provided a list with links. Here is the same list:
 <!--more-->
 
 - Twitter(X)/Facebook -> [Mastodon](https://mastodon.social/)
-- Whatsapp -> [Signal](https://signal.org/) oder [Threema](https://threema.ch/) oder [Element](https://element.io/)
+- Whatsapp -> [Signal](https://signal.org/) or [Threema](https://threema.ch/) or [Element](https://element.io/)
 - Instagram -> [Pixelfed](https://pixelfed.org/)
 - TikTok -> [Loops](https://joinloops.org/)
 - Outlook/Gmail -> [Infomaniak](https://www.infomaniak.com/)
@@ -38,7 +38,7 @@ Links for techies:
 - GitLab/GitHub -> [Forgejo](https://forgejo.org/)
 - ChatGPT -> [Infomaniak](https://www.infomaniak.com/en/hosting/ai-tools)
 - Google Analytics -> [Plausible](https://plausible.io/)
-- Zoom -> [BigBlueButton](https://bigbluebutton.org/)
+- Zoom -> [BigBlueButton](https://bigbluebutton.org/) or [Jitsi](https://jitsi.org/)
 - AWS -> [Exoscale](https://www.exoscale.com/)
 - PowerBI -> [Metabase](https://www.metabase.com/)
 - Cloud Service -> Service in [Kubernetes](https://kubernetes.io/)
