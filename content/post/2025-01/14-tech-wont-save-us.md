@@ -13,7 +13,7 @@ images:
   - /images/tech-wont-save-us.png
 draft: false
 ---
-I love this quote. It has its origin most likely by the [podcast by Parix Marx](https://www.techwontsave.us/).
+I love this quote. It has its origin most likely in the [podcast by Parix Marx](https://www.techwontsave.us/).
 
 In the [comment section on Republik](https://www.republik.ch/2025/01/14/zuckerberg-zeigt-sein-wahres-gesicht) for an article about Zuckerberg revealing his true intentions, I argued that its time to stop using the American tech.
 
