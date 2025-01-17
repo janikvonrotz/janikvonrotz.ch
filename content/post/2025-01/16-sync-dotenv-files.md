@@ -20,7 +20,7 @@ I was looking for a solution to solve this problem. If you duck for "Sync .env f
 
 <!--more-->
 
-The solution I found was [pass](https://www.passwordstore.org/). I already talked about this tool and most importantly documented [a way to use pass in teams](https://janikvonrotz.ch/2018/04/03/using-pass-in-teams/). For a software project that uses the [taskfile standard](https://taskfile.build/) you can simply add to new commands: `pass-store-dotenv` and `pass-restore-dotend`
+The solution I found was [pass](https://www.passwordstore.org/). I already talked about this tool and most importantly documented [a way to use pass in teams](https://janikvonrotz.ch/2018/04/03/using-pass-in-teams/). For a software project that uses the [taskfile standard](https://taskfile.build/) you can simply add two new commands: `pass-store-dotenv` and `pass-restore-dotend`
 
 Here are the help entries:
 
@@ -53,4 +53,4 @@ function pass-restore-dotenv() {
 }
 ```
 
-To store the .env file in pass run `task pass-store-dotenv` and `pass git push`. To restore it run `pass git pull` and `task pass-restore-dotenv`. The content of the dotenv file is stored as a pass entry in the `$PASS_ENTRY` path.
+To store the .env file in pass run `task pass-store-dotenv` and `pass git push`. To restore it run `pass git pull` and `task pass-restore-dotenv`. The content of the .env file is stored as a pass entry in the `$PASS_ENTRY` path.
