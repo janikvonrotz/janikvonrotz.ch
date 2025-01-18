@@ -1,11 +1,9 @@
-baseURL = "https://janikvonrotz.ch/"
 languageCode = "en-us"
 title = "Janik von Rotz"
-description = "Curious, Dedicated, Open-Minded" 
+description = "Curious, Dedicated, Open-Minded"
+publishDir = "public"
 theme = "hugo-new-css-theme"
 pygmentsCodeFences = "true"
-# googleAnalytics = "UA-31105856-2"
-# disqusShortname = "janikvonrotz-1"
 
 [markup.goldmark.renderer]
     unsafe = true
@@ -47,7 +45,6 @@ pygmentsCodeFences = "true"
 
 [params]
     description = "Curious, Dedicated, Humble"
-    subscribeURL = "https://eepurl.com/geDd05"
     plausibleAnalaytics = "janikvonrotz.ch"
     gitUrl = "https://github.com/janikvonrotz/janikvonrotz.ch/tree/master/content"
     

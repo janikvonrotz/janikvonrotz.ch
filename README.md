@@ -1,7 +1,16 @@
-# janikvonrotz.ch
+janikvonrotz.ch
+===============
 
-This is the content repository for my personal static website. 
+## Usage
 
-## Obsidian
+```bash
+git submodule update --init
+```
 
-When showing posts with Obsidian, the image paths are not resolved correctly.
+```bash
+task install
+```
+
+```bash
+task dev
+```

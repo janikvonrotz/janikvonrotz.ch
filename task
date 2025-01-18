@@ -1,0 +1,85 @@
+#!/bin/bash
+set -e
+
+if [[ -a ".env" ]]; then
+    source .env
+fi
+
+function help() {
+    echo
+    echo "task <command> [options]"
+    echo
+    echo "commands:"
+    echo
+
+    # Define column widths
+    cmd_width=12
+    opt_width=10
+    desc_width=40
+
+    # Print table header
+    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "Command" "Option" "Description"
+    echo "|$(printf '%*s' $((cmd_width + 2)) '' | tr ' ' '-')|$(printf '%*s' $((opt_width + 2)) '' | tr ' ' '-')|$(printf '%*s' $((desc_width + 2)) '' | tr ' ' '-')|"
+
+    # Print table rows
+    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "install" "" "Install hugo and Vercel cli."
+    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "build" "[url]" "Build with hugo."
+    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "vercel-build" "" "Build with Vercel."
+    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "serve" "" "Serve output in pulbic folder."
+    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "dev" "[url]" "Start hugo dev server."
+    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "vercel-dev" "" "Start Vercel dev server."
+    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "version" "" "Show version of required tools."
+
+    echo
+}
+
+BASE_URL="http://localhost:1313"
+
+function install() {
+    echo "Install hugo from binary source"
+    curl -L -o hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.141.0/hugo_0.141.0_Linux-64bit.tar.gz
+    tar -xzf hugo.tar.gz
+    rm hugo.tar.gz LICENSE
+
+    echo "Install Vercel cli"
+    npm install -g vercel
+}
+
+function build() {
+    if [ -n "$1" ]; then
+        BASE_URL=$1
+    fi
+    ./hugo -b "$BASE_URL"
+}
+
+function vercel-build() {
+    vercel build
+}
+
+function serve() {
+    npx serve public
+}
+
+function dev() {
+    if [ -n "$1" ]; then
+        BASE_URL=$1
+    fi
+    ./hugo server -b "$BASE_URL"
+}
+
+function vercel-dev() {
+    vercel dev
+}
+
+function version() {
+    ./hugo --version
+    vercel --version
+}
+
+if declare -f "$1" > /dev/null; then
+    "$1" "${@:2}"
+else
+    echo "Unknown command: $1"
+    help
+    exit 1
+fi
