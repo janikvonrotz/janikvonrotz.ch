@@ -22,10 +22,9 @@ No longer I wanted to understand the actual problem or piece of code, but just t
 
 <!--more-->
 
-The obvious solution would be to to stop using these AI-tools and write code as I used to. On one side I really would like to do that, but on the other side, I feel pressured to use this technology. I believe in this technologly and the promise of efficiency, however, I do not like the products and services.
+The obvious solution would be to to stop using these AI-tools and write code as I used to. On one side I really would like to do that, but on the other side, I feel pressured to use this technology. I believe in the LLM technology and the promise of more efficient coding. However, I do not like the products and services built around LLMs.
 
-This is also what annoyed me about Codeium. Every prompt is funneled through their service. If they change the terms of agreement the only option is to agree. You should know how this story goes.
-
+This is also what annoyed me about Codeium. Every prompt is funneled through their service. If they change the terms of agreement the only option is to agree. Coding should not be on a providers agreement. Especially if the terms are to their favor.
 ## Inspiration
 
 So I was looking for different angles on this topic. I was not looking for alternatives. Alternatives often don't solve the actual problem. While reading Hacker News (HN) I got an inspiration. In comment section of [Yek: Serialize your code repo (or part of it) to feed into any LLM ](https://news.ycombinator.com/item?id=42753302) I stumbled this:
