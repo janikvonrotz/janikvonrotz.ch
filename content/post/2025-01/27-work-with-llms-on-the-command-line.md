@@ -123,7 +123,7 @@ Executing the function does:
 
 Let me show the function in action. In this scenario I have an Odoo module `hr_employee_user_acl` and would like to rename a definition.
 
-First I run the `task` file with the command `ll-update` and give the path to the module as parameter:
+First I run the `task` file with the command `llm-update` and give the path to the module as parameter:
 
 ```bash
 task llm-update addons/hr/hr_employee_user_acl/
