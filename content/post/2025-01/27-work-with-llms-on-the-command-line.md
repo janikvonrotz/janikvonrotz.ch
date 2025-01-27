@@ -148,7 +148,6 @@ Wait for the response of the deepseek-coder llm.
 
 Once its done, a preview of the patch is shown:
 
-```bash
 ```patch
 diff --git a/addons/hr/hr_employee_user_acl/__manifest__.py b/addons/hr/hr_employee_user_acl/__manifest__.py
 index 1234567..89abcde 100644
