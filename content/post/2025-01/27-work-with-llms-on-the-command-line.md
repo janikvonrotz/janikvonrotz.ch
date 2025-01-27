@@ -118,6 +118,7 @@ Executing the function does:
 * Show a preview of the file with `less`.
 * Ask if the patch should be applied.
 * Apply the patch on confirmation.
+
 ## In Action
 
 Let me show the function in action. In this scenario I have an Odoo module `hr_employee_user_acl` and would like to rename a definition.
