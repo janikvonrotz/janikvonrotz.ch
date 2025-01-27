@@ -32,7 +32,7 @@ So I was looking for different angles on this topic. I was not looking for alter
 
 > <https://github.com/simonw/files-to-prompt/> seems to work fine especially for Claude as it follows the recommendations and format.
 
-In the HN sphere Simon Willison (guy in the picture) is well-known for his [blog](https://simonwillison.net/) and insights. He writes a  column on how he uses LLMs and most importantly is he the author of the [llm](https://github.com/simonw/llm) command line interface (cli).
+In the HN sphere Simon Willison (guy in the picture) is well-known for his [blog](https://simonwillison.net/) and insights. He writes a column on how he uses LLMs to code and most importantly is he the author of the [llm](https://github.com/simonw/llm) command line interface (cli).
 
 The link in the command shows an example on how Simon feeds multiple files into an LLM using his cli. The llm cli allows he to switch between remote models and even use local LLMs! There is a well maintained plugin directory to attach any kind of models.
 ## Files to prompt
