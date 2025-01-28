@@ -54,7 +54,7 @@ function llm-update() {
     fi
 
     # Get list of files
-    FILES=$(find "$1" -type f \( -name "*.py" -o -name "*.xml" \))
+    FILES=$(find "$1" -type f -name "*.yml")
 
     echo -e "Loaded these files into prompt:\n\n$FILES\n"
 
@@ -70,8 +70,9 @@ $(cat "$file")
 "
     done
 
-    # Define the prompt
-    PROMPT="EOF
+    PROMPT_FILE="tmp/llm_update"
+    echo -e "\nWrite prompt to $PROMPT_FILE"
+    cat << EOF > "$PROMPT_FILE"
 Look at the code files below and do the following:
 
 $TASK_DESCRIPTION
@@ -81,11 +82,11 @@ Output your response in the format of a git patch file. The patch should include
 Here are the files:
 
 $FILE_CONTENTS
-EOF"
+EOF
 
     # Run the llm command with the prompt
-    echo -e "\nWait for the response of the $LLM_MODEL llm."
-    RESULT=$(llm -m "$LLM_MODEL" "$PROMPT")
+    echo -e "Send prompt and wait for the response of the $LLM_MODEL llm."
+    RESULT=$(cat "$PROMPT_FILE" | llm -m "$LLM_MODEL")
 
     # Check if the result is empty
     if test -z "$RESULT"; then
@@ -94,9 +95,9 @@ EOF"
     fi
 
     # Save the patch to a file
-    PATCH_FILE="tmp/llm_changes.patch"
+    PATCH_FILE="tmp/llm_update.patch"
     echo "$RESULT" > "$PATCH_FILE"
-    echo -e "\nSaved patch to $PATCH_FILE.\n"
+    echo -e "Saved patch to $PATCH_FILE.\n"
 
     # Preview patch file and ask to apply
     git apply --check "$PATCH_FILE"
@@ -104,6 +105,7 @@ EOF"
     read -p "Do you want to apply this patch? (y/n): " CONFIRM
     if [[ "$CONFIRM" =~ ^[Yy]$ ]]; then
         git apply "$PATCH_FILE"
+        echo "Applied patch file."
     fi
 }
 ```
