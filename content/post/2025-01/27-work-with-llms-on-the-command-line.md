@@ -86,7 +86,7 @@ EOF
 
     # Run the llm command with the prompt
     echo -e "Send prompt and wait for the response of the $LLM_MODEL llm."
-    RESULT=$(cat "$PROMPT_FILE" | llm -m "$LLM_MODEL")
+    RESULT=$(cat "$PROMPT_FILE" | llm -x -m "$LLM_MODEL")
 
     # Check if the result is empty
     if test -z "$RESULT"; then
