@@ -10,13 +10,13 @@ tags:
   - mangas
 images:
   - /images/books.jpg
-draft: true
+draft: false
 ---
 *In* 2024 I read 4 books and 10 mangas. Even though I read more mangas than books, the list will still be called "book list". And there is another update. The rating is now on a scale of 5 point instead of 10.
 
 My favorite book was **Landkkrank** by Nikolaj Schultz. And my favorite manga was **Ion Mud** by Amaury Bündgen.
 
-And here is the full 2024 book list:
+Here is the full 2024 book list:
 
 <!--more-->
 # Books
@@ -69,7 +69,7 @@ Finished: 2024-09-01
 
 # Mangas
 
-Some of these mangas are still ongoing. There are shown, because mangas often take years to finish.
+Some of these mangas are still ongoing, often they take years until being completion.
 
 ![](../../../static/images/one-piece.png)
 
@@ -78,7 +78,7 @@ Author: Oda Eiichiro\
 Comment: Started reading this ongoing masterpiece from chapter 1.\
 Rating: 5/5\
 Chapter: 1134+
-Finished: -
+Finished: Not yet.
 
 ![](../../../static/images/ultra-heaven.png)
 
@@ -89,16 +89,16 @@ Rating: 5/5\
 Chapter: 3
 Finished: 2024
 
-![](../../../static/images/Pasted%20image%2020241229181458.png)
+![](../../../static/images/parasyte-reversi.png)
 
 Title: Parasyte Reversi\
 Author: Moare Ohta\
 Comment: The followup of the parasyte manga.\
 Rating: 4/5\
 Chapter: 76+\
-Finished: -
+Finished: Not yet.
 
-![](../../../static/images/Pasted%20image%2020241229181721.png)
+![](../../../static/images/ion-mud.png)
 
 Title: Ion Mud\
 Author: Amaury Bündgen\
@@ -107,46 +107,57 @@ Rating: 5/5\
 Volume: 1\
 Finished: 2024
 
+![](../../../static/images/inherit-the-stars.png)
+
 Title: Inherit the Stars\
 Author: Hoshino Yukinobun\
-Comment: Incompleted but still worth the read.\
-Rating: 4/5\
-Chapter: 29\
+Comment: Author does not continue the managa, but still worth the read.\
+Rating: 3/5\
+Chapter: 30\
 Finished: 2024
+
+![](../../../static/images/all-you-need-is-kill.png)
 
 Title: All You Need Is Kill\
-Author: \
-Comment: .\
+Author: Hiroshi Sakurazak\
+Comment: The managa has been turned into the movie "Edge of Tomorrow".\
 Rating: 4/5\
-Chapter: 29\
+Chapter: 17\
 Finished: 2024
 
-Title: ALIVE - The Final Evolution\
-Author: \
-Comment: .\
-Rating: 4/5\
-Chapter: 29\
+![](../../../static/images/alive-the-final-evolution.png)
+
+Title: Alive: The Final Evolution\
+Author: Tadashi Kawashima\
+Comment: Cannot remember the details. Some kids with special abilities are imprisoned and escape.\
+Rating: 2/5\
+Chapter: 82\
 Finished: 2024
+
+![](../../../static/images/alita-battle-angel.png)
 
 Title: Battle Angel Alita - Holy Night and Other Stories\
-Author: \
-Comment: .\
-Rating: 4/5\
-Chapter: 29\
+Author: Yukito Kishiro\
+Comment: I read Battle Angel Alita in the past.\
+Rating: 3/5\
 Finished: 2024
+
+![](../../../static/images/2001-plus-5.png)
 
 Title: 2001 + 5\
-Author: \
-Comment: .\
-Rating: 4/5\
-Chapter: 29\
+Author: Yukinobu Hoshino\
+Comment: A collection of Hoshino Yukinobu's space fantasies.\
+Rating: 3/5\
+Chapter: 11\
 Finished: 2024
 
+![](../../../static/images/stardust-memories.png)
+
 Title: Stardust Memories\
-Author: \
-Comment: .\
+Author: Yukinobu Hoshino\
+Comment: Talks about the problems and implications of space traveling.\
 Rating: 4/5\
-Chapter: 29\
+Chapter: 14\
 Finished: 2024
 
 
