@@ -21,7 +21,7 @@ Here is the full 2024 book list:
 <!--more-->
 # Books
 
-![](../../../static/images/9781596069428.png)
+![](/images/9781596069428.png)
 
 Title: The Best of Greg Egan
 Author: Greg Egan\
@@ -30,7 +30,7 @@ Rating: 3/5\
 ISBN: 9781596069428\
 Finished: 2024-12-14
 
-![](../../../static/images/9783957578303.png)
+![](/images/9783957578303.png)
 
 Title: Kaptialismus und Todestrieb
 Author: Byung-Chul Han\
@@ -39,7 +39,7 @@ Rating: 4/10\
 ISBN: 9783957578303\
 Finished: 2024-09-24
 
-![](../../../static/images/9783518029886.png)
+![](/images/9783518029886.png)
 
 Title: Landkrank\
 Author: Nikolaj Schultz\
@@ -48,7 +48,7 @@ Rating: 5/5\
 ISBN: 9783518029886\
 Finished: 2024-08-02
 
-![](../../../static/images/9783630877235.png)
+![](/images/9783630877235.png)
 
 Title: Nachmittage\
 Author: Ferdinand von Schirach\
@@ -58,7 +58,7 @@ ISBN: 9783630877235\
 Finished: 2024
 
 
-![](../../../static/images/9783518473566.png)
+![](/images/9783518473566.png)
 
 Title: Beschleunigen wir die Resonanz!\
 Author: Hartmut Rosa\
@@ -71,7 +71,7 @@ Finished: 2024-09-01
 
 Some of these mangas are still ongoing, often they take years until being completion.
 
-![](../../../static/images/one-piece.png)
+![](/images/one-piece.png)
 
 Title: One Piece\
 Author: Oda Eiichiro\
@@ -80,7 +80,7 @@ Rating: 5/5\
 Chapter: 1134+
 Finished: Not yet.
 
-![](../../../static/images/ultra-heaven.png)
+![](/images/ultra-heaven.png)
 
 Title: Ultra Heaven\
 Author: Keiichi Koike\
@@ -89,7 +89,7 @@ Rating: 5/5\
 Chapter: 3
 Finished: 2024
 
-![](../../../static/images/parasyte-reversi.png)
+![](/images/parasyte-reversi.png)
 
 Title: Parasyte Reversi\
 Author: Moare Ohta\
@@ -98,7 +98,7 @@ Rating: 4/5\
 Chapter: 76+\
 Finished: Not yet.
 
-![](../../../static/images/ion-mud.png)
+![](/images/ion-mud.png)
 
 Title: Ion Mud\
 Author: Amaury Bündgen\
@@ -107,7 +107,7 @@ Rating: 5/5\
 Volume: 1\
 Finished: 2024
 
-![](../../../static/images/inherit-the-stars.png)
+![](/images/inherit-the-stars.png)
 
 Title: Inherit the Stars\
 Author: Hoshino Yukinobun\
@@ -116,7 +116,7 @@ Rating: 3/5\
 Chapter: 30\
 Finished: 2024
 
-![](../../../static/images/all-you-need-is-kill.png)
+![](/images/all-you-need-is-kill.png)
 
 Title: All You Need Is Kill\
 Author: Hiroshi Sakurazak\
@@ -125,7 +125,7 @@ Rating: 4/5\
 Chapter: 17\
 Finished: 2024
 
-![](../../../static/images/alive-the-final-evolution.png)
+![](/images/alive-the-final-evolution.png)
 
 Title: Alive: The Final Evolution\
 Author: Tadashi Kawashima\
@@ -134,7 +134,7 @@ Rating: 2/5\
 Chapter: 82\
 Finished: 2024
 
-![](../../../static/images/alita-battle-angel.png)
+![](/images/alita-battle-angel.png)
 
 Title: Battle Angel Alita - Holy Night and Other Stories\
 Author: Yukito Kishiro\
@@ -142,7 +142,7 @@ Comment: I read Battle Angel Alita in the past.\
 Rating: 3/5\
 Finished: 2024
 
-![](../../../static/images/2001-plus-5.png)
+![](/images/2001-plus-5.png)
 
 Title: 2001 + 5\
 Author: Yukinobu Hoshino\
@@ -151,7 +151,7 @@ Rating: 3/5\
 Chapter: 11\
 Finished: 2024
 
-![](../../../static/images/stardust-memories.png)
+![](/images/stardust-memories.png)
 
 Title: Stardust Memories\
 Author: Yukinobu Hoshino\
