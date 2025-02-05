@@ -41,7 +41,7 @@ So I started to introduce the files-to-prompt solution into my development workf
 For the [Odoo.Build](https://odoo.build/) project I added a new command:
 
 ```bash
-printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "llm-update" "[path]" "Feed module files with prompt to LLM and apply updates with git path."
+printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "llm-update" "[path][prompt]" "Feed module files with prompt to LLM and apply file changes."
 ```
 
 And here is the function that does the magic:
@@ -53,60 +53,79 @@ function llm-update() {
         exit 1; 
     fi
 
-    # Get list of files
-    FILES=$(find "$1" -type f -name "*.yml")
-
+    # Get files from path
+    FILES=$(find "$1" -type f \( -name "*.py" -o -name "*.xml" \))
     echo -e "Loaded these files into prompt:\n\n$FILES\n"
 
-    # Get task description
-    read -p "Enter the task description: " TASK_DESCRIPTION
+    # Prompt task description
+    if [ -z "$2" ]; then
+        read -p "Enter the task description: " TASK_DESCRIPTION
+    else
+        TASK_DESCRIPTION="$2"
+    fi
 
     # Prepare the files content for prompt
     FILE_CONTENTS=""
-    for file in $FILES; do
-        FILE_CONTENTS+="<<< $file >>>
-$(cat "$file")
+    for FILE in $FILES; do
+        FILE_CONTENTS+="<<<$FILE>>>
+$(cat "$FILE")
 
 "
     done
 
+    # Define prompt content
     PROMPT_FILE="tmp/llm_update"
-    echo -e "\nWrite prompt to $PROMPT_FILE"
+    echo -e "\nWrite prompt to $PROMPT_FILE."
     cat << EOF > "$PROMPT_FILE"
 Look at the code files below and do the following:
 
 $TASK_DESCRIPTION
 
-Output your response in the format of a git patch file. The patch should include only the changes to the files, and it should be applicable with 'git apply'. Do not include any explanations or extra information outside of the patch format.
+Output all files that you need to change in full again, including your changes. 
+In the same format as I provide the files below. Under no circumstances output any other text, 
+no additional infos, no code formatting chars. Only the code in the given format.
 
 Here are the files:
 
 $FILE_CONTENTS
 EOF
 
-    # Run the llm command with the prompt
-    echo -e "Send prompt and wait for the response of the $LLM_MODEL llm."
-    RESULT=$(cat "$PROMPT_FILE" | llm -x -m "$LLM_MODEL")
+    # Run the llm command
+    echo -e "Send prompt and wait for the response of the $LLM_MODEL LLM."
+    RESULT=$(cat "$PROMPT_FILE" | llm -m "$LLM_MODEL")
 
-    # Check if the result is empty
-    if test -z "$RESULT"; then
+    # Check if result is empty
+    if [ -z "$RESULT" ]; then
         echo "No response from the model. Exiting."
         exit 1
     fi
 
-    # Save the patch to a file
-    PATCH_FILE="tmp/llm_update.patch"
-    echo "$RESULT" > "$PATCH_FILE"
-    echo -e "Saved patch to $PATCH_FILE.\n"
+    # Save the result to a file
+    RESULT_FILE="tmp/llm_update_result"
+    echo "$RESULT" > "$RESULT_FILE"
+    echo -e "Saved response to $RESULT_FILE.\n"
 
-    # Preview patch file and ask to apply
-    git apply --check "$PATCH_FILE"
-    less "$PATCH_FILE"
-    read -p "Do you want to apply this patch? (y/n): " CONFIRM
-    if [[ "$CONFIRM" =~ ^[Yy]$ ]]; then
-        git apply "$PATCH_FILE"
-        echo "Applied patch file."
+    # Show a preview of result file
+    less "$RESULT_FILE"
+
+    # Ask for confirmation before updating files
+    read -p "Do you want to apply these updates to the files? (y/n): " CONFIRM
+    if [[ ! "$CONFIRM" =~ ^[Yy]$ ]]; then
+        exit 0
     fi
+
+    # Parse the response from the file and update the files directly
+    echo -e "Parsing the response and updating files...\n"
+    CURRENT_FILE=""
+    while IFS= read -r LINE; do
+        if [[ $LINE =~ ^"<<<"(.*)">>>" ]]; then
+            CURRENT_FILE="${BASH_REMATCH[1]}"
+            echo "Update file $CURRENT_FILE."
+            > "$CURRENT_FILE"
+        elif [[ -n $CURRENT_FILE ]]; then
+            echo "$LINE" >> "$CURRENT_FILE"
+        fi
+    done < "$RESULT_FILE"
 }
 ```
 
@@ -114,69 +133,77 @@ Executing the function does:
 
 * Collect all Python and XML files from the provided path.
 * Ask for task instructions.
-* Generate a prompt with the instruction and files that asks for a response in the style of a git patch.
+* Generate a prompt with the instruction and files that asks for a response with file content only.
 * Pass the prompt to the `llm` command.
-* Store the response as git patch file.
+* Store the response into a file.
 * Show a preview of the file with `less`.
-* Ask if the patch should be applied.
-* Apply the patch on confirmation.
+* Ask if the changes should be applied.
+* Apply the changes on confirmation.
 
 ## In Action
 
-Let me show the function in action. In this scenario I have an Odoo module `hr_employee_user_acl` and would like to rename a definition.
+Let me show the function in action. In this scenario I have an Odoo module `board_user_acl` and would like to rename a definition.
 
 First I run the `task` file with the command `llm-update` and give the path to the module as parameter:
 
 ```bash
-task llm-update addons/hr/hr_employee_user_acl/
+ task llm-update addons/server_tools/board_user_acl "Rename restricted to restrict"
 Loaded these files into prompt:
 
-addons/hr/hr_employee_user_acl/__manifest__.py
-addons/hr/hr_employee_user_acl/security/security.xml
-addons/hr/hr_employee_user_acl/views/menu.xml
+addons/server_tools/board_user_acl/__manifest__.py
+addons/server_tools/board_user_acl/security/security.xml
+addons/server_tools/board_user_acl/views/menu.xml
 ```
 
 The function asks for a task description:
 
 ```bash
-Enter the task description: rename restricted to restrict
+Enter the task description: Rename restricted to restrict
 ```
 
 And then it waits for the response.
 
 ```bash
-Wait for the response of the deepseek-coder llm.
+Write prompt to tmp/llm_update.
+Send prompt and wait for the response of the gpt-4o LLM.
+Saved response to tmp/llm_update_result.
 ```
 
-Once its done, a preview of the patch is shown:
+Once its done, a preview of the updated files is shown:
 
-```patch
-diff --git a/addons/hr/hr_employee_user_acl/__manifest__.py b/addons/hr/hr_employee_user_acl/__manifest__.py
-index 1234567..89abcde 100644
---- a/addons/hr/hr_employee_user_acl/__manifest__.py
-+++ b/addons/hr/hr_employee_user_acl/__manifest__.py
-@@ -1,7 +1,7 @@
- {
-     "name": "HR Employee User ACL",
-     "summary": """
--        Restricted access to employees app.
-+        Restrict access to employees app.
-     """,
-     "author": "Mint System GmbH, Odoo Community Association (OCA)",
-     "website": "https://www.mint-system.ch",
-
-tmp/llm_changes.patch (END)
+```text
+<<<addons/server_tools/board_user_acl/__manifest__.py>>>
+{
+    "name": "Board User ACL",
+    "summary": """
+        Restrict access to dashboards app.
+    """,
+    "author": "Mint System GmbH",
+    "website": "https://www.mint-system.ch",
+    "category": "Technical",
+    "version": "16.0.1.0.0",
+    "license": "AGPL-3",
+    "depends": ["base_user_acl"],
+    "data": ["security/security.xml", "views/menu.xml"],
+    "installable": True,
+    "application": False,
+    "auto_install": False,
+    "images": ["images/screen.png"],
+}
+tmp/llm_update_result (END)
 ```
 
 Quit the less preview with `q` and confirm the change.
 
 ```bash
-Saved patch to tmp/llm_changes.patch.
+Parsing the response and updating files...
 
-Do you want to apply this patch? (y/n): y
-Applied patch file.
+Update file addons/server_tools/board_user_acl/__manifest__.py.
 ```
 
 That's it.
 
 I will most likely add new commands and other prompts.
+
+*Edits:*
+* *2025-02-05: Removed prompt response with git patch file as it was often not working correctly.* 
