@@ -16,7 +16,7 @@ images:
   - /images/simon-willison-live-coding-llm.jpg
 draft: false
 ---
-I used VSCodium and Codeium to develope Python code. VSCode is my editor of choice and Codeium is a well integrated AI-tool that helps writing code. While it solved a lot of problems for me, especially writing boilerplate code, I became more and more frustrated using this setup.
+I used VSCodium and Codeium to develop Python code. VSCode is my editor of choice and Codeium is a well integrated AI-tool that helps writing code. While it solved a lot of problems for me, especially writing boilerplate code, I became more and more frustrated using this setup.
 
 No longer I wanted to understand the actual problem or piece of code, but just to prompt out a solution. Often I was eagerly waiting for the auto-complete feature to fix my code. I copied pieces of code to LLM chats in the browser and then updated the code in the editor. This workflow didn't feel right. This isn't coding.
 
