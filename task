@@ -1,6 +1,5 @@
 #!/bin/bash
 set -e
-
 if [[ -a ".env" ]]; then
     source .env
 fi
@@ -11,16 +10,13 @@ function help() {
     echo
     echo "commands:"
     echo
-
     # Define column widths
     cmd_width=12
     opt_width=10
     desc_width=40
-
     # Print table header
     printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "Command" "Option" "Description"
     echo "|$(printf '%*s' $((cmd_width + 2)) '' | tr ' ' '-')|$(printf '%*s' $((opt_width + 2)) '' | tr ' ' '-')|$(printf '%*s' $((desc_width + 2)) '' | tr ' ' '-')|"
-
     # Print table rows
     printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "install" "" "Install hugo and Vercel cli."
     printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "build" "[url]" "Build with hugo."
@@ -29,20 +25,20 @@ function help() {
     printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "dev" "[url]" "Start hugo dev server."
     printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "vercel-dev" "" "Start Vercel dev server."
     printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "version" "" "Show version of required tools."
-
+    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "rename" "" "Rename posts to YYYY-MM-DD format."
     echo
 }
 
 BASE_URL="http://localhost:1313"
+POST_DIR="content/post"
 
 function install() {
     echo "Install hugo from binary source"
     curl -L -o hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.141.0/hugo_0.141.0_Linux-64bit.tar.gz
     tar -xzf hugo.tar.gz
     rm hugo.tar.gz LICENSE
-
     echo "Install Vercel cli"
-    npm install -g vercel
+    pnpm install -g vercel
 }
 
 function build() {
@@ -74,6 +70,50 @@ function vercel-dev() {
 function version() {
     ./hugo --version
     vercel --version
+}
+
+function process_file() {
+    local FILE="$1"
+    
+    # Extract directory name (YYYY-MM) and filename
+    DIR_NAME=$(dirname "$FILE")
+    YEAR_MONTH=$(basename "$DIR_NAME")
+    
+    # Extract year and month from directory
+    YEAR=${YEAR_MONTH%-*}
+    MONTH=${YEAR_MONTH#*-}
+    
+    # Extract day and rest of filename
+    FILENAME=$(basename "$FILE")
+    DAY=${FILENAME%%-*}
+    REST_OF_NAME=${FILENAME#*-}
+    
+    # Construct new filename
+    NEW_NAME="${POST_DIR}/${YEAR}-${MONTH}-${DAY}-${REST_OF_NAME}"
+    
+    # Check if target file already exists
+    if [ -f "$NEW_NAME" ]; then
+        echo "Error: Target file already exists: $NEW_NAME"
+        return 1
+    fi
+    
+    # Move and rename file
+    echo "Moving: $FILE → $NEW_NAME"
+    mv "$FILE" "$NEW_NAME"
+}
+
+function rename() {
+    echo "Renaming posts to YYYY-MM-DD format..."
+    
+    # Find all markdown files in year-month subdirectories
+    find "$POST_DIR" -mindepth 2 -type f -name "*.md" | while read -r FILE; do
+        process_file "$FILE"
+    done
+
+    # Remove empty directories
+    find "$POST_DIR" -mindepth 1 -type d -empty -delete
+
+    echo "File reorganization complete!"
 }
 
 if declare -f "$1" > /dev/null; then
