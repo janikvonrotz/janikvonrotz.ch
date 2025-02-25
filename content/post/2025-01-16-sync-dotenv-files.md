@@ -25,8 +25,8 @@ The solution I found was [pass](https://www.passwordstore.org/). I already talke
 Here are the help entries:
 
 ```bash
-printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "pass-store-dotenv" "" "Store content of .env in pass entry."
-printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "pass-restore-dotenv" "" "Restore content of .env from pass entry."
+printf "$COLUMN" "store-dotenv" "" "Store content of .env in pass entry."
+printf "$COLUMN" "restore-dotenv" "" "Restore content of .env from pass entry."
 ```
 
 And the functions:
@@ -34,7 +34,7 @@ And the functions:
 ```bash
 PASS_ENTRY=/dotenv/project
 
-function pass-store-dotenv() {
+function store-dotenv() {
     if [ -f .env ]; then
         echo "Store .env file in pass: $PASS_ENTRY"
         cat .env | pass insert -m -f "$PASS_ENTRY"
@@ -43,7 +43,7 @@ function pass-store-dotenv() {
     fi
 }
 
-function pass-restore-dotenv() {
+function restore-dotenv() {
     if pass find "$PASS_ENTRY" >/dev/null; then
         echo "Restore .env file from pass: $PASS_ENTRY"
         pass show "$PASS_ENTRY" > .env
