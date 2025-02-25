@@ -53,4 +53,4 @@ function restore-dotenv() {
 }
 ```
 
-To store the .env file in pass run `task pass-store-dotenv` and `pass git push`. To restore it run `pass git pull` and `task pass-restore-dotenv`. The content of the .env file is stored as a pass entry in the `$PASS_ENTRY` path.
+To store the .env file in pass run `task store-dotenv` and `pass git push`. To restore it run `pass git pull` and `task restore-dotenv`. The content of the .env file is stored as a pass entry in the `$PASS_ENTRY` path.
