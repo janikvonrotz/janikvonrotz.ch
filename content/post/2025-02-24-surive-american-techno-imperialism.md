@@ -1,5 +1,5 @@
 ---
-title: Surive the American techno imperialism
+title: Surive the American techno-imperialism
 slug: survive-the-american-techno-imperialism
 date: 2025-02-26T08:21:44+01:00
 categories:
@@ -13,11 +13,11 @@ images:
   - /images/logo.png
 draft: true
 ---
-In my last post I explained [how to map a keyboard key in linux](/2025/02/24/map-keyboard-key/). In this post I want to give instructions on how to survive the *American techno imperialism*.
+In my last post I explained [how to map a keyboard key in linux](/2025/02/24/map-keyboard-key/). In this post I want to give instructions on how to survive the *American techno-imperialism*.
 
 <!--more-->
 
-For reader who have not heard about *techno imperialism* before, let me give a definition:
+For reader who have not heard about *techno-imperialism* before, let me give you a simple definition:
 
 > American techno-imperialism refers to the U.S. using its technological power to dominate global markets, influence politics, and shape cultures, often at the expense of other nations' autonomy.
 
@@ -57,9 +57,9 @@ Also for big tech there should not be any alternatives, because the very existen
 
 ### Call out the bullies
 
-From an economic viewpoint it is simple. Monopolieslead to a welfare loss.
+From an economic viewpoint it is simple. Monopolies lead to a welfare loss.
 
-Microsoft (business software), Google (search, browser), Apple (app store), Facebook (social meda), Amazon (e-commerce) and SpaceX (space flight) are monopolists.
+Microsoft (business software), Google (search, browser), Apple (app store), Facebook (social media), Amazon (e-commerce) and SpaceX (space flight) are monopolists.
 
 Therefore they are not good for the economy.
 
