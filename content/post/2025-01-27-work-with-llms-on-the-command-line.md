@@ -144,10 +144,10 @@ Executing the function does:
 
 Let me show the function in action. In this scenario I have an Odoo module `board_user_acl` and would like to rename a definition.
 
-First I run the `task` file with the command `update-with-llm` and give the path to the module as parameter:
+First I run the `task` file with the `update-with-llm` command and give the path to the module as parameter:
 
 ```bash
- task update-with-llm addons/server_tools/board_user_acl "Rename restricted to restrict"
+task update-with-llm addons/server_tools/board_user_acl "Rename restricted to restrict"
 Loaded these files into prompt:
 
 addons/server_tools/board_user_acl/__manifest__.py
@@ -206,4 +206,5 @@ That's it.
 I will most likely add new commands and other prompts.
 
 *Edits:*
-* *2025-02-05: Removed prompt response with git patch file as it was often not working correctly.* 
+* Removed prompt response with git patch file as it was often not working correctly.*
+* Renamed `llm-update` to `update-with-llm`
