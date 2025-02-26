@@ -89,8 +89,13 @@ git fetch --all
 git pull --all
 ```
 
-Delete all local branches except master.\
-`git branch | grep -v "master" | xargs git branch -D`
+Delete local branches except master.\
+`git branch | grep -v "master" | xargs git branch -D
+
+Delete local branches that do not exist on remote.\
+```bash
+git fetch -p && git branch --merged | grep -v '\*' | xargs -n 1 git branch -d
+```
 
 ## Staging
 
