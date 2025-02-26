@@ -41,13 +41,13 @@ So I started to introduce the files-to-prompt solution into my development workf
 For the [Odoo.Build](https://odoo.build/) project I added a new command:
 
 ```bash
-printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "llm-update" "[path][prompt]" "Feed module files with prompt to LLM and apply file changes."
+printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "update-with-llm" "[path][prompt]" "Feed module files with prompt to LLM and apply file changes."
 ```
 
 And here is the function that does the magic:
 
 ```bash
-function llm-update() {
+function update-with-llm() {
     if test -z "$1"; then 
         echo "\$1 is empty."; 
         exit 1; 
@@ -144,10 +144,10 @@ Executing the function does:
 
 Let me show the function in action. In this scenario I have an Odoo module `board_user_acl` and would like to rename a definition.
 
-First I run the `task` file with the command `llm-update` and give the path to the module as parameter:
+First I run the `task` file with the command `update-with-llm` and give the path to the module as parameter:
 
 ```bash
- task llm-update addons/server_tools/board_user_acl "Rename restricted to restrict"
+ task update-with-llm addons/server_tools/board_user_acl "Rename restricted to restrict"
 Loaded these files into prompt:
 
 addons/server_tools/board_user_acl/__manifest__.py
