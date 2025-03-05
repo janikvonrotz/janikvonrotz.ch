@@ -10,5 +10,6 @@
   "promptDelete": false,
   "spellcheckLanguages": null,
   "showUnsupportedFiles": true,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "strictLineBreaks": true
 }
