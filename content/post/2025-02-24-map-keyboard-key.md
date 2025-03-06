@@ -55,6 +55,6 @@ sudo udevadm trigger
 
 I found a simpler way to write umlauts. As the `Alt Right` key acts as the compose key. The compose key can be re-assigned:
 
-![](../../static/images/keyboard-compose-key.png)
+![](/images/keyboard-compose-key.png)
 
 With this assignment I still don't have a *Alt Right* key, but at least I can write ä,ö and ü.
