@@ -46,7 +46,15 @@ evdev:input:*
 
 Reload the hardware database and the key is mapped.
 
-```
+```bash
 sudo systemd-hwdb update
 sudo udevadm trigger
 ```
+
+**Edits:**
+
+I found a simpler way to write umlauts. As the `Alt Right` key acts as the compose key. The compose key can be re-assigned:
+
+![](../../static/images/keyboard-compose-key.png)
+
+With this assignment I still don't have a *Alt Right* key, but at least I can write ä,ö and ü.
