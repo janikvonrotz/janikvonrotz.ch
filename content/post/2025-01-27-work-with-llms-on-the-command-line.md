@@ -54,8 +54,15 @@ function update-with-llm() {
     fi
 
     # Get files from path
-    FILES=$(find "$1" -type f \( -name "*.md" -o -name "*.yml" -o -name "*.yaml" -o -name "*.conf" -o -name "*.nginx" \) \
-        | grep -vFf <(git -C "$1" ls-files --ignored --exclude-standard --others))
+    if [ -f "$1" ]; then
+        FILES="$1"
+    elif [ -d "$1" ]; then
+        FILES=$(find "$1" -type f \( -name "*.md" -o -name "*.yml" -o -name "*.yaml" -o -name "*.conf" -o -name "*.nginx" \) \
+            | grep -vFf <(git -C "$1" ls-files --ignored --exclude-standard --others))
+    else
+        echo "$1 is neither a file nor a directory."
+        exit 1
+    fi
     echo -e "Loaded these files into prompt:\n\n$FILES\n"
 
     # Prompt task description
@@ -208,5 +215,6 @@ That's it.
 I will most likely add new commands and other prompts.
 
 *Edits:*
-* Removed prompt response with git patch file as it was often not working correctly.*
+* Removed prompt response with git patch file as it was often not working correctly.
 * Renamed `llm-update` to `update-with-llm`
+* Updated how files are searched
