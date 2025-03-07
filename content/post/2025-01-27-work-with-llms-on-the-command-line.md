@@ -41,7 +41,7 @@ So I started to introduce the files-to-prompt solution into my development workf
 For the [Odoo.Build](https://odoo.build/) project I added a new command:
 
 ```bash
-printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "update-with-llm" "[path][prompt]" "Feed module files with prompt to LLM and apply file changes."
+printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "update-with-llm" "[path][prompt]" "Update files with LLM prompt."
 ```
 
 And here is the function that does the magic:
