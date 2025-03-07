@@ -54,7 +54,8 @@ function update-with-llm() {
     fi
 
     # Get files from path
-    FILES=$(find "$1" -type f \( -name "*.py" -o -name "*.xml" \))
+    FILES=$(find "$1" -type f \( -name "*.md" -o -name "*.yml" -o -name "*.yaml" -o -name "*.conf" -o -name "*.nginx" \) \
+        | grep -vFf <(git -C "$1" ls-files --ignored --exclude-standard --others))
     echo -e "Loaded these files into prompt:\n\n$FILES\n"
 
     # Prompt task description
