@@ -25,7 +25,11 @@ The antagonist to techno imperialism is _digital sovereignty_.
 
 Digital sovereignty emphasizes the control and autonomy of nations over their own digital infrastructure, data, and technology policies.
 
-Resisting external influence especially for democracies has become crucial.
+Resisting external influence especially for democracies has become a crucial element. 
+
+Democratic processes requires objectivity and a healthy media landscape.
+
+The influence of big tech in social media and the internet overall has a bad effect on this factors.
 
 ### Make Europe first but not
 
