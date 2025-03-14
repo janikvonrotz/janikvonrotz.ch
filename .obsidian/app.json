@@ -2,7 +2,7 @@
   "useMarkdownLinks": true,
   "attachmentFolderPath": "static/images",
   "alwaysUpdateLinks": true,
-  "trashOption": "local",
+  "trashOption": "none",
   "newLinkFormat": "relative",
   "spellcheck": true,
   "legacyEditor": false,
