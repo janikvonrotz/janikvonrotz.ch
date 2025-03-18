@@ -6,5 +6,6 @@
   "textFontFamily": "Ubuntu Mono",
   "enabledCssSnippets": [
     "snippet"
-  ]
+  ],
+  "monospaceFontFamily": "Ubuntu Mono"
 }
