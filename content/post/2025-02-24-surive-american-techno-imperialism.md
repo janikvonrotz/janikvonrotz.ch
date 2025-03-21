@@ -19,52 +19,72 @@ In my last post I explained [how to map a keyboard key in linux](/2025/02/24/map
 
 For reader who have not heard about *techno-imperialism* before, let me give you a simple definition:
 
-> American techno-imperialism refers to the U.S. using its technological power to dominate global markets, influence politics, and shape cultures, often at the expense of other nations' autonomy.
+> American techno-imperialism refers to the U.S. using its technological power to dominate global markets, influence politics, and shape cultures, often at the expense of other nations autonomy.
 
-The antagonist to techno imperialism is _digital sovereignty_.
+The antagonist to techno imperialism is _digital sovereignty_. 
 
 Digital sovereignty emphasizes the control and autonomy of nations over their own digital infrastructure, data, and technology policies.
 
 Resisting external influence especially for democracies has become a crucial element. 
 
-Democratic processes requires objectivity and a healthy media landscape.
+Democratic processes requires objectivity and healthy media coverage of events.
 
-The influence of big tech in social media and the internet overall has a bad effect on this factors.
+The influence of big tech in the realm of social media and beyond puts democratic processes at risk.
 
 ### Make Europe first but not
 
-The idea of sovereignty goes hand in hand with nationalism.
+Gaining autonomy comes at the cost of severing connections.
 
-We have to make a clear distinction between those two.
+The US has become an unstable partner. Thus having a strong alliance with European nations is key.
 
-Sovereignty is not about closing borders it is about building participation processes.
+The ideas of autonomy, independence, sovereignty are striving.
+
+However, the idea of sovereignty goes hand in hand with nationalism. And we don't want to repeat that past.
+
+We have to make a clear distinction between those sovereignty and nationalism.
+
+Sovereignty is not about closing borders and improving at the cost of foreigners. It is about cooperation and participation.
 
 ### Don't fall for fear mongering
 
+The idea that we hardly can influence anything and are at the hand of other powers is staggering.
+
+It is neither true nor is there any rationality to it.
+
 How many people do live in Europe and how many do live the United States?
 
-We are an economic power. Let me give an example: The Norwegian pension fund.
+Europe is the cradle of democracy and its values. Lets make sure that we are up to this responsibility.
 
 The EU has merit.
 
 ### Self-host, federate and cooperate
 
-We depends to much on the US cloud and software providers.
+The techo-imperliasm implies that data and computing is power.
 
-This hurts our own software industry and economy.
+We depend too much on the US cloud and software providers.
 
-Many say (lobbyists) that there are no good alternatives.
+With every transaction that goes abroad we hurt our own software industry.
+
+Many say ( especially lobbyists) that there are no good alternatives to the established products.
 
 But this is simply not true: <https://european-alternatives.eu/>
 
-Also for big tech there should not be any alternatives, because the very existence of big tech is a problem.
+There are plenty European alternatives.
+
+If you expect them to deliver the same features and experience you are mistaken.
+
+The big tech services don't deserve any alternatives. The very existence of their products is a problem.
 
 ### Call out the bullies
 
-From an economic viewpoint it is simple. Monopolies lead to a welfare loss.
+So who are the bad guys?
+
+From an economic viewpoint it is simple. Monopolists lead to a welfare loss.
 
 Microsoft (business software), Google (search, browser), Apple (app store), Facebook (social media), Amazon (e-commerce) and SpaceX (space flight) are monopolists.
 
 Therefore they are not good for the economy.
+
+Moreover, the success of these companies can be traced back to the externalizing of costs. 
 
 I am not sure what else you need know. And yes it is that simple!
