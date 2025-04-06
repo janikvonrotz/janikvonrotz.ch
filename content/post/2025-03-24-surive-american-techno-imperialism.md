@@ -15,7 +15,7 @@ draft: false
 ---
 <small>Source of the image: <https://www.spellingmistakescostlives.com/single-post/us-empire></small>
 
-In my last post, I explained [how to map a keyboard key in Linux](/2025/02/24/map-keyboard-key/). In this post, I want to provide ideas on "How to survive American techno-imperialism".
+In my last post, I explained [how to map a keyboard key in Linux](/2025/02/24/map-keyboard-key/). In this post, I want to provide ideas on "How to survive the American techno-imperialism".
 
 <!--more-->
 

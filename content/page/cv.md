@@ -20,6 +20,14 @@ After completing his apprenticeship, Janik worked as a SharePoint Administrator 
 
 ## Work Experience
 
+01|2025 - now
+Backend Pilot (part-time)
+[Sozialinfo](https://www.sozialinfo.ch/)
+
+* Develop backend infrastrucute of the job portal
+* Introduce knowledgee management tools
+* Implement Odoo processes
+
 03|2020 - now  
 Chief Technical Officer (self-employed)  
 [Mint System GmbH](https://www.mint-system.ch/)
