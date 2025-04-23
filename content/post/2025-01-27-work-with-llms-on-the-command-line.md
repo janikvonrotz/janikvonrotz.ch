@@ -215,6 +215,7 @@ That's it.
 I will most likely add new commands and other prompts.
 
 *Edits:*
+
 * Removed prompt response with git patch file as it was often not working correctly.
 * Renamed `llm-update` to `update-with-llm`
 * Updated how files are searched
