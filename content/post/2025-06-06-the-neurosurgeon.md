@@ -24,9 +24,9 @@ But who was the patient? The name had been censored and replaced with an anonymo
 
 The patient was put on the table and she immediately recognized the face. It was Felon Boar, the notorious billionaire known for his recklessness and destructiveness. It was his car that had taken the life of Brian. Her one and only love. A wave of pain, sorrow, and anger washed over her. Memories too dark remember. She struggled to contain her emotions, reminding herself to focus. "Carole, are you ready?" the anesthesiologist called out. "Yes, sorry," she replied, trying to compose herself.
 
-As the  surgery began, her thoughts betrayed her. "Tissue!" she requested, while thinking "Doubt" to herself. "Pincer!" she asked, feeling a surge of Sadness. "Clamps!" she prompted, aware of the growing Frustration. The sound of the Drill seemed to whisper Anger in her ear. As she reached for the Gripper, she felt an overwhelming sense of Hate. When she finally picked up the Scalpel, Fury had taken hold of her.
+As the  surgery began, her thoughts betrayed her. "Tissue!" she requested, while thinking "Doubt" to herself. "Pincer!" she asked, feeling a surge of Sadness. "Clamps!" she prompted, aware of the growing Frustration. The sound of the Drill seemed to whisper Anger in her ear. As she reached for the Gripper and felt an overwhelming sense of Hate. When she finally picked up the Scalpel, Fury had taken hold of her. Her mind went blank and she lost all sense.
 
-Her mind went blank, and she lost all sense. She heard the voices of her colleagues – "Carole!", "What the ...?", "What are you doing?" – but their words were drowned out. She stared, frozen, as the scalpel dug into the frontal lobe. The security personnel sprang into action, shouting, "Move aside from the patient!".
+She heard the voices of her colleagues – "Carole!", "What the ...?", "What are you doing?" – but their words were drowned out. She stared, frozen, as the scalpel dug into the frontal lobe. The security personnel sprang into action, shouting, "Move aside from the patient!".
 
 Carole released her grip on the scalpel and walked mindlessly toward the exit.
 
