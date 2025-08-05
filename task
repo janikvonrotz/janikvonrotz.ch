@@ -143,11 +143,11 @@ function image-build() {
         --tag "janikvonrotz/janikvonrotz.ch:latest" \
         --load
 
-    echo "Building Docker image for linux/amd64:"
-    SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct) docker buildx build --platform "linux/amd64" . \
-        --file "image/Dockerfile" \
-        --tag "janikvonrotz/janikvonrotz.ch:latest" \
-        --load
+    # echo "Building Docker image for linux/amd64:"
+    # SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct) docker buildx build --platform "linux/amd64" . \
+    #     --file "image/Dockerfile" \
+    #     --tag "janikvonrotz/janikvonrotz.ch:latest" \
+    #     --load
 
     echo "Push Docker image:"
     docker --config "$DOCKER_CONFIG" push "janikvonrotz/janikvonrotz.ch:latest"
