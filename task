@@ -4,34 +4,53 @@ if [[ -a ".env" ]]; then
     source .env
 fi
 
+function help-table() {
+    CMD_WIDTH=24
+    OPT_WIDTH=20
+    DESC_WIDTH=42
+    COLUMN="| %-${CMD_WIDTH}s | %-${OPT_WIDTH}s | %-${DESC_WIDTH}s |\n"
+
+    printf "$COLUMN" "Command" "Option" "Description"
+    echo "|$(printf '%*s' $((CMD_WIDTH + 2)) '' | tr ' ' '-')|$(printf '%*s' $((OPT_WIDTH + 2)) '' | tr ' ' '-')|$(printf '%*s' $((DESC_WIDTH + 2)) '' | tr ' ' '-')|"
+    printf "$COLUMN" "install" "" "Install hugo."
+    printf "$COLUMN" "install-vercel" "" "Install Vercel cli."
+    printf "$COLUMN" "build" "[url]" "Build with hugo."
+    printf "$COLUMN" "vercel-build" "" "Build with Vercel."
+    printf "$COLUMN" "serve" "" "Serve output in pulbic folder."
+    printf "$COLUMN" "dev" "[url]" "Start hugo dev server."
+    printf "$COLUMN" "vercel-dev" "" "Start Vercel dev server."
+    printf "$COLUMN" "image-build" "" "Build Docker image."
+    printf "$COLUMN" "version" "" "Show version of required tools."
+    printf "$COLUMN" "rename" "" "Rename posts to YYYY-MM-DD format."
+    printf "$COLUMN" "login-docker" "" "Run Docker login and create docker config."
+}
+
 function help() {
     echo
-    echo "task <command> [options]"
-    echo
-    echo "commands:"
-    echo
-    # Define column widths
-    cmd_width=14
-    opt_width=10
-    desc_width=40
-    # Print table header
-    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "Command" "Option" "Description"
-    echo "|$(printf '%*s' $((cmd_width + 2)) '' | tr ' ' '-')|$(printf '%*s' $((opt_width + 2)) '' | tr ' ' '-')|$(printf '%*s' $((desc_width + 2)) '' | tr ' ' '-')|"
-    # Print table rows
-    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "install" "" "Install hugo."
-    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "install-vercel" "" "Install Vercel cli."
-    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "build" "[url]" "Build with hugo."
-    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "vercel-build" "" "Build with Vercel."
-    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "serve" "" "Serve output in pulbic folder."
-    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "dev" "[url]" "Start hugo dev server."
-    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "vercel-dev" "" "Start Vercel dev server."
-    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "version" "" "Show version of required tools."
-    printf "| %-${cmd_width}s | %-${opt_width}s | %-${desc_width}s |\n" "rename" "" "Rename posts to YYYY-MM-DD format."
+    if [ -n "$1" ]; then
+        help-table | grep -i "$1" | column -t -s'|'
+    else
+        echo "task <command> [options]"
+        echo
+        echo "commands:"
+        echo
+        help-table
+    fi
     echo
 }
 
+if [ -d "$HOME/taskfile.build/bin" ]; then
+    for file in "$HOME/taskfile.build/bin/"*; do
+        if [ -f "$file" ]; then
+            source "$file"
+        fi
+    done
+fi
+
 BASE_URL="http://localhost:1313"
 POST_DIR="content/post"
+DOCKER_REGISTRY=${DOCKER_REGISTRY:="janikvonrotz"}
+DOCKER_CONFIG="$HOME/.docker/$DOCKER_REGISTRY/"
 
 function install() {
     echo "Install hugo from binary source"
@@ -78,37 +97,65 @@ function version() {
 
 function process_file() {
     local FILE="$1"
-    
+
     # Extract directory name (YYYY-MM) and filename
     DIR_NAME=$(dirname "$FILE")
     YEAR_MONTH=$(basename "$DIR_NAME")
-    
+
     # Extract year and month from directory
     YEAR=${YEAR_MONTH%-*}
     MONTH=${YEAR_MONTH#*-}
-    
+
     # Extract day and rest of filename
     FILENAME=$(basename "$FILE")
     DAY=${FILENAME%%-*}
     REST_OF_NAME=${FILENAME#*-}
-    
+
     # Construct new filename
     NEW_NAME="${POST_DIR}/${YEAR}-${MONTH}-${DAY}-${REST_OF_NAME}"
-    
+
     # Check if target file already exists
     if [ -f "$NEW_NAME" ]; then
         echo "Error: Target file already exists: $NEW_NAME"
         return 1
     fi
-    
+
     # Move and rename file
     echo "Moving: $FILE → $NEW_NAME"
     mv "$FILE" "$NEW_NAME"
 }
 
+function container-login() {
+    echo "$CONTAINER_REGISTRY_PASSWORD" | docker --config "$CONTAINER_CONFIG" login --username "$CONTAINER_REGISTRY_USERNAME" --password-stdin
+}
+
+function image-build() {
+    if ! docker buildx inspect builder >/dev/null 2>&1; then
+        docker buildx create --name builder --use
+        docker buildx inspect --bootstrap
+    else
+        docker buildx use builder
+    fi
+
+    echo "Building Docker image for linux/arm64:"
+    SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct) docker buildx build --platform "linux/arm64" . \
+        --file "image/Dockerfile" \
+        --tag "janikvonrotz/janikvonrotz.ch:latest" \
+        --load
+
+    echo "Building Docker image for linux/amd64:"
+    SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct) docker buildx build --platform "linux/amd64" . \
+        --file "image/Dockerfile" \
+        --tag "janikvonrotz/janikvonrotz.ch:latest" \
+        --load
+
+    echo "Push Docker image:"
+    docker --config "$DOCKER_CONFIG" push "janikvonrotz/janikvonrotz.ch:latest"
+}
+
 function rename() {
     echo "Renaming posts to YYYY-MM-DD format..."
-    
+
     # Find all markdown files in year-month subdirectories
     find "$POST_DIR" -mindepth 2 -type f -name "*.md" | while read -r FILE; do
         process_file "$FILE"
