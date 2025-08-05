@@ -8,3 +8,4 @@ content/.vscode/settings.json
 .vercel
 .obsidian/graph.json
 .obsidian/workspace.json
+tmp
