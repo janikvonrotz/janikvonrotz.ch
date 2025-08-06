@@ -7,13 +7,25 @@ disable_comments: true
 
 This is a collection of projects by year since I came in touch with IT. It is supposed to be a showcase of my abilities and experience.
 
+**2025**
+
+[taskfile.build](https://taskfile.build/): The task file is a simple bash script and standardized interface for all software projects.
+
+[Kubernetes Build ](https://kubernetes.build/): The Mint System collection of Helm charts.
+
+**2024**
+
+[Nextcloud Build](https://nextcloud.build/): This is the Mint System Nextcloud development environment.
+
 **2023**
 
-[Odoo Apps](https://github.com/mint-System/?q=Odoo-Apps&type=all&language=&sort=): Hundres of Odoo extensions.
+[Odoo Apps](https://github.com/mint-System/?q=Odoo-Apps&type=all&language=&sort=): Hundreds of Odoo extensions.
 
 **2022**
 
 [Odoo Wiki](https://www.odoo-wiki.org/): An extensive documentation for Odoo users.
+
+[dotfiles](https://github.com/janikvonrotz/dotfiles): Install and configure vim, helix, zsh, fish, fzf, termux and much more.
 
 **2021**
 
@@ -27,9 +39,9 @@ This is a collection of projects by year since I came in touch with IT. It is su
 
 [Hugo new.css theme](https://github.com/janikvonrotz/hugo-new-css-theme): This hugo theme is made from vanilla html and the default [new.css](https://newcss.net/).
 
-[Ansible Build](https://ansible.build): Collection of Ansible playbooks and roles.
+[Ansible Build](https://ansible.build): The Mint System collection of Ansible playbooks and roles.
 
-[Odoo Build](https://odoo.build): Setup Odoo development environment with Docker Compose.
+[Odoo Build](https://odoo.build): This is the Mint System Odoo development environment.
 
 [Sauna Lorrainebad App](https://github.com/janikvonrotz/sauna-lorrainebad): React native app for Sauna Lorrainebad.
 
