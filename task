@@ -19,10 +19,10 @@ function help-table() {
     printf "$COLUMN" "serve" "" "Serve output in pulbic folder."
     printf "$COLUMN" "dev" "[url]" "Start hugo dev server."
     printf "$COLUMN" "vercel-dev" "" "Start Vercel dev server."
-    printf "$COLUMN" "image-build" "" "Build Docker image."
+    printf "$COLUMN" "build-image" "" "Build Docker image."
     printf "$COLUMN" "version" "" "Show version of required tools."
     printf "$COLUMN" "rename" "" "Rename posts to YYYY-MM-DD format."
-    printf "$COLUMN" "login-docker" "" "Run Docker login and create docker config."
+    printf "$COLUMN" "login-docker" "[user][token]" "Run Docker login and create docker config."
 }
 
 function help() {
@@ -37,6 +37,16 @@ function help() {
         help-table
     fi
     echo
+}
+
+function clone-taskfile(){
+    if [ ! -d "$HOME/taskfile.build" ]; then
+        echo -e "\033[38;5;214mGit\033[0m: Clone taskfile repo"
+        git clone https://git.taskfile.build "$HOME/taskfile.build"
+    else
+        echo -e "\033[38;5;214mGit\033[0m: Pull taskfile repo"
+        git -C "$HOME/taskfile.build" pull
+    fi
 }
 
 if [ -d "$HOME/taskfile.build/bin" ]; then
@@ -129,7 +139,7 @@ function container-login() {
     echo "$CONTAINER_REGISTRY_PASSWORD" | docker --config "$CONTAINER_CONFIG" login --username "$CONTAINER_REGISTRY_USERNAME" --password-stdin
 }
 
-function image-build() {
+function build-image() {
     if ! docker buildx inspect builder >/dev/null 2>&1; then
         docker buildx create --name builder --use
         docker buildx inspect --bootstrap
