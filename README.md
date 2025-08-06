@@ -2,7 +2,7 @@
 
 [![Docker pulls](https://img.shields.io/docker/pulls/janikvonrotz/janikvonrotz.ch)](https://hub.docker.com/r/janikvonrotz/janikvonrotz.ch/)
 
-![Vercel](https://vercelbadge.vercel.app/api/janikvonrotz/janikvonrotz.ch.ch)
+![Vercel](https://vercelbadge.vercel.app/api/janikvonrotz/janikvonrotz.ch)
 
 ## Usage
 
