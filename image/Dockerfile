@@ -8,8 +8,8 @@ COPY . .
 
 RUN git submodule update --init
 
-RUN hugo
+RUN hugo --minify
 
-EXPOSE 1313
+EXPOSE 80
 
-CMD ["hugo", "server", "--bind", "0.0.0.0"]
+CMD ["busybox", "httpd", "-f", "-p", "80", "-h", "/app/public"]
