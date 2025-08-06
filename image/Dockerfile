@@ -1,6 +1,6 @@
 FROM alpine:3.14
 
-RUN apk add --no-cache hugo git
+RUN apk add --no-cache hugo git nginx
 
 WORKDIR /app
 
@@ -8,8 +8,8 @@ COPY . .
 
 RUN git submodule update --init
 
-RUN hugo --minify
+RUN hugo --minify -d /var/www/html
 
 EXPOSE 80
 
-CMD ["busybox", "httpd", "-f", "-p", "80", "-h", "/app/public"]
+CMD ["nginx", "-g", "daemon off;"]
