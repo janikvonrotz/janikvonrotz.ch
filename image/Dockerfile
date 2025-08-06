@@ -1,23 +1,36 @@
-# --- Stage 1: Build the Hugo site ---
 FROM alpine:3.14 as builder
-
 RUN apk add --no-cache hugo git
-
 WORKDIR /app
-
 COPY . .
-
-RUN git submodule update --init
-
+RUN git submodule update --init --recursive
 RUN hugo --minify -d /public
 
-# --- Stage 2: Serve with Nginx ---
-FROM alpine:3.14
+FROM caddy:2-alpine
+COPY --from=builder /public /srv
+COPY <<EOF /etc/caddy/Caddyfile
+:80 {
+    root * /srv
+    file_server
+    try_files {path} {path}/ /index.html
 
-RUN apk add --no-cache nginx
+    # Compression
+    encode gzip
 
-COPY --from=builder /public /var/www/html
+    # Security headers
+    header {
+        X-Content-Type-Options nosniff
+        X-Frame-Options DENY
+        X-XSS-Protection "1; mode=block"
+        Referrer-Policy strict-origin-when-cross-origin
+    }
+
+    # Cache static assets
+    @static {
+        file
+        path *.css *.js *.png *.jpg *.jpeg *.gif *.ico *.svg *.woff *.woff2 *.ttf *.eot
+    }
+    header @static Cache-Control "public, max-age=31536000, immutable"
+}
+EOF
 
 EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]

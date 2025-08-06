@@ -20,6 +20,7 @@ function help-table() {
     printf "$COLUMN" "dev" "[url]" "Start hugo dev server."
     printf "$COLUMN" "vercel-dev" "" "Start Vercel dev server."
     printf "$COLUMN" "build-image" "" "Build Docker image."
+    printf "$COLUMN" "Run" "" "Run Docker image."
     printf "$COLUMN" "version" "" "Show version of required tools."
     printf "$COLUMN" "rename" "" "Rename posts to YYYY-MM-DD format."
     printf "$COLUMN" "login-docker" "[user][token]" "Run Docker login and create docker config."
@@ -147,20 +148,16 @@ function build-image() {
         docker buildx use builder
     fi
 
-    echo "Building Docker image for linux/arm64:"
-    SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct) docker buildx build --platform "linux/arm64" . \
+    echo "Building Docker image:"
+    SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct) docker buildx build --platform "linux/amd64,linux/arm64" . \
         --file "image/Dockerfile" \
         --tag "janikvonrotz/janikvonrotz.ch:latest" \
-        --load
+        --push
+}
 
-    # echo "Building Docker image for linux/amd64:"
-    # SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct) docker buildx build --platform "linux/amd64" . \
-    #     --file "image/Dockerfile" \
-    #     --tag "janikvonrotz/janikvonrotz.ch:latest" \
-    #     --load
-
-    echo "Push Docker image:"
-    docker --config "$DOCKER_CONFIG" push "janikvonrotz/janikvonrotz.ch:latest"
+function run() {
+    echo "Open http://localhost:8080" in your browser
+    docker run -p 8080:80 "janikvonrotz/janikvonrotz.ch:latest"
 }
 
 function rename() {
