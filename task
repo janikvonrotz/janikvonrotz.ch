@@ -61,7 +61,6 @@ fi
 BASE_URL="http://localhost:1313"
 POST_DIR="content/post"
 DOCKER_REGISTRY=${DOCKER_REGISTRY:="janikvonrotz"}
-DOCKER_CONFIG="$HOME/.docker/$DOCKER_REGISTRY/"
 
 function install() {
     echo "Install hugo from binary source"
@@ -134,10 +133,6 @@ function process_file() {
     # Move and rename file
     echo "Moving: $FILE → $NEW_NAME"
     mv "$FILE" "$NEW_NAME"
-}
-
-function container-login() {
-    echo "$CONTAINER_REGISTRY_PASSWORD" | docker --config "$CONTAINER_CONFIG" login --username "$CONTAINER_REGISTRY_USERNAME" --password-stdin
 }
 
 function build-image() {
