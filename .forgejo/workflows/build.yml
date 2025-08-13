@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    runs-on: k8s-runner
+    runs-on: ubuntu-latest
     steps:
       - name: Set up QEMU
         run: docker run --privileged --rm tonistiigi/binfmt --install all
