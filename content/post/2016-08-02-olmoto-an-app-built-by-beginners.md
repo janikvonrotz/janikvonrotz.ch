@@ -16,7 +16,7 @@ tags:
 One month ago I started teaching a friend the basics of JavaScript with Meteor, Mantra and React.
 Together we've built an app to create and share events with friends. It was an awesome experience. Yesterday we launched a private version on heroku. For us this was a great accomplishment. I learned a lot from this project and thought about sharing it with world.
 
-[https://github.com/janikvonrotz/olmoto](https://github.com/janikvonrotz/olmoto)
+[https://codeberg.org/janikvonrotz/olmoto](https://codeberg.org/janikvonrotz/olmoto)
 
 Some technical features and challenges we solved:
 

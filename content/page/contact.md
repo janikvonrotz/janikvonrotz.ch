@@ -25,5 +25,5 @@ author: Janik von Rotz
 
 # Code
 
-[GitHub](https://github.com/janikvonrotz)\
+[GitHub](https://codeberg.org/janikvonrotz)\
 [GitLab](https://gitlab.com/janikvonrotz)

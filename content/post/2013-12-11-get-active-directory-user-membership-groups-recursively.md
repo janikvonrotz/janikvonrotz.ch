@@ -15,7 +15,7 @@ tags:
 ---
 To get a users member shipments recursively I've written an extended function based on the already existing function `Get-ADPrincipalGroupMembership` it simply loops through the users member shipments and outputs the data in tree styled list.
 
-<!--more-->This function is part of my <a href="https://github.com/janikvonrotz/PowerShell-Profile">PowerShell Profile project</a>.
+<!--more-->This function is part of my <a href="https://codeberg.org/janikvonrotz/PowerShell-Profile">PowerShell Profile project</a>.
 Install this framework to get the latest version of this function.
 
 ```powershell

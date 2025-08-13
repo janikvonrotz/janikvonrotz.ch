@@ -24,7 +24,7 @@ More and more people start using Telegram. Telegram is a secure alternative to W
 
 If you are interested on how I built this bot, keep on reading 😊.
 
-If you wanna go straight for the code checkout [GitHub - HydroMeBot](https://github.com/janikvonrotz/hydrome-bot).
+If you wanna go straight for the code checkout [GitHub - HydroMeBot](https://codeberg.org/janikvonrotz/hydrome-bot).
 
 # Overview
 

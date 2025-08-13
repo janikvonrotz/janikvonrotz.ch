@@ -20,4 +20,4 @@ Here's an example of what we want:
 
 [![Hidden Open in Explorer option](/wp-content/uploads/2014/04/Hidden-Open-in-Explorer-option.jpg)](https://janikvonrotz.ch/2014/04/08/hide-the-open-in-explorer-option-in-the-sharepoint-command-ribbon/hidden-open-in-explorer-option/)
 
-And the solution to achieve this, is available on GitHub: <a href="https://github.com/janikvonrotz/SharePoint-Hide-Open-With-Explorer">https://github.com/janikvonrotz/SharePoint-Hide-Open-With-Explorer</a>
+And the solution to achieve this, is available on GitHub: <a href="https://codeberg.org/janikvonrotz/SharePoint-Hide-Open-With-Explorer">https://codeberg.org/janikvonrotz/SharePoint-Hide-Open-With-Explorer</a>

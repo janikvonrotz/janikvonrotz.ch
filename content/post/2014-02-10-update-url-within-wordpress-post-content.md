@@ -14,8 +14,8 @@ tags:
 Recently I've change the url for one of my GitHub projects.
 
 <ul>
-    <li>Old: https://github.com/janikvonrotz/PowerShell-<strong>Profile</strong></li>
-    <li>New: https://github.com/janikvonrotz/PowerShell-<strong>PowerUp</strong></li>
+    <li>Old: https://codeberg.org/janikvonrotz/PowerShell-<strong>Profile</strong></li>
+    <li>New: https://codeberg.org/janikvonrotz/PowerShell-<strong>PowerUp</strong></li>
 </ul>
 
 As you might know, I've used this url in several posts.

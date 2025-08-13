@@ -36,7 +36,7 @@ Finished: 11.04.2018
 
 To create a poster from the list I've created **tudluk**. 
 
-Checkout the [GitHub project page of tudluk](https://github.com/janikvonrotz/tudluk).
+Checkout the [GitHub project page of tudluk](https://codeberg.org/janikvonrotz/tudluk).
 
 Tudluk does the following things:
 

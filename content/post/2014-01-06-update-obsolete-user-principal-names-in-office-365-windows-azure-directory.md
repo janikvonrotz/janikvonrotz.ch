@@ -75,7 +75,7 @@ $MsolUsers | %{
 
 <ul>
     <li>PowerShell Active Directory and Microsoft Online modules</li>
-    <li>Optional: functions from my project: <a href="https://github.com/janikvonrotz/PowerShell-Profile">https://github.com/janikvonrotz/PowerShell-Profile</a></li>
+    <li>Optional: functions from my project: <a href="https://codeberg.org/janikvonrotz/PowerShell-Profile">https://codeberg.org/janikvonrotz/PowerShell-Profile</a></li>
 </ul>
 
 <h1>Source</h1>

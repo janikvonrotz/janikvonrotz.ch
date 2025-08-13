@@ -13,7 +13,7 @@ images:
  - "/images/interwined zippers.jpg"
 ---
 
-GitHub Action are free computing resources to run CI/CD jobs that build, lint, test or deploy a software project. On the [Awesome PowerShell](https://github.com/janikvonrotz/awesome-powershell) I asked contributors to submit a PR for a quality check job. Not much later [Frederik Hjorslev](https://github.com/hjorslev) submitted a nice solution.
+GitHub Action are free computing resources to run CI/CD jobs that build, lint, test or deploy a software project. On the [Awesome PowerShell](https://codeberg.org/janikvonrotz/awesome-powershell) I asked contributors to submit a PR for a quality check job. Not much later [Frederik Hjorslev](https://github.com/hjorslev) submitted a nice solution.
 <!--more-->
 
 The first file he submitted was the script that analyzes any markdown file, extracts links and requests them.

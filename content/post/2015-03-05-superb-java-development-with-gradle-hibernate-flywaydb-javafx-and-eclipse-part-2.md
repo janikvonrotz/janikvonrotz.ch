@@ -231,4 +231,4 @@ Hurray! We are done! You can run the application now and should be able to add, 
 
 # Source
 
-You can download the source code of the project here: [https://github.com/janikvonrotz/issue-manager/releases/tag/1.1](https://github.com/janikvonrotz/issue-manager/releases/tag/1.1)
+You can download the source code of the project here: [https://codeberg.org/janikvonrotz/issue-manager/releases/tag/1.1](https://codeberg.org/janikvonrotz/issue-manager/releases/tag/1.1)

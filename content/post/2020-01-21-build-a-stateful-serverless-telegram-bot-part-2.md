@@ -468,7 +468,7 @@ If the deployment was successful open Telegram and start chatting using the new 
 
 Now where to go from here? If you want to build a useful bot sure we have to teach him a lot more. Here are some ideas:
 
-* Checkout my bot code: [GitHub - HydroMeBot](https://github.com/janikvonrotz/hydrome-bot)
+* Checkout my bot code: [GitHub - HydroMeBot](https://codeberg.org/janikvonrotz/hydrome-bot)
 * Add additional commands (modify, delete)
 * Write tests for the modules
 * Setup a reminder notificator that runs daily

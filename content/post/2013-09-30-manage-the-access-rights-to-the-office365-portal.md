@@ -130,6 +130,6 @@ try{
 <h1>Requirements</h1>
 
 <ul>
-    <li><a href="https://github.com/janikvonrotz/Powershell-Profile">Powershell-Profile</a></li>
+    <li><a href="https://codeberg.org/janikvonrotz/Powershell-Profile">Powershell-Profile</a></li>
     <li>Office365 with ADFS and DirSync</li>
 </ul>

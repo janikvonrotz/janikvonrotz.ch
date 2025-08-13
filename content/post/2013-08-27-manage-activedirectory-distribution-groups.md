@@ -45,7 +45,7 @@ While developing this I've added some cool features, in addition you can:
 
 By default the script will only add enabled users with an email address.
 
-This script makes use of the <a href="https://github.com/janikvonrotz/Powershell-Profile">PowerShell Profile</a> environment, f.e. the function `Send-PPErrorReport` sends an error report per email when the script fails or produces problems.
+This script makes use of the <a href="https://codeberg.org/janikvonrotz/Powershell-Profile">PowerShell Profile</a> environment, f.e. the function `Send-PPErrorReport` sends an error report per email when the script fails or produces problems.
 
 ```powershell
 <#

@@ -25,7 +25,7 @@ In case versioning for files is enabled and/or the users don't check in their fi
 
 To get a nice report of unchecked, versioned and "normal" files I've coded a PowerShell script.
 
-Most of the functions are part of my Project: <a title="PowerShell Profile" href="https://github.com/janikvonrotz/Powershell-Profile" target="_blank">PowerShell Profile</a>, so this will be a requirement to run this script.
+Most of the functions are part of my Project: <a title="PowerShell Profile" href="https://codeberg.org/janikvonrotz/Powershell-Profile" target="_blank">PowerShell Profile</a>, so this will be a requirement to run this script.
 
 ```powershell
 $SPWebs = Get-SPWebs
@@ -117,4 +117,4 @@ $SPWebs | %{
 
 Most recent version of this snippet is avialable here: <a href="https://gist.github.com/janikvonrotz/6885934" target="_blank">https://gist.github.com/janikvonrotz/6885934</a>
 
-<strong>Update</strong>: This script is now part of my PowerShell Profile project as a function: <a href="https://github.com/janikvonrotz/Powershell-Profile/blob/master/functions/SharePoint/List/Get-SPListFiles.ps1">https://github.com/janikvonrotz/Powershell-Profile/blob/master/functions/SharePoint/List/Get-SPListFiles.ps1</a>
+<strong>Update</strong>: This script is now part of my PowerShell Profile project as a function: <a href="https://codeberg.org/janikvonrotz/Powershell-Profile/blob/master/functions/SharePoint/List/Get-SPListFiles.ps1">https://codeberg.org/janikvonrotz/Powershell-Profile/blob/master/functions/SharePoint/List/Get-SPListFiles.ps1</a>

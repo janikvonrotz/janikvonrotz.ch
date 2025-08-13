@@ -214,7 +214,7 @@ Thanks for joining and a nice feedback in comments section.
 
 # Download Code
 
-You can download the project from here: [https://github.com/janikvonrotz/issue-manager/releases/tag/v2.2](https://github.com/janikvonrotz/issue-manager/releases/tag/v2.2)
+You can download the project from here: [https://codeberg.org/janikvonrotz/issue-manager/releases/tag/v2.2](https://codeberg.org/janikvonrotz/issue-manager/releases/tag/v2.2)
 
 # Links
 

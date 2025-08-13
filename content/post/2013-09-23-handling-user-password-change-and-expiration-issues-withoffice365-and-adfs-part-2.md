@@ -22,7 +22,7 @@ Last time I've built a simple script  to notificate the users about the status 
 
 <!--more-->
 
-The whole project is now available on <a href="https://github.com/janikvonrotz/ActiveDirectory-Password-Change">https://github.com/janikvonrotz/ActiveDirectory-Password-Change</a>
+The whole project is now available on <a href="https://codeberg.org/janikvonrotz/ActiveDirectory-Password-Change">https://codeberg.org/janikvonrotz/ActiveDirectory-Password-Change</a>
 
 Checkout the instructions in the readme fileto set up the password change website.
 

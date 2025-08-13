@@ -27,7 +27,7 @@ In order to unsertand these command I recommend to read about the following Vim 
 
 ## Plugins
 
-Plugins are managed by vim plug. My vim config including the list of plugins is available at [GitHub - janikvonrotz/dotfiles](https://github.com/janikvonrotz/dotfiles).
+Plugins are managed by vim plug. My vim config including the list of plugins is available at [GitHub - janikvonrotz/dotfiles](https://codeberg.org/janikvonrotz/dotfiles).
 
 ### fzf vim
 

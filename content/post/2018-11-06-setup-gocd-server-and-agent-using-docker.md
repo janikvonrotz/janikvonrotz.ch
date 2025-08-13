@@ -55,7 +55,7 @@ If the GoCD agent entered the state pending, select it and click on *Enable*.
 
 # Agent configuration
 
-Materials are the input for a build pipeline in GoCD. A material can be anything, an svn repo, folder, file or as in most cases a git repo. We are going to use the [gocd-node-example](https://github.com/janikvonrotz/gocd-node-material) app as our material.
+Materials are the input for a build pipeline in GoCD. A material can be anything, an svn repo, folder, file or as in most cases a git repo. We are going to use the [gocd-node-example](https://codeberg.org/janikvonrotz/gocd-node-material) app as our material.
 
 Building the application requires two binaries:
 
@@ -89,7 +89,7 @@ Now we are ready to configure and run a GoCD pipeline.
 
 In the management interface create a new pipeline with the name `gocd-node-example`.
 
-Select *Git* as material type and enter this url: `https://github.com/janikvonrotz/gocd-node-material.git`
+Select *Git* as material type and enter this url: `https://codeberg.org/janikvonrotz/gocd-node-material.git`
 
 A pipeline passes a material and its resulting artifacts through multiple stages. Each stage performs a build procedure or performs checks on the artifact. Here is an example of a 4-stage pipeline:
 
@@ -164,7 +164,7 @@ For other outbound connection you can also pass the proxy env vars via docker.
 
 If you cannot connect with the github repository and get this fatal error:
 
-`fatal: unable to access 'https://github.com/janikvonrotz/gocd-node-material.git/': Failed to connect to github.com port 443: Connection refused`
+`fatal: unable to access 'https://codeberg.org/janikvonrotz/gocd-node-material.git/': Failed to connect to github.com port 443: Connection refused`
 
 It is most likely a proxy related problem.
 
@@ -172,7 +172,7 @@ It is most likely a proxy related problem.
 
 Assuming the proxy env vars have been and you get this error:
 
-`STDERR: fatal: unable to access 'https://github.com/janikvonrotz/gocd-node-material.git/': error:1400410B:SSL routines:CONNECT_CR_SRVR_HELLO:wrong version number`
+`STDERR: fatal: unable to access 'https://codeberg.org/janikvonrotz/gocd-node-material.git/': error:1400410B:SSL routines:CONNECT_CR_SRVR_HELLO:wrong version number`
 
 Make sure to set the git proxy config for the go user:
 

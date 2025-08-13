@@ -15,7 +15,7 @@ tags:
 Awesome lists are a great thing on GitHub. It's about collecting useful resources, packages and modules of a certain technology or subject. It's the best way of introduction if you have to learn about a new technology.
 Here's a good example of a [awesome Node.js list](https://github.com/sindresorhus/awesome-nodejs) by [Sindre Sorhus](https://github.com/sindresorhus) aka the inventor of bower, grunt and many other web tech.
 
-I thought it would be a good idea to do the same for PowerShell. Maybe you've got some inputs for me, simply post them in the comment section or make fork of the [Awesome PowerShell repository](https://github.com/janikvonrotz/awesome-powershell) and commit your inputs directly.
+I thought it would be a good idea to do the same for PowerShell. Maybe you've got some inputs for me, simply post them in the comment section or make fork of the [Awesome PowerShell repository](https://codeberg.org/janikvonrotz/awesome-powershell) and commit your inputs directly.
 
 So here's what I've got so far:
 <!--more-->
@@ -43,7 +43,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 ### Frameworks
 
 - [Carbon](http://get-carbon.org/) - DevOps for automating the configuration of Windows computers.
-- [PowerShell PowerUp](https://github.com/janikvonrotz/PowerShell-PowerUp) - A powerfull server management framework.
+- [PowerShell PowerUp](https://codeberg.org/janikvonrotz/PowerShell-PowerUp) - A powerfull server management framework.
 - [PSCX ](https://pscx.codeplex.com/) - Useful set of additional cmdlets
  
 ### SharePoint

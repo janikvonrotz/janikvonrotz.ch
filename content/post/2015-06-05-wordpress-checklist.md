@@ -13,7 +13,7 @@ tags:
   - wordpress
 ---
 Simple todo list for new WordPress websites. I'll use it whenever I have to setup a new WordPress site.
-You're welcome to contribute: [https://github.com/janikvonrotz/wordpress-checklist](https://github.com/janikvonrotz/wordpress-checklist)
+You're welcome to contribute: [https://codeberg.org/janikvonrotz/wordpress-checklist](https://codeberg.org/janikvonrotz/wordpress-checklist)
 <!--more-->
 ## WordPress installation
 

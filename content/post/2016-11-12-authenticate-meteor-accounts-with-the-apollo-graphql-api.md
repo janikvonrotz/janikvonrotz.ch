@@ -27,7 +27,7 @@ An implementation of Meteor Accounts only in GraphQL with Apollo.
 
 The package was still early in development, so I decided to help him out. Not only because I wanted this package to work, but also because I never contributed to an open source project before. Nicolas looked for someone building him an [example app](https://github.com/nicolaslopezj/meteor-apollo-accounts/issues/3). Perfect for me. One month later I've built an example app that implements all the Meteor accounts features one would expect:
 
-**[Meteor Apollo Accounts Example](https://github.com/janikvonrotz/meteor-apollo-accounts-example)**
+**[Meteor Apollo Accounts Example](https://codeberg.org/janikvonrotz/meteor-apollo-accounts-example)**
 Example app implementing Meteor Apollo Accounts.
 
 Together we solved quite a lot of issues and learned a lot. Building the example app was kind of software testing for Nicolas and him telling me about his style of coding and PR requirements taught me a lot about open source contribution and coding skills. So in conclusion this was a great experience.

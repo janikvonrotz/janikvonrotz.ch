@@ -42,7 +42,7 @@ This part isn't a lot of effort. There are 2 requirements, one is a must and the
 
 <ul>
     <li>Active Directory Module for PowerShell</li>
-    <li>To create scheduled job on your windows server I've built the function `Add-SheduledTask` which is part of my<a href="https://github.com/janikvonrotz/Powershell-Profile" target="_blank"> PowerShell Profile project</a>, you can either<a href="https://github.com/janikvonrotz/Powershell-Profile/blob/master/functions/Windows/Add-SheduledTask.ps1" target="_blank"> download the function</a> or <a href="https://github.com/janikvonrotz/Powershell-Profile#readme" target="_blank">install this project</a> on your windows server.</li>
+    <li>To create scheduled job on your windows server I've built the function `Add-SheduledTask` which is part of my<a href="https://codeberg.org/janikvonrotz/Powershell-Profile" target="_blank"> PowerShell Profile project</a>, you can either<a href="https://codeberg.org/janikvonrotz/Powershell-Profile/blob/master/functions/Windows/Add-SheduledTask.ps1" target="_blank"> download the function</a> or <a href="https://codeberg.org/janikvonrotz/Powershell-Profile#readme" target="_blank">install this project</a> on your windows server.</li>
 </ul>
 
 Now the script:

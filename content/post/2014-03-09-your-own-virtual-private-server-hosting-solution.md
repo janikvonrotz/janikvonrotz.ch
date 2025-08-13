@@ -210,7 +210,7 @@ Clone with Git from [Official Piwik-for-LimeSurvey GitHub repository](https://gi
 Install with aptitude from [Official Ubuntu package repository](http://packages.ubuntu.com/).
 
 **QR code service**
-Clone with Git from [Official QR code service GitHub repository](https://github.com/janikvonrotz/QR-Generator-PHP).
+Clone with Git from [Official QR code service GitHub repository](https://codeberg.org/janikvonrotz/QR-Generator-PHP).
 
 **Ruby**
 Install with RVM.

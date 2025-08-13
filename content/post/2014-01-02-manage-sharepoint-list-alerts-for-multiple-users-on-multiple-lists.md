@@ -239,6 +239,6 @@ The configuration attribute ListViewName and FilterIndex allows me to change to 
 
 <h1>Requirements</h1>
 
-To use this script I'll recommend you to install my project: <a href="https://github.com/janikvonrotz/PowerShell-Profile" target="_blank">PowerShell </a>Profile. There are some function as f.e. Get-SPUrl which are not defined in this script but are part of this project.
+To use this script I'll recommend you to install my project: <a href="https://codeberg.org/janikvonrotz/PowerShell-Profile" target="_blank">PowerShell </a>Profile. There are some function as f.e. Get-SPUrl which are not defined in this script but are part of this project.
 
 You'll find the latest version of this script here: <a href="https://gist.github.com/janikvonrotz/8218907" title="https://gist.github.com/janikvonrotz/8218907">https://gist.github.com/janikvonrotz/8218907</a>

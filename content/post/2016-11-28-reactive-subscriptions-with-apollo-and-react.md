@@ -23,7 +23,7 @@ Apollo server and client support real-time subscriptions with web sockets. Compa
 4. Setup the client subscription.
 5. Modify a component to receive data from a subscription.
 <!--more-->
-As reference you can have look at this project: [Meteor Apollo Accounts Example](https://github.com/janikvonrotz/meteor-apollo-accounts-example)
+As reference you can have look at this project: [Meteor Apollo Accounts Example](https://codeberg.org/janikvonrotz/meteor-apollo-accounts-example)
 
 The concept of GraphQL subscriptions in Apollo:
 

@@ -150,4 +150,4 @@ if($error){
 
 Latest version of this script: <a href="https://gist.github.com/6780143" target="_blank">https://gist.github.com/6780143</a>
 
-As always I recommand you to install my project <a href="https://github.com/janikvonrotz/Powershell-Profile" target="_blank">PowerShell Profile</a> to run this script properly.
+As always I recommand you to install my project <a href="https://codeberg.org/janikvonrotz/Powershell-Profile" target="_blank">PowerShell Profile</a> to run this script properly.

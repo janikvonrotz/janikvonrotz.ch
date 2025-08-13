@@ -63,5 +63,5 @@ $ADGroups | where{ -not (($SPGroups | select Member) -match $_.Name)} | select n
 <h1>Requirements</h1>
 
 <ul>
-    <li><a href="https://github.com/janikvonrotz/Powershell-Profile">Powershell-Profile</a></li>
+    <li><a href="https://codeberg.org/janikvonrotz/Powershell-Profile">Powershell-Profile</a></li>
 </ul>

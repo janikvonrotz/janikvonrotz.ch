@@ -24,7 +24,7 @@ For my last project I had to build a web application to administrate a MongoDB d
 
 Learning Graphql and how to use Apollo in this environment was a bit of a challenge. As Apollo is still the new kid on the block and its documentation lacks a few chapters I had to checkout the source code a few other projects to learn more about it. Graphl involves a few new concepts and makes you build APIs differently. Whereas in REST you build a hierarchical, untyped and strict interface in Graphql the possibilities first seem endless. Apollo delivers a high grade of flexibility in designing schemas and abstraction of data gathering with a set of resolvers. This might by overwhelming at the beginning, but is a lot of fun once you understand it. Despite the project was quite easy I had to solve a lot of issues. To make life easier for fellow Meteor, React, Apollo developer I'll share the source code of my project and list the most interesting problems I've solved:
 
-GitHub repository: [https://github.com/janikvonrotz/Apometact](https://github.com/janikvonrotz/Apometact)
+GitHub repository: [https://codeberg.org/janikvonrotz/Apometact](https://codeberg.org/janikvonrotz/Apometact)
 
 ## Custom scalar data types
 

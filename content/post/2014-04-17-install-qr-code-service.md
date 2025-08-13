@@ -18,7 +18,7 @@ tags:
 
 # Introduction
 
-To generate QR codes with php we are using the project [QR Generator PHP](https://github.com/janikvonrotz/QR-Generator-PHP) hosted on GitHub.
+To generate QR codes with php we are using the project [QR Generator PHP](https://codeberg.org/janikvonrotz/QR-Generator-PHP) hosted on GitHub.
 <!--more-->
 
 
@@ -35,7 +35,7 @@ To generate QR codes with php we are using the project [QR Generator PHP](https:
 Clone project with git.
 
     cd /usr/local/src
-    sudo git clone https://github.com/janikvonrotz/QR-Generator-PHP.git
+    sudo git clone https://codeberg.org/janikvonrotz/QR-Generator-PHP.git
 
 Rename the project directory to get a shorter url.
 

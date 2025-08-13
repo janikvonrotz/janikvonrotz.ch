@@ -533,4 +533,4 @@ I hope to see you soon in the next chapter when we create a rich client applicat
 
 # Source
 
-You can get the project from here: [https://github.com/janikvonrotz/issue-manager/releases/tag/v1.0](https://github.com/janikvonrotz/issue-manager/releases/tag/v1.0)
+You can get the project from here: [https://codeberg.org/janikvonrotz/issue-manager/releases/tag/v1.0](https://codeberg.org/janikvonrotz/issue-manager/releases/tag/v1.0)

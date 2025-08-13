@@ -90,7 +90,7 @@ The GSM module is literally a hat for the Rasperry Pi.
 To enable communication between the Pi and the hat, we need to enable the UART interface.
 
 ```
-git clone https://github.com/janikvonrotz/IOTBit_GSM.git
+git clone https://codeberg.org/janikvonrotz/IOTBit_GSM.git
 cd IOTBit_GSM
 chmod +x Uart_Enable_RPi3.sh
 sudo ./Uart_Enable_RPi3.sh
@@ -176,7 +176,7 @@ Write down the database connection  string.
 Then download the example api project.
 
 ```
-git clone https://github.com/janikvonrotz/lorauna-api
+git clone https://codeberg.org/janikvonrotz/lorauna-api
 cd lorauna-api
 touch .env
 vi .env
@@ -297,7 +297,7 @@ I have created another example app for visualizing the temperature data.
 Same procedure here. Clone the react example app and update the `.env` file.
 
 ```
-git clone https://github.com/janikvonrotz/lorauna
+git clone https://codeberg.org/janikvonrotz/lorauna
 cd lorauna
 touch .env
 vi .env

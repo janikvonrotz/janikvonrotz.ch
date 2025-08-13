@@ -206,4 +206,4 @@ function Remove-HostFileEntry{
 
 ```
 
-These functions are part of my project <a href="https://github.com/janikvonrotz/Powershell-Profile">PowerShell Profile</a>.
+These functions are part of my project <a href="https://codeberg.org/janikvonrotz/Powershell-Profile">PowerShell Profile</a>.

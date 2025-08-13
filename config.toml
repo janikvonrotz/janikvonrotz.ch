@@ -46,7 +46,7 @@ pygmentsCodeFences = "true"
 [params]
     description = "Curious, Dedicated, Humble"
     plausibleAnalaytics = "janikvonrotz.ch"
-    gitUrl = "https://github.com/janikvonrotz/janikvonrotz.ch/tree/master/content"
+    gitUrl = "https://codeberg.org/janikvonrotz/janikvonrotz.ch/src/content"
 
     [params.fediverse]
     url = "@janikvonrotz@fosstodon.org"

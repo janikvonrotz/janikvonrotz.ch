@@ -184,5 +184,5 @@ Latest version of this script: <a href="https://gist.github.com/7487228" target
 Requirements to run this script:
 
 <ul>
-    <li><a href="https://github.com/janikvonrotz/PowerShell-Profile" target="_blank">PowerShell Profile</a></li>
+    <li><a href="https://codeberg.org/janikvonrotz/PowerShell-Profile" target="_blank">PowerShell Profile</a></li>
 </ul>

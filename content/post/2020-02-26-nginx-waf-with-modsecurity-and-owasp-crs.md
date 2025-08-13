@@ -76,7 +76,7 @@ nginx-modsecurity-crs
 
 Step by setp we are going to add these files and finally deploy and test the Nginx WAF.
 
-If you wanna shortcut the walkthrough head over to the [GitHub repository](https://github.com/janikvonrotz/nginx-modsecurity-crs).
+If you wanna shortcut the walkthrough head over to the [GitHub repository](https://codeberg.org/janikvonrotz/nginx-modsecurity-crs).
 
 First we are going to setup our project repository, include the CRS and pin its version.
 
@@ -120,7 +120,7 @@ This file configures a simple tls secured webserver for testing.
 
 **etc/modsecurity.d/modsecurity.conf**
 
-Copy the `modsecurity` file from the [code repository](https://github.com/janikvonrotz/nginx-modsecurity-crs/blob/master/etc/modsecurity.d/modsecurity.conf).
+Copy the `modsecurity` file from the [code repository](https://codeberg.org/janikvonrotz/nginx-modsecurity-crs/blob/master/etc/modsecurity.d/modsecurity.conf).
 
 **etc/modsecurity.d/include.conf**
 
@@ -137,7 +137,7 @@ By default we include all OWASP CRS rules.
 
 **etc/modsecurity/crs-setup.conf**
 
-Copy the `crs-setup.conf` file from the [code repository](https://github.com/janikvonrotz/nginx-modsecurity-crs/blob/master/etc/modsecurity/crs-setup.conf).
+Copy the `crs-setup.conf` file from the [code repository](https://codeberg.org/janikvonrotz/nginx-modsecurity-crs/blob/master/etc/modsecurity/crs-setup.conf).
 
 **etc/modsecurity/RESPONSE-999-EXCLUSION-RULES-AFTER-CRS.conf**
 

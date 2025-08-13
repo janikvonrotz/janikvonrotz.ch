@@ -206,7 +206,7 @@ Once the browser has loaded the DOM structure, the post list is retrieved and in
 
 Only the search input field is actually visible.
 
-This page can be mapped to `/search`. For a full view of the `search.md` file, [check it out](https://github.com/janikvonrotz/hugo-lithium-theme/blob/master/exampleSite/content/page/search.md) in the example site of the Hugo *lithium* theme.
+This page can be mapped to `/search`. For a full view of the `search.md` file, [check it out](https://codeberg.org/janikvonrotz/hugo-lithium-theme/blob/master/exampleSite/content/page/search.md) in the example site of the Hugo *lithium* theme.
 
 Hope this article helped adding a search feature to your Hugo site 😊
 

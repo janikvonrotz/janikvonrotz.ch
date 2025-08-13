@@ -249,6 +249,6 @@ Write-PPErrorEventLog -ScriptPath $MyInvocation.InvocationName -ClearErrorVariab
 ```
 
 <ul>
-    <li>Many functions are part of my project: <a href="https://github.com/janikvonrotz/Powershell-Profile">https://github.com/janikvonrotz/Powershell-Profile</a></li>
+    <li>Many functions are part of my project: <a href="https://codeberg.org/janikvonrotz/Powershell-Profile">https://codeberg.org/janikvonrotz/Powershell-Profile</a></li>
     <li>Get the latest version of this script here:<a href="https://gist.github.com/7137592" target="_blank"> https://gist.github.com/7137592</a></li>
 </ul>

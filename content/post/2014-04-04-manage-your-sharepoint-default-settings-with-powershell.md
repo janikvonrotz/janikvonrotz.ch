@@ -13,7 +13,7 @@ tags:
   - sharepoint
   - versioning
 ---
-*This post is part of my [PowerShell PowerUp](https://github.com/janikvonrotz/PowerShell-PowerUp) project.*
+*This post is part of my [PowerShell PowerUp](https://codeberg.org/janikvonrotz/PowerShell-PowerUp) project.*
 
 The only way to deploy SharePoint default settings for site collections and sites manually is using predefined site templates or an ugly third party tool.
 And in case you'll do that with site templates it'll cost a lot of the time to update settings which were already set.
@@ -29,7 +29,7 @@ Today I want to show you my SharePoint default settings script. It does a lot of
 * Add support for multilingualism globally
 * Enable selected installed languages on websites
 
-There are some functions in the script which you can't know f.g. `Write-PPEventLog`, these are custom functions and are part of my [PowerShell PowerUp](https://github.com/janikvonrotz/PowerShell-PowerUp) project.
+There are some functions in the script which you can't know f.g. `Write-PPEventLog`, these are custom functions and are part of my [PowerShell PowerUp](https://codeberg.org/janikvonrotz/PowerShell-PowerUp) project.
 
 ```powershell
 <#

@@ -31,4 +31,4 @@ Ola Hallengren is a Microsoft <a href="https://mvp.microsoft.com/en-us/MVP/Ola%2
 
 However the installation of the SQL ServerMaintenance Solution is very easy. A little bit more difficult is the scheduling, that's why I create a clone repository for Ola's SQL scripts and added and example of how to schedule these jobs.
 
-You'll find the repository on GitHub: <a href="https://github.com/janikvonrotz/SQL-Server-Maintenance">https://github.com/janikvonrotz/SQL-Server-Maintenance</a>
+You'll find the repository on GitHub: <a href="https://codeberg.org/janikvonrotz/SQL-Server-Maintenance">https://codeberg.org/janikvonrotz/SQL-Server-Maintenance</a>

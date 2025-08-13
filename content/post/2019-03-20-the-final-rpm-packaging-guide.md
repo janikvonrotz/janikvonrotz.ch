@@ -512,7 +512,7 @@ It behaves as expected.
 
 I have created a gradle project to facilitate the build process.
 
-Link: [GitHub - Apache Artemis RPM](https://github.com/janikvonrotz/apache-artemis-rpm)
+Link: [GitHub - Apache Artemis RPM](https://codeberg.org/janikvonrotz/apache-artemis-rpm)
 
 # Sources
 

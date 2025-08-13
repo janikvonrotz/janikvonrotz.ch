@@ -38,7 +38,7 @@ Based on you standards and options I have the following system configurations fo
 <h2>System configuration (optional)</h2>
 
 <ul type="disc">
-    <li>Installed <a href="https://github.com/janikvonrotz/PowerShell-PowerUp">PowerShell PowerUp</a></li>
+    <li>Installed <a href="https://codeberg.org/janikvonrotz/PowerShell-PowerUp">PowerShell PowerUp</a></li>
     <li>Installed English Language Paket</li>
     <li>Disabled UAC</li>
     <li>Disabled Internet Explorer Enhanced Security</li>

@@ -26,7 +26,7 @@ The following script can handle this issue by:
     <li>Creating an Active Directory permission groups linked to the service mailbox for each permission type on each mailbox on the Exchange server filtered by Active Directory users and groups holding <strong>not</strong> service mailbox users.</li>
     <li>Synchronize members for each mailbox permission type.</li>
     <li>Delete unused permission groups.</li>
-    <li>Auditing events and error with <a href="https://github.com/janikvonrotz/PowerShell-Profile">PowerShell Profile</a>.</li>
+    <li>Auditing events and error with <a href="https://codeberg.org/janikvonrotz/PowerShell-Profile">PowerShell Profile</a>.</li>
 </ul>
 
 [![Synchronize Service Mailbox Access Groups](/wp-content/uploads/2014/01/Synchronize-Service-Mailbox-Access-Groups-1024x413.jpg)](/wp-content/uploads/2014/01/Synchronize-Service-Mailbox-Access-Groups.jpg)
@@ -197,4 +197,4 @@ Latest version of this script: <a href="https://gist.github.com/8653473" target
 
 <h1>Requirements</h1>
 
-To run this script properly and use commands as `Write-PPEventLog` I recommend you to install my project <a href="https://github.com/janikvonrotz/PowerShell-Profile">PowerShell Profile</a>.
+To run this script properly and use commands as `Write-PPEventLog` I recommend you to install my project <a href="https://codeberg.org/janikvonrotz/PowerShell-Profile">PowerShell Profile</a>.
