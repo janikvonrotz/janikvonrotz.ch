@@ -5,8 +5,10 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: k8s-runner
     steps:
+      - name: Set up QEMU
+        run: docker run --privileged --rm tonistiigi/binfmt --install all
       - uses: actions/checkout@v4
       - name: Run task clone taskfile
         run: ./task clone-taskfile
