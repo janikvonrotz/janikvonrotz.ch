@@ -2,7 +2,8 @@ FROM alpine:3.14 as builder
 RUN apk add --no-cache hugo git
 WORKDIR /app
 COPY . .
-RUN git submodule update --init --recursive
+RUN git clone https://codeberg.org/janikvonrotz/hugo-new-css-theme.git themes/hugo-new-css-theme
+
 RUN hugo --minify -d /public
 
 FROM caddy:2-alpine
