@@ -9,7 +9,7 @@
 Clone the repo.
 
 ```bash
-git clone git@github.com:janikvonrotz/janikvonrotz.ch.git
+git clone git@codeberg.org:janikvonrotz/janikvonrotz.ch.git
 cd janikvonrotz.ch
 ```
 
