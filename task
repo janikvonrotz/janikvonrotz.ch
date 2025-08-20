@@ -64,9 +64,9 @@ DOCKER_REGISTRY=${DOCKER_REGISTRY:="janikvonrotz"}
 
 function install() {
     echo "Install hugo from binary source"
-    curl -L -o hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.141.0/hugo_0.141.0_Linux-64bit.tar.gz
-    tar -xzf hugo.tar.gz
-    rm hugo.tar.gz LICENSE
+    curl -L -o tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.141.0/hugo_0.141.0_Linux-64bit.tar.gz
+    tar -xzf tmp/hugo.tar.gz -C tmp
+    mv tmp/hugo .
 }
 
 function install-vercel(){
