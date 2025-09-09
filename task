@@ -20,7 +20,7 @@ function help-table() {
     printf "$COLUMN" "dev" "[url]" "Start hugo dev server."
     printf "$COLUMN" "vercel-dev" "" "Start Vercel dev server."
     printf "$COLUMN" "build-image" "" "Build Docker image."
-    printf "$COLUMN" "Run" "" "Run Docker image."
+    printf "$COLUMN" "run" "" "Run Docker image."
     printf "$COLUMN" "version" "" "Show version of required tools."
     printf "$COLUMN" "rename" "" "Rename posts to YYYY-MM-DD format."
     printf "$COLUMN" "login-docker" "[user][token]" "Run Docker login and create docker config."
