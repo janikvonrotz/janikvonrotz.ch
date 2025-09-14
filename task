@@ -127,8 +127,8 @@ function build-image() {
     fi
 
     echo "Building Docker image:"
-    SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct) docker buildx build --platform "linux/amd64,linux/arm64" . \
-        --file "image/Dockerfile" \
+    SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct) docker buildx build . \
+        --platform "linux/amd64,linux/arm64" \
         --tag "janikvonrotz/janikvonrotz.ch:latest" \
         --push
 }
